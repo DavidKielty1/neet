@@ -34,7 +34,6 @@ int main() {
     std::cout << "[" << result[0] << ", " << result[1] << "]" << std::endl;  // Output: [0, 1]
     result = sol.twoSum(std::vector<int>{4, 5, 6}, 10);
     std::cout << "[" << result[0] << ", " << result[1] << "]" << std::endl;  // Output: [0, 2]
-
     result = sol.twoSum(std::vector<int>{5, 5}, 10);
     std::cout << "[" << result[0] << ", " << result[1] << "]" << std::endl;  // Output: [0, 1]
 
