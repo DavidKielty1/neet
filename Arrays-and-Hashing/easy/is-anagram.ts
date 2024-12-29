@@ -1,21 +1,18 @@
 class anaSolution {
   isAnagram(s: string, t: string): boolean {
-    // Check if lengths of both strings are not equal
     if (s.length !== t.length) {
       return false;
     }
 
-    // Convert string t into an array of characters
-    let tArray: string[] = t.split("");
+    let tArray: string[] = t.split(""); // Convert string t into an array of characters
     console.log("tArray:", tArray);
 
-    // Loop through each character in string s
     for (let char of s) {
       // Find the index of the current character in tArray
       let index: number = tArray.indexOf(char);
 
-      // If the character is found, remove it from tArray
       if (index !== -1) {
+        // If char found, remove from tArray
         tArray.splice(index, 1);
       } else {
         // If any character in s is not found in t, return false
