@@ -23,6 +23,6 @@ const movingBalls = (balls: string) => {
     }
 }
 
-//Test
+//Test!
 
 movingBalls("110")
