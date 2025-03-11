@@ -23,4 +23,6 @@ const movingBalls = (balls: string) => {
     }
 }
 
+//Test
+
 movingBalls("110")
