@@ -1,8 +1,11 @@
-const defang = (ip: string) => {
+const defang = (ip: string): string => {
+    return ip.replaceAll('.', '[.]');
     
-    // return address.replaceAll('.', '[.]');
-
-    // return console.log(ip.split('.').join('[.]'));
+    // Alternative approaches:
+    // return ip.split('.').join('[.]');
+    // return ip.replace(/\./g, '[.]');
 }
 
-// defang("1.1.1.1")
+// Test cases
+console.log(defang("1.1.1.1"));         // "1[.]1[.]1[.]1"
+console.log(defang("255.100.50.0"));    // "255[.]100[.]50[.]0"
