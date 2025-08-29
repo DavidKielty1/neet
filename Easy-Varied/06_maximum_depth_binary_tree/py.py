@@ -25,8 +25,11 @@ def max_depth(root):
     - The number of nodes in the tree is in the range [0, 104].
     - -100 <= Node.val <= 100
     """
-    pass
-
+    if not root:
+        return 0
+    
+    return 1 + max(max_depth(root.left), max_depth(root.right))
+    
 
 # Test cases
 if __name__ == "__main__":

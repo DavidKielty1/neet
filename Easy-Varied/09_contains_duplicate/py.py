@@ -21,7 +21,16 @@ def contains_duplicate(nums):
     - 1 <= nums.length <= 105
     - -109 <= nums[i] <= 109
     """
-    pass
+    if not nums:
+        return False
+
+    seen = set()
+    for num in nums:
+        if num in seen:
+            return True
+        seen.add(num)
+
+    return False
 
 
 # Test cases

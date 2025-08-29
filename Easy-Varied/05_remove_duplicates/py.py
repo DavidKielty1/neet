@@ -1,4 +1,4 @@
-def remove_duplicates(nums):
+def remove_duplicates(nums: list[int]):
     """
     Remove Duplicates from Sorted Array
     
@@ -22,6 +22,8 @@ def remove_duplicates(nums):
     
     Example 2:
     Input: nums = [0,0,1,1,1,2,2,3,3,4]
+    Input: nums = [0,1,2,3,1,2,2,3,3,4]
+                             u       c
     Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
     Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
     It does not matter what you leave beyond the returned k (hence they are underscores).
@@ -31,8 +33,18 @@ def remove_duplicates(nums):
     - -100 <= nums[i] <= 100
     - nums is sorted in non-decreasing order.
     """
-    pass
-
+    if len(nums) == 0:
+        return 0
+    
+    i = 1 
+    
+    for j in range(1, len(nums)):
+        # If current element is different from previous, it's unique
+        if nums[j] != nums[j-1]:
+            nums[i] = nums[j]  # Place unique element at position i
+            i += 1  # Move to next position
+    
+    return i  # Return count of unique elements
 
 # Test cases
 if __name__ == "__main__":

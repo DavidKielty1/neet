@@ -13,6 +13,11 @@ def reverse_list(head):
     Input: head = [1,2,3,4,5]
     Output: [5,4,3,2,1]
     
+    [1, 2, 3, 4, 5]
+           c
+              nt
+        p  
+   
     Example 2:
     Input: head = [1,2]
     Output: [2,1]
@@ -25,7 +30,29 @@ def reverse_list(head):
     - The number of nodes in the list is the range [0, 5000].
     - -5000 <= Node.val <= 5000
     """
-    pass
+
+    if head is None:
+        return None
+    
+    # Three-pointer approach for reversal
+    prev = None
+    current = head
+    
+    while current:
+        # Save the next node before we lose it
+        next_temp = current.next
+        
+        # Reverse the link
+        current.next = prev
+        
+        # Move pointers forward
+        prev = current
+        current = next_temp
+    
+    # prev is now the new head of reversed list
+    return prev
+
+
 
 
 # Helper function to create linked list from array

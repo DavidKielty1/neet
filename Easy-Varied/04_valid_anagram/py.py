@@ -1,3 +1,5 @@
+from collections import Counter
+
 def is_anagram(s, t):
     """
     Valid Anagram
@@ -19,7 +21,33 @@ def is_anagram(s, t):
     - 1 <= s.length, t.length <= 5 * 104
     - s and t consist of lowercase English letters.
     """
-    pass
+    # Early return if lengths are different
+    if len(s) != len(t):
+        return False
+    
+    # map1 = {}
+    # map2 = {}
+
+    # # Count characters in first string
+    # for char in s:
+    #     map1[char] = map1.get(char, 0) + 1
+
+    # # Count characters in second string
+    # for char in t:
+    #     map2[char] = map2.get(char, 0) + 1
+
+    # # Compare the two maps
+    # return map1 == map2
+
+    map1 = Counter(s)
+    map2 = Counter(t)
+
+    return map1 == map2
+
+
+            
+        
+
 
 
 # Test cases

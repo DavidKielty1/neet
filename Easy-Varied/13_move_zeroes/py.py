@@ -1,4 +1,4 @@
-def move_zeroes(nums):
+def move_zeroes(nums: list[int]):
     """
     Move Zeroes
     
@@ -19,11 +19,24 @@ def move_zeroes(nums):
     - 1 <= nums.length <= 104
     - -231 <= nums[i] <= 231 - 1
     """
-    pass
+    left = 0
+    right = len(nums) -1
+    
+    while left < right:
+        while right > left and nums[right] == 0:
+            right -= 1
+
+        if nums[left] == 0:
+            nums[left], nums[right] = nums[right], nums[left]
+
+        left += 1
+
+    return nums
 
 
 # Test cases
 if __name__ == "__main__":
+    # move_zeroes([0, 1, 0, 3, 12])
     # Test case 1
     nums1 = [0, 1, 0, 3, 12]
     print(f"Test 1: nums = {nums1}")

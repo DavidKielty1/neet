@@ -30,7 +30,25 @@ def is_valid(s):
     - 1 <= s.length <= 104
     - s consists of parentheses only '()[]{}'.
     """
-    pass
+    if len(s) % 2 != 0:  
+        return False
+    
+    bracket_map = {')': '(', 
+                   ']': '[', 
+                   '}': '{'}
+    
+    stack = []
+    
+    for char in s:
+        if char in bracket_map:  
+            if not stack or stack.pop() != bracket_map[char]:
+                return False
+        else:  
+            stack.append(char)
+    
+    # Valid if all brackets were matched (stack is empty)
+    return len(stack) == 0
+
 
 
 # Test cases

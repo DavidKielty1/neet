@@ -1,4 +1,4 @@
-def single_number(nums):
+def single_number(nums: list[int]):
     """
     Single Number
     
@@ -24,7 +24,10 @@ def single_number(nums):
     - -3 * 104 <= nums[i] <= 3 * 104
     - Each element in the array appears twice except for one element which appears only once.
     """
-    pass
+    result = 0
+    for num in nums:
+        result ^= num
+    return result
 
 
 # Test cases
