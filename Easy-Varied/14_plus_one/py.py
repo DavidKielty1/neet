@@ -1,4 +1,4 @@
-def plus_one(digits):
+def plus_one(digits: list[int]) -> list[int]:
     """
     Plus One
     
@@ -34,7 +34,23 @@ def plus_one(digits):
     - 0 <= digits[i] <= 9
     - digits does not contain any leading 0's.
     """
-    pass
+    right = len(digits) - 1
+    i = 0
+
+    while i < right and digits[right] == 9:
+        if digits[right - 1] != 9:
+            digits[right] = 1
+            digits.append(0)
+
+        
+
+    
+        right -= 1
+
+    else:
+        digits[right] += 1 
+
+    return digits
 
 
 # Test cases
