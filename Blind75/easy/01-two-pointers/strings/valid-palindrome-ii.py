@@ -17,62 +17,15 @@ Time: O(n), Space: O(1)
 """
 
 
-def valid_palindrome(s):
+def valid_palindrome(s: str) -> bool:
     """
-    Two pointers with one deletion allowed
-    """
+    Simplest approach: Two pointers with helper function
+    When characters don't match, try deleting either left or right character
 
-    def is_palindrome_range(left, right):
-        """Check if substring is palindrome"""
-        while left < right:
-            if s[left] != s[right]:
-                return False
-            left += 1
-            right -= 1
-        return True
-
-    left, right = 0, len(s) - 1
-
-    while left < right:
-        if s[left] != s[right]:
-            # Try deleting left character or right character
-            return is_palindrome_range(left + 1, right) or is_palindrome_range(
-                left, right - 1
-            )
-        left += 1
-        right -= 1
-
-    return True
-
-
-# Alternative: More explicit approach
-def valid_palindrome_explicit(s):
-    """
-    More explicit version with helper function
+    if comparison fails, do helper function either left or right without a fail-safe i.e. return False if error
     """
 
-    def check_palindrome(s, left, right):
-        while left < right:
-            if s[left] != s[right]:
-                return False
-            left += 1
-            right -= 1
-        return True
-
-    left, right = 0, len(s) - 1
-
-    while left < right:
-        if s[left] == s[right]:
-            left += 1
-            right -= 1
-        else:
-            # Try skipping left character
-            skip_left = check_palindrome(s, left + 1, right)
-            # Try skipping right character
-            skip_right = check_palindrome(s, left, right - 1)
-            return skip_left or skip_right
-
-    return True
+    pass
 
 
 # Test cases

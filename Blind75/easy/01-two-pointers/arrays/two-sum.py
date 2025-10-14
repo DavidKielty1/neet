@@ -13,40 +13,12 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 Time: O(n), Space: O(n)
 """
 
-
-def two_sum(nums, target):
-    """
-    Two pointers approach with hash map for O(n) solution
-    """
-    num_map = {}
-
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in num_map:
-            return [num_map[complement], i]
-        num_map[num] = i
-
-    return []
+from typing import List
 
 
-# Alternative: Two pointers on sorted array (O(n log n))
-def two_sum_sorted(nums, target):
-    """
-    Two pointers on sorted array - returns values, not indices
-    """
-    nums.sort()
-    left, right = 0, len(nums) - 1
-
-    while left < right:
-        current_sum = nums[left] + nums[right]
-        if current_sum == target:
-            return [nums[left], nums[right]]
-        elif current_sum < target:
-            left += 1
-        else:
-            right -= 1
-
-    return []
+def two_sum(nums: List[int], target: int) -> list[int]:
+    # Create an empty dictionary (hashmap)
+    pass
 
 
 # Test cases

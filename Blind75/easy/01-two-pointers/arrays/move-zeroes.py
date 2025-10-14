@@ -3,7 +3,12 @@
 Difficulty: Easy
 Pattern: Two Pointers
 
-Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+Given an integer array nums, move all 0's to the end of it while maintaining
+the relative order of the non-zero elements.
+
+Contract (LeetCode 283):
+- Modify nums in-place to move all zeros to the end.
+- Do not return anything; mutate nums directly.
 
 Example:
 Input: nums = [0,1,0,3,12]
@@ -12,36 +17,16 @@ Output: [1,3,12,0,0]
 Time: O(n), Space: O(1)
 """
 
-
-def move_zeroes(nums):
-    """
-    Two pointers: slow for non-zero position, fast for traversal
-    """
-    slow = 0
-
-    # Move all non-zero elements to the front
-    for fast in range(len(nums)):
-        if nums[fast] != 0:
-            nums[slow], nums[fast] = nums[fast], nums[slow]
-            slow += 1
+# e.g. array = [1, 0, 0, 2, 3]
 
 
-# Alternative: Two passes approach
-def move_zeroes_two_passes(nums):
-    """
-    First pass: move non-zeros, second pass: fill with zeros
-    """
-    slow = 0
+from typing import List
 
-    # First pass: move non-zero elements
-    for fast in range(len(nums)):
-        if nums[fast] != 0:
-            nums[slow] = nums[fast]
-            slow += 1
 
-    # Second pass: fill remaining positions with zeros
-    for i in range(slow, len(nums)):
-        nums[i] = 0
+def move_zeroes(nums: List[int]) -> None:
+    # Todo: (Move non-zeroes to start)
+
+    pass
 
 
 # Test cases

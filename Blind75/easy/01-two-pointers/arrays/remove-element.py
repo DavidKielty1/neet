@@ -3,40 +3,36 @@
 Difficulty: Easy
 Pattern: Two Pointers
 
-Given an integer array nums and an integer val, remove all occurrences of val in-place. The order of the elements may be changed.
+Given an integer array nums and an integer val, remove all occurrences of
+val in-place. The order of the elements may be changed.
+
+Contract (LeetCode 27):
+- Modify nums in-place so that the first k elements of nums contain the
+  elements that are not equal to val (order of these elements may change).
+- Return k (the number of elements not equal to val). The values beyond
+  index k-1 are ignored by the caller and may be any value.
 
 Example:
 Input: nums = [3,2,2,3], val = 3
-Output: 2, nums = [2,2,_,_]
+Output: 2, nums = [2,2,_,_]  # Only the first 2 positions are considered
 
 Time: O(n), Space: O(1)
 """
 
-
-def remove_element(nums, val):
-    """
-    Two pointers: slow for valid elements, fast for traversal
-    """
-    slow = 0
-
-    for fast in range(len(nums)):
-        if nums[fast] != val:
-            nums[slow] = nums[fast]
-            slow += 1
-
-    return slow
+from typing import List
 
 
-# Alternative: Two pointers from both ends (changes order)
-def remove_element_swap(nums, val):
-    """
-    Two pointers from both ends - swaps elements to end
-    """
-    left, right = 0, len(nums) - 1
+# nums: [0, 1, 2, 2, 3, 0, 4, 2] target = 2
+def remove_element(nums: List[int], val: int) -> int:
+    if not nums:
+        return 0
+
+    left = 0
+    right = len(nums) - 1
 
     while left <= right:
         if nums[left] == val:
-            nums[left], nums[right] = nums[right], nums[left]
+            nums[left] = nums[right]
             right -= 1
         else:
             left += 1
@@ -50,18 +46,16 @@ if __name__ == "__main__":
     nums1 = [3, 2, 2, 3]
     val1 = 3
     result1 = remove_element(nums1, val1)
-    print(f"Length: {result1}, Array: {nums1[:result1]}")  # Length: 2, Array: [2, 2]
+    print(f"Remove Element: {result1}, nums = {nums1}")  # 2, [2, 2, _, _]
 
     # Test 2
     nums2 = [0, 1, 2, 2, 3, 0, 4, 2]
     val2 = 2
     result2 = remove_element(nums2, val2)
-    print(
-        f"Length: {result2}, Array: {nums2[:result2]}"
-    )  # Length: 5, Array: [0, 1, 3, 0, 4]
+    print(f"Remove Element: {result2}, nums = {nums2}")  # 5, [0, 1, 3, 0, 4, _, _, _]
 
     # Test 3
     nums3 = [1]
     val3 = 1
     result3 = remove_element(nums3, val3)
-    print(f"Length: {result3}, Array: {nums3[:result3]}")  # Length: 0, Array: []
+    print(f"Remove Element: {result3}, nums = {nums3}")  # 0, [_]
