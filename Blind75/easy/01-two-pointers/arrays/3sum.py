@@ -18,7 +18,9 @@ from typing import List
 
 
 def three_sum(nums: List[int]) -> List[List[int]]:
-    pass
+    """
+    Remember to sort, for in range -2, target = -nums[i], if two_sum == target, list.append
+    """
 
 
 # Test cases

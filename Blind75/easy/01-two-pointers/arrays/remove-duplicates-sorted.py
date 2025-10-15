@@ -23,10 +23,21 @@ Time: O(n), Space: O(1)
 from typing import List
 
 
+# e.g. [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
 def remove_duplicates(nums: List[int]) -> int:
     """
-    TODO: read index, write index
+    Two pointers approach: read and write indices
     """
+    if not nums:
+        return 0
+
+    write = 0
+    for read in range(1, len(nums)):
+        if nums[read] != nums[write]:
+            write += 1
+            nums[write] = nums[read]
+
+    return write + 1
 
 
 # Test cases

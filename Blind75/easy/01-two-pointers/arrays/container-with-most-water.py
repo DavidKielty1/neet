@@ -19,10 +19,16 @@ Time: O(n), Space: O(1)
 from typing import List
 
 
-def max_area(height: List[int]) -> int:
+def max_area(heights: List[int]) -> int:
     """
-    TODO: Implement the solution
+    Two-pointer solution:
+    - Start with pointers at both ends.
+    - Compute area with width (right - left).
+    - Move the pointer at the shorter line inward, because only that can potentially increase
+      the min height and thus the area despite a smaller width.
+    Time: O(n), Space: O(1)
     """
+
     pass
 
 

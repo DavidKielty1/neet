@@ -17,15 +17,10 @@ Output: [1,3,12,0,0]
 Time: O(n), Space: O(1)
 """
 
+
 # e.g. array = [1, 0, 0, 2, 3]
-
-
-from typing import List
-
-
-def move_zeroes(nums: List[int]) -> None:
-    # Todo: (Move non-zeroes to start)
-
+def move_zeroes(nums):
+    # slow, fast. read goes fast, first range, then while.
     pass
 
 

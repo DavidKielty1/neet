@@ -5,6 +5,12 @@ Pattern: Stack
 
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
+A string is valid iff:
+- It contains only the bracket characters () {} []
+- Every opening bracket is closed by the same type of bracket
+- Brackets are closed in the correct LIFO order (properly nested)
+- No extra closing bracket appears before a matching opener
+
 Example:
 Input: s = "()"
 Output: true
@@ -15,6 +21,12 @@ Output: true
 Input: s = "(]"
 Output: false
 
+Input: s = "([{}])"
+Output: true
+
+Input: s = "([){]}"
+Output: false  # mismatched and out-of-order
+
 Time: O(n), Space: O(n)
 """
 
@@ -23,23 +35,10 @@ def is_valid_parentheses(s: str) -> bool:
     """
     Validate brackets using a stack.
     Time: O(n), Space: O(n)
+
+    Stask using hashmap for keys, set for values
     """
-    pairs = {")": "(", "]": "[", "}": "{"}
-    openers = set(pairs.values())
-    stack = []
-
-    for ch in s:
-        if ch in openers:
-            stack.append(ch)
-        elif ch in pairs:
-            if not stack or stack[-1] != pairs[ch]:
-                return False
-            stack.pop()
-        else:
-            # Non-bracket character (guard; LeetCode inputs are only brackets)
-            return False
-
-    return not stack
+    pass
 
 
 # Test cases
