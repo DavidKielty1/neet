@@ -22,16 +22,37 @@ Time: O(n), Space: O(1) - at most 26 characters
 """
 
 from typing import List
-from collections import Counter
 
 
 def find_anagrams(s: str, p: str) -> List[int]:
-    """
-    Sliding window with fixed size (length of p)
-    Time: O(n), Space: O(1)
-    """
-    # TODO: Implement sliding window solution
-    pass
+    if len(p) > len(s):
+        return []
+
+    # Create target frequency map
+    target_count = {}
+    for char in p:
+        target_count[char] = target_count.get(char, 0) + 1
+
+    window_count = {}
+    result = []
+    left = 0
+
+    for right, char in enumerate(s):
+        window_count[char] = window_count.get(char, 0) + 1
+
+        # If window is too big, shrink it
+        if right - left + 1 > len(p):
+            left_char = s[left]
+            window_count[left_char] -= 1
+            if window_count[left_char] == 0:
+                del window_count[left_char]
+            left += 1
+
+        # Check if current window is an anagram
+        if window_count == target_count:
+            result.append(left)
+
+    return result
 
 
 # Test cases

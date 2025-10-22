@@ -22,8 +22,6 @@ Explanation: Both 'a's from t must be included in the window.
 Time: O(|s| + |t|), Space: O(|s| + |t|)
 """
 
-from typing import List
-
 
 def min_window(s: str, t: str) -> str:
     """
@@ -31,7 +29,41 @@ def min_window(s: str, t: str) -> str:
     Time: O(|s| + |t|), Space: O(|s| + |t|)
     """
     # TODO: Implement sliding window solution
-    pass
+
+    # create t-string char_count map
+
+    target_count = {}
+    for char in t:
+        target_count[char] = target_count.get(char, 0) + 1
+
+    window_count = {}
+    left = 0
+    min_len = float("inf")
+    min_start = 0
+    required = len(target_count)
+    formed = 0
+
+    for right, char in enumerate(s):
+        window_count[char] = window_count.get(char, 0) + 1
+
+        if char in target_count and window_count[char] == target_count[char]:
+            formed += 1
+
+        while left <= right and formed == required:
+            if right - left + 1 < min_len:
+                min_len = right - left + 1
+                min_start = left
+
+            left_char = s[left]
+            window_count[left_char] -= 1
+            if (
+                left_char in target_count
+                and window_count[left_char] < target_count[left_char]
+            ):
+                formed -= 1
+            left += 1
+
+    return s[min_start : min_start + min_len] if min_len != float("inf") else ""
 
 
 # Test cases

@@ -3,7 +3,7 @@
 Difficulty: Hard
 Pattern: Sliding Window + Deque
 
-You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+You are given an numsay of integers nums, there is a sliding window of size k which is moving from the very left of the numsay to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
 
 Return the max sliding window.
 
@@ -27,8 +27,25 @@ def max_sliding_window(nums: List[int], k: int) -> List[int]:
     Sliding window with deque to maintain max elements
     Time: O(n), Space: O(k)
     """
-    # TODO: Implement deque solution
-    pass
+    if not nums or k <= 0:
+        return []
+
+    queue = deque()
+    output = []
+
+    for i in range(len(nums)):
+        while queue and queue[0] <= i - k:
+            queue.popleft()
+
+        while queue and nums[queue[-1]] <= nums[i]:
+            queue.pop()
+
+        queue.append(i)
+
+        if i >= k - 1:
+            output.append(nums[queue[0]])
+
+    return output
 
 
 # Test cases

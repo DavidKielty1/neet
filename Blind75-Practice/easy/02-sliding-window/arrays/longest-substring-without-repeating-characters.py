@@ -23,16 +23,30 @@ Explanation: The answer is "wke", with the length of 3.
 Time: O(n), Space: O(min(m,n)) where m is the size of the charset
 """
 
-from typing import List
-
 
 def length_of_longest_substring(s: str) -> int:
     """
     Sliding window approach with hash set
     Time: O(n), Space: O(min(m,n))
     """
-    # TODO: Implement sliding window solution
-    pass
+
+    char_count = {}
+    max_length = 0
+    left = 0
+
+    for right, char in enumerate(s):
+        char_count[char] = char_count.get(char, 0) + 1
+
+        while char_count[char] > 1:
+            left_char = s[left]
+            char_count[left_char] -= 1
+            if char_count[left_char] == 0:
+                del char_count[left_char]
+            left += 1
+
+        max_length = max(max_length, right - left + 1)
+
+    return max_length
 
 
 # Test cases
