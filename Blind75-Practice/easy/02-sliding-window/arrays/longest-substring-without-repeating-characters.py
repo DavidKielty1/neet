@@ -6,7 +6,7 @@ Pattern: Sliding Window
 Given a string s, find the length of the longest substring without repeating characters.
 
 Example 1:
-Input: s = "abcabcbb"
+Input: s = "dabcabcbb"
 Output: 3
 Explanation: The answer is "abc", with the length of 3.
 
@@ -30,23 +30,25 @@ def length_of_longest_substring(s: str) -> int:
     Time: O(n), Space: O(min(m,n))
     """
 
+    # "abcabcbb"
+
     char_count = {}
-    max_length = 0
     left = 0
+    longest_substring = 0
 
-    for right, char in enumerate(s):
-        char_count[char] = char_count.get(char, 0) + 1
+    for right_ch in s:
+        char_count[right_ch] = char_count.get(right_ch, 0) + 1
 
-        while char_count[char] > 1:
-            left_char = s[left]
-            char_count[left_char] -= 1
-            if char_count[left_char] == 0:
-                del char_count[left_char]
+        while char_count[right_ch] > 1:
+            left_ch = s[left]
+            char_count[left_ch] -= 1
+            if char_count[left_ch] == 0:
+                del char_count[left_ch]
             left += 1
 
-        max_length = max(max_length, right - left + 1)
+        longest_substring = max(longest_substring, len(char_count))
 
-    return max_length
+    return longest_substring
 
 
 # Test cases

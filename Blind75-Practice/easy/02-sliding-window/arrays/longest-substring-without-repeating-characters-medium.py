@@ -24,26 +24,34 @@ def length_of_longest_substring_two_distinct(s: str) -> int:
     Sliding window with hash map for character counts
     Time: O(n), Space: O(1)
     """
-    if len(s) < 2:
-        return len(s)
+    pass
 
-    char_count = {}
-    left = 0
-    max_length = 0
 
-    for right, char in enumerate(s):
-        char_count[char] = char_count.get(char, 0) + 1
+# def length_of_longest_substring_two_distinct(s: str) -> int:
+#     """
+#     Sliding window with hash map for character counts
+#     Time: O(n), Space: O(1)
+#     """
+#     if len(s) < 2:
+#         return len(s)
 
-        while len(char_count) > 2:
-            left_char = s[left]
-            char_count[left_char] -= 1
-            if char_count[left_char] == 0:
-                del char_count[left_char]
-            left += 1
+#     char_count = {}
+#     left = 0
+#     max_length = 0
 
-        max_length = max(max_length, right - left + 1)
+#     for right, char in enumerate(s):
+#         char_count[char] = char_count.get(char, 0) + 1
 
-    return max_length
+#         while len(char_count) > 2:
+#             left_char = s[left]
+#             char_count[left_char] -= 1
+#             if char_count[left_char] == 0:
+#                 del char_count[left_char]
+#             left += 1
+
+#         max_length = max(max_length, right - left + 1)
+
+#     return max_length
 
 
 # Test cases

@@ -31,11 +31,9 @@ def first_uniq_char(s: str) -> int:
     """
     char_count = {}
 
-    # Count frequency of each character
     for ch in s:
         char_count[ch] = char_count.get(ch, 0) + 1
 
-    # Find the first index with frequency 1
     for i, ch in enumerate(s):
         if char_count[ch] == 1:
             return i
