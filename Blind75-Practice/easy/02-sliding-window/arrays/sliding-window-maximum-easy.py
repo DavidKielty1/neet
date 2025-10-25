@@ -44,7 +44,7 @@ def max_of_all_subarrays(arr: List[int], k: int) -> List[int]:
 
         queue.append(i)
 
-        # Add to output when window is full
+        # begin appending once queue reaches length of k
         if i >= k - 1:
             output.append(arr[queue[0]])
 

@@ -24,7 +24,30 @@ def length_of_longest_substring_two_distinct(s: str) -> int:
     Sliding window with hash map for character counts
     Time: O(n), Space: O(1)
     """
-    pass
+    if len(s) < 2:
+        return len(s)
+
+    char_count = {}
+    left = 0
+    longest_substring = 0
+
+    # eceba
+    for right, right_ch in enumerate(s):
+        char_count[right_ch] = char_count.get(right_ch, 0) + 1
+
+        while len(char_count) > 2:
+            left_ch = s[left]
+            left_count = char_count[left_ch]
+            left_count -= 1
+            if left_count == 0:
+                del char_count[left_ch]
+            else:
+                char_count[left_ch] = left_count
+            left += 1
+
+        longest_substring = max(longest_substring, right - left + 1)
+
+    return longest_substring
 
 
 # def length_of_longest_substring_two_distinct(s: str) -> int:

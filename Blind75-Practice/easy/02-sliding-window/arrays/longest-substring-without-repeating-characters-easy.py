@@ -28,17 +28,20 @@ def first_uniq_char(s: str) -> int:
     """
     Hash map approach to count character frequencies
     Time: O(n), Space: O(1)
-    """
-    char_count = {}
+    #"""
 
-    for ch in s:
-        char_count[ch] = char_count.get(ch, 0) + 1
+    pass
 
-    for i, ch in enumerate(s):
-        if char_count[ch] == 1:
-            return i
+    # char_count = {}
 
-    return -1
+    # for ch in s:
+    #     char_count[ch] = char_count.get(ch, 0) + 1
+
+    # for i, ch in enumerate(s):
+    #     if char_count[ch] == 1:
+    #         return i
+
+    # return -1
 
 
 # Test cases
