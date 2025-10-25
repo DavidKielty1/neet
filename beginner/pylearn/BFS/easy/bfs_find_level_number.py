@@ -30,6 +30,31 @@ def find_level_number(root: TreeNode, target: int) -> int:
     - Early termination when target found
     """
     # TODO: Implement your solution here
+
+    if not root:
+        return -1
+
+    queue = deque([root])
+    level = 1
+
+    while root:
+        level_size = len(queue)
+
+        for _ in range(level_size):
+            node = queue.popleft()
+
+            if node.val == target:
+                return level
+
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+
+        level_size += 1
+
+    return -1
+
     if not root:
         return -1
 
