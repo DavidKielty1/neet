@@ -40,8 +40,51 @@ const downloads: Download[] = [
 ];
 
 function detectDownloadBursts(downloads: Download[], threshold: number, windowMinutes: number): string[] {
-  // TODO: Implement solution
-  return [];
+  // threshold > 3 separate files over 15 minutes
+  const flaggedUsers = new Set<string>()
+  const windowMs = windowMinutes * 60 * 1000
+
+  // create userMap with {file: str, time: number}
+  const userMap = new Map<string, {file: string, time: number}[]>()
+  for (const d of downloads) {
+      const time = new Date(d.timestamp).getTime()
+      if (!userMap.has(d.userId)) userMap.set(d.userId, []);
+      userMap.get(d.userId)!.push({file: d.fileName, time});
+  }
+
+  // go over map per user
+  for (const [userId, downloads] of userMap) {
+      downloads.sort((a, b) => a.time - b.time);
+
+      let left = 0
+      const fileCounter = new Map<string, number>()
+
+      for (let right = 0; right < downloads.length; right++) {
+          // window - while left/right pointer times exceed windowMinutes: left++, decrement/delete file
+          while (downloads[right].time - downloads[left].time > windowMs) {
+              const leftFile = downloads[left].file;
+              const count = fileCounter.get(leftFile) || 0
+
+              if (count === 1) {
+                  fileCounter.delete(leftFile)
+              } else {
+                  fileCounter.set(leftFile, count - 1)
+              }
+              left++
+          }
+
+          const rightFile = downloads[right].file;
+          fileCounter.set(rightFile, (fileCounter.get(rightFile) || 0) + 1);
+    
+          if (fileCounter.size > threshold) {
+              flaggedUsers.add(userId)
+              break;
+          }
+      }
+  }
+
+  // return array from flaggedUser set
+  return Array.from(flaggedUsers);
 }
 
 detectDownloadBursts(downloads, 3, 15);

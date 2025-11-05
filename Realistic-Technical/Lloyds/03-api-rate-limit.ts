@@ -39,8 +39,41 @@ const apiRequests: ApiRequest[] = [
 ];
 
 function detectRateLimitViolations(requests: ApiRequest[], maxRequestsPerMinute: number): string[] {
-  // TODO: Implement solution
-  return [];
+    const flaggedUsers = new Set<string>()
+    const windowMs = 60 * 1000
+
+    // Create a per-user map <userid: string, time: number>
+    const userMap = new Map<string, number[]>()
+    requests.map((r) => {
+        const time = new Date(r.timestamp).getTime();
+        if (!userMap.has(r.userId)) userMap.set(r.userId, []);
+        userMap.get(r.userId)!.push(time);
+    })
+
+    // for each row per user
+    for (const [userId, times] of userMap) {
+        times.sort((a, b) => a - b)
+
+        let left = 0
+        let requests = 0
+        
+        for (let right = 0; right < times.length; right++) {
+            while (times[right] - times[left] > windowMs) {
+                requests--
+                left++
+            }
+
+            requests++
+
+            if (requests > maxRequestsPerMinute) {
+                flaggedUsers.add(userId);
+                break;
+            }
+        }
+    }
+
+    // append to return array if over threshold
+    return Array.from(flaggedUsers);
 }
 
 detectRateLimitViolations(apiRequests, 3);

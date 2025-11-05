@@ -38,9 +38,46 @@ const transactions: Transaction[] = [
 ];
 
 function detectHighValueTransactions(transactions: Transaction[], maxAmount: number, windowHours: number): string[] {
-  // TODO: Implement solution
-  return [];
+    const windowMs = windowHours * 60 * 60 * 1000 
+    const flaggedUsers = new Set<string>()
+
+    // Make a userMap with userId: [{amount: £_, time: _ms}, {amount: £_, time: _ms}]
+    const userMap = new Map<string, {amount: number, time: number}[]>()
+    for (let t of transactions) {
+        const time = new Date(t.timestamp).getTime();
+        if (!userMap.has(t.userId)) userMap.set(t.userId, [])
+        userMap.get(t.userId)!.push({amount: t.amount, time})
+    }
+
+    for (const [userId, userTransactions] of userMap) {
+        userTransactions.sort((a, b) => a.time - b.time)
+
+        let left = 0
+        let windowSum = 0
+
+        // Go through every row for  userId in the userMap (right pointer); 
+        for (let right = 0; right < userTransactions.length; right++) {
+            windowSum += userTransactions[right].amount
+
+            // sliding winder - if outside of time, shift left pointer
+            while (userTransactions[right].time - userTransactions[left].time > windowMs) {
+                windowSum -= userTransactions[left].amount
+                left++
+            }
+
+            
+
+            if (windowSum > maxAmount) {
+                flaggedUsers.add(userId)
+                break;
+            }
+        }
+    }
+
+    // return Array.from(set)
+    return Array.from(flaggedUsers);
 }
 
-detectHighValueTransactions(transactions, 10000, 1);
+const result = detectHighValueTransactions(transactions, 10000, 1);
+console.log("Flagged users:", result);
 

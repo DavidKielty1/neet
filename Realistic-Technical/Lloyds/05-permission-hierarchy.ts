@@ -65,8 +65,16 @@ const permissions: Permissions = {
 };
 
 function hasAccess(root: HierarchyNode, permissions: Permissions, userId: string, resource: string): boolean {
-  // TODO: Implement solution
-  return false;
+
+    const checkPermission = (managerId) => {
+       if(permissions[managerId].includes(resource)) {
+        return true
+       }
+    }
+
+    checkPermission(this.managerId);
+
+    return false
 }
 
 hasAccess(hierarchy, permissions, "e1", "resource1");
