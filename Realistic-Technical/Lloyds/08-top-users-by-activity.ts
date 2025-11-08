@@ -42,8 +42,24 @@ const activities: Activity[] = [
 ];
 
 function getTopUsersByActivity(activities: Activity[], topN: number): string[] {
-  // TODO: Implement solution
-  return [];
+
+  // Create counter map of through all activities
+  const userActivityCounter = new Map<string, number>()
+
+  for (const a of activities) {
+    userActivityCounter.set(a.userId, (userActivityCounter.get(a.userId) || 0) + 1);
+  }
+
+  // sort array from map by userId
+  const sortedCountArray = Array.from(userActivityCounter.entries())
+    .sort((a, b) => b[1] - a[1])
+
+  console.log('sortedCountArray:', sortedCountArray)
+
+  // slice, map, take first element from array elements
+  const topUsers = sortedCountArray.slice(0, topN).map(([userId]) => userId);
+
+  return topUsers;
 }
 
 getTopUsersByActivity(activities, 2);

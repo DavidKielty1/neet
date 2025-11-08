@@ -36,14 +36,55 @@ const accesses: AccessEvent[] = [
   { userId: "u2", resource: "/data/reports", timestamp: "2025-11-03T10:00:00Z" },
 ];
 
+
+const createUserAccessMap = (accesses: AccessEvent[]) => {
+  const userMap = new Map<string, string[]>()
+
+  for (let a of accesses) {
+    if (!userMap.has(a.userId)) userMap.set(a.userId, []);
+    userMap.get(a.userId)!.push(a.timestamp)
+  }
+
+  return userMap
+}
+
+
+const isOutOfhours = (startHour: number, endHour: number, timestamp: string): boolean => {
+  const date = new Date(timestamp)
+  const accessHour = date.getHours();
+
+  if (accessHour < startHour || accessHour > endHour) {
+    return true
+  }
+
+  return false
+}
+
+
 function detectUnusualAccessTimes(
-  accesses: AccessEvent[],
+  accesses: AccessEvent[], 
   startHour: number,
   endHour: number,
   threshold: number
 ): string[] {
-  // TODO: Implement solution
-  return [];
+  const flaggedUsers = new Set<string>()
+
+  // create userAccessMap
+  const userMap = createUserAccessMap(accesses);
+
+  for (const [userId, timestamps] of userMap) {
+    let outHoursAccesses = 0;
+
+    for (const timestamp of timestamps) {
+      if (isOutOfhours(startHour, endHour, timestamp)) outHoursAccesses++;
+      if (outHoursAccesses > threshold) {
+        flaggedUsers.add(userId);
+        break;
+      } 
+    }
+  }
+
+  return Array.from(flaggedUsers);
 }
 
 detectUnusualAccessTimes(accesses, 9, 17, 2);

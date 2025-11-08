@@ -25,13 +25,13 @@
 //   K = 3, T = 10
 // Output: ["u1"]
 
-type FileAccess = {
+type FileAccessa = {
     userId: string;
     filePath: string;
     timestamp: string; // ISO format
   };
   
-const fileAccesses: FileAccess[] = [
+const fileAccessesa: FileAccessa[] = [
 { userId: "u1", filePath: "/docs/report1.pdf", timestamp: "2025-11-03T10:00:00Z" },
 { userId: "u1", filePath: "/docs/report2.pdf", timestamp: "2025-11-03T10:02:00Z" },
 { userId: "u1", filePath: "/docs/report3.pdf", timestamp: "2025-11-03T10:05:00Z" },
@@ -39,20 +39,20 @@ const fileAccesses: FileAccess[] = [
 { userId: "u2", filePath: "/docs/report1.pdf", timestamp: "2025-11-03T10:10:00Z" },
 ];
   
-function detectSuspiciousFileAccess(accesses: FileAccess[], threshold: number, windowMinutes: number): string[] {
+function detectSuspiciousFileAccess(accesses: FileAccessa[], threshold: number, windowMinutes: number): string[] {
     const windowMs = windowMinutes * 60 * 1000;
     const flagged = new Set<string>();
     
     // Group accesses by userId
-    const userMap = new Map<string, { path: string; time: number }[]>();
+    const userMap: Record<string, { path: string; time: number }[]> = {};
     for (const a of accesses) {
         const time = new Date(a.timestamp).getTime();
-        if (!userMap.has(a.userId)) userMap.set(a.userId, []);
-        userMap.get(a.userId)!.push({ path: a.filePath, time });
+        if (!userMap[a.userId]) userMap[a.userId] = [];
+        userMap[a.userId].push({ path: a.filePath, time });
     }
     
     // Check each user with sliding window
-    for (const [userId, events] of userMap) {
+    for (const [userId, events] of Object.entries(userMap)) {
         events.sort((a, b) => a.time - b.time);
         let left = 0;
         const fileCount = new Map<string, number>();
@@ -77,6 +77,6 @@ function detectSuspiciousFileAccess(accesses: FileAccess[], threshold: number, w
     return Array.from(flagged);
 }
   
-detectSuspiciousFileAccess(fileAccesses, 3, 10);
+detectSuspiciousFileAccess(fileAccessesa, 3, 10);
   
   
