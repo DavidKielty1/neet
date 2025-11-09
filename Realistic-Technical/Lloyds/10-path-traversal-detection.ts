@@ -36,9 +36,21 @@ const fileAccesses: FileAccess[] = [
 ];
 
 function detectSuspiciousPaths(accesses: FileAccess[], suspiciousPatterns: string[]): string[] {
-  // TODO: Implement solution
-  return [];
+  const flaggedUsers = new Set<string>()
+
+  for (const a of accesses) {
+    for (const pattern of suspiciousPatterns) {
+      if (a.filePath.includes(pattern)) {
+        flaggedUsers.add(a.userId);
+        break; 
+      }
+    }
+  }
+
+  return Array.from(flaggedUsers);
 }
 
 detectSuspiciousPaths(fileAccesses, ["..", "/etc/", "/admin/"]);
+
+export { };
 

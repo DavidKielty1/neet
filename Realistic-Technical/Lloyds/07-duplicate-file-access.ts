@@ -95,3 +95,5 @@ function detectDuplicateFileAccess(accesses: FileAccessd[], maxAccessesPerDay: n
 
 detectDuplicateFileAccess(fileAccessesd, 3);
 
+export { };
+

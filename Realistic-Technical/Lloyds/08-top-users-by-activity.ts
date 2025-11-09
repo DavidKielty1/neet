@@ -64,3 +64,5 @@ function getTopUsersByActivity(activities: Activity[], topN: number): string[] {
 
 getTopUsersByActivity(activities, 2);
 
+export { };
+

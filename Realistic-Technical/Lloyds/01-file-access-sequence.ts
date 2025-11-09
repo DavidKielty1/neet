@@ -78,5 +78,7 @@ function detectSuspiciousFileAccess(accesses: FileAccessa[], threshold: number, 
 }
   
 detectSuspiciousFileAccess(fileAccessesa, 3, 10);
+
+export { };
   
   

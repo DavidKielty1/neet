@@ -89,3 +89,5 @@ function detectUnusualAccessTimes(
 
 detectUnusualAccessTimes(accesses, 9, 17, 2);
 
+export { };
+

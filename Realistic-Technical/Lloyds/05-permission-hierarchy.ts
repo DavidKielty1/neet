@@ -79,3 +79,5 @@ function hasAccess(root: HierarchyNode, permissions: Permissions, userId: string
 
 hasAccess(hierarchy, permissions, "e1", "resource1");
 
+export { };
+

@@ -89,3 +89,5 @@ function detectDownloadBursts(downloads: Download[], threshold: number, windowMi
 
 detectDownloadBursts(downloads, 3, 15);
 
+export { };
+

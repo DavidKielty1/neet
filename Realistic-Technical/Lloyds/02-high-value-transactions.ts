@@ -81,3 +81,5 @@ function detectHighValueTransactions(transactions: Transaction[], maxAmount: num
 const result = detectHighValueTransactions(transactions, 10000, 1);
 console.log("Flagged users:", result);
 
+export { };
+

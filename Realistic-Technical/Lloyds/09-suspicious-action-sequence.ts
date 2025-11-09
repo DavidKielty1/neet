@@ -78,3 +78,5 @@ function detectSuspiciousSequence(
 
 detectSuspiciousSequence(actions, ["LOGIN", "DOWNLOAD", "DOWNLOAD", "LOGOUT"]);
 
+export { };
+
