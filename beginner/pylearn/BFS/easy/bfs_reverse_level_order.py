@@ -1,10 +1,12 @@
 from collections import deque
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
 
 def reverse_level_order(root: TreeNode) -> list[list[int]]:
     """
@@ -28,9 +30,9 @@ def reverse_level_order(root: TreeNode) -> list[list[int]]:
     - List manipulation
     """
     # TODO: Implement your solution here
-    
+
     if not root:
-        return [];
+        return []
 
     result = []
     queue = deque([root])
@@ -44,14 +46,14 @@ def reverse_level_order(root: TreeNode) -> list[list[int]]:
 
             level_nodes.append(node.val)
 
-            if(node.left):
+            if node.left:
                 queue.append(node.left)
-            if(node.right):
+            if node.right:
                 queue.append(node.right)
 
         result.append(level_nodes)
 
-    return level_nodes[::-1]
+    return result[::-1]
 
 
 # Test cases
@@ -66,16 +68,16 @@ if __name__ == "__main__":
     root.right = TreeNode(3)
     root.left.left = TreeNode(4)
     root.left.right = TreeNode(5)
-    
+
     print(reverse_level_order(root))  # Should print: [[4, 5], [2, 3], [1]]
-    
+
     # Test single node
     single = TreeNode(7)
     print(reverse_level_order(single))  # Should print: [[7]]
-    
+
     # Test empty tree
     print(reverse_level_order(None))  # Should print: []
-    
+
     # Test perfect binary tree
     root2 = TreeNode(1)
     root2.left = TreeNode(2)

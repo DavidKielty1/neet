@@ -37,31 +37,31 @@ def connect_nodes_at_same_level(root: TreeNode) -> TreeNode:
 
     pass
 
-    # if not root:
-    #     return root
+    if not root:
+        return root
 
-    # queue = deque([root])
+    queue = deque([root])
 
-    # while queue:
-    #     level_size = len(queue)
+    while queue:
+        level_size = len(queue)
 
-    #     # Process all nodes at current level
-    #     for i in range(level_size):
-    #         node = queue.popleft()
+        # Process all nodes at current level
+        for i in range(level_size):
+            node = queue.popleft()
 
-    #         # Connect to next node at same level (if not last node)
-    #         if i < level_size - 1:
-    #             node.next = queue[0]  # Next node is still in queue
-    #         else:
-    #             node.next = None  # Last node at this level
+            # Connect to next node at same level (if not last node)
+            if i < level_size - 1:
+                node.next = queue[0]  # Next node is still in queue
+            else:
+                node.next = None  # Last node at this level
 
-    #         # Add children to queue for next level
-    #         if node.left:
-    #             queue.append(node.left)
-    #         if node.right:
-    #             queue.append(node.right)
+            # Add children to queue for next level
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
 
-    # return root
+    return root
 
 
 def print_tree_with_connections(root: TreeNode):

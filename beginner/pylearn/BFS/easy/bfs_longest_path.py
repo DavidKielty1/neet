@@ -1,10 +1,12 @@
 from collections import deque
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
 
 def longest_path_to_leaf(root: TreeNode) -> int:
     """
@@ -29,8 +31,8 @@ def longest_path_to_leaf(root: TreeNode) -> int:
     # TODO: Implement your solution here
     if not root:
         return 0
-    
-    max_dist = float('-inf')
+
+    max_dist = float("-inf")
     queue = deque([root, 0])
 
     while queue:
@@ -43,11 +45,11 @@ def longest_path_to_leaf(root: TreeNode) -> int:
                 max_dist = max(max_dist, distance)
 
             if node.left:
-                queue.append(node.left, distance +1)
+                queue.append(node.left, distance + 1)
             if node.right:
                 queue.append(node.right, distance + 1)
 
-    return max_dist        
+    return max_dist
 
 
 # Test cases
@@ -62,9 +64,9 @@ if __name__ == "__main__":
     root.right = TreeNode(3)
     root.left.left = TreeNode(4)
     root.left.right = TreeNode(5)
-    
+
     print(longest_path_to_leaf(root))  # Should print: 3 (1->2->4)
-    
+
     # Test with deeper tree
     root2 = TreeNode(1)
     root2.left = TreeNode(2)
@@ -73,14 +75,14 @@ if __name__ == "__main__":
     root2.left.right = TreeNode(5)
     root2.left.left.left = TreeNode(6)
     print(longest_path_to_leaf(root2))  # Should print: 4 (1->2->4->6)
-    
+
     # Test single node (is a leaf)
     single = TreeNode(7)
     print(longest_path_to_leaf(single))  # Should print: 1
-    
+
     # Test empty tree
     print(longest_path_to_leaf(None))  # Should print: 0
-    
+
     # Test unbalanced tree
     root3 = TreeNode(1)
     root3.left = TreeNode(2)
