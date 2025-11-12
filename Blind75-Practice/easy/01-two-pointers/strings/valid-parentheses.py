@@ -38,23 +38,35 @@ def is_valid_parentheses(s: str) -> bool:
 
     Approach 1: Using hashmap for close→open mapping
     """
-    close_to_opens = {
-        ")": "(",
-        "]": "[",
-        "}": "{",
-    }
+
+    close_to_open = {"}": "{", ")": "(", "]": "["}
     stack = []
 
-    for char in s:
-        if char in close_to_opens:
-            # Closing bracket: check if it matches the most recent opener
-            if not stack or stack.pop() != close_to_opens[char]:
-                return False
+    for char in range(len(s)):
+        if not stack or stack.pop != close_to_open[char]:
+            return False
         else:
-            # Opening bracket: push to stack
             stack.append(char)
 
     return len(stack) == 0
+
+    # close_to_opens = {
+    #     ")": "(",
+    #     "]": "[",
+    #     "}": "{",
+    # }
+    # stack = []
+
+    # for char in s:
+    #     if char in close_to_opens:
+    #         # Closing bracket: check if it matches the most recent opener
+    #         if not stack or stack.pop() != close_to_opens[char]:
+    #             return False
+    #     else:
+    #         # Opening bracket: push to stack
+    #         stack.append(char)
+
+    # return len(stack) == 0
 
 
 # Test cases

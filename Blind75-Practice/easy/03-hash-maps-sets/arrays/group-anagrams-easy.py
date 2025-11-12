@@ -18,8 +18,11 @@ Output: false
 Time: O(n), Space: O(1) - at most 26 characters
 """
 
-from typing import List
 from collections import Counter
+
+
+def is_anagram_alt(s: str, t: str) -> bool:
+    return Counter(s) == Counter(t)
 
 
 def is_anagram(s: str, t: str) -> bool:
@@ -27,8 +30,19 @@ def is_anagram(s: str, t: str) -> bool:
     Hash map approach to count character frequencies
     Time: O(n), Space: O(1)
     """
-    # TODO: Implement hash map solution
-    pass
+
+    if len(s) != len(t):  # Quick optimization
+        return False
+
+    target_map = {}
+    for char in t:
+        target_map[char] = target_map.get(char, 0) + 1
+
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+
+    return char_count == target_map
 
 
 # Test cases

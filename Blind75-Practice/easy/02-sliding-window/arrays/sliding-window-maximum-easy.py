@@ -27,28 +27,68 @@ def max_of_all_subarrays(arr: List[int], k: int) -> List[int]:
     Sliding window with deque to maintain max elements
     Time: O(n), Space: O(k)
     """
-    if not arr or k <= 0:
-        return []
-
-    queue = deque()  # Store indices, not values
-    output = []
+    queue = deque()
+    result = []
 
     for i in range(len(arr)):
-        # Remove indices outside current window
         while queue and queue[0] <= i - k:
             queue.popleft()
 
-        # Remove indices whose values are smaller than current
         while queue and arr[queue[-1]] <= arr[i]:
             queue.pop()
 
         queue.append(i)
 
-        # begin appending once queue reaches length of k
         if i >= k - 1:
-            output.append(arr[queue[0]])
+            result.append(arr[queue[0]])
 
-    return output
+    return result
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+    # if not arr or k <= 0:
+    #     return []
+
+    # queue = deque()  # Store indices, not values
+    # output = []
+
+    # for i in range(len(arr)):
+    #     # Remove indices outside current window
+    #     while queue and queue[0] <= i - k:
+    #         queue.popleft()
+
+    #     # Remove indices whose values are smaller than current
+    #     while queue and arr[queue[-1]] <= arr[i]:
+    #         queue.pop()
+
+    #     queue.append(i)
+
+    #     # begin appending once queue reaches length of k
+    #     if i >= k - 1:
+    #         output.append(arr[queue[0]])
+
+    # return output
 
 
 # Test cases

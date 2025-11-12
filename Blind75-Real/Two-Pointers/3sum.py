@@ -34,14 +34,39 @@ from typing import List
 
 def three_sum(nums: List[int]) -> List[List[int]]:
     """
-    Three pointers approach:
-    1. Sort the array
-    2. Fix first element, use two pointers for remaining two
-    3. Skip duplicates to avoid duplicate triplets
+    Three pointers approach with cleaner duplicate handling
     Time: O(n²), Space: O(1)
     """
-    # TODO: Implement three pointers solution
-    pass
+    nums.sort()
+    result = []
+
+    for i in range(len(nums) - 2):
+        if nums[i] > 0:
+            break
+
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue
+
+        left, right = i + 1, len(nums) - 1
+
+        while left < right:
+            total = nums[i] + nums[left] + nums[right]
+
+            if total < 0:
+                left += 1
+            elif total > 0:
+                right -= 1
+            else:
+                result.append([nums[i], nums[left], nums[right]])
+
+                left += 1
+                right -= 1
+                while left < right and nums[left] == nums[left - 1]:
+                    left += 1
+                while left < right and nums[right] == nums[right + 1]:
+                    right -= 1
+
+    return result
 
 
 # Test cases

@@ -23,11 +23,19 @@ from typing import List
 
 
 # nums: [3, 2, 2, 3]
-# nums: [0, 1, 2, 2, 3, 0, 4, 2] target = 2
+# nums: [0, 1, 4, 0, 3, 2, 2, 2] target = 2
 def remove_element(nums: List[int], val: int) -> int:
     """
     Two pointers: write index tracks where to place next 'keep' element
     """
+    left = 0
+
+    for right in range(len(nums)):
+        if nums[right] != val:
+            nums[left] = nums[right]
+            left += 1
+
+    return left
 
 
 # Test cases
@@ -39,7 +47,7 @@ if __name__ == "__main__":
     print(f"Remove Element: {result1}, nums = {nums1}")  # 2, [2, 2, _, _]
 
     # Test 2
-    nums2 = [0, 1, 2, 2, 3, 0, 4, 2]
+    nums2 = [0, 1, 3, 0, 4, 0, 4, 2]
     val2 = 2
     result2 = remove_element(nums2, val2)
     print(f"Remove Element: {result2}, nums = {nums2}")  # 5, [0, 1, 3, 0, 4, _, _, _]

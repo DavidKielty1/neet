@@ -18,12 +18,19 @@ Time: O(n), Space: O(1)
 """
 
 
-# e.g. array = [1, 0, 0, 2, 3]
+# e.g. array = [1, 0, 0, 2, 3, 0]
 def move_zeroes(nums):
     # slow, fast.
     # range for fast read moving digits to start
     # while for slow write with changes remaining to 0
-    pass
+    left = 0
+    right = 0
+
+    while right < len(nums):  # Outer loop with bounds check
+        if nums[right] != 0:  # ✓ Use if, not while!
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+        right += 1
 
 
 # Test cases

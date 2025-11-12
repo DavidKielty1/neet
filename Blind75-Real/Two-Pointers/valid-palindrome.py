@@ -38,8 +38,18 @@ def is_palindrome(s: str) -> bool:
     - Move pointers inward until they meet
     Time: O(n), Space: O(1)
     """
-    # TODO: Implement two pointers solution
-    pass
+    cleaned = "".join(char for char in s.lower() if s.isalnum())
+
+    left = 0
+    right = len(cleaned) - 1
+
+    while left <= right:
+        if cleaned[left] != cleaned[right]:
+            return False
+        left += 1
+        right -= 1
+
+    return True
 
 
 def is_palindrome_clean(s: str) -> bool:

@@ -21,7 +21,27 @@ from collections import Counter
 import heapq
 
 
-def top_k_frequent(nums: List[int], k: int) -> List[int]:
+def top_k_frequent_no_heap_solution(nums: List[int], k: int) -> List[int]:
+    """
+    Hash map + bucket sort
+    Time: O(n log k), Space: O(n)
+    """
+    # TODO: Implement hash map + heap solution
+    count = Counter(nums)
+    frequency = [[] for i in range(len(nums) + 1)]
+
+    for num, count in count.items():
+        frequency[count].append(num)
+
+    result = []
+    for i in range(len(frequency) - 1, 0, -1):
+        for n in frequency[i]:
+            result.append(n)
+            if len(result) == k:
+                return result
+
+
+def top_k_frequent_heap_solution(nums: List[int], k: int) -> List[int]:
     """
     Hash map + heap approach
     Time: O(n log k), Space: O(n)

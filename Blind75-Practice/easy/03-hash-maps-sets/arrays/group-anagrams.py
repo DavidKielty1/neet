@@ -31,8 +31,17 @@ def group_anagrams(strs: List[str]) -> List[List[str]]:
     Hash map with sorted string as key
     Time: O(n * m * log(m)), Space: O(n * m)
     """
-    # TODO: Implement hash map solution
-    pass
+    result = defaultdict()
+
+    for str in strs:
+        count = [0] * 26
+
+        for c in str:
+            count[ord(c) - ord("a")] += 1
+
+        result[tuple(count)].append(str)
+
+    return result.values()
 
 
 # Test cases

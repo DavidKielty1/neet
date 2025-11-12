@@ -30,7 +30,7 @@ def first_uniq_char(s: str) -> int:
     Time: O(n), Space: O(1)
     #"""
 
-    pass
+    # create map for count, iterate through, return first element which is count == 1
 
     # char_count = {}
 

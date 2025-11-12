@@ -32,8 +32,38 @@ def search(nums: List[int], target: int) -> int:
     Binary search in rotated sorted array
     Time: O(log n), Space: O(1)
     """
-    # TODO: Implement rotated binary search
-    pass
+    left, right = 0, len(nums) - 1
+
+    # [0 1 2 3 4 5 6]
+    # [4,5,6,7,0,1,2], target = 6
+    #  l
+    #              r
+    #        m
+
+    # sorted rotated array binary search.
+    # Always initial check to see if mid is smaller or bigger than left
+    # if mid is bigger than left -
+    while left <= right:
+        mid = (left + right) // 2
+
+        if nums[mid] == target:
+            return mid
+
+        # Determine which side is properly sorted
+        if nums[left] <= nums[mid]:
+            # Left side is sorted [left...mid]
+            if target > nums[mid] or target < nums[left]:
+                left = mid + 1
+            else:
+                right = mid - 1
+        else:
+            # Right side is sorted [mid...right]
+            if target < nums[mid] or target > nums[right]:
+                right = mid - 1
+            else:
+                left = mid + 1
+
+    return -1
 
 
 # Test cases

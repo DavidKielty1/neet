@@ -35,8 +35,21 @@ def max_area(height: List[int]) -> int:
     - Only moving the smaller height can potentially increase the area
     Time: O(n), Space: O(1)
     """
-    # TODO: Implement two pointers solution
-    pass
+    maxArea = 0
+    left, right = 0, len(height) - 1
+
+    while left < right:
+        width = right - left
+        vertical = min(height[right], height[left])
+        area = width * vertical
+        maxArea = max(maxArea, area)
+
+        if height[right] > height[left]:
+            left += 1
+        else:
+            right -= 1
+
+    return maxArea
 
 
 # Test cases

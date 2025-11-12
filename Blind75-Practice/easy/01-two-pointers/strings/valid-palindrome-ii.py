@@ -26,7 +26,27 @@ def valid_palindrome(s: str) -> bool:
 
     Remember return
     """
-    pass
+
+    def retry(left, right):
+        while left < right:
+            if s[left] != s[right]:
+                return False
+
+            left += 1
+            right -= 1
+
+        return True
+
+    left, right = 0, len(s) - 1
+
+    while left < right:
+        if s[left] != s[right]:
+            return retry(left + 1, right) or retry(left, right - 1)
+
+        left += 1
+        right -= 1
+
+    return True
 
 
 # Test cases

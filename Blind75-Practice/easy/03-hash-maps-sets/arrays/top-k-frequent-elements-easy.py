@@ -28,7 +28,14 @@ def most_frequent(nums: List[int]) -> int:
     Time: O(n), Space: O(n)
     """
     # TODO: Implement hash map solution
-    pass
+    count = Counter(nums)
+    max_count = 0
+    most_freq_element = None
+    for num, freq in count.items():
+        if freq > max_count:
+            max_count = freq
+            most_freq_element = num
+    return most_freq_element
 
 
 # Test cases

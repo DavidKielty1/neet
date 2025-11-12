@@ -45,7 +45,7 @@ def min_window(s: str, t: str) -> str:
         window_count[right_ch] = window_count.get(right_ch, 0) + 1
 
         if right_ch in t_count and window_count[right_ch] == t_count[right_ch]:
-            formed = +1
+            formed += 1
 
         while left <= right and required == formed:
             curr_len = right - left + 1
@@ -58,7 +58,7 @@ def min_window(s: str, t: str) -> str:
             if left_ch in t_count and window_count[left_ch] < t_count[left_ch]:
                 formed -= 1
 
-            left -= 1
+            left += 1
 
     return s[min_start : min_start + min_len] if min_len != float("inf") else ""
 

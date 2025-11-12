@@ -33,8 +33,17 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     Hash map approach: Store complement -> index mapping
     Time: O(n), Space: O(n)
     """
-    # TODO: Implement hash map solution
-    pass
+    seen = {}
+
+    for i, val in enumerate(nums):
+        complement = target - val
+
+        if complement in seen:
+            return [seen[complement], i]
+
+        seen[val] = i
+
+    return []
 
 
 def two_sum_sorted(nums: List[int], target: int) -> List[int]:

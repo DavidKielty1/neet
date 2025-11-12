@@ -28,6 +28,30 @@ from typing import List
 def find_anagrams(s: str, p: str) -> List[int]:
     pass
 
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
     # if len(p) > len(s):
     #     return []
 

@@ -11,7 +11,9 @@ Output: 2
 Explanation: 5 is found at index 2.
 
 Example 2:
-Input: nums = [1, 3, 5, 7, 9], target = 4
+indexes        0  1  2  3  4  5
+Input: nums = [1, 3, 5, 7, 9, 0], target = 4
+
 Output: -1
 Explanation: 4 is not found in the array.
 
@@ -26,8 +28,20 @@ def find_target(nums: List[int], target: int) -> int:
     Binary search implementation
     Time: O(log n), Space: O(1)
     """
-    # TODO: Implement binary search
-    pass
+    left, right = 0, len(nums) - 1
+
+    while right >= left:
+        mid = (left + right) // 2
+
+        if nums[mid] == target:
+            return mid
+
+        if target > nums[mid]:
+            left = mid + 1
+        elif target < nums[mid]:
+            right = mid - 1
+
+    return -1
 
 
 # Test cases

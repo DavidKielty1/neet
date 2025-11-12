@@ -45,6 +45,7 @@ def trap(height: List[int]) -> int:
                 max_left = height[left]
             else:
                 water += max_left - height[left]
+
             left += 1
         else:
             # If left is bigger process right
@@ -52,6 +53,7 @@ def trap(height: List[int]) -> int:
                 max_right = height[right]
             else:
                 water += max_right - height[right]
+
             right -= 1
 
     return water

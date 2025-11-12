@@ -64,8 +64,8 @@ type Session = {
 };
 
 type ActiveSession = {
-  location: string;
   ip: string;
+  location: string;
   loginTime: number;
   logoutTime: number | null;
 };
@@ -99,29 +99,113 @@ function detectConcurrentSessions(
   cityDistances: CityDistances,
   sessionTimeoutHours: number = 4
 ): SuspiciousUser[] {
-  const SuspiciousUsers = []
+  const suspiciousUsers: SuspiciousUser[] = []
+  const timeoutMs = sessionTimeoutHours * 60 * 60 * 1000;
 
   // Hints:
   // 1. Group sessions by userId
-  const userActivityMap = new Map()
+  const userActivityMap = new Map<string, Array<{time: number, location: string, action: string, ip: string}>>();
+
   for (const s of sessions) {
-    const time = new Date(s.timestamp).getTime();
-    if (!userActivityMap.has(s.userId)) userActivityMap.set(s.userId, {});
-    userActivityMap.get(s.userId)!.push({time, location: s.location, action: s.action, ip: s.ip})
+      const time = new Date(s.timestamp).getTime();
+      if (!userActivityMap.has(s.userId)) userActivityMap.set(s.userId, []);
+      userActivityMap.get(s.userId)!.push({time, location: s.location, action: s.action, ip: s.ip})
   }
 
+  // look for concurrent sessions
   for (const [userId, activities] of userActivityMap) {
-    // 2. Sort by timestamp
-    activities.sort((a, b) => a.time - b.time)
+        // 2. Sort by timestamp
+        activities.sort((a, b) => a.time - b.time)
+        // 3. Build active sessions: pair login/logout events, handle missing logouts with timeout
+        const completedSessions: ActiveSession[] = [];
+        let currentSessionsCount = 0
+        let maxSessionsCount = 0
+        let impossibleTravelDetected: ImpossibleTravel | undefined;
 
-  }
+        for (let i = 0; i < activities.length; i++) {
+            if (activities[i].action === "login") {
+                completedSessions.push({
+                    ip: activities[i].ip, 
+                    location: activities[i].location, 
+                    loginTime: activities[i].time, 
+                    logoutTime: null
+                })
+                currentSessionsCount += 1
+                maxSessionsCount = Math.max(maxSessionsCount, currentSessionsCount);
+            } else if (activities[i].action === "logout") {
+                const sessionIndex = completedSessions.findIndex(
+                  s => s.ip === activities[i].ip && s.logoutTime === null
+                );
+                
+                if (sessionIndex !== -1) {
+                    completedSessions[sessionIndex].logoutTime = activities[i].time;
+                    currentSessionsCount -= 1
+                }
+            }
+        }        
 
-  // 3. Build active sessions: pair login/logout events, handle missing logouts with timeout
-  // 4. Find time periods where 2+ sessions overlap from different locations
-  // 5. Check for impossible travel: calculate if distance/time ratio exceeds reasonable speed (e.g., 900 km/h for plane)
-  // 6. Return flagged users with detailed violation information
-  
-  return SuspiciousUsers;
+        for (let session  of completedSessions) {
+            if (session.logoutTime === null) {
+                session.logoutTime = session.loginTime + timeoutMs;
+            }
+        }
+
+        const uniqueLocations = new Set(completedSessions.map(s => s.location));
+        const hasConcurrentDifferentLocations = maxSessionsCount >= 2 && uniqueLocations.size >= 2;
+
+        // look for impossible distances
+        for (let i = 1; i < activities.length; i++) {
+            if (activities[i].action === "login" && activities[i-1].action === "login") {
+                const prevLocation = activities[i-1].location;
+                const currLocation = activities[i].location;
+
+                if (prevLocation != currLocation) {
+                    const distance = getDistance(prevLocation, currLocation, cityDistances);
+                    const timeMinutes = (activities[i].time - activities[i-1].time) / (60 * 1000)
+
+                    if (distance > 0 && isImpossibleTravel(distance, timeMinutes)) {
+                        impossibleTravelDetected = {
+                            from: prevLocation,
+                            to: currLocation,
+                            distanceKm: distance,
+                            timeMinutes: Math.round(timeMinutes)
+                        };
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (hasConcurrentDifferentLocations || impossibleTravelDetected) {
+            let violationType: SuspiciousUser['violationType'];
+            
+            if (impossibleTravelDetected && hasConcurrentDifferentLocations) {
+              violationType = "concurrent_and_impossible_travel";
+            } else if (impossibleTravelDetected) {
+              violationType = "impossible_travel";
+            } else if (maxSessionsCount >= 3) {
+              violationType = "multiple_concurrent";
+            } else {
+              violationType = "concurrent_sessions";
+            }
+      
+            suspiciousUsers.push({
+              userId,
+              violationType,
+              maxConcurrentSessions: maxSessionsCount,
+              sessions: completedSessions.map(s => ({
+                location: s.location,
+                ip: s.ip,
+                loginTime: new Date(s.loginTime).toISOString(),
+                logoutTime: s.logoutTime ? new Date(s.logoutTime).toISOString() : null
+              })),
+              ...(impossibleTravelDetected && { impossibleTravel: impossibleTravelDetected })
+            });
+        }
+    }
+    
+    // 6. Return flagged users with detailed violation information
+    return suspiciousUsers;
 }
 
 // Helper function to calculate if travel is impossible
@@ -176,9 +260,7 @@ const cityDistances: CityDistances = {
   "Tokyo-Sydney": 7800,
 };
 
-console.log("Test 1 - Impossible travel:", detectConcurrentSessions(sessions1, cityDistances));
-console.log("Test 2 - Multiple concurrent:", detectConcurrentSessions(sessions2, cityDistances));
-console.log("Test 3 - Orphaned sessions:", detectConcurrentSessions(sessions3, cityDistances));
-
-export { };
+console.log("Test 1 - Impossible travel:", JSON.stringify(detectConcurrentSessions(sessions1, cityDistances), null, 2));
+console.log("Test 2 - Multiple concurrent:", JSON.stringify(detectConcurrentSessions(sessions2, cityDistances), null, 2));
+console.log("Test 3 - Orphaned sessions:", JSON.stringify(detectConcurrentSessions(sessions3, cityDistances), null, 2));
 
