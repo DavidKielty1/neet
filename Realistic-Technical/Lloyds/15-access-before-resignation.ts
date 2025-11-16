@@ -51,12 +51,58 @@ type FlaggedUser = {
   daysUntilResignation: number;
 };
 
+
 function detectAccessBeforeResignation(
   accessEvents: AccessEvent[],
   resignations: Resignation[],
-  lookbackDays: number
+  lookbackDays: number,
+  sensitiveResourceTypes: string[],
+  suspciousThreshold: number
 ): FlaggedUser[] {
-  // Your implementation here
+  const lookbackDaysToMs = new Date(lookbackDays).getTime();
+  const FlaggedUsers = new Set<string>() 
+  
+  const resignationsMap: Record<string, Resignation> = {}
+  for (const r of resignations) {
+    resignationsMap[r.userId] = r;  // ✓ Store the whole object
+  }
+
+
+  const userActivityMap = new Map<string, {resourceType: string, accessType: string, activityTime: number}[]>()
+  for (const a of accessEvents) {
+      if (!resignationsMap[a.userId]) {
+          continue;
+      }
+      const activityTime = new Date(a.timestamp).getTime()
+      if (!userActivityMap.has(a.userId)) userActivityMap.set(a.userId, [])
+      userActivityMap.get(a.userId)!
+          .push({resourceType: a.resourceType, accessType: a.accessType, activityTime})
+  }
+
+  // loop through per user
+  for (const [userId, activities] of userActivityMap) {
+    const resignation = resignationsMap[userId];  // ✓ Get once
+    const noticeGivenTime = new Date(resignation.noticeGivenDate).getTime();
+    const resignationTime = new Date(resignation.resignationDate).getTime();
+
+      for ()
+
+
+        // sort by time -- perhaps no need to sort, filter instead
+        // .filter logic for activities beyond resignationDateToMs + lookbackDaysToMs
+        // suspiciousActionCount = 0
+  
+        // no need for window here
+        // extra: map/set for resources viewed/downloaded (may only want unique sources)
+            // in which case look at uniqueResources.size/length if > threshold add to FlaggedUsers
+        
+        // for loop i = 0 etc. for length of activities
+            // if sensitiveResourceTypes.includes activity.resourceType && accessType "download || view" -> suspiciousActionCount++
+        
+        // if suspiciousActionCount > suspciousThreshold: FlaggedUsers.add(userId)
+  }
+
+  // return Array.from(FlaggedUsers)
   return [];
 }
 
@@ -72,7 +118,7 @@ const resignations: Resignation[] = [
   { userId: "u1", resignationDate: "2024-01-20T00:00:00Z", noticeGivenDate: "2024-01-10T00:00:00Z" },
 ];
 
-console.log(detectAccessBeforeResignation(accessEvents, resignations, 14));
+console.log(detectAccessBeforeResignation(accessEvents, resignations, 14, ["customer_db", "financial", "competitor_info", "intellectual_property"], 2));
 
 export { };
 

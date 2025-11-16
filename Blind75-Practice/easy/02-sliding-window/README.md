@@ -1,219 +1,162 @@
-# Sliding Window Technique
+# Sliding Window
 
-## Overview
+## Pattern Overview
 
-The **Sliding Window** technique is a powerful algorithmic pattern that maintains a "window" of elements in a data structure (usually an array or string) and efficiently slides this window to solve problems involving contiguous subarrays or substrings.
+The Sliding Window pattern is used to perform operations on a specific window size of an array or string. It's particularly useful for:
 
-## When to Use Sliding Window
+- Finding subarrays/substrings with certain properties
+- Maximum/minimum in subarrays
+- Problems with contiguous sequences
+- Optimization problems with constraints
 
-### ✅ **Perfect for:**
+## Key Concepts
 
-- **Contiguous subarray/substring problems**
-- **Problems with fixed or variable window size**
-- **Finding optimal subarrays** (maximum, minimum, target sum)
-- **String problems** with character frequency constraints
-- **Problems asking for "longest" or "shortest" subarrays**
+1. **Fixed Window** - Window size remains constant
+2. **Variable Window** - Window size changes based on conditions
+3. **Window Expansion** - Grow window by moving right pointer
+4. **Window Contraction** - Shrink window by moving left pointer
 
-### ❌ **Not ideal for:**
+## Problems in This Category
 
-- **Non-contiguous elements**
-- **Problems requiring backtracking**
-- **Complex nested conditions**
-- **Problems with random access patterns**
+### Easy Level
 
-## Sliding Window Patterns
+| Problem                         | LeetCode # | Window Type | Key Technique   |
+| ------------------------------- | ---------- | ----------- | --------------- |
+| Best Time to Buy and Sell Stock | 121        | Variable    | Track min price |
 
-### 1. **Fixed Size Window**
+### Medium Level (for reference)
 
-Window size is predetermined and constant.
+- Longest Substring Without Repeating Characters (3)
+- Longest Repeating Character Replacement (424)
+- Permutation in String (567)
+- Minimum Window Substring (76)
+
+## Common Patterns
+
+### 1. Fixed Window Size
 
 ```python
-# Example: Maximum sum of subarray of size k
-def max_sum_subarray(nums, k):
-    window_sum = sum(nums[:k])
+def fixed_window(arr, k):
+    # Calculate first window
+    window_sum = sum(arr[:k])
     max_sum = window_sum
 
-    for i in range(k, len(nums)):
-        window_sum = window_sum - nums[i-k] + nums[i]
+    # Slide window
+    for i in range(k, len(arr)):
+        window_sum = window_sum - arr[i-k] + arr[i]
         max_sum = max(max_sum, window_sum)
 
     return max_sum
 ```
 
-**Use cases:**
-
-- Maximum Sum Subarray of Size K
-- Average of Subarrays of Size K
-- First Negative Number in Every Window of Size K
-
-### 2. **Variable Size Window (Expand/Contract)**
-
-Window size changes based on conditions.
+### 2. Variable Window (Expand/Contract)
 
 ```python
-# Example: Longest substring without repeating characters
-def longest_substring(s):
-    char_set = set()
+def variable_window(arr, target):
     left = 0
-    max_length = 0
-
-    for right in range(len(s)):
-        while s[right] in char_set:
-            char_set.remove(s[left])
-            left += 1
-
-        char_set.add(s[right])
-        max_length = max(max_length, right - left + 1)
-
-    return max_length
-```
-
-**Use cases:**
-
-- Longest Substring Without Repeating Characters
-- Minimum Window Substring
-- Longest Substring with At Most K Distinct Characters
-
-### 3. **Two Pointers with Conditions**
-
-Use two pointers to maintain window boundaries.
-
-```python
-# Example: Subarray with given sum
-def subarray_sum(nums, target):
-    left = 0
-    current_sum = 0
-
-    for right in range(len(nums)):
-        current_sum += nums[right]
-
-        while current_sum > target:
-            current_sum -= nums[left]
-            left += 1
-
-        if current_sum == target:
-            return [left, right]
-
-    return []
-```
-
-## Problem Categories
-
-### **Arrays**
-
-- **Maximum Subarray** - Kadane's algorithm variant
-- **Minimum Size Subarray Sum** - Variable window with sum constraint
-- **Subarray Product Less Than K** - Variable window with product constraint
-- **Maximum Sum Subarray of Size K** - Fixed window optimization
-
-### **Strings**
-
-- **Longest Substring Without Repeating Characters** - Variable window with character tracking
-- **Minimum Window Substring** - Variable window with character frequency
-- **Longest Substring with At Most K Distinct Characters** - Variable window with character count
-- **Permutation in String** - Fixed window with character frequency matching
-
-## Time & Space Complexity
-
-| Pattern         | Time Complexity | Space Complexity                   |
-| --------------- | --------------- | ---------------------------------- |
-| Fixed Window    | O(n)            | O(1)                               |
-| Variable Window | O(n)            | O(k) where k is character set size |
-| Two Pointers    | O(n)            | O(1)                               |
-
-## Common Window Operations
-
-### **Expand Window:**
-
-```python
-# Add new element to window
-window.add(nums[right])
-right += 1
-```
-
-### **Contract Window:**
-
-```python
-# Remove element from window
-window.remove(nums[left])
-left += 1
-```
-
-### **Update Result:**
-
-```python
-# Check if current window is optimal
-if window_meets_condition():
-    update_result()
-```
-
-## Common Mistakes to Avoid
-
-1. **Incorrect window expansion/contraction** - Ensure proper order of operations
-2. **Missing edge cases** - Empty arrays, single elements, no valid windows
-3. **Wrong termination conditions** - Know when to stop expanding/contracting
-4. **Inefficient data structures** - Use appropriate data structures for window tracking
-5. **Off-by-one errors** - Be careful with window size calculations
-
-## Practice Strategy
-
-### **Beginner Level:**
-
-1. **Maximum Sum Subarray of Size K** - Fixed window basics
-2. **Longest Substring Without Repeating Characters** - Variable window with set
-3. **Minimum Size Subarray Sum** - Variable window with sum constraint
-
-### **Intermediate Level:**
-
-1. **Minimum Window Substring** - Complex variable window
-2. **Longest Substring with At Most K Distinct Characters** - Character counting
-3. **Subarray Product Less Than K** - Product instead of sum
-
-### **Advanced Level:**
-
-1. **Permutation in String** - Fixed window with frequency matching
-2. **Maximum Sum Subarray** - Kadane's algorithm
-3. **Sliding Window Maximum** - Deque-based optimization
-
-## Key Insights
-
-1. **Window invariants** - What condition must the window always satisfy?
-2. **Expansion vs contraction** - When to grow vs shrink the window
-3. **Data structure choice** - Set, map, or array for tracking window state
-4. **Optimization opportunities** - Can you avoid recalculating everything?
-5. **Edge case handling** - What happens with empty inputs or no valid windows?
-
-## Interview Tips
-
-1. **Start with brute force** - O(n²) solution first, then optimize
-2. **Explain the window concept** - Draw it out if helpful
-3. **Discuss trade-offs** - Space vs time complexity
-4. **Handle edge cases** - Empty inputs, no valid solutions
-5. **Code incrementally** - Start with basic window, then add conditions
-
-## Template for Variable Window
-
-```python
-def sliding_window_template(s):
-    left = 0
+    window_sum = 0
     result = 0
-    window_data = {}  # or set, or counter
 
-    for right in range(len(s)):
+    for right in range(len(arr)):
         # Expand window
-        window_data[s[right]] = window_data.get(s[right], 0) + 1
+        window_sum += arr[right]
 
-        # Contract window if needed
-        while window_condition_violated():
-            window_data[s[left]] -= 1
-            if window_data[s[left]] == 0:
-                del window_data[s[left]]
+        # Contract window while condition met
+        while window_sum >= target:
+            result = min(result, right - left + 1)
+            window_sum -= arr[left]
             left += 1
-
-        # Update result
-        result = max(result, right - left + 1)
 
     return result
 ```
 
-Remember: **Sliding window is about maintaining optimal subarrays efficiently**. It's the go-to technique for contiguous element problems!
+### 3. Best Time to Buy/Sell Pattern
+
+```python
+def max_profit(prices):
+    min_price = float('inf')
+    max_profit = 0
+
+    for price in prices:
+        min_price = min(min_price, price)
+        max_profit = max(max_profit, price - min_price)
+
+    return max_profit
+```
+
+## When to Use Sliding Window
+
+✅ **Use when:**
+
+- Problems involve subarrays/substrings
+- Looking for longest/shortest/maximum/minimum
+- Contiguous sequence is required
+- Can optimize from O(n²) to O(n)
+
+❌ **Don't use when:**
+
+- Need non-contiguous elements
+- Order doesn't matter
+- Need global view of all elements
+
+## Time & Space Complexity
+
+| Approach       | Time           | Space        | Notes                       |
+| -------------- | -------------- | ------------ | --------------------------- |
+| Sliding Window | O(n)           | O(1) or O(k) | k = unique elements tracked |
+| Brute Force    | O(n²) or O(n³) | O(1)         | Check all subarrays         |
+
+## Tips & Tricks
+
+1. **Two Pointers**: Sliding window uses left and right pointers
+2. **Hash Map**: Often combined to track elements in window
+3. **Window State**: Maintain window's state (sum, count, etc.)
+4. **Expand First**: Usually expand with right, contract with left
+5. **While vs If**: Use `while` for contraction when multiple steps needed
+
+## Common Window States to Track
+
+- **Sum** - Total of elements in window
+- **Count** - Number of specific elements
+- **Frequency Map** - Character/element frequencies
+- **Min/Max** - Extremes within window
+- **Unique Count** - Number of distinct elements
+
+## Template Pattern
+
+```python
+def sliding_window_template(arr):
+    left = 0
+    window_state = initialize()  # sum, count, map, etc.
+    result = initialize_result()
+
+    for right in range(len(arr)):
+        # 1. Add arr[right] to window
+        update_window_state(arr[right])
+
+        # 2. Contract window if needed
+        while window_invalid():
+            # Remove arr[left] from window
+            update_window_state(arr[left], remove=True)
+            left += 1
+
+        # 3. Update result
+        result = update_result(result, window_state)
+
+    return result
+```
+
+## Edge Cases to Consider
+
+- Empty array/string
+- Single element
+- Window size larger than array
+- All elements same
+- No valid window exists
+
+## Related Patterns
+
+- **Two Pointers** - Base technique for sliding window
+- **Hash Map** - Often used to track window contents
+- **Monotonic Queue/Stack** - For min/max in sliding window
+- **Dynamic Programming** - Some problems can use either approach

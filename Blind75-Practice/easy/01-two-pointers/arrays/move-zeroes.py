@@ -26,8 +26,8 @@ def move_zeroes(nums):
     left = 0
     right = 0
 
-    while right < len(nums):  # Outer loop with bounds check
-        if nums[right] != 0:  # ✓ Use if, not while!
+    for right in range(len(nums)):
+        if nums[right] != 0:
             nums[left], nums[right] = nums[right], nums[left]
             left += 1
         right += 1
