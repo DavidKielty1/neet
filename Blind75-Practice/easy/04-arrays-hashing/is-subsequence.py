@@ -1,0 +1,118 @@
+"""
+LeetCode 392: Is Subsequence
+Difficulty: Easy
+Pattern: Arrays & Hashing / Two Pointers
+
+Problem:
+Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
+
+A subsequence of a string is a new string that is formed from the original string by
+deleting some (can be none) of the characters without disturbing the relative positions
+of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
+
+Example 1:
+Input: s = "abc", t = "ahbgdc"
+Output: true
+
+Example 2:
+Input: s = "axc", t = "ahbgdc"
+Output: false
+
+Constraints:
+- 0 <= s.length <= 100
+- 0 <= t.length <= 10^4
+- s and t consist only of lowercase English letters
+
+Follow up: Suppose there are lots of incoming s, say s1, s2, ..., sk where k >= 10^9,
+and you want to check one by one to see if t has its subsequence. In this scenario,
+how would you change your code?
+
+Time Complexity: O(n) where n = length of t
+Space Complexity: O(1)
+"""
+
+
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        """
+        Approach: Two pointers
+
+        Strategy:
+        1. Use pointer for s and pointer for t
+        2. Iterate through t
+        3. When characters match, advance s pointer
+        4. Check if all characters in s were found
+        """
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        if not s:
+            return True
+
+        s_idx = 0
+
+        for char in t:
+            if s_idx < len(s) and char == s[s_idx]:
+                s_idx += 1
+
+        return s_idx == len(s)
+
+
+# Alternative using iterator
+class SolutionIterator:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        t_iter = iter(t)
+        return all(char in t_iter for char in s)
+
+
+# Test cases
+if __name__ == "__main__":
+    solution = Solution()
+
+    # Test case 1
+    assert solution.isSubsequence("abc", "ahbgdc") == True
+    print("✓ Test case 1 passed")
+
+    # Test case 2
+    assert solution.isSubsequence("axc", "ahbgdc") == False
+    print("✓ Test case 2 passed")
+
+    # Test case 3
+    assert solution.isSubsequence("", "ahbgdc") == True
+    print("✓ Test case 3 passed")
+
+    # Test case 4
+    assert solution.isSubsequence("abc", "") == False
+    print("✓ Test case 4 passed")
+
+    print("\nAll test cases passed!")
