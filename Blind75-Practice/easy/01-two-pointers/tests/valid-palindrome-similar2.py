@@ -39,7 +39,18 @@ class Solution:
         2. If string is palindrome, remove in 1 step
         3. Otherwise, remove all 'a's then all 'b's in 2 steps
         """
+        if not s:
+            return 0
 
+        left, right = 0, len(s) - 1
+
+        while left < right:
+            if s[left] != s[right]:
+                return 2
+            left += 1
+            right -= 1
+
+        return 1
         #
 
         #

@@ -82,12 +82,9 @@ class Solution:
         longest = ""
 
         for i in range(len(s)):
-            # Odd length palindrome (single center)
             odd_palindrome = expand_from_center(i, i)
-            # Even length palindrome (two centers)
             even_palindrome = expand_from_center(i, i + 1)
 
-            # Update longest
             current_longest = (
                 odd_palindrome
                 if len(odd_palindrome) > len(even_palindrome)

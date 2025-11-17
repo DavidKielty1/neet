@@ -41,14 +41,6 @@ class Solution:
         3. When buying, pay the price
         4. When selling, pay the fee
         """
-        # total_profits
-
-        # loop
-        #   current_profit -
-
-        #   logic
-
-        #   total_profits += current_profit
         #
 
         #
@@ -74,6 +66,14 @@ class Solution:
         #
 
         #
+
+        #
+
+        #
+
+        #
+
+        # [1,3,2,8,4,9], fee = 2 ; result  = 8
 
         if not prices:
             return 0

@@ -35,6 +35,41 @@ class Solution:
         2. When mismatch found, try skipping left or right character
         3. Check if remaining substring is palindrome
         """
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
+
+        #
 
         def is_palindrome(left: int, right: int) -> bool:
             while left < right:
@@ -61,19 +96,19 @@ if __name__ == "__main__":
     solution = Solution()
 
     # Test case 1
-    assert solution.validPalindrome("aba") == True
+    assert solution.validPalindrome("aba")
     print("✓ Test case 1 passed")
 
     # Test case 2
-    assert solution.validPalindrome("abca") == True
+    assert solution.validPalindrome("abca")
     print("✓ Test case 2 passed")
 
     # Test case 3
-    assert solution.validPalindrome("abc") == False
+    assert not solution.validPalindrome("abc")
     print("✓ Test case 3 passed")
 
     # Test case 4
-    assert solution.validPalindrome("racecar") == True
+    assert solution.validPalindrome("racecar")
     print("✓ Test case 4 passed")
 
     print("\nAll test cases passed!")

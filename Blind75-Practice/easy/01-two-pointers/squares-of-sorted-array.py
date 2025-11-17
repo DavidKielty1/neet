@@ -39,7 +39,7 @@ class Solution:
 
         Strategy:
         1. Since array is sorted, largest squares are at ends
-        2. Use two pointers, compare absolute values
+        2. Use two pointers, compare values
         3. Place larger square at end of result array
         4. Move corresponding pointer inward
         """
