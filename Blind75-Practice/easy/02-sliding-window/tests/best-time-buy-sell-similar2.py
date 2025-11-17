@@ -32,8 +32,11 @@ class Solution:
         Approach: State machine with cooldown
 
         Strategy:
-        1. Track three states: hold, sold (cooldown), cash (can buy)
-        2. After selling, must cooldown for one day
+        1. Track three states:
+           - hold: holding stock (can sell)
+           - sold: just sold (cooldown period, cannot buy)
+           - rest: can buy (not holding, not in cooldown) - this is like "cash"
+        2. After selling, must cooldown for one day before buying again
         3. Return max profit when not holding stock
         """
 
@@ -72,20 +75,44 @@ class Solution:
         if len(prices) <= 1:
             return 0
 
-        # State: holding stock, just sold (cooldown), can buy
-        hold = -prices[0]
-        sold = 0
-        rest = 0
+        # [1, 2, 3, 0, 2]
+
+        # Three states:
+        # hold: holding stock (profit can be negative)
+        # sold: just sold today (cooldown period - cannot buy tomorrow)
+        # rest: can buy (not holding, not in cooldown) - equivalent to "cash"
+
+        hold = -prices[0]  # Bought on day 0, so profit is -price[0]
+        sold = 0  # Haven't sold yet, so profit is 0
+        rest = 0  # Start with no stock, can buy (like cash = 0)
+
+        #       [1, 2, 3, 0, 2]
+        # hold -1  -1 -1  1  1
+        # sold 0    1  2 -1  3
+        # rest 0    0  1  2  2
+        #
+        # Cooldown enforcement:
+        # - sold is calculated every day (potential profit if we sold today)
+        # - But cooldown is enforced: can only BUY from 'rest' state
+        # - rest updates from prev_sold (yesterday's sold state)
+        # - So: sell on day X → cooldown on day X+1 → can buy on day X+2
 
         for price in prices[1:]:
-            prev_sold = sold
+            prev_sold = sold  # Save previous states before updating
             prev_hold = hold
 
-            # Sold today (came from hold)
+            # State transitions:
+            # 1. sold: Calculate profit if we sold today (from hold state)
+            #    This is calculated every day, but doesn't mean we actually sell
             sold = prev_hold + price
-            # Holding (either kept holding or bought today)
+
+            # 2. hold: Either keep holding OR buy today
+            #    COOLDOWN ENFORCED: can only buy from 'rest' state (not from 'sold')
             hold = max(prev_hold, rest - price)
-            # Resting (either kept resting or cooled down from sold)
+
+            # 3. rest: Either keep resting OR transition from sold (cooldown ends)
+            #    This is how cooldown works: yesterday's 'sold' becomes today's 'rest'
+            #    So if you sold yesterday, today you're in cooldown, tomorrow you can buy
             rest = max(rest, prev_sold)
 
         # Max profit when not holding

@@ -73,13 +73,20 @@ class Solution:
 
         #
 
-        # [1,3,2,8,4,9], fee = 2 ; result  = 8
-
+        #      [1,3,2,8,4,9], fee = 2 ; result  = 8
+        # cash= 0 0 0 5 5 8  (max profit without stock)
+        # hold=-1-1-1-1 1 1  (max profit with stock)
+        #
+        # Selling happens when: hold + price - fee > cash
+        # Day 3: -1 + 8 - 2 = 5 > 0 → SELL (cash becomes 5)
+        # Day 5:  1 + 9 - 2 = 8 > 5 → SELL (cash becomes 8)
         if not prices:
             return 0
 
-        cash = 0  # Max profit when not holding stock
-        hold = -prices[0]  # Max profit when holding stock
+        cash = 0  # Max profit when NOT holding stock (you have cash, no stock)
+        hold = -prices[
+            0
+        ]  # Max profit when HOLDING stock (you own stock, profit can be negative)
 
         for price in prices[1:]:
             # Update cash: either keep cash or sell stock (pay fee)
