@@ -26,19 +26,18 @@ def three_sum(nums: List[int]) -> List[List[int]]:
     """
 
     nums.sort()
-    result = []
+    output: List[List[int]] = []
 
     for i in range(len(nums) - 2):
         if i > 0 and nums[i] == nums[i - 1]:
             continue
-
         left, right = i + 1, len(nums) - 1
-        target = -nums[i]
 
+        # [-4, -1, 0, 0, 0, 1, 1, 1, 2]
         while left < right:
-            curr_sum = nums[left] + nums[right]
-            if curr_sum == target:
-                result.append([nums[i], nums[left], nums[right]])
+            currSum = nums[i] + nums[left] + nums[right]
+            if currSum == 0:
+                output.append([nums[i], nums[left], nums[right]])
 
                 while left < right and nums[left] == nums[left + 1]:
                     left += 1
@@ -49,13 +48,109 @@ def three_sum(nums: List[int]) -> List[List[int]]:
                 left += 1
                 right -= 1
 
-            elif curr_sum < target:
-                left += 1
-
-            else:
+            elif currSum > 0:
                 right -= 1
 
-    return result
+            else:
+                left += 1
+
+    return output
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    # nums.sort()
+    # result = []
+
+    # for i in range(len(nums) - 2):
+    #     if i > 0 and nums[i] == nums[i - 1]:
+    #         continue
+
+    #     left, right = i + 1, len(nums) - 1
+    #     target = -nums[i]
+
+    #     while left < right:
+    #         curr_sum = nums[left] + nums[right]
+    #         if curr_sum == target:
+    #             result.append([nums[i], nums[left], nums[right]])
+
+    #             while left < right and nums[left] == nums[left + 1]:
+    #                 left += 1
+
+    #             while left < right and nums[right] == nums[right - 1]:
+    #                 right -= 1
+
+    #             left += 1
+    #             right -= 1
+
+    #         elif curr_sum < target:
+    #             left += 1
+
+    #         else:
+    #             right -= 1
+
+    # return result
 
 
 # Test cases

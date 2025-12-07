@@ -82,26 +82,24 @@ class Solution:
 
         #
 
-        stack = []
-        bracket_map = {")": "(", "}": "{", "]": "["}
+        # stack: list[str] = []
+        # bracket_map = {")": "(", "}": "{", "]": "["}
 
-        for char in s:
-            if char in bracket_map:
-                # Closing bracket
-                if not stack or stack[-1] != bracket_map[char]:
-                    return False
-                stack.pop()
-            else:
-                # Opening bracket
-                stack.append(char)
+        # for char in s:
+        #     if char in bracket_map:
+        #         if not stack or stack[-1] != bracket_map[char]:
+        #             return False
+        #         stack.pop()
+        #     else:
+        #         stack.append(char)
 
-        return len(stack) == 0
+        # return len(stack) == 0
 
 
 # Alternative with more explicit logic
 class SolutionAlternative:
     def isValid(self, s: str) -> bool:
-        stack = []
+        stack: list[str] = []
 
         for char in s:
             if char == "(":

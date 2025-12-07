@@ -31,18 +31,18 @@ def is_anagram(s: str, t: str) -> bool:
     Time: O(n), Space: O(1)
     """
 
-    if len(s) != len(t):  # Quick optimization
+    if len(s) != len(t):
         return False
 
-    target_map = {}
-    for char in t:
-        target_map[char] = target_map.get(char, 0) + 1
-
-    char_count = {}
+    smap: dict[str, int] = {}
     for char in s:
-        char_count[char] = char_count.get(char, 0) + 1
+        smap[char] = smap.get(char, 0) + 1
 
-    return char_count == target_map
+    tmap: dict[str, int] = {}
+    for char in t:
+        tmap[char] = tmap.get(char, 0) + 1
+
+    return tmap == smap
 
 
 # Test cases

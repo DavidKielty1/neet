@@ -19,7 +19,7 @@ Example 3:
 Input: strs = ["a"]
 Output: [["a"]]
 
-Time: O(n * m * log(m)), Space: O(n * m)
+Time: O(n * m), Space: O(n * m)
 """
 
 from typing import List
@@ -28,18 +28,18 @@ from collections import defaultdict
 
 def group_anagrams(strs: List[str]) -> List[List[str]]:
     """
-    Hash map with sorted string as key
-    Time: O(n * m * log(m)), Space: O(n * m)
+    Hash map with character count tuple as key (no sorting needed)
+    Time: O(n * m), Space: O(n * m)
     """
-    result = defaultdict()
+    result = defaultdict(list)
 
-    for str in strs:
+    for s in strs:
         count = [0] * 26
 
-        for c in str:
+        for c in s:
             count[ord(c) - ord("a")] += 1
 
-        result[tuple(count)].append(str)
+        result[tuple(count)].append(s)
 
     return result.values()
 

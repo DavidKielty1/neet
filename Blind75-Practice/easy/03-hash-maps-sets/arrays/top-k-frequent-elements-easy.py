@@ -19,7 +19,6 @@ Time: O(n), Space: O(n)
 """
 
 from typing import List
-from collections import Counter
 
 
 def most_frequent(nums: List[int]) -> int:
@@ -28,14 +27,19 @@ def most_frequent(nums: List[int]) -> int:
     Time: O(n), Space: O(n)
     """
     # TODO: Implement hash map solution
-    count = Counter(nums)
-    max_count = 0
-    most_freq_element = None
-    for num, freq in count.items():
-        if freq > max_count:
-            max_count = freq
-            most_freq_element = num
-    return most_freq_element
+
+    ncount = {}
+    for n in nums:
+        ncount[n] = ncount.get(n, 0) + 1
+
+    most_freq_count = 0
+    most_freq_value = float("-inf")
+    for n, count in ncount.items():
+        if count > most_freq_count:
+            most_freq_count = count
+            most_freq_value = n
+
+    return most_freq_value
 
 
 # Test cases

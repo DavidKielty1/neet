@@ -25,8 +25,12 @@ There may exists other ways to achieve this answer too.
 
 def characterReplacement(s: str, k: int) -> int:
     """
-    Your implementation here
+    Window
+    window-size = right - left +1
+    if window_size - max_freq > k:
+        shrink
     """
+
     pass
 
 

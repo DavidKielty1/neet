@@ -19,7 +19,71 @@ from typing import List
 def two_sum(nums: List[int], target: int) -> list[int]:
     # Create an empty dictionary (hashmap)
     # Can use i, num, enumerate for ease
-    pass
+    hashmap: dict[int, int] = {}
+
+    for i, val in enumerate(nums):
+        complement = target - val
+
+        if complement in hashmap:
+            return [hashmap[complement], i]
+
+        hashmap[val] = i
+
+    return []
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    # hashmap: dict[int, int] = {}
+
+    # for i, num in enumerate[int](nums):
+    #     complement = target - num
+
+    #     if complement in hashmap:
+    #         return [hashmap[complement], i]
+
+    #     hashmap[num] = i
+
+    # return []
 
 
 # Test cases
