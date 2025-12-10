@@ -29,6 +29,64 @@ def max_area(heights: List[int]) -> int:
     Time: O(n), Space: O(1)
     """
 
+    left = 0
+    right = len(heights) - 1
+    max_area = 0
+
+    # [1,8,6,2,5,4,8,3,7]
+    while left < right:
+        min_height = min(heights[left], heights[right])
+        curr_area = (right - left) * min_height
+        max_area = max(max_area, curr_area)
+
+        if heights[left] > heights[right]:
+            right -= 1
+        else:
+            left += 1
+
+    return max_area
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
 
 # Test cases
 if __name__ == "__main__":
