@@ -30,8 +30,28 @@ def characterReplacement(s: str, k: int) -> int:
     if window_size - max_freq > k:
         shrink
     """
+    max_freq: int = 0
+    max_length: int = 0
+    left = 0
+    hashmap: dict[str, int] = {}
 
-    pass
+    # AABABBA k=1
+    for right in range(len(s)):
+        # Initialize or increment character count
+        hashmap[s[right]] = hashmap.get(s[right], 0) + 1
+        max_freq = max(max_freq, hashmap[s[right]])
+
+        # while window_size - max_freq > k resize
+        window_size = right - left + 1
+        while window_size - max_freq > k:
+            hashmap[s[left]] -= 1
+            left += 1
+            window_size = right - left + 1
+
+        # Update max_length with current valid window size
+        max_length = max(max_length, window_size)
+
+    return max_length
 
 
 # Test cases

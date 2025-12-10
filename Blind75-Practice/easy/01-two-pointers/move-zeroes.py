@@ -19,18 +19,52 @@ Time: O(n), Space: O(1)
 
 
 # e.g. array = [1, 0, 0, 2, 3, 0]
-def move_zeroes(nums):
+def move_zeroes(nums: list[int]):
     # slow, fast.
     # range for fast read moving digits to start
     # while for slow write with changes remaining to 0
-    left = 0
-    right = 0
 
-    for right in range(len(nums)):
-        if nums[right] != 0:
-            nums[left], nums[right] = nums[right], nums[left]
-            left += 1
-        right += 1
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+    # left = 0
+
+    # for right in range(len(nums)):
+    #     if nums[right] != 0:
+    #         nums[right], nums[left] = nums[left], nums[right]
+    #         left += 1
 
 
 # Test cases
