@@ -30,17 +30,15 @@ def trap(height: List[int]) -> int:
     Time: O(n), Space: O(1)
     """
     # TODO: Implement two pointers solution
+
     left, right = 0, len(height) - 1
-    max_left = max_right = 0
+    max_left = 0
+    max_right = 0
     water = 0
 
     # [0,1,0,2,1,0,1,3,2,1,2,1]
-
-    # [3, 0, 2, 0, 4]
     while left < right:
-        # Calculate min side (lower) first
         if height[left] < height[right]:
-            # If right is bigger process left
             if height[left] >= max_left:
                 max_left = height[left]
             else:
@@ -48,7 +46,6 @@ def trap(height: List[int]) -> int:
 
             left += 1
         else:
-            # If left is bigger process right
             if height[right] >= max_right:
                 max_right = height[right]
             else:
@@ -57,6 +54,75 @@ def trap(height: List[int]) -> int:
             right -= 1
 
     return water
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+    #
+
+    #
+
+    #
+
+    # left, right = 0, len(height) - 1
+    # max_left = max_right = 0
+    # water = 0
+
+    # # [0,1,0,2,1,0,1,3,2,1,2,1]
+
+    # # [3, 0, 2, 0, 4]
+    # while left < right:
+    #     # Calculate min side (lower) first
+    #     if height[left] < height[right]:
+    #         # If right is bigger process left
+    #         if height[left] >= max_left:
+    #             max_left = height[left]
+    #         else:
+    #             water += max_left - height[left]
+
+    #         left += 1
+    #     else:
+    #         # If left is bigger process right
+    #         if height[right] >= max_right:
+    #             max_right = height[right]
+    #         else:
+    #             water += max_right - height[right]
+
+    #         right -= 1
+
+    # return water
 
 
 # Test cases

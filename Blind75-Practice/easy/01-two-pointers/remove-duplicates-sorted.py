@@ -23,12 +23,62 @@ Time: O(n), Space: O(1)
 from typing import List
 
 
-# e.g. [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
-# e.g. [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 def remove_duplicates(nums: List[int]) -> int:
     """
     Two pointers approach: read and write indices
     """
+    left = 1
+
+    # e.g. [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
+    # e.g. [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+    for right in range(1, len(nums)):
+        if nums[right] > nums[left - 1]:
+            nums[left] = nums[right]
+            left += 1
+
+    return left
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+    #
+
+    #
+
+    #
+
     if not nums:
         return 0
 
@@ -60,3 +110,10 @@ if __name__ == "__main__":
     nums3 = [1, 2, 3]
     result3 = remove_duplicates(nums3)
     print(f"Remove Duplicates: {result3}, nums = {nums3}")  # 3, [1, 2, 3]
+
+    # Test 4: Unsorted array (violates problem precondition, but shows behavior)
+    nums4 = [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
+    result4 = remove_duplicates(nums4)
+    print(
+        f"Remove Duplicates: {result4}, nums = {nums4[:result4]}"
+    )  # 5, [0, 1, 2, 3, 4] - '1' is preserved!
