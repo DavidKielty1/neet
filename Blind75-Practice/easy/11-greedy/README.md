@@ -1,6 +1,6 @@
 # Greedy Algorithms
 
-## Pattern Overview
+## Pattern Overview.
 
 Greedy algorithms make locally optimal choices at each step, hoping to find a global optimum. The key insight is that a local optimum leads to a global optimum for certain problems.
 
