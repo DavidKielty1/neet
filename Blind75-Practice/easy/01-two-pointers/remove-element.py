@@ -23,11 +23,62 @@ from typing import List
 
 
 # nums: [3, 2, 2, 3]
-# nums: [0, 1, 4, 0, 3, 2, 2, 2] target = 2
+# nums: [0, 1, 3, 0, 4, 0, 4, 2] target = 4
 def remove_element(nums: List[int], val: int) -> int:
     """
     Two pointers: write index tracks where to place next 'keep' element
     """
+    left = 0
+    for right in range(len(nums)):
+        if nums[right] != val:
+            nums[left] = nums[right]
+            left += 1
+
+        # if left = target, let left = right
+        # left += 1
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
     left = 0
 
     for right in range(len(nums)):

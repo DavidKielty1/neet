@@ -25,23 +25,61 @@ def length_of_longest_substring_two_distinct(s: str) -> int:
     Time: O(n), Space: O(1)
     """
 
-    char_count = {}
-    max_length = 0
-    left = 0
+    #
 
-    for right, right_char in enumerate(s):
-        char_count[right_char] = char_count.get(right_char, 0) + 1
+    #
 
-        while len(char_count) > 2:
-            left_char = s[left]
-            char_count[left_char] -= 1
-            if char_count[left_char] == 0:
-                del char_count[left_char]
-            left += 1
+    #
 
-        max_length = max(max_length, right - left)
+    #
 
-    return max_length
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    # char_count = {}
+    # max_length = 0
+    # left = 0
+
+    # for right, right_char in enumerate(s):
+    #     char_count[right_char] = char_count.get(right_char, 0) + 1
+
+    #     while len(char_count) > 2:
+    #         left_char = s[left]
+    #         char_count[left_char] -= 1
+    #         if char_count[left_char] == 0:
+    #             del char_count[left_char]
+    #         left += 1
+
+    #     max_length = max(max_length, right - left)
+
+    # return max_length
 
 
 # def length_of_longest_substring_two_distinct(s: str) -> int:

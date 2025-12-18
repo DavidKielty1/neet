@@ -23,12 +23,53 @@ Explanation: No non-repeating character exists.
 Time: O(n), Space: O(1) - at most 26 characters
 """
 
+from typing import Dict
+
 
 def first_uniq_char(s: str) -> int:
     """
     Hash map approach to count character frequencies
-    Time: O(n), Space: O(1)
-    #"""
+    Then iterate through str, check freq in hashmap
+    Time: O(n), Space: O(1) - at most 26 characters
+    """
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
 
     # create map for count, iterate through, return first element which is count == 1
 

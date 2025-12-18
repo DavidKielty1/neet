@@ -43,20 +43,6 @@ class Solution:
         3. Update maximum profit if current profit is better
         4. Update minimum price if current price is lower
         """
-        if not prices:
-            return 0
-
-        min_price = float("inf")
-        max_profit = 0
-
-        for price in prices:
-            min_price = min(min_price, price)
-
-            profit = price - min_price
-
-            max_profit = max(max_profit, profit)
-
-        return max_profit
 
         #
 
@@ -90,23 +76,26 @@ class Solution:
 
         #
 
-        if not prices:
-            return 0
+        #
 
-        min_price = float("inf")
-        max_profit = 0
+        #
 
-        for price in prices:
-            # Update minimum price (best buy opportunity)
-            min_price = min(min_price, price)
+        #
 
-            # Calculate profit if we sell today
-            profit = price - min_price
+        # if not prices:
+        #     return 0
 
-            # Update maximum profit
-            max_profit = max(max_profit, profit)
+        # max_profit: int = 0
+        # min_price: int = prices[0]
 
-        return max_profit
+        # for i in range(1, len(prices)):
+        #     min_price = min(min_price, prices[i])
+
+        #     profit: int = prices[i] - min_price
+
+        #     max_profit = max(max_profit, profit)
+
+        # return max_profit
 
 
 # Alternative sliding window approach

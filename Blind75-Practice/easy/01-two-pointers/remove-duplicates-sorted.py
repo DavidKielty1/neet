@@ -27,16 +27,61 @@ def remove_duplicates(nums: List[int]) -> int:
     """
     Two pointers approach: read and write indices
     """
-    left = 1
+    # [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
+    # [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 
-    # e.g. [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
-    # e.g. [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
-    for right in range(1, len(nums)):
-        if nums[right] > nums[left - 1]:
-            nums[left] = nums[right]
-            left += 1
+    #
 
-    return left
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    # left = 1
+
+    # # e.g. [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
+    # # e.g. [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+    # for right in range(1, len(nums)):
+    #     if nums[right] > nums[left - 1]:
+    #         nums[left] = nums[right]
+    #         left += 1
+
+    # return left
 
     #
 

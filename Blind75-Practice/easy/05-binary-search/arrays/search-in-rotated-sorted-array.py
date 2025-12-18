@@ -21,7 +21,7 @@ Example 3:
 Input: nums = [1], target = 0
 Output: -1
 
-Time: O(log n), Space: O(1)
+Time: O(log n), Space:
 """
 
 from typing import List
@@ -32,7 +32,68 @@ def search(nums: List[int], target: int) -> int:
     Binary search in rotated sorted array
     Time: O(log n), Space: O(1)
     """
+    if not nums:
+        return -1
+
     left, right = 0, len(nums) - 1
+
+    while left <= right:
+        mid = right + left // 2
+
+        if nums[mid] == target:
+            return mid
+
+        if nums[left] < nums[mid]:
+            if nums[left] > target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        else:
+            if target > nums[mid]:
+                left = mid + 1
+            else:
+                right = mid - 1
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+
+    #
+    #
+
+    #
+
+    #
 
     # [0 1 2 3 4 5 6]
     # [4,5,6,7,0,1,2], target = 6
@@ -43,6 +104,8 @@ def search(nums: List[int], target: int) -> int:
     # sorted rotated array binary search.
     # Always initial check to see if mid is smaller or bigger than left
     # if mid is bigger than left -
+    # left, right = 0, len(nums) - 1
+
     while left <= right:
         mid = (left + right) // 2
 
