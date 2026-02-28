@@ -18,31 +18,12 @@ Maximum of subarray [3, 6, 7] is 7
 Time: O(n), Space: O(k)
 """
 
-from typing import List
-from collections import deque
-
 
 def max_of_all_subarrays(arr: List[int], k: int) -> List[int]:
     """
     Sliding window with deque to maintain max elements
     Time: O(n), Space: O(k)
     """
-    queue = deque()
-    result = []
-
-    for i in range(len(arr)):
-        while queue and queue[0] <= i - k:
-            queue.popleft()
-
-        while queue and arr[queue[-1]] <= arr[i]:
-            queue.pop()
-
-        queue.append(i)
-
-        if i >= k - 1:
-            result.append(arr[queue[0]])
-
-    return result
 
     #
 
