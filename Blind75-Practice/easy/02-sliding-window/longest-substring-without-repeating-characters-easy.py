@@ -73,7 +73,7 @@ def first_uniq_char(s: str) -> int:
 
     # create map for count, iterate through, return first element which is count == 1
 
-    # char_count = {}
+    # char_count: Dict[str, int] = {}
 
     # for ch in s:
     #     char_count[ch] = char_count.get(ch, 0) + 1

@@ -18,6 +18,8 @@ Explanation: The substring is "aabbb" with length 5.
 Time: O(n), Space: O(1) - at most 2 characters in map
 """
 
+from typing import Dict
+
 
 def length_of_longest_substring_two_distinct(s: str) -> int:
     """
