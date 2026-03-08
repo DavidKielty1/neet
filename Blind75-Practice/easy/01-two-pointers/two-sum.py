@@ -13,21 +13,19 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 Time: O(n), Space: O(n)
 """
 
-from typing import List
+from typing import Dict, List
 
 
 def two_sum(nums: List[int], target: int) -> list[int]:
     # Create an empty dictionary (hashmap)
     # Can use i, num, enumerate for ease
-    hashmap: dict[int, int] = {}
-
+    seen: Dict[int, int] = {}
     for i, val in enumerate(nums):
         complement = target - val
+        if complement in seen:
+            return [seen[complement], i]
 
-        if complement in hashmap:
-            return [hashmap[complement], i]
-
-        hashmap[val] = i
+        seen[val] = i
 
     return []
 

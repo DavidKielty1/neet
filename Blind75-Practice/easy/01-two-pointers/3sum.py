@@ -28,27 +28,30 @@ def three_sum(nums: List[int]) -> List[List[int]]:
     nums.sort()
     output: List[List[int]] = []
 
-    for i in range(len(nums) - 2):
-        if i > 0 and nums[i] == nums[i - 1]:
+    # [-4, -1, -1, 0, 0, 0, 1, 2, 4, 4]
+    for i in range(len(nums)):
+        while nums[i] == nums[i] + 1:
             continue
-        left, right = i + 1, len(nums) - 1
 
-        # [-4, -1, 0, 0, 0, 1, 1, 1, 2]
-        while left < right:
-            currSum = nums[i] + nums[left] + nums[right]
-            if currSum == 0:
+        left = i + 1
+        right = len(nums) - 1
+
+        while right > left:
+            current_total = nums[i] + nums[left] + nums[right]
+
+            if current_total == 0:
                 output.append([nums[i], nums[left], nums[right]])
 
-                while left < right and nums[left] == nums[left + 1]:
-                    left += 1
-
-                while left < right and nums[right] == nums[right - 1]:
+                while right > left and nums[right] == nums[right - 1]:
                     right -= 1
 
-                left += 1
-                right -= 1
+                while right > left and nums[left] == nums[left + 1]:
+                    left += 1
 
-            elif currSum > 0:
+                right -= 1
+                left += 1
+
+            elif current_total > 0:
                 right -= 1
 
             else:

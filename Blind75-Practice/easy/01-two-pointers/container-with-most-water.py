@@ -28,12 +28,15 @@ def max_area(heights: List[int]) -> int:
       the min height and thus the area despite a smaller width.
     Time: O(n), Space: O(1)
     """
-    left, right = 0, len(heights) - 1
-    totalarea = 0
 
-    # [1,8,6,2,5,4,8,3,7]
-    while left < right:
-        minheight = min(heights[left], heights[right])
+    right = len(heights) - 1
+    min_height = heights[0]
+    max_area = 0
+
+    for i in range(len(heights)):
+        width = right - i
+        min_height = max(heights[i], heights[right])
+        max_area = width * min_height
 
     #
 

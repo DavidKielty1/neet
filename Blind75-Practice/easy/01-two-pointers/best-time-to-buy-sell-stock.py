@@ -12,14 +12,14 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 any profit, return 0.
 
 Example 1:
-Input: prices = [7,2,5,3,9,4,1,4]
+Input: prices = [7,2,5,3,6,4,1,8]
 Output: 5
-Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Explanation: Buy at price 1 (second element) and sell at price 6 (fifth element), profit = 6-1 = 5.
 
 Example 2:
 Input: prices = [7,6,4,3,1]
 Output: 0
-Explanation: In this case, no transactions are done and the max profit = 0.
+Explanation: Prices keep decreasing, so there is no future day with a higher price to sell at; the best choice is to make no transaction, for a max profit of 0.
 
 Constraints:
 - 1 <= prices.length <= 10^5
@@ -85,17 +85,15 @@ class Solution:
         # if not prices:
         #     return 0
 
-        # max_profit: int = 0
-        # min_price: int = prices[0]
+        # lowestprice = prices[0]
+        # bestsellsofar = 0
 
-        # for i in range(1, len(prices)):
-        #     min_price = min(min_price, prices[i])
+        # # [7,2,5,3,6,4,1,8]
+        # for price in prices:
+        #     lowestprice = min(lowestprice, price)
+        #     bestsellsofar = max(bestsellsofar, price - lowestprice)
 
-        #     profit: int = prices[i] - min_price
-
-        #     max_profit = max(max_profit, profit)
-
-        # return max_profit
+        # return bestsellsofar
 
 
 # Alternative sliding window approach
