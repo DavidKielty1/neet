@@ -25,29 +25,28 @@
  * Time: O(n), Space: O(1) - at most 26 characters
  */
 public class LongestSubstringWithoutRepeatingCharactersEasy {
-
     /**
-     * Hash map approach to count character frequencies,
-     * then iterate through the string and return the index of the first
-     * character whose count is 1.
-     * Time: O(n), Space: O(1) - at most 26 characters (assuming lowercase letters).
+     * Same logic using a 128-slot array: index = char value (ASCII).
+     * Counts every ASCII character (letters, digits, spaces, etc.).
+     * Time: O(n), Space: O(128) = O(1).
      */
-    public static int firstUniqChar(String s) {
+    public static int firstUniqCharAscii(String s) {
         if (s == null || s.isBlank()) {
             return -1;
         }
 
-        int[] charFrequency = new int[26];
-        int length = s.length();
+        int[] charFrequency = new int[128];
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            charFrequency[ch - 'a']++;
+            if (ch < 128) {
+                charFrequency[ch]++;
+            }
         }
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (ch >= 'a' && ch <= 'z' && charFrequency[ch - 'a'] == 1) {
+            if (ch < 128 && charFrequency[ch] == 1) {
                 return i;
             }
         }
@@ -57,12 +56,16 @@ public class LongestSubstringWithoutRepeatingCharactersEasy {
 
     public static void main(String[] args) {
         String s1 = "leetcode";
-        System.out.println("First Unique Char: " + firstUniqChar(s1)); // 0
+        System.out.println("First Unique Char: " + firstUniqCharAscii(s1)); // 0
 
         String s2 = "loveleetcode";
-        System.out.println("First Unique Char: " + firstUniqChar(s2)); // 2
+        System.out.println("First Unique Char: " + firstUniqCharAscii(s2)); // 2
 
         String s3 = "aabb";
-        System.out.println("First Unique Char: " + firstUniqChar(s3)); // -1
+        System.out.println("First Unique Char: " + firstUniqCharAscii(s3)); // -1
+
+        // 128 (ASCII) variant: counts every character including spaces/digits
+        String s4 = "a b c a B";
+        System.out.println("First Unique (ASCII): " + firstUniqCharAscii(s4)); // 2 ('c')
     }
 }
