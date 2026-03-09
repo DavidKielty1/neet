@@ -1,3 +1,4 @@
+
 /**
  * Easy Version: Maximum of All Subarrays of Size K
  * Difficulty: Medium
