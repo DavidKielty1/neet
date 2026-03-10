@@ -19,6 +19,48 @@ import java.util.Deque;
 
 public class SlidingWindowMaximumEasy {
 
+    /**
+     * two cleanups - remove those out of window
+     * remove those which are smaller than the next one coming in
+     * 
+     */
+
+    /**
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    */
+
     public static int[] maxOfAllSubarrays(int[] arr, int k) {
         if (arr == null || arr.length == 0 || k <= 0) {
             return new int[0];
