@@ -13,9 +13,7 @@
  *
  * Time: O(n), Space: O(k)
  */
-import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
 
 public class SlidingWindowMaximumEasy {
 
@@ -26,37 +24,6 @@ public class SlidingWindowMaximumEasy {
      * 
      */
 
-    public static int[] maxOfAllSubarrays(int[] arr, int k) {
-        if (arr == null || arr.length == 0 || k <= 0) {
-            return new int[0];
-        }
-
-        int n = arr.length;
-        int[] output = new int[Math.max(0, n - k + 1)];
-        Deque<Integer> deque = new ArrayDeque<>();
-
-        int outIdx = 0;
-        for (int i = 0; i < n; i++) {
-            // shift window
-            while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
-                deque.pollFirst();
-            }
-
-            while (!deque.isEmpty() && arr[deque.peekFirst()] <= arr[i]) {
-                deque.pollLast();
-            }
-
-            deque.offerLast(i);
-
-            if (i >= k - 1) {
-                output[outIdx++] = arr[deque.peekFirst()];
-            }
-        }
-
-        return output;
-
-    }
-
     /**
      * 
      * 
@@ -70,7 +37,7 @@ public class SlidingWindowMaximumEasy {
      * 
      * 
      * 
-     * @param arr
+     * 
      */
 
     /**
