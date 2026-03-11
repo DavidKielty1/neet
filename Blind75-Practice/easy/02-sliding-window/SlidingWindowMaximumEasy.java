@@ -23,43 +23,8 @@ public class SlidingWindowMaximumEasy {
      * two cleanups - remove those out of window
      * remove those which are smaller than the next one coming in
      * 
+     * 
      */
-
-    /**
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    */
 
     public static int[] maxOfAllSubarrays(int[] arr, int k) {
         if (arr == null || arr.length == 0 || k <= 0) {
@@ -68,30 +33,81 @@ public class SlidingWindowMaximumEasy {
 
         int n = arr.length;
         int[] output = new int[Math.max(0, n - k + 1)];
-        Deque<Integer> deque = new ArrayDeque<>(); // stores indices
+        Deque<Integer> deque = new ArrayDeque<>();
 
         int outIdx = 0;
         for (int i = 0; i < n; i++) {
-            // Remove indices that are outside the current window
+            // shift window
             while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
                 deque.pollFirst();
             }
 
-            // Remove indices whose corresponding values are smaller than current
-            while (!deque.isEmpty() && arr[deque.peekLast()] <= arr[i]) {
+            while (!deque.isEmpty() && arr[deque.peekFirst()] <= arr[i]) {
                 deque.pollLast();
             }
 
             deque.offerLast(i);
 
-            // Start recording results once we've hit window size k
             if (i >= k - 1) {
                 output[outIdx++] = arr[deque.peekFirst()];
             }
         }
 
         return output;
+
     }
+
+    /**
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * @param arr
+     */
+
+    /**
+     * 
+     * public static int[] maxOfAllSubarrays(int[] arr, int k) {
+     * if (arr == null || arr.length == 0 || k <= 0) {
+     * return new int[0];
+     * }
+     * 
+     * int n = arr.length;
+     * int[] output = new int[Math.max(0, n - k + 1)];
+     * Deque<Integer> deque = new ArrayDeque<>(); // stores indices
+     * 
+     * int outIdx = 0;
+     * for (int i = 0; i < n; i++) {
+     * // Remove indices that are outside the current window
+     * while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
+     * deque.pollFirst();
+     * }
+     * 
+     * // Remove indices whose corresponding values are smaller than current
+     * while (!deque.isEmpty() && arr[deque.peekLast()] <= arr[i]) {
+     * deque.pollLast();
+     * }
+     * 
+     * deque.offerLast(i);
+     * 
+     * // Start recording results once we've hit window size k
+     * if (i >= k - 1) {
+     * output[outIdx++] = arr[deque.peekFirst()];
+     * }
+     * }
+     * 
+     * return output;
+     * }
+     * 
+     */
 
     private static void printArray(int[] arr) {
         System.out.println(Arrays.toString(arr));
