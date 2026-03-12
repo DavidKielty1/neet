@@ -68,7 +68,7 @@ public class SlidingWindowMaximumEasy {
      * // Start recording results once we've hit window size k
      * if (i >= k - 1) {
      * output[outIdx++] = arr[deque.peekFirst()];
-     * }
+     *
      * }
      * 
      * return output;

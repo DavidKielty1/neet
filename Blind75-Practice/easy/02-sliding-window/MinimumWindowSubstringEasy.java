@@ -1,3 +1,4 @@
+
 /**
  * Easy Version: Find All Anagrams in a String
  * Difficulty: Medium
@@ -29,6 +30,43 @@ public class MinimumWindowSubstringEasy {
     /**
      * Sliding window with frequency counts for characters.
      * Uses fixed-size arrays for lowercase letters to keep O(1) space.
+     */
+
+    public static int[] findStartingIdxOfAllAnagrams(String string, String p) {
+
+    }
+
+    /**
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
      */
     public static List<Integer> findAnagrams(String s, String p) {
         List<Integer> result = new ArrayList<>();
@@ -70,4 +108,3 @@ public class MinimumWindowSubstringEasy {
         System.out.println("Find Anagrams: " + findAnagrams(s2, p2)); // [0, 1, 2]
     }
 }
-
