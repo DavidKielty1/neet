@@ -32,7 +32,33 @@ public class MinimumWindowSubstringEasy {
      * Uses fixed-size arrays for lowercase letters to keep O(1) space.
      */
 
-    public static int[] findStartingIdxOfAllAnagrams(String string, String p) {
+    public static int[] findStartingIdxOfAllAnagrams(String s, String p) {
+        List<Integer> result = new ArrayList<>();
+        if (s == null || p == null || p.length() > s.length()) {
+            return result;
+        }
+
+        int[] targetCount = new int[26];
+        int[] windowCount = new int[26];
+
+        for (int i = 0; i < p.length(); i++) {
+            targetCount[p.charAt(i) - 'a']++;
+        }
+
+        int left = 0;
+        for (int right = 0; right < s.length(); right++) {
+            windowCount[s.charAt(right) - 'a']++;
+
+            if (right - left + 1 > p.length()) {
+                windowCount[s.charAt(left) - 'a']--;
+            }
+
+            if (right - left + 1 == p.length() && Arrays.equals(windowCount, targetCount)) {
+                result.add(left);
+            }
+        }
+
+        return result;
 
     }
 
