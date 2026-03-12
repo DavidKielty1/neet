@@ -35,7 +35,7 @@ public class MinimumWindowSubstringEasy {
     public static int[] findStartingIdxOfAllAnagrams(String s, String p) {
         List<Integer> result = new ArrayList<>();
         if (s == null || p == null || p.length() > s.length()) {
-            return result;
+            return new int[0];
         }
 
         int[] targetCount = new int[26];
@@ -58,7 +58,12 @@ public class MinimumWindowSubstringEasy {
             }
         }
 
-        return result;
+        int[] resArray = new int[result.size()];
+        for (int i = 0; i < result.size(); i++) {
+            resArray[i] = result.get(i);
+        }
+
+        return resArray;
 
     }
 
