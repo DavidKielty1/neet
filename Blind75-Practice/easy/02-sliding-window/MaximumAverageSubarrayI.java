@@ -4,10 +4,13 @@
  * Pattern: Sliding Window
  *
  * Problem:
- * You are given an integer array nums consisting of n elements, and an integer k.
+ * You are given an integer array nums consisting of n elements, and an integer
+ * k.
  *
- * Find a contiguous subarray whose length is equal to k that has the maximum average value
- * and return this value. Any answer with a calculation error less than 10^-5 will be accepted.
+ * Find a contiguous subarray whose length is equal to k that has the maximum
+ * average value
+ * and return this value. Any answer with a calculation error less than 10^-5
+ * will be accepted.
  *
  * Example 1:
  * Input: nums = [1,12,-5,-6,50,3], k = 4
@@ -48,7 +51,6 @@ public class MaximumAverageSubarrayI {
         }
 
         int maxSum = currentSum;
-
         for (int i = k; i < nums.length; i++) {
             currentSum = currentSum + nums[i] - nums[i - k];
             if (currentSum > maxSum) {
@@ -60,11 +62,10 @@ public class MaximumAverageSubarrayI {
     }
 
     public static void main(String[] args) {
-        int[] nums1 = {1, 12, -5, -6, 50, 3};
+        int[] nums1 = { 1, 12, -5, -6, 50, 3 };
         System.out.println("Max Average: " + findMaxAverage(nums1, 4)); // 12.75
 
-        int[] nums2 = {5};
+        int[] nums2 = { 5 };
         System.out.println("Max Average: " + findMaxAverage(nums2, 1)); // 5.0
     }
 }
-
