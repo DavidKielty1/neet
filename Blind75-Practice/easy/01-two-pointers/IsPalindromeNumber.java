@@ -39,35 +39,51 @@ public class IsPalindromeNumber {
      * 3. Compare characters (case-insensitive)
      * 4. Move pointers inward
      */
-    public static boolean isPalindrome(String s) {
-        int left = 0;
-        int right = s.length() - 1;
 
-        while (left < right) {
-            // Skip non-alphanumeric from left
-            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
-                left++;
-            }
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // public static boolean isPalindrome(String s) {
+    // int left = 0;
+    // int right = s.length() - 1;
 
-            // Skip non-alphanumeric from right
-            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
-                right--;
-            }
+    // while (left < right) {
+    // // Skip non-alphanumeric from left
+    // while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+    // left++;
+    // }
 
-            // Compare characters
-            char cLeft = Character.toLowerCase(s.charAt(left));
-            char cRight = Character.toLowerCase(s.charAt(right));
+    // // Skip non-alphanumeric from right
+    // while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+    // right--;
+    // }
 
-            if (cLeft != cRight) {
-                return false;
-            }
+    // // Compare characters
+    // char cLeft = Character.toLowerCase(s.charAt(left));
+    // char cRight = Character.toLowerCase(s.charAt(right));
 
-            left++;
-            right--;
-        }
+    // if (cLeft != cRight) {
+    // return false;
+    // }
 
-        return true;
-    }
+    // left++;
+    // right--;
+    // }
+
+    // return true;
+    // }
 
     // Test cases
     public static void main(String[] args) {
@@ -86,4 +102,3 @@ public class IsPalindromeNumber {
         System.out.println("\nAll test cases passed!");
     }
 }
-

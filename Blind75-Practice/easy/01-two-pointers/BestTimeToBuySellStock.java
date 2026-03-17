@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /*
 LeetCode 121: Best Time to Buy and Sell Stock
 Difficulty: Easy
@@ -36,24 +34,25 @@ public class BestTimeToBuySellStock {
      * 3. Update maximum profit if current profit is better
      * 4. Update minimum price if current price is lower
      */
-    static class Solution {
-        public int maxProfit(int[] prices) {
-            if (prices == null || prices.length == 0) {
-                return 0;
-            }
 
-            int lowestPrice = prices[0];
-            int bestSellSoFar = 0;
+    // static class Solution {
+    // public int maxProfit(int[] prices) {
+    // if (prices == null || prices.length == 0) {
+    // return 0;
+    // }
 
-            // [7,2,5,3,6,4,1,8]
-            for (int price : prices) {
-                lowestPrice = Math.min(lowestPrice, price);
-                bestSellSoFar = Math.max(bestSellSoFar, price - lowestPrice);
-            }
+    // int lowestPrice = prices[0];
+    // int bestSellSoFar = 0;
 
-            return bestSellSoFar;
-        }
-    }
+    // // [7,2,5,3,6,4,1,8]
+    // for (int price : prices) {
+    // lowestPrice = Math.min(lowestPrice, price);
+    // bestSellSoFar = Math.max(bestSellSoFar, price - lowestPrice);
+    // }
+
+    // return bestSellSoFar;
+    // }
+    // }
 
     // Alternative sliding window approach
     static class SolutionSlidingWindow {
@@ -63,8 +62,8 @@ public class BestTimeToBuySellStock {
          * - right = sell day
          */
         public int maxProfit(int[] prices) {
-            int left = 0;   // buy
-            int right = 1;  // sell
+            int left = 0; // buy
+            int right = 1; // sell
             int maxProfit = 0;
 
             while (right < prices.length) {
@@ -87,22 +86,21 @@ public class BestTimeToBuySellStock {
         Solution solution = new Solution();
 
         // Test case 1
-        assert solution.maxProfit(new int[]{7, 1, 5, 3, 6, 4}) == 5;
+        assert solution.maxProfit(new int[] { 7, 1, 5, 3, 6, 4 }) == 5;
         System.out.println("✓ Test case 1 passed");
 
         // Test case 2
-        assert solution.maxProfit(new int[]{7, 6, 4, 3, 1}) == 0;
+        assert solution.maxProfit(new int[] { 7, 6, 4, 3, 1 }) == 0;
         System.out.println("✓ Test case 2 passed");
 
         // Test case 3
-        assert solution.maxProfit(new int[]{2, 4, 1}) == 2;
+        assert solution.maxProfit(new int[] { 2, 4, 1 }) == 2;
         System.out.println("✓ Test case 3 passed");
 
         // Test case 4
-        assert solution.maxProfit(new int[]{1}) == 0;
+        assert solution.maxProfit(new int[] { 1 }) == 0;
         System.out.println("✓ Test case 4 passed");
 
         System.out.println("\nAll test cases passed!");
     }
 }
-
