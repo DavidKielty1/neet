@@ -24,20 +24,48 @@ public class LongestRepeatCharReplace {
      * Window
      * window_size = right - left + 1
      * if window_size - max_freq > k:
-     *     shrink
+     * shrink
      */
+
+    public static int 
+
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
     public static int characterReplacement(String s, int k) {
         int[] counts = new int[26];
+        // k = 1
         int maxFreq = 0;
         int maxLength = 0;
         int left = 0;
+        // right = 0
+        // c = A
+        // counts[(A): 0, (B): 0]
+        // windowsize = 
 
         // AABABBA, k=1
         for (int right = 0; right < s.length(); right++) {
             char c = s.charAt(right);
             counts[c - 'A']++;
             maxFreq = Math.max(maxFreq, counts[c - 'A']);
-
             int windowSize = right - left + 1;
             while (windowSize - maxFreq > k) {
                 char leftChar = s.charAt(left);
@@ -45,10 +73,8 @@ public class LongestRepeatCharReplace {
                 left++;
                 windowSize = right - left + 1;
             }
-
             maxLength = Math.max(maxLength, windowSize);
         }
-
         return maxLength;
     }
 
@@ -109,4 +135,3 @@ public class LongestRepeatCharReplace {
         System.out.println("\n✅ All tests passed!");
     }
 }
-
