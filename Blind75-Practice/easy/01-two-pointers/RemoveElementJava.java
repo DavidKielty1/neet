@@ -25,21 +25,57 @@ public class RemoveElementJava {
     /*
      * Two pointers: write index tracks where to place next 'keep' element.
      *
-     * nums: [3, 2, 2, 3]
-     * nums: [0, 1, 3, 0, 4, 0, 4, 2] target = 2
+     * nums: [3, 2, 2, 3], target = 3
      */
-    public static int removeElement(int[] nums, int val) {
-        int left = 0;
 
-        for (int right = 0; right < nums.length; right++) {
-            if (nums[right] != val) {
-                nums[left] = nums[right];
-                left++;
-            }
-        }
-
-        return left;
+    public static int[] removeTarget (int[] nums, int target) {
+        
     }
+
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
+
+    // public static int removeElement(int[] nums, int val) {
+    //     int left = 0;
+
+    //     for (int right = 0; right < nums.length; right++) {
+    //         if (nums[right] != val) {
+    //             nums[left] = nums[right];
+    //             left++;
+    //         }
+    //     }
+
+    //     return left;
+    // }
 
     // Test cases
     public static void main(String[] args) {
