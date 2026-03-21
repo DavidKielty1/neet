@@ -19,41 +19,75 @@ Time: O(n), Space: O(1)
 public class MoveZeroes {
 
     // e.g. array = [1, 0, 0, 2, 3, 0]
-    public static void moveZeroes(int[] nums) {
-        // slow, fast.
-        // Fast reads, slow writes non-zero elements to the front, then the rest become zeros.
 
-        int left = 0;
+    //
 
-        for (int right = 0; right < nums.length; right++) {
-            if (nums[right] != 0) {
-                int temp = nums[right];
-                nums[right] = nums[left];
-                nums[left] = temp;
-                left++;
-            }
-        }
-    }
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    // public static void moveZeroes(int[] nums) {
+    // int left = 0;
+    // for (int right = 0; right < nums.length; right++) {
+    // if (nums[right] == 0)
+    // continue;
+    // if (left < right) {
+    // nums[left] = nums[right];
+    // nums[right] = 0;
+    // }
+    // left++;
+    // }
+    // }
+
+}
 
     // Test cases
     public static void main(String[] args) {
         // Test 1
-        int[] nums1 = {0, 1, 0, 3, 12};
+        int[] nums1 = { 0, 1, 0, 3, 12 };
         moveZeroes(nums1);
         System.out.print("Move Zeroes: ");
-        printArray(nums1);  // [1, 3, 12, 0, 0]
+        printArray(nums1); // [1, 3, 12, 0, 0]
 
         // Test 2
-        int[] nums2 = {0};
+        int[] nums2 = { 0 };
         moveZeroes(nums2);
         System.out.print("Move Zeroes: ");
-        printArray(nums2);  // [0]
+        printArray(nums2); // [0]
 
         // Test 3
-        int[] nums3 = {1, 0, 0, 2, 3};
+        int[] nums3 = { 1, 0, 0, 2, 3 };
         moveZeroes(nums3);
         System.out.print("Move Zeroes: ");
-        printArray(nums3);  // [1, 2, 3, 0, 0]
+        printArray(nums3); // [1, 2, 3, 0, 0]
     }
 
     private static void printArray(int[] nums) {
@@ -67,4 +101,3 @@ public class MoveZeroes {
         System.out.println("]");
     }
 }
-
