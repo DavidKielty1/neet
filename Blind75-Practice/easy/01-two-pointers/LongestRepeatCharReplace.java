@@ -27,7 +27,41 @@ public class LongestRepeatCharReplace {
      * shrink
      */
 
-    public static int 
+    public static int maximumSubstringWithRepeatingChars(String s, int k) {
+        int[] counts = new int[26];
+        int left = 0;
+        int max_freq = 0;
+        int max_length = 0;
+
+        // [AAABBBB BAAAAAAA]; k = 1
+
+        // right = 0
+        // count (A: 0, B: 0)
+        // max_freq = 0
+        // left = 0
+        // window_length (right - left + 1) = 0
+        // max_length = 0
+
+        for (int right = 0; right < s.length(); right++) {
+            // getRightChar
+            // increment counts[right]
+
+            // Math.max (max_freq, counts[right])
+
+            // window_length = right - left + 1
+
+            // while window_length - max_freq > k:
+            // get lChar at s[left]
+            // decrement counts[lChar]
+            // increment left
+            // window_length = right - left + 1
+
+            // Math.max (max_length vs. window_length)
+        }
+
+        // return
+
+    }
 
     //
     //
@@ -59,7 +93,7 @@ public class LongestRepeatCharReplace {
         // right = 0
         // c = A
         // counts[(A): 0, (B): 0]
-        // windowsize = 
+        // windowsize =
 
         // AABABBA, k=1
         for (int right = 0; right < s.length(); right++) {
