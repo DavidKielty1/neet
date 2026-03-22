@@ -19,82 +19,83 @@ Time: O(n), Space: O(1)
 */
 public class ReverseStringJava {
 
-    // ["h", "a", "n", "n", "a", "H"]
-    //
-
-    
-    //
-
-        //
-    
-    //
-
-        //
-    
-    //
-
-        //
-    
-    //
-
-        //
-    
-    //
-
-        //
-    
-    //
-
-        //
-    
-    //
-
-        //
-    
-    //
-
-        //
-    
-    //  //
-
-        //
-    
-    //
-
-        //
-    
-    //
-
-    
     public static void reverseString(char[] s) {
-        int left = 0;
-        int right = s.length - 1;
+        //
 
-        while (left < right) {
-            char tmp = s[left];
-            s[left] = s[right];
-            s[right] = tmp;
-            left++;
-            right--;
-        }
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+    
+
+        // int left = 0;
+        // int right = s.length - 1;
+        // while (left < right) {
+        //     char tmp = s[left];
+        //     s[left] = s[right];
+        //     s[right] = tmp;
+        //     left++;
+        //     right--;
+        // }
+
+        throw new UnsupportedOperationException("Implement reverseString");
     }
 
-    // Test cases
     public static void main(String[] args) {
-        // Test 1
         char[] s1 = {'h', 'e', 'l', 'l', 'o'};
         reverseString(s1);
-        System.out.println("Reverse String: " + Arrays.toString(s1));  // ["o","l","l","e","h"]
+        System.out.println("Reverse String: " + Arrays.toString(s1));
 
-        // Test 2
         char[] s2 = {'H', 'a', 'n', 'n', 'a', 'h'};
         reverseString(s2);
-        System.out.println("Reverse String: " + Arrays.toString(s2));  // ["h","a","n","n","a","H"]
+        System.out.println("Reverse String: " + Arrays.toString(s2));
 
-        // Test 3
         char[] s3 = {'A'};
         reverseString(s3);
-        System.out.println("Reverse String: " + Arrays.toString(s3));  // ["A"]
+        System.out.println("Reverse String: " + Arrays.toString(s3));
     }
 }
-

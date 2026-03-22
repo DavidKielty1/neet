@@ -19,20 +19,13 @@ Time: O(n), Space: O(n)
 public class TwoSumJava {
 
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> seen = new HashMap<>();
+        //
 
-        for (int i = 0; i < nums.length; i++) {
-            int compliment = target - nums[i];
-            
-            if (seen.containsKey(compliment)) {
-                return new int[]{seen.get(compliment), i};
-            }
+        //
 
-            seen.put(nums[i], i);
-        }
+    //
 
-        return new int[0];
-    }
+        //
 
     //
 
@@ -78,40 +71,44 @@ public class TwoSumJava {
 
     
 
-    // public static int[] twoSum(int[] nums, int target) {
-    //     // Create an empty dictionary (hashmap)
-    //     Map<Integer, Integer> seen = new HashMap<>();
+        // Map<Integer, Integer> seen = new HashMap<>();
+        // for (int i = 0; i < nums.length; i++) {
+        //     int complement = target - nums[i];
+        //     if (seen.containsKey(complement)) {
+        //         return new int[] {seen.get(complement), i};
+        //     }
+        //     seen.put(nums[i], i);
+        // }
+        // return new int[0];
 
+        throw new UnsupportedOperationException("Implement twoSum");
+    }
+
+    // public static int[] twoSum(int[] nums, int target) {
+    //     Map<Integer, Integer> seen = new HashMap<>();
     //     for (int i = 0; i < nums.length; i++) {
     //         int val = nums[i];
     //         int complement = target - val;
-
     //         if (seen.containsKey(complement)) {
-    //             return new int[]{seen.get(complement), i};
+    //             return new int[] {seen.get(complement), i};
     //         }
-
     //         seen.put(val, i);
     //     }
-
     //     return new int[0];
     // }
 
-    // Test cases
     public static void main(String[] args) {
-        // Test 1
+        TwoSumJava sol = new TwoSumJava();
         int[] nums1 = {2, 7, 11, 15};
         int target1 = 9;
-        System.out.println("Two Sum: " + Arrays.toString(twoSum(nums1, target1)));  // [0, 1]
+        System.out.println("Two Sum: " + Arrays.toString(sol.twoSum(nums1, target1)));
 
-        // Test 2
         int[] nums2 = {3, 2, 4};
         int target2 = 6;
-        System.out.println("Two Sum: " + Arrays.toString(twoSum(nums2, target2)));  // [1, 2]
+        System.out.println("Two Sum: " + Arrays.toString(sol.twoSum(nums2, target2)));
 
-        // Test 3
         int[] nums3 = {3, 3};
         int target3 = 6;
-        System.out.println("Two Sum: " + Arrays.toString(twoSum(nums3, target3)));  // [0, 1]
+        System.out.println("Two Sum: " + Arrays.toString(sol.twoSum(nums3, target3)));
     }
 }
-

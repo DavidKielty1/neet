@@ -19,49 +19,85 @@ Time: O(n), Space: O(1)
 */
 public class ContainerWithMostWater {
 
-    /**
-     * Two-pointer solution:
-     * - Start with pointers at both ends.
-     * - Compute area with width (right - left).
-     * - Move the pointer at the shorter line inward, because only that can
-     * potentially increase
-     * the min height and thus the area despite a smaller width.
-     * Time: O(n), Space: O(1)
-     */
+    public static int maxArea(int[] heights) {
+        //
 
-    // public static int maxArea(int[] heights) {
-    // int left = 0;
-    // int right = heights.length - 1;
-    // int maxArea = 0;
+        //
 
-    // // [1,8,6,2,5,4,8,3,7]
-    // while (left < right) {
-    // int minHeight = Math.min(heights[left], heights[right]);
-    // int currArea = (right - left) * minHeight;
-    // maxArea = Math.max(maxArea, currArea);
+    //
 
-    // if (heights[left] > heights[right]) {
-    // right--;
-    // } else {
-    // left++;
-    // }
-    // }
+        //
 
-    // return maxArea;
-    // }
+    //
 
-    // Test cases
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+    
+
+        // int left = 0;
+        // int right = heights.length - 1;
+        // int maxArea = 0;
+        // while (left < right) {
+        //     int minHeight = Math.min(heights[left], heights[right]);
+        //     int currArea = (right - left) * minHeight;
+        //     maxArea = Math.max(maxArea, currArea);
+        //     if (heights[left] < heights[right]) {
+        //         left++;
+        //     } else {
+        //         right--;
+        //     }
+        // }
+        // return maxArea;
+
+        throw new UnsupportedOperationException("Implement maxArea");
+    }
+
     public static void main(String[] args) {
-        // Test 1
-        int[] height1 = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
-        System.out.println("Max Area: " + maxArea(height1)); // 49
+        int[] height1 = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        System.out.println("Max Area: " + maxArea(height1));
 
-        // Test 2
-        int[] height2 = { 1, 1 };
-        System.out.println("Max Area: " + maxArea(height2)); // 1
+        int[] height2 = {1, 1};
+        System.out.println("Max Area: " + maxArea(height2));
 
-        // Test 3
-        int[] height3 = { 4, 3, 2, 1, 4 };
-        System.out.println("Max Area: " + maxArea(height3)); // 16
+        int[] height3 = {4, 3, 2, 1, 4};
+        System.out.println("Max Area: " + maxArea(height3));
     }
 }

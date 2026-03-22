@@ -29,87 +29,116 @@ Space Complexity: O(1) for two-pointer, O(n) for filtered approach
 */
 public class ValidPalindromeJava {
 
-    // Approach: Two pointers from opposite ends
     static class Solution {
-        /*
-         * Strategy:
-         * 1. Use two pointers: left starts at beginning, right at end
-         * 2. Skip non-alphanumeric characters
-         * 3. Compare characters (case-insensitive)
-         * 4. Move pointers inward
-         * 5. Return true if all comparisons match
-         */
         public boolean isPalindrome(String s) {
-            int left = 0;
-            int right = s.length() - 1;
+            //
 
-            while (left < right) {
-                // Skip non-alphanumeric from left
-                while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
-                    left++;
-                }
+            //
 
-                // Skip non-alphanumeric from right
-                while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
-                    right--;
-                }
+        //
 
-                char cLeft = Character.toLowerCase(s.charAt(left));
-                char cRight = Character.toLowerCase(s.charAt(right));
+            //
 
-                if (cLeft != cRight) {
-                    return false;
-                }
+        //
 
-                left++;
-                right--;
-            }
+            //
 
-            return true;
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+            //
+
+        //
+
+        
+
+            // int left = 0;
+            // int right = s.length() - 1;
+            // while (left < right) {
+            //     while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+            //         left++;
+            //     }
+            //     while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+            //         right--;
+            //     }
+            //     char cLeft = Character.toLowerCase(s.charAt(left));
+            //     char cRight = Character.toLowerCase(s.charAt(right));
+            //     if (cLeft != cRight) {
+            //         return false;
+            //     }
+            //     left++;
+            //     right--;
+            // }
+            // return true;
+
+            throw new UnsupportedOperationException("Implement isPalindrome");
         }
     }
 
-    // Alternative approach: filter and compare
     static class SolutionAlternative {
         /*
          * Time Complexity: O(n)
          * Space Complexity: O(n) - creates filtered string
          */
-        public boolean isPalindrome(String s) {
-            StringBuilder filtered = new StringBuilder();
-            for (int i = 0; i < s.length(); i++) {
-                char c = s.charAt(i);
-                if (Character.isLetterOrDigit(c)) {
-                    filtered.append(Character.toLowerCase(c));
-                }
-            }
-            String f = filtered.toString();
-            String rev = filtered.reverse().toString();
-            return f.equals(rev);
-        }
+        // public boolean isPalindrome(String s) {
+        //     StringBuilder filtered = new StringBuilder();
+        //     for (int i = 0; i < s.length(); i++) {
+        //         char c = s.charAt(i);
+        //         if (Character.isLetterOrDigit(c)) {
+        //             filtered.append(Character.toLowerCase(c));
+        //         }
+        //     }
+        //     String f = filtered.toString();
+        //     return f.contentEquals(filtered.reverse());
+        // }
     }
 
-    // Test cases
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        // Test case 1
         assert solution.isPalindrome("A man, a plan, a canal: Panama");
         System.out.println("✓ Test case 1 passed");
 
-        // Test case 2
         assert !solution.isPalindrome("race a car");
         System.out.println("✓ Test case 2 passed");
 
-        // Test case 3
         assert solution.isPalindrome(" ");
         System.out.println("✓ Test case 3 passed");
 
-        // Test case 4
         assert solution.isPalindrome("a.");
         System.out.println("✓ Test case 4 passed");
 
         System.out.println("\nAll test cases passed!");
     }
 }
-

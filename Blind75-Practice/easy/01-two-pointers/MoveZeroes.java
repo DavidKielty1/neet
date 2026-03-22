@@ -18,76 +18,87 @@ Time: O(n), Space: O(1)
 */
 public class MoveZeroes {
 
-    // e.g. array = [1, 0, 0, 2, 3, 0]
+    public static void moveZeroes(int[] nums) {
+        //
+
+        //
 
     //
 
-    //
+        //
 
     //
 
-    //
+        //
 
     //
 
-    //
+        //
 
     //
 
-    //
+        //
 
     //
 
-    //
+        //
 
     //
 
-    //
+        //
 
     //
 
-    //
+        //
 
     //
 
-    //
+        //
 
     //
 
-    // public static void moveZeroes(int[] nums) {
-    // int left = 0;
-    // for (int right = 0; right < nums.length; right++) {
-    // if (nums[right] == 0)
-    // continue;
-    // if (left < right) {
-    // nums[left] = nums[right];
-    // nums[right] = 0;
-    // }
-    // left++;
-    // }
-    // }
+        //
 
-}
+    //
 
-    // Test cases
+        //
+
+    //
+
+        //
+
+    //
+
+    
+
+        // int left = 0;
+        // for (int right = 0; right < nums.length; right++) {
+        //     if (nums[right] != 0) {
+        //         int tmp = nums[left];
+        //         nums[left] = nums[right];
+        //         nums[right] = tmp;
+        //         left++;
+        //     }
+        // }
+
+        throw new UnsupportedOperationException("Implement moveZeroes");
+    }
+
     public static void main(String[] args) {
-        // Test 1
-        int[] nums1 = { 0, 1, 0, 3, 12 };
+        int[] nums1 = {0, 1, 0, 3, 12};
         moveZeroes(nums1);
         System.out.print("Move Zeroes: ");
-        printArray(nums1); // [1, 3, 12, 0, 0]
+        printArray(nums1);
 
-        // Test 2
-        int[] nums2 = { 0 };
+        int[] nums2 = {0};
         moveZeroes(nums2);
         System.out.print("Move Zeroes: ");
-        printArray(nums2); // [0]
+        printArray(nums2);
 
-        // Test 3
-        int[] nums3 = { 1, 0, 0, 2, 3 };
+        int[] nums3 = {1, 0, 0, 2, 3};
         moveZeroes(nums3);
         System.out.print("Move Zeroes: ");
-        printArray(nums3); // [1, 2, 3, 0, 0]
+        printArray(nums3);
     }
 
     private static void printArray(int[] nums) {

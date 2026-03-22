@@ -11,26 +11,78 @@ Time: O(n), Space: O(n) for the char[] (and the new String)
 */
 public class ReverseActualStringJava {
 
-    /** Returns a new String with characters in reverse order. */
     public static String reverse(String s) {
-        if (s == null || s.length() <= 1) {
-            return s;
-        }
-        char[] chars = s.toCharArray();
-        int left = 0;
-        int right = chars.length - 1;
-        while (left < right) {
-            char tmp = chars[left];
-            chars[left] = chars[right];
-            chars[right] = tmp;
-            left++;
-            right--;
-        }
-        return new String(chars);
+        //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+    
+
+        // if (s == null || s.length() <= 1) {
+        //     return s;
+        // }
+        // char[] chars = s.toCharArray();
+        // int left = 0;
+        // int right = chars.length - 1;
+        // while (left < right) {
+        //     char tmp = chars[left];
+        //     chars[left] = chars[right];
+        //     chars[right] = tmp;
+        //     left++;
+        //     right--;
+        // }
+        // return new String(chars);
+
+        throw new UnsupportedOperationException("Implement reverse");
     }
 
     public static void main(String[] args) {
-        // Optional: pass a word on the command line, e.g. java ReverseActualStringJava hannaH
         if (args.length > 0) {
             System.out.println(reverse(args[0]));
             return;
