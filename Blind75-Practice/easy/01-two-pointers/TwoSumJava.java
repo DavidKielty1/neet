@@ -18,37 +18,83 @@ Time: O(n), Space: O(n)
 */
 public class TwoSumJava {
 
-    public static int[] twoSum(int[] nums, int target) {
-        // Create an empty dictionary (hashmap)
+    public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> seen = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
-            int val = nums[i];
-            int complement = target - val;
-
-            if (seen.containsKey(complement)) {
-                return new int[]{seen.get(complement), i};
+            int compliment = target - nums[i];
+            
+            if (seen.containsKey(compliment)) {
+                return new int[]{seen.get(compliment), i};
             }
 
-            seen.put(val, i);
+            seen.put(nums[i], i);
         }
 
         return new int[0];
     }
 
-    /*
-    # hashmap: dict[int, int] = {}
-    #
-    # for i, num in enumerate(nums):
-    #     complement = target - num
-    #
-    #     if complement in hashmap:
-    #         return [hashmap[complement], i]
-    #
-    #     hashmap[num] = i
-    #
-    # return []
-    */
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+    
+
+    // public static int[] twoSum(int[] nums, int target) {
+    //     // Create an empty dictionary (hashmap)
+    //     Map<Integer, Integer> seen = new HashMap<>();
+
+    //     for (int i = 0; i < nums.length; i++) {
+    //         int val = nums[i];
+    //         int complement = target - val;
+
+    //         if (seen.containsKey(complement)) {
+    //             return new int[]{seen.get(complement), i};
+    //         }
+
+    //         seen.put(val, i);
+    //     }
+
+    //     return new int[0];
+    // }
 
     // Test cases
     public static void main(String[] args) {
