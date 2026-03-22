@@ -15,7 +15,7 @@ Contract (LeetCode 27):
   index k-1 are ignored by the caller and may be any value.
 
 Example:
-Input: nums = [3,2,2,3], val = 3
+Input: nums = [1,2,3,2,2,3], val = 3
 Output: 2, nums = [2,2,_,_]
 
 Time: O(n), Space: O(1)
@@ -28,9 +28,8 @@ public class RemoveElementJava {
      * nums: [3, 2, 2, 3], target = 3
      */
 
-    public static int[] removeTarget (int[] nums, int target) {
-        
-    }
+    // [1,2,3,2,2,3,2,2] target = 2
+
 
     //
     //

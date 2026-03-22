@@ -33,6 +33,57 @@ public class SquaresOfSortedArray {
      *
      * [-4, -1, 0, 3, 10] -> [0, 1, 9, 16, 100]
      */
+
+    // [-4, -1, 0, 3, 10]  n = 5; right = index 4 ([0,1,2,3,4])
+    public static int[] sortedSquares (int[] nums) {
+
+
+    //
+    
+    //
+
+        //
+    //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+        //
+    
+    //
+
+    
     public static int[] sortedSquares(int[] nums) {
         int n = nums.length;
         int[] result = new int[n];

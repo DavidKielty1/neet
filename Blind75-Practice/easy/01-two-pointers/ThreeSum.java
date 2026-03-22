@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /*
 15. 3Sum
 Difficulty: Medium
@@ -18,6 +14,11 @@ Output: [[-1,-1,2],[-1,0,1]]
 
 Time: O(n²), Space: O(1)
 */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ThreeSum {
 
     /**
@@ -26,48 +27,130 @@ public class ThreeSum {
      * We sort, so if the current_sum is smaller than target, we increment left.
      * If current_sum is larger than target, we decrement right.
      */
-    public static List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> result = new ArrayList<>();
 
-        // [-4, -1, -1, 0, 0, 0, 1, 2, 4, 4]
+    public static List<List<Integer>> threeSum (int[] nums) {
+        Arrays.sort(nums);
+        List<List<Integer>> output = new ArrayList<>();
+
         for (int i = 0; i < nums.length - 2; i++) {
-            // Skip duplicate values for i
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;
-            }
+            // while check to clear duplicates of initial e.g. array of: 
+            // [-4, -4, -1, -1, 0, 1, 2]
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
 
             int left = i + 1;
             int right = nums.length - 1;
-            int target = -nums[i];
+            
+            // [-4, -1, -1, 0, 1, 2]
+            while (right > left) {
+                int currentTotal = nums[i] + nums[left] + nums[right];
 
-            while (left < right) {
-                int currSum = nums[left] + nums[right];
+                if (currentTotal == 0) {
+                    output.add(Arrays.asList(nums[i], nums[left], nums[right]));
 
-                if (currSum == target) {
-                    result.add(Arrays.asList(nums[i], nums[left], nums[right]));
-
-                    // Skip duplicates for left
-                    while (left < right && nums[left] == nums[left + 1]) {
-                        left++;
-                    }
-                    // Skip duplicates for right
-                    while (left < right && nums[right] == nums[right - 1]) {
-                        right--;
-                    }
+                    
+                    while (right > left && nums[left] == nums[left + 1]) left++;
+                    
+                    while (right > left && nums[right] == nums[right - 1]) right--;
 
                     left++;
-                    right--;
-                } else if (currSum < target) {
-                    left++;
-                } else {
                     right--;
                 }
+
+                else if (currentTotal > 0) right--;
+                else left++;
             }
         }
 
-        return result;
+        return output;
     }
+
+    //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+        //
+
+    //
+
+    
+    // public static List<List<Integer>> threeSum(int[] nums) {
+    //     Arrays.sort(nums);
+    //     List<List<Integer>> result = new ArrayList<>();
+
+    //     // [-4, -1, -1, 0, 0, 0, 1, 2, 4, 4]
+    //     for (int i = 0; i < nums.length - 2; i++) {
+    //         // Skip duplicate values for i
+    //         if (i > 0 && nums[i] == nums[i - 1]) {
+    //             continue;
+    //         }
+
+    //         int left = i + 1;
+    //         int right = nums.length - 1;
+    //         int target = -nums[i];
+
+    //         while (left < right) {
+    //             int currSum = nums[left] + nums[right];
+
+    //             if (currSum == target) {
+    //                 result.add(Arrays.asList(nums[i], nums[left], nums[right]));
+
+    //                 // Skip duplicates for left
+    //                 while (left < right && nums[left] == nums[left + 1]) {
+    //                     left++;
+    //                 }
+    //                 // Skip duplicates for right
+    //                 while (left < right && nums[right] == nums[right - 1]) {
+    //                     right--;
+    //                 }
+
+    //                 left++;
+    //                 right--;
+    //             } else if (currSum < target) {
+    //                 left++;
+    //             } else {
+    //                 right--;
+    //             }
+    //         }
+    //     }
+
+    //     return result;
+    // }
 
     /*
     # nums.sort()
