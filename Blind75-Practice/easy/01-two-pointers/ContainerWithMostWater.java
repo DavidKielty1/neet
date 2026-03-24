@@ -11,9 +11,15 @@ contains the most water.
 
 Return the maximum amount of water a container can store.
 
-Example:
+Example 1:
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
+Hint: Area = width * min(h[left], h[right]); move the shorter line inward.
+
+Example 2:
+Input: height = [1,1]
+Output: 1
+Hint: Two lines width 1, min height 1 — sanity check for endpoints shrinking.
 
 Time: O(n), Space: O(1)
 */

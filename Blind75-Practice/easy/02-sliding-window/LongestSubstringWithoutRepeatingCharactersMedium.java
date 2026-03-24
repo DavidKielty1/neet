@@ -3,6 +3,16 @@
  * Difficulty: Medium
  * Pattern: Sliding Window
  *
+ * Example 1:
+ * Input: s = "eceba", k = 2
+ * Output: 3
+ * Hint: Longest substring with at most 2 distinct chars is "ece" — expand right, shrink when >k keys.
+ *
+ * Example 2:
+ * Input: s = "ccaabbb", k = 2
+ * Output: 5
+ * Hint: "aabbb" uses only a and b; window size vs distinct count drives the shrink.
+ *
  * Time: O(n), Space: O(k)
  */
 import java.util.HashMap;

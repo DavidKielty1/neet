@@ -5,6 +5,16 @@ Pattern: Arrays & Hashing
 
 Return true if t is an anagram of s (lowercase English letters).
 
+Example 1:
+Input: s = "anagram", t = "nagaram"
+Output: true
+Hint: Same multiset of letters; frequency counts or sorting both point here.
+
+Example 2:
+Input: s = "rat", t = "car"
+Output: false
+Hint: Length can match but letter counts differ — compare per-character tallies.
+
 Time: O(n), Space: O(1) — 26 letters
 */
 public class ValidAnagramJava {

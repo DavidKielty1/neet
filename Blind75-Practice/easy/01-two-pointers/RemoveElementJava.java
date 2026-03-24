@@ -14,9 +14,15 @@ Contract (LeetCode 27):
 - Return k (the number of elements not equal to val). The values beyond
   index k-1 are ignored by the caller and may be any value.
 
-Example:
+Example 1:
 Input: nums = [1,2,3,2,2,3], val = 3
 Output: 2, nums = [2,2,_,_]
+Hint: Slow pointer = next slot to write a “keep”; fast scans all elements.
+
+Example 2:
+Input: nums = [3,2,2,3], val = 3
+Output: 2, nums = [2,2,_,_]
+Hint: In-place overwrite; order among kept values only needs to stay valid at prefix.
 
 Time: O(n), Space: O(1)
 */

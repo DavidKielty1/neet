@@ -5,6 +5,16 @@ Pattern: Arrays & Hashing
 
 Return true if ransomNote can be built from magazine (each magazine letter once).
 
+Example 1:
+Input: ransomNote = "a", magazine = "b"
+Output: false
+Hint: Magazine has no 'a'; think “consume” counts from a letter pool.
+
+Example 2:
+Input: ransomNote = "aa", magazine = "aab"
+Output: true
+Hint: Two 'a's available after counting magazine; decrement as you spell the note.
+
 Time: O(m + n), Space: O(1) — 26 letters
 */
 public class RansomNoteJava {

@@ -5,6 +5,16 @@
  *
  * Given an array and an integer k, find the maximum for each contiguous subarray of size k.
  *
+ * Example 1:
+ * Input: arr = [1,3,-1,-3,5,3,6,7], k = 3
+ * Output: [3,3,5,5,6,7]
+ * Hint: Deque of indices, decreasing values; drop indices outside window or too small.
+ *
+ * Example 2:
+ * Input: arr = [1], k = 1
+ * Output: [1]
+ * Hint: One window only; deque holds that single index as the current max.
+ *
  * Time: O(n), Space: O(k)
  */
 import java.util.Arrays;

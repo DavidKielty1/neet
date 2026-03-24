@@ -7,6 +7,16 @@ cannot swap characters inside the String itself. Typical approaches:
 1. Copy to char[], two-pointer swap, then new String(chars)  (shown below)
 2. new StringBuilder(s).reverse().toString()  (library, same time O(n))
 
+Example 1:
+Input: s = "hannaH"
+Output: "Hannah"
+Hint: Mirror indices in a mutable char[] copy, then new String(...).
+
+Example 2:
+Input: s = "hello"
+Output: "olleh"
+Hint: Same two-pointer idea; odd length has a middle char that stays put.
+
 Time: O(n), Space: O(n) for the char[] (and the new String)
 */
 public class ReverseActualStringJava {

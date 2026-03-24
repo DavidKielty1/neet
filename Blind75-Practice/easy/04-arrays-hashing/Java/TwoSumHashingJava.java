@@ -8,6 +8,16 @@ Pattern: Arrays & Hashing
 
 Return indices of two numbers that add up to target. Exactly one solution exists.
 
+Example 1:
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Hint: Complement of 2 is 7; you want value -> index while scanning once.
+
+Example 2:
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+Hint: Order of indices can be any; same map idea with complement target - nums[i].
+
 Time: O(n), Space: O(n)
 */
 public class TwoSumHashingJava {

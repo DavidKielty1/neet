@@ -7,6 +7,16 @@ change it to any other uppercase English character. You can perform this operati
 Return the length of the longest substring containing the same letter you can get after performing
 the above operations.
 
+Example 1:
+Input: s = "ABAB", k = 2
+Output: 4
+Hint: Window may need at most k changes; track counts and max frequency in window.
+
+Example 2:
+Input: s = "AABABBA", k = 1
+Output: 4
+Hint: If windowLength - maxFreqInWindow > k, shrink from left — sliding window.
+
 Time: O(n), Space: O(1) — 26 uppercase letters
 */
 public class LongestRepeatCharReplace {

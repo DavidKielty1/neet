@@ -9,6 +9,16 @@ Pattern: Arrays & Hashing / DP
 
 Return the first numRows of Pascal's triangle.
 
+Example 1:
+Input: numRows = 5
+Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+Hint: Each interior cell is sum of two cells above; edges are always 1.
+
+Example 2:
+Input: numRows = 1
+Output: [[1]]
+Hint: Base case is a single row; build row i from row i-1.
+
 Time: O(numRows^2), Space: O(numRows^2)
 */
 public class PascalsTriangleJava {

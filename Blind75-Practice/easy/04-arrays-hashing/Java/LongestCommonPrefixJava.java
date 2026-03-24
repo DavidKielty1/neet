@@ -5,6 +5,16 @@ Pattern: String
 
 If no common prefix, return "".
 
+Example 1:
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+Hint: Column 0 is 'f' for all; column 1 is 'l' for all; column 2 diverges.
+
+Example 2:
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Hint: First chars already differ — vertical scan stops immediately.
+
 Time: O(n * m), Space: O(1) excluding output
 */
 public class LongestCommonPrefixJava {

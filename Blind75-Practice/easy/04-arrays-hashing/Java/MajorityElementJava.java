@@ -5,6 +5,16 @@ Pattern: Arrays & Hashing
 
 Majority element appears more than floor(n/2) times. (Boyer–Moore voting.)
 
+Example 1:
+Input: nums = [3,2,3]
+Output: 3
+Hint: 3 appears twice (> n/2); pairing / canceling other values reveals the mode.
+
+Example 2:
+Input: nums = [2,2,1,1,1,2,2]
+Output: 2
+Hint: 2 wins 4 of 7; think “candidate + balance” as you stream the array.
+
 Time: O(n), Space: O(1)
 */
 public class MajorityElementJava {

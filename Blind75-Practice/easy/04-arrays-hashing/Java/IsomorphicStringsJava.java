@@ -8,6 +8,16 @@ Pattern: Arrays & Hashing
 
 Bijection between characters of s and t (same length, ASCII).
 
+Example 1:
+Input: s = "egg", t = "add"
+Output: true
+Hint: e->a, g->d consistently; two maps (s→t and t→s) catch collisions.
+
+Example 2:
+Input: s = "foo", t = "bar"
+Output: false
+Hint: First o→a, second o→r breaks a fixed s→t mapping — check both directions.
+
 Time: O(n), Space: O(1) — bounded by charset
 */
 public class IsomorphicStringsJava {

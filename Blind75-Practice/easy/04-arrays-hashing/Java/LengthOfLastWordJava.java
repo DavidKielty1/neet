@@ -5,6 +5,16 @@ Pattern: String
 
 Return the length of the last word in s (words are maximal non-space substrings).
 
+Example 1:
+Input: s = "Hello World"
+Output: 5
+Hint: Last token is "World"; trim trailing spaces before walking backward.
+
+Example 2:
+Input: s = "   fly me   to   the moon  "
+Output: 4
+Hint: Multiple spaces; the last word is "moon", not a gap.
+
 Time: O(n), Space: O(1)
 */
 public class LengthOfLastWordJava {

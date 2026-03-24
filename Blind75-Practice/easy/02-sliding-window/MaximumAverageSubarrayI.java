@@ -5,6 +5,16 @@
  *
  * Find a contiguous subarray of length k with maximum average; return that average.
  *
+ * Example 1:
+ * Input: nums = [1,12,-5,-6,50,3], k = 4
+ * Output: 12.75
+ * Hint: Sum first window of k, then slide: add nums[i], subtract nums[i-k], track max sum.
+ *
+ * Example 2:
+ * Input: nums = [5], k = 1
+ * Output: 5.0
+ * Hint: Single window is the whole array; average equals that one element.
+ *
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

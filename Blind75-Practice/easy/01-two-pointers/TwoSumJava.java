@@ -9,10 +9,15 @@ Pattern: Two Pointers (with Hash Map)
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
-Example:
+Example 1:
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+Hint: Complement 9-2=7 seen later at index 1 — hash map of value→index.
+
+Example 2:
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+Hint: 2+4=6; avoid reusing the same index when scanning.
 
 Time: O(n), Space: O(n)
 */

@@ -10,9 +10,15 @@ Contract (LeetCode 283):
 - Modify nums in-place to move all zeros to the end.
 - Do not return anything; mutate nums directly.
 
-Example:
+Example 1:
 Input: nums = [0,1,0,3,12]
 Output: [1,3,12,0,0]
+Hint: Anchor non-zeros to the left; zeros get “pushed” to the tail as you scan.
+
+Example 2:
+Input: nums = [1,0,0,2,3]
+Output: [1,2,3,0,0]
+Hint: Relative order of 1,2,3 preserved — not a full sort.
 
 Time: O(n), Space: O(1)
 */

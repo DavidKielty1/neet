@@ -11,6 +11,16 @@ a different day in the future to sell that stock.
 Return the maximum profit you can achieve from this transaction. If you cannot achieve
 any profit, return 0.
 
+Example 1:
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Hint: Buy at 1, sell at 6; track minimum price so far and best profit in one pass.
+
+Example 2:
+Input: prices = [7,6,4,3,1]
+Output: 0
+Hint: Only decreasing — never sell above a prior buy you’d want; profit stays 0.
+
 Time Complexity: O(n)
 Space Complexity: O(1)
 */

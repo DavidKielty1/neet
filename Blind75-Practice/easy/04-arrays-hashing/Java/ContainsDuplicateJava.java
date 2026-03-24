@@ -1,6 +1,3 @@
-import java.util.HashSet;
-import java.util.Set;
-
 /*
 217. Contains Duplicate
 Difficulty: Easy
@@ -8,12 +5,20 @@ Pattern: Arrays & Hashing
 
 Given an integer array nums, return true if any value appears at least twice.
 
+Example 1:
+Input: nums = [1,2,3,1]
+Output: true
+Hint: 1 appears twice — duplicates matter, not which value repeats.
+
+Example 2:
+Input: nums = [1,2,3,4]
+Output: false
+Hint: All distinct; a set or sort-based check stays in the “membership / frequency” space.
+
 Time: O(n), Space: O(n)
 */
-public class ContainsDuplicateJava {
 
-    public boolean containsDuplicate(int[] nums) {
-        //
+public class ContainsDuplicateJava {
 
         //
 

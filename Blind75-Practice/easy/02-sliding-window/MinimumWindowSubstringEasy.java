@@ -5,6 +5,16 @@
  *
  * Given two strings s and p, return all start indices of p's anagrams in s.
  *
+ * Example 1:
+ * Input: s = "cbaebabacd", p = "abc"
+ * Output: [0,6]
+ * Hint: Fixed-length window; compare 26-letter counts to p’s signature.
+ *
+ * Example 2:
+ * Input: s = "abab", p = "ab"
+ * Output: [0,1,2]
+ * Hint: Overlapping windows; slide one char, update counts, check equality.
+ *
  * Time: O(n), Space: O(1) for 26 letters
  */
 import java.util.List;

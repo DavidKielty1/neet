@@ -5,6 +5,16 @@ Pattern: Two Pointers
 
 (Note: filename references number problems; this file follows the valid palindrome string problem.)
 
+Example 1:
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Hint: Skip non-alphanumerics, compare lowercase from both ends.
+
+Example 2:
+Input: s = "race a car"
+Output: false
+Hint: After filtering, "raceacar" is not symmetric — two pointers inward.
+
 Time Complexity: O(n)
 Space Complexity: O(1)
 */

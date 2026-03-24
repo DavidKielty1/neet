@@ -11,9 +11,15 @@ array of characters s.
 Contract (LeetCode 344):
 - Do not return anything; modify s in-place by reversing the characters.
 
-Example:
+Example 1:
 Input: s = ["h","e","l","l","o"]
 Output: ["o","l","l","e","h"]
+Hint: Swap s[left] and s[right], move both toward center until they meet.
+
+Example 2:
+Input: s = ["A"]
+Output: ["A"]
+Hint: Length 1 is already reversed — bounds check on left < right.
 
 Time: O(n), Space: O(1)
 */

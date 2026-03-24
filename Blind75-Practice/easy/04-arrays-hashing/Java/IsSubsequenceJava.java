@@ -5,6 +5,16 @@ Pattern: Two Pointers
 
 Return true if s can be obtained from t by deleting characters without reordering.
 
+Example 1:
+Input: s = "abc", t = "ahbgdc"
+Output: true
+Hint: Match 'a', then 'b', then 'c' in order as you scan t with two pointers.
+
+Example 2:
+Input: s = "axc", t = "ahbgdc"
+Output: false
+Hint: 'x' never appears; order matters — not a multiset problem alone.
+
 Time: O(t.length()), Space: O(1)
 */
 public class IsSubsequenceJava {
