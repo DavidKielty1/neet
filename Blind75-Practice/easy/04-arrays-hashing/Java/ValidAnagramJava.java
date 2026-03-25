@@ -3,17 +3,29 @@
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
-Return true if t is an anagram of s (lowercase English letters).
+Problem:
+Given two strings s and t, return true if t is an anagram of s: the same multiset of
+characters with the same frequencies (same letters, same counts). Typically both strings
+contain only lowercase English letters.
+
+Notes:
+- Different order is fine; only per-letter counts must match.
+- If lengths differ, the answer is false.
 
 Example 1:
 Input: s = "anagram", t = "nagaram"
 Output: true
-Hint: Same multiset of letters; frequency counts or sorting both point here.
+Explanation: Both strings use three a’s, one g, one m, one n, one r.
 
 Example 2:
 Input: s = "rat", t = "car"
 Output: false
-Hint: Length can match but letter counts differ — compare per-character tallies.
+Explanation: Letter counts differ (e.g. 't' vs 'c').
+
+Example 3:
+Input: s = "listen", t = "silent"
+Output: true
+Explanation: Same letters, rearranged.
 
 Time: O(n), Space: O(1) — 26 letters
 */

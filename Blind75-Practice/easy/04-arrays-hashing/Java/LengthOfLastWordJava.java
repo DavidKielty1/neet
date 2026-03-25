@@ -3,17 +3,29 @@
 Difficulty: Easy
 Pattern: String
 
-Return the length of the last word in s (words are maximal non-space substrings).
+Problem:
+Given a string s consisting of words and spaces, return the length of the last word in the
+string. A word is a maximal substring of non-space characters. Leading and trailing spaces
+may appear; only the final word’s length after the last non-space content matters.
+
+Notes:
+- Walk from the end: skip trailing spaces, then count characters until the next space or start.
+- If s is empty or only spaces, define behavior per your platform (often 0).
 
 Example 1:
 Input: s = "Hello World"
 Output: 5
-Hint: Last token is "World"; trim trailing spaces before walking backward.
+Explanation: The last word is "World", length 5.
 
 Example 2:
 Input: s = "   fly me   to   the moon  "
 Output: 4
-Hint: Multiple spaces; the last word is "moon", not a gap.
+Explanation: Trailing spaces are ignored; the last word is "moon", length 4.
+
+Example 3:
+Input: s = "luffy is still joyboy"
+Output: 6
+Explanation: The last word is "joyboy", length 6.
 
 Time: O(n), Space: O(1)
 */

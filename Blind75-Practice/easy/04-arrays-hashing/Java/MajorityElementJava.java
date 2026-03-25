@@ -3,19 +3,30 @@
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
-Majority element appears more than floor(n/2) times. (Boyer–Moore voting.)
+Problem:
+Given an array nums of length n, return the majority element: the value that appears strictly
+more than floor(n/2) times. The problem guarantees such an element exists.
+
+Notes:
+- Hash map counting is straightforward; Boyer–Moore voting achieves O(1) extra space.
+- The majority element always appears at least once in any split of the array.
 
 Example 1:
 Input: nums = [3,2,3]
 Output: 3
-Hint: 3 appears twice (> n/2); pairing / canceling other values reveals the mode.
+Explanation: n = 3; majority requires more than 1 occurrence; 3 appears twice.
 
 Example 2:
 Input: nums = [2,2,1,1,1,2,2]
 Output: 2
-Hint: 2 wins 4 of 7; think “candidate + balance” as you stream the array.
+Explanation: n = 7; need more than 3 occurrences; 2 appears four times.
 
-Time: O(n), Space: O(1)
+Example 3:
+Input: nums = [1]
+Output: 1
+Explanation: The single element is trivially the majority.
+
+Time: O(n), Space: O(1) with Boyer–Moore (O(n) with a hash map)
 */
 public class MajorityElementJava {
 

@@ -3,22 +3,35 @@
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
-Given an integer array nums, return true if any value appears at least twice.
+Problem:
+Given an integer array nums, return true if any value appears at least twice in the array,
+and false if every element is distinct.
+
+Notes:
+- Order does not matter; only whether some value occurs more than once.
+- Typical approaches: hash set (or sort and scan adjacent pairs).
 
 Example 1:
 Input: nums = [1,2,3,1]
 Output: true
-Hint: 1 appears twice — duplicates matter, not which value repeats.
+Explanation: The value 1 appears at indices 0 and 3.
 
 Example 2:
 Input: nums = [1,2,3,4]
 Output: false
-Hint: All distinct; a set or sort-based check stays in the “membership / frequency” space.
+Explanation: All four values are unique.
 
-Time: O(n), Space: O(n)
+Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2]
+Output: true
+Explanation: Many duplicates (e.g. 1 appears more than once).
+
+Time: O(n), Space: O(n) for a set (O(1) extra if sorting in place and allowed).
 */
 
 public class ContainsDuplicateJava {
+
+    public boolean containsDuplicate(int[] nums) {
 
         //
 

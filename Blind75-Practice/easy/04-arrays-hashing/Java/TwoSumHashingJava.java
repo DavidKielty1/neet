@@ -6,17 +6,29 @@ import java.util.Map;
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
-Return indices of two numbers that add up to target. Exactly one solution exists.
+Problem:
+Given an integer array nums and an integer target, return the indices of the two distinct
+elements whose values sum to target. Exactly one valid pair exists. You may not use the same
+element twice; return the two indices in any order unless the platform specifies otherwise.
+
+Notes:
+- Complement approach: for each index i, check whether (target - nums[i]) was seen earlier.
+- Hash map: value -> index for elements already visited.
 
 Example 1:
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
-Hint: Complement of 2 is 7; you want value -> index while scanning once.
+Explanation: nums[0] + nums[1] = 2 + 7 = 9.
 
 Example 2:
 Input: nums = [3,2,4], target = 6
 Output: [1,2]
-Hint: Order of indices can be any; same map idea with complement target - nums[i].
+Explanation: nums[1] + nums[2] = 2 + 4 = 6.
+
+Example 3:
+Input: nums = [3,3], target = 6
+Output: [0,1]
+Explanation: Two different indices with the same value are allowed.
 
 Time: O(n), Space: O(n)
 */

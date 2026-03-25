@@ -3,17 +3,29 @@
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
-Return true if ransomNote can be built from magazine (each magazine letter once).
+Problem:
+Given two strings ransomNote and magazine, return true if you can construct ransomNote by
+using letters from magazine, where each letter in magazine can be used at most as many times
+as it appears in magazine (you cannot reuse a letter more than you have).
+
+Notes:
+- Only lowercase English letters in typical versions.
+- Count letters in magazine, then subtract for each character in ransomNote; any negative count fails.
 
 Example 1:
 Input: ransomNote = "a", magazine = "b"
 Output: false
-Hint: Magazine has no 'a'; think “consume” counts from a letter pool.
+Explanation: Magazine has no 'a' to supply the ransom note.
 
 Example 2:
 Input: ransomNote = "aa", magazine = "aab"
 Output: true
-Hint: Two 'a's available after counting magazine; decrement as you spell the note.
+Explanation: Magazine has two 'a's; the note needs two 'a's.
+
+Example 3:
+Input: ransomNote = "aa", magazine = "ab"
+Output: false
+Explanation: Magazine has only one 'a'; cannot spell "aa".
 
 Time: O(m + n), Space: O(1) — 26 letters
 */

@@ -3,19 +3,31 @@
 Difficulty: Easy
 Pattern: Two Pointers
 
-Return true if s can be obtained from t by deleting characters without reordering.
+Problem:
+Given strings s and t, return true if s is a subsequence of t: you can delete zero or more
+characters from t (without reordering what remains) so that the result equals s. Equivalently,
+all characters of s appear in t in the same left-to-right order (not necessarily contiguous).
+
+Notes:
+- An empty s is typically a subsequence of any t (check problem statement on your platform).
+- Greedy: advance through s as you scan t, matching the next needed character.
 
 Example 1:
 Input: s = "abc", t = "ahbgdc"
 Output: true
-Hint: Match 'a', then 'b', then 'c' in order as you scan t with two pointers.
+Explanation: Match 'a', then 'b', then 'c' in order within t.
 
 Example 2:
 Input: s = "axc", t = "ahbgdc"
 Output: false
-Hint: 'x' never appears; order matters — not a multiset problem alone.
+Explanation: After matching 'a', the next character 'x' never appears in the rest of t.
 
-Time: O(t.length()), Space: O(1)
+Example 3:
+Input: s = "", t = "ahbgdc"
+Output: true
+Explanation: Empty string is a subsequence of any string.
+
+Time: O(|t|), Space: O(1)
 */
 public class IsSubsequenceJava {
 
