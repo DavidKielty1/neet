@@ -32,6 +32,13 @@ Time: O(|t|), Space: O(1)
 public class IsSubsequenceJava {
 
     public boolean isSubsequence(String s, String t) {
+        int si = 0;
+        for (int ti = 0; ti < t.length(); ti++)  {
+            if (si <= s.length() && s.charAt(si) == t.charAt(ti)) {
+                si++;
+            }
+        }
+        return si == s.length();
         //
 
         //
@@ -94,8 +101,6 @@ public class IsSubsequenceJava {
         //     }
         // }
         // return si == s.length();
-
-        throw new UnsupportedOperationException("Implement isSubsequence");
     }
 
     public static void main(String[] args) {
