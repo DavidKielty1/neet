@@ -30,15 +30,7 @@ Explanation: Empty string is a subsequence of any string.
 Time: O(|t|), Space: O(1)
 */
 public class IsSubsequenceJava {
-
     public boolean isSubsequence(String s, String t) {
-        int si = 0;
-        for (int ti = 0; ti < t.length(); ti++)  {
-            if (si <= s.length() && s.charAt(si) == t.charAt(ti)) {
-                si++;
-            }
-        }
-        return si == s.length();
         //
 
         //

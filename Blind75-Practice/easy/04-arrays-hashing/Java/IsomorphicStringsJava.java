@@ -37,7 +37,7 @@ public class IsomorphicStringsJava {
         // sToT ends {a:g, g:a}; at last index a must map to t but already maps to g → false.
         // tToS has g→a, a→g; a new t would need t→a, i.e. two different t letters (g and t)
         // both mapping to the same s letter — not a bijection; s→t fails first anyway.
-  
+
         //
 
         //
