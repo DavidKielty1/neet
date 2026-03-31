@@ -4,14 +4,15 @@ import java.util.Map;
 public class ContainsDuplicateHashMapJava {
 
     public boolean isDuplicate(int[] nums) {
-        Map<Integer, Integer> counts = new HashMap<>(); 
-        for(int num : nums) {
-            int count = counts.getOrDefault(num, 0) + 1;
-            counts.put(num, count);
-            if (count >= 2){
-                return true;
-            }
+        Map<Integer, Integer> seen = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+                int count = seen.getOrDefault(nums[i], 0) + 1;
+                seen.put(nums[i], count);
+                if (count >= 2) {
+                        return true;
+                }
         }
+
         return false;
     }
         //
@@ -76,6 +77,18 @@ public class ContainsDuplicateHashMapJava {
         // }
         // return false;
     // }   
+
+    // Simpler: containsKey method
+//     public boolean isDuplicate(int[] nums) {
+//         Map<Integer, Integer> seen = new HashMap<>();
+//         for (int i = 0; i < nums.length; i++) {
+//             if (seen.containsKey(nums[i])) {
+//                 return true;
+//             }
+//             seen.put(nums[i], 1);
+//         }
+//         return false;
+//     }
 
     public static void main(String[] args) {
         ContainsDuplicateHashMapJava s = new ContainsDuplicateHashMapJava();

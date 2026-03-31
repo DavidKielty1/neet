@@ -32,7 +32,6 @@ Time: O(n), Space: O(n) for a set (O(1) extra if sorting in place and allowed).
 public class ContainsDuplicateJava {
 
     public boolean containsDuplicate(int[] nums) {
-
         //
 
         //
