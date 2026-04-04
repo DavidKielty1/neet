@@ -31,34 +31,6 @@ Time: O(n), Space: O(1)
 */
 public class LengthOfLastWordJava {
 
-    public int lengthOfLastWord(String s) {
-        int right = s.length() - 1;
-        char rChar = s.charAt(right);
-        boolean reachedWord = false;
-        int lengthOfWord = 0;
-
-        for (int i = 0; i < s.length(); i++) {
-            while (rChar == "") {
-                right--;
-            }
-
-            if (rChar != "") {
-                reachedWord = true;
-            }
-
-            while (reachedWord = true) {
-                lengthOfWord++;
-                if (rChar == "") {
-                    reachedWord = false;
-                }
-            }
-
-            return
-
-
-
-
-        }
         //
 
         //

@@ -28,10 +28,62 @@ Explanation: The single element is trivially the majority.
 
 Time: O(n), Space: O(1) with Boyer–Moore (O(n) with a hash map)
 */
-public class MajorityElementJava {
 
-    public int majorityElement(int[] nums) {
-        //
+import java.util.HashMap;
+import java.util.Map;
+
+public class MajorityElementJava {
+        // Boyer-moore
+        // Take first char, store as majorNum, increment majorCounter by one
+        // if next char != majorNum, decrement majorCounter
+        // if majorCounter == 0, change majorNum to i, increment by 1
+
+    public Integer getMajorityIntegerBoyerMoore (Integer[] nums) {
+        Integer majorityNumber = 0;
+        Integer majorityCount = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if(majorityCount == 0) {
+                majorityNumber = nums[i];
+            }
+
+            if(nums[i] != majorityNumber) {
+                majorityCount--;
+            } else {
+                majorityCount++;
+            }
+        }
+    }
+
+    public Integer getMajorityIntegerHashMap (int[] nums) {
+        Map<Integer, Integer> seenCount = new HashMap<>();
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (seenCount.containsKey(nums[i])) {
+                seenCount.put(nums[i], seenCount.getOrDefault(nums[i], 0) + 1);
+            } else {
+                seenCount.put(nums[i], 1);
+            }
+        }
+
+        // Go by map keys, use map.get(key) for each in map.keySet()
+        int majorityBar = nums.length / 2;
+        for (Integer key : seenCount.keySet()) {
+            if (seenCount.get(key) > majorityBar) {
+                return key;
+            }
+        }
+
+        // Go by map.entries and get value for each in map.entrySet()
+        int majorityBar2 = nums.length / 2;
+        for (Map.Entry<Integer, Integer> entry : seenCount.entrySet()) {
+            if (entry.getValue() > majorityBar2) {
+                return entry.getKey();
+            }
+        }
+    }
+
+        // 
 
         //
 
@@ -92,8 +144,6 @@ public class MajorityElementJava {
         //     count += (num == candidate) ? 1 : -1;
         // }
         // return candidate;
-
-        throw new UnsupportedOperationException("Implement majorityElement");
     }
 
     public static void main(String[] args) {
