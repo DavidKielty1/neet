@@ -32,35 +32,6 @@ Time: O(m + n), Space: O(1) — 26 letters
 
 public class RansomNoteJava {
 
-    public boolean canConstruct(String ransomNote, String magazine) {
-        // make hashmap from magazine with counters
-        // iterate throuhg length of randomNote
-        // look in map for letter, decrement if found - delete it decremented to 0
-        // if not in map return false
-        // if full loop computer return true
-
-        if (ransomNote.isEmpty()) {
-            return true;
-        }
-        if (ransomNote.length() > magazine.length()) {
-            return false;
-        }
-
-        int[] mag = new int[26];
-        for (int i = 0; i < magazine.length(); i++){ 
-            mag[magazine.charAt(i) - 'a']++;
-        }
-
-        for(int i = 0; i < ransomNote.length(); i++) {
-            int idx = mag[ransomNote.charAt(i) - 'a'];
-            mag[idx]--;
-            if (mag[idx] < 0) {
-                return false;
-            }
-        }
-
-        return true;
-
         //
 
     //
