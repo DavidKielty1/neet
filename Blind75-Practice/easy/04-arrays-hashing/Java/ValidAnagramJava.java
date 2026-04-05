@@ -31,7 +31,6 @@ Time: O(n), Space: O(1) — 26 letters
 */
 public class ValidAnagramJava {
 
-    public boolean isAnagram(String s, String t) {
         //
 
         //

@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 /*
 1. Two Sum
 Difficulty: Easy
@@ -33,8 +30,6 @@ Explanation: Two different indices with the same value are allowed.
 Time: O(n), Space: O(n)
 */
 public class TwoSumHashingJava {
-
-    public int[] twoSum(int[] nums, int target) {
         //
 
         //
