@@ -38,71 +38,77 @@ public class FindPivotIndexJava {
     // Pass 1: total. Pass 2: at pivot i, left = sum(0..i-1), right = sum(i+1..end);
     // start with left=0, right=total-nums[0]; then left+=nums[i], right-=nums[i+1].
     public int pivotIndex(int[] nums) {
+        //
 
+        //
 
         //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
-    
+        //
+
+        //
+
+        //
 
         // int total = 0;
         // for (int num : nums) {
-        //     total += num;
+        // total += num;
         // }
         // int leftSum = 0;
         // for (int i = 0; i < nums.length; i++) {
-        //     int rightSum = total - leftSum - nums[i];
-        //     if (leftSum == rightSum) {
-        //         return i;
-        //     }
-        //     leftSum += nums[i];
+        // int rightSum = total - leftSum - nums[i];
+        // if (leftSum == rightSum) {
+        // return i;
+        // }
+        // leftSum += nums[i];
         // }
         // return -1;
 

@@ -1,0 +1,129 @@
+/*
+ * Ported from: 14-math-geometry/analogue-questions/Python/power-of-three-similar2.py
+ * --- Original description ---
+LeetCode 172: Factorial Trailing Zeroes
+Difficulty: Medium (simplified to Easy)
+Pattern: Math
+
+Problem:
+Given an integer n, return the number of trailing zeroes in n!.
+
+Note that n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1.
+
+Example 1:
+Input: n = 3
+Output: 0
+Explanation: 3! = 6, no trailing zero.
+
+Example 2:
+Input: n = 5
+Output: 1
+Explanation: 5! = 120, one trailing zero.
+
+Example 3:
+Input: n = 0
+Output: 0
+
+Constraints:
+- 0 <= n <= 10^4
+
+Follow up: Could you write a solution that works in logarithmic time complexity?
+
+Time Complexity: O(log n)
+Space Complexity: O(1)
+ */
+
+import java.util.*;
+import java.util.function.*;
+
+
+public class PowerOfThreeSimilar2Java {
+
+
+
+    static class Solution {
+        public int trailingZeroes(int n) {
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            //
+
+            // count = 0
+            // while n > 0:
+            // n //= 5
+            // count += n
+            // return count
+
+            throw new UnsupportedOperationException("Implement trailingZeroes");
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        assert (sol.trailingZeroes(3) == 0);
+        System.out.println("✓ Test case 1 passed");
+        assert (sol.trailingZeroes(5) == 1);
+        System.out.println("✓ Test case 2 passed");
+        assert (sol.trailingZeroes(0) == 0);
+        System.out.println("✓ Test case 3 passed");
+        assert (sol.trailingZeroes(25) == 6);
+        System.out.println("✓ Test case 4 passed");
+        System.out.println("\nAll test cases passed!");
+    }
+}

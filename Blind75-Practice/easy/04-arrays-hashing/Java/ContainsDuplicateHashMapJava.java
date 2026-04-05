@@ -1,20 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class ContainsDuplicateHashMapJava {
-
-    public boolean isDuplicate(int[] nums) {
-        Map<Integer, Integer> seen = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-                int count = seen.getOrDefault(nums[i], 0) + 1;
-                seen.put(nums[i], count);
-                if (count >= 2) {
-                        return true;
-                }
-        }
-
-        return false;
-    }
         //
 
         //

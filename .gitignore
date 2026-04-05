@@ -1,2 +1,5 @@
 .vscode 
 node_modules/
+
+# Java bytecode (local `javac` / `java` runs — not tracked)
+*.class

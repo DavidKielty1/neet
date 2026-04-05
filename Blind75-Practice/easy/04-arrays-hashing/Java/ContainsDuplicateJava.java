@@ -38,55 +38,65 @@ public class ContainsDuplicateJava {
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
-    
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
 
         // Set<Integer> seen = new HashSet<>();
         // for (int num : nums) {
-        //     if (!seen.add(num)) {
-        //         return true;
-        //     }
+        // if (!seen.add(num)) {
+        // return true;
+        // }
         // }
         // return false;
 

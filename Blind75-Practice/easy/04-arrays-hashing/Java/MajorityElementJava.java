@@ -39,48 +39,167 @@ public class MajorityElementJava {
         // if majorCounter == 0, change majorNum to i, increment by 1
 
     public Integer getMajorityIntegerBoyerMoore (Integer[] nums) {
-        Integer majorityNumber = 0;
-        Integer majorityCount = 0;
+        //
 
-        for (int i = 0; i < nums.length; i++) {
-            if(majorityCount == 0) {
-                majorityNumber = nums[i];
-            }
+        //
 
-            if(nums[i] != majorityNumber) {
-                majorityCount--;
-            } else {
-                majorityCount++;
-            }
-        }
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        // Integer majorityNumber = 0;
+        // Integer majorityCount = 0;
+        // for (int i = 0; i < nums.length; i++) {
+        // if(majorityCount == 0) {
+        // majorityNumber = nums[i];
+        // }
+        // if(nums[i] != majorityNumber) {
+        // majorityCount--;
+        // } else {
+        // majorityCount++;
+        // }
+        // }
+
+        throw new UnsupportedOperationException("Implement getMajorityIntegerBoyerMoore");
     }
 
     public Integer getMajorityIntegerHashMap (int[] nums) {
-        Map<Integer, Integer> seenCount = new HashMap<>();
-        
-        for (int i = 0; i < nums.length; i++) {
-            if (seenCount.containsKey(nums[i])) {
-                seenCount.put(nums[i], seenCount.getOrDefault(nums[i], 0) + 1);
-            } else {
-                seenCount.put(nums[i], 1);
-            }
-        }
+        //
 
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        // Map<Integer, Integer> seenCount = new HashMap<>();
+        // for (int i = 0; i < nums.length; i++) {
+        // if (seenCount.containsKey(nums[i])) {
+        // seenCount.put(nums[i], seenCount.getOrDefault(nums[i], 0) + 1);
+        // } else {
+        // seenCount.put(nums[i], 1);
+        // }
+        // }
         // Go by map keys, use map.get(key) for each in map.keySet()
-        int majorityBar = nums.length / 2;
-        for (Integer key : seenCount.keySet()) {
-            if (seenCount.get(key) > majorityBar) {
-                return key;
-            }
-        }
-
+        // int majorityBar = nums.length / 2;
+        // for (Integer key : seenCount.keySet()) {
+        // if (seenCount.get(key) > majorityBar) {
+        // return key;
+        // }
+        // }
         // Go by map.entries and get value for each in map.entrySet()
-        int majorityBar2 = nums.length / 2;
-        for (Map.Entry<Integer, Integer> entry : seenCount.entrySet()) {
-            if (entry.getValue() > majorityBar2) {
-                return entry.getKey();
-            }
-        }
+        // int majorityBar2 = nums.length / 2;
+        // for (Map.Entry<Integer, Integer> entry : seenCount.entrySet()) {
+        // if (entry.getValue() > majorityBar2) {
+        // return entry.getKey();
+        // }
+        // }
+
+        throw new UnsupportedOperationException("Implement getMajorityIntegerHashMap");
     }
 
         // 

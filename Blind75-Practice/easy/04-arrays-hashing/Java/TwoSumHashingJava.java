@@ -30,65 +30,74 @@ Explanation: Two different indices with the same value are allowed.
 Time: O(n), Space: O(n)
 */
 public class TwoSumHashingJava {
+    public int[] twoSum(int[] nums, int target) {
         //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
         //
 
-    //
+        //
 
-    
+        //
+
+        //
+
+        //
+
+        //
+
+        //
 
         // Map<Integer, Integer> seen = new HashMap<>();
         // for (int i = 0; i < nums.length; i++) {
-        //     int complement = target - nums[i];
-        //     if (seen.containsKey(complement)) {
-        //         return new int[] {seen.get(complement), i};
-        //     }
-        //     seen.put(nums[i], i);
+        // int complement = target - nums[i];
+        // if (seen.containsKey(complement)) {
+        // return new int[] {seen.get(complement), i};
+        // }
+        // seen.put(nums[i], i);
         // }
         // return new int[0];
 
@@ -96,12 +105,74 @@ public class TwoSumHashingJava {
     }
 
     private static void assertOrderAgnostic(int[] got, int a, int b) {
-        boolean ok =
-                (got[0] == a && got[1] == b) || (got[0] == b && got[1] == a);
-        if (!ok) {
-            throw new AssertionError(
-                    "expected indices {" + a + "," + b + "}, got {" + got[0] + "," + got[1] + "}");
-        }
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        // boolean ok =
+        // (got[0] == a && got[1] == b) || (got[0] == b && got[1] == a);
+        // if (!ok) {
+        // throw new AssertionError(
+        // "expected indices {" + a + "," + b + "}, got {" + got[0] + "," + got[1] + "}");
+        // }
+
+        throw new UnsupportedOperationException("Implement assertOrderAgnostic");
     }
 
     public static void main(String[] args) {
