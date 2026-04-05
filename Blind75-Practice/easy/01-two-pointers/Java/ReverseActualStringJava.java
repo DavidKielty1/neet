@@ -83,17 +83,17 @@ public class ReverseActualStringJava {
         //
 
         // if (s == null || s.length() <= 1) {
-        // return s;
+            // return s;
         // }
         // char[] chars = s.toCharArray();
         // int left = 0;
         // int right = chars.length - 1;
         // while (left < right) {
-        // char tmp = chars[left];
-        // chars[left] = chars[right];
-        // chars[right] = tmp;
-        // left++;
-        // right--;
+            // char tmp = chars[left];
+            // chars[left] = chars[right];
+            // chars[right] = tmp;
+            // left++;
+            // right--;
         // }
         // return new String(chars);
 

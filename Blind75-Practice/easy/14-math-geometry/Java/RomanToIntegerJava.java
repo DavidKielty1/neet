@@ -85,12 +85,12 @@ public class RomanToIntegerJava {
 
         // int total = 0;
         // for (int i = 0; i < s.length(); i++) {
-        // int v = VALS.get(s.charAt(i));
-        // if (i + 1 < s.length() && v < VALS.get(s.charAt(i + 1))) {
-        // total -= v;
-        // } else {
-        // total += v;
-        // }
+            // int v = VALS.get(s.charAt(i));
+            // if (i + 1 < s.length() && v < VALS.get(s.charAt(i + 1))) {
+                // total -= v;
+            // } else {
+                // total += v;
+            // }
         // }
         // return total;
 

@@ -89,13 +89,13 @@ public class BestTimeToBuySellStock {
             //
 
             // if (prices == null || prices.length == 0) {
-            // return 0;
+                // return 0;
             // }
             // int lowestPrice = prices[0];
             // int bestSellSoFar = 0;
             // for (int price : prices) {
-            // lowestPrice = Math.min(lowestPrice, price);
-            // bestSellSoFar = Math.max(bestSellSoFar, price - lowestPrice);
+                // lowestPrice = Math.min(lowestPrice, price);
+                // bestSellSoFar = Math.max(bestSellSoFar, price - lowestPrice);
             // }
             // return bestSellSoFar;
 

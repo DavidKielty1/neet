@@ -87,12 +87,12 @@ public class MoveZeroes {
 
         // int left = 0;
         // for (int right = 0; right < nums.length; right++) {
-        // if (nums[right] != 0) {
-        // int tmp = nums[left];
-        // nums[left] = nums[right];
-        // nums[right] = tmp;
-        // left++;
-        // }
+            // if (nums[right] != 0) {
+                // int tmp = nums[left];
+                // nums[left] = nums[right];
+                // nums[right] = tmp;
+                // left++;
+            // }
         // }
 
         throw new UnsupportedOperationException("Implement moveZeroes");
@@ -178,10 +178,10 @@ public class MoveZeroes {
 
         // System.out.print("[");
         // for (int i = 0; i < nums.length; i++) {
-        // System.out.print(nums[i]);
-        // if (i < nums.length - 1) {
-        // System.out.print(", ");
-        // }
+            // System.out.print(nums[i]);
+            // if (i < nums.length - 1) {
+                // System.out.print(", ");
+            // }
         // }
         // System.out.println("]");
 

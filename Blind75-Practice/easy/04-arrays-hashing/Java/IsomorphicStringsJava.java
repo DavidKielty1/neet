@@ -91,34 +91,34 @@ public class IsomorphicStringsJava {
         //
 
         // if (s.length() != t.length()) {
-        // return false;
+            // return false;
         // }
         // Example trace: s = "agagt", t = "gagaa"
         // sToT ends {a:g, g:a}; at last index a must map to t but already maps to g → false.
         // tToS has g→a, a→g; a new t would need t→a, i.e. two different t letters (g and t)
         // both mapping to the same s letter — not a bijection; s→t fails first anyway.
         // if (s.length() != t.length()) {
-        // return false;
+            // return false;
         // }
         // Map<Character, Character> charStoT = new HashMap<>();
         // Map<Character, Character> charTtoS = new HashMap<>();
         // for (int index = 0; index < s.length(); index++) {
-        // char charS = s.charAt(index);
-        // char charT = t.charAt(index);
-        // if (charStoT.containsKey(charS)) {
-        // if (charStoT.get(charS) != charT) {
-        // return false;
-        // }
-        // } else {
-        // charStoT.put(charS, charT);
-        // }
-        // if (charTtoS.containsKey(charT)) {
-        // if (charTtoS.get(charT) != charS) {
-        // return false;
-        // }
-        // } else {
-        // charTtoS.put(charT, charS);
-        // }
+            // char charS = s.charAt(index);
+            // char charT = t.charAt(index);
+            // if (charStoT.containsKey(charS)) {
+                // if (charStoT.get(charS) != charT) {
+                    // return false;
+                // }
+            // } else {
+                // charStoT.put(charS, charT);
+            // }
+            // if (charTtoS.containsKey(charT)) {
+                // if (charTtoS.get(charT) != charS) {
+                    // return false;
+                // }
+            // } else {
+                // charTtoS.put(charT, charS);
+            // }
         // }
         // return true;
 

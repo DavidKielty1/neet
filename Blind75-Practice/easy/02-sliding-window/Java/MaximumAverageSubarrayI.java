@@ -82,18 +82,18 @@ public class MaximumAverageSubarrayI {
         //
 
         // if (nums == null || nums.length == 0 || k <= 0 || k > nums.length) {
-        // throw new IllegalArgumentException("Invalid input");
+            // throw new IllegalArgumentException("Invalid input");
         // }
         // int currentSum = 0;
         // for (int i = 0; i < k; i++) {
-        // currentSum += nums[i];
+            // currentSum += nums[i];
         // }
         // int maxSum = currentSum;
         // for (int i = k; i < nums.length; i++) {
-        // currentSum = currentSum + nums[i] - nums[i - k];
-        // if (currentSum > maxSum) {
-        // maxSum = currentSum;
-        // }
+            // currentSum = currentSum + nums[i] - nums[i - k];
+            // if (currentSum > maxSum) {
+                // maxSum = currentSum;
+            // }
         // }
         // return (double) maxSum / k;
 

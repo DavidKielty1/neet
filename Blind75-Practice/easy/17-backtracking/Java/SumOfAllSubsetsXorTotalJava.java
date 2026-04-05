@@ -138,7 +138,7 @@ public class SumOfAllSubsetsXorTotalJava {
         //
 
         // if (i == nums.length) {
-        // return curXor;
+            // return curXor;
         // }
         // return dfs(nums, i + 1, curXor ^ nums[i]) + dfs(nums, i + 1, curXor);
 

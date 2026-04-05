@@ -82,20 +82,20 @@ public class LongestSubstringWithoutRepeatingCharactersEasy {
         //
 
         // if (s == null || s.isBlank()) {
-        // return -1;
+            // return -1;
         // }
         // int[] charFrequency = new int[128];
         // for (int i = 0; i < s.length(); i++) {
-        // char ch = s.charAt(i);
-        // if (ch < 128) {
-        // charFrequency[ch]++;
-        // }
+            // char ch = s.charAt(i);
+            // if (ch < 128) {
+                // charFrequency[ch]++;
+            // }
         // }
         // for (int i = 0; i < s.length(); i++) {
-        // char ch = s.charAt(i);
-        // if (ch < 128 && charFrequency[ch] == 1) {
-        // return i;
-        // }
+            // char ch = s.charAt(i);
+            // if (ch < 128 && charFrequency[ch] == 1) {
+                // return i;
+            // }
         // }
         // return -1;
 

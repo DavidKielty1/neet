@@ -78,11 +78,11 @@ public class ContainsDuplicateIIJava {
 
         // Map<Integer, Integer> last = new HashMap<>();
         // for (int i = 0; i < nums.length; i++) {
-        // int x = nums[i];
-        // if (last.containsKey(x) && i - last.get(x) <= k) {
-        // return true;
-        // }
-        // last.put(x, i);
+            // int x = nums[i];
+            // if (last.containsKey(x) && i - last.get(x) <= k) {
+                // return true;
+            // }
+            // last.put(x, i);
         // }
         // return false;
 

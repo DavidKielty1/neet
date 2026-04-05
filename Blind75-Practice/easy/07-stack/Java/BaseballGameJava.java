@@ -76,26 +76,26 @@ public class BaseballGameJava {
 
         // Deque<Integer> stack = new ArrayDeque<>();
         // for (String op : operations) {
-        // switch (op) {
-        // case "+":
-        // int a = stack.removeLast();
-        // int b = stack.peekLast();
-        // stack.addLast(a);
-        // stack.addLast(a + b);
-        // break;
-        // case "D":
-        // stack.addLast(2 * stack.peekLast());
-        // break;
-        // case "C":
-        // stack.removeLast();
-        // break;
-        // default:
-        // stack.addLast(Integer.parseInt(op));
-        // }
+            // switch (op) {
+                // case "+":
+                // int a = stack.removeLast();
+                // int b = stack.peekLast();
+                // stack.addLast(a);
+                // stack.addLast(a + b);
+                // break;
+                // case "D":
+                // stack.addLast(2 * stack.peekLast());
+                // break;
+                // case "C":
+                // stack.removeLast();
+                // break;
+                // default:
+                // stack.addLast(Integer.parseInt(op));
+            // }
         // }
         // int sum = 0;
         // for (int v : stack) {
-        // sum += v;
+            // sum += v;
         // }
         // return sum;
 

@@ -3,7 +3,8 @@
 Normalize Java study files to the IsPalindromeNumber-style template:
   - scaffold of blank // lines (count configurable), with an empty line between
     each // row so the commented solution sits below the fold when opening the file
-  - prior implementation commented with // at method body indent
+  - prior implementation: same text after // as in the file; indent from existing
+    column of // or, if all // lines share one column, brace-based nesting
   - throw new UnsupportedOperationException("Implement <methodName>");
 
 Skips: main, constructors, class/interface declarations.
@@ -21,6 +22,8 @@ from pathlib import Path
 
 # Number of "//" placeholder rows (blank line after each row except the last).
 SCAFFOLD_LINES = 30
+# Extra spaces per block level inside commented solution (Java convention).
+COMMENT_BODY_INDENT_UNIT = 4
 
 
 def find_matching_close_brace(text: str, open_brace_idx: int) -> int:
@@ -102,13 +105,78 @@ def extract_impl_lines(old_inner: str) -> list[str]:
     return out
 
 
-def to_commented_line(line: str, body_indent: int) -> str:
-    indent = " " * body_indent
-    stripped = line.lstrip()
-    if stripped.startswith("//"):
-        rest = stripped[2:].lstrip()
-        return indent + "// " + rest if rest else indent + "//"
-    return indent + "// " + line.rstrip()
+def _payload_after_double_slash(line: str) -> str:
+    """Text after `//` on this physical line (only trim right; keep code unchanged)."""
+    raw = line.rstrip("\n\r")
+    i = raw.find("//")
+    if i < 0:
+        return ""
+    return raw[i + 2 :].lstrip()
+
+
+def _format_commented_by_brace_depth(
+    raw_lines: list[str],
+    body_indent: int,
+    indent_unit: int,
+) -> list[str]:
+    """When all // lines share the same indent, infer nesting from { } in the text."""
+    depth = 0
+    out: list[str] = []
+    base = " " * body_indent
+    for line in raw_lines:
+        s = _payload_after_double_slash(line)
+        if not s:
+            continue
+        if s.startswith("}"):
+            depth = max(0, depth - 1)
+        pad = base + " " * (depth * indent_unit)
+        out.append(pad + "// " + s)
+        if s.endswith("{"):
+            depth += 1
+    return out
+
+
+def format_commented_java_lines(
+    raw_lines: list[str],
+    body_indent: int,
+    indent_unit: int = COMMENT_BODY_INDENT_UNIT,
+) -> list[str]:
+    """
+    Indent commented solution lines without changing the code after `//`.
+
+    If the file already used different leading spaces before `//`, we only
+    dedent to the minimum and re-apply body_indent (relative structure preserved).
+
+    If every `//` line had the same column, we fall back to brace-depth so
+    flat blocks still get loop/if indentation.
+    """
+    rows: list[tuple[int, str]] = []
+    for line in raw_lines:
+        raw = line.rstrip("\n\r")
+        m = re.match(r"^(\s*)//", raw)
+        if not m:
+            continue
+        lead_len = len(m.group(1))
+        rest = _payload_after_double_slash(raw)
+        if not rest:
+            continue
+        rows.append((lead_len, rest))
+
+    if not rows:
+        return []
+
+    min_lead = min(l for l, _ in rows)
+    max_lead = max(l for l, _ in rows)
+    base = " " * body_indent
+
+    if max_lead > min_lead:
+        out: list[str] = []
+        for lead_len, rest in rows:
+            pad = base + " " * (lead_len - min_lead)
+            out.append(pad + "// " + rest)
+        return out
+
+    return _format_commented_by_brace_depth(raw_lines, body_indent, indent_unit)
 
 
 def build_scaffold(indent: str) -> str:
@@ -132,7 +200,7 @@ def build_new_inner(
     scaffold = build_scaffold(indent)
 
     impl_lines = extract_impl_lines(old_inner)
-    commented_lines = [to_commented_line(L, body_indent) for L in impl_lines]
+    commented_lines = format_commented_java_lines(impl_lines, body_indent)
 
     parts = [scaffold]
     if commented_lines:

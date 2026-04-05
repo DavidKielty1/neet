@@ -74,11 +74,11 @@ public class ValidPalindromeIIJava {
         //
 
         // while (lo < hi) {
-        // if (s.charAt(lo) != s.charAt(hi)) {
-        // return false;
-        // }
-        // lo++;
-        // hi--;
+            // if (s.charAt(lo) != s.charAt(hi)) {
+                // return false;
+            // }
+            // lo++;
+            // hi--;
         // }
         // return true;
 
@@ -148,11 +148,11 @@ public class ValidPalindromeIIJava {
 
         // int left = 0, right = s.length() - 1;
         // while (left < right) {
-        // if (s.charAt(left) != s.charAt(right)) {
-        // return isPalindrome(s, left + 1, right) || isPalindrome(s, left, right - 1);
-        // }
-        // left++;
-        // right--;
+            // if (s.charAt(left) != s.charAt(right)) {
+                // return isPalindrome(s, left + 1, right) || isPalindrome(s, left, right - 1);
+            // }
+            // left++;
+            // right--;
         // }
         // return true;
 

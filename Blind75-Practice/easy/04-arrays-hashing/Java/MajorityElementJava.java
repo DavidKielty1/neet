@@ -102,14 +102,14 @@ public class MajorityElementJava {
         // Integer majorityNumber = 0;
         // Integer majorityCount = 0;
         // for (int i = 0; i < nums.length; i++) {
-        // if(majorityCount == 0) {
-        // majorityNumber = nums[i];
-        // }
-        // if(nums[i] != majorityNumber) {
-        // majorityCount--;
-        // } else {
-        // majorityCount++;
-        // }
+            // if(majorityCount == 0) {
+                // majorityNumber = nums[i];
+            // }
+            // if(nums[i] != majorityNumber) {
+                // majorityCount--;
+            // } else {
+                // majorityCount++;
+            // }
         // }
 
         throw new UnsupportedOperationException("Implement getMajorityIntegerBoyerMoore");
@@ -178,25 +178,25 @@ public class MajorityElementJava {
 
         // Map<Integer, Integer> seenCount = new HashMap<>();
         // for (int i = 0; i < nums.length; i++) {
-        // if (seenCount.containsKey(nums[i])) {
-        // seenCount.put(nums[i], seenCount.getOrDefault(nums[i], 0) + 1);
-        // } else {
-        // seenCount.put(nums[i], 1);
-        // }
+            // if (seenCount.containsKey(nums[i])) {
+                // seenCount.put(nums[i], seenCount.getOrDefault(nums[i], 0) + 1);
+            // } else {
+                // seenCount.put(nums[i], 1);
+            // }
         // }
         // Go by map keys, use map.get(key) for each in map.keySet()
         // int majorityBar = nums.length / 2;
         // for (Integer key : seenCount.keySet()) {
-        // if (seenCount.get(key) > majorityBar) {
-        // return key;
-        // }
+            // if (seenCount.get(key) > majorityBar) {
+                // return key;
+            // }
         // }
         // Go by map.entries and get value for each in map.entrySet()
         // int majorityBar2 = nums.length / 2;
         // for (Map.Entry<Integer, Integer> entry : seenCount.entrySet()) {
-        // if (entry.getValue() > majorityBar2) {
-        // return entry.getKey();
-        // }
+            // if (entry.getValue() > majorityBar2) {
+                // return entry.getKey();
+            // }
         // }
 
         throw new UnsupportedOperationException("Implement getMajorityIntegerHashMap");

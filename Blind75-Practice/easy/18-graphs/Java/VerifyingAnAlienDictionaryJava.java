@@ -72,14 +72,14 @@ public class VerifyingAnAlienDictionaryJava {
 
         // int[] rank = new int[26];
         // for (int i = 0; i < order.length(); i++) {
-        // rank[order.charAt(i) - 'a'] = i;
+            // rank[order.charAt(i) - 'a'] = i;
         // }
         // for (int w = 0; w < words.length - 1; w++) {
-        // String a = words[w];
-        // String b = words[w + 1];
-        // if (!lessOrEqual(a, b, rank)) {
-        // return false;
-        // }
+            // String a = words[w];
+            // String b = words[w + 1];
+            // if (!lessOrEqual(a, b, rank)) {
+                // return false;
+            // }
         // }
         // return true;
 
@@ -150,11 +150,11 @@ public class VerifyingAnAlienDictionaryJava {
 
         // int n = Math.min(a.length(), b.length());
         // for (int i = 0; i < n; i++) {
-        // char ca = a.charAt(i);
-        // char cb = b.charAt(i);
-        // if (ca != cb) {
-        // return rank[ca - 'a'] <= rank[cb - 'a'];
-        // }
+            // char ca = a.charAt(i);
+            // char cb = b.charAt(i);
+            // if (ca != cb) {
+                // return rank[ca - 'a'] <= rank[cb - 'a'];
+            // }
         // }
         // return a.length() <= b.length();
 

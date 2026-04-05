@@ -92,13 +92,13 @@ public class IsSubsequenceJava {
         //
 
         // if (s.isEmpty()) {
-        // return true;
+            // return true;
         // }
         // int si = 0;
         // for (int ti = 0; ti < t.length(); ti++) {
-        // if (si < s.length() && t.charAt(ti) == s.charAt(si)) {
-        // si++;
-        // }
+            // if (si < s.length() && t.charAt(ti) == s.charAt(si)) {
+                // si++;
+            // }
         // }
         // return si == s.length();
 

@@ -98,14 +98,14 @@ public class PascalsTriangleJava {
         // List<List<Integer>> result = new ArrayList<>();
         // result.add(List.of(1));
         // for (int i = 1; i < numRows; i++) {
-        // List<Integer> prev = result.get(i - 1);
-        // List<Integer> row = new ArrayList<>();
-        // row.add(1);
-        // for (int j = 0; j < prev.size() - 1; j++) {
-        // row.add(prev.get(j) + prev.get(j + 1));
-        // }
-        // row.add(1);
-        // result.add(row);
+            // List<Integer> prev = result.get(i - 1);
+            // List<Integer> row = new ArrayList<>();
+            // row.add(1);
+            // for (int j = 0; j < prev.size() - 1; j++) {
+                // row.add(prev.get(j) + prev.get(j + 1));
+            // }
+            // row.add(1);
+            // result.add(row);
         // }
         // return result;
 
@@ -174,12 +174,12 @@ public class PascalsTriangleJava {
         //
 
         // if (a.size() != b.size()) {
-        // return false;
+            // return false;
         // }
         // for (int i = 0; i < a.size(); i++) {
-        // if (!a.get(i).equals(b.get(i))) {
-        // return false;
-        // }
+            // if (!a.get(i).equals(b.get(i))) {
+                // return false;
+            // }
         // }
         // return true;
 

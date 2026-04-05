@@ -144,7 +144,7 @@ public class ImplementStackUsingQueuesJava {
             //
 
             // for (int i = q.size() - 1; i > 0; i--) {
-            // q.addLast(q.removeFirst());
+                // q.addLast(q.removeFirst());
             // }
             // return q.removeFirst();
 
@@ -213,7 +213,7 @@ public class ImplementStackUsingQueuesJava {
             //
 
             // for (int i = q.size() - 1; i > 0; i--) {
-            // q.addLast(q.removeFirst());
+                // q.addLast(q.removeFirst());
             // }
             // int x = q.peekFirst();
             // q.addLast(q.removeFirst());
