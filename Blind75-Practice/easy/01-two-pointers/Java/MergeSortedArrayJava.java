@@ -15,21 +15,6 @@ import java.util.Arrays;
 public class MergeSortedArrayJava {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        // [1, 2, 3, 4, 5, 5, 6, 7]
-        // [3, 4, 5, 6]
-        int i = m - 1;
-        int j = n - 1;
-        int k = m + n - 1;
-        while (j >= 0) {
-            if (i >= 0 && nums1[i] >= nums2[j]) {
-                nums1[k] = nums1[i];
-                k--;
-                i--;
-            } else {
-                nums1[k] = nums2[j];
-                j--;
-            }
-        }
         //
 
         //
@@ -93,11 +78,11 @@ public class MergeSortedArrayJava {
 
         // int i = m - 1, j = n - 1, k = m + n - 1;
         // while (j >= 0) {
-            // if (i >= 0 && nums1[i] > nums2[j]) {
-                // nums1[k--] = nums1[i--];
-            // } else {
-                // nums1[k--] = nums2[j--];
-            // }
+        //     if (i >= 0 && nums1[i] > nums2[j]) {
+        //         nums1[k--] = nums1[i--];
+        //     } else {
+        //         nums1[k--] = nums2[j--];
+        //     }
         // }
 
         throw new UnsupportedOperationException("Implement merge");
