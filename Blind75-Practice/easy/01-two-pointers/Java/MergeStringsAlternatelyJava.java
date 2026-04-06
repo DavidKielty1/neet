@@ -11,6 +11,19 @@ Time: O(n), Space: O(n) for StringBuilder output
 public class MergeStringsAlternatelyJava {
 
     public String mergeAlternately(String word1, String word2) {
+        char[] result = new ArrayList<char>();
+        String smallestWord;
+        if (word1.length() > word2.length()) {
+            smallestWord = word2;
+        } else {
+            smallestWord = word1;
+        }
+
+        for (int i = 0; i < smallestWord.length(); i++) {
+            result.append(word1.charAt(i));
+            result.append(word2.charAt(i));
+        }
+
         //
 
         //
