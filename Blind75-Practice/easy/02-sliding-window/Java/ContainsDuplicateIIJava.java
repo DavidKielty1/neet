@@ -10,12 +10,18 @@ Approach: HashMap from value to last index; update while scanning.
 Time: O(n), Space: O(min(n, k))
 */
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ContainsDuplicateIIJava {
 
     public boolean containsNearbyDuplicate(int[] nums, int k) {
+        Set<Integer> seen = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (!seen.add(nums[i])) return true;
+            if (seen.size() > k) seen.remove(nums[i - k]);
+        }
+        return false;
         //
 
         //
@@ -76,13 +82,10 @@ public class ContainsDuplicateIIJava {
 
         //
 
-        // Map<Integer, Integer> last = new HashMap<>();
+        // Set<Integer> seen = new HashSet<>();
         // for (int i = 0; i < nums.length; i++) {
-            // int x = nums[i];
-            // if (last.containsKey(x) && i - last.get(x) <= k) {
-                // return true;
-            // }
-            // last.put(x, i);
+        //     if (!seen.add(nums[i])) return true;
+        //     if (seen.size() > k) seen.remove(nums[i - k]);
         // }
         // return false;
 
