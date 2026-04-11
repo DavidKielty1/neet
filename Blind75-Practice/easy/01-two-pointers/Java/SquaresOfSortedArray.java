@@ -33,19 +33,23 @@ public class SquaresOfSortedArray {
         int[] numsSquaredSorted = new int[n];
         int left = 0;
         int right = n - 1;
+        int pos = n - 1;
 
-        for (int index = n - 1; index < n; index ++) {
+        while ( right > left) {
             int leftSquared = nums[left] * nums[left];
             int rightSquared = nums[right] * nums[right];
-            int biggestNumber = Math.max(leftSquared, rightSquared);
-            
-            numsSquaredSorted[index] = biggestNumber;
 
-            if(biggestNumber == leftSquared) {
+            if (leftSquared > rightSquared) {
+                numsSquaredSorted[pos] = nums[left];
                 left++;
-            } else {
+            } 
+            
+            if(leftSquared < rightSquared){
+                numsSquaredSorted[pos] = nums[right];
                 right--;
             }
+
+            pos--;
         }
 
         return numsSquaredSorted;
@@ -128,8 +132,6 @@ public class SquaresOfSortedArray {
             // pos--;
         // }
         // return result;
-
-        throw new UnsupportedOperationException("Implement sortedSquares");
     }
 
     public static void main(String[] args) {
