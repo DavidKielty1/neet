@@ -21,6 +21,20 @@
 public class LongestSubstringWithoutRepeatingCharactersEasy {
 
     public static int firstUniqCharAscii(String s) {
+        // O(n):
+        // 'leetcode'
+        int[] counterArray = new int[26];
+        for(int i = 0; i < s.length(); i++) {
+            counterArray[s.charAt(i) - 'a']++;
+        }
+
+        for ( int i = 0; i < s.length(); i++) {
+            if (counterArray[s.charAt(i) - 'a'] == 1) { 
+                return i;
+            }
+        }
+
+        return -1;
         //
 
         //
