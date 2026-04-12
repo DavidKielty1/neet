@@ -21,24 +21,6 @@
 public class MaximumAverageSubarrayI {
 
     public static double findMaxAverage(int[] nums, int k) {
-        if (nums == null || nums.length < k || k <= 0 || nums.length == 0) {
-            throw new IllegalArgumentException("Invalid Input"); 
-        }
-
-        int windowTotal = 0;
-        for ( int i = 0; i < k; i++) {
-            windowTotal += nums[i];
-        }
-
-        int maxAverage = windowTotal;
-        for (int i = k; i < nums.length; i++) {
-            windowTotal = windowTotal + nums[i] - nums[i - k];
-
-            maxAverage = Math.max(maxAverage, windowTotal);
-        }
-
-        return (double) maxAverage / k;
-
         //
 
         //

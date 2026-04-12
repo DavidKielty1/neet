@@ -18,31 +18,26 @@
  *
  * Time: O(n), Space: O(1) for 128 ASCII slots
  */
-public class LongestSubstringWithoutRepeatingCharactersEasy {
+public class LongestSubstringWithoutRepeatingCharactersEasyAscii {
 
     public static int firstUniqCharAscii(String s) {
-        if ( s == null || s.length() == 0) {
-            return -1;
-        }
-
-        int[] chars = new int[128];
+        int[] counter = new int[128];
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if ( ch < 128) {
-                chars[ch]++;
+            if (ch < 128) {
+                counter[ch]++;
             }
         }
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (ch < 128 && chars[ch] == 1) {
+            if (ch < 128 && counter[ch] == 1) {
                 return i;
             }
-        }        
+        }
 
         return -1;
-            
         //
 
         //
