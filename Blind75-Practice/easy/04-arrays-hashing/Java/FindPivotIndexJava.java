@@ -35,9 +35,6 @@ Time: O(n), Space: O(1)
 */
 public class FindPivotIndexJava {
 
-    // Pass 1: total. Pass 2: at pivot i, left = sum(0..i-1), right = sum(i+1..end);
-    // start with left=0, right=total-nums[0]; then left+=nums[i], right-=nums[i+1].
-    public int pivotIndex(int[] nums) {
         //
 
         //

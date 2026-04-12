@@ -27,10 +27,33 @@ Explanation: First 'o' would map to 'a', but the second 'o' must map to 'r' — 
 Time: O(n), Space: O(1) — alphabet size is bounded
 */
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class IsomorphicStringsJava {
 
     public boolean isIsomorphic(String s, String t) {
-        //
+        Map<Character, Character> sToT = new HashMap<>();
+        Map<Character, Character> tToS = new HashMap<>();
+
+        for(int i = 0; i < s.length(); i++) {
+            char cs = s.charAt(i);
+            char ct = t.charAt(i);
+
+            if (sToT.containsKey(cs)) {
+                if (!sToT.get(cs).equals(ct)) return false;
+            } else {
+                sToT.put(cs, ct);
+            }
+            
+            if (tToS.containsKey(ct)) {
+                if (!tToS.get(ct).equals(cs)) return false;
+            } else {
+                tToS.put(ct, cs);
+            }
+        }
+        return true;
+
 
         //
 
@@ -90,35 +113,26 @@ public class IsomorphicStringsJava {
 
         //
 
-        // if (s.length() != t.length()) {
-            // return false;
-        // }
-        // Example trace: s = "agagt", t = "gagaa"
-        // sToT ends {a:g, g:a}; at last index a must map to t but already maps to g → false.
-        // tToS has g→a, a→g; a new t would need t→a, i.e. two different t letters (g and t)
-        // both mapping to the same s letter — not a bijection; s→t fails first anyway.
-        // if (s.length() != t.length()) {
-            // return false;
-        // }
-        // Map<Character, Character> charStoT = new HashMap<>();
-        // Map<Character, Character> charTtoS = new HashMap<>();
-        // for (int index = 0; index < s.length(); index++) {
-            // char charS = s.charAt(index);
-            // char charT = t.charAt(index);
-            // if (charStoT.containsKey(charS)) {
-                // if (charStoT.get(charS) != charT) {
-                    // return false;
-                // }
-            // } else {
-                // charStoT.put(charS, charT);
-            // }
-            // if (charTtoS.containsKey(charT)) {
-                // if (charTtoS.get(charT) != charS) {
-                    // return false;
-                // }
-            // } else {
-                // charTtoS.put(charT, charS);
-            // }
+        //
+
+        // Map<Character, Character> sToT = new HashMap<>();
+        // Map<Character, Character> tToS = new HashMap<>();
+
+        // for(int i = 0; i < s.length(); i++) {
+        //     char cs = s.charAt(i);
+        //     char ct = t.charAt(i);
+
+        //     if (sToT.containsKey(cs)) {
+        //         if (!sToT.get(cs).equals(ct)) return false;
+        //     } else {
+        //         sToT.put(cs, ct);
+        //     }
+            
+        //     if (tToS.containsKey(ct)) {
+        //         if (!tToS.get(ct).equals(cs)) return false;
+        //     } else {
+        //         tToS.put(ct, cs);
+        //     }
         // }
         // return true;
 
