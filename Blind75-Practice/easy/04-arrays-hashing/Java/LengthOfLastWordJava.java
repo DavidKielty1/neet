@@ -31,6 +31,7 @@ Time: O(n), Space: O(1)
 */
 public class LengthOfLastWordJava {
 
+    public int lengthOfLastWord(String s) {
         //
 
         //

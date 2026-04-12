@@ -29,9 +29,6 @@ Explanation: The single element is trivially the majority.
 Time: O(n), Space: O(1) with Boyer–Moore (O(n) with a hash map)
 */
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class MajorityElementJava {
         // Boyer-moore
         // Take first char, store as majorNum, increment majorCounter by one
@@ -242,19 +239,41 @@ public class MajorityElementJava {
 
         //
 
-    //
-
+    /
         //
 
-    //
-
+    public int majorityElement(int[] nums) {
         //
-
-    //
-
-    
-
-        // Integer candidate = null;
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        // int candidate = nums[0];
         // int count = 0;
         // for (int num : nums) {
         //     if (count == 0) {
@@ -263,6 +282,8 @@ public class MajorityElementJava {
         //     count += (num == candidate) ? 1 : -1;
         // }
         // return candidate;
+
+        throw new UnsupportedOperationException("Implement majorityElement");
     }
 
     public static void main(String[] args) {

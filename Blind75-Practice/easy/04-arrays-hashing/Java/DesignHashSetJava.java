@@ -7,6 +7,20 @@ void add(key), void remove(key), boolean contains(key). Keys in [0, 1_000_000].
 
 Approach: boolean[] presence table — O(1) ops, fixed space for key range.
 
+Example:
+Input:  ["MyHashSet","add","add","contains","contains","add","contains","remove","contains"]
+        [[],[1],[2],[1],[3],[2],[2],[2],[2]]
+Output: [null,null,null,true,false,null,true,null,false]
+Explanation:
+  add(1)       → set: {1}
+  add(2)       → set: {1,2}
+  contains(1)  → true
+  contains(3)  → false (not found)
+  add(2)       → set: {1,2}  (no duplicate added)
+  contains(2)  → true
+  remove(2)    → set: {1}
+  contains(2)  → false
+
 Time: O(1) per op, Space: O(10^6)
 */
 
@@ -16,6 +30,7 @@ public class DesignHashSetJava {
         private final boolean[] present = new boolean[1_000_001];
 
         public void add(int key) {
+
             //
 
             //

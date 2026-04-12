@@ -32,6 +32,7 @@ Time: O(m + n), Space: O(1) — 26 letters
 
 public class RansomNoteJava {
 
+    public boolean canConstruct(String ransomNote, String magazine) {
         //
 
     //
