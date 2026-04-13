@@ -32,6 +32,19 @@ Time: O(n), Space: O(1)
 public class LengthOfLastWordJava {
 
     public int lengthOfLastWord(String s) {
+        int right = s.length() - 1;
+            while(right >= 0 && s.charAt(right) == ' ') {
+                right--;
+            }
+
+        int counter = 0;
+            while(right >= 0 && s.charAt(right) != ' '){
+                counter++;
+                right--;
+            }
+
+        return counter;
+
         //
 
         //
