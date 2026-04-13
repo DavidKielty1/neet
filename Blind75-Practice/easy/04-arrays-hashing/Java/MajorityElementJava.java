@@ -29,12 +29,10 @@ Explanation: The single element is trivially the majority.
 Time: O(n), Space: O(1) with Boyer–Moore (O(n) with a hash map)
 */
 
-public class MajorityElementJava {
-        // Boyer-moore
-        // Take first char, store as majorNum, increment majorCounter by one
-        // if next char != majorNum, decrement majorCounter
-        // if majorCounter == 0, change majorNum to i, increment by 1
+import java.util.HashMap;
+import java.util.Map;
 
+public class MajorityElementJava {
     public Integer getMajorityIntegerBoyerMoore (Integer[] nums) {
         //
 
@@ -96,23 +94,30 @@ public class MajorityElementJava {
 
         //
 
-        // Integer majorityNumber = 0;
-        // Integer majorityCount = 0;
+        // int candidate = nums[0];
+        // int voteCount = 0;
+
         // for (int i = 0; i < nums.length; i++) {
-            // if(majorityCount == 0) {
-                // majorityNumber = nums[i];
-            // }
-            // if(nums[i] != majorityNumber) {
-                // majorityCount--;
-            // } else {
-                // majorityCount++;
-            // }
+        //     if (voteCount == 0) candidate = nums[i];
+
+        //     if(nums[i] == candidate) {
+        //         voteCount++;
+        //     } else {
+        //         voteCount--;
+        //     }
         // }
+        // return candidate;
 
         throw new UnsupportedOperationException("Implement getMajorityIntegerBoyerMoore");
     }
 
     public Integer getMajorityIntegerHashMap (int[] nums) {
+        Map<Integer, Integer> count = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            count.merge(nums[i], 1, Integer::sum);
+        }
+
+        for (Map.Entry<Integer, Integer)
         //
 
         //
