@@ -35,7 +35,6 @@ Time: O(numRows^2), Space: O(numRows^2) for the returned list
 public class PascalsTriangleJava {
 
     public List<List<Integer>> generate(int numRows) {
-        //
 
         //
 

@@ -111,13 +111,21 @@ public class MajorityElementJava {
         throw new UnsupportedOperationException("Implement getMajorityIntegerBoyerMoore");
     }
 
-    public Integer getMajorityIntegerHashMap (int[] nums) {
-        Map<Integer, Integer> count = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            count.merge(nums[i], 1, Integer::sum);
+    public Integer getMajorityIntegerHashMap(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return null;
         }
-
-        for (Map.Entry<Integer, Integer)
+        Map<Integer, Integer> count = new HashMap<>();
+        for (int num : nums) {
+            count.merge(num, 1, Integer::sum);
+        }
+        for (Map.Entry<Integer, Integer> e : count.entrySet()) {
+            if (e.getValue() > nums.length / 2) {
+                return e.getKey();
+            }
+        }
+        return null;
+    
         //
 
         //
