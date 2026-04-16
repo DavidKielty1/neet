@@ -73,6 +73,17 @@ public class AssignCookiesJava {
 
         // Sort both; two pointers.
 
+        // java.util.Arrays.sort(g);
+        // java.util.Arrays.sort(s);
+        // int child = 0;
+        // int cookie = 0;
+        // while (child < g.length && cookie < s.length) {
+        //     if (s[cookie] >= g[child]) {
+        //         child++;
+        //     }
+        //     cookie++;
+        // }
+        // return child;
         throw new UnsupportedOperationException("Implement findContentChildren");
     }
     public static void main(String[] args) {

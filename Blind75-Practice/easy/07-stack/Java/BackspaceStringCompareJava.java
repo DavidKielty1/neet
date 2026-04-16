@@ -71,6 +71,23 @@ public class BackspaceStringCompareJava {
 
         // Build stack or two-pointer from end.
 
+        // class Solver {
+        //     String build(String text) {
+        //         StringBuilder sb = new StringBuilder();
+        //         for (char ch : text.toCharArray()) {
+        //             if (ch == "#".charAt(0)) {
+        //                 if (sb.length() > 0) {
+        //                     sb.deleteCharAt(sb.length() - 1);
+        //                 }
+        //             } else {
+        //                 sb.append(ch);
+        //             }
+        //         }
+        //         return sb.toString();
+        //     }
+        // }
+        // Solver solver = new Solver();
+        // return solver.build(s).equals(solver.build(t));
         throw new UnsupportedOperationException("Implement backspaceCompare");
     }
     public static void main(String[] args) {

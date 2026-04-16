@@ -74,6 +74,23 @@ public class ValidParenthesesJava {
 
         // Stack of opening chars; match closing.
 
+        // java.util.Deque<Character> stack = new java.util.ArrayDeque<>();
+        // for (char ch : s.toCharArray()) {
+        //     if (ch == "(".charAt(0) || ch == "[".charAt(0) || ch == "{".charAt(0)) {
+        //         stack.push(ch);
+        //         continue;
+        //     }
+        //     if (stack.isEmpty()) {
+        //         return false;
+        //     }
+        //     char open = stack.pop();
+        //     if ((ch == ')' && open != "(".charAt(0))
+        //             || (ch == ']' && open != "[".charAt(0))
+        //             || (ch == '}' && open != "{".charAt(0))) {
+        //         return false;
+        //     }
+        // }
+        // return stack.isEmpty();
         throw new UnsupportedOperationException("Implement isValid");
     }
     public static void main(String[] args) {

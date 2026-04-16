@@ -78,6 +78,7 @@ public class ImplementQueueUsingStacksJava {
 
             //
 
+            // in.push(x);
             throw new UnsupportedOperationException("Implement push");
         }
 
@@ -142,6 +143,12 @@ public class ImplementQueueUsingStacksJava {
 
             //
 
+            // if (out.isEmpty()) {
+            //     while (!in.isEmpty()) {
+            //         out.push(in.pop());
+            //     }
+            // }
+            // return out.pop();
             throw new UnsupportedOperationException("Implement pop");
         }
 
@@ -206,6 +213,12 @@ public class ImplementQueueUsingStacksJava {
 
             //
 
+            // if (out.isEmpty()) {
+            //     while (!in.isEmpty()) {
+            //         out.push(in.pop());
+            //     }
+            // }
+            // return out.peek();
             throw new UnsupportedOperationException("Implement peek");
         }
 
@@ -270,6 +283,7 @@ public class ImplementQueueUsingStacksJava {
 
             //
 
+            // return in.isEmpty() && out.isEmpty();
             throw new UnsupportedOperationException("Implement empty");
         }
     }

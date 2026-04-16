@@ -74,6 +74,29 @@ public class SubtreeOfAnotherTreeJava {
 
         // Compare structures / same-tree helper.
 
+        // class Solver {
+        //     boolean same(TreeNode a, TreeNode b) {
+        //         if (a == null && b == null) {
+        //             return true;
+        //         }
+        //         if (a == null || b == null) {
+        //             return false;
+        //         }
+        //         return a.val == b.val
+        //                 && same(a.left, b.left)
+        //                 && same(a.right, b.right);
+        //     }
+        //     boolean dfs(TreeNode node) {
+        //         if (node == null) {
+        //             return false;
+        //         }
+        //         return same(node, subRoot) || dfs(node.left) || dfs(node.right);
+        //     }
+        // }
+        // if (subRoot == null) {
+        //     return true;
+        // }
+        // return new Solver().dfs(root);
         throw new UnsupportedOperationException("Implement isSubtree");
     }
     public static void main(String[] args) {

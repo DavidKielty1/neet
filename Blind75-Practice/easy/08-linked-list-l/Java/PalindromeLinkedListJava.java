@@ -71,6 +71,33 @@ public class PalindromeLinkedListJava {
 
         // Reverse second half and compare.
 
+        // if (head == null || head.next == null) {
+        //     return true;
+        // }
+        // ListNode slow = head;
+        // ListNode fast = head;
+        // while (fast.next != null && fast.next.next != null) {
+        //     slow = slow.next;
+        //     fast = fast.next.next;
+        // }
+        // ListNode prev = null;
+        // ListNode current = slow.next;
+        // while (current != null) {
+        //     ListNode nextNode = current.next;
+        //     current.next = prev;
+        //     prev = current;
+        //     current = nextNode;
+        // }
+        // ListNode left = head;
+        // ListNode right = prev;
+        // while (right != null) {
+        //     if (left.val != right.val) {
+        //         return false;
+        //     }
+        //     left = left.next;
+        //     right = right.next;
+        // }
+        // return true;
         throw new UnsupportedOperationException("Implement isPalindrome");
     }
     public static void main(String[] args) {

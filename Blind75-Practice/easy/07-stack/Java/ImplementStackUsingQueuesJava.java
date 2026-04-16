@@ -79,6 +79,7 @@ public class ImplementStackUsingQueuesJava {
 
             // q.addLast(x);
 
+            // q.addLast(x);
             throw new UnsupportedOperationException("Implement push");
         }
 
@@ -148,6 +149,10 @@ public class ImplementStackUsingQueuesJava {
             // }
             // return q.removeFirst();
 
+            // for (int i = q.size() - 1; i > 0; i--) {
+            //     q.addLast(q.removeFirst());
+            // }
+            // return q.removeFirst();
             throw new UnsupportedOperationException("Implement pop");
         }
 
@@ -219,6 +224,12 @@ public class ImplementStackUsingQueuesJava {
             // q.addLast(q.removeFirst());
             // return x;
 
+            // for (int i = q.size() - 1; i > 0; i--) {
+            //     q.addLast(q.removeFirst());
+            // }
+            // int value = q.peekFirst();
+            // q.addLast(q.removeFirst());
+            // return value;
             throw new UnsupportedOperationException("Implement top");
         }
 
@@ -285,6 +296,7 @@ public class ImplementStackUsingQueuesJava {
 
             // return q.isEmpty();
 
+            // return q.isEmpty();
             throw new UnsupportedOperationException("Implement empty");
         }
     }

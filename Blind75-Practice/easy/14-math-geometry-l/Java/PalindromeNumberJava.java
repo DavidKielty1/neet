@@ -71,6 +71,15 @@ public class PalindromeNumberJava {
 
         // Reverse half of digits.
 
+        // if (x < 0 || (x % 10 == 0 && x != 0)) {
+        //     return false;
+        // }
+        // int reversedHalf = 0;
+        // while (x > reversedHalf) {
+        //     reversedHalf = reversedHalf * 10 + (x % 10);
+        //     x /= 10;
+        // }
+        // return x == reversedHalf || x == reversedHalf / 10;
         throw new UnsupportedOperationException("Implement isPalindrome");
     }
     public static void main(String[] args) {

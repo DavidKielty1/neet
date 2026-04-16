@@ -80,6 +80,7 @@ public class GuessNumberHigherOrLowerJava {
 
         // return Integer.compare(pick, num);
 
+        // return Integer.compare(pick, num);
         throw new UnsupportedOperationException("Implement guess");
     }
 
@@ -159,6 +160,21 @@ public class GuessNumberHigherOrLowerJava {
         // }
         // return lo;
 
+        // int lo = 1;
+        // int hi = n;
+        // while (lo <= hi) {
+        //     int mid = lo + (hi - lo) / 2;
+        //     int result = guess(mid);
+        //     if (result == 0) {
+        //         return mid;
+        //     }
+        //     if (result < 0) {
+        //         hi = mid - 1;
+        //     } else {
+        //         lo = mid + 1;
+        //     }
+        // }
+        // return -1;
         throw new UnsupportedOperationException("Implement guessNumber");
     }
 

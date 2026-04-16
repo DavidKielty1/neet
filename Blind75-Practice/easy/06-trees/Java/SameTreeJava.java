@@ -74,6 +74,16 @@ public class SameTreeJava {
 
         // Recursion: same val and same left/right.
 
+        // if (p == null && q == null) {
+        //     return true;
+        // }
+        // if (p == null || q == null) {
+        //     return false;
+        // }
+        // if (p.val != q.val) {
+        //     return false;
+        // }
+        // return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
         throw new UnsupportedOperationException("Implement isSameTree");
     }
     public static void main(String[] args) {

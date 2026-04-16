@@ -94,6 +94,16 @@ public class RomanToIntegerJava {
         // }
         // return total;
 
+        // int total = 0;
+        // for (int i = 0; i < s.length(); i++) {
+        //     int value = VALS.get(s.charAt(i));
+        //     if (i + 1 < s.length() && value < VALS.get(s.charAt(i + 1))) {
+        //         total -= value;
+        //     } else {
+        //         total += value;
+        //     }
+        // }
+        // return total;
         throw new UnsupportedOperationException("Implement romanToInt");
     }
 

@@ -71,6 +71,13 @@ public class MiddleOfLinkedListJava {
 
         // Fast moves 2 steps, slow 1 step.
 
+        // ListNode slow = head;
+        // ListNode fast = head;
+        // while (fast != null && fast.next != null) {
+        //     slow = slow.next;
+        //     fast = fast.next.next;
+        // }
+        // return slow;
         throw new UnsupportedOperationException("Implement middleNode");
     }
     public static void main(String[] args) {

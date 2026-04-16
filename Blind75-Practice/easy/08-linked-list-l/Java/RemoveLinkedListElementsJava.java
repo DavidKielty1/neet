@@ -71,6 +71,16 @@ public class RemoveLinkedListElementsJava {
 
         // Dummy head simplifies removal.
 
+        // ListNode dummy = new ListNode(0, head);
+        // ListNode current = dummy;
+        // while (current.next != null) {
+        //     if (current.next.val == val) {
+        //         current.next = current.next.next;
+        //     } else {
+        //         current = current.next;
+        //     }
+        // }
+        // return dummy.next;
         throw new UnsupportedOperationException("Implement removeElements");
     }
     public static void main(String[] args) {

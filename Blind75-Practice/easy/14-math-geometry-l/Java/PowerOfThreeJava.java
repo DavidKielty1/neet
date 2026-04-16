@@ -71,6 +71,13 @@ public class PowerOfThreeJava {
 
         // Loop divide by 3 or log trick.
 
+        // if (n <= 0) {
+        //     return false;
+        // }
+        // while (n % 3 == 0) {
+        //     n /= 3;
+        // }
+        // return n == 1;
         throw new UnsupportedOperationException("Implement isPowerOfThree");
     }
     public static void main(String[] args) {

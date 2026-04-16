@@ -71,6 +71,7 @@ public class DivisorGameJava {
 
         // Pattern on parity / DP small states.
 
+        // return n % 2 == 0;
         throw new UnsupportedOperationException("Implement divisorGame");
     }
     public static void main(String[] args) {

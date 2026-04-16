@@ -9,6 +9,13 @@ Time: O(n), Space: O(1)
 */
 public class BestTimeToBuyAndSellStockJava {
     public int maxProfit(int[] prices) {
+        int maxProfit = 0;
+        int lowestPrice = prices[0];
+        for (int i = 0; i < prices.length; i++) {
+            lowestPrice = Math.min(lowestPrice, prices[i]);
+            maxProfit = Math.max(maxProfit, prices[i] - lowestPrice);
+        }
+        return maxProfit;
         //
 
         //
@@ -70,8 +77,6 @@ public class BestTimeToBuyAndSellStockJava {
         //
 
         // Track minimum price seen so far; update max profit.
-
-        throw new UnsupportedOperationException("Implement maxProfit");
     }
     public static void main(String[] args) {
         BestTimeToBuyAndSellStockJava s = new BestTimeToBuyAndSellStockJava();

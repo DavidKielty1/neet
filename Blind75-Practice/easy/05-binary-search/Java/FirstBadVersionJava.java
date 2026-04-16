@@ -122,6 +122,8 @@ public class FirstBadVersionJava extends VersionControl {
 
         //
 
+        // LeetCode provides this API; in local tests store firstBad and compare against it.
+        // return version >= firstBad;
         throw new UnsupportedOperationException("Implement isBadVersion");
     }
 
@@ -189,6 +191,17 @@ public class FirstBadVersionJava extends VersionControl {
         // int lo = 1, hi = n;
         // while (lo < hi) { int mid = lo + (hi - lo) / 2; ... }
 
+        // int lo = 1;
+        // int hi = n;
+        // while (lo < hi) {
+        //     int mid = lo + (hi - lo) / 2;
+        //     if (isBadVersion(mid)) {
+        //         hi = mid;
+        //     } else {
+        //         lo = mid + 1;
+        //     }
+        // }
+        // return lo;
         throw new UnsupportedOperationException("Implement firstBadVersion");
     }
 

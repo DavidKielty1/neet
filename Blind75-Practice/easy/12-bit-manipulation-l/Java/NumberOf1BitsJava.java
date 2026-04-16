@@ -71,6 +71,12 @@ public class NumberOf1BitsJava {
 
         // n &= n - 1 clears lowest set bit.
 
+        // int count = 0;
+        // while (n != 0) {
+        //     n &= (n - 1);
+        //     count++;
+        // }
+        // return count;
         throw new UnsupportedOperationException("Implement hammingWeight");
     }
     public static void main(String[] args) {

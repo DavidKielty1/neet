@@ -83,6 +83,16 @@ public class VerifyingAnAlienDictionaryJava {
         // }
         // return true;
 
+        // int[] rank = new int[26];
+        // for (int i = 0; i < order.length(); i++) {
+        //     rank[order.charAt(i) - "a".charAt(0)] = i;
+        // }
+        // for (int i = 0; i < words.length - 1; i++) {
+        //     if (!lessOrEqual(words[i], words[i + 1], rank)) {
+        //         return false;
+        //     }
+        // }
+        // return true;
         throw new UnsupportedOperationException("Implement isAlienSorted");
     }
 
@@ -158,6 +168,15 @@ public class VerifyingAnAlienDictionaryJava {
         // }
         // return a.length() <= b.length();
 
+        // int limit = Math.min(a.length(), b.length());
+        // for (int i = 0; i < limit; i++) {
+        //     char left = a.charAt(i);
+        //     char right = b.charAt(i);
+        //     if (left != right) {
+        //         return rank[left - "a".charAt(0)] < rank[right - "a".charAt(0)];
+        //     }
+        // }
+        // return a.length() <= b.length();
         throw new UnsupportedOperationException("Implement lessOrEqual");
     }
 

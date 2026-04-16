@@ -71,6 +71,11 @@ public class MissingNumberJava {
 
         // XOR or sum formula.
 
+        // int result = nums.length;
+        // for (int i = 0; i < nums.length; i++) {
+        //     result ^= i ^ nums[i];
+        // }
+        // return result;
         throw new UnsupportedOperationException("Implement missingNumber");
     }
     public static void main(String[] args) {

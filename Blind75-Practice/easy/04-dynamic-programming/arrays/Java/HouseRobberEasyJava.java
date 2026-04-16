@@ -1,15 +1,29 @@
 /*
-70. Climbing Stairs (pairs with Python house-robber-easy.py)
+LeetCode 70. Climbing Stairs
 Difficulty: Easy
-Pattern: Dynamic Programming
+Pattern: Dynamic Programming / Fibonacci
 
-Count distinct ways to reach the top taking 1 or 2 steps at a time.
+You are climbing a staircase with n steps.
+Each time, you can climb either 1 step or 2 steps.
+Return the number of distinct ways to reach the top.
+
+Examples:
+n = 2 -> 2
+Ways: [1+1], [2]
+
+n = 3 -> 3
+Ways: [1+1+1], [1+2], [2+1]
+
+Idea:
+The number of ways to reach step i is the sum of the ways to reach
+step i - 1 and step i - 2.
 
 Time: O(n), Space: O(1)
 */
 public class HouseRobberEasyJava {
     public int climbStairs(int n) {
-        //
+
+        //  
 
         //
 
@@ -71,6 +85,17 @@ public class HouseRobberEasyJava {
 
         // Fibonacci-style DP: ways[i] = ways[i-1] + ways[i-2]
 
+        // if (n <= 2) {
+        //     return n;
+        // }
+        // int prev2 = 1;
+        // int prev1 = 2;
+        // for (int i = 3; i <= n; i++) {
+        //     int current = prev1 + prev2;
+        //     prev2 = prev1;
+        //     prev1 = current;
+        // }
+        // return prev1;
         throw new UnsupportedOperationException("Implement climbStairs");
     }
     public static void main(String[] args) {

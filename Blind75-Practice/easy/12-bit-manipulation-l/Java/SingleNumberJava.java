@@ -71,6 +71,11 @@ public class SingleNumberJava {
 
         // XOR all elements.
 
+        // int result = 0;
+        // for (int num : nums) {
+        //     result ^= num;
+        // }
+        // return result;
         throw new UnsupportedOperationException("Implement singleNumber");
     }
     public static void main(String[] args) {

@@ -77,6 +77,9 @@ public class BinaryTreePostorderTraversalJava {
         // dfs(root, result);
         // return result;
 
+        // List<Integer> result = new ArrayList<>();
+        // dfs(root, result);
+        // return result;
         throw new UnsupportedOperationException("Implement postorderTraversal");
     }
 
@@ -149,6 +152,12 @@ public class BinaryTreePostorderTraversalJava {
         // dfs(node.right, result);
         // result.add(node.val);
 
+        // if (node == null) {
+        //     return;
+        // }
+        // dfs(node.left, result);
+        // dfs(node.right, result);
+        // result.add(node.val);
         throw new UnsupportedOperationException("Implement dfs");
     }
 

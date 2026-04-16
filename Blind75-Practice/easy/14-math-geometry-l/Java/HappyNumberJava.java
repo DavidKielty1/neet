@@ -71,6 +71,24 @@ public class HappyNumberJava {
 
         // Cycle detection or mathematical endpoint.
 
+        // class Solver {
+        //     int next(int value) {
+        //         int total = 0;
+        //         while (value > 0) {
+        //             int digit = value % 10;
+        //             total += digit * digit;
+        //             value /= 10;
+        //         }
+        //         return total;
+        //     }
+        // }
+        // Solver solver = new Solver();
+        // java.util.Set<Integer> seen = new java.util.HashSet<>();
+        // while (n != 1 && !seen.contains(n)) {
+        //     seen.add(n);
+        //     n = solver.next(n);
+        // }
+        // return n == 1;
         throw new UnsupportedOperationException("Implement isHappy");
     }
     public static void main(String[] args) {

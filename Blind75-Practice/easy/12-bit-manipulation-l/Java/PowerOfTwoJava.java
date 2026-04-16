@@ -71,6 +71,7 @@ public class PowerOfTwoJava {
 
         // n > 0 && (n & (n - 1)) == 0
 
+        // return n > 0 && (n & (n - 1)) == 0;
         throw new UnsupportedOperationException("Implement isPowerOfTwo");
     }
     public static void main(String[] args) {

@@ -72,6 +72,7 @@ public class SumOfAllSubsetsXorTotalJava {
 
         // return dfs(nums, 0, 0);
 
+        // return dfs(nums, 0, 0);
         throw new UnsupportedOperationException("Implement subsetXORSum");
     }
 
@@ -142,6 +143,11 @@ public class SumOfAllSubsetsXorTotalJava {
         // }
         // return dfs(nums, i + 1, curXor ^ nums[i]) + dfs(nums, i + 1, curXor);
 
+        // if (i == nums.length) {
+        //     return curXor;
+        // }
+        // return dfs(nums, i + 1, curXor ^ nums[i])
+        //         + dfs(nums, i + 1, curXor);
         throw new UnsupportedOperationException("Implement dfs");
     }
 

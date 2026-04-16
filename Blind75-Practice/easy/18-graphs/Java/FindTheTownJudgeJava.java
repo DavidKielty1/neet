@@ -85,6 +85,20 @@ public class FindTheTownJudgeJava {
         // }
         // return -1;
 
+        // int[] inDegree = new int[n + 1];
+        // int[] outDegree = new int[n + 1];
+        // for (int[] edge : trust) {
+        //     int a = edge[0];
+        //     int b = edge[1];
+        //     outDegree[a]++;
+        //     inDegree[b]++;
+        // }
+        // for (int person = 1; person <= n; person++) {
+        //     if (inDegree[person] == n - 1 && outDegree[person] == 0) {
+        //         return person;
+        //     }
+        // }
+        // return -1;
         throw new UnsupportedOperationException("Implement findJudge");
     }
 

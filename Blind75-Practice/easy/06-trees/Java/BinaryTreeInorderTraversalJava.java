@@ -77,6 +77,9 @@ public class BinaryTreeInorderTraversalJava {
         // dfs(root, result);
         // return result;
 
+        // List<Integer> result = new ArrayList<>();
+        // dfs(root, result);
+        // return result;
         throw new UnsupportedOperationException("Implement inorderTraversal");
     }
 
@@ -149,6 +152,12 @@ public class BinaryTreeInorderTraversalJava {
         // result.add(node.val);
         // dfs(node.right, result);
 
+        // if (node == null) {
+        //     return;
+        // }
+        // dfs(node.left, result);
+        // result.add(node.val);
+        // dfs(node.right, result);
         throw new UnsupportedOperationException("Implement dfs");
     }
 

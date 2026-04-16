@@ -71,6 +71,15 @@ public class ReverseLinkedListJava {
 
         // prev/curr iteration.
 
+        // ListNode prev = null;
+        // ListNode current = head;
+        // while (current != null) {
+        //     ListNode nextNode = current.next;
+        //     current.next = prev;
+        //     prev = current;
+        //     current = nextNode;
+        // }
+        // return prev;
         throw new UnsupportedOperationException("Implement reverseList");
     }
     public static void main(String[] args) {

@@ -74,6 +74,10 @@ public class MaximumDepthBinaryTreeJava {
 
         // max(left, right) + 1
 
+        // if (root == null) {
+        //     return 0;
+        // }
+        // return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
         throw new UnsupportedOperationException("Implement maxDepth");
     }
     public static void main(String[] args) {

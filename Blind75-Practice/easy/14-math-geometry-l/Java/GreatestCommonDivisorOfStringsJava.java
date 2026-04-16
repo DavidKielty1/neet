@@ -79,6 +79,12 @@ public class GreatestCommonDivisorOfStringsJava {
         // }
         // return a;
 
+        // while (b != 0) {
+        //     int temp = a % b;
+        //     a = b;
+        //     b = temp;
+        // }
+        // return a;
         throw new UnsupportedOperationException("Implement gcd");
     }
 
@@ -149,6 +155,11 @@ public class GreatestCommonDivisorOfStringsJava {
         // int g = gcd(str1.length(), str2.length());
         // return str1.substring(0, g);
 
+        // if (!(str1 + str2).equals(str2 + str1)) {
+        //     return "";
+        // }
+        // int length = gcd(str1.length(), str2.length());
+        // return str1.substring(0, length);
         throw new UnsupportedOperationException("Implement gcdOfStrings");
     }
 

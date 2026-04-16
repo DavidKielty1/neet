@@ -71,6 +71,23 @@ public class SqrtXJava {
 
         // Binary search on [0, x]
 
+        // int lo = 0;
+        // int hi = x;
+        // int answer = 0;
+        // while (lo <= hi) {
+        //     int mid = lo + (hi - lo) / 2;
+        //     long square = (long) mid * mid;
+        //     if (square == x) {
+        //         return mid;
+        //     }
+        //     if (square < x) {
+        //         answer = mid;
+        //         lo = mid + 1;
+        //     } else {
+        //         hi = mid - 1;
+        //     }
+        // }
+        // return answer;
         throw new UnsupportedOperationException("Implement mySqrt");
     }
     public static void main(String[] args) {
