@@ -28,10 +28,6 @@ Constraints:
 - s is a valid parentheses string
  */
 
-import java.util.*;
-import java.util.function.*;
-
-
 public class ValidParenthesesSimilar1Java {
 
 

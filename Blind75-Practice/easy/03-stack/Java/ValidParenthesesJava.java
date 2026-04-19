@@ -48,41 +48,8 @@
  * Time: O(n), Space: O(n)
  */
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-
 public class ValidParenthesesJava {
     public boolean isValid(String s) {
-        // make a map of closers and openers (optional?)
-        // Create Deque deque = new ArrayDeque()
-        // Loop for each o(n) of s
-        // Check s.charAt(i): 
-        // if it is closer and stack is empty -> return false
-        // if is it opener : add to stack
-        // if it is closer check in our deque to see if top of stack is the corresponding opener
-        // if so, pop from stack, move onto next i
-        // if not, not a valid parenthesis stack
-        // return stack is empty (returns true for empty;  false if not)
-
-        Deque<Character> stack = new ArrayDeque<>();
-        for (char ch : s.toCharArray()) {
-            if (ch == '(' || ch == '[' || ch == '{') {
-                stack.push(ch);
-                continue;
-            }
-
-            if (stack.isEmpty()) {
-                return false;
-            }
-
-            char open = stack.pop();
-            if ((ch == ')' && open != '(')
-                || (ch == ']' && open != '[')
-                || (ch == '}' && open != '{')   
-            ) return false;
-            
-        }
-        return stack.isEmpty();
 
         //
 
@@ -134,25 +101,26 @@ public class ValidParenthesesJava {
 
         //
 
-        // Stack of opening chars; match closing.
-
-        // java.util.Deque<Character> stack = new java.util.ArrayDeque<>();
+        // Deque<Character> stack = new ArrayDeque<>();
         // for (char ch : s.toCharArray()) {
-        //     if (ch == "(".charAt(0) || ch == "[".charAt(0) || ch == "{".charAt(0)) {
+        //     if (ch == '(' || ch == '[' || ch == '{') {
         //         stack.push(ch);
         //         continue;
         //     }
+
         //     if (stack.isEmpty()) {
         //         return false;
         //     }
+
         //     char open = stack.pop();
-        //     if ((ch == ')' && open != "(".charAt(0))
-        //             || (ch == ']' && open != "[".charAt(0))
-        //             || (ch == '}' && open != "{".charAt(0))) {
-        //         return false;
-        //     }
+        //     if ((ch == ')' && open != '(')
+        //         || (ch == ']' && open != '[')
+        //         || (ch == '}' && open != '{')   
+        //     ) return false;
         // }
+
         // return stack.isEmpty();
+
         throw new UnsupportedOperationException("Implement isValid");
     }
     public static void main(String[] args) {
