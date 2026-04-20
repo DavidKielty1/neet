@@ -54,6 +54,7 @@ public class ImplementQueueUsingStacksJava {
         private final Deque<Integer> out = new ArrayDeque<>();
 
         public void push(int x) {
+            in.push(x);
             //
 
             //
@@ -119,6 +120,11 @@ public class ImplementQueueUsingStacksJava {
         }
 
         public int pop() {
+            while (out.isEmpty()) {
+                while (!in.isEmpty()) {
+                    out.push(in.pop());
+                }
+            }
             //
 
             //

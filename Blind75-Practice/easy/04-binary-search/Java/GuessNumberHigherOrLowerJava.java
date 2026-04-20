@@ -1,12 +1,52 @@
 /*
-374. Guess Number Higher or Lower
-Difficulty: Easy
-Pattern: Binary Search
-
-Binary search on [1, n] using guess API: negative if secret < guess, positive if secret > guess.
-
-Time: O(log n), Space: O(1)
-*/
+ * 374. Guess Number Higher or Lower
+ * Difficulty: Easy
+ * Pattern: Binary Search
+ *
+ * Problem
+ * -------
+ * You are playing a guessing game.
+ *
+ * The system picks a secret number between `1` and `n`, and you need to guess it.
+ * You are given an API:
+ *
+ * - `guess(num) == 0` if `num` is the secret number
+ * - `guess(num) == -1` if the secret number is lower than `num`
+ * - `guess(num) == 1` if the secret number is higher than `num`
+ *
+ * Return the secret number.
+ *
+ * Example 1
+ * ---------
+ * Input: n = 10, pick = 6
+ * Try `mid = 5` -> `guess(5) == 1`, so the number is higher.
+ * Try `mid = 8` -> `guess(8) == -1`, so the number is lower.
+ * Try `mid = 6` -> `guess(6) == 0`, so return `6`.
+ *
+ * Example 2
+ * ---------
+ * Input: n = 1, pick = 1
+ * Output: 1
+ *
+ * Constraints
+ * -----------
+ * - `1 <= n <= 2^31 - 1`
+ * - `1 <= pick <= n`
+ *
+ * How to think about it
+ * ---------------------
+ * This is binary search over a number range rather than over an array.
+ *
+ * - Search space starts as `[1, n]`
+ * - Pick the middle number
+ * - Use the API response to discard half the range
+ * - Repeat until you find the exact number
+ *
+ * If `guess(mid) < 0`, your guess was too high, so move left.
+ * If `guess(mid) > 0`, your guess was too low, so move right.
+ *
+ * Time: O(log n), Space: O(1)
+ */
 
 public class GuessNumberHigherOrLowerJava {
 

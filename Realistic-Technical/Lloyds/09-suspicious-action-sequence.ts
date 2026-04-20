@@ -46,26 +46,26 @@ const actions: UserAction[] = [
 
 function detectSuspiciousSequence(
   actions: UserAction[],
-  targetSequence: UserAction["action"][]
+  targetSequence: UserAction["action"][],
 ): string[] {
-  const flaggedUsers = new Set<string>()
+  const flaggedUsers = new Set<string>();
 
   // create userActivityMap per user
-  const userActivity: Record<string, {action: string, time: number}[]> = {}
+  const userActivity: Record<string, { action: string; time: number }[]> = {};
   for (const a of actions) {
-    const time = new Date(a.timestamp).getTime()
-    if (!userActivity[a.userId]) userActivity[a.userId] = []
-    userActivity[a.userId].push({action: a.action, time})
+    const time = new Date(a.timestamp).getTime();
+    if (!userActivity[a.userId]) userActivity[a.userId] = [];
+    userActivity[a.userId].push({ action: a.action, time });
   }
 
   // loop through user activity
   for (const [userId, activities] of Object.entries(userActivity)) {
-    activities.sort((a, b) => a.time - b.time)
+    activities.sort((a, b) => a.time - b.time);
 
     let sequenceIndex = 0;
     for (let a of activities) {
       if (a.action === targetSequence[sequenceIndex]) {
-        sequenceIndex++
+        sequenceIndex++;
         if (sequenceIndex === targetSequence.length) {
           flaggedUsers.add(userId);
           break;

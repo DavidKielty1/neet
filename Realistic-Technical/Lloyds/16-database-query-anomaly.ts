@@ -45,7 +45,11 @@ type UserBaseline = {
   usualHoursEnd: number; // 0-23
 };
 
-type Anomaly = "after_hours" | "large_result_set" | "high_volume" | "unusual_tables";
+type Anomaly =
+  | "after_hours"
+  | "large_result_set"
+  | "high_volume"
+  | "unusual_tables";
 
 type FlaggedUser = {
   userId: string;
@@ -57,7 +61,7 @@ type FlaggedUser = {
 function detectDatabaseQueryAnomalies(
   queries: QueryEvent[],
   baselines: UserBaseline[],
-  resultSizeThreshold: number = 10000
+  resultSizeThreshold: number = 10000,
 ): FlaggedUser[] {
   // Your implementation here
   return [];
@@ -65,14 +69,44 @@ function detectDatabaseQueryAnomalies(
 
 // Test case
 const queries: QueryEvent[] = [
-  { userId: "u1", timestamp: "2024-01-01T23:00:00Z", resultSetSize: 50000, executionTime: 120, tables: ["customers", "transactions"] },
-  { userId: "u1", timestamp: "2024-01-01T23:30:00Z", resultSetSize: 45000, executionTime: 110, tables: ["accounts"] },
-  { userId: "u2", timestamp: "2024-01-01T10:00:00Z", resultSetSize: 100, executionTime: 5, tables: ["products"] },
+  {
+    userId: "u1",
+    timestamp: "2024-01-01T23:00:00Z",
+    resultSetSize: 50000,
+    executionTime: 120,
+    tables: ["customers", "transactions"],
+  },
+  {
+    userId: "u1",
+    timestamp: "2024-01-01T23:30:00Z",
+    resultSetSize: 45000,
+    executionTime: 110,
+    tables: ["accounts"],
+  },
+  {
+    userId: "u2",
+    timestamp: "2024-01-01T10:00:00Z",
+    resultSetSize: 100,
+    executionTime: 5,
+    tables: ["products"],
+  },
 ];
 
 const baselines: UserBaseline[] = [
-  { userId: "u1", avgQueriesPerDay: 10, avgResultSize: 500, usualHoursStart: 9, usualHoursEnd: 17 },
-  { userId: "u2", avgQueriesPerDay: 5, avgResultSize: 200, usualHoursStart: 9, usualHoursEnd: 17 },
+  {
+    userId: "u1",
+    avgQueriesPerDay: 10,
+    avgResultSize: 500,
+    usualHoursStart: 9,
+    usualHoursEnd: 17,
+  },
+  {
+    userId: "u2",
+    avgQueriesPerDay: 5,
+    avgResultSize: 200,
+    usualHoursStart: 9,
+    usualHoursEnd: 17,
+  },
 ];
 
 console.log(detectDatabaseQueryAnomalies(queries, baselines));

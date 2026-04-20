@@ -8,7 +8,25 @@ Return index of target in sorted nums, or -1. O(log n).
 Time: O(log n), Space: O(1)
 */
 public class BinarySearchJava {
+    // [0, 1, 2, 3, 4, 5, 6, 7, 8] ; target = 3
     public int search(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (right >= left) {
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] == target) {
+                return mid;
+            }
+
+            if (nums[mid] > target) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        } 
+
+        return -1;
         //
 
         //
