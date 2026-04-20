@@ -45,8 +45,40 @@
  *
  * Time: O(n + m), Space: O(n + m) with stacks, O(1) with reverse two pointers
  */
+
+import java.util.ArrayDeque;
+
 public class BackspaceStringCompareJava {
     public boolean backspaceCompare(String s, String t) {
+        return build(s).equals(build(t));
+    }  
+
+    private String build (String text) {
+        ArrayDeque<Character> stack = new ArrayDeque<>();
+
+        for(int i = text.length(); i < text.length(); i++){
+            char ch = text.charAt(i);
+
+            if (ch == '#') {
+                if (!stack.isEmpty()) {
+                    stack.removeLast();
+                }
+            } else {
+                stack.addLast(ch);
+            }
+        }
+        
+        StringBuilder sb = new StringBuilder();
+        for (char ch : stack) {
+            sb.append(ch);
+        }
+        return sb.toString();
+    }  
+    
+        
+        
+        
+        
         //
 
         //
@@ -126,7 +158,6 @@ public class BackspaceStringCompareJava {
         // }
         // Solver solver = new Solver();
         // return solver.build(s).equals(solver.build(t));
-        throw new UnsupportedOperationException("Implement backspaceCompare");
     }
     public static void main(String[] args) {
         BackspaceStringCompareJava x = new BackspaceStringCompareJava();
