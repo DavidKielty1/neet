@@ -21,23 +21,6 @@
 public class LongestSubstringWithoutRepeatingCharactersEasyAscii {
 
     public static int firstUniqCharAscii(String s) {
-        int[] counter = new int[128];
-
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (ch < 128) {
-                counter[ch]++;
-            }
-        }
-
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (ch < 128 && counter[ch] == 1) {
-                return i;
-            }
-        }
-
-        return -1;
         //
 
         //

@@ -1,27 +1,28 @@
 import java.util.Arrays;
 
 /*
-344. Reverse String
+LeetCode 344: Reverse String
 Difficulty: Easy
 Pattern: Two Pointers
 
-Write a function that reverses a string. The input string is given as an
-array of characters s.
+Problem:
+Write a function that reverses a string. The input string is given as an array
+of characters `s`.
 
-Contract (LeetCode 344):
-- Do not return anything; modify s in-place by reversing the characters.
+You must do this by modifying the input array in-place with O(1) extra memory.
 
 Example 1:
 Input: s = ["h","e","l","l","o"]
 Output: ["o","l","l","e","h"]
-Hint: Swap s[left] and s[right], move both toward center until they meet.
+Explanation: Swap the leftmost and rightmost characters, then move inward.
 
 Example 2:
-Input: s = ["A"]
-Output: ["A"]
-Hint: Length 1 is already reversed — bounds check on left < right.
+Input: s = ["H","a","n","n","a","h"]
+Output: ["h","a","n","n","a","H"]
+Explanation: Keep swapping pairs until the pointers meet or cross.
 
-Time: O(n), Space: O(1)
+Time Complexity: O(n)
+Space Complexity: O(1)
 */
 public class ReverseStringJava {
 

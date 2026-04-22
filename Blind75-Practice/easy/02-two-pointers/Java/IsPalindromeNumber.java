@@ -3,17 +3,31 @@ LeetCode 125: Valid Palindrome
 Difficulty: Easy
 Pattern: Two Pointers
 
-(Note: filename references number problems; this file follows the valid palindrome string problem.)
+Problem:
+Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
+
+A phrase is a palindrome if, after converting all uppercase letters to
+lowercase and removing all non-alphanumeric characters, it reads the same
+forward and backward.
+
+Note:
+This file is named `IsPalindromeNumber`, but the implementation here is for the
+string problem `Valid Palindrome`.
 
 Example 1:
 Input: s = "A man, a plan, a canal: Panama"
 Output: true
-Hint: Skip non-alphanumerics, compare lowercase from both ends.
+Explanation: After filtering and lowercasing, "amanaplanacanalpanama" is a palindrome.
 
 Example 2:
 Input: s = "race a car"
 Output: false
-Hint: After filtering, "raceacar" is not symmetric — two pointers inward.
+Explanation: After filtering and lowercasing, "raceacar" is not a palindrome.
+
+Example 3:
+Input: s = " "
+Output: true
+Explanation: An empty filtered string is still considered a palindrome.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

@@ -12,7 +12,9 @@ Time: O(n), Space: O(min(n, k))
 
 public class ContainsDuplicateIIJava {
 
+    // [1 2 3 4 4 1 2 3 4] k = 3
     public boolean containsNearbyDuplicate(int[] nums, int k) {
+
         //
 
         //

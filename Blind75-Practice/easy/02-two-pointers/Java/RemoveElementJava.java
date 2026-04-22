@@ -1,30 +1,30 @@
 import java.util.Arrays;
 
 /*
-27. Remove Element
+LeetCode 27: Remove Element
 Difficulty: Easy
 Pattern: Two Pointers
 
-Given an integer array nums and an integer val, remove all occurrences of
-val in-place. The order of the elements may be changed.
+Problem:
+Given an integer array `nums` and an integer `val`, remove all occurrences of
+`val` in-place.
 
-Contract (LeetCode 27):
-- Modify nums in-place so that the first k elements of nums contain the
-  elements that are not equal to val (order of these elements may change).
-- Return k (the number of elements not equal to val). The values beyond
-  index k-1 are ignored by the caller and may be any value.
+Return `k`, the number of elements in `nums` that are not equal to `val`. The
+first `k` elements should contain the kept values. The order of those kept
+elements does not matter, and anything after index `k - 1` is ignored.
 
 Example 1:
-Input: nums = [1,2,3,2,2,3], val = 3
-Output: 2, nums = [2,2,_,_]
-Hint: Slow pointer = next slot to write a “keep”; fast scans all elements.
-
-Example 2:
 Input: nums = [3,2,2,3], val = 3
 Output: 2, nums = [2,2,_,_]
-Hint: In-place overwrite; order among kept values only needs to stay valid at prefix.
+Explanation: The remaining valid prefix contains the two values not equal to 3.
 
-Time: O(n), Space: O(1)
+Example 2:
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+Output: 5, nums = [0,1,4,0,3,_,_,_]
+Explanation: Any order is acceptable as long as the first 5 values are not 2.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
 */
 public class RemoveElementJava {
 

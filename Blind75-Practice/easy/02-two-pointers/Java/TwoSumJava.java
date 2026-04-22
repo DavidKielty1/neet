@@ -3,23 +3,34 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
-1. Two Sum
+LeetCode 1: Two Sum
 Difficulty: Easy
-Pattern: Two Pointers (with Hash Map)
+Pattern: Hash Map
 
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Problem:
+Given an array of integers `nums` and an integer `target`, return the indices
+of the two numbers such that they add up to `target`.
+
+You may assume that each input has exactly one solution, and you may not use
+the same element twice. You can return the answer in any order.
 
 Example 1:
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
-Hint: Complement 9-2=7 seen later at index 1 — hash map of value→index.
+Explanation: nums[0] + nums[1] = 2 + 7 = 9.
 
 Example 2:
 Input: nums = [3,2,4], target = 6
 Output: [1,2]
-Hint: 2+4=6; avoid reusing the same index when scanning.
+Explanation: nums[1] + nums[2] = 2 + 4 = 6.
 
-Time: O(n), Space: O(n)
+Example 3:
+Input: nums = [3,3], target = 6
+Output: [0,1]
+Explanation: Use the two different indices that each hold the value 3.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
 */
 public class TwoSumJava {
 

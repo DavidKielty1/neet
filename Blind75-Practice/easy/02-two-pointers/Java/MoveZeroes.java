@@ -1,26 +1,26 @@
 /*
-283. Move Zeroes
+LeetCode 283: Move Zeroes
 Difficulty: Easy
 Pattern: Two Pointers
 
-Given an integer array nums, move all 0's to the end of it while maintaining
-the relative order of the non-zero elements.
+Problem:
+Given an integer array `nums`, move all `0`s to the end of it while
+maintaining the relative order of the non-zero elements.
 
-Contract (LeetCode 283):
-- Modify nums in-place to move all zeros to the end.
-- Do not return anything; mutate nums directly.
+You must do this in-place without making a copy of the array.
 
 Example 1:
 Input: nums = [0,1,0,3,12]
 Output: [1,3,12,0,0]
-Hint: Anchor non-zeros to the left; zeros get “pushed” to the tail as you scan.
+Explanation: Keep the non-zero values in order and push the zeroes to the end.
 
 Example 2:
 Input: nums = [1,0,0,2,3]
 Output: [1,2,3,0,0]
-Hint: Relative order of 1,2,3 preserved — not a full sort.
+Explanation: The relative order of 1, 2, and 3 must stay the same.
 
-Time: O(n), Space: O(1)
+Time Complexity: O(n)
+Space Complexity: O(1)
 */
 public class MoveZeroes {
 

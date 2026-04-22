@@ -4,22 +4,22 @@ Difficulty: Easy
 Pattern: Sliding Window / Greedy
 
 Problem:
-You are given an array prices where prices[i] is the price of a given stock on the ith day.
-You want to maximize your profit by choosing a single day to buy one stock and choosing
-a different day in the future to sell that stock.
+You are given an array `prices` where `prices[i]` is the price of a given stock
+on the `i`th day.
 
-Return the maximum profit you can achieve from this transaction. If you cannot achieve
-any profit, return 0.
+Choose a single day to buy one stock and a different day in the future to sell
+that stock. Return the maximum profit you can achieve from this transaction. If
+you cannot make any profit, return `0`.
 
 Example 1:
 Input: prices = [7,1,5,3,6,4]
 Output: 5
-Hint: Buy at 1, sell at 6; track minimum price so far and best profit in one pass.
+Explanation: Buy on day 2 at price 1 and sell on day 5 at price 6.
 
 Example 2:
 Input: prices = [7,6,4,3,1]
 Output: 0
-Hint: Only decreasing — never sell above a prior buy you’d want; profit stays 0.
+Explanation: The prices only go down, so no profitable transaction exists.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

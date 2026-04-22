@@ -1,28 +1,29 @@
 /*
- * 680. Valid Palindrome II
+ * LeetCode 680: Valid Palindrome II
  * Difficulty: Easy
- * Pattern: Two pointers
+ * Pattern: Two Pointers
  *
- * You are given a string s. Return true if s can become a palindrome after
- * deleting at most one character. If s is already a palindrome, that counts
- * as "at most one delete" (zero deletes), so return true.
+ * Problem:
+ * Given a string `s`, return `true` if it can become a palindrome after
+ * deleting at most one character.
  *
- * Examples:
- *   Input:  "aba"     Output: true   // already a palindrome
- *   Input:  "abca"    Output: true   // delete 'c' (or delete one 'a') → palindrome
- *   Input:  "abc"     Output: false  // no single delete makes it a palindrome
- *   Input:  "deeee"   Output: true   // delete leading 'd' → "eeee"
+ * Example 1:
+ * Input: s = "aba"
+ * Output: true
+ * Explanation: The string is already a palindrome, so zero deletions are needed.
  *
- * Edge cases:
- *   Empty string or length 1 → true (trivially a palindrome).
+ * Example 2:
+ * Input: s = "abca"
+ * Output: true
+ * Explanation: Deleting 'c' makes the string "aba", which is a palindrome.
  *
- * Approach:
- *   Walk two pointers from both ends while characters match. On the first
- *   mismatch, you may delete at most one character: try skipping the left
- *   index or the right index, and check whether the remaining substring is a
- *   palindrome (e.g. with a small helper that validates s[l..r]).
+ * Example 3:
+ * Input: s = "abc"
+ * Output: false
+ * Explanation: No single deletion can make the string a palindrome.
  *
- * Time: O(n)   Space: O(1) extra (only pointers / indices; no copy of the string)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
 
 public class ValidPalindromeIIJava {

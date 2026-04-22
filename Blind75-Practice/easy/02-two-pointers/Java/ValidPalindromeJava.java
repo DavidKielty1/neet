@@ -4,28 +4,29 @@ Difficulty: Easy
 Pattern: Two Pointers
 
 Problem:
-A phrase is a palindrome if, after converting all uppercase letters into lowercase
-letters and removing all non-alphanumeric characters, it reads the same forward and backward.
-Alphanumeric characters include letters and numbers.
+A phrase is a palindrome if, after converting all uppercase letters into
+lowercase and removing all non-alphanumeric characters, it reads the same
+forward and backward.
 
-Given a string s, return true if it is a palindrome, or false otherwise.
+Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
 
 Example 1:
 Input: s = "A man, a plan, a canal: Panama"
 Output: true
-Explanation: "amanaplanacanalpanama" is a palindrome.
+Explanation: After filtering and lowercasing, "amanaplanacanalpanama" is a palindrome.
 
 Example 2:
 Input: s = "race a car"
 Output: false
-Explanation: "raceacar" is not a palindrome.
+Explanation: After filtering and lowercasing, "raceacar" is not a palindrome.
 
 Example 3:
 Input: s = " "
 Output: true
+Explanation: Removing non-alphanumeric characters leaves an empty string.
 
 Time Complexity: O(n)
-Space Complexity: O(1) for two-pointer, O(n) for filtered approach
+Space Complexity: O(1)
 */
 public class ValidPalindromeJava {
 
