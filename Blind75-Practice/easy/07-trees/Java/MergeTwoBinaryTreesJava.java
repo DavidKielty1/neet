@@ -1,9 +1,24 @@
 /*
 617. Merge Two Binary Trees
 Difficulty: Easy
-Pattern: Trees
+Pattern: Trees / DFS
 
-Merge roots by summing vals; if one child missing, use the other.
+You are given two binary trees. Merge them into a new tree by overlapping nodes:
+if two nodes overlap, sum their values; otherwise, use the non-null node.
+
+Example:
+root1 = [1,3,2,5]
+root2 = [2,1,3,null,4,null,7]
+result = [3,4,5,5,4,null,7]
+
+Example:
+root1 = [1]
+root2 = [1,2]
+result = [2,2]
+
+Idea:
+Use recursion. If one node is null, return the other. If both exist, create a
+merged node whose value is the sum, then merge the left and right children.
 
 Time: O(n), Space: O(h)
 */

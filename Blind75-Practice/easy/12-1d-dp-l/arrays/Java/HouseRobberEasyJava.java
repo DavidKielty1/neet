@@ -22,6 +22,15 @@ Time: O(n), Space: O(1)
 */
 public class HouseRobberEasyJava {
     public int climbStairs(int n) {
+        int dp0 = 1;
+        int dp1 = 1;
+        for (int i = 2; i <= n; i++) {
+            int curr = dp0 + dp1;
+            dp0 = dp1;
+            dp1 = curr;
+        }
+
+        return dp1;
 
         //  
 

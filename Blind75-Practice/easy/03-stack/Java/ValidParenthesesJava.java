@@ -49,6 +49,7 @@
  */
 
 public class ValidParenthesesJava {
+
     public boolean isValid(String s) {
 
         //
@@ -120,8 +121,6 @@ public class ValidParenthesesJava {
         // }
 
         // return stack.isEmpty();
-
-        throw new UnsupportedOperationException("Implement isValid");
     }
     public static void main(String[] args) {
         ValidParenthesesJava x = new ValidParenthesesJava();

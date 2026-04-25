@@ -53,39 +53,9 @@
  * Time: O(n), Space: O(n)
  */
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-
 public class BaseballGameJava {
 
     public int calPoints(String[] operations) {
-
-        Deque<Integer> stack = new ArrayDeque<>();
-
-        for (String op : operations) {
-            switch (op) {
-                case "D":
-                    stack.addLast(2 * stack.peekLast());
-                    break;
-                case "C":
-                    stack.removeLast();
-                    break;
-                case "+":
-                    int a = stack.removeLast();
-                    int b = stack.peekLast();
-                    stack.addLast(a);
-                    stack.addLast(a + b);
-                    break;
-                default: stack.addLast(Integer.parseInt(op));
-            }
-        }
-
-        int totalSum = 0;
-        for (int score : stack) {
-            totalSum += score;
-        }
-
-        return totalSum;
 
         //
 

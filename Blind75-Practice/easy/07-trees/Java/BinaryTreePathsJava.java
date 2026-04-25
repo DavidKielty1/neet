@@ -1,11 +1,24 @@
 /*
 257. Binary Tree Paths
 Difficulty: Easy
-Pattern: Trees / Backtracking
+Pattern: Trees / DFS / Backtracking
 
-Return all root-to-leaf paths as strings.
+Given the root of a binary tree, return all root-to-leaf paths as strings.
+A leaf is a node with no left or right child.
 
-Time: O(n), Space: O(h)
+Example:
+root = [1,2,3,null,5] -> ["1->2->5", "1->3"]
+There are two root-to-leaf paths: from 1 to 2 to 5, and from 1 to 3.
+
+Example:
+root = [1] -> ["1"]
+
+Idea:
+Traverse the tree with DFS while carrying the current path. When you reach a
+leaf, add that completed path to the answer list.
+
+Time: O(n * L), Space: O(h)
+L is the average path-string length.
 */
 import java.util.ArrayList;
 import java.util.List;
@@ -72,37 +85,26 @@ public class BinaryTreePathsJava {
 
         //
 
-        // DFS backtracking with StringBuilder.
-
-        // java.util.List<String> result = new java.util.ArrayList<>();
-        // if (root == null) {
-        //     return result;
-        // }
-        // class State {
-        //     TreeNode node;
-        //     String path;
-        //     State(TreeNode node, String path) {
-        //         this.node = node;
-        //         this.path = path;
-        //     }
-        // }
-        // java.util.Deque<State> stack = new java.util.ArrayDeque<>();
-        // stack.push(new State(root, String.valueOf(root.val)));
-        // while (!stack.isEmpty()) {
-        //     State current = stack.pop();
-        //     if (current.node.left == null && current.node.right == null) {
-        //         result.add(current.path);
-        //         continue;
-        //     }
-        //     if (current.node.right != null) {
-        //         stack.push(new State(current.node.right, current.path + "->" + current.node.right.val));
-        //     }
-        //     if (current.node.left != null) {
-        //         stack.push(new State(current.node.left, current.path + "->" + current.node.left.val));
-        //     }
-        // }
-        // return result;
-        throw new UnsupportedOperationException("Implement binaryTreePaths");
+        public List<String> binaryTreePaths(TreeNode root) {
+            List<String> result = new ArrayList<>();
+            if (root == null) {
+                return result;
+            }
+            dfs(root, String.valueOf(root.val), result);
+            return result;
+        }
+        private void dfs(TreeNode node, String path, List<String> result) {
+            if (node.left == null && node.right == null) {
+                result.add(path);
+                return;
+            }
+            if (node.left != null) {
+                dfs(node.left, path + "->" + node.left.val, result);
+            }
+            if (node.right != null) {
+                dfs(node.right, path + "->" + node.right.val, result);
+            }
+        }
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");

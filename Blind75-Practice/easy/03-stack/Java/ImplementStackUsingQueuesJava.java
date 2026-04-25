@@ -50,7 +50,6 @@ public class ImplementStackUsingQueuesJava {
         private final Deque<Integer> q = new ArrayDeque<>();
 
         public void push(int x) {
-            q.push(x);
             //
 
             //
@@ -110,16 +109,12 @@ public class ImplementStackUsingQueuesJava {
             //
 
             //
-
-            // q.addLast(x);
 
             // q.addLast(x);
             throw new UnsupportedOperationException("Implement push");
         }
 
         public int pop() {
-            int last = q.removeLast();
-            return last;
             //
 
             //
@@ -246,14 +241,11 @@ public class ImplementStackUsingQueuesJava {
 
             //
 
-            //
+            // [1 2 3 4]
 
-            // for (int i = q.size() - 1; i > 0; i--) {
-                // q.addLast(q.removeFirst());
-            // }
-            // int x = q.peekFirst();
-            // q.addLast(q.removeFirst());
-            // return x;
+            // [2 3 4 1]
+            // [3 4 1 2]
+            // [4 1 2 3]
 
             // for (int i = q.size() - 1; i > 0; i--) {
             //     q.addLast(q.removeFirst());
@@ -324,8 +316,6 @@ public class ImplementStackUsingQueuesJava {
             //
 
             //
-
-            // return q.isEmpty();
 
             // return q.isEmpty();
             throw new UnsupportedOperationException("Implement empty");

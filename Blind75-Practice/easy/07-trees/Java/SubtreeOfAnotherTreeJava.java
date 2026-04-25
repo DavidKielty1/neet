@@ -1,11 +1,24 @@
 /*
 572. Subtree of Another Tree
 Difficulty: Easy
-Pattern: Trees
+Pattern: Trees / DFS
 
-Return true if root has a subtree equal to subRoot.
+Given the roots of two binary trees root and subRoot, return true if there is a
+node in root whose entire subtree is exactly the same as subRoot.
 
-Time: O(m * n) naive, better with hashing
+Example:
+root = [3,4,5,1,2], subRoot = [4,1,2] -> true
+The subtree rooted at node 4 in root matches subRoot exactly.
+
+Example:
+root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2] -> false
+The extra 0 changes the structure, so the subtree is not an exact match.
+
+Idea:
+At each node in root, check whether the subtree starting there is the same as
+subRoot. If not, continue searching in the left and right children.
+
+Time: O(m * n) in the simple recursive approach, Space: O(h)
 */
 import java.util.ArrayList;
 import java.util.List;

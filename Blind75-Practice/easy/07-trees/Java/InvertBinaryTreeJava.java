@@ -3,12 +3,22 @@
 Difficulty: Easy
 Pattern: Trees / DFS
 
-Invert the tree by swapping each node's left and right children.
+Given the root of a binary tree, invert the tree and return its root. Inverting
+means swapping the left and right child of every node.
 
-Time: O(n), Space: O(h) recursion stack
+Example:
+root = [4,2,7,1,3,6,9] -> [4,7,2,9,6,3,1]
+After swapping children at every node, the whole tree becomes a mirror image.
+
+Example:
+root = [] -> []
+
+Idea:
+Use DFS recursion or BFS. For each node, swap its left and right child, then
+continue processing both subtrees.
+
+Time: O(n), Space: O(h)
 */
-import java.util.ArrayList;
-import java.util.List;
 
 public class InvertBinaryTreeJava {
     public TreeNode invertTree(TreeNode root) {

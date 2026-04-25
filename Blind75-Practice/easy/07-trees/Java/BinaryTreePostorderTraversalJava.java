@@ -1,11 +1,24 @@
 /*
 145. Binary Tree Postorder Traversal
 Difficulty: Easy
-Pattern: Trees (DFS)
+Pattern: Trees / DFS
 
-Return node values in order: left subtree, right subtree, root.
+Given the root of a binary tree, return the postorder traversal of its nodes'
+values. Postorder means: visit left subtree, then right subtree, then the
+current node.
 
-Time: O(n), Space: O(h) stack
+Example:
+root = [1,null,2,3] -> [3,2,1]
+Visit 3 first, then 2, then return to 1 last.
+
+Example:
+root = [] -> []
+
+Idea:
+Use DFS recursion. The pattern is always: recurse left, recurse right, then
+record the node value.
+
+Time: O(n), Space: O(h)
 */
 import java.util.ArrayList;
 import java.util.List;
@@ -13,153 +26,95 @@ import java.util.List;
 public class BinaryTreePostorderTraversalJava {
 
     public List<Integer> postorderTraversal(TreeNode root) {
-        //
+        List<Integer> result = new ArrayList<>();
 
-        //
+        dfs(root, result);
 
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // List<Integer> result = new ArrayList<>();
-        // dfs(root, result);
-        // return result;
-
-        // List<Integer> result = new ArrayList<>();
-        // dfs(root, result);
-        // return result;
-        throw new UnsupportedOperationException("Implement postorderTraversal");
+        return result;
     }
 
-    // Outline: recurse left, recurse right, record val
     private void dfs(TreeNode node, List<Integer> result) {
-        //
+        if(node == null) {
+            return;
+        }
 
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // if (node == null) {
-            // return;
-        // }
-        // dfs(node.left, result);
-        // dfs(node.right, result);
-        // result.add(node.val);
-
-        // if (node == null) {
-        //     return;
-        // }
-        // dfs(node.left, result);
-        // dfs(node.right, result);
-        // result.add(node.val);
-        throw new UnsupportedOperationException("Implement dfs");
+        dfs(node.left, result);
+        dfs(node.right, result);
+        result.add(node.val);
     }
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        // List<Integer> result = new ArrayList<>();
+        // dfs(root, result);
+        // return result;
+        //
+        // private void dfs(TreeNode node, List<Integer> result) {
+        //     if (node == null) {
+        //         return;
+        //     }
+        //     dfs(node.left, result);
+        //     dfs(node.right, result);
+        //     result.add(node.val);
+        // }
 
     public static void main(String[] args) {
         BinaryTreePostorderTraversalJava sol = new BinaryTreePostorderTraversalJava();

@@ -1,9 +1,22 @@
 /*
 543. Diameter of Binary Tree
 Difficulty: Easy
-Pattern: Trees
+Pattern: Trees / DFS
 
-Length of longest path between any two nodes (edges count).
+Given the root of a binary tree, return the diameter of the tree. The diameter
+is the length of the longest path between any two nodes, measured in edges.
+That path may or may not pass through the root.
+
+Example:
+root = [1,2,3,4,5] -> 3
+One longest path is 4 -> 2 -> 1 -> 3, which contains 3 edges.
+
+Example:
+root = [1,2] -> 1
+
+Idea:
+Use DFS to compute the depth of each subtree. At every node, the path passing
+through it has length leftDepth + rightDepth, so track the maximum seen.
 
 Time: O(n), Space: O(h)
 */

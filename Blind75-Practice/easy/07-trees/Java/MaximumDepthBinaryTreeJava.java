@@ -1,18 +1,28 @@
 /*
 104. Maximum Depth of Binary Tree
 Difficulty: Easy
-Pattern: Trees
+Pattern: Trees / DFS
 
-Maximum number of nodes along root-to-leaf path (depth).
+Given the root of a binary tree, return its maximum depth. The maximum depth is
+the number of nodes along the longest path from the root down to a leaf.
+
+Example:
+root = [3,9,20,null,null,15,7] -> 3
+The longest root-to-leaf path has 3 nodes.
+
+Example:
+root = [] -> 0
+
+Idea:
+Use recursion. The depth at a node is 1 + max(depth of left subtree, depth of
+right subtree).
 
 Time: O(n), Space: O(h)
 */
-import java.util.ArrayList;
-import java.util.List;
 
 public class MaximumDepthBinaryTreeJava {
     public int maxDepth(TreeNode root) {
-        //
+
 
         //
 
@@ -72,7 +82,7 @@ public class MaximumDepthBinaryTreeJava {
 
         //
 
-        // max(left, right) + 1
+        //
 
         // if (root == null) {
         //     return 0;

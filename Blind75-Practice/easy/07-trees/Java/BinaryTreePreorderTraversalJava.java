@@ -1,11 +1,24 @@
 /*
 144. Binary Tree Preorder Traversal
 Difficulty: Easy
-Pattern: Trees (DFS)
+Pattern: Trees / DFS
 
-Return node values in order: root, left subtree, right subtree.
+Given the root of a binary tree, return the preorder traversal of its nodes'
+values. Preorder means: visit current node, then left subtree, then right
+subtree.
 
-Time: O(n), Space: O(h) stack
+Example:
+root = [1,null,2,3] -> [1,2,3]
+Record 1 first, then go into the right subtree, where 2 is visited before 3.
+
+Example:
+root = [] -> []
+
+Idea:
+Use DFS recursion. The pattern is always: record the node value, recurse left,
+then recurse right.
+
+Time: O(n), Space: O(h)
 */
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +26,21 @@ import java.util.List;
 public class BinaryTreePreorderTraversalJava {
 
     public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> nodeVals = new ArrayList<>();
+
+        dfs(root, nodeVals);
+
+        return nodeVals;
+    }
+
+    private void dfs(TreeNode node, List<Integer> nodeVals){
+        if (node == null) {
+            return;
+        }
+        nodeVals.add(node.val);
+        dfs(node.left, nodeVals);
+        dfs(node.right, nodeVals);
+    }
         //
 
         //
@@ -76,90 +104,15 @@ public class BinaryTreePreorderTraversalJava {
         // List<Integer> result = new ArrayList<>();
         // dfs(root, result);
         // return result;
-
-        // List<Integer> result = new ArrayList<>();
-        // dfs(root, result);
-        // return result;
-        throw new UnsupportedOperationException("Implement preorderTraversal");
-    }
-
-    // Outline: record val, recurse left, recurse right
-    private void dfs(TreeNode node, List<Integer> result) {
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // if (node == null) {
-            // return;
+    
+        // private void dfs(TreeNode node, List<Integer> nodeVals){
+        //     if (node == null) {
+        //         return;
+        //     }
+        //     nodeVals.add(node.val);
+        //     dfs(node.left, nodeVals);
+        //     dfs(node.right, nodeVals);
         // }
-        // result.add(node.val);
-        // dfs(node.left, result);
-        // dfs(node.right, result);
-
-        // if (node == null) {
-        //     return;
-        // }
-        // result.add(node.val);
-        // dfs(node.left, result);
-        // dfs(node.right, result);
-        throw new UnsupportedOperationException("Implement dfs");
-    }
 
     public static void main(String[] args) {
         BinaryTreePreorderTraversalJava sol = new BinaryTreePreorderTraversalJava();

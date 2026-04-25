@@ -1,14 +1,25 @@
 /*
 100. Same Tree
 Difficulty: Easy
-Pattern: Trees
+Pattern: Trees / DFS
 
-Return whether two binary trees are identical.
+Given the roots of two binary trees p and q, return true if they are the same
+tree. Two trees are the same if they have the same structure and the same node
+values in every position.
+
+Example:
+p = [1,2,3], q = [1,2,3] -> true
+
+Example:
+p = [1,2], q = [1,null,2] -> false
+The values are similar, but the tree shapes are different.
+
+Idea:
+Use recursion. Two nodes match only when both are null, or both are non-null
+with equal values and matching left and right subtrees.
 
 Time: O(n), Space: O(h)
 */
-import java.util.ArrayList;
-import java.util.List;
 
 public class SameTreeJava {
     public boolean isSameTree(TreeNode p, TreeNode q) {
