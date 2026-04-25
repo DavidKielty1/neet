@@ -26,21 +26,7 @@ import java.util.List;
 public class BinaryTreePreorderTraversalJava {
 
     public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> nodeVals = new ArrayList<>();
-
-        dfs(root, nodeVals);
-
-        return nodeVals;
-    }
-
-    private void dfs(TreeNode node, List<Integer> nodeVals){
-        if (node == null) {
-            return;
-        }
-        nodeVals.add(node.val);
-        dfs(node.left, nodeVals);
-        dfs(node.right, nodeVals);
-    }
+        
         //
 
         //
