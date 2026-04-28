@@ -26,6 +26,8 @@ Time: O(n), Space: O(h)
 
 public class BalancedBinaryTreeJava {
     public boolean isBalanced(TreeNode root) {
+        return height(root) != -1;
+    }
         //
 
         //
@@ -85,31 +87,31 @@ public class BalancedBinaryTreeJava {
         //
 
         //
-
         // Bottom-up height or check depth per node.
 
-        // class Solver {
-        //     int height(TreeNode node) {
-        //         if (node == null) {
-        //             return 0;
-        //         }
-        //         int left = height(node.left);
-        //         if (left == -1) {
-        //             return -1;
-        //         }
-        //         int right = height(node.right);
-        //         if (right == -1) {
-        //             return -1;
-        //         }
-        //         if (Math.abs(left - right) > 1) {
-        //             return -1;
-        //         }
-        //         return 1 + Math.max(left, right);
-        //     }
-        // }
-        // return new Solver().height(root) != -1;
-        throw new UnsupportedOperationException("Implement isBalanced");
-    }
+        public boolean isBalanced(TreeNode root) {
+            return height(root) != -1;
+        }
+
+        int height(TreeNode node) {
+            if (node == null) {
+                return 0;
+            }
+            int left = height(node.left);
+            if (left == -1) {
+                return -1;
+            }
+            int right = height(node.right);
+            if (right == -1) {
+                return -1;
+            }
+            if (Math.abs(left - right) > 1) {
+                return -1;
+            }
+            return 1 + Math.max(left, right);
+        }
+        
+    
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }
