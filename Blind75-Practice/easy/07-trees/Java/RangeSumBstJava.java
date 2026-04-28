@@ -21,11 +21,23 @@ both sides.
 
 Time: O(n) worst case, Space: O(h)
 */
-import java.util.ArrayList;
-import java.util.List;
 
 public class RangeSumBstJava {
     public int rangeSumBST(TreeNode root, int low, int high) {
+        if (root == null){
+            return 0;
+        }
+        if (root.val < low) {
+            return rangeSumBST(root.right, low, high);
+        }
+
+        if (root.val > high) {
+            return rangeSumBST(root.left, low, high);
+        }
+
+        return root.val + rangeSumBST(root.left, low, high) + rangeSumBST(root.right, low, high);
+        
+
         //
 
         //
@@ -99,7 +111,6 @@ public class RangeSumBstJava {
         // }
         // return root.val + rangeSumBST(root.left, low, high)
         //         + rangeSumBST(root.right, low, high);
-        throw new UnsupportedOperationException("Implement rangeSumBST");
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");

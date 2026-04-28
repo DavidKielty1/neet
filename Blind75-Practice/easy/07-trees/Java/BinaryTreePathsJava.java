@@ -20,7 +20,6 @@ leaf, add that completed path to the answer list.
 Time: O(n * L), Space: O(h)
 L is the average path-string length.
 */
-import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreePathsJava {
@@ -85,26 +84,26 @@ public class BinaryTreePathsJava {
 
         //
 
-        public List<String> binaryTreePaths(TreeNode root) {
-            List<String> result = new ArrayList<>();
-            if (root == null) {
-                return result;
-            }
-            dfs(root, String.valueOf(root.val), result);
-            return result;
-        }
-        private void dfs(TreeNode node, String path, List<String> result) {
-            if (node.left == null && node.right == null) {
-                result.add(path);
-                return;
-            }
-            if (node.left != null) {
-                dfs(node.left, path + "->" + node.left.val, result);
-            }
-            if (node.right != null) {
-                dfs(node.right, path + "->" + node.right.val, result);
-            }
-        }
+        // public List<String> binaryTreePaths(TreeNode root) {
+        //     List<String> result = new ArrayList<>();
+        //     if (root == null) {
+        //         return result;
+        //     }
+        //     dfs(root, String.valueOf(root.val), result);
+        //     return result;
+        // }
+        // private void dfs(TreeNode node, String path, List<String> result) {
+        //     if (node.left == null && node.right == null) {
+        //         result.add(path);
+        //         return;
+        //     }
+        //     if (node.left != null) {
+        //         dfs(node.left, path + "->" + node.left.val, result);
+        //     }
+        //     if (node.right != null) {
+        //         dfs(node.right, path + "->" + node.right.val, result);
+        //     }
+        // }
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");

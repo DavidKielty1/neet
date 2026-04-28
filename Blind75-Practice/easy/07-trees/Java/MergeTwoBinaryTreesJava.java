@@ -22,12 +22,12 @@ merged node whose value is the sum, then merge the left and right children.
 
 Time: O(n), Space: O(h)
 */
-import java.util.ArrayList;
-import java.util.List;
 
 public class MergeTwoBinaryTreesJava {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
-        //
+        
+    }
+        
 
         //
 
@@ -99,7 +99,6 @@ public class MergeTwoBinaryTreesJava {
         // merged.left = mergeTrees(root1.left, root2.left);
         // merged.right = mergeTrees(root1.right, root2.right);
         // return merged;
-        throw new UnsupportedOperationException("Implement mergeTrees");
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
