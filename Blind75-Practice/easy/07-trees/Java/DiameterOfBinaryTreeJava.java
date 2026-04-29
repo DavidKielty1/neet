@@ -21,23 +21,14 @@ through it has length leftDepth + rightDepth, so track the maximum seen.
 Time: O(n), Space: O(h)
 */
 
+//      1
+//     /\ 
+//    2  3
+//   /\
+//  4  5
+
 public class DiameterOfBinaryTreeJava {
-    public int diameterOfBinaryTree(TreeNode root) {        
-        class Solver {
-            int diameter = 0;
-            int depth(TreeNode node) {
-                if (node == null) {
-                    return 0;
-                }
-                int left = depth(node.left);
-                int right = depth(node.right);
-                diameter = Math.max(diameter, left + right);
-                return 1 + Math.max(left, right);
-            }
-        }
-        Solver solver = new Solver();
-        solver.depth(root);
-        return solver.diameter;
+    public int diameterOfBinaryTree(TreeNode root) {    
         //
 
         //
