@@ -20,13 +20,11 @@ then recurse right.
 
 Time: O(n), Space: O(h)
 */
-import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreePreorderTraversalJava {
 
     public List<Integer> preorderTraversal(TreeNode root) {
-        
         //
 
         //

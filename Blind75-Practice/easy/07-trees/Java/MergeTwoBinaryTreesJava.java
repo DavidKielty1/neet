@@ -25,10 +25,6 @@ Time: O(n), Space: O(h)
 
 public class MergeTwoBinaryTreesJava {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
-        
-    }
-        
-
         //
 
         //
@@ -86,8 +82,6 @@ public class MergeTwoBinaryTreesJava {
         //
 
         //
-
-        // Recursion: new val = v1 + v2
 
         // if (root1 == null) {
         //     return root2;

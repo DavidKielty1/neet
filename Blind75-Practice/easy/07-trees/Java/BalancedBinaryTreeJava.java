@@ -24,17 +24,19 @@ already unbalanced, bubble up a sentinel such as -1 to stop extra work.
 Time: O(n), Space: O(h)
 */
 
-// 1
-// \      
-//  2
-//  \
-//   3
-//
+//   1
+//  /\      
+// 2  3
+//    \
+//     4
+//      \
+//       5
 
 public class BalancedBinaryTreeJava {
     public boolean isBalanced(TreeNode root) {
 
-            
+    
+
         //
 
         //

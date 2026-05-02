@@ -28,8 +28,7 @@ Time: O(n), Space: O(h)
 //  4  5
 
 public class DiameterOfBinaryTreeJava {
-    public int diameterOfBinaryTree(TreeNode root) {    
-        //
+    public int diameterOfBinaryTree(TreeNode root) {   
 
         //
 

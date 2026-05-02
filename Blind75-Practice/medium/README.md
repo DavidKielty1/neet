@@ -16,7 +16,7 @@ When creating new practice files anywhere under `medium/`, follow the same struc
 4. The spacer block should usually be roughly **40 to 60 comment lines**, with **about 50 lines** as the default target.
 5. Keep the reference solution, pseudocode, or implementation outline below that spacer block and keep it commented out.
 6. The spacer block is intentional: it hides the spoiler when the file is first opened for practice.
-7. If the file is meant to be solved from scratch, leave the real implementation unfilled or with a placeholder/exception until you solve it.
+7. If the file is meant to be solved from scratch, leave the real implementation unfilled. Do not add a `throw` placeholder such as `throw new UnsupportedOperationException(...)`; let the missing solution remain unfinished instead.
 
 ## Notes
 

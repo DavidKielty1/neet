@@ -21,30 +21,11 @@ then recurse right.
 
 Time: O(n), Space: O(h)
 */
-import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreeInorderTraversalJava {
 
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> nodeVals = new ArrayList<>();
-
-        dfs(root, nodeVals);
-
-        return nodeVals;
-    }
-
-    private void dfs(TreeNode node, List<Integer> nodeVals) {
-        if (node == null) {
-            return;
-        }
-
-        dfs(node.left, nodeVals);
-
-        nodeVals.add(node.val);
-        
-        dfs(node.right, nodeVals);
-    }
         //
 
         //

@@ -95,7 +95,6 @@ public class SameTreeJava {
         //     return false;
         // }
         // return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-        throw new UnsupportedOperationException("Implement isSameTree");
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
