@@ -91,27 +91,47 @@ public class TimeBasedKeyValueStoreJava {
             //
             //
             //
-            // map.computeIfAbsent(key, ignored -> new ArrayList<>()).add(new Pair(timestamp, value));
+            // private final Map<String, List<Pair>> map = new HashMap<>();
+            //
+            // public TimeMap() {
+            // }
+            //
+            // public void set(String key, String value, int timestamp) {
+            //     map.computeIfAbsent(key, ignored -> new ArrayList<>()).add(new Pair(timestamp, value));
+            // }
+            //
+            // public String get(String key, int timestamp) {
+            //     List<Pair> values = map.get(key);
+            //     if (values == null) {
+            //         return "";
+            //     }
+            //     int left = 0;
+            //     int right = values.size() - 1;
+            //     String answer = "";
+            //     while (left <= right) {
+            //         int mid = left + (right - left) / 2;
+            //         if (values.get(mid).timestamp <= timestamp) {
+            //             answer = values.get(mid).value;
+            //             left = mid + 1;
+            //         } else {
+            //             right = mid - 1;
+            //         }
+            //     }
+            //     return answer;
+            // }
+            //
+            // private static class Pair {
+            //     int timestamp;
+            //     String value;
+            //
+            //     Pair(int timestamp, String value) {
+            //         this.timestamp = timestamp;
+            //         this.value = value;
+            //     }
+            // }
         }
 
         public String get(String key, int timestamp) {
-            // List<Pair> values = map.get(key);
-            // if (values == null) {
-            //     return "";
-            // }
-            // int left = 0;
-            // int right = values.size() - 1;
-            // String answer = "";
-            // while (left <= right) {
-            //     int mid = left + (right - left) / 2;
-            //     if (values.get(mid).timestamp <= timestamp) {
-            //         answer = values.get(mid).value;
-            //         left = mid + 1;
-            //     } else {
-            //         right = mid - 1;
-            //     }
-            // }
-            // return answer;
         }
     }
 

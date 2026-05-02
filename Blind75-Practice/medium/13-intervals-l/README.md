@@ -17,6 +17,10 @@ When creating new practice files in this folder, follow the same structure as th
 5. Keep the reference solution, pseudocode, or implementation outline below that spacer block and keep it commented out.
 6. The spacer block is intentional: it hides the spoiler when the file is first opened for practice.
 7. If the file is meant to be solved from scratch, leave the real implementation unfilled. Do not add a `throw` placeholder such as `throw new UnsupportedOperationException(...)`; let the missing solution remain unfinished instead.
+8. If a solution naturally spans multiple methods, keep exactly one 40-60 line spacer block in the main method the learner should solve from.
+9. For those multi-method files, leave earlier helper/API/constructor bodies unimplemented instead of adding separate spacer blocks to each one.
+10. Put one combined commented reference implementation under the single spacer block, including all related methods together.
+11. Avoid duplicated commented solutions across helper methods and do not reintroduce throw placeholders in those multi-method files.
 
 ## Recommended Java Shape
 
