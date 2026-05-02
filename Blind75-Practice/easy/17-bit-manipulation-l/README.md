@@ -9,6 +9,23 @@ Bit manipulation involves directly working with bits using bitwise operators. It
 - Cryptography
 - Interview questions
 
+## Java Practice File Builder
+
+When a Java practice file has only one solution method, keep the usual single spoiler spacer
+block in that method.
+
+When the solution naturally spans multiple methods, such as a helper DFS, a comparison
+helper, a constructor plus `add`, or an API method plus the main solver:
+
+1. Leave the earlier/helper method bodies unimplemented.
+2. Do not add separate 40-60 line `//` spacer blocks to those helper methods.
+3. Keep exactly one 40-60 line `//` spacer block in the main method the learner is meant
+   to solve from.
+4. Put one combined commented reference implementation under that single spacer block,
+   including all related methods together.
+5. Avoid duplicate commented solutions and do not add `throw new UnsupportedOperationException(...)`
+   placeholders.
+
 ## Key Concepts
 
 ### Bitwise Operators

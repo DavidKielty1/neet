@@ -19,9 +19,7 @@
  * Example 1
  * ---------
  * Input: n = 10, pick = 6
- * Try `mid = 5` -> `guess(5) == 1`, so the number is higher.
- * Try `mid = 8` -> `guess(8) == -1`, so the number is lower.
- * Try `mid = 6` -> `guess(6) == 0`, so return `6`.
+ * Output: 6
  *
  * Example 2
  * ---------
@@ -36,14 +34,7 @@
  * How to think about it
  * ---------------------
  * This is binary search over a number range rather than over an array.
- *
- * - Search space starts as `[1, n]`
- * - Pick the middle number
- * - Use the API response to discard half the range
- * - Repeat until you find the exact number
- *
- * If `guess(mid) < 0`, your guess was too high, so move left.
- * If `guess(mid) > 0`, your guess was too low, so move right.
+ * Use the API result to discard half of the remaining search space each time.
  *
  * Time: O(log n), Space: O(1)
  */
@@ -58,70 +49,6 @@ public class GuessNumberHigherOrLowerJava {
 
     /** LeetCode-style API: -1 pick lower, 1 pick higher, 0 correct */
     private int guess(int num) {
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // return Integer.compare(pick, num);
-
-        // return Integer.compare(pick, num);
-        throw new UnsupportedOperationException("Implement guess");
     }
 
     public int guessNumber(int n) {
@@ -185,37 +112,47 @@ public class GuessNumberHigherOrLowerJava {
 
         //
 
-        // int lo = 1, hi = n;
-        // while (lo <= hi) {
-            // int mid = lo + (hi - lo) / 2;
-            // int g = guess(mid);
-            // if (g == 0) {
-                // return mid;
-            // }
-            // if (g < 0) {
-                // hi = mid - 1;
-            // } else {
-                // lo = mid + 1;
-            // }
-        // }
-        // return lo;
+        //
 
-        // int lo = 1;
-        // int hi = n;
-        // while (lo <= hi) {
-        //     int mid = lo + (hi - lo) / 2;
-        //     int result = guess(mid);
-        //     if (result == 0) {
-        //         return mid;
-        //     }
-        //     if (result < 0) {
-        //         hi = mid - 1;
-        //     } else {
-        //         lo = mid + 1;
-        //     }
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        // private int guess(int num) {
+        //     return Integer.compare(pick, num);
         // }
-        // return -1;
-        throw new UnsupportedOperationException("Implement guessNumber");
+        //
+        // public int guessNumber(int n) {
+        //     int lo = 1;
+        //     int hi = n;
+        //     while (lo <= hi) {
+        //         int mid = lo + (hi - lo) / 2;
+        //         int result = guess(mid);
+        //         if (result == 0) {
+        //             return mid;
+        //         }
+        //         if (result < 0) {
+        //             hi = mid - 1;
+        //         } else {
+        //             lo = mid + 1;
+        //         }
+        //     }
+        //     return -1;
+        // }
     }
 
     public static void main(String[] args) {

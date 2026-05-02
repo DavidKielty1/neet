@@ -4,7 +4,7 @@ Generate analogue-questions/Java/*.java from analogue-questions/Python/*.py unde
 
 - Preserves problem description as block comment.
 - Emits Solution methods: Python source as // comments + Java translation where possible,
-  otherwise UnsupportedOperationException after comments.
+  otherwise leave the method unfinished after the commented reference block.
 - Builds main() from the if __name__ == "__main__" block using AST (valid Java asserts).
 
 This script only writes .java sources. It does not emit or rely on compiled .class files;
@@ -527,9 +527,6 @@ def emit_solution_methods(source: str, solution: ast.ClassDef) -> str:
                     u = repr(st)
                 for ln in u.splitlines():
                     chunks.append(f"            // {ln}")
-            chunks.append(
-                '            throw new UnsupportedOperationException("See commented Python above — port to Java");'
-            )
             chunks.append("        }")
             chunks.append("")
     return "\n".join(chunks)

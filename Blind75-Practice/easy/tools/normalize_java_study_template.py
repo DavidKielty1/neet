@@ -5,9 +5,13 @@ Normalize Java study files to the IsPalindromeNumber-style template:
     each // row so the commented solution sits below the fold when opening the file
   - prior implementation: same text after // as in the file; indent from existing
     column of // or, if all // lines share one column, brace-based nesting
-  - throw new UnsupportedOperationException("Implement <methodName>");
+  - no throw placeholder; leave methods unfinished
 
 Skips: main, constructors, class/interface declarations.
+
+Note:
+  - Multi-method study files are better handled manually with a single spacer block in the
+    main method and one combined commented reference solution.
 
 Usage:
   python normalize_java_study_template.py [--dry-run] [--root PATH]
@@ -165,8 +169,8 @@ def format_commented_java_lines(
     if not rows:
         return []
 
-    min_lead = min(l for l, _ in rows)
-    max_lead = max(l for l, _ in rows)
+    min_lead = min(lead for lead, _ in rows)
+    max_lead = max(lead for lead, _ in rows)
     base = " " * body_indent
 
     if max_lead > min_lead:
@@ -206,10 +210,6 @@ def build_new_inner(
     if commented_lines:
         parts.append("")
         parts.append("\n".join(commented_lines))
-
-    exc = f'{indent}throw new UnsupportedOperationException("Implement {method_name}");'
-    parts.append("")
-    parts.append(exc)
 
     # After `{` we need a newline before the scaffold; before `}` we need the method's closing indent.
     close_align = " " * method_base_indent

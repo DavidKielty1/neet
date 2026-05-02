@@ -111,7 +111,7 @@ SLASH = r"""        //
 
     //
 
-    
+
 
 """
 
@@ -184,7 +184,7 @@ def java_stub(
         + SLASH
         + "\n        "
         + commented_hint.strip().replace("\n", "\n        ")
-        + "\n\n        throw new UnsupportedOperationException(\"Implement solution\");\n    }\n"
+        + "\n    }\n"
         + main_block
         + "\n"
         + extra_after_class
@@ -514,19 +514,36 @@ public class ImplementQueueUsingStacksJava {
 """
     + SLASH
     + """
-            throw new UnsupportedOperationException("Implement push");
         }
 
         public int pop() {
-            throw new UnsupportedOperationException("Implement pop");
         }
 
         public int peek() {
-            throw new UnsupportedOperationException("Implement peek");
         }
 
         public boolean empty() {
-            throw new UnsupportedOperationException("Implement empty");
+            // public void push(int x) {
+            //     in.push(x);
+            // }
+            //
+            // public int pop() {
+            //     peek();
+            //     return out.pop();
+            // }
+            //
+            // public int peek() {
+            //     if (out.isEmpty()) {
+            //         while (!in.isEmpty()) {
+            //             out.push(in.pop());
+            //         }
+            //     }
+            //     return out.peek();
+            // }
+            //
+            // public boolean empty() {
+            //     return in.isEmpty() && out.isEmpty();
+            // }
         }
     }
 
@@ -785,14 +802,29 @@ public class KthLargestElementStreamJava {
 
         public KthLargest(int k, int[] nums) {
             this.k = k;
-"""
-    + SLASH
-    + """
-            throw new UnsupportedOperationException("Implement constructor");
         }
 
         public int add(int val) {
-            throw new UnsupportedOperationException("Implement add");
+"""
+    + SLASH
+    + """
+            // public KthLargest(int k, int[] nums) {
+            //     this.k = k;
+            //     for (int num : nums) {
+            //         minHeap.offer(num);
+            //         if (minHeap.size() > k) {
+            //             minHeap.poll();
+            //         }
+            //     }
+            // }
+            //
+            // public int add(int val) {
+            //     minHeap.offer(val);
+            //     if (minHeap.size() > k) {
+            //         minHeap.poll();
+            //     }
+            //     return minHeap.peek();
+            // }
         }
     }
 

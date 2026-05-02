@@ -99,7 +99,7 @@ SLASH = r"""        //
 
     //
 
-    
+
 
 """
 
@@ -174,7 +174,7 @@ def java_stub(
         + SLASH
         + "\n        "
         + commented_hint.strip().replace("\n", "\n        ")
-        + "\n\n        throw new UnsupportedOperationException(\"Implement solution\");\n    }\n"
+        + "\n    }\n"
         + main_block
         + "\n"
         + extra_after_class
@@ -326,23 +326,35 @@ write_file(
     )
     + """
 public class FirstBadVersionJava extends VersionControl {
+    protected boolean isBadVersion(int version) {
+    }
+
     public int firstBadVersion(int n) {
 """
     + SLASH
     + """
-        // int lo = 1, hi = n;
-        // while (lo < hi) { int mid = lo + (hi - lo) / 2; ... }
-
-        throw new UnsupportedOperationException("Implement firstBadVersion");
+        // protected boolean isBadVersion(int version) {
+        //     return version >= BAD_VERSION;
+        // }
+        //
+        // public int firstBadVersion(int n) {
+        //     int lo = 1;
+        //     int hi = n;
+        //     while (lo < hi) {
+        //         int mid = lo + (hi - lo) / 2;
+        //         if (isBadVersion(mid)) {
+        //             hi = mid;
+        //         } else {
+        //             lo = mid + 1;
+        //         }
+        //     }
+        //     return lo;
+        // }
     }
 
     public static void main(String[] args) {
         System.out.println("Extend VersionControl with isBadVersion for tests.");
     }
-}
-
-abstract class VersionControl {
-    protected abstract boolean isBadVersion(int version);
 }
 """,
 )

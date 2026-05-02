@@ -22,10 +22,6 @@
  * - k is in the range [1, the number of unique elements in the array]
  * - It is guaranteed that the answer is unique
  */
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class TopKFrequentElementsJava {
     public int[] topKFrequent(int[] nums, int k) {

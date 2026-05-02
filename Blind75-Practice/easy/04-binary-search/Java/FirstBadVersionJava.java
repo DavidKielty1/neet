@@ -3,6 +3,174 @@
  * Difficulty: Easy
  * Pattern: Binary Search
  *
+ * Problem
+ * -------
+ * You are a product manager and currently leading a team to develop a new product.
+ * Unfortunately, the latest version of your product fails the quality check.
+ * Since each version is developed based on the previous version, all versions after a bad
+ * version are also bad.
+ *
+ * Suppose you have `n` versions `[1, 2, ..., n]` and you want to find the first bad one.
+ * You are given an API `isBadVersion(version)` which returns whether a version is bad.
+ *
+ * Return the first bad version.
+ *
+ * Example 1
+ * ---------
+ * Input: n = 5, firstBad = 4
+ * Output: 4
+ *
+ * Example 2
+ * ---------
+ * Input: n = 1, firstBad = 1
+ * Output: 1
+ *
+ * Constraints
+ * -----------
+ * - `1 <= n <= 2^31 - 1`
+ *
+ * How to think about it
+ * ---------------------
+ * The answers from `isBadVersion` have a monotonic shape:
+ *
+ * - `false false false ... true true true`
+ *
+ * That means you are looking for the leftmost `true`, which is a standard binary-search
+ * boundary problem.
+ *
+ * Time: O(log n), Space: O(1)
+ */
+
+public class FirstBadVersionJava extends VersionControl {
+    private final int firstBad;
+
+    public FirstBadVersionJava(int firstBad) {
+        this.firstBad = firstBad;
+    }
+
+    @Override
+    protected boolean isBadVersion(int version) {
+    }
+
+    public int firstBadVersion(int n) {
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        //
+
+        // protected boolean isBadVersion(int version) {
+        //     return version >= firstBad;
+        // }
+        //
+        // public int firstBadVersion(int n) {
+        //     int lo = 1;
+        //     int hi = n;
+        //     while (lo < hi) {
+        //         int mid = lo + (hi - lo) / 2;
+        //         if (isBadVersion(mid)) {
+        //             hi = mid;
+        //         } else {
+        //             lo = mid + 1;
+        //         }
+        //     }
+        //     return lo;
+        // }
+    }
+
+    public static void main(String[] args) {
+        FirstBadVersionJava solver = new FirstBadVersionJava(4);
+        assert solver.firstBadVersion(5) == 4;
+
+        solver = new FirstBadVersionJava(1);
+        assert solver.firstBadVersion(1) == 1;
+
+        System.out.println("All test cases passed!");
+    }
+}
+
+abstract class VersionControl {
+    protected abstract boolean isBadVersion(int version);
+}
+/*
+ * 278. First Bad Version
+ * Difficulty: Easy
+ * Pattern: Binary Search
+ *
  * What this problem is asking
  * ---------------------------
  * You have product versions numbered 1 through n in order. At some unknown version,
@@ -61,73 +229,9 @@ public class FirstBadVersionJava extends VersionControl {
      * every version after (e.g. {@code return version >= firstBad;}).
      */
     @Override
-    protected boolean isBadVersion(int version) {
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // LeetCode provides this API; in local tests store firstBad and compare against it.
-        // return version >= firstBad;
-        throw new UnsupportedOperationException("Implement isBadVersion");
-    }
-
-    public int firstBadVersion(int n) {
+    protected boolean isBadVersion(int version) {   
+        public int firstBadVersion(int n) {
+            
         //
 
         //
@@ -202,7 +306,7 @@ public class FirstBadVersionJava extends VersionControl {
         //     }
         // }
         // return lo;
-        throw new UnsupportedOperationException("Implement firstBadVersion");
+        }
     }
 
     public static void main(String[] args) {
