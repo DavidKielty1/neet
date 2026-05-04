@@ -3,9 +3,44 @@
 Difficulty: Easy
 Pattern: Heap / Sorting
 
-Map scores to Gold/Silver/Bronze/4..n strings.
+Problem:
+You are given an integer array `score` where `score[i]` is the score earned
+by the ith athlete. Rank the athletes from highest score to lowest score and
+return an array of strings where:
+- The highest score gets "Gold Medal"
+- The second highest gets "Silver Medal"
+- The third highest gets "Bronze Medal"
+- Every remaining athlete gets their numeric rank as a string
 
-Time: O(n log n), Space: O(n)
+The returned array must stay in the same order as the original input.
+
+Example 1:
+Input:  score = [5, 4, 3, 2, 1]
+Output: ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
+Explanation:
+The scores are already in descending order, so each athlete keeps the same index.
+
+Example 2:
+Input:  score = [10, 3, 8, 9, 4]
+Output: ["Gold Medal", "5", "Bronze Medal", "Silver Medal", "4"]
+Explanation:
+- 10 is the highest score -> "Gold Medal"
+- 9 is the second highest -> "Silver Medal"
+- 8 is the third highest -> "Bronze Medal"
+- 4 is the fourth highest -> "4"
+- 3 is the fifth highest -> "5"
+
+Constraints:
+- 1 <= score.length <= 10^4
+- 0 <= score[i] <= 10^6
+- All the values in `score` are unique
+
+Why sorting works:
+If we sort athlete indices by score descending, we can assign medals/ranks in
+sorted order while still writing answers back to each athlete's original index.
+
+Time: O(n log n)
+Space: O(n)
 */
 import java.util.ArrayList;
 import java.util.List;

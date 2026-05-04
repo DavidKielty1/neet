@@ -4,35 +4,48 @@
  * Pattern: Graphs / Custom Ordering
  *
  * Problem:
- * In an alien language, the lowercase English letters are arranged in a different order.
+ * In an alien language, the lowercase English letters appear in a custom order.
  * You are given:
- * - `words`, a sequence of words written in the alien language
- * - `order`, a string giving the alien ordering of the 26 lowercase letters
+ * - `words`, a list of words written in that language
+ * - `order`, a string that lists the alien alphabet order
  *
- * Return `true` if and only if the words are sorted lexicographically by this alien
- * order.
+ * Return `true` if the words are sorted lexicographically according to that alien
+ * alphabet, otherwise return `false`.
  *
  * Example 1:
- * Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
+ * Input: words = ["hello", "leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
  * Output: true
+ * Explanation:
+ * 'h' comes before 'l' in the alien alphabet, so "hello" correctly comes before
+ * "leetcode".
  *
  * Example 2:
- * Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz"
+ * Input: words = ["word", "world", "row"], order = "worldabcefghijkmnpqstuvxyz"
  * Output: false
+ * Explanation:
+ * The first mismatch between "word" and "world" makes "world" come before "word"
+ * in the alien order, so the list is not sorted.
  *
  * Example 3:
- * Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz"
+ * Input: words = ["apple", "app"], order = "abcdefghijklmnopqrstuvwxyz"
  * Output: false
+ * Explanation:
+ * If one word is a prefix of another, the shorter word must come first.
+ * "app" should come before "apple".
  *
  * Constraints:
  * - 1 <= words.length <= 100
  * - 1 <= words[i].length <= 20
  * - order.length == 26
- * - words[i] and order consist of lowercase English letters
+ * - words[i] and `order` consist of lowercase English letters
  *
- * Notes:
- * - Build a rank array so each letter can be compared in O(1).
- * - Compare each adjacent pair of words using a helper method.
+ * Why this works:
+ * Build a rank array so every alien letter maps to its position. Then compare each
+ * adjacent pair of words character by character, using the rank array for O(1)
+ * letter comparisons.
+ *
+ * Time: O(total characters across comparisons)
+ * Space: O(1)
  */
 
 public class VerifyingAnAlienDictionaryJava {
