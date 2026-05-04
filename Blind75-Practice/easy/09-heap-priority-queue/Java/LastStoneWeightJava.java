@@ -40,7 +40,6 @@ the largest two values efficiently after every smash.
 Time: O(n log n)
 Space: O(n)
 */
-import java.util.PriorityQueue;
 
 public class LastStoneWeightJava {
     public int lastStoneWeight(int[] stones) {
@@ -106,8 +105,7 @@ public class LastStoneWeightJava {
 
         // Max-heap via PriorityQueue (negate values).
 
-        // java.util.PriorityQueue<Integer> maxHeap =
-        //         new java.util.PriorityQueue<>(java.util.Collections.reverseOrder());
+        // PriorityQueue<Integer> maxHeap = new PriorityQueue<>(reverseOrder());
         // for (int stone : stones) {
         //     maxHeap.offer(stone);
         // }
@@ -119,7 +117,6 @@ public class LastStoneWeightJava {
         //     }
         // }
         // return maxHeap.isEmpty() ? 0 : maxHeap.peek();
-        throw new UnsupportedOperationException("Implement lastStoneWeight");
     }
     public static void main(String[] args) {
         LastStoneWeightJava s = new LastStoneWeightJava();
