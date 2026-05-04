@@ -103,8 +103,6 @@ public class LastStoneWeightJava {
 
         //
 
-        // Max-heap via PriorityQueue (negate values).
-
         // PriorityQueue<Integer> maxHeap = new PriorityQueue<>(reverseOrder());
         // for (int stone : stones) {
         //     maxHeap.offer(stone);
