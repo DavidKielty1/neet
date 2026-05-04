@@ -42,12 +42,29 @@ sorted order while still writing answers back to each athlete's original index.
 Time: O(n log n)
 Space: O(n)
 */
-import java.util.ArrayList;
-import java.util.List;
 
 public class RelativeRanksJava {
-    public String[] findRelativeRanks(int[] score) {
-        //
+    public String[] findRelativeRanks(int[] score) { // score [4 2 1 5 3]
+        int n = score.length; // 5
+
+        Integer[] indices = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            indices[i] = i;
+        } // Indices = [0, 1, 2, 3, 4]
+        
+        java.util.Arrays.sort(indices, (a, b) -> Integer.compare(score[a], score[b]));
+
+        String[] rankings = new String[n];
+
+        for (int rank = 0; rank < n; rank++) {
+            int index = indices[rank];
+            if (rank == 0) rankings[index] = "Gold Medal";
+            else if (rank == 1) rankings[index] = "Silver Medal";
+            else if (rank == 2) rankings[index] = "Bronze Medal";
+            else rankings[index] = String.valueOf(rank + 1);
+        }
+        return rankings;
+        // 
 
         //
 
@@ -129,7 +146,6 @@ public class RelativeRanksJava {
         //     }
         // }
         // return result;
-        throw new UnsupportedOperationException("Implement findRelativeRanks");
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
