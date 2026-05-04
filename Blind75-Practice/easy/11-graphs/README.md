@@ -18,13 +18,15 @@ helper, a constructor plus `add`, or an API method plus the main solver:
    to solve from.
 4. Put one combined commented reference implementation under that single spacer block,
    including all related methods together.
-5. Avoid duplicate commented solutions and do not add `throw new UnsupportedOperationException(...)`
+5. Keep exactly one commented reference solution block per file or per multi-method solution.
+   Do not leave older duplicate versions underneath it.
+6. Avoid duplicate commented solutions and do not add `throw new UnsupportedOperationException(...)`
    placeholders.
 
 ## Problems in this folder
 
-| Problem                     | LeetCode # | Idea                                      |
-| --------------------------- | ---------- | ----------------------------------------- |
-| Island Perimeter            | 463        | Land cell contributes 4 minus shared edges |
-| Verifying an Alien Dictionary | 953      | Compare adjacent words with custom order |
-| Find the Town Judge         | 997        | In/out degree on trust directed edges     |
+| Problem                       | LeetCode # | Idea                                       |
+| ----------------------------- | ---------- | ------------------------------------------ |
+| Island Perimeter              | 463        | Land cell contributes 4 minus shared edges |
+| Verifying an Alien Dictionary | 953        | Compare adjacent words with custom order   |
+| Find the Town Judge           | 997        | In/out degree on trust directed edges      |

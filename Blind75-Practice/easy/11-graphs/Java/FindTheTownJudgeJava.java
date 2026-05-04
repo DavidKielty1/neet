@@ -70,21 +70,6 @@ public class FindTheTownJudgeJava {
 
         //
 
-        // int[] outDeg = new int[n + 1];
-        // int[] inDeg = new int[n + 1];
-        // for (int[] edge : trust) {
-            // int a = edge[0];
-            // int b = edge[1];
-            // outDeg[a]++;
-            // inDeg[b]++;
-        // }
-        // for (int p = 1; p <= n; p++) {
-            // if (outDeg[p] == 0 && inDeg[p] == n - 1) {
-                // return p;
-            // }
-        // }
-        // return -1;
-
         // int[] inDegree = new int[n + 1];
         // int[] outDegree = new int[n + 1];
         // for (int[] edge : trust) {
