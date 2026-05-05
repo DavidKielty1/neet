@@ -41,10 +41,27 @@ Time: O(n log n)
 Space: O(n)
 */
 
+import java.util.PriorityQueue;
+
 public class LastStoneWeightJava {
     public int lastStoneWeight(int[] stones) {
-        //
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
 
+        for (int stone : stones) {
+            maxHeap.offer(stone);
+        }
+
+        while (maxHeap.size() > 1) {
+            int biggest = maxHeap.poll();
+            int second = maxHeap.poll();
+            int difference = biggest - second;
+            if (difference > 0) {
+                maxHeap.offer(difference);
+            }
+        }
+        return maxHeap.isEmpty() ? 0 : maxHeap.peek();
+
+        
         //
 
         //
