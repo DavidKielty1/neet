@@ -105,8 +105,6 @@ public class FindTheTownJudgeJava {
 
         //
 
-        //
-
         // int[] inDegree = new int[n + 1];
         // int[] outDegree = new int[n + 1];
         // for (int[] edge : trust) {
