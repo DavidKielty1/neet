@@ -30,16 +30,28 @@ Constraints:
 
 Why greedy works:
 Sort both arrays and try to satisfy the least greedy child first using the smallest
-cookie that works. This avoids wasting large cookies on children who could have been
+cookie that works. This avoids wasting large cookies on children who could have be
+en
 satisfied with smaller ones.
 
 Time: O(n log n + m log m)
 Space: O(1) excluding sort
 */
-import java.util.Arrays;
 
 public class AssignCookiesJava {
     public int findContentChildren(int[] g, int[] s) {
+        java.util.Arrays.sort(g);
+        java.util.Arrays.sort(s);
+        int cookie = 0;
+        int child = 0;
+        // g = [1, 2, 3], s = [1, 1]
+        while(child < g.length && cookie < s.length){
+            if (s[cookie] >= g[child]) {
+                return cookie;
+            }
+            child++;
+        }
+        return child;
         //
 
         //
@@ -113,7 +125,6 @@ public class AssignCookiesJava {
         //     cookie++;
         // }
         // return child;
-        throw new UnsupportedOperationException("Implement findContentChildren");
     }
     public static void main(String[] args) {
         AssignCookiesJava x = new AssignCookiesJava();
