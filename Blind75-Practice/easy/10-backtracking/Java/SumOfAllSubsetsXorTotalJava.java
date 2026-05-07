@@ -141,9 +141,6 @@ public class SumOfAllSubsetsXorTotalJava {
         // }
     }
 
-    private int dfs(int[] nums, int i, int curXor) {
-    }
-
     public static void main(String[] args) {
         SumOfAllSubsetsXorTotalJava sol = new SumOfAllSubsetsXorTotalJava();
         assert sol.subsetXORSum(new int[] {1, 3}) == 6;
