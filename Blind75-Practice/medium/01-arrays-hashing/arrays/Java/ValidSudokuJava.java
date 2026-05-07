@@ -35,29 +35,31 @@
  * - board[i][j] is a digit 1-9 or '.'
  */
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class ValidSudokuJava {
     public boolean isValidSudoku(char[][] board) {
-        // for i in row
-        // for i in col
-        // make a set,
-        // if adding to set retruns false - not valid
-        // otherwise true
+        boolean[][] rows = new boolean[9][9];
+        boolean[][] cols = new boolean[9][9];
+        boolean[][] boxes = new boolean[9][9];
 
-        for (int i = 0; i < board.length; i++) {
-            Set<Integer> rowVals = new HashSet<>();
-            for (int j = 0; j < board[i].length; j++) {
-                if (board[i][j] == '.') {
+        for(int r = 0; r < 9; r++) {
+            for (int c = 0; c < 9; c++) {
+                if (board[r][c] == '.') {
                     continue;
                 }
-                int digit = board[i][j] - '0';
-                if (!rowVals.add(digit)) {
+                
+                int digit = board[r][c] - '1';
+
+                int box = (r / 3) * 3 + c / 3;
+
+                if (rows[r][digit] || cols[c][digit] || boxes[box][digit]) {
                     return false;
-                } 
+                }
+                rows[r][digit] = true;
+                cols[c][digit] = true;
+                boxes[box][digit] = true;
             }
         }
+        return true;
         //
         //
         //

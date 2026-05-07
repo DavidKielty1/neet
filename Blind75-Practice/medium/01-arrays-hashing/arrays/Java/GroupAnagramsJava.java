@@ -21,13 +21,22 @@
  * - 0 <= strs[i].length <= 100
  * - strs[i] consists of lowercase English letters
  */
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class GroupAnagramsJava {
     public List<List<String>> groupAnagrams(String[] strs) {
+        // Create map
+        // go through each string in strings
+            // for each str create int[26] boxes
+            // increment index corresponding to letter
+            // user this array as map key
+            // ++counter
+
+        // Create array of arrays
+        // go through string, create map with key of word,
+
+
+        // return map -> array, for each key in map,
         //
         //
         //
