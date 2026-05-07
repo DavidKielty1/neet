@@ -40,18 +40,7 @@ Space: O(1) excluding sort
 
 public class AssignCookiesJava {
     public int findContentChildren(int[] g, int[] s) {
-        java.util.Arrays.sort(g);
-        java.util.Arrays.sort(s);
-        int cookie = 0;
-        int child = 0;
-        // g = [1, 2, 3], s = [1, 1]
-        while(child < g.length && cookie < s.length){
-            if (s[cookie] >= g[child]) {
-                return cookie;
-            }
-            child++;
-        }
-        return child;
+
         //
 
         //
