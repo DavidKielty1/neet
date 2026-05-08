@@ -27,139 +27,10 @@ Time: O(1) per op, Space: O(10^6)
 public class DesignHashSetJava {
 
     static class MyHashSet {
-        private final boolean[] present = new boolean[1_000_001];
-
         public void add(int key) {
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            // present[key] = true;
-
-            throw new UnsupportedOperationException("Implement add");
         }
 
         public void remove(int key) {
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            // present[key] = false;
-
-            throw new UnsupportedOperationException("Implement remove");
         }
 
         public boolean contains(int key) {
@@ -220,13 +91,14 @@ public class DesignHashSetJava {
             //
 
             //
-
-            //
-
-            // return present[key];
-
-            throw new UnsupportedOperationException("Implement contains");
         }
+
+        // get :  
+        // present[key] = true;
+        // remove :
+        // present[key] = false;
+        // contains :
+        // return present[key];
     }
 
     public static void main(String[] args) {

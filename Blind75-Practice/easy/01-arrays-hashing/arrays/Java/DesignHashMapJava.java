@@ -28,10 +28,6 @@ Time: O(1) per op, Space: O(10^6)
 public class DesignHashMapJava {
 
     static class MyHashMap {
-        private final boolean[] has = new boolean[1_000_001];
-        private final int[] vals = new int[1_000_001];
-
-        public void put(int key, int value) {
             //
 
             //
@@ -92,142 +88,15 @@ public class DesignHashMapJava {
 
             //
 
+            // put :
             // has[key] = true;
             // vals[key] = value;
 
-            throw new UnsupportedOperationException("Implement put");
-        }
-
-        public int get(int key) {
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
+            // get : 
             // return has[key] ? vals[key] : -1;
 
-            throw new UnsupportedOperationException("Implement get");
-        }
-
-        public void remove(int key) {
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
+            // remove:
             // has[key] = false;
-
-            throw new UnsupportedOperationException("Implement remove");
         }
     }
 

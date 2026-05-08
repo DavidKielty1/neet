@@ -34,6 +34,7 @@ Explanation: Left of index 0 is empty (sum 0); right of index 0 is 1 + (-1) = 0.
 Time: O(n), Space: O(1)
 */
 public class FindPivotIndexJava {
+        public int findPinot (int[] nums){
 
         //
 
