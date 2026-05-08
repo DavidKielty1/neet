@@ -31,21 +31,6 @@ Time: O(|t|), Space: O(1)
 */
 public class IsSubsequenceJava {
     public boolean isSubsequence(String s, String t) {
-        if (s.length() == 0) {
-            return true;
-        }
-
-        int si = 0;
-
-        for(int i = 0; i < t.length(); i++) {
-            if (t.charAt(i) == s.charAt(si)) {
-                si++;
-            }
-
-            if (s.length() == si) return true;
-        }
-    
-        return false;
 
 
         //

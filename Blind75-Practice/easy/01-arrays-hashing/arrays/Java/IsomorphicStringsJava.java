@@ -27,32 +27,11 @@ Explanation: First 'o' would map to 'a', but the second 'o' must map to 'r' — 
 Time: O(n), Space: O(1) — alphabet size is bounded
 */
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class IsomorphicStringsJava {
 
     public boolean isIsomorphic(String s, String t) {
-        Map<Character, Character> sToT = new HashMap<>();
-        Map<Character, Character> tToS = new HashMap<>();
+        if (s == null || t == null || t.length() != s.length()) {
 
-        for(int i = 0; i < s.length(); i++) {
-            char cs = s.charAt(i);
-            char ct = t.charAt(i);
-
-            if (sToT.containsKey(cs)) {
-                if (!sToT.get(cs).equals(ct)) return false;
-            } else {
-                sToT.put(cs, ct);
-            }
-            
-            if (tToS.containsKey(ct)) {
-                if (!tToS.get(ct).equals(cs)) return false;
-            } else {
-                tToS.put(ct, cs);
-            }
-        }
-        return true;
 
 
         //
