@@ -18,27 +18,11 @@ Output: 2
 Time: O(n), Space: O(n)
 */
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class TopKFrequentElementsEasyJava {
     public int mostFrequent(int[] nums) {
 
-        // ***** Read First -- Internalize Mpa functions
+        // *Read First -- Internalize Map functions -- not same as bowers moor etc ReadQuestion
 
-        Map<Integer, Integer> count = new HashMap<>();
-        for (int num : nums) {
-            count.merge(num, 1, Integer::sum);
-        }
-
-        int best = nums[0]; int highestFreq = 0;
-        for(Map.Entry<Integer,Integer> e : count.entrySet()) {
-            if(e.getValue() > highestFreq) {
-                highestFreq = e.getValue();
-                best = e.getKey();
-            }
-        }
-        return best;
         //
 
         //
@@ -111,8 +95,6 @@ public class TopKFrequentElementsEasyJava {
             // }
         // }
         // return best;
-
-        throw new UnsupportedOperationException("Implement mostFrequent");
     }
 
     public static void main(String[] args) {

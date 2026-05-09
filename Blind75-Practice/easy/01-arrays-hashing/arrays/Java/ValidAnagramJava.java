@@ -29,9 +29,10 @@ Explanation: Same letters, rearranged.
 
 Time: O(n), Space: O(1) — 26 letters
 */
+
 public class ValidAnagramJava {
     public boolean isAnagram(String s, String t) {
-        if (s == null || s == null || s.length() != t.length()) {
+        if(s == null || t == null || t.length() != s.length()) {
             return false;
         }
 
@@ -40,12 +41,12 @@ public class ValidAnagramJava {
             count[s.charAt(i) - 'a']++;
             count[t.charAt(i) - 'a']--;
         }
+
         for (int c : count) {
             if (c != 0) {
                 return false;
             }
         }
-
         return true;
 
         //

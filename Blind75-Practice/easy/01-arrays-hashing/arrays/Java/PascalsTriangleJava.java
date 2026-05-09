@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -36,25 +35,6 @@ Time: O(numRows^2), Space: O(numRows^2) for the returned list
 public class PascalsTriangleJava {
 
     public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> triangle = new ArrayList<>();
-        if (numRows == 0) {
-            return triangle;
-        }
-
-        triangle.add(List.of(1));
-
-        for(int i = 1; i < numRows; i++){
-            List<Integer> prevRow = new ArrayList<>(triangle.get(i - 1));
-            List<Integer> currRow = new ArrayList<>();
-
-            currRow.add(1);
-            for (int j = 0; j < prevRow.size() - 1; j++) {
-                currRow.add(prevRow.get(j) + prevRow.get(j + 1));
-            }
-            currRow.add(1);
-            triangle.add(currRow);
-        } 
-        return triangle;
         //
 
         //
@@ -126,82 +106,6 @@ public class PascalsTriangleJava {
             // result.add(row);
         // }
         // return result;
-
-        throw new UnsupportedOperationException("Implement generate");
-    }
-
-    private static boolean deepEquals(List<List<Integer>> a, List<List<Integer>> b) {
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // if (a.size() != b.size()) {
-            // return false;
-        // }
-        // for (int i = 0; i < a.size(); i++) {
-            // if (!a.get(i).equals(b.get(i))) {
-                // return false;
-            // }
-        // }
-        // return true;
-
-        throw new UnsupportedOperationException("Implement deepEquals");
     }
 
     public static void main(String[] args) {

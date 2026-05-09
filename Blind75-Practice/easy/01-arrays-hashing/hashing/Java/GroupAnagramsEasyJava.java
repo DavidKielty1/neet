@@ -20,7 +20,6 @@ Time: O(n), Space: O(1) for lowercase English letters (fixed alphabet size)
 
 public class GroupAnagramsEasyJava {
     public boolean isAnagram(String s, String t) {
-        //
 
         //
 

@@ -31,22 +31,8 @@ Time: O(m + n), Space: O(1) — 26 letters
 */
 
 public class RansomNoteJava {
-
     public boolean canConstruct(String ransomNote, String magazine) {
-        int magN = magazine.length();
-        int[] magCount = new int[26];
-        for(int i = 0; i < magN; i++){
-            magCount[magazine.charAt(i) - 'a']++;
-        }
 
-        for(int i = 0; i < ransomNote.length(); i++){
-            int ransomCharIdx = ransomNote.charAt(i) - 'a';
-            magCount[ransomCharIdx]--;
-            if (magCount[ransomCharIdx] < 0) {
-                return false;
-            }
-        }
-        return true;
         //
 
     //

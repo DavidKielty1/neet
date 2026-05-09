@@ -17,31 +17,10 @@ Output: [3,-1]
 
 Time: O(n + m), Space: O(n) — n = nums2.length, m = nums1.length
 */
-import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.Map;
 
 public class NextGreaterElementIJava {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-
-        // ***** Read First -- Internalize Stack functions / Map interaction
-        Map<Integer, Integer> next = new HashMap<>();
-        Deque<Integer> stack = new ArrayDeque<>();
-        for (int x : nums2) {
-            while (!stack.isEmpty() && stack.peek() < x) {
-                next.put(stack.pop(), x);
-            }
-            stack.push(x);
-        }
-        int[] ans = new int[nums1.length];
-        for (int i = 0; i < nums1.length; i++) {
-            ans[i] = next.getOrDefault(nums1[i], -1);
-        }
-        return ans;
-        //
-
         //
 
         //
@@ -114,7 +93,6 @@ public class NextGreaterElementIJava {
         // }
         // return ans;
 
-        throw new UnsupportedOperationException("Implement nextGreaterElement");
     }
 
     public static void main(String[] args) {
