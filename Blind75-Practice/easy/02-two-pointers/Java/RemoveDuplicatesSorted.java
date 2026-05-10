@@ -89,8 +89,6 @@ public class RemoveDuplicatesSorted {
 
         //
 
-        //
-
         // if (nums.length == 0) {
             // return 0;
         // }

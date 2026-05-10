@@ -32,23 +32,7 @@ Space Complexity: O(n + m)
 public class MergeStringsAlternatelyJava {
 
     public String mergeAlternately(String word1, String word2) {
-        StringBuilder mergedChars = new StringBuilder();        
-        int word1Idx = 0;
-        int word2Idx = 0;
-        
-        while (word1Idx < word1.length() && word2Idx < word2.length()){
-            mergedChars.append(word1.charAt(word1Idx++));
-            mergedChars.append(word1.charAt(word2Idx++));
-        }
 
-        if (word1.length() > word1Idx){
-            mergedChars.append(word1.substring(word1Idx));
-        }
-        if (word2.length() > word2Idx){
-            mergedChars.append(word2.substring(word2Idx));
-        }
-
-        return mergedChars.toString();
 
         //
 

@@ -34,6 +34,9 @@ public class RemoveElementJava {
      * nums: [3, 2, 2, 3], target = 3
      */
 
+    // [3 2 2 3]
+    // [2 2 2 3]
+
     public static int removeElement(int[] nums, int val) {
         //
 

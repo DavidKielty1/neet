@@ -14,6 +14,7 @@ end.
 
 Example 1:
 Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [1,5,6], n = 3
 Output: [1,2,2,3,5,6]
 Explanation: Merge the valid parts [1,2,3] and [2,5,6] into nums1.
 
@@ -36,18 +37,13 @@ import java.util.Arrays;
 public class MergeSortedArrayJava {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        // mIndex = 3
-        // nIndex = 3
-        // m = [4, 5, 6, 0, 0, 0]
-        // n = [1, 2, 3]
-        int mIndex = m - 1;
-        int nIndex = n - 1;
-        int tailIndex = nums1.length - 1;
-        while (nIndex >= 0) {
-            if (mIndex >= 0 && nums1[mIndex] > nums2[nIndex]) {
-                nums1[tailIndex--] = nums1[mIndex--];
+        int mIdx = m - 1, nIdx = n - 1, i = nums1.length - 1;
+
+        while (nIdx > 0) {
+            if (i > 0 && nums2[nIdx] > nums1[mIdx]) {
+                nums1[i--] = nums1[nIdx--];
             } else {
-                nums1[tailIndex--] = nums2[nIndex--];
+                nums1[i--] = nums1[mIdx--];
             }
         }
 
