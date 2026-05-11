@@ -38,13 +38,6 @@
  * - 1 <= s.length <= 10^4
  * - `s` consists only of the characters `()[]{}`.
  *
- * How to think about it
- * ---------------------
- * This is the classic stack matching problem. Push opening brackets as you scan left
- * to right. When you see a closing bracket, the most recent unmatched opening bracket
- * must be the one that pairs with it. If the types do not match, or you try to close
- * when the stack is empty, the string is invalid. At the end, the stack must be empty.
- *
  * Time: O(n), Space: O(n)
  */
 

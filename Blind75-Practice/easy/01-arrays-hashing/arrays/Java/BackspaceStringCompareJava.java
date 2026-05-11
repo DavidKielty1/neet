@@ -47,8 +47,6 @@
  */
 
 public class BackspaceStringCompareJava {
-    public boolean backspaceCompare(String s, String t) {
-
 
         //
 

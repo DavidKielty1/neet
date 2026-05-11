@@ -28,34 +28,6 @@
 
 public class ValidPalindromeIIJava {
 
-    private boolean secondChance(String s, int left, int right) {
-        while (right > left) {
-            if (s.charAt(left) != s.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
-    }
-
-    private boolean isPalindrome(String s) {
-        int left = 0;
-        int right = s.length() - 1;
-        while (right > left) {
-            if (s.charAt(left) != s.charAt(right)) {
-                return secondChance(s, left + 1, right) || secondChance(s, left, right - 1);
-            }
-            left++;
-            right--;
-        }
-        return true;
-    }
-
-    public boolean validPalindrome(String s) {
-        return isPalindrome(s);
-    }
-
     public static void main(String[] args) {
         ValidPalindromeIIJava sol = new ValidPalindromeIIJava();
         assert sol.validPalindrome("aba");

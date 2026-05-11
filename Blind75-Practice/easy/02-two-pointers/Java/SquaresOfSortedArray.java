@@ -31,30 +31,6 @@ public class SquaresOfSortedArray {
      */
 
     public static int[] sortedSquares(int[] nums) {
-        int n = nums.length;
-        int[] numsSquaredSorted = new int[n];
-        int left = 0;
-        int right = n - 1;
-        int pos = n - 1;
-
-        while ( right > left) {
-            int leftSquared = nums[left] * nums[left];
-            int rightSquared = nums[right] * nums[right];
-
-            if (leftSquared > rightSquared) {
-                numsSquaredSorted[pos] = nums[left];
-                left++;
-            } 
-            
-            if(leftSquared < rightSquared){
-                numsSquaredSorted[pos] = nums[right];
-                right--;
-            }
-
-            pos--;
-        }
-
-        return numsSquaredSorted;
 
         //
 
