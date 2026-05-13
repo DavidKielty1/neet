@@ -5,298 +5,91 @@
  *
  * Problem
  * -------
- * You are a product manager and currently leading a team to develop a new product.
- * Unfortunately, the latest version of your product fails the quality check.
- * Since each version is developed based on the previous version, all versions after a bad
- * version are also bad.
- *
- * Suppose you have `n` versions `[1, 2, ..., n]` and you want to find the first bad one.
- * You are given an API `isBadVersion(version)` which returns whether a version is bad.
- *
- * Return the first bad version.
- *
- * Example 1
- * ---------
- * Input: n = 5, firstBad = 4
- * Output: 4
- *
- * Example 2
- * ---------
- * Input: n = 1, firstBad = 1
- * Output: 1
- *
- * Constraints
- * -----------
- * - `1 <= n <= 2^31 - 1`
- *
- * How to think about it
- * ---------------------
- * The answers from `isBadVersion` have a monotonic shape:
- *
- * - `false false false ... true true true`
- *
- * That means you are looking for the leftmost `true`, which is a standard binary-search
- * boundary problem.
- *
- * Time: O(log n), Space: O(1)
- */
-
-public class FirstBadVersionJava extends VersionControl {
-    private final int firstBad;
-
-    public FirstBadVersionJava(int firstBad) {
-        this.firstBad = firstBad;
-    }
-
-    @Override
-    protected boolean isBadVersion(int version) {
-    }
-
-    public int firstBadVersion(int n) {
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // protected boolean isBadVersion(int version) {
-        //     return version >= firstBad;
-        // }
-        //
-        // public int firstBadVersion(int n) {
-        //     int lo = 1;
-        //     int hi = n;
-        //     while (lo < hi) {
-        //         int mid = lo + (hi - lo) / 2;
-        //         if (isBadVersion(mid)) {
-        //             hi = mid;
-        //         } else {
-        //             lo = mid + 1;
-        //         }
-        //     }
-        //     return lo;
-        // }
-    }
-
-    public static void main(String[] args) {
-        FirstBadVersionJava solver = new FirstBadVersionJava(4);
-        assert solver.firstBadVersion(5) == 4;
-
-        solver = new FirstBadVersionJava(1);
-        assert solver.firstBadVersion(1) == 1;
-
-        System.out.println("All test cases passed!");
-    }
-}
-
-abstract class VersionControl {
-    protected abstract boolean isBadVersion(int version);
-}
-/*
- * 278. First Bad Version
- * Difficulty: Easy
- * Pattern: Binary Search
- *
- * What this problem is asking
- * ---------------------------
- * You have product versions numbered 1 through n in order. At some unknown version,
- * a bug was introduced. Every version from that point onward is "bad"; every version
- * before it is "good". So if version k is the first bad one:
- *
- *   - Versions 1 .. (k - 1) are good
- *   - Versions k .. n are bad
- *
- * You cannot inspect the code directly. You only have a black-box API:
+ * You have `n` versions `[1, 2, ..., n]`. A bad version breaks the build; every version
+ * after the first bad one is also bad. You only have the API:
  *
  *   boolean isBadVersion(version)
  *
- * It returns true if that version (or any later version) is bad, and false if that
- * version is still good. Because bad versions are contiguous at the end, the answers
- * have a "monotone" shape: false, false, ... true, true, ... That is why binary search
- * on the version number works.
+ * Return the **first** bad version (smallest version number that is bad).
  *
- * Your job: return the smallest version number that is bad (the first true), using
- * as few calls to isBadVersion as you can — aim for O(log n) time, O(1) extra space.
+ * Example
+ * -------
+ * n = 5, first bad = 4 -> return 4
  *
- * Example 1
- * ---------
- * n = 5, and suppose the first bad version is 4.
+ * Constraints
+ * -----------
+ * - `1 <= bad <= n <= 2^31 - 1`
  *
- *   isBadVersion(1) -> false
- *   isBadVersion(2) -> false
- *   isBadVersion(3) -> false
- *   isBadVersion(4) -> true   <- first bad
- *   isBadVersion(5) -> true
- *
- * Answer: 4
- *
- * Example 2
- * ---------
- * n = 1, first bad version is 1.
- *
- *   isBadVersion(1) -> true
- *
- * Answer: 1
- *
- * How to think about binary search here
- * -------------------------------------
- * Search space is [1, n]. You want the leftmost index where isBadVersion(i) is true.
- * Compare mid = (lo + hi) / 2 (use lo + (hi - lo) / 2 to avoid overflow). If
- * isBadVersion(mid) is true, the first bad could be mid or earlier, so move hi left.
- * If false, the first bad must be after mid, so move lo right. Stop when lo == hi.
+ * How to think about it
+ * ---------------------
+ * Answers are monotone: good, good, ... bad, bad, ... so you binary-search for the
+ * **leftmost** bad (first `true`). Use `lo < hi`, shrink toward the boundary.
  *
  * Time: O(log n) calls to isBadVersion, Space: O(1)
+ *
+ * Local note
+ * ----------
+ * Below, `VersionControl` uses a fixed boolean table so `isBadVersion` behaves like a
+ * hidden monotone array (e.g. [f,f,f,t,t] for versions 1..5). On LeetCode, the platform
+ * provides this API; you normally submit only `Solution` (and may delete the local
+ * `VersionControl` in your editor there).
  */
 
-public class FirstBadVersionJava extends VersionControl {
-    /**
-     * LeetCode provides this; you do not implement it on the platform. Locally, override
-     * it in a subclass or test harness so it returns true for the first bad version and
-     * every version after (e.g. {@code return version >= firstBad;}).
-     */
-    @Override
-    protected boolean isBadVersion(int version) {   
-        public int firstBadVersion(int n) {
-            
-        //
+class Solution extends VersionControl {
+    public int firstBadVersion(int n) {
 
-        //
 
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // int lo = 1, hi = n;
-        // while (lo < hi) { int mid = lo + (hi - lo) / 2; ... }
-
+    }
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
         // int lo = 1;
         // int hi = n;
+
         // while (lo < hi) {
         //     int mid = lo + (hi - lo) / 2;
         //     if (isBadVersion(mid)) {
@@ -306,16 +99,36 @@ public class FirstBadVersionJava extends VersionControl {
         //     }
         // }
         // return lo;
-        }
-    }
 
+    /** Local check against the table in `VersionControl` (run with `java -ea ...`). */
     public static void main(String[] args) {
-        System.out.println(
-                "On LeetCode, isBadVersion is provided. Locally, subclass FirstBadVersionJava "
-                        + "and override isBadVersion, then call firstBadVersion(n).");
+        Solution s = new Solution();
+        assert s.firstBadVersion(5) == 4;
+        System.out.println("All test cases passed!");
     }
 }
 
-abstract class VersionControl {
-    protected abstract boolean isBadVersion(int version);
+/**
+ * Local teaching stand-in: LeetCode injects the real implementation.
+ *
+ * {@code IS_BAD[v]} is {@code isBadVersion(v)} for version {@code v}. Slot 0 is unused;
+ * versions are 1..n per the problem. Example row for {@code n = 5}, first bad {@code 4}:
+ * {@code [_, f, f, f, t, t]}.
+ *
+ * Change the literals to explore other monotone shapes; keep length {@code n + 1} and a
+ * single transition from false to true for a valid instance.
+ */
+class VersionControl {
+    private static final boolean[] IS_BAD = {
+        false, // index 0 unused
+        false,
+        false,
+        false,
+        true,
+        true,
+    };
+
+    protected boolean isBadVersion(int version) {
+        return IS_BAD[version];
+    }
 }

@@ -1,0 +1,36 @@
+---
+description: LeetCode API problems—use Solution extends ApiClass, stub API at file bottom, no pick/firstBad/main secret harness; reference comment = solver body only
+alwaysApply: false
+globs: Blind75-Practice/**/*,Blind75-Real/**/*,beginner/**/*,Easy-Varied/**/*,Realistic-Technical/**/*
+---
+
+# LeetCode-provided API (practice files)
+
+For problems where the platform implements a black-box API (`guess`, `isBadVersion`, `read4`, etc.):
+
+1. Solver class: **`class Solution extends ApiClass`** (Java/TS) or the same **shape** as the LeetCode editor. Do **not** use the **file-named** class as the solver.
+2. Do **not** add `private final int pick` / `firstBad`, a constructor that stores the secret, or `main` that wires a secret—LeetCode never exposes that; it confuses learners.
+3. Do **not** implement the API method. At the **bottom** of the file (after `Solution`), add a **minimal stub** class with an **empty** API method body so `Solution extends ApiClass` and calls compile. One **`//`** line above the stub: LeetCode provides it; learner does not implement it.
+4. The **commented reference** under the spacer contains **only** the **solver** method body—not a reference implementation of the API.
+5. Linter “must return a value” on empty `guessNumber` / empty stub **API** is expected until the learner fills the solver.
+
+## Example (Java)
+
+```java
+class Solution extends GuessGame {
+    public int guessNumber(int n) {
+        //
+        // ...40-60 line spacer...
+        //
+        // int lo = 1, hi = n;
+        // while (lo <= hi) { ... guess(mid) ... }
+        // return -1;
+    }
+}
+
+// LeetCode provides this class behind the scenes. Local stub only; you do not implement it.
+class GuessGame {
+    int guess(int num) {
+    }
+}
+```

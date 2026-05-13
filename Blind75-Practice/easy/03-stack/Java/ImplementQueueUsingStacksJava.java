@@ -54,7 +54,6 @@ public class ImplementQueueUsingStacksJava {
         private final Deque<Integer> out = new ArrayDeque<>();
 
         public void push(int x) {
-            in.push(x);
             //
 
             //
@@ -120,11 +119,6 @@ public class ImplementQueueUsingStacksJava {
         }
 
         public int pop() {
-            while (out.isEmpty()) {
-                while (!in.isEmpty()) {
-                    out.push(in.pop());
-                }
-            }
             //
 
             //
@@ -191,7 +185,6 @@ public class ImplementQueueUsingStacksJava {
             //     }
             // }
             // return out.pop();
-            throw new UnsupportedOperationException("Implement pop");
         }
 
         public int peek() {
@@ -326,7 +319,6 @@ public class ImplementQueueUsingStacksJava {
             //
 
             // return in.isEmpty() && out.isEmpty();
-            throw new UnsupportedOperationException("Implement empty");
         }
     }
 

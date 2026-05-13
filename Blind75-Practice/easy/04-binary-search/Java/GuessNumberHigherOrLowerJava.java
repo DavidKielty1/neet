@@ -39,20 +39,8 @@
  * Time: O(log n), Space: O(1)
  */
 
-public class GuessNumberHigherOrLowerJava {
-
-    private final int pick;
-
-    public GuessNumberHigherOrLowerJava(int pick) {
-        this.pick = pick;
-    }
-
-    /** LeetCode-style API: -1 pick lower, 1 pick higher, 0 correct */
-    private int guess(int num) {
-    }
-
+class Solution extends GuessGame {
     public int guessNumber(int n) {
-        //
 
         //
 
@@ -114,54 +102,36 @@ public class GuessNumberHigherOrLowerJava {
 
         //
 
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // private int guess(int num) {
-        //     return Integer.compare(pick, num);
-        // }
-        //
-        // public int guessNumber(int n) {
-        //     int lo = 1;
-        //     int hi = n;
-        //     while (lo <= hi) {
-        //         int mid = lo + (hi - lo) / 2;
-        //         int result = guess(mid);
-        //         if (result == 0) {
-        //             return mid;
-        //         }
-        //         if (result < 0) {
-        //             hi = mid - 1;
-        //         } else {
-        //             lo = mid + 1;
-        //         }
+        // int lo = 1;
+        // int hi = n;
+        // while (lo <= hi) {
+        //     int mid = lo + (hi - lo) / 2;
+        //     int result = guess(mid);
+        //     if (result == 0) {
+        //         return mid;
         //     }
-        //     return -1;
+        //     if (result < 0) {
+        //         hi = mid - 1;
+        //     } else {
+        //         lo = mid + 1;
+        //     }
         // }
+        // return -1;
     }
+}
 
-    public static void main(String[] args) {
-        for (int n : new int[] {10, 100}) {
-            for (int pick : new int[] {1, n, Math.max(1, n / 2)}) {
-                GuessNumberHigherOrLowerJava g = new GuessNumberHigherOrLowerJava(pick);
-                assert g.guessNumber(n) == pick;
-            }
-        }
-        System.out.println("All test cases passed!");
+// LeetCode provides this class behind the scenes. Local stub only so the file compiles
+// and Solution can extend it. You do not implement it.
+/**
+ * Forward declaration of guess API.
+ *
+ * @param num your guess
+ * @return -1 if num is higher than the picked number,
+ *          1 if num is lower than the picked number,
+ *          otherwise return 0
+ * int guess(int num);
+ */
+class GuessGame {
+    int guess(int num) {
     }
 }

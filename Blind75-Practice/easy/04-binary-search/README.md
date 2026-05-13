@@ -26,6 +26,30 @@ helper, a constructor plus `add`, or an API method plus the main solver:
 5. Avoid duplicate commented solutions and do not add `throw new UnsupportedOperationException(...)`
    placeholders.
 
+### LeetCode-provided API problems
+
+Some problems give you a helper API that the platform implements for you, such as
+`guess(int)` for _Guess Number Higher or Lower_ or `isBadVersion(int)` for _First Bad
+Version_. The learner only writes the main solver method.
+
+For these problems, the practice file MUST mirror the LeetCode editor exactly. Specifically:
+
+1. The solver class MUST be declared as `class Solution extends ApiClass` (for example
+   `class Solution extends GuessGame`). Do not use the file-named class as the solver.
+2. Do NOT add a `private final int pick;` / `private final int firstBad;` style field,
+   a constructor that assigns it, or a `main` method that constructs the class with a
+   secret value. That local-test scaffold is confusing because LeetCode itself never
+   exposes the secret. The learner is supposed to call the API, not know its inner state.
+3. Do NOT implement the API method. Provide a minimal stub class at the bottom of the
+   file (after `Solution`) with the API method having an empty body — just enough for
+   `Solution extends ApiClass` and `apiMethod(...)` calls to compile locally. Add a one
+   line `//` comment above the stub class explaining that LeetCode provides it and the
+   learner does not implement it.
+4. The commented reference implementation under the spacer block contains only the
+   solver method body. Do not include a reference implementation of the API method.
+5. The lint errors "This method must return a result of type int" on the empty solver
+   and the empty API stub are expected and disappear once the learner fills the solver.
+
 ## Key Concepts
 
 1. **Sorted Data** - Array must be sorted (or search space is ordered)

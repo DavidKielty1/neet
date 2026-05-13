@@ -1,0 +1,38 @@
+---
+description: Practice skeleton layout—header, 40–60 line spacer, one commented reference, helpers without extra spacers; optional main only when no LeetCode API
+alwaysApply: false
+globs: Blind75-Practice/**/*,Blind75-Real/**/*,beginner/**/*,Easy-Varied/**/*,Realistic-Technical/**/*
+---
+
+# Practice file layout (all languages)
+
+Applies to learner-facing skeletons: the learner fills the solver; the reference stays commented below.
+
+## Standard layout
+
+1. **Header block comment**: number, difficulty, pattern, statement, examples, constraints, “How to think about it”, Time/Space.
+2. **Solver** with one primary method to implement.
+3. **Inside that method**: one spoiler **spacer** (`//` / `#`), then **one** commented reference implementation (no duplicate copies elsewhere in the file).
+4. **`main` / local tests**: optional **only** when the problem is **not** a LeetCode-provided-API problem. See **leetcode-api-practice** for API-shaped files.
+
+**Naming and run commands** (Black, flake8, `npm start`, etc.): **CLAUDE.md**.
+
+## Spacer rules
+
+**Single main method:** exactly one **40–60 line** spacer block in that method, then the commented reference directly under it.
+
+**Multiple methods** (helpers, DFS, `add` + constructor, etc.):
+
+1. Leave helper / earlier method bodies **unimplemented** (no extra spacer blocks on them).
+2. Keep **one** 40–60 line spacer in the **main** method the learner solves.
+3. Put **one** combined commented reference under that spacer (all related methods together if needed).
+4. Do **not** add `throw new UnsupportedOperationException(...)` or `raise NotImplementedError` placeholders.
+
+## When editing existing files
+
+- Remove **duplicated** headers/classes (merge artifact).
+- If a file should be **LeetCode-API** shaped but still has `private final int pick` / `firstBad`, constructor, or `main` with a secret—**retrofit** per **leetcode-api-practice**.
+
+## Precedence
+
+**Pattern READMEs** (e.g. per-folder `README.md`) override layout only for **pattern-specific** notes. **leetcode-api-practice** overrides `main`/constructor rules for API problems.

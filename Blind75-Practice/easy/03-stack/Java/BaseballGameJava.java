@@ -140,29 +140,6 @@ public class BaseballGameJava {
         // }
         // return sum;
 
-        // java.util.Deque<Integer> stack = new java.util.ArrayDeque<>();
-        // for (String op : operations) {
-        //     if (op.equals("+")) {
-        //         int top = stack.pop();
-        //         int next = stack.peek();
-        //         stack.push(top);
-        //         stack.push(top + next);
-        //     } else if (op.equals("D")) {
-        //         stack.push(stack.peek() * 2);
-        //     } else if (op.equals("C")) {
-        //         stack.pop();
-        //     } else {
-        //         stack.push(Integer.parseInt(op));
-        //     }
-        // }
-        // int total = 0;
-        // for (int score : stack) {
-        //     total += score;
-        // }
-        // return total;
-        throw new UnsupportedOperationException("Implement calPoints");
-    }
-
     public static void main(String[] args) {
         BaseballGameJava s = new BaseballGameJava();
         assert s.calPoints(new String[] {"5", "2", "C", "D", "+"}) == 30;

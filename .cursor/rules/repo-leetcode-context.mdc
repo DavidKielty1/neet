@@ -1,0 +1,12 @@
+---
+description: Pointer that this repo is LeetCode practice; use practice-file rules when editing skeletons
+alwaysApply: true
+---
+
+# Repo context
+
+This repository is **LeetCode / interview practice**: curated problems, learner-facing skeletons, and commented reference solutions.
+
+When **creating or editing** practice files under `Blind75-Practice/`, `Blind75-Real/`, `beginner/`, `Easy-Varied/`, or `Realistic-Technical/`, follow the scoped project rules **`practice-file-layout.mdc`** and **`leetcode-api-practice.mdc`** (globs match those directories).
+
+For commands, naming, and tooling, see **CLAUDE.md** at the repo root.

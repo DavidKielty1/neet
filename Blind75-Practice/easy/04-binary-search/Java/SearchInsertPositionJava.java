@@ -139,7 +139,6 @@ public class SearchInsertPositionJava {
         //     }
         // }
         // return lo;
-        throw new UnsupportedOperationException("Implement searchInsert");
     }
     public static void main(String[] args) {
         SearchInsertPositionJava s = new SearchInsertPositionJava();
