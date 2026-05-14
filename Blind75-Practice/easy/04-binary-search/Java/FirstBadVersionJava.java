@@ -22,7 +22,7 @@
  *
  * How to think about it
  * ---------------------
- * Answers are monotone: good, good, ... bad, bad, ... so you binary-search for the
+ * Answers are monotone: good, good, ... bad, bad, ... so you binary-search for the 
  * **leftmost** bad (first `true`). Use `lo < hi`, shrink toward the boundary.
  *
  * Time: O(log n) calls to isBadVersion, Space: O(1)
@@ -35,11 +35,10 @@
  * `VersionControl` in your editor there).
  */
 
+    // [good, good, good, bad, bad, bad, bad]
+    // [false false false good good good good]
+
 class Solution extends VersionControl {
-    public int firstBadVersion(int n) {
-
-
-    }
     //
     //
     //

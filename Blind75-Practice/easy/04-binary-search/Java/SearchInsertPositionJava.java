@@ -63,6 +63,7 @@
  */
 public class SearchInsertPositionJava {
     public int searchInsert(int[] nums, int target) {
+
         //
 
         //
