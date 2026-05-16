@@ -23,34 +23,34 @@ Time: O(m * n) in the simple recursive approach, Space: O(h)
 
 public class SubtreeOfAnotherTreeJava {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
-        class Solver {
-            public boolean isSame(TreeNode a, TreeNode b) {
-                if (a == null && b == null) {
-                    return true;
-                }
-
-                if (a == null || b == null) {
-                    return false;
-                }
-
-                return a.val == b.val
-                    && isSame(a.left, b.left)
-                    && isSame(a.right, b.right);
-            }
-
-            private boolean dfs (TreeNode node) {
-                if (node == null) {
-                    return false;
-                }
-                return isSame(node, subRoot) || dfs(root.left) || dfs(root.right);
-            }
-        }
-
         if (subRoot == null) {
             return true;
         }
+        return hasSubtree(root, subRoot);
+    }
 
-        return new Solver().dfs(root);
+    private boolean hasSubtree(TreeNode node, TreeNode subRoot) {
+        if (node == null) {
+            return false;
+        }
+        return isSame(node, subRoot)
+            || hasSubtree(node.left, subRoot)
+            || hasSubtree(node.right, subRoot);
+    }
+
+    private boolean isSame(TreeNode a, TreeNode b) {
+        if (a == null && b == null) {
+            return true;
+        }
+        if (a == null || b == null) {
+            return false;
+        }
+        return a.val == b.val
+            && isSame(a.left, b.left)
+            && isSame(a.right, b.right);
+    }
+
+
 
 
         //
@@ -140,7 +140,7 @@ public class SubtreeOfAnotherTreeJava {
         // }
 
         // return new Solver().dfs(root);
-    }
+    
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }
@@ -161,6 +161,6 @@ public class SubtreeOfAnotherTreeJava {
             this.right = right;
         }
     }
-
-
 }
+
+

@@ -45,6 +45,27 @@ Space: O(n)
 
 public class RelativeRanksJava {
     public String[] findRelativeRanks(int[] score) { 
+        int n = score.length;
+
+        // score = [3, 4, 1, 2, 5]
+        // indic = [0, 0, 0, 0, 0]
+        Integer[] indices = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            indices[i] = i;
+        }
+        // indices = [0, 1, 2, 3, 4]
+
+        java.util.Arrays.sort(indices, (a, b) -> Integer.compare(score[b], score[a]));
+        
+        //sorted indices = [4, 1, 0, 3, 2]
+
+        String[] result = new String[n];
+        for(int rank = 0; rank < indices.length; rank++){
+            int index = indices[rank];
+            if (rank == 0) {
+                result[index] = "Gold Medal";
+            }
+        }
 
         // 
 
