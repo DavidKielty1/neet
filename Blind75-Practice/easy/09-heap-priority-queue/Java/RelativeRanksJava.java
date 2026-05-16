@@ -60,11 +60,21 @@ public class RelativeRanksJava {
         //sorted indices = [4, 1, 0, 3, 2]
 
         String[] result = new String[n];
+
+        // result [0 0 0 0 0]
+        // rank == 0
+        // index = indices[0]
+        // index == 4
+        // result ["Bronze Medal", "Silver Medal", "5", "4", "Gold Medal"]
         for(int rank = 0; rank < indices.length; rank++){
             int index = indices[rank];
             if (rank == 0) {
                 result[index] = "Gold Medal";
-            }
+            } else if (rank == 1) {
+                result[index] = "Silver Medal";
+            } else if (rank == 2) {
+                result[index] = "Bronze Medal";
+            } else result[index] = String.valueOf(rank + 1);
         }
 
         // 
