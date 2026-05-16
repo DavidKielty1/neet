@@ -10,30 +10,10 @@ Approach: HashMap from value to last index; update while scanning.
 Time: O(n), Space: O(min(n, k))
 */
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ContainsDuplicateIIJava {
 
     // [1 4 2 3 4 4 1 2 3 4] k = 3
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-        Map<Integer, Integer> count = new HashMap<>();
-        int l = 0;
-
-        for (int r = 0; r < nums.length; r++) {
-            count.merge(nums[r], 1, Integer::sum);
-
-            int window = r - l + 1;
-            if (window > k) {
-                count.put(nums[r], count.get(nums[r]) - 1);
-                l++;
-            }
-
-            if (count.get(nums[r]) > 1) return true;
-        }
-
-        return false;
-
         //
 
         //

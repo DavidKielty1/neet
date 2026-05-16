@@ -14,10 +14,6 @@ Visit 3 first, then 2, then return to 1 last.
 Example:
 root = [] -> []
 
-Idea:
-Use DFS recursion. The pattern is always: recurse left, recurse right, then
-record the node value.
-
 Time: O(n), Space: O(h)
 */
 import java.util.List;
@@ -25,8 +21,6 @@ import java.util.List;
 public class BinaryTreePostorderTraversalJava {
 
     public List<Integer> postorderTraversal(TreeNode root) {
-
-
         //
 
         //

@@ -21,6 +21,7 @@
 public class LongestSubstringWithoutRepeatingCharactersEasy {
 
     public static int firstUniqCharAscii(String s) {
+
             
         //
 
@@ -100,7 +101,6 @@ public class LongestSubstringWithoutRepeatingCharactersEasy {
         // }
         // return -1;
 
-        throw new UnsupportedOperationException("Implement firstUniqCharAscii");
     }
 
     public static void main(String[] args) {

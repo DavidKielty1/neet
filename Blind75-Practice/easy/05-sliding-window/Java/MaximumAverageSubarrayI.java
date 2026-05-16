@@ -8,7 +8,6 @@
  * Example 1:
  * Input: nums = [1,12,-5,-6,50,3], k = 4
  * Output: 12.75
- * Hint: Sum first window of k, then slide: add nums[i], subtract nums[i-k], track max sum.
  *
  * Example 2:
  * Input: nums = [5], k = 1
@@ -21,6 +20,20 @@
 public class MaximumAverageSubarrayI {
 
     public static double findMaxAverage(int[] nums, int k) {
+        int window = 0;
+
+        // [1,12,-5,-6,50,3] k = 4
+        for (int i = 0; i < k; i++) {
+            window += nums[i];
+        }
+
+        int maxAverageSubarray = window;
+        for (int i = k; i < nums.length; i++) {
+            window = window - nums[i - k] + nums[i];
+            maxAverageSubarray = Math.max(maxAverageSubarray, window);
+        }
+
+        return (double) maxAverageSubarray / k;
         //
 
         //

@@ -29,6 +29,23 @@ Time: O(n), Space: O(h)
 
 public class DiameterOfBinaryTreeJava {
     public int diameterOfBinaryTree(TreeNode root) {   
+        class Solver {
+            int diameter = 0;
+            int depth (TreeNode node) {
+                if (node == null) {
+                    return 0;
+                }
+
+                int left = depth(root.left);
+                int right = depth(root.right);
+
+                diameter = Math.max(diameter,  left + right);
+                return 1 + Math.max(left, right);
+            }
+        }
+        Solver solver = new Solver();
+        solver.depth(root);
+        return solver.diameter;
 
         //
 
@@ -105,7 +122,6 @@ public class DiameterOfBinaryTreeJava {
         // Solver solver = new Solver();
         // solver.depth(root);
         // return solver.diameter;
-        throw new UnsupportedOperationException("Implement diameterOfBinaryTree");
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");

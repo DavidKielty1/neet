@@ -98,8 +98,6 @@ public class LongestSubstringWithoutRepeatingCharactersEasyAscii {
             // }
         // }
         // return -1;
-
-        throw new UnsupportedOperationException("Implement firstUniqCharAscii");
     }
 
     public static void main(String[] args) {

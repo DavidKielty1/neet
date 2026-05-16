@@ -14,18 +14,11 @@ Example:
 root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10 -> 23
 The values inside the range are 6, 7, and 10.
 
-Idea:
-Use DFS and prune with BST ordering. If a node value is too small, only search
-right. If it is too large, only search left. Otherwise, include it and search
-both sides.
-
 Time: O(n) worst case, Space: O(h)
 */
 
 public class RangeSumBstJava {
     public int rangeSumBST(TreeNode root, int low, int high) {
-        
-
         //
 
         //

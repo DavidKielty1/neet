@@ -1,0 +1,25 @@
+---
+description: After local Java compile/run, delete generated .class files; do not leave bytecode in the tree
+alwaysApply: true
+---
+
+# Java `.class` cleanup
+
+`*.class` files are **gitignored** and should not be kept in the repo after local runs.
+
+## When this applies
+
+After you **compile or run** Java locally (`javac`, `java`, or any command that produces bytecode), **delete the generated `.class` files** before finishing the task.
+
+## What to do
+
+1. Note which directory you compiled in (usually next to the `.java` source).
+2. Remove bytecode in that scope, e.g. from repo root:
+   - `find Blind75-Practice beginner Blind75-Real Easy-Varied Realistic-Technical -name '*.class' -delete 2>/dev/null`
+   - Or delete only in the directory where you ran `javac` / `java`.
+3. Do **not** commit `.class` files or ask the user to keep them.
+
+## Do not
+
+- Leave `.class` artifacts “for next time” after verify/test runs.
+- Add `.class` files to git.

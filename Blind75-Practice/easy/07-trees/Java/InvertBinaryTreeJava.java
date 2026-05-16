@@ -92,7 +92,6 @@ public class InvertBinaryTreeJava {
         // root.left = right;
         // root.right = left;
         // return root;
-        throw new UnsupportedOperationException("Implement invertTree");
     }
     public static void main(String[] args) {
         System.out.println("Implement tests with TreeNode builders.");

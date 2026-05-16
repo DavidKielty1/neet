@@ -23,7 +23,34 @@ Time: O(m * n) in the simple recursive approach, Space: O(h)
 
 public class SubtreeOfAnotherTreeJava {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
-        
+        class Solver {
+            public boolean isSame(TreeNode a, TreeNode b) {
+                if (a == null && b == null) {
+                    return true;
+                }
+
+                if (a == null || b == null) {
+                    return false;
+                }
+
+                return a.val == b.val
+                    && isSame(a.left, b.left)
+                    && isSame(a.right, b.right);
+            }
+
+            private boolean dfs (TreeNode node) {
+                if (node == null) {
+                    return false;
+                }
+                return isSame(node, subRoot) || dfs(root.left) || dfs(root.right);
+            }
+        }
+
+        if (subRoot == null) {
+            return true;
+        }
+
+        return new Solver().dfs(root);
 
 
         //
