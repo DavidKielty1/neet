@@ -196,7 +196,7 @@ def java_stub(
 T = "import java.util.ArrayList;\nimport java.util.List;"
 
 write_file(
-    ROOT / "06-trees/Java/InvertBinaryTreeJava.java",
+    ROOT / "06-trees/Java/InvertBinaryTree.java",
     java_stub(
         "InvertBinaryTreeJava",
         [
@@ -220,7 +220,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/SubtreeOfAnotherTreeJava.java",
+    ROOT / "06-trees/Java/SubtreeOfAnotherTree.java",
     java_stub(
         "SubtreeOfAnotherTreeJava",
         [
@@ -244,7 +244,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/SameTreeJava.java",
+    ROOT / "06-trees/Java/SameTree.java",
     java_stub(
         "SameTreeJava",
         [
@@ -268,7 +268,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/BalancedBinaryTreeJava.java",
+    ROOT / "06-trees/Java/BalancedBinaryTree.java",
     java_stub(
         "BalancedBinaryTreeJava",
         [
@@ -292,7 +292,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/DiameterOfBinaryTreeJava.java",
+    ROOT / "06-trees/Java/DiameterOfBinaryTree.java",
     java_stub(
         "DiameterOfBinaryTreeJava",
         [
@@ -316,7 +316,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/BinaryTreePathsJava.java",
+    ROOT / "06-trees/Java/BinaryTreePaths.java",
     java_stub(
         "BinaryTreePathsJava",
         [
@@ -340,7 +340,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/MaximumDepthBinaryTreeJava.java",
+    ROOT / "06-trees/Java/MaximumDepthBinaryTree.java",
     java_stub(
         "MaximumDepthBinaryTreeJava",
         [
@@ -364,7 +364,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/RangeSumBstJava.java",
+    ROOT / "06-trees/Java/RangeSumBst.java",
     java_stub(
         "RangeSumBstJava",
         [
@@ -388,7 +388,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/MergeTwoBinaryTreesJava.java",
+    ROOT / "06-trees/Java/MergeTwoBinaryTrees.java",
     java_stub(
         "MergeTwoBinaryTreesJava",
         [
@@ -412,7 +412,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "06-trees/Java/LowestCommonAncestorBstJava.java",
+    ROOT / "06-trees/Java/LowestCommonAncestorBst.java",
     java_stub(
         "LowestCommonAncestorBstJava",
         [
@@ -437,7 +437,7 @@ write_file(
 
 # ---------- 07 stack ----------
 write_file(
-    ROOT / "07-stack/Java/ValidParenthesesJava.java",
+    ROOT / "07-stack/Java/ValidParentheses.java",
     java_stub(
         "ValidParenthesesJava",
         [
@@ -464,7 +464,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "07-stack/Java/BackspaceStringCompareJava.java",
+    ROOT / "07-stack/Java/BackspaceStringCompare.java",
     java_stub(
         "BackspaceStringCompareJava",
         [
@@ -490,7 +490,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "07-stack/Java/ImplementQueueUsingStacksJava.java",
+    ROOT / "07-stack/Java/ImplementQueueUsingStacks.java",
     block_comment(
         "232. Implement Queue using Stacks",
         "Difficulty: Easy",
@@ -564,7 +564,7 @@ public class ImplementQueueUsingStacksJava {
 L = "import java.util.HashSet;\nimport java.util.Set;"
 
 write_file(
-    ROOT / "08-linked-list/Java/ReverseLinkedListJava.java",
+    ROOT / "08-linked-list/Java/ReverseLinkedList.java",
     java_stub(
         "ReverseLinkedListJava",
         [
@@ -588,7 +588,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "08-linked-list/Java/MergeTwoSortedListsJava.java",
+    ROOT / "08-linked-list/Java/MergeTwoSortedLists.java",
     java_stub(
         "MergeTwoSortedListsJava",
         [
@@ -612,7 +612,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "08-linked-list/Java/LinkedListCycleJava.java",
+    ROOT / "08-linked-list/Java/LinkedListCycle.java",
     java_stub(
         "LinkedListCycleJava",
         [
@@ -636,7 +636,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "08-linked-list/Java/MiddleOfLinkedListJava.java",
+    ROOT / "08-linked-list/Java/MiddleOfLinkedList.java",
     java_stub(
         "MiddleOfLinkedListJava",
         [
@@ -660,7 +660,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "08-linked-list/Java/PalindromeLinkedListJava.java",
+    ROOT / "08-linked-list/Java/PalindromeLinkedList.java",
     java_stub(
         "PalindromeLinkedListJava",
         [
@@ -684,7 +684,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "08-linked-list/Java/RemoveLinkedListElementsJava.java",
+    ROOT / "08-linked-list/Java/RemoveLinkedListElements.java",
     java_stub(
         "RemoveLinkedListElementsJava",
         [
@@ -708,7 +708,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "08-linked-list/Java/DeleteNodeInLinkedListJava.java",
+    ROOT / "08-linked-list/Java/DeleteNodeInLinkedList.java",
     java_stub(
         "DeleteNodeInLinkedListJava",
         [
@@ -733,7 +733,7 @@ write_file(
 
 # ---------- 09 heap ----------
 write_file(
-    ROOT / "09-heap/Java/LastStoneWeightJava.java",
+    ROOT / "09-heap/Java/LastStoneWeight.java",
     java_stub(
         "LastStoneWeightJava",
         [
@@ -758,7 +758,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "09-heap/Java/RelativeRanksJava.java",
+    ROOT / "09-heap/Java/RelativeRanks.java",
     java_stub(
         "RelativeRanksJava",
         [
@@ -781,7 +781,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "09-heap/Java/KthLargestElementStreamJava.java",
+    ROOT / "09-heap/Java/KthLargestElementStream.java",
     block_comment(
         "703. Kth Largest Element in a Stream",
         "Difficulty: Easy",
@@ -838,7 +838,7 @@ public class KthLargestElementStreamJava {
 
 # ---------- 10 DP ----------
 write_file(
-    ROOT / "10-dynamic-programming/Java/ClimbingStairsJava.java",
+    ROOT / "10-dynamic-programming/Java/ClimbingStairs.java",
     java_stub(
         "ClimbingStairsJava",
         [
@@ -864,7 +864,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "10-dynamic-programming/Java/MinCostClimbingStairsJava.java",
+    ROOT / "10-dynamic-programming/Java/MinCostClimbingStairs.java",
     java_stub(
         "MinCostClimbingStairsJava",
         [
@@ -889,7 +889,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "10-dynamic-programming/Java/PascalsTriangleIiJava.java",
+    ROOT / "10-dynamic-programming/Java/PascalsTriangleIi.java",
     java_stub(
         "PascalsTriangleIiJava",
         [
@@ -912,7 +912,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "10-dynamic-programming/Java/TribonacciNumberJava.java",
+    ROOT / "10-dynamic-programming/Java/TribonacciNumber.java",
     java_stub(
         "TribonacciNumberJava",
         [
@@ -937,7 +937,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "10-dynamic-programming/Java/DivisorGameJava.java",
+    ROOT / "10-dynamic-programming/Java/DivisorGame.java",
     java_stub(
         "DivisorGameJava",
         [
@@ -963,7 +963,7 @@ write_file(
 
 # ---------- 11 greedy ----------
 write_file(
-    ROOT / "11-greedy/Java/MaximumSubarrayJava.java",
+    ROOT / "11-greedy/Java/MaximumSubarray.java",
     java_stub(
         "MaximumSubarrayJava",
         [
@@ -988,7 +988,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "11-greedy/Java/AssignCookiesJava.java",
+    ROOT / "11-greedy/Java/AssignCookies.java",
     java_stub(
         "AssignCookiesJava",
         [
@@ -1013,7 +1013,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "11-greedy/Java/LemonadeChangeJava.java",
+    ROOT / "11-greedy/Java/LemonadeChange.java",
     java_stub(
         "LemonadeChangeJava",
         [
@@ -1039,7 +1039,7 @@ write_file(
 
 # ---------- 12 bit manipulation ----------
 write_file(
-    ROOT / "12-bit-manipulation/Java/SingleNumberJava.java",
+    ROOT / "12-bit-manipulation/Java/SingleNumber.java",
     java_stub(
         "SingleNumberJava",
         [
@@ -1064,7 +1064,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "12-bit-manipulation/Java/NumberOf1BitsJava.java",
+    ROOT / "12-bit-manipulation/Java/NumberOf1Bits.java",
     java_stub(
         "NumberOf1BitsJava",
         [
@@ -1089,7 +1089,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "12-bit-manipulation/Java/CountingBitsJava.java",
+    ROOT / "12-bit-manipulation/Java/CountingBits.java",
     java_stub(
         "CountingBitsJava",
         [
@@ -1114,7 +1114,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "12-bit-manipulation/Java/MissingNumberJava.java",
+    ROOT / "12-bit-manipulation/Java/MissingNumber.java",
     java_stub(
         "MissingNumberJava",
         [
@@ -1139,7 +1139,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "12-bit-manipulation/Java/AddBinaryJava.java",
+    ROOT / "12-bit-manipulation/Java/AddBinary.java",
     java_stub(
         "AddBinaryJava",
         [
@@ -1164,7 +1164,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "12-bit-manipulation/Java/ReverseBitsJava.java",
+    ROOT / "12-bit-manipulation/Java/ReverseBits.java",
     java_stub(
         "ReverseBitsJava",
         [
@@ -1187,7 +1187,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "12-bit-manipulation/Java/PowerOfTwoJava.java",
+    ROOT / "12-bit-manipulation/Java/PowerOfTwo.java",
     java_stub(
         "PowerOfTwoJava",
         [
@@ -1213,7 +1213,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "12-bit-manipulation/Java/PowerOfFourJava.java",
+    ROOT / "12-bit-manipulation/Java/PowerOfFour.java",
     java_stub(
         "PowerOfFourJava",
         [
@@ -1239,7 +1239,7 @@ write_file(
 
 # ---------- 13 intervals ----------
 write_file(
-    ROOT / "13-intervals/Java/MeetingRoomsJava.java",
+    ROOT / "13-intervals/Java/MeetingRooms.java",
     java_stub(
         "MeetingRoomsJava",
         [
@@ -1265,7 +1265,7 @@ write_file(
 
 # ---------- 14 math geometry ----------
 write_file(
-    ROOT / "14-math-geometry/Java/PlusOneJava.java",
+    ROOT / "14-math-geometry/Java/PlusOne.java",
     java_stub(
         "PlusOneJava",
         [
@@ -1290,7 +1290,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "14-math-geometry/Java/SqrtXJava.java",
+    ROOT / "14-math-geometry/Java/SqrtX.java",
     java_stub(
         "SqrtXJava",
         [
@@ -1315,7 +1315,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "14-math-geometry/Java/PalindromeNumberJava.java",
+    ROOT / "14-math-geometry/Java/PalindromeNumber.java",
     java_stub(
         "PalindromeNumberJava",
         [
@@ -1341,7 +1341,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "14-math-geometry/Java/HappyNumberJava.java",
+    ROOT / "14-math-geometry/Java/HappyNumber.java",
     java_stub(
         "HappyNumberJava",
         [
@@ -1366,7 +1366,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "14-math-geometry/Java/PowerOfThreeJava.java",
+    ROOT / "14-math-geometry/Java/PowerOfThree.java",
     java_stub(
         "PowerOfThreeJava",
         [
@@ -1391,7 +1391,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "14-math-geometry/Java/ReverseIntegerJava.java",
+    ROOT / "14-math-geometry/Java/ReverseInteger.java",
     java_stub(
         "ReverseIntegerJava",
         [

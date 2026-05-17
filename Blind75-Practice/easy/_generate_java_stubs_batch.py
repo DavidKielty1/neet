@@ -184,7 +184,7 @@ def java_stub(
 
 # ---------- 04 dynamic programming arrays ----------
 write_file(
-    ROOT / "04-dynamic-programming/arrays/Java/HouseRobberJava.java",
+    ROOT / "04-dynamic-programming/arrays/Java/HouseRobber.java",
     java_stub(
         "",
         "HouseRobberJava",
@@ -210,7 +210,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "04-dynamic-programming/arrays/Java/HouseRobberEasyJava.java",
+    ROOT / "04-dynamic-programming/arrays/Java/HouseRobberEasy.java",
     java_stub(
         "",
         "HouseRobberEasyJava",
@@ -236,7 +236,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "04-dynamic-programming/arrays/Java/BestTimeToBuyAndSellStockJava.java",
+    ROOT / "04-dynamic-programming/arrays/Java/BestTimeToBuyAndSellStock.java",
     java_stub(
         "",
         "BestTimeToBuyAndSellStockJava",
@@ -262,7 +262,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "04-dynamic-programming/arrays/Java/BestTimeToBuyAndSellStockEasyJava.java",
+    ROOT / "04-dynamic-programming/arrays/Java/BestTimeToBuyAndSellStockEasy.java",
     java_stub(
         "",
         "BestTimeToBuyAndSellStockEasyJava",
@@ -288,7 +288,7 @@ write_file(
 
 # ---------- 05 binary search ----------
 write_file(
-    ROOT / "05-binary-search/Java/BinarySearchJava.java",
+    ROOT / "05-binary-search/Java/BinarySearch.java",
     java_stub(
         "",
         "BinarySearchJava",
@@ -314,7 +314,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "05-binary-search/Java/FirstBadVersionJava.java",
+    ROOT / "05-binary-search/Java/FirstBadVersion.java",
     block_comment(
         "278. First Bad Version",
         "Difficulty: Easy",
@@ -360,7 +360,7 @@ public class FirstBadVersionJava extends VersionControl {
 )
 
 write_file(
-    ROOT / "05-binary-search/Java/SearchInsertPositionJava.java",
+    ROOT / "05-binary-search/Java/SearchInsertPosition.java",
     java_stub(
         "",
         "SearchInsertPositionJava",
@@ -386,7 +386,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "05-binary-search/arrays/Java/SearchInRotatedSortedArrayJava.java",
+    ROOT / "05-binary-search/arrays/Java/SearchInRotatedSortedArray.java",
     java_stub(
         "",
         "SearchInRotatedSortedArrayJava",
@@ -412,7 +412,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "05-binary-search/arrays/Java/SearchInRotatedSortedArrayEasyJava.java",
+    ROOT / "05-binary-search/arrays/Java/SearchInRotatedSortedArrayEasy.java",
     java_stub(
         "",
         "SearchInRotatedSortedArrayEasyJava",
@@ -438,7 +438,7 @@ write_file(
 )
 
 write_file(
-    ROOT / "05-binary-search/arrays/Java/BinarySearchArraysJava.java",
+    ROOT / "05-binary-search/arrays/Java/BinarySearchArrays.java",
     block_comment(
         "704. Binary Search (duplicate practice file under arrays/; same as root binary-search.py)",
         "Difficulty: Easy",

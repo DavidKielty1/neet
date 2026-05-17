@@ -4,7 +4,7 @@ This folder mirrors the NeetCode-style pattern taxonomy used in [`easy/`](../eas
 
 ## Problem File Template Rules
 
-When creating new practice files anywhere under `medium/`, follow the same structure as the Java template in `BinarySearchSimilar1Java.java`.
+When creating new practice files anywhere under `medium/`, follow the same structure as the Java template in `BinarySearchSimilar1.java`.
 
 1. Start every problem file with a full top-of-file block comment.
 2. That header comment should include:

@@ -4,7 +4,7 @@
 
 ## Problem File Template Rules
 
-When creating new practice files in this folder, follow the same structure as the Java template in `BinarySearchSimilar1Java.java`.
+When creating new practice files in this folder, follow the same structure as the Java template in `BinarySearchSimilar1.java`.
 
 1. Start every problem file with a full top-of-file block comment.
 2. That header comment should include:
@@ -34,7 +34,7 @@ When creating new practice files in this folder, follow the same structure as th
  * Constraints:
  * ...
  */
-public class ExampleJava {
+public class Example {
     static class Solution {
         public int solve(int n) {
             //
