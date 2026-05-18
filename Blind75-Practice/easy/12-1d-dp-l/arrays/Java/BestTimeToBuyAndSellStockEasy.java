@@ -11,24 +11,6 @@ import java.util.Arrays;
 
 public class BestTimeToBuyAndSellStockEasy {
     public int[] findMinMax(int[] nums) {
-        int maxProfit = 0;
-        int lowest = nums[0];
-        int maxIdx = 0;
-        int lowIdx = 0;
-
-        for (int i = 0; i < nums.length; i++){
-            if (nums[i] < lowest) {
-                lowest = nums[i];
-                lowIdx = i;
-            }
-            int currProfit = nums[i] - lowest;
-            if (currProfit > maxProfit){
-                maxProfit = currProfit;
-                maxIdx = i;
-            }
-        }
-
-        return new int[] {lowIdx, maxIdx};
         //
 
         //
@@ -101,7 +83,6 @@ public class BestTimeToBuyAndSellStockEasy {
         //     max = Math.max(max, num);
         // }
         // return new int[] {min, max};
-        throw new UnsupportedOperationException("Implement findMinMax");
     }
     public static void main(String[] args) {
         BestTimeToBuyAndSellStockEasy s = new BestTimeToBuyAndSellStockEasy();

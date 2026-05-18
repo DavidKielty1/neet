@@ -43,7 +43,7 @@ Space: O(n)
 
 public class LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
-
+        
         
         //
 

@@ -49,7 +49,6 @@ Time: O(mn)
 Space: O(1)
 */
 public class IslandPerimeter {
-
     public int islandPerimeter(int[][] grid) {
         //
 
