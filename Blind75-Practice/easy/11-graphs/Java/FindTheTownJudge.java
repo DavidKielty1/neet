@@ -45,8 +45,34 @@ Time: O(n + t)
 Space: O(n)
 */
 public class FindTheTownJudge {
-
     public int findJudge(int n, int[][] trust) {
+        // go through each n in trust 
+        // make count map for people who trust x
+        // if any person has everyone in the town trusting them, but also trusts no one, they are judge
+
+        // create two arrays for trusts; trusted
+        // go through n,
+        // append [[1,3],[2,3]] e.g:
+
+        // go through i of n
+        // if trusted[i] == n and trusts[i] == 0 -- this is the judge
+
+        int[] trustsOthersCount = new int[n + 1];
+        int[] trustedByOthersCount = new int[n + 1];
+
+        for(int i = 0; i < trust.length; i++) {
+            trustsOthersCount[trust[i][0]]++;
+            trustedByOthersCount[trust[i][1]]++;
+        }
+
+        for(int person = 0; person <= n; person++) {
+            if (trustsOthersCount[person] == 0 && trustedByOthersCount[person] == n - 1) {
+                return person;
+            }
+        }
+        
+        return -1;
+        
         //
 
         //

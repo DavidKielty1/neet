@@ -9,13 +9,6 @@ Time: O(n), Space: O(1)
 */
 public class BestTimeToBuyAndSellStock {
     public int maxProfit(int[] prices) {
-        int maxProfit = 0;
-        int lowestPrice = prices[0];
-        for (int i = 0; i < prices.length; i++) {
-            lowestPrice = Math.min(lowestPrice, prices[i]);
-            maxProfit = Math.max(maxProfit, prices[i] - lowestPrice);
-        }
-        return maxProfit;
         //
 
         //
