@@ -25,12 +25,16 @@
  * - strs[i] may contain any valid ASCII character
  * - The codec must be lossless for arbitrary string contents
  */
-import java.util.ArrayList;
 import java.util.List;
 
 public class EncodeAndDecodeStrings {
     static class Codec {
         public String encode(List<String> strs) {
+            StringBuilder encoded = new StringBuilder();
+            for (String word : strs){
+                encoded.append(word.length()).append('#').append(word);
+            }
+            return encoded.toString();
             //
             //
             //
@@ -90,8 +94,7 @@ public class EncodeAndDecodeStrings {
         }
 
         public List<String> decode(String s) {
-            //
-            //
+        
             //
             //
             //

@@ -23,7 +23,6 @@
  * Follow-up:
  * - Could you solve the problem in linear time and O(1) extra space?
  */
-import java.util.ArrayList;
 import java.util.List;
 
 public class MajorityElementII {

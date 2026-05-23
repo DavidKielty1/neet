@@ -23,8 +23,6 @@
  * - 0 <= nums.length <= 100000
  * - -1000000000 <= nums[i] <= 1000000000
  */
-import java.util.HashSet;
-import java.util.Set;
 
 public class LongestConsecutiveSequence {
     public int longestConsecutive(int[] nums) {

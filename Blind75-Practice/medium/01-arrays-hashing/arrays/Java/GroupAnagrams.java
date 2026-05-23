@@ -25,18 +25,6 @@ import java.util.List;
 
 public class GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
-        // Create map
-        // go through each string in strings
-            // for each str create int[26] boxes
-            // increment index corresponding to letter
-            // user this array as map key
-            // ++counter
-
-        // Create array of arrays
-        // go through string, create map with key of word,
-
-
-        // return map -> array, for each key in map,
         //
         //
         //
