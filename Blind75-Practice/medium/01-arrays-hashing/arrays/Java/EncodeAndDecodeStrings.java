@@ -30,11 +30,6 @@ import java.util.List;
 public class EncodeAndDecodeStrings {
     static class Codec {
         public String encode(List<String> strs) {
-            StringBuilder encoded = new StringBuilder();
-            for (String word : strs){
-                encoded.append(word.length()).append('#').append(word);
-            }
-            return encoded.toString();
             //
             //
             //
