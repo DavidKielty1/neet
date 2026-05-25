@@ -1,129 +1,47 @@
 /*
  * LeetCode 560. Subarray Sum Equals K
+ * Difficulty: Medium
+ * Pattern: Prefix sum + hash map
  *
- * Given an array of integers nums and an integer k, return the total number of
- * subarrays whose sum equals to k.
+ * Problem
+ * -------
+ * Given an integer array nums and an integer k, return how many contiguous,
+ * non-empty subarrays have sum exactly k.
  *
- * A subarray is a contiguous non-empty sequence of elements within an array.
+ * Elements may be negative, so a sliding window on positive-only sums does not
+ * apply; count every valid subarray, including overlapping ones.
  *
- * Example 1:
+ * Example 1
+ * ---------
  * Input: nums = [1,1,1], k = 2
  * Output: 2
+ * Explanation: The two length-2 windows [1,1] at indices 0–1 and 1–2 each sum to 2.
  *
- * Example 2:
+ * Example 2
+ * ---------
  * Input: nums = [1,2,3], k = 3
  * Output: 2
+ * Explanation: [1,2] and the single element [3] are the only subarrays that sum to 3.
  *
- * Example 3:
+ * Example 3
+ * ---------
  * Input: nums = [1,-1,0], k = 0
  * Output: 3
+ * Explanation: [1,-1], [0], and [1,-1,0] sum to 0
  *
- * Constraints:
+ * Constraints
+ * -----------
  * - 1 <= nums.length <= 20000
  * - -1000 <= nums[i] <= 1000
  * - -10000000 <= k <= 10000000
+ *
+ * How to think about it
+ * ---------------------
+ * If prefix[j] - prefix[i] = k, then nums[i+1..j] sums to k. While scanning, track how
+ * many earlier prefix sums equal (current prefix - k); a hash map gives O(1) lookups.
+ *
+ * Time: O(n), Space: O(n)
  */
-import java.util.HashMap;
-import java.util.Map;
-
-public class SubarraySumEqualsK {
-    public int subarraySum(int[] nums, int k) {
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        // Track prefix sums and how often each has occurred.
-        //
-        // Map<Integer, Integer> seen = new HashMap<>();
-        // seen.put(0, 1);
-        // int prefix = 0;
-        // int count = 0;
-        // for (int num : nums) {
-        //     prefix += num;
-        //     count += seen.getOrDefault(prefix - k, 0);
-        //     seen.put(prefix, seen.getOrDefault(prefix, 0) + 1);
-        // }
-        // return count;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Implement tests.");
-    }
-}
-/*
-560. Subarray Sum Equals K
-Difficulty: Medium
-Pattern: Arrays & Hashing
-
-Problem:
-Given an integer array nums and an integer k, return the total number of subarrays
-whose sum equals k. A subarray is a contiguous non-empty sequence of elements within the array.
-
-Example 1:
-Input: nums = [1,1,1], k = 2
-Output: 2
-Explanation: Subarrays with sum 2 are [1,1] (indices 0–1) and [1,1] (indices 1–2).
-
-Example 2:
-Input: nums = [1,2,3], k = 3
-Output: 2
-Explanation: [3] and [1,2] each sum to 3.
-
-Example 3:
-Input: nums = [3,4,7,2,-3,1,4,2], k = 7
-Output: 4
-
-Constraints:
-- 1 <= nums.length <= 2 * 10^4
-- -1000 <= nums[i] <= 1000
-- -10^7 <= k <= 10^7
-*/
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -136,6 +54,7 @@ public class SubarraySumEqualsK {
             Map<Integer, Integer> prefixSums = new HashMap<>();
             prefixSums.put(0, 1);
 
+            // [1,2,3] k = 3
             for (int num : nums) {
                 curSum += num;
                 int diff = curSum - k;
