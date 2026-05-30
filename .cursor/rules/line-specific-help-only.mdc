@@ -1,0 +1,33 @@
+---
+description: When the user asks about specific line(s) in practice code, answer only that scope—no full solutions
+alwaysApply: true
+---
+
+# Line-specific help only (LeetCode practice)
+
+When the user asks a question about **specific line(s)** or attaches a **code selection** from a practice / LeetCode file (skeleton, partial attempt, or `@file (start-end)`):
+
+## Do
+
+- Answer **only** what is needed for those lines (syntax, API name, type error, one-line fix).
+- Explain **that** construct briefly if helpful (e.g. `contains` vs `has`, `num` vs `nums`).
+- Stay within the **same method or block** unless the user explicitly asks to widen scope.
+
+## Do not
+
+- Provide the **full solution** or complete corrected method.
+- Add the **rest of the algorithm** (“then you would loop…”, “here’s the full decode…”).
+- Paste **reference implementations** from the spacer or solve the whole problem unprompted.
+- “While we’re here” refactors or extra test cases.
+
+## Widen scope only when
+
+The user **explicitly** asks, e.g. “show the full solution”, “how do I finish this method?”, “does my whole approach work?”, or “walk me through the entire algorithm”.
+
+## Example
+
+**User:** `@LongestConsecutiveSequence.java (38-42)` — `seen.has` doesn’t compile.
+
+**Good:** Use `seen.contains(nums[i] - 1)` — Java `Set` has no `has`; that’s Python-style.
+
+**Bad:** Here is the complete O(n) longest consecutive sequence with the full while-loop and return.

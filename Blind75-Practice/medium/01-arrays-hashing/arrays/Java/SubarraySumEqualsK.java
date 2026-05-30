@@ -49,21 +49,6 @@ public class SubarraySumEqualsK {
 
     static class Solution {
         public int subarraySum(int[] nums, int k) {
-            int res = 0;
-            int curSum = 0;
-            Map<Integer, Integer> prefixSums = new HashMap<>();
-            prefixSums.put(0, 1);
-
-            // [1,2,3] k = 3
-            for (int num : nums) {
-                curSum += num;
-                int diff = curSum - k;
-
-                res += prefixSums.getOrDefault(diff, 0);
-                prefixSums.put(curSum, 1 + prefixSums.getOrDefault(curSum, 0));
-            }
-
-            return res;
 
             //
 
