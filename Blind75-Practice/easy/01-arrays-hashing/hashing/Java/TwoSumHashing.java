@@ -20,7 +20,7 @@ Explanation: nums[0] + nums[1] = 2 + 7 = 9.
 Example 2:
 Input: nums = [3,2,4], target = 6
 Output: [1,2]
-Explanation: nums[1] + nums[2] = 2 + 4 = 6.
+Explanation: nums[1] + nums[2] = 2 + 4 = 6. 
 
 Example 3:
 Input: nums = [3,3], target = 6
