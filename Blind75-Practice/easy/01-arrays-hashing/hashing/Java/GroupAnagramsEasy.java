@@ -18,28 +18,8 @@ Output: false
 Time: O(n), Space: O(1) for lowercase English letters (fixed alphabet size)
 */
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class GroupAnagramsEasy {
     public boolean isAnagram(String s, String t) {
-        if(s.length() != t.length()) {
-            return false;
-        }
-
-        Map<Character, Integer> count = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            char sChar = s.charAt(i);
-            char tChar = t.charAt(i);
-
-            count.merge(sChar, 1, Integer::sum);
-            count.merge(tChar, -1, Integer::sum);
-
-            count.remove(sChar, 0);
-            count.remove(tChar, 0);
-        }
-
-        return count.size() == 0;
 
         //
 

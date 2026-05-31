@@ -19,10 +19,6 @@ Time: O(n), Space: O(n)
 */
 
 public class TopKFrequentElementsEasy {
-    public int mostFrequent(int[] nums) {
-
-        // *Read First -- Internalize Map functions -- not same as bowers moor etc ReadQuestion
-
         //
 
         //

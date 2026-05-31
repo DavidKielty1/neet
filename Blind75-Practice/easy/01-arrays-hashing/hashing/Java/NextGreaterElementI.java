@@ -81,12 +81,14 @@ public class NextGreaterElementI {
 
         // Map<Integer, Integer> next = new HashMap<>();
         // Deque<Integer> stack = new ArrayDeque<>();
+        
         // for (int x : nums2) {
             // while (!stack.isEmpty() && stack.peek() < x) {
                 // next.put(stack.pop(), x);
             // }
             // stack.push(x);
         // }
+        
         // int[] ans = new int[nums1.length];
         // for (int i = 0; i < nums1.length; i++) {
             // ans[i] = next.getOrDefault(nums1[i], -1);
