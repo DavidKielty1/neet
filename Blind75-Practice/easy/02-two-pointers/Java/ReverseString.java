@@ -106,8 +106,6 @@ public class ReverseString {
             // left++;
             // right--;
         // }
-
-        throw new UnsupportedOperationException("Implement reverseString");
     }
 
     public static void main(String[] args) {

@@ -92,7 +92,7 @@ public class ReverseActualString {
 
         //
 
-        // if (s == null || s.length() <= 1) {
+        // if (s.length() <= 1) {
             // return s;
         // }
         // char[] chars = s.toCharArray();
@@ -106,8 +106,6 @@ public class ReverseActualString {
             // right--;
         // }
         // return new String(chars);
-
-        throw new UnsupportedOperationException("Implement reverse");
     }
 
     public static void main(String[] args) {

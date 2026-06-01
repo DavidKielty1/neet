@@ -24,6 +24,7 @@
  * - The input is generated so that answer[i] is guaranteed to fit in a
  *   32-bit integer.
  */
+
 public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
         //
