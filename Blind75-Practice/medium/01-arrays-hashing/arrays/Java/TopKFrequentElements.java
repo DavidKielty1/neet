@@ -23,8 +23,37 @@
  * - It is guaranteed that the answer is unique
  */
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> count = new HashMap<>();
+        for (int num : nums) {
+            count.merge(num, 1, Integer::sum);
+        }
+
+        List<List<Integer>> buckets = new ArrayList<>();
+        for (int _ : nums) {
+            buckets.add(new ArrayList<>());
+        }
+
+        for (Map.Entry<Integer, Integer> e : count.entrySet()) {
+            buckets.get(e.getValue()).add(e.getKey()); 
+        }
+
+        int[] result = new int[k]; 
+        int index = 0;
+        for (int freq = buckets.size(); freq >= 0; freq--) {
+            if (buckets.get(freq).length == 0) {
+                continue;
+            }
+            if (result.length == k) {
+                return result;
+            }
+        }
         //
         //
         //
@@ -93,7 +122,7 @@ public class TopKFrequentElements {
 
         // int[] result = new int[k];
         // int index = 0;
-        // for (int freq = buckets.size() - 1; freq >= 0 && index < k; freq--) {
+        // for (int freq = buckets.size() - 1; freq >= 0; freq--) {
         //     for (int value : buckets.get(freq)) {
         //         result[index++] = value;
         //         if (index == k) {

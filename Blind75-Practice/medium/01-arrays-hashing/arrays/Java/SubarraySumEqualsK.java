@@ -49,7 +49,6 @@ public class SubarraySumEqualsK {
 
     static class Solution {
         public int subarraySum(int[] nums, int k) {
-
             //
 
             //
