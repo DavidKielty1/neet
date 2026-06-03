@@ -31,7 +31,6 @@ Time: O(n), Space: O(n)
 */
 
 public class TwoSumHashing {
-    public int[] twoSum(int[] nums, int target) {
         //
 
         //
@@ -101,79 +100,6 @@ public class TwoSumHashing {
             // seen.put(nums[i], i);
         // }
         // return new int[0];
-
-        throw new UnsupportedOperationException("Implement twoSum");
-    }
-
-    private static void assertOrderAgnostic(int[] got, int a, int b) {
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        //
-
-        // boolean ok =
-        // (got[0] == a && got[1] == b) || (got[0] == b && got[1] == a);
-        // if (!ok) {
-            // throw new AssertionError(
-            // "expected indices {" + a + "," + b + "}, got {" + got[0] + "," + got[1] + "}");
-        // }
-
-        throw new UnsupportedOperationException("Implement assertOrderAgnostic");
     }
 
     public static void main(String[] args) {
