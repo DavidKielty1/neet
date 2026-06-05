@@ -22,8 +22,6 @@
  * - Use `long` for the running sum to avoid integer overflow.
  */
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 class KSumJava {
@@ -82,54 +80,54 @@ class KSumJava {
             //
             //
 
-            Arrays.sort(nums);
-            List<List<Integer>> result = new ArrayList<>();
-            kSum(nums, k, (long) target, 0, new ArrayList<>(), result);
-            return result;
-        }
+        //     Arrays.sort(nums);
+        //     List<List<Integer>> result = new ArrayList<>();
+        //     kSum(nums, k, (long) target, 0, new ArrayList<>(), result);
+        //     return result;
+        // }
 
-        private void kSum(int[] nums, int k, long target, int start,
-                List<Integer> path, List<List<Integer>> result) {
-            if (k == 2) {
-                twoSum(nums, target, start, path, result);
-                return;
-            }
-            for (int i = start; i <= nums.length - k; i++) {
-                if (i > start && nums[i] == nums[i - 1]) {
-                    continue;
-                }
-                path.add(nums[i]);
-                kSum(nums, k - 1, target - nums[i], i + 1, path, result);
-                path.remove(path.size() - 1);
-            }
-        }
+        // private void kSum(int[] nums, int k, long target, int start,
+        //         List<Integer> path, List<List<Integer>> result) {
+        //     if (k == 2) {
+        //         twoSum(nums, target, start, path, result);
+        //         return;
+        //     }
+        //     for (int i = start; i <= nums.length - k; i++) {
+        //         if (i > start && nums[i] == nums[i - 1]) {
+        //             continue;
+        //         }
+        //         path.add(nums[i]);
+        //         kSum(nums, k - 1, target - nums[i], i + 1, path, result);
+        //         path.remove(path.size() - 1);
+        //     }
+        // }
         
-        private void twoSum(int[] nums, long target, int start,
-                List<Integer> path, List<List<Integer>> result) {
-            int left = start;
-            int right = nums.length - 1;
-            while (left < right) {
-                long sum = (long) nums[left] + nums[right];
-                if (sum == target) {
-                    List<Integer> entry = new ArrayList<>(path);
-                    entry.add(nums[left]);
-                    entry.add(nums[right]);
-                    result.add(entry);
-                    left++;
-                    right--;
-                    while (left < right && nums[left] == nums[left - 1]) {
-                        left++;
-                    }
-                    while (left < right && nums[right] == nums[right + 1]) {
-                        right--;
-                    }
-                } else if (sum < target) {
-                    left++;
-                } else {
-                    right--;
-                }
-            }
-        }
+        // private void twoSum(int[] nums, long target, int start,
+        //         List<Integer> path, List<List<Integer>> result) {
+        //     int left = start;
+        //     int right = nums.length - 1;
+        //     while (left < right) {
+        //         long sum = (long) nums[left] + nums[right];
+        //         if (sum == target) {
+        //             List<Integer> entry = new ArrayList<>(path);
+        //             entry.add(nums[left]);
+        //             entry.add(nums[right]);
+        //             result.add(entry);
+        //             left++;
+        //             right--;
+        //             while (left < right && nums[left] == nums[left - 1]) {
+        //                 left++;
+        //             }
+        //             while (left < right && nums[right] == nums[right + 1]) {
+        //                 right--;
+        //             }
+        //         } else if (sum < target) {
+        //             left++;
+        //         } else {
+        //             right--;
+        //         }
+        //     }
+        // }
     }
 
     public static void main(String[] args) {
