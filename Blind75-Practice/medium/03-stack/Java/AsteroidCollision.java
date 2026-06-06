@@ -30,6 +30,10 @@
  * Input: asteroids = [10,2,-5]
  * Output: [10]
  *
+ * Example 1:
+ * Input: asteroids = [5,10,-5, -10]
+ * Output: [5,10]
+ *
  * Constraints:
  * - 2 <= asteroids.length <= 10^4
  * - -1000 <= asteroids[i] <= 1000
@@ -41,11 +45,37 @@
  * - Resolve collisions in a loop until the current asteroid is destroyed or survives.
  */
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.Deque;
 
 public class AsteroidCollision {
     static class Solution {
         public int[] asteroidCollision(int[] asteroids) {
+            Deque<Integer> stack = new ArrayDeque<>();
+
+            for (int asteroid : asteroids) {
+                if (asteroid < 0) {
+                    while (stack.peek() + asteroid < 0) {
+                        stack.pop();
+                    }
+
+                    if (stack.peek() + asteroid == 0 ){
+                        stack.pop();
+                        continue;
+                    } else {
+                        stack.add(asteroid);
+                    }
+                } else {
+                    stack.offerLast(asteroid);
+                }
+            }
+
+            int[] result = new int[stack.size()];
+            for (int value : stack) {
+                result[i++] = value;
+            }
+            return result;
             //
             //
             //
