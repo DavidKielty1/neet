@@ -35,7 +35,7 @@
 
 public class TwoSumIIInputArrayIsSorted {
     static class Solution {
-        public int[] twoSum(int[] numbers, int target) {
+        public int[] twoSum(int[] numbers, int target) {        
             //
             //
             //

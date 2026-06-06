@@ -27,6 +27,10 @@ import java.util.List;
 class KSumJava {
     static class Solution {
         public List<List<Integer>> kSum(int[] nums, int target, int k) {
+        }
+    }
+
+
             //
             //
             //

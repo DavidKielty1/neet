@@ -24,9 +24,6 @@
  * - -2^31 <= nums[i] <= 2^31 - 1
  * - 0 <= k <= 10^5
  *
- * Follow-up:
- * Try to come up with as many solutions as you can. There are at least three different
- * ways to solve this problem. Could you do it in-place with O(1) extra space?
  */
 
 import java.util.Arrays;
@@ -40,6 +37,7 @@ public class RotateArray {
             //
             //
             //
+            // 
             //
             //
             //
@@ -47,8 +45,7 @@ public class RotateArray {
             //
             //
             //
-            //
-            //
+            // 
             //
             //
             //
@@ -85,23 +82,23 @@ public class RotateArray {
             //
             //
 
-            // int n = nums.length;
-            // k %= n;
-            //
-            // reverse(nums, 0, n - 1);
-            // reverse(nums, 0, k - 1);
-            // reverse(nums, k, n - 1);
+            int n = nums.length;
+            k %= n;
+            
+            reverse(nums, 0, n - 1);
+            reverse(nums, 0, k - 1);
+            reverse(nums, k, n - 1);
         }
 
-        // private void reverse(int[] nums, int left, int right) {
-        //     while (left < right) {
-        //         int temp = nums[left];
-        //         nums[left] = nums[right];
-        //         nums[right] = temp;
-        //         left++;
-        //         right--;
-        //     }
-        // }
+        private void reverse(int[] nums, int left, int right) {
+            while (left < right) {
+                int temp = nums[left];
+                nums[left] = nums[right];
+                nums[right] = temp;
+                left++;
+                right--;
+            }
+        }
     }
 
     public static void main(String[] args) {
