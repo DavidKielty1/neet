@@ -45,37 +45,11 @@
  * - Resolve collisions in a loop until the current asteroid is destroyed or survives.
  */
 
-import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
 
 public class AsteroidCollision {
     static class Solution {
         public int[] asteroidCollision(int[] asteroids) {
-            Deque<Integer> stack = new ArrayDeque<>();
-
-            for (int asteroid : asteroids) {
-                if (asteroid < 0) {
-                    while (stack.peek() + asteroid < 0) {
-                        stack.pop();
-                    }
-
-                    if (stack.peek() + asteroid == 0 ){
-                        stack.pop();
-                        continue;
-                    } else {
-                        stack.add(asteroid);
-                    }
-                } else {
-                    stack.offerLast(asteroid);
-                }
-            }
-
-            int[] result = new int[stack.size()];
-            for (int value : stack) {
-                result[i++] = value;
-            }
-            return result;
             //
             //
             //
