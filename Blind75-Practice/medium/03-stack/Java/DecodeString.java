@@ -90,11 +90,21 @@ public class DecodeString {
             //
             //
 
+            //
+            //  resCurrent = aaabcbc
+            //  3 [ a ] 2 [ b c ]
+            // count      = 0
+            // countStack = ()
+            // current    = (a,a,a,b,c,b,c) -> 'aaabcbc'
+            // stringStack= ()
+            // repeat     = 2
+            // previous   = (a,a,a,b,c,b,c)
+            
             // Deque<Integer> countStack = new ArrayDeque<>();
             // Deque<StringBuilder> stringStack = new ArrayDeque<>();
             // StringBuilder current = new StringBuilder();
             // int count = 0;
-            //
+            
             // for (char ch : s.toCharArray()) {
             //     if (Character.isDigit(ch)) {
             //         count = count * 10 + (ch - '0');
@@ -109,7 +119,7 @@ public class DecodeString {
             //         for (int i = 0; i < repeat; i++) {
             //             previous.append(current);
             //         }
-            //         current = previous;
+            //         current =  previous;
             //     } else {
             //         current.append(ch);
             //     }
