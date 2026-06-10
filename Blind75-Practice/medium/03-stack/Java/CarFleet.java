@@ -46,7 +46,6 @@
 public class CarFleet {
     static class Solution {
         public int carFleet(int target, int[] position, int[] speed) {
-
             //
             //
             //
@@ -110,9 +109,9 @@ public class CarFleet {
             // double lastTime = 0.0;
             // for (int i = n - 1; i >= 0; i--) {
             //     double time = (double) (target - cars[i][0]) / cars[i][1];
-            //     if (lastTime > time) {
+            //     if (time > lastTime) {
             //         fleets++;
-            //         time = lastTime;
+            //         lastTime = time;
             //     }
             // }
             // return fleets;

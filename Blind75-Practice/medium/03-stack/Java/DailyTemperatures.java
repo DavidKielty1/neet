@@ -36,7 +36,6 @@ import java.util.Arrays;
 public class DailyTemperatures {
     static class Solution {
         public int[] dailyTemperatures(int[] temperatures) {
-
             //
             //
             //
