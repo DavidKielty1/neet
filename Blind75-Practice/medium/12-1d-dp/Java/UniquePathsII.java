@@ -1,0 +1,126 @@
+/*
+ * 63. Unique Paths II
+ * Difficulty: Medium
+ * Pattern: Dynamic Programming (grid / rolling 1D)
+ *
+ * Problem:
+ * You are given an m x n integer array grid. A robot is initially located at the
+ * top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right
+ * corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right
+ * at any point in time.
+ *
+ * An obstacle and space are marked as 1 and 0 respectively in grid. A path that the
+ * robot takes cannot include any square which is an obstacle.
+ *
+ * Return the number of possible unique paths that the robot can take to reach the
+ * bottom-right corner.
+ *
+ * Example 1:
+ * Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+ * Output: 2
+ *
+ * Example 2:
+ * Input: obstacleGrid = [[0,1],[0,0]]
+ * Output: 1
+ *
+ * Constraints:
+ * - m == obstacleGrid.length
+ * - n == obstacleGrid[i].length
+ * - 1 <= m, n <= 100
+ * - obstacleGrid[i][j] is 0 or 1.
+ *
+ * Notes:
+ * - Same as Unique Paths, but dp[i][j] = 0 if cell is obstacle.
+ * - First row/column need careful initialization around obstacles.
+ */
+
+public class UniquePathsII {
+    static class Solution {
+        public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+
+            // int m = obstacleGrid.length;
+            // int n = obstacleGrid[0].length;
+            // int[] dp = new int[n];
+            // dp[0] = obstacleGrid[0][0] == 0 ? 1 : 0;
+            // for (int j = 1; j < n; j++) {
+            //     dp[j] = (obstacleGrid[0][j] == 0 && dp[j - 1] == 1) ? 1 : 0;
+            // }
+            // for (int i = 1; i < m; i++) {
+            //     if (obstacleGrid[i][0] == 1) {
+            //         dp[0] = 0;
+            //     }
+            //     for (int j = 1; j < n; j++) {
+            //         if (obstacleGrid[i][j] == 1) {
+            //             dp[j] = 0;
+            //         } else {
+            //             dp[j] += dp[j - 1];
+            //         }
+            //     }
+            // }
+            // return dp[n - 1];
+        }
+    }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        assert sol.uniquePathsWithObstacles(new int[][] {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}) == 2;
+        assert sol.uniquePathsWithObstacles(new int[][] {{0, 1}, {0, 0}}) == 1;
+        System.out.println("All test cases passed!");
+    }
+}

@@ -30,7 +30,6 @@
  */
 
 public class LongestRepeatCharReplace {
-    public int characterReplacement(String s, int k) {
         //
         //
         //
