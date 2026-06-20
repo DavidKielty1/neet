@@ -40,9 +40,38 @@
  * - Use a stack of directory names and pop on `..` when possible.
  */
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class SimplifyPath {
     static class Solution {
         public String simplifyPath(String path) {
+            Deque<String> dirs = new ArrayDeque<>();
+
+            for (String dir : path.split("/")){
+                if (dir.equals(".") || dir.isEmpty()) {
+                    continue;
+                }
+
+                if (dir.equals("..")) {
+                    if (!dirs.isEmpty()) {
+                        dirs.pollFirst();
+                    }
+                } else {
+                    dirs.push(dir);
+                }
+            }
+            
+            if (dirs.isEmpty()) {
+                return "/";
+            }
+
+            StringBuilder result = new StringBuilder();
+            for (String dir : dirs) {
+                result.append("/").append(dir);
+            }
+            return result.toString();
+
             //
             //
             //

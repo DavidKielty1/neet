@@ -13,6 +13,7 @@ When guidance conflicts: **Team Rules → Project Rules → User Rules**. Within
 - **Layout, spacers, `main` vs no `main`:** `.cursor/rules/practice-file-layout.mdc`
 - **LeetCode black-box API** (`guess`, `isBadVersion`, etc.): `.cursor/rules/leetcode-api-practice.mdc`
 - **Always-on pointer** to use those when working in practice trees: `.cursor/rules/repo-leetcode-context.mdc`
+- **Java compile/run cleanup:** after `javac` / `java`, delete generated `*.class` files (see `.cursor/rules/cleanup-java-classfiles.mdc`)
 
 Per-pattern `README.md` files may add pattern-specific notes; they override generic layout only where they explicitly differ.
 

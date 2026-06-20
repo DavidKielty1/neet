@@ -31,13 +31,25 @@
  * - Merge previous spans while the previous price is <= current price.
  */
 
-public class OnlineStockSpan {
-    static class StockSpanner {
-        public StockSpanner() {
-            //
-        }
+import java.util.ArrayDeque;
+import java.util.Deque;
 
-        public int next(int price) {
+class StockSpanner {
+    public StockSpanner() {
+        
+    }
+
+    Deque<int[]> stockSpans = new ArrayDeque<>(); 
+
+    public int next(int price) {
+        int span = 1;
+        while (!stockSpans.isEmpty() && stockSpans.peek()[0] <= price) {
+            span += stockSpans.poll()[1];
+        } 
+        stockSpans.push(new int[] {price, span});
+
+        return span;
+    }
             //
             //
             //
@@ -89,9 +101,6 @@ public class OnlineStockSpan {
             //
             //
             // private final Deque<int[]> stack = new ArrayDeque<>();
-            //
-            // public StockSpanner() {
-            // }
             //
             // public int next(int price) {
             //     int span = 1;
