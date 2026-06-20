@@ -88,24 +88,36 @@ public class KokoEatingBananas {
             //
             //
 
-            // int left = 1;
-            // int right = 0;
-            // for (int pile : piles) {
-            //     right = Math.max(right, pile);
-            // }
-            // while (left < right) {
-            //     int mid = left + (right - left) / 2;
-            //     long hours = 0;
-            //     for (int pile : piles) {
-            //         hours += (pile + mid - 1) / mid;
-            //     }
-            //     if (hours <= h) {
-            //         right = mid;
-            //     } else {
-            //         left = mid + 1;
-            //     }
-            // }
-            // return left;
+
+        //     int left = 1;
+        //     int right = 0;
+        //     for (int pile : piles) {
+        //         right = Math.max(right, pile);
+        //     }
+
+        //     while (left < right) {
+        //         int mid = left + (right - left) / 2;
+        //         if (calculateSpareTime(piles, mid, h)) {
+        //             right = mid;
+        //         } else {
+        //             left = mid + 1;
+        //         }
+        //     }
+        //     return left;
+        // }
+
+        // private boolean calculateSpareTime(int[] piles, int hourlyEatRate, int maxHours) {
+        //     int hours = 0;
+        //     for (int pile : piles) {
+        //         int fullHours = pile / hourlyEatRate;
+        //         int leftover = pile % hourlyEatRate;
+        //         if (leftover > 0) {
+        //             fullHours++;
+        //         }
+        //         hours += fullHours;
+        //     }
+        //     return hours <= maxHours;
+        // }
         }
     }
 
