@@ -26,9 +26,6 @@
  * - 1 <= nums.length <= 10^5
  * - 1 <= nums[i] <= 10^4
  *
- * Notes:
- * - Because all numbers are positive, once the sum is large enough you can safely shrink
- *   from the left to try to improve the answer.
  */
 
 public class MinimumSizeSubarraySum {

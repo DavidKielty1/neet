@@ -19,9 +19,6 @@
  * - 1 <= s.length, p.length <= 3 * 10^4
  * - s and p consist of lowercase English letters
  *
- * Notes:
- * - Use a fixed-size window of length `p.length()`.
- * - Compare the window frequency array with the target frequency array.
  */
 
 import java.util.List;

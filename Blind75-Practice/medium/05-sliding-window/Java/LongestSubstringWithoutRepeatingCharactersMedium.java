@@ -19,9 +19,6 @@
  * - 1 <= s.length <= 5 * 10^4
  * - 0 <= k <= 50
  *
- * Notes:
- * - Grow the window to the right while counting characters.
- * - Shrink from the left whenever the number of distinct characters exceeds `k`.
  */
 
 public class LongestSubstringWithoutRepeatingCharactersMedium {
@@ -81,22 +78,27 @@ public class LongestSubstringWithoutRepeatingCharactersMedium {
             // if (k == 0) {
             //     return 0;
             // }
-            // Map<Character, Integer> counts = new HashMap<>();
+
+            // Map<Character, Integer> map = new HashMap<>();
             // int left = 0;
-            // int best = 0;
+            // int longestSubstring = 0;
+
             // for (int right = 0; right < s.length(); right++) {
-            //     char ch = s.charAt(right);
-            //     counts.put(ch, counts.getOrDefault(ch, 0) + 1);
-            //     while (counts.size() > k) {
-            //         char leftChar = s.charAt(left++);
-            //         counts.put(leftChar, counts.get(leftChar) - 1);
-            //         if (counts.get(leftChar) == 0) {
-            //             counts.remove(leftChar);
-            //         }
+            //     char rChar = s.charAt(right);
+
+            //     map.merge(rChar, 1, Integer::sum);
+
+            //     while (map.size() > k) {
+            //         char lChar = s.charAt(left);
+            //         map.merge(lChar, -1, Integer::sum);
+            //         map.remove(lChar, 0);
+            //         left++;
             //     }
-            //     best = Math.max(best, right - left + 1);
+
+            //     longestSubstring = Math.max(longestSubstring, right - left + 1);
             // }
-            // return best;
+
+            // return longestSubstring;
         }
     }
 
