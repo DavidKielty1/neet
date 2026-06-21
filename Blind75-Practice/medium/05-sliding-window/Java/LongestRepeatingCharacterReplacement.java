@@ -32,6 +32,26 @@
 public class LongestRepeatingCharacterReplacement {
     static class Solution {
         public int characterReplacement(String s, int k) {
+            int left = 0;
+            int maxFreq = 0;
+            int longestWindow = 0;
+            int[] count = new int[26];
+
+            for (int right = 0; right < s.length(); right++) {
+                int rChar = s.charAt(right) - 'A';
+                count[rChar]++;
+                maxFreq = Math.max(maxFreq, count[rChar]);
+
+                while (right - left + 1 - maxFreq > k) {
+                    count[s.charAt(left) - 'A']--;
+                    left++;
+                }
+
+                longestWindow = Math.max(longestWindow, right - left + 1);
+            }
+
+            return longestWindow;
+
             //
             //
             //

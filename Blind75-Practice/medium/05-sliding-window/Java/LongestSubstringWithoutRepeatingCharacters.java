@@ -28,11 +28,25 @@
  * - When a duplicate appears, shrink from the left until the window is valid again.
  */
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LongestSubstringWithoutRepeatingCharacters {
     static class Solution {
         public int lengthOfLongestSubstring(String s) {
-            //
-            //
+            Set<Character> seen = new HashSet<>();
+            int longest = 0;
+            int left = 0;
+            
+            for (int right = 0; right < s.length(); right++) {
+                while(seen.contains(s.charAt(right))) {
+                    seen.remove(s.charAt(left++));
+                }
+                seen.add(s.charAt(right));
+                longest = Math.max(longest, seen.size());
+            }
+            return longest;
+
             //
             //
             //

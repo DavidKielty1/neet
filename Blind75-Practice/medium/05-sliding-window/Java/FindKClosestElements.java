@@ -23,10 +23,6 @@
  * - 1 <= k <= arr.length <= 10^4
  * - arr is sorted in ascending order
  * - -10^4 <= arr[i], x <= 10^4
- *
- * Notes:
- * - One common solution binary-searches the left boundary of a size-`k` window.
- * - Another expands from a center, but the binary-search window method is cleaner here.
  */
 
 import java.util.List;
@@ -34,12 +30,7 @@ import java.util.List;
 public class FindKClosestElements {
     static class Solution {
         public List<Integer> findClosestElements(int[] arr, int k, int x) {
-            //
-            //
-            //
-            //
-            //
-            //
+
             //
             //
             //
