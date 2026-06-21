@@ -26,7 +26,7 @@
 
 import java.util.List;
 
-public class MinimumWindowSubstringEasy {
+public class MinimumWindowSubstring {
     static class Solution {
         public List<Integer> findAnagrams(String s, String p) {
             //

@@ -30,7 +30,7 @@
 
 import java.util.Arrays;
 
-public class SlidingWindowMaximumEasy {
+public class SlidingWindowMaximum {
     static class Solution {
         public int[] maxSlidingWindow(int[] nums, int k) {
             //
