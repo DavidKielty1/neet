@@ -22,8 +22,6 @@
  * - preorder is guaranteed to be the preorder traversal of the tree.
  * - inorder is guaranteed to be the inorder traversal of the tree.
  */
-import java.util.HashMap;
-import java.util.Map;
 
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
@@ -78,35 +76,24 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
         //
         // Preorder gives the root first. Inorder splits left and right parts.
         // Build an index map for inorder positions, then recurse on ranges.
-        //
-        // Map<Integer, Integer> index = new HashMap<>();
-        // for (int i = 0; i < inorder.length; i++) {
-        //     index.put(inorder[i], i);
+        
+        // if (preorder.length == 0) {
+        //     return null;
         // }
-        // return build(preorder, 0, preorder.length - 1, 0, inorder.length - 1,
-        //         index);
+        // int rootVal = preorder[0];
+        // TreeNode root = new TreeNode(rootVal);
+        // int mid = 0;
+        // while (inorder[mid] != rootVal) {
+        //     mid++;
+        // }
+        // root.left = buildTree(
+        //         Arrays.copyOfRange(preorder, 1, mid + 1),
+        //         Arrays.copyOfRange(inorder, 0, mid));
+        // root.right = buildTree(
+        //         Arrays.copyOfRange(preorder, mid + 1, preorder.length),
+        //         Arrays.copyOfRange(inorder, mid + 1, inorder.length));
+        // return root;
     }
-
-    // private TreeNode build(
-    //         int[] preorder,
-    //         int preLeft,
-    //         int preRight,
-    //         int inLeft,
-    //         int inRight,
-    //         Map<Integer, Integer> index) {
-    //     if (preLeft > preRight || inLeft > inRight) {
-    //         return null;
-    //     }
-    //     int rootVal = preorder[preLeft];
-    //     TreeNode root = new TreeNode(rootVal);
-    //     int pivot = index.get(rootVal);
-    //     int leftSize = pivot - inLeft;
-    //     root.left = build(preorder, preLeft + 1, preLeft + leftSize, inLeft,
-    //             pivot - 1, index);
-    //     root.right = build(preorder, preLeft + leftSize + 1, preRight,
-    //             pivot + 1, inRight, index);
-    //     return root;
-    // }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");
