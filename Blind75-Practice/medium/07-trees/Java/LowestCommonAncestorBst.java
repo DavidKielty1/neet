@@ -27,8 +27,14 @@
  * - p != q
  * - p and q will exist in the BST.
  */
+
+//              6
+//        2         8
+//      0   4     7   9  
+//     nn  3 5
 public class LowestCommonAncestorBst {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+
         //
         //
         //

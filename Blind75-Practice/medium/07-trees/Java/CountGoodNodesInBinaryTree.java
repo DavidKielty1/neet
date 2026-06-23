@@ -23,8 +23,25 @@
  * - The number of nodes in the binary tree is in the range [1, 100000].
  * - -10000 <= Node.val <= 10000
  */
+
 public class CountGoodNodesInBinaryTree {
     public int goodNodes(TreeNode root) {
+        return dfs(root, Integer.MIN_VALUE);
+    }
+
+    private int dfs(TreeNode node, int biggestSoFar) {
+        if (node == null) {
+            return 0;
+        }
+        
+        biggestSoFar = Math.max(biggestSoFar, node.val);
+        int count = node.val > biggestSoFar ? 1 : 0;
+
+        count += dfs(node.left, biggestSoFar);
+        count += dfs(node.right, biggestSoFar);
+        
+        return count;
+    }
         //
         //
         //

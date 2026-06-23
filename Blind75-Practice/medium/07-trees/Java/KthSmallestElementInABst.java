@@ -21,8 +21,6 @@
  * - If the BST is modified often and you need kth-smallest queries often, what
  *   extra information would you store?
  */
-import java.util.ArrayDeque;
-import java.util.Deque;
 
 public class KthSmallestElementInABst {
     public int kthSmallest(TreeNode root, int k) {
@@ -77,9 +75,11 @@ public class KthSmallestElementInABst {
         //
         // Inorder traversal of a BST visits values in sorted order.
         // Stop at the kth visited node.
+
         //
         // Deque<TreeNode> stack = new ArrayDeque<>();
         // TreeNode current = root;
+        
         // while (current != null || !stack.isEmpty()) {
         //     while (current != null) {
         //         stack.push(current);
