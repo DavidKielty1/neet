@@ -57,9 +57,6 @@ public class DesignAddAndSearchWordsDataStructure {
         static class Node {
             Node[] children;
             boolean isWord;
-
-            Node() {
-            }
         }
 
         private Node root;
@@ -68,6 +65,13 @@ public class DesignAddAndSearchWordsDataStructure {
         }
 
         public void addWord(String word) {
+        }
+
+        public boolean search(String word) {
+        }
+
+        private boolean dfs(String word, int index, Node node) {
+        }
             //
             //
             //
@@ -165,12 +169,6 @@ public class DesignAddAndSearchWordsDataStructure {
             //
             //     return dfs(word, index + 1, node.children[c - 'a']);
             // }
-        }
-
-        public boolean search(String word) {
-        }
-
-        private boolean dfs(String word, int index, Node node) {
         }
     }
 

@@ -24,76 +24,93 @@
  */
 
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        // Preorder gives the root first. Inorder splits left and right parts.
-        // Build an index map for inorder positions, then recurse on ranges.
-        
-        // if (preorder.length == 0) {
-        //     return null;
-        // }
-        // int rootVal = preorder[0];
-        // TreeNode root = new TreeNode(rootVal);
-        // int mid = 0;
-        // while (inorder[mid] != rootVal) {
-        //     mid++;
-        // }
-        // root.left = buildTree(
-        //         Arrays.copyOfRange(preorder, 1, mid + 1),
-        //         Arrays.copyOfRange(inorder, 0, mid));
-        // root.right = buildTree(
-        //         Arrays.copyOfRange(preorder, mid + 1, preorder.length),
-        //         Arrays.copyOfRange(inorder, mid + 1, inorder.length));
-        // return root;
-    }
+    
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // public TreeNode buildTree(int[] preorder, int[] inorder) {
+    //     Map<Integer, Integer> idx = new HashMap<>();
+    //     for (int i = 0; i < inorder.length; i++) {
+    //         idx.put(inorder[i], i);
+    //     }
+    //     return build(
+    //             preorder, 0, preorder.length - 1,
+    //             inorder, 0, inorder.length - 1,
+    //             idx);
+    // }
+
+    // private TreeNode build(
+    //         int[] preorder, int preStart, int preEnd,
+    //         int[] inorder, int inStart, int inEnd,
+    //         Map<Integer, Integer> idx) {
+    //     if (preStart > preEnd) {
+    //         return null;
+    //     }
+    //     int rootVal = preorder[preStart];
+    //     TreeNode root = new TreeNode(rootVal);
+    //     int mid = idx.get(rootVal);
+    //     int leftSize = mid - inStart;
+    //     root.left = build(
+    //             preorder, preStart + 1, preStart + leftSize,
+    //             inorder, inStart, mid - 1,
+    //             idx);
+    //     root.right = build(
+    //             preorder, preStart + leftSize + 1, preEnd,
+    //             inorder, mid + 1, inEnd,
+    //             idx);
+    //     return root;
+    // }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

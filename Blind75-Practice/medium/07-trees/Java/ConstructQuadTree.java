@@ -5,8 +5,8 @@
  * representing grid.
  *
  * Return null if the tree is empty. A quad tree node has:
- * - val: true if the node represents a region of 1s, otherwise false
  * - isLeaf: true if the node is a leaf
+ * - val: true if the node represents a region of 1s, otherwise false
  * - topLeft, topRight, bottomLeft, bottomRight child pointers
  *
  * If the current region has the same value everywhere, build a leaf node.
@@ -20,11 +20,16 @@
  * Input: grid = [[1,1],[1,1]]
  * Output: [[1,1]]
  *
+ * Example 2:
+ * Input: grid = [[1,1],[1,-]]
+ * Output: [[0,1]]
+ *
  * Constraints:
  * - n == grid.length == grid[i].length
  * - n == 2^x where 0 <= x <= 6
  * - grid[i][j] is either 0 or 1
  */
+
 public class ConstructQuadTree {
     public Node construct(int[][] grid) {
         //
@@ -79,8 +84,8 @@ public class ConstructQuadTree {
         // Recursively inspect a square region.
         // If every value matches, create a leaf; otherwise split into quarters.
         //
-        // return build(grid, 0, 0, grid.length);
-    }
+    //     return build(grid, 0, 0, grid.length);
+    // }
 
     // private Node build(int[][] grid, int row, int col, int size) {
     //     if (sameValue(grid, row, col, size)) {

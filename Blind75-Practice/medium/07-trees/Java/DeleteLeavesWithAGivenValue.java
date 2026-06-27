@@ -24,6 +24,7 @@
  * - The number of nodes in the tree is in the range [1, 3000].
  * - 1 <= Node.val, target <= 1000
  */
+
 public class DeleteLeavesWithAGivenValue {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
         //
@@ -75,17 +76,52 @@ public class DeleteLeavesWithAGivenValue {
         //
         //
         //
-        // Postorder recursion: prune children first, then decide whether the
-        // current node has become a target leaf that should also be removed.
+        //
+        //
+        //
+        // Iterative postorder on a general binary tree (not a BST).
+        // Stack + visited set + parent map.
         //
         // if (root == null) {
         //     return null;
         // }
-        // root.left = removeLeafNodes(root.left, target);
-        // root.right = removeLeafNodes(root.right, target);
-        // if (root.left == null && root.right == null && root.val == target) {
-        //     return null;
+        //
+        // Deque<TreeNode> stack = new ArrayDeque<>();
+        // Set<TreeNode> visited = new HashSet<>();
+        // Map<TreeNode, TreeNode> parent = new HashMap<>();
+        // stack.push(root);
+        // parent.put(root, null);
+        //
+        // while (!stack.isEmpty()) {
+        //     TreeNode node = stack.peek();
+        //     boolean childrenDone = node.left == null && node.right == null
+        //             || visited.contains(node);
+        //     if (!childrenDone) {
+        //         visited.add(node);
+        //         if (node.right != null) {
+        //             parent.put(node.right, node);
+        //             stack.push(node.right);
+        //         }
+        //         if (node.left != null) {
+        //             parent.put(node.left, node);
+        //             stack.push(node.left);
+        //         }
+        //         continue;
+        //     }
+        //     stack.pop();
+        //     if (node.left == null && node.right == null && node.val == target) {
+        //         TreeNode p = parent.get(node);
+        //         if (p == null) {
+        //             return null;
+        //         }
+        //         if (p.left == node) {
+        //             p.left = null;
+        //         } else {
+        //             p.right = null;
+        //         }
+        //     }
         // }
+        //
         // return root;
     }
 

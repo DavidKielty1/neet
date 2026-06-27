@@ -73,8 +73,6 @@ public class ValidateBinarySearchTree {
         //
         //
         //
-        //
-        //
         // Carry lower and upper bounds through the recursion.
         //
         // return validate(root, Long.MIN_VALUE, Long.MAX_VALUE);

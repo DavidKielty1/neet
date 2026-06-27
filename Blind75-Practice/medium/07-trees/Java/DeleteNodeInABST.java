@@ -75,9 +75,6 @@ public class DeleteNodeInABST {
         //
         //
         //
-        //
-        //
-        //
         // Search by BST ordering.
         // When the key is found:
         // - return the non-null child if there is at most one child

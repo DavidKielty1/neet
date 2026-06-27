@@ -1,245 +1,254 @@
-# Blind75 LeetCode Questions Guide
+# Blind 75 — LeetCode Study Guide
 
 ## Overview
-Blind75 is a curated list of 75 LeetCode questions that are commonly asked in technical interviews. These questions cover fundamental algorithms and data structures that every software engineer should know.
 
-## Data Structures Breakdown
+The **Blind 75** is a curated list of **75** LeetCode problems across **19 pattern categories**, widely used for technical interview prep. It was popularized from a Blind app post and organized on [NeetCode](https://neetcode.io/practice/practice/blind75).
 
-### 1. **Arrays & Strings** (~25 questions)
-**Most Common Topics:**
-- Two Pointers (sliding window, fast/slow pointers)
-- Binary Search
-- Sorting and searching
-- Subarray problems (maximum sum, longest subarray)
-- String manipulation (palindromes, anagrams)
+**NeetCode difficulty split:** 19 Easy · 49 Medium · 7 Hard ([checklist](https://neetcode.io/practice/practice/blind75))
 
-**Key Patterns:**
-- Sliding Window
-- Two Pointers
-- Prefix Sum
-- Kadane's Algorithm
-- Binary Search variations
+**In this document:** 22 Easy · 48 Medium · 5 Hard _(LeetCode difficulties as listed in the tables below)_
 
-### 2. **Hash Maps & Sets** (~15 questions)
-**Most Common Topics:**
-- Two Sum variations
-- Group Anagrams
-- Longest Substring Without Repeating Characters
-- Valid Parentheses
-- LRU Cache
+Practice skeletons for many of these live under `Blind75-Practice/` and `Blind75-Real/`. This document is **only** the Blind 75 list — not NeetCode 150/250. See `NeetCode250-All-Breakdown.md` for the broader study track.
 
-**Key Patterns:**
-- Frequency counting
-- Caching/memoization
-- Set operations (union, intersection)
-- Hash table for O(1) lookups
+---
 
-### 3. **Linked Lists** (~8 questions)
-**Most Common Topics:**
-- Reverse linked list
-- Detect cycle
-- Merge sorted lists
-- Remove nth node from end
-- Intersection of two lists
+## Overall breakdown (19 categories)
 
-**Key Patterns:**
-- Two Pointers (fast/slow)
-- Recursion
-- Dummy nodes
-- Multiple passes
+| #   | NeetCode category       | Blind 75 |   Easy | Medium |  Hard |
+| --- | ----------------------- | -------: | -----: | -----: | ----: |
+| 01  | Arrays & Hashing        |        8 |      3 |      5 |     0 |
+| 02  | Two Pointers            |        3 |      1 |      2 |     0 |
+| 03  | Sliding Window          |        4 |      1 |      2 |     1 |
+| 04  | Stack                   |        1 |      1 |      0 |     0 |
+| 05  | Binary Search           |        2 |      0 |      2 |     0 |
+| 06  | Linked List             |        6 |      3 |      3 |     0 |
+| 07  | Trees                   |       11 |      6 |      3 |     2 |
+| 08  | Heap / Priority Queue   |        1 |      1 |      0 |     0 |
+| 09  | Backtracking            |        2 |      0 |      2 |     0 |
+| 10  | Tries                   |        3 |      0 |      2 |     1 |
+| 11  | Graphs                  |        6 |      0 |      6 |     0 |
+| 12  | Advanced Graphs         |        1 |      0 |      0 |     1 |
+| 13  | 1-D Dynamic Programming |       10 |      1 |      9 |     0 |
+| 14  | 2-D Dynamic Programming |        2 |      0 |      2 |     0 |
+| 15  | Greedy                  |        2 |      0 |      2 |     0 |
+| 16  | Intervals               |        5 |      1 |      4 |     0 |
+| 17  | Math & Geometry         |        3 |      0 |      3 |     0 |
+| 18  | Bit Manipulation        |        5 |      4 |      1 |     0 |
+|     | **Totals**              |   **75** | **22** | **48** | **5** |
 
-### 4. **Trees & Binary Search Trees** (~12 questions)
-**Most Common Topics:**
-- Binary Tree traversal (inorder, preorder, postorder)
-- Maximum depth
-- Validate BST
-- Lowest Common Ancestor
-- Serialize/Deserialize
+---
 
-**Key Patterns:**
-- DFS (Depth-First Search)
-- BFS (Breadth-First Search)
-- Recursion
-- Stack/Queue for iterative solutions
+## Problems by category
 
-### 5. **Graphs** (~8 questions)
-**Most Common Topics:**
-- Number of Islands
-- Course Schedule
-- Clone Graph
-- Word Ladder
-- Graph coloring
+### Arrays & Hashing (8)
 
-**Key Patterns:**
-- DFS/BFS traversal
-- Topological Sort
-- Union Find
-- Shortest path algorithms
+| #   | Problem                      |  LC | Difficulty |
+| --- | ---------------------------- | --: | ---------- |
+| 1   | Contains Duplicate           | 217 | Easy       |
+| 2   | Valid Anagram                | 242 | Easy       |
+| 3   | Two Sum                      |   1 | Easy       |
+| 4   | Group Anagrams               |  49 | Medium     |
+| 5   | Top K Frequent Elements      | 347 | Medium     |
+| 6   | Encode and Decode Strings    | 271 | Medium     |
+| 7   | Product of Array Except Self | 238 | Medium     |
+| 8   | Longest Consecutive Sequence | 128 | Medium     |
 
-### 6. **Dynamic Programming** (~7 questions)
-**Most Common Topics:**
-- Climbing Stairs
-- Coin Change
-- Longest Increasing Subsequence
-- House Robber
-- Word Break
+### Two Pointers (3)
 
-**Key Patterns:**
-- Memoization
-- Tabulation
-- State transitions
-- Optimization problems
+| #   | Problem                   |  LC | Difficulty |
+| --- | ------------------------- | --: | ---------- |
+| 9   | Valid Palindrome          | 125 | Easy       |
+| 10  | 3Sum                      |  15 | Medium     |
+| 11  | Container With Most Water |  11 | Medium     |
 
-## Common Problem-Solving Patterns
+### Sliding Window (4)
 
-### 1. **Two Pointers**
-- **When to use:** Array/string problems, searching pairs
-- **Examples:** Two Sum, Container With Most Water, Valid Palindrome
-- **Variations:** Fast/Slow pointers, Sliding Window
+| #   | Problem                                        |  LC | Difficulty |
+| --- | ---------------------------------------------- | --: | ---------- |
+| 12  | Best Time to Buy and Sell Stock                | 121 | Easy       |
+| 13  | Longest Substring Without Repeating Characters |   3 | Medium     |
+| 14  | Longest Repeating Character Replacement        | 424 | Medium     |
+| 15  | Minimum Window Substring                       |  76 | Hard       |
 
-### 2. **Sliding Window**
-- **When to use:** Subarray/substring problems with constraints
-- **Examples:** Longest Substring Without Repeating Characters, Minimum Window Substring
-- **Key:** Expand window, then contract when constraint violated
+### Stack (1)
 
-### 3. **Binary Search**
-- **When to use:** Sorted arrays, finding optimal values
-- **Examples:** Search in Rotated Sorted Array, Find First and Last Position
-- **Variations:** Search in 2D arrays, finding peak elements
+| #   | Problem           |  LC | Difficulty |
+| --- | ----------------- | --: | ---------- |
+| 16  | Valid Parentheses |  20 | Easy       |
 
-### 4. **Depth-First Search (DFS)**
-- **When to use:** Tree/graph traversal, backtracking
-- **Examples:** Number of Islands, Validate Binary Search Tree
-- **Variations:** Inorder/Preorder/Postorder traversal
+### Binary Search (2)
 
-### 5. **Breadth-First Search (BFS)**
-- **When to use:** Level-order traversal, shortest path
-- **Examples:** Binary Tree Level Order Traversal, Word Ladder
-- **Key:** Use queue, process level by level
+| #   | Problem                              |  LC | Difficulty |
+| --- | ------------------------------------ | --: | ---------- |
+| 17  | Find Minimum in Rotated Sorted Array | 153 | Medium     |
+| 18  | Search in Rotated Sorted Array       |  33 | Medium     |
 
-### 6. **Dynamic Programming**
-- **When to use:** Optimization problems, overlapping subproblems
-- **Examples:** Climbing Stairs, Coin Change
-- **Approaches:** Top-down (memoization), Bottom-up (tabulation)
+### Linked List (6)
 
-### 7. **Hash Map/Sets**
-- **When to use:** Need O(1) lookups, frequency counting
-- **Examples:** Two Sum, Group Anagrams
-- **Key:** Trade space for time
+| #   | Problem                          |  LC | Difficulty |
+| --- | -------------------------------- | --: | ---------- |
+| 19  | Reverse Linked List              | 206 | Easy       |
+| 20  | Merge Two Sorted Lists           |  21 | Easy       |
+| 21  | Reorder List                     | 143 | Medium     |
+| 22  | Remove Nth Node From End of List |  19 | Medium     |
+| 23  | Linked List Cycle                | 141 | Easy       |
+| 24  | Add Two Numbers                  |   2 | Medium     |
 
-## Study Plan for Beginners
+### Trees (11)
 
-### **Phase 1: Fundamentals (Weeks 1-3)**
-**Goal:** Build strong foundation in basic data structures
+| #   | Problem                               |  LC | Difficulty |
+| --- | ------------------------------------- | --: | ---------- |
+| 25  | Invert Binary Tree                    | 226 | Easy       |
+| 26  | Maximum Depth of Binary Tree          | 104 | Easy       |
+| 27  | Diameter of Binary Tree               | 543 | Easy       |
+| 28  | Balanced Binary Tree                  | 110 | Easy       |
+| 29  | Same Tree                             | 100 | Easy       |
+| 30  | Subtree of Another Tree               | 572 | Easy       |
+| 31  | Lowest Common Ancestor of a BST       | 235 | Medium     |
+| 32  | Binary Tree Maximum Path Sum          | 124 | Hard       |
+| 33  | Serialize and Deserialize Binary Tree | 297 | Hard       |
+| 34  | Binary Tree Level Order Traversal     | 102 | Medium     |
+| 35  | Validate Binary Search Tree           |  98 | Medium     |
 
-**Week 1: Arrays & Two Pointers**
-- Two Sum
-- Valid Palindrome
-- Container With Most Water
-- 3Sum
-- Remove Duplicates from Sorted Array
+### Heap / Priority Queue (1)
 
-**Week 2: Strings & Hash Maps**
-- Valid Parentheses
-- Longest Substring Without Repeating Characters
-- Group Anagrams
-- Valid Anagram
-- First Unique Character in a String
+| #   | Problem                         |  LC | Difficulty |
+| --- | ------------------------------- | --: | ---------- |
+| 36  | Kth Largest Element in a Stream | 703 | Easy       |
 
-**Week 3: Binary Search**
-- Binary Search
-- Search in Rotated Sorted Array
-- Find First and Last Position of Element
-- Search a 2D Matrix
-- Find Peak Element
+### Backtracking (2)
 
-### **Phase 2: Intermediate (Weeks 4-6)**
-**Goal:** Master common patterns and algorithms
+| #   | Problem         |  LC | Difficulty |
+| --- | --------------- | --: | ---------- |
+| 37  | Combination Sum |  39 | Medium     |
+| 38  | Word Search     |  79 | Medium     |
 
-**Week 4: Linked Lists**
-- Reverse Linked List
-- Detect Cycle
-- Merge Two Sorted Lists
-- Remove Nth Node From End of List
-- Intersection of Two Linked Lists
+### Tries (3)
 
-**Week 5: Trees & DFS**
-- Maximum Depth of Binary Tree
-- Validate Binary Search Tree
-- Invert Binary Tree
-- Binary Tree Level Order Traversal
-- Lowest Common Ancestor
+| #   | Problem                                    |  LC | Difficulty |
+| --- | ------------------------------------------ | --: | ---------- |
+| 39  | Implement Trie (Prefix Tree)               | 208 | Medium     |
+| 40  | Design Add and Search Words Data Structure | 211 | Medium     |
+| 41  | Word Search II                             | 212 | Hard       |
 
-**Week 6: Dynamic Programming**
-- Climbing Stairs
-- Coin Change
-- House Robber
-- Longest Increasing Subsequence
-- Word Break
+### Graphs (6)
 
-### **Phase 3: Advanced (Weeks 7-8)**
-**Goal:** Tackle complex problems and optimize solutions
+| #   | Problem                                               |  LC | Difficulty |
+| --- | ----------------------------------------------------- | --: | ---------- |
+| 42  | Number of Islands                                     | 200 | Medium     |
+| 43  | Clone Graph                                           | 133 | Medium     |
+| 44  | Pacific Atlantic Water Flow                           | 417 | Medium     |
+| 45  | Course Schedule                                       | 207 | Medium     |
+| 46  | Graph Valid Tree                                      | 261 | Medium     |
+| 47  | Number of Connected Components in an Undirected Graph | 323 | Medium     |
 
-**Week 7: Graphs & BFS**
-- Number of Islands
-- Course Schedule
-- Clone Graph
-- Word Ladder
-- Graph Valid Tree
+### Advanced Graphs (1)
 
-**Week 8: Advanced Patterns**
-- Sliding Window Maximum
-- LRU Cache
-- Serialize and Deserialize Binary Tree
-- Design patterns and system design basics
+| #   | Problem          |  LC | Difficulty |
+| --- | ---------------- | --: | ---------- |
+| 48  | Alien Dictionary | 269 | Hard       |
 
-## Study Tips
+### 1-D Dynamic Programming (10)
 
-### **Daily Routine:**
-1. **Morning (30 min):** Review yesterday's problems
-2. **Afternoon (1 hour):** Solve 2-3 new problems
-3. **Evening (30 min):** Read solutions and understand different approaches
+| #   | Problem                        |  LC | Difficulty |
+| --- | ------------------------------ | --: | ---------- |
+| 49  | Climbing Stairs                |  70 | Easy       |
+| 50  | House Robber                   | 198 | Medium     |
+| 51  | House Robber II                | 213 | Medium     |
+| 52  | Longest Palindromic Substring  |   5 | Medium     |
+| 53  | Palindromic Substrings         | 647 | Medium     |
+| 54  | Decode Ways                    |  91 | Medium     |
+| 55  | Coin Change                    | 322 | Medium     |
+| 56  | Maximum Product Subarray       | 152 | Medium     |
+| 57  | Word Break                     | 139 | Medium     |
+| 58  | Longest Increasing Subsequence | 300 | Medium     |
 
-### **Problem-Solving Framework:**
-1. **Understand the problem** - Write examples, clarify constraints
-2. **Brute force first** - Always start with the simplest solution
-3. **Optimize** - Look for patterns, better data structures
-4. **Implement** - Write clean, readable code
-5. **Test** - Use multiple test cases, edge cases
-6. **Analyze** - Time/space complexity, can you do better?
+### 2-D Dynamic Programming (2)
 
-### **Common Mistakes to Avoid:**
-- Jumping to complex solutions without understanding the problem
-- Not considering edge cases (empty arrays, single elements)
-- Forgetting to handle duplicates
-- Not optimizing space complexity
-- Ignoring time complexity analysis
+| #   | Problem                    |   LC | Difficulty |
+| --- | -------------------------- | ---: | ---------- |
+| 59  | Unique Paths               |   62 | Medium     |
+| 60  | Longest Common Subsequence | 1143 | Medium     |
 
-### **Resources:**
-- **Practice:** LeetCode, HackerRank
-- **Learning:** NeetCode YouTube, Back to Back SWE
-- **Review:** LeetCode Discuss, Solution explanations
-- **Mock Interviews:** Pramp, interviewing.io
+### Greedy (2)
 
-## Success Metrics
+| #   | Problem          |  LC | Difficulty |
+| --- | ---------------- | --: | ---------- |
+| 61  | Maximum Subarray |  53 | Medium     |
+| 62  | Jump Game        |  55 | Medium     |
 
-### **By Week 4:**
-- Can solve easy array/string problems in 15-20 minutes
-- Understand when to use hash maps vs arrays
-- Comfortable with two pointers and sliding window
+### Intervals (5)
 
-### **By Week 6:**
-- Can solve medium tree/graph problems in 25-30 minutes
-- Understand recursion and iterative approaches
-- Comfortable with basic DP patterns
+| #   | Problem                   |  LC | Difficulty |
+| --- | ------------------------- | --: | ---------- |
+| 63  | Insert Interval           |  57 | Medium     |
+| 64  | Merge Intervals           |  56 | Medium     |
+| 65  | Non-overlapping Intervals | 435 | Medium     |
+| 66  | Meeting Rooms             | 252 | Easy       |
+| 67  | Meeting Rooms II          | 253 | Medium     |
 
-### **By Week 8:**
-- Can solve hard problems with hints in 30-40 minutes
-- Can explain trade-offs between different approaches
-- Ready for technical interviews
+### Math & Geometry (3)
 
-## Conclusion
+| #   | Problem           |  LC | Difficulty |
+| --- | ----------------- | --: | ---------- |
+| 68  | Rotate Image      |  48 | Medium     |
+| 69  | Spiral Matrix     |  54 | Medium     |
+| 70  | Set Matrix Zeroes |  73 | Medium     |
 
-Blind75 covers the most important patterns and data structures for technical interviews. Focus on understanding the underlying concepts rather than memorizing solutions. Practice consistently, and don't be afraid to struggle with problems - that's where real learning happens.
+### Bit Manipulation (5)
 
-Remember: **Consistency > Intensity**. Solving 2-3 problems daily is better than cramming 20 problems in one day.
+| #   | Problem             |  LC | Difficulty |
+| --- | ------------------- | --: | ---------- |
+| 71  | Sum of Two Integers | 371 | Medium     |
+| 72  | Reverse Bits        | 190 | Easy       |
+| 73  | Number of 1 Bits    | 191 | Easy       |
+| 74  | Counting Bits       | 338 | Easy       |
+| 75  | Missing Number      | 268 | Easy       |
+
+---
+
+## Summary by difficulty
+
+| Difficulty |  Count |
+| ---------- | -----: |
+| Easy       |     22 |
+| Medium     |     48 |
+| Hard       |      5 |
+| **Total**  | **75** |
+
+---
+
+## Suggested 8-week plan
+
+| Weeks | Focus categories                                                 |
+| ----- | ---------------------------------------------------------------- |
+| 1–2   | Arrays & Hashing, Two Pointers, Sliding Window, Stack            |
+| 3–4   | Binary Search, Linked List, Trees                                |
+| 5–6   | Graphs, Heap, Backtracking, Tries                                |
+| 7–8   | 1-D/2-D DP, Greedy, Intervals, Math & Geometry, Bit Manipulation |
+
+**Pace:** ~2 problems per day · **Goal:** pattern recognition, not memorization.
+
+---
+
+## Study tips
+
+1. **Understand** — examples, constraints, edge cases before coding.
+2. **Brute force first** — then optimize using the category pattern.
+3. **Review** — revisit problems you found hard after 3–7 days.
+4. **Track progress** — use [NeetCode Blind 75](https://neetcode.io/practice/practice/blind75) or your own checklist.
+
+---
+
+## Related docs in this repo
+
+| File                              | Contents                          |
+| --------------------------------- | --------------------------------- |
+| `NeetCode250-Easy-Breakdown.md`   | Easy practice by pattern folder   |
+| `NeetCode250-Medium-Breakdown.md` | Medium practice by pattern folder |
+| `NeetCode250-Hard-Breakdown.md`   | Hard practice by pattern folder   |
+| `NeetCode250-All-Breakdown.md`    | Combined NeetCode 250 view        |
+
+---
+
+**Consistency beats intensity.** Two solid problems per day through the 75 beats cramming.

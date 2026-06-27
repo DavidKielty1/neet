@@ -30,8 +30,6 @@
  * - 1 <= rows, columns <= 100
  * - 1 <= heights[i][j] <= 10^6
  */
-import java.util.Arrays;
-import java.util.PriorityQueue;
 
 public class PathWithMinimumEffort {
     static class Solution {

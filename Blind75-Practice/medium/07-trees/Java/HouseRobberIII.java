@@ -72,9 +72,6 @@ public class HouseRobberIII {
         //
         //
         //
-        //
-        //
-        //
         // For each node compute:
         // - max money if this node is robbed
         // - max money if this node is skipped

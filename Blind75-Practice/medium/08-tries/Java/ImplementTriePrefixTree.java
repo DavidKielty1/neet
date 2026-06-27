@@ -51,22 +51,25 @@
  * - `search` and `startsWith` both walk the trie; `search` also checks the end
  *   of word flag.
  */
+
+import org.w3c.dom.Node;
+
 public class ImplementTriePrefixTree {
     static class Trie {
-        static class Node {
-            Node[] children;
-            boolean isWord;
-
-            Node() {
-            }
-        }
-
-        private Node root;
-
         public Trie() {
         }
 
         public void insert(String word) {
+        }
+
+        public boolean search(String word) {
+        }
+
+        public boolean startsWith(String prefix) {
+        }
+
+        private Node walk(String text) {
+        }
             //
             //
             //
@@ -160,16 +163,6 @@ public class ImplementTriePrefixTree {
             //     }
             //     return node;
             // }
-        }
-
-        public boolean search(String word) {
-        }
-
-        public boolean startsWith(String prefix) {
-        }
-
-        private Node walk(String text) {
-        }
     }
 
     public static void main(String[] args) {
