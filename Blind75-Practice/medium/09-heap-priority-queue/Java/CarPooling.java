@@ -41,6 +41,7 @@
  *   drop-off point.
  * - A difference-array sweep line is another clean solution here.
  */
+
 public class CarPooling {
     static class Solution {
         public boolean carPooling(int[][] trips, int capacity) {
@@ -95,9 +96,9 @@ public class CarPooling {
             //
             //
 
-            // java.util.Arrays.sort(trips, java.util.Comparator.comparingInt(a -> a[1]));
-            // java.util.PriorityQueue<int[]> minHeap = new java.util.PriorityQueue<>(
-            //         java.util.Comparator.comparingInt(a -> a[2]));
+            // Arrays.sort(trips, Comparator.comparingInt(a -> a[1]));
+            // PriorityQueue<int[]> minHeap = new PriorityQueue<>(
+            //         Comparator.comparingInt(a -> a[2]));
             // int passengers = 0;
             //
             // for (int[] trip : trips) {
