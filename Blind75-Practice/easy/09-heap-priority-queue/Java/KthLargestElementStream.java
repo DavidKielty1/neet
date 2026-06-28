@@ -52,7 +52,7 @@ public class KthLargestElementStream {
 
     static class KthLargest {
         private final int k;
-        private final PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
         public KthLargest(int k, int[] nums) {
             this.k = k;
@@ -61,15 +61,13 @@ public class KthLargestElementStream {
             }
         }
 
-        // Single place for heap logic: offer, trim, return kth largest.
         public int add(int val) {
             minHeap.offer(val);
             if (minHeap.size() > k) {
-                minHeap.poll(); // removes smallest (heap root), not a random leaf
-            }
+                int last = minHeap.poll();
+            }        
             return minHeap.peek();
         }
-    }
             //
 
             //
