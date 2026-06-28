@@ -64,8 +64,8 @@ public class KthLargestElementStream {
         public int add(int val) {
             minHeap.offer(val);
             if (minHeap.size() > k) {
-                int last = minHeap.poll();
-            }        
+                minHeap.poll();
+            }
             return minHeap.peek();
         }
             //

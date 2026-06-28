@@ -34,9 +34,56 @@
  * - A quick impossibility check is whether the maximum count exceeds
  *   `(n + 1) / 2`.
  */
+
+import java.util.PriorityQueue;
+
 public class ReorganizeString {
     static class Solution {
         public String reorganizeString(String s) {
+            int[] counts = new int[26];
+            int maxCount = 0;
+
+            for (int count : counts) {
+                int idx = count - 'a';
+                counts[idx]++;
+                maxCount = Math.max(maxCount, counts[idx]);
+            }
+
+            if (maxCount > (s.length() + 1) / 2) {
+                return "";
+            }
+
+            PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) 
+                                                -> Integer.compare(b[1], a[1]));
+
+            for (int i = 0; i < s.length(); i++) {
+                maxHeap.offer(new int[] {'a' + i, counts[i]});
+            }
+
+            StringBuilder result = new StringBuilder();
+            while (!maxHeap.isEmpty()) {
+                int[] first = maxHeap.poll();
+                int[] second = maxHeap.poll();
+
+                result.append(first[0]);
+                result.append(second[0]);
+
+                if (--first[1] > 0) {
+                    maxHeap.offer(first);
+                }
+
+                if (--second[1] > 0) {
+                    maxHeap.offer(second);
+                }
+            }
+            
+            if (!maxHeap.isEmpty()) {
+                result.append(maxHeap.poll()[0]);
+            }
+
+            return result.toString();
+
+
             //
             //
             //
@@ -90,16 +137,19 @@ public class ReorganizeString {
 
             // int[] counts = new int[26];
             // int maxCount = 0;
+
             // for (char ch : s.toCharArray()) {
             //     counts[ch - 'a']++;
             //     maxCount = Math.max(maxCount, counts[ch - 'a']);
             // }
+
             // if (maxCount > (s.length() + 1) / 2) {
             //     return "";
             // }
             //
-            // java.util.PriorityQueue<int[]> maxHeap = new java.util.PriorityQueue<>(
+            // PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
             //         (a, b) -> Integer.compare(b[1], a[1]));
+
             // for (int i = 0; i < 26; i++) {
             //     if (counts[i] > 0) {
             //         maxHeap.offer(new int[] {'a' + i, counts[i]});

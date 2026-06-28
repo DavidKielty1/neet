@@ -35,6 +35,7 @@
  * - Compare squared distances so you never need `sqrt`.
  * - A max-heap of size `k` is the most direct heap-based approach.
  */
+
 public class KClosestPointsToOrigin {
     static class Solution {
         public int[][] kClosest(int[][] points, int k) {
@@ -89,21 +90,22 @@ public class KClosestPointsToOrigin {
             //
             //
 
-            // java.util.PriorityQueue<int[]> maxHeap = new java.util.PriorityQueue<>(
-            //         (a, b) -> Integer.compare(distanceSquared(b), distanceSquared(a)));
-            // for (int[] point : points) {
-            //     maxHeap.offer(point);
-            //     if (maxHeap.size() > k) {
-            //         maxHeap.poll();
-            //     }
-            // }
-            //
-            // int[][] answer = new int[k][2];
-            // for (int i = 0; i < k; i++) {
-            //     answer[i] = maxHeap.poll();
-            // }
-            // return answer;
-        }
+        //     PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) 
+        //                     -> Integer.compare(distanceSquared(b), distanceSquared(a)));
+
+        //     for (int[] point : points) {
+        //         maxHeap.offer(point);
+        //         if (maxHeap.size() > k) {
+        //             maxHeap.poll();
+        //         }
+        //     }
+            
+        //     int[][] answer = new int[k][2];
+        //     for (int i = 0; i < k; i++) {
+        //         answer[i] = maxHeap.poll();
+        //     }
+        //     return answer;
+        // }
 
         // private int distanceSquared(int[] point) {
         //     return point[0] * point[0] + point[1] * point[1];

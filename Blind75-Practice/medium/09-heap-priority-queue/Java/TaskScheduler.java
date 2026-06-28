@@ -30,7 +30,7 @@
  * Explanation:
  * A possible schedule is A -> B -> idle -> idle -> A -> B -> idle -> idle
  * -> A -> B.
- *
+ * 
  * Constraints:
  * - 1 <= tasks.length <= 10^4
  * - tasks[i] is an uppercase English letter.
