@@ -29,19 +29,8 @@ Explanation: Many duplicates (e.g. 1 appears more than once).
 Time: O(n), Space: O(n) for a set (O(1) extra if sorting in place and allowed).
 */
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class ContainsDuplicate {
-
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> dup = new HashSet<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            if (!dup.add(nums[i])) return true;
-        }
-        
-        return false;
         //
 
         //

@@ -6,7 +6,6 @@ Pattern: Arrays & Hashing
 put(key, value), get(key), remove(key). Missing key => get returns -1.
 Keys and values in [0, 1_000_000].
 
-Approach: parallel boolean[] for occupancy and int[] for values.
 
 Example:
 Input:  ["MyHashMap","put","put","get","get","put","get","remove","get"]
@@ -26,8 +25,7 @@ Time: O(1) per op, Space: O(10^6)
 */
 
 public class DesignHashMap {
-
-    static class MyHashMap {
+    static class MyHashMap {    
             //
 
             //

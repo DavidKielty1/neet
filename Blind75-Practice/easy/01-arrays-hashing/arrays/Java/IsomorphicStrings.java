@@ -27,11 +27,21 @@ Explanation: First 'o' would map to 'a', but the second 'o' must map to 'r' — 
 Time: O(n), Space: O(1) — alphabet size is bounded
 */
 
-public class IsomorphicStrings {
+import java.util.HashMap;
+import java.util.Map;
 
+public class IsomorphicStrings {
     public boolean isIsomorphic(String s, String t) {
         if (s == null || t == null || t.length() != s.length()) {
+            return false;
+        }
 
+        Map<Character, Character> tToS = new HashMap<>();
+        Map<Character, Character> sToT = new HashMap<>();      
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+    }
 
 
         //
@@ -114,9 +124,6 @@ public class IsomorphicStrings {
         //     }
         // }
         // return true;
-
-        throw new UnsupportedOperationException("Implement isIsomorphic");
-    }
 
     public static void main(String[] args) {
         IsomorphicStrings s = new IsomorphicStrings();

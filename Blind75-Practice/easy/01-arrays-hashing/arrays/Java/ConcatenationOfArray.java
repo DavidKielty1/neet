@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class ConcatenationOfArray {
 
     public int[] getConcatenation(int[] nums) {
-        //
+
 
         //
 
@@ -72,14 +72,17 @@ public class ConcatenationOfArray {
         //
 
         //
+
+        //
+
 
         // int n = nums.length;
-        // int[] ans = new int[2 * n];
-        // System.arraycopy(nums, 0, ans, 0, n);
-        // System.arraycopy(nums, 0, ans, n, n);
-        // return ans;
-
-        throw new UnsupportedOperationException("Implement getConcatenation");
+        // int[] newArray = new int[n * 2];
+        // for (int i = 0; i < n; i++) {
+        //     newArray[i] = nums[i];
+        //     newArray[i + n] = nums[i];
+        // }
+        // return newArray;
     }
 
     public static void main(String[] args) {

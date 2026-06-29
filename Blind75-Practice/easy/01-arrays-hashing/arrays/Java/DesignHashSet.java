@@ -25,15 +25,20 @@ Time: O(1) per op, Space: O(10^6)
 */
 
 public class DesignHashSet {
-
     static class MyHashSet {
+        boolean[] present = new boolean[1000000];
+
         public void add(int key) {
+            present[key] = true;
         }
 
         public void remove(int key) {
+            present[key] = false;
         }
 
         public boolean contains(int key) {
+            return present[key];
+        }
             //
 
             //

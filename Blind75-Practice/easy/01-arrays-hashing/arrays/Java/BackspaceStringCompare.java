@@ -47,6 +47,7 @@
  */
 
 public class BackspaceStringCompare {
+    public boolean same (String a, String b) {
 
         //
 
@@ -107,26 +108,24 @@ public class BackspaceStringCompare {
         //
 
         //
-
-        // Build stack or two-pointer from end.
-
-        // class Solver {
-        //     String build(String text) {
-        //         StringBuilder sb = new StringBuilder();
-        //         for (char ch : text.toCharArray()) {
-        //             if (ch == "#".charAt(0)) {
-        //                 if (sb.length() > 0) {
-        //                     sb.deleteCharAt(sb.length() - 1);
-        //                 }
-        //             } else {
-        //                 sb.append(ch);
-        //             }
-        //         }
-        //         return sb.toString();
-        //     }
+        
+        //     return build(a).equals(build(b));
         // }
-        // Solver solver = new Solver();
-        // return solver.build(s).equals(solver.build(t));
+
+        // private String build (String s) {
+        //     StringBuilder string = new StringBuilder();
+        //     for (char ch : s.toCharArray()) {
+        //         if (ch == '#') {
+        //             if (string.length() > 0) {
+        //                 string.deleteCharAt(string.length() - 1);
+        //             }
+        //         } else {
+        //             string.append(ch);        
+        //         }
+        //     }
+        //     return string.toString();
+        // }
+
     }
     public static void main(String[] args) {
         BackspaceStringCompare x = new BackspaceStringCompare();
