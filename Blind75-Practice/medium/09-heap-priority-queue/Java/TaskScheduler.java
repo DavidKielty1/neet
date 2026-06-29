@@ -40,9 +40,27 @@
  * - The greedy counting formula is often simpler than simulating every interval.
  * - You can also solve it with a max-heap plus cooldown queue.
  */
+
 public class TaskScheduler {
     static class Solution {
         public int leastInterval(char[] tasks, int n) {
+            int maxCount = 0;
+            int[] counts = new int[26];
+            for (char task : tasks) {
+                counts[task - 'a']++;
+                maxCount = Math.max(maxCount, counts[task - 'a']);
+            }
+
+
+            int numberOfMaxTasks = 0;
+            for (int count : counts) {
+                if (count == maxCount) {
+                    numberOfMaxTasks++;
+                }
+            }
+
+            int frameLength = (maxCount - 1) * (n + 1) + numberOfMaxTasks;
+            return Math.max(tasks.length, frameLength);
             //
             //
             //
