@@ -27,22 +27,8 @@ Explanation: First 'o' would map to 'a', but the second 'o' must map to 'r' — 
 Time: O(n), Space: O(1) — alphabet size is bounded
 */
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class IsomorphicStrings {
     public boolean isIsomorphic(String s, String t) {
-        if (s == null || t == null || t.length() != s.length()) {
-            return false;
-        }
-
-        Map<Character, Character> tToS = new HashMap<>();
-        Map<Character, Character> sToT = new HashMap<>();      
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-
-    }
-
 
         //
 
@@ -104,26 +90,37 @@ public class IsomorphicStrings {
 
         //
 
-        // Map<Character, Character> sToT = new HashMap<>();
+
+        // if (s == null || t == null || t.length() != s.length()) {
+        //     return false;
+        // }
+
         // Map<Character, Character> tToS = new HashMap<>();
+        // Map<Character, Character> sToT = new HashMap<>();  
 
-        // for(int i = 0; i < s.length(); i++) {
+        // for (int i = 0; i < s.length(); i++) {
         //     char cs = s.charAt(i);
-        //     char ct = t.charAt(i);
-
+        //     char ct = t.charAt(i); 
+            
         //     if (sToT.containsKey(cs)) {
-        //         if (!sToT.get(cs).equals(ct)) return false;
+        //         if(sToT.get(cs) != ct) {
+        //             return false;
+        //         }
         //     } else {
         //         sToT.put(cs, ct);
-        //     }
+        //     }            
             
         //     if (tToS.containsKey(ct)) {
-        //         if (!tToS.get(ct).equals(cs)) return false;
+        //         if(tToS.get(ct) != cs) {
+        //             return false;
+        //         }
         //     } else {
         //         tToS.put(ct, cs);
         //     }
         // }
+
         // return true;
+    }
 
     public static void main(String[] args) {
         IsomorphicStrings s = new IsomorphicStrings();

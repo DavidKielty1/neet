@@ -37,6 +37,7 @@
  *   create three in a row.
  * - A max-heap makes the "pick the best remaining letter" logic straightforward.
  */
+
 public class LongestHappyString {
     static class Solution {
         public String longestDiverseString(int a, int b, int c) {
@@ -91,7 +92,7 @@ public class LongestHappyString {
             //
             //
 
-            // java.util.PriorityQueue<int[]> maxHeap = new java.util.PriorityQueue<>(
+            // PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
             //         (x, y) -> Integer.compare(y[1], x[1]));
             // if (a > 0) {
             //     maxHeap.offer(new int[] {'a', a});
