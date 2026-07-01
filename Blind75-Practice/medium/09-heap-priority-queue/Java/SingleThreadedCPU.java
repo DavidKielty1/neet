@@ -37,15 +37,11 @@
  * - 1 <= enqueueTimei, processingTimei <= 10^9
  *
  * Notes:
- * - Sort tasks by enqueue time, then push available work into a min-heap keyed by
- *   processing time and index.
- * - Use `long` for the running clock because total time can exceed `int`.
  */
 public class SingleThreadedCPU {
     static class Solution {
         public int[] getOrder(int[][] tasks) {
-            //
-            //
+            // 
             //
             //
             //
@@ -95,14 +91,20 @@ public class SingleThreadedCPU {
             //
             //
 
+            // initial tasks = [[1,2],[2,4],[3,2],[4,1]]
+
             // int n = tasks.length;
+            
             // int[][] indexed = new int[n][3];
             // for (int i = 0; i < n; i++) {
             //     indexed[i] = new int[] {tasks[i][0], tasks[i][1], i};
             // }
-            // java.util.Arrays.sort(indexed, java.util.Comparator.comparingInt(a -> a[0]));
+            
+            // Arrays.sort(indexed, Comparator.comparingInt(a -> a[0]));
+            // result = [[1,2,0][2,4,1][3,2,2][4,1,3]]
+            
             //
-            // java.util.PriorityQueue<int[]> minHeap = new java.util.PriorityQueue<>(
+            // PriorityQueue<int[]> minHeap = new PriorityQueue<>(
             //         (a, b) -> a[1] == b[1]
             //                 ? Integer.compare(a[2], b[2])
             //                 : Integer.compare(a[1], b[1]));
@@ -111,7 +113,7 @@ public class SingleThreadedCPU {
             // int orderIndex = 0;
             // int taskIndex = 0;
             // long time = 0;
-            //
+
             // while (taskIndex < n || !minHeap.isEmpty()) {
             //     if (minHeap.isEmpty() && time < indexed[taskIndex][0]) {
             //         time = indexed[taskIndex][0];
