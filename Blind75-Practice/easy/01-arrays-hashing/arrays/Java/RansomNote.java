@@ -32,7 +32,18 @@ Time: O(m + n), Space: O(1) — 26 letters
 
 public class RansomNote {
     public boolean canConstruct(String ransomNote, String magazine) {
+        int[] magCount = new int[26];
+        for (char ch : magazine.toCharArray()) {
+            magCount[ch - 'a']++;
+        }
 
+        for (char ch : ransomNote.toCharArray()) {
+            if (--magCount[ch - 'a'] < 0) {
+                return false;
+            }
+        }
+
+        return true;
         //
 
     //
@@ -83,17 +94,18 @@ public class RansomNote {
 
     
 
-        // int[] mag = new int[26];
-        // for (int i = 0; i < magazine.length(); i++) {
-        //     mag[magazine.charAt(i) - 'a']++;
+
+        // int[] magCount = new int[26];
+        // for (char ch : magazine.toCharArray()) {
+        //     magCount[ch - 'a']++;
         // }
-        // for (int i = 0; i < ransomNote.length(); i++) {
-        //     int idx = ransomNote.charAt(i) - 'a';
-        //     mag[idx]--;
-        //     if (mag[idx] < 0) {
+
+        // for (char ch : ransomNote.toCharArray()) {
+        //     if (--magCount[ch - 'a'] < 0) {
         //         return false;
         //     }
         // }
+
         // return true;
     }
 

@@ -8,10 +8,6 @@ Given an integer array nums and an integer target, return the indices of the two
 elements whose values sum to target. Exactly one valid pair exists. You may not use the same
 element twice; return the two indices in any order unless the platform specifies otherwise.
 
-Notes:
-- Complement approach: for each index i, check whether (target - nums[i]) was seen earlier.
-- Hash map: value -> index for elements already visited.
-
 Example 1:
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
@@ -100,7 +96,7 @@ public class TwoSumHashing {
             // seen.put(nums[i], i);
         // }
         // return new int[0];
-    }
+    
 
     public static void main(String[] args) {
         TwoSumHashing s = new TwoSumHashing();

@@ -33,7 +33,6 @@ Explanation: First three rows.
 Time: O(numRows^2), Space: O(numRows^2) for the returned list
 */
 public class PascalsTriangle {
-
     public List<List<Integer>> generate(int numRows) {
         //
 

@@ -84,18 +84,20 @@ public class LengthOfLastWord {
 
     
 
+
         // int i = s.length() - 1;
+
         // while (i >= 0 && s.charAt(i) == ' ') {
         //     i--;
         // }
-        // int len = 0;
-        // while (i >= 0 && s.charAt(i) != ' ') {
-        //     len++;
+        // int end = i;
+
+        // while (i >= 0 && s.charAt(i) != ' '){
         //     i--;
         // }
-        // return len;
 
-        throw new UnsupportedOperationException("Implement lengthOfLastWord");
+        // return end - i;
+
     }
 
     public static void main(String[] args) {

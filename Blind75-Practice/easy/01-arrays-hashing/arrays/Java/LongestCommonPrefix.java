@@ -30,8 +30,10 @@ Explanation: Common prefix is "inters" before strings diverge.
 Time: O(S) where S is the sum of all characters, Space: O(1) excluding the output string
 */
 public class LongestCommonPrefix {
-
     public String longestCommonPrefix(String[] strs) {
+    }
+
+
         //
 
         //
@@ -97,9 +99,6 @@ public class LongestCommonPrefix {
         //     }
         // }
         // return first;
-
-        throw new UnsupportedOperationException("Implement longestCommonPrefix");
-    }
 
     public static void main(String[] args) {
         LongestCommonPrefix s = new LongestCommonPrefix();

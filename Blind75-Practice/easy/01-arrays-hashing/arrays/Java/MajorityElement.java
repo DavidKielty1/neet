@@ -31,32 +31,6 @@ Time: O(n), Space: O(1) with Boyer–Moore (O(n) with a hash map)
 
 public class MajorityElement {
     public Integer getMajorityIntegerBoyerMoore (Integer[] nums) {
-        int candidate = 0;
-        int count = 0;
-
-        for (int vote : nums) {
-            if (count == 0) candidate = vote;
-
-            if (vote == candidate) {
-                count++;
-            } else {
-                count--;
-            }
-        }
-
-        int candidateFreq = 0;
-        for ( int i = 0; i < nums.length; i++) {
-            if (nums[i] == candidate) {
-                candidateFreq++;
-            }
-        }
-
-        if (candidateFreq > nums.length / 2) {
-            return candidate;
-        }
-
-        return null;
-        //
 
         //
 

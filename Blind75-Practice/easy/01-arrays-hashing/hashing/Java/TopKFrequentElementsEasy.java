@@ -19,6 +19,8 @@ Time: O(n), Space: O(n)
 */
 
 public class TopKFrequentElementsEasy {
+    public int TopKFrequentElements (int[] nums) {
+
         //
 
         //
@@ -91,7 +93,7 @@ public class TopKFrequentElementsEasy {
             // }
         // }
         // return best;
-    }
+    
 
     public static void main(String[] args) {
         TopKFrequentElementsEasy sol = new TopKFrequentElementsEasy();

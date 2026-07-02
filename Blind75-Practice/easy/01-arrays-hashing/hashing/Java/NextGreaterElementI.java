@@ -75,10 +75,6 @@ public class NextGreaterElementI {
 
         //
 
-        //
-
-        //
-
         // Map<Integer, Integer> next = new HashMap<>();
         // Deque<Integer> stack = new ArrayDeque<>();
         
