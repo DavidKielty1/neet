@@ -35,8 +35,9 @@
 import java.util.List;
 
 public class Subsets {
-    static class Solution {
-        public List<List<Integer>> subsets(int[] nums) {
+    public List<List<Integer>> subsets(int[] nums) {
+
+    
             //
             //
             //
@@ -103,7 +104,6 @@ public class Subsets {
             //         path.remove(path.size() - 1);
             //     }
             // }
-        }
     }
 
     public static void main(String[] args) {

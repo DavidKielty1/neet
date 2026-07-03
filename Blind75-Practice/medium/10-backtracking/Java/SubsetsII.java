@@ -34,8 +34,12 @@
 import java.util.List;
 
 public class SubsetsII {
-    static class Solution {
-        public List<List<Integer>> subsetsWithDup(int[] nums) {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        
+    }
+    
+
+
             //
             //
             //
@@ -107,8 +111,6 @@ public class SubsetsII {
             //         path.remove(path.size() - 1);
             //     }
             // }
-        }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 90. Subsets II.");

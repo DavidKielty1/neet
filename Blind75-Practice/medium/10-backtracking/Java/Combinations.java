@@ -34,8 +34,9 @@
 import java.util.List;
 
 public class Combinations {
-    static class Solution {
-        public List<List<Integer>> combine(int n, int k) {
+    public List<List<Integer>> combine(int n, int k) {
+
+
             //
             //
             //
@@ -106,8 +107,7 @@ public class Combinations {
             //         path.remove(path.size() - 1);
             //     }
             // }
-        }
-    }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 77. Combinations.");

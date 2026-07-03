@@ -44,87 +44,85 @@
 import java.util.List;
 
 public class LetterCombinationsOfAPhoneNumber {
-    static class Solution {
-        public List<String> letterCombinations(String digits) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // if (digits.isEmpty()) {
-            //     return new ArrayList<>();
-            // }
-            //
-            // String[] map = {
-            //     "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
-            // };
-            // List<String> result = new ArrayList<>();
-            // backtrack(digits, 0, map, new StringBuilder(), result);
-            // return result;
-            //
-            // private void backtrack(
-            //         String digits,
-            //         int index,
-            //         String[] map,
-            //         StringBuilder path,
-            //         List<String> result) {
-            //     if (index == digits.length()) {
-            //         result.add(path.toString());
-            //         return;
-            //     }
-            //
-            //     String letters = map[digits.charAt(index) - '0'];
-            //     for (int i = 0; i < letters.length(); i++) {
-            //         path.append(letters.charAt(i));
-            //         backtrack(digits, index + 1, map, path, result);
-            //         path.deleteCharAt(path.length() - 1);
-            //     }
-            // }
-        }
+    public List<String> letterCombinations(String digits) {
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        // if (digits.isEmpty()) {
+        //     return new ArrayList<>();
+        // }
+        //
+        // String[] map = {
+        //     "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
+        // };
+        // List<String> result = new ArrayList<>();
+        // backtrack(digits, 0, map, new StringBuilder(), result);
+        // return result;
+        //
+        // private void backtrack(
+        //         String digits,
+        //         int index,
+        //         String[] map,
+        //         StringBuilder path,
+        //         List<String> result) {
+        //     if (index == digits.length()) {
+        //         result.add(path.toString());
+        //         return;
+        //     }
+        //
+        //     String letters = map[digits.charAt(index) - '0'];
+        //     for (int i = 0; i < letters.length(); i++) {
+        //         path.append(letters.charAt(i));
+        //         backtrack(digits, index + 1, map, path, result);
+        //         path.deleteCharAt(path.length() - 1);
+        //     }
+        // }
     }
 
     public static void main(String[] args) {

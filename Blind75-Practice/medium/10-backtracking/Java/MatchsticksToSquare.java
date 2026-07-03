@@ -36,94 +36,92 @@
  */
 
 public class MatchsticksToSquare {
-    static class Solution {
-        public boolean makesquare(int[] matchsticks) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // int total = 0;
-            // for (int stick : matchsticks) {
-            //     total += stick;
-            // }
-            // if (total % 4 != 0) {
-            //     return false;
-            // }
-            //
-            // int side = total / 4;
-            // Arrays.sort(matchsticks);
-            // reverse(matchsticks);
-            // return backtrack(matchsticks, 0, new int[4], side);
-            //
-            // private boolean backtrack(int[] matchsticks, int index, int[] sides, int side) {
-            //     if (index == matchsticks.length) {
-            //         return sides[0] == side && sides[1] == side
-            //                 && sides[2] == side && sides[3] == side;
-            //     }
-            //
-            //     for (int i = 0; i < 4; i++) {
-            //         if (sides[i] + matchsticks[index] > side) {
-            //             continue;
-            //         }
-            //         if (i > 0 && sides[i] == sides[i - 1]) {
-            //             continue;
-            //         }
-            //
-            //         sides[i] += matchsticks[index];
-            //         if (backtrack(matchsticks, index + 1, sides, side)) {
-            //             return true;
-            //         }
-            //         sides[i] -= matchsticks[index];
-            //     }
-            //
-            //     return false;
-            // }
-        }
+    public boolean makesquare(int[] matchsticks) {
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        // int total = 0;
+        // for (int stick : matchsticks) {
+        //     total += stick;
+        // }
+        // if (total % 4 != 0) {
+        //     return false;
+        // }
+        //
+        // int side = total / 4;
+        // Arrays.sort(matchsticks);
+        // reverse(matchsticks);
+        // return backtrack(matchsticks, 0, new int[4], side);
+        //
+        // private boolean backtrack(int[] matchsticks, int index, int[] sides, int side) {
+        //     if (index == matchsticks.length) {
+        //         return sides[0] == side && sides[1] == side
+        //                 && sides[2] == side && sides[3] == side;
+        //     }
+        //
+        //     for (int i = 0; i < 4; i++) {
+        //         if (sides[i] + matchsticks[index] > side) {
+        //             continue;
+        //         }
+        //         if (i > 0 && sides[i] == sides[i - 1]) {
+        //             continue;
+        //         }
+        //
+        //         sides[i] += matchsticks[index];
+        //         if (backtrack(matchsticks, index + 1, sides, side)) {
+        //             return true;
+        //         }
+        //         sides[i] -= matchsticks[index];
+        //     }
+        //
+        //     return false;
+        // }
     }
 
     public static void main(String[] args) {
