@@ -44,7 +44,11 @@
 import java.util.List;
 
 public class LetterCombinationsOfAPhoneNumber {
-    public List<String> letterCombinations(String digits) {
+    public List<String> letterCombinations(String digits) {    
+
+    }
+    
+
         //
         //
         //
@@ -123,7 +127,6 @@ public class LetterCombinationsOfAPhoneNumber {
         //         path.deleteCharAt(path.length() - 1);
         //     }
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 17. Letter Combinations of a Phone Number.");

@@ -35,17 +35,7 @@ Space Complexity: O(1)
 import java.util.Arrays;
 
 public class MergeSortedArray {
-
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int mIdx = m - 1, nIdx = n - 1, i = nums1.length - 1;
-
-        while (nIdx > 0) {
-            if (i > 0 && nums2[nIdx] > nums1[mIdx]) {
-                nums1[i--] = nums1[nIdx--];
-            } else {
-                nums1[i--] = nums1[mIdx--];
-            }
-        }
 
         //
 

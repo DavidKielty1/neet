@@ -36,14 +36,15 @@
  */
 
 public class MatchsticksToSquare {
-    public boolean makesquare(int[] matchsticks) {
+    public boolean makesquare(int[] matchsticks) {       
+        // }
         //
         //
         //
         //
-        //
-        //
-        //
+        // get total -> divide by 4
+        // loop start -> sticks.length-1
+        // (? pass in subarray start, end to a sum function)
         //
         //
         //

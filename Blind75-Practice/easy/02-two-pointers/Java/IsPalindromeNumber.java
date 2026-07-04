@@ -33,7 +33,6 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 */
 public class IsPalindromeNumber {
-
     public static boolean isPalindrome(String s) {
 
         
@@ -116,7 +115,6 @@ public class IsPalindromeNumber {
         // }
         // return true;
 
-        throw new UnsupportedOperationException("Implement isPalindrome");
     }
 
     public static void main(String[] args) {

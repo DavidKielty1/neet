@@ -22,7 +22,7 @@
  * Constraints:
  * - 1 <= s.length <= 16
  * - `s` contains only lowercase English letters
- *
+ *       
  * Notes:
  * - Try every possible cut starting from the current index.
  * - Only recurse on a substring if it is a palindrome.
