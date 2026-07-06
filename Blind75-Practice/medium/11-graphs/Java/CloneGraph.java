@@ -45,7 +45,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CloneGraph {
-
     static class Node {
         public int val;
         public List<Node> neighbors;
@@ -64,8 +63,7 @@ public class CloneGraph {
         }
     }
 
-    static class Solution {
-        public Node cloneGraph(Node node) {
+    public Node cloneGraph(Node node) {
             //
             //
             //
@@ -124,6 +122,12 @@ public class CloneGraph {
             // queue.offer(node);
             // clones.put(node, new Node(node.val));
             //
+            // nodes [[2,4],[1,3],[2,4],[1,3]]
+            // map (oldRef: (val=1), newRef (val=1))
+            // queue [(val: 1, neighbours: [2,4]), ]
+            // node
+            // 
+            //
             // while (!queue.isEmpty()) {
             //     Node current = queue.poll();
             //     for (Node neighbor : current.neighbors) {
@@ -136,7 +140,7 @@ public class CloneGraph {
             // }
             //
             // return clones.get(node);
-        }
+        
     }
 
     public static void main(String[] args) {

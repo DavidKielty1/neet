@@ -36,9 +36,9 @@
  */
 
 public class MaxAreaOfIsland {
+    public int maxAreaOfIsland(int[][] grid) {
 
-    static class Solution {
-        public int maxAreaOfIsland(int[][] grid) {
+
             //
             //
             //
@@ -113,8 +113,6 @@ public class MaxAreaOfIsland {
             //             + dfs(grid, r, c + 1)
             //             + dfs(grid, r, c - 1);
             // }
-        }
-    }
 
     public static void main(String[] args) {
         Solution solution = new Solution();

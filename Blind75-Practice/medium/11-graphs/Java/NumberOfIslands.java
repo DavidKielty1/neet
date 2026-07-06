@@ -42,7 +42,6 @@
  */
 
 public class NumberOfIslands {
-
     static class Solution {
         public int numIslands(char[][] grid) {
             //
@@ -125,8 +124,6 @@ public class NumberOfIslands {
             //     dfs(grid, r, c + 1);
             //     dfs(grid, r, c - 1);
             // }
-        }
-    }
 
     public static void main(String[] args) {
         Solution solution = new Solution();

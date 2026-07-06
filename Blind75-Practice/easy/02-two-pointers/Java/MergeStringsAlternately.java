@@ -30,7 +30,6 @@ Space Complexity: O(n + m)
 */
 
 public class MergeStringsAlternately {
-
     public String mergeAlternately(String word1, String word2) {
 
 
