@@ -7,10 +7,10 @@
  * Given a reference of a node in a connected undirected graph, return a deep
  * copy (clone) of the graph.
  *
- * Each node contains an integer value and a list of its neighbors:
+ * Each node contains an integer value and a list of its neighbours:
  * class Node {
  *     public int val;
- *     public List<Node> neighbors;
+ *     public List<Node> neighbours;
  * }
  *
  * The graph is represented in the test cases as an adjacency list. The given
@@ -38,7 +38,7 @@
  *
  * Notes:
  * - Use a map from original node to cloned node.
- * - DFS and BFS both work as long as neighbors are linked through the map.
+ * - DFS and BFS both work as long as neighbours are linked through the map.
  */
 
 import java.util.ArrayList;
@@ -47,7 +47,7 @@ import java.util.List;
 public class CloneGraph {
     static class Node {
         public int val;
-        public List<Node> neighbors;
+        public List<Node> neighbours;
 
         public Node() {
             this(0, new ArrayList<>());
@@ -57,9 +57,9 @@ public class CloneGraph {
             this(val, new ArrayList<>());
         }
 
-        public Node(int val, List<Node> neighbors) {
+        public Node(int val, List<Node> neighbours) {
             this.val = val;
-            this.neighbors = neighbors;
+            this.neighbours = neighbours;
         }
     }
 
@@ -122,20 +122,14 @@ public class CloneGraph {
             // queue.offer(node);
             // clones.put(node, new Node(node.val));
             //
-            // nodes [[2,4],[1,3],[2,4],[1,3]]
-            // map (oldRef: (val=1), newRef (val=1))
-            // queue [(val: 1, neighbours: [2,4]), ]
-            // node
-            // 
-            //
             // while (!queue.isEmpty()) {
             //     Node current = queue.poll();
-            //     for (Node neighbor : current.neighbors) {
-            //         if (!clones.containsKey(neighbor)) {
-            //             clones.put(neighbor, new Node(neighbor.val));
-            //             queue.offer(neighbor);
+            //     for (Node neighbour : current.neighbours) {
+            //         if (!clones.containsKey(neighbour)) {
+            //             clones.put(neighbour, new Node(neighbour.val));
+            //             queue.offer(neighbour);
             //         }
-            //         clones.get(current).neighbors.add(clones.get(neighbor));
+            //         clones.get(current).neighbours.add(clones.get(neighbour));
             //     }
             // }
             //
@@ -146,8 +140,8 @@ public class CloneGraph {
     public static void main(String[] args) {
         Node one = new Node(1);
         Node two = new Node(2);
-        one.neighbors.add(two);
-        two.neighbors.add(one);
+        one.neighbours.add(two);
+        two.neighbours.add(one);
 
         System.out.println("Practice stub ready. Implement cloneGraph and verify deep copy.");
     }
