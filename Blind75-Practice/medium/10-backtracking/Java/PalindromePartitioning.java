@@ -85,9 +85,7 @@ public class PalindromePartitioning {
         // List<List<String>> result = new ArrayList<>();
         // backtrack(s, 0, new ArrayList<>(), result);
         // return result;
-        //
-        // private void backtrack(
-        //         String s,
+    
         //         int start,
         //         List<String> path,
         //         List<List<String>> result) {

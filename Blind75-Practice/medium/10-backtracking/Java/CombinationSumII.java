@@ -13,7 +13,7 @@
  * Note: The solution set must not contain duplicate combinations.
  *
  * Example 1:
- * Input: candidates = [10,1,2,7,6,1,5], target = 8
+ * Input: candidates = [1,1,2,5,6,6,7,10], target = 8
  * Output: [[1,1,6],[1,2,5],[1,7],[2,6]]
  *
  * Example 2:
@@ -39,7 +39,6 @@ import java.util.List;
 
 public class CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-
         //
         //
         //
