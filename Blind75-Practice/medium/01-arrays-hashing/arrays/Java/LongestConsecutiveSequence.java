@@ -24,8 +24,30 @@
  * - -1000000000 <= nums[i] <= 1000000000
  */
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LongestConsecutiveSequence {
     public int longestConsecutive(int[] nums) {
+        Set<Integer> values = new HashSet<>();
+        for (int num : nums) {
+            values.add(num);
+        }
+
+        int longest = 0;
+        for (int num : values) {
+            if (!values.contains(num - 1)) {
+                int curr = num;
+                int length = 0;
+                while (values.contains(curr + 1)) {
+                    curr++;
+                    length++;
+                }
+                longest = Math.max(longest, length);
+            }
+        }
+
+        return longest;
         //
         //
         //

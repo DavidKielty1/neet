@@ -70,8 +70,6 @@ public class GroupAnagrams {
         //
         //
         //
-        //
-        //
         // Count letters for each word and use that count signature as the key.
         //
         // Map<String, List<String>> groups = new HashMap<>();
