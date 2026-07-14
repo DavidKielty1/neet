@@ -27,6 +27,10 @@
 
 public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
+        // 1,2,3,4]
+        // 0 1 2 6
+        // x x x 6
+
         //
         //
         //
