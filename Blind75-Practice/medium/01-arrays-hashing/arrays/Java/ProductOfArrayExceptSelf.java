@@ -27,10 +27,6 @@
 
 public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
-        // 1,2,3,4]
-        // 0 1 2 6
-        // x x x 6
-
         //
         //
         //
@@ -90,9 +86,6 @@ public class ProductOfArrayExceptSelf {
         // }
 
         // int suffix = 1;
-        // [[1][2][3][4]]
-        // suffix = 24
-        // [[24][12][8][6]]
         // for (int i = n - 1; i >= 0; i--) {
         //     result[i] *= suffix;
         //     suffix *= nums[i];

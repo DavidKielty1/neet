@@ -31,7 +31,7 @@
  * - At most 10000 calls will be made to sumRegion
  */
 public class RangeSumQuery2DImmutable {
-    private int[][] prefix;
+    int[][] prefix;
 
     public RangeSumQuery2DImmutable(int[][] matrix) {
         //
@@ -96,13 +96,12 @@ public class RangeSumQuery2DImmutable {
         //                 - prefix[r - 1][c - 1];
         //     }
         // }
-    }
 
-    public int sumRegion(int row1, int col1, int row2, int col2) {
-        return prefix[row2 + 1][row1 + 1]
-            - prefix[row2 + 1][col1]
-            - prefix[row1][row1 + 1]
-            + prefix[row1][col1];
+        // public int sumRegion(int row1, int col1, int row2, int col2) {
+            // return prefix[row2 + 1][col2 + 1]
+            // - prefix[row1][col2 + 1]
+            // - prefix[row2 + 1][col1]
+            // + prefix[row1][col1];
         //
         //
         //
@@ -152,16 +151,6 @@ public class RangeSumQuery2DImmutable {
         //
         //
         //
-        // Use inclusion-exclusion on the prefix table.
-        //
-        // int r1 = row1 + 1;
-        // int c1 = col1 + 1;
-        // int r2 = row2 + 1;
-        // int c2 = col2 + 1;
-        // return prefix[r2][c2]
-        //         - prefix[r1 - 1][c2]
-        //         - prefix[r2][c1 - 1]
-        //         + prefix[r1 - 1][c1 - 1];
     }
 
     public static void main(String[] args) {
