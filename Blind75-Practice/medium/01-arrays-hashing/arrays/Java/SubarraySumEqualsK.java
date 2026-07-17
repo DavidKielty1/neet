@@ -42,99 +42,72 @@
  *
  * Time: O(n), Space: O(n)
  */
-import java.util.HashMap;
-import java.util.Map;
 
 public class SubarraySumEqualsK {
+    public int subarraySum(int[] nums, int k) {
+        //
 
-    static class Solution {
-        public int subarraySum(int[] nums, int k) {
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        //
 
-            //
+        // int ans = 0;
+        // int prefix = 0;
+        // Map<Integer, Integer> count = new HashMap<>();
 
-            // from collections import defaultdict
-            // count = defaultdict(int)
-            // count[0] = 1
-            // total = 0
-            // ans = 0
-            // for x in nums:
-            //     total += x
-            //     ans += count[total - k]
-            //     count[total] += 1
-            // return ans
-
-            int ans = 0;
-            int prefix = 0;
-            Map<Integer, Integer> count = new HashMap<>();
-            count.put(0, 1);
-            for (int x : nums) {
-                prefix += x;
-                ans += count.getOrDefault(prefix - k, 0);
-                count.merge(prefix, 1, Integer::sum);
-            }
-            return ans;
-        }
-    }
-
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        assert (sol.subarraySum(new int[] {1, 1, 1}, 2) == 2);
-        System.out.println("✓ Test case 1 passed");
-        assert (sol.subarraySum(new int[] {1, 2, 3}, 3) == 2);
-        System.out.println("✓ Test case 2 passed");
-        assert (sol.subarraySum(new int[] {3, 4, 7, 2, -3, 1, 4, 2}, 7) == 4);
-        System.out.println("✓ Test case 3 passed");
-        assert (sol.subarraySum(new int[] {1}, 0) == 0);
-        System.out.println("✓ Test case 4 passed");
-        System.out.println("\nAll test cases passed!");
+        // count.put(0, 1);
+        // for (int x : nums) {
+        //     prefix += x;
+        //     ans += count.getOrDefault(prefix - k, 0);
+        //     count.merge(prefix, 1, Integer::sum);
+        // }
+        // return ans;
+        
     }
 }
