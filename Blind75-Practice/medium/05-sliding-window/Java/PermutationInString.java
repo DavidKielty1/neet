@@ -28,6 +28,41 @@
 
 public class PermutationInString {
     public boolean checkInclusion(String s1, String s2) {
+        int[] need = new int[26];
+        int required = 0;
+        for (char ch : s1.toCharArray()) {
+            int idx = ch - 'a';
+            if (need[idx]++ == 0) {
+                required++;
+            }
+        }
+
+        int[] window = new int[26];
+        int matched = 0;
+        int left = 0;
+
+        for (int right = 0; right < s2.length(); right++) {
+            int r = s2.charAt(right) - 'a';
+            window[r]++;
+            if (need[r] > 0 && window[r] == need[r]) {
+                matched++;
+            }
+
+            if (right - left + 1 > s1.length()) {
+                int l = s2.charAt(left) - 'a';
+                if (need[l] > 0 && window[l] == need[l]) {
+                    matched--;
+                }
+                window[l]--;
+                left++;
+            }
+
+            if (required == matched) {
+                return true;
+            }
+        }
+
+        return false;
     //
     //
     //
