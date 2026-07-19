@@ -44,87 +44,83 @@ import java.util.function.*;
 
 
 public class SearchInsertPositionSimilar1 {
+    public String nextGreatestLetter(List<String> letters, String target) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String nextGreatestLetter(List<String> letters, String target) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // left, right = (0, len(letters) - 1)
+    // while left <= right:
+    // mid = left + (right - left) // 2
+    // if letters[mid] <= target:
+    // left = mid + 1
+    // else:
+    // right = mid - 1
+    // return letters[left % len(letters)]
 
-            //
-
-            //
-
-            // left, right = (0, len(letters) - 1)
-            // while left <= right:
-            // mid = left + (right - left) // 2
-            // if letters[mid] <= target:
-            // left = mid + 1
-            // else:
-            // right = mid - 1
-            // return letters[left % len(letters)]
-
-            throw new UnsupportedOperationException("Implement nextGreatestLetter");
-        }
-
+        throw new UnsupportedOperationException("Implement nextGreatestLetter");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SearchInsertPositionSimilar1 sol = new SearchInsertPositionSimilar1();
         assert (sol.nextGreatestLetter(java.util.List.of("c", "f", "j"), "a") == "c");
         System.out.println("✓ Test case 1 passed");
         assert (sol.nextGreatestLetter(java.util.List.of("c", "f", "j"), "c") == "f");

@@ -37,99 +37,99 @@ public class FindInMountainArray {
         int length();
     }
 
-    static class Solution {
-        public int findInMountainArray(int target, MountainArray mountainArr) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
 
-            // int n = mountainArr.length();
-            // int left = 0;
-            // int right = n - 1;
-            // while (left < right) {
-            //     int mid = left + (right - left) / 2;
-            //     if (mountainArr.get(mid) < mountainArr.get(mid + 1)) {
-            //         left = mid + 1;
-            //     } else {
-            //         right = mid;
-            //     }
-            // }
-            //
-            // int peak = left;
-            // int ascending = binarySearch(target, mountainArr, 0, peak, true);
-            // if (ascending != -1) {
-            //     return ascending;
-            // }
-            // return binarySearch(target, mountainArr, peak + 1, n - 1, false);
-            throw new UnsupportedOperationException("Implement findInMountainArray");
-        }
+    public int findInMountainArray(int target, MountainArray mountainArr) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-        @SuppressWarnings("unused")
-        private int binarySearch(
-                int target, MountainArray mountainArr, int left, int right, boolean ascending) {
-            // while (left <= right) {
-            //     int mid = left + (right - left) / 2;
-            //     int value = mountainArr.get(mid);
-            //     if (value == target) {
-            //         return mid;
-            //     }
-            //     if ((value < target) == ascending) {
-            //         left = mid + 1;
-            //     } else {
-            //         right = mid - 1;
-            //     }
-            // }
-            // return -1;
-            throw new UnsupportedOperationException("Implement binarySearch");
-        }
+    // int n = mountainArr.length();
+    // int left = 0;
+    // int right = n - 1;
+    // while (left < right) {
+    //     int mid = left + (right - left) / 2;
+    //     if (mountainArr.get(mid) < mountainArr.get(mid + 1)) {
+    //         left = mid + 1;
+    //     } else {
+    //         right = mid;
+    //     }
+    // }
+    //
+    // int peak = left;
+    // int ascending = binarySearch(target, mountainArr, 0, peak, true);
+    // if (ascending != -1) {
+    //     return ascending;
+    // }
+    // return binarySearch(target, mountainArr, peak + 1, n - 1, false);
+        throw new UnsupportedOperationException("Implement findInMountainArray");
     }
+
+    @SuppressWarnings("unused")
+    private int binarySearch(
+            int target, MountainArray mountainArr, int left, int right, boolean ascending) {
+    // while (left <= right) {
+    //     int mid = left + (right - left) / 2;
+    //     int value = mountainArr.get(mid);
+    //     if (value == target) {
+    //         return mid;
+    //     }
+    //     if ((value < target) == ascending) {
+    //         left = mid + 1;
+    //     } else {
+    //         right = mid - 1;
+    //     }
+    // }
+    // return -1;
+        throw new UnsupportedOperationException("Implement binarySearch");
+    }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement findInMountainArray and add checks.");

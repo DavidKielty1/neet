@@ -43,86 +43,82 @@ import java.util.function.*;
 
 
 public class PascalsTriangleSimilar3 {
+    public List<List<Integer>> construct2DArray(List<Integer> original, int m, int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<List<Integer>> construct2DArray(List<Integer> original, int m, int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if len(original) != m * n:
+    // return []
+    // result = []
+    // for i in range(m):
+    // row = original[i * n:(i + 1) * n]
+    // result.append(row)
+    // return result
 
-            //
-
-            //
-
-            // if len(original) != m * n:
-            // return []
-            // result = []
-            // for i in range(m):
-            // row = original[i * n:(i + 1) * n]
-            // result.append(row)
-            // return result
-
-            throw new UnsupportedOperationException("Implement construct2DArray");
-        }
-
+        throw new UnsupportedOperationException("Implement construct2DArray");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PascalsTriangleSimilar3 sol = new PascalsTriangleSimilar3();
         assert java.util.Objects.equals(sol.construct2DArray(java.util.List.of(1, 2, 3, 4), 2, 2), java.util.List.of(java.util.List.of(1, 2), java.util.List.of(3, 4)));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.construct2DArray(java.util.List.of(1, 2, 3), 1, 3), java.util.List.of(java.util.List.of(1, 2, 3)));

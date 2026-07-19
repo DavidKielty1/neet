@@ -52,7 +52,6 @@ import java.util.function.*;
 
 
 public class MiddleOfLinkedListSimilar3 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -69,103 +68,103 @@ public class MiddleOfLinkedListSimilar3 {
         }
     }
 
-    static class Solution {
-        public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-            //
 
-            //
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not headA or not headB:
-            // return None
-            // pA, pB = (headA, headB)
-            // while pA != pB:
-            // pA = pA.next if pA else headB
-            // pB = pB.next if pB else headA
-            // return pA
+    //
 
-            throw new UnsupportedOperationException("Implement getIntersectionNode");
-        }
+    // if not headA or not headB:
+    // return None
+    // pA, pB = (headA, headB)
+    // while pA != pB:
+    // pA = pA.next if pA else headB
+    // pB = pB.next if pB else headA
+    // return pA
 
+        throw new UnsupportedOperationException("Implement getIntersectionNode");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // common = ListNode(8);
-        // common.next = ListNode(4)
-        // common.next.next = ListNode(5)
-        // headA = ListNode(4);
-        // headA.next = ListNode(1)
-        // headA.next.next = common
-        // headB = ListNode(5);
-        // headB.next = ListNode(6)
-        // headB.next.next = ListNode(1)
-        // headB.next.next.next = common
-        // result = sol.getIntersectionNode(headA, headB);
-        // assert result == common  // needs locals (port helpers): ['common', 'result']
+        MiddleOfLinkedListSimilar3 sol = new MiddleOfLinkedListSimilar3();
+    // common = ListNode(8);
+    // common.next = ListNode(4)
+    // common.next.next = ListNode(5)
+    // headA = ListNode(4);
+    // headA.next = ListNode(1)
+    // headA.next.next = common
+    // headB = ListNode(5);
+    // headB.next = ListNode(6)
+    // headB.next.next = ListNode(1)
+    // headB.next.next.next = common
+    // result = sol.getIntersectionNode(headA, headB);
+    // assert result == common  // needs locals (port helpers): ['common', 'result']
         System.out.println("✓ Test case 1 passed");
-        // headC = ListNode(2);
-        // headC.next = ListNode(6)
-        // headC.next.next = ListNode(4)
-        // headD = ListNode(1);
-        // headD.next = ListNode(5)
-        // result2 = sol.getIntersectionNode(headC, headD);
-        // assert result2 is None  // needs locals (port helpers): ['result2']
+    // headC = ListNode(2);
+    // headC.next = ListNode(6)
+    // headC.next.next = ListNode(4)
+    // headD = ListNode(1);
+    // headD.next = ListNode(5)
+    // result2 = sol.getIntersectionNode(headC, headD);
+    // assert result2 is None  // needs locals (port helpers): ['result2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

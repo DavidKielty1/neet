@@ -39,86 +39,82 @@ import java.util.function.*;
 
 
 public class LengthOfLastWordSimilar1 {
+    public String mostCommonWord(String paragraph, List<String> banned) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String mostCommonWord(String paragraph, List<String> banned) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // words = re.findall('\\w+', paragraph.lower())
+    // banned_set = set(banned)
+    // word_count = Counter(words)
+    // for word, count in word_count.most_common():
+    // if word not in banned_set:
+    // return word
+    // return ''
 
-            //
-
-            //
-
-            // words = re.findall('\\w+', paragraph.lower())
-            // banned_set = set(banned)
-            // word_count = Counter(words)
-            // for word, count in word_count.most_common():
-            // if word not in banned_set:
-            // return word
-            // return ''
-
-            throw new UnsupportedOperationException("Implement mostCommonWord");
-        }
-
+        throw new UnsupportedOperationException("Implement mostCommonWord");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LengthOfLastWordSimilar1 sol = new LengthOfLastWordSimilar1();
         assert (sol.mostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.", java.util.List.of("hit")) == "ball");
         System.out.println("✓ Test case 1 passed");
         assert (sol.mostCommonWord("a.", java.util.List.of()) == "a");

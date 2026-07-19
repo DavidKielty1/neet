@@ -40,7 +40,6 @@ import java.util.function.*;
 
 
 public class RangeSumBstSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -59,93 +58,93 @@ public class RangeSumBstSimilar2 {
         }
     }
 
-    static class Solution {
-        public List<Integer> findMode(TreeNode root) {
-            //
 
-            //
+    public List<Integer> findMode(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // count = Counter()
-            // def dfs(node):
-            // if not node:
-            // return
-            // count[node.val] += 1
-            // dfs(node.left)
-            // dfs(node.right)
-            // dfs(root)
-            // max_count = max(count.values())
-            // return [val for val, cnt in count.items() if cnt == max_count]
+    //
 
-            throw new UnsupportedOperationException("Implement findMode");
-        }
+    // count = Counter()
+    // def dfs(node):
+    // if not node:
+    // return
+    // count[node.val] += 1
+    // dfs(node.left)
+    // dfs(node.right)
+    // dfs(root)
+    // max_count = max(count.values())
+    // return [val for val, cnt in count.items() if cnt == max_count]
 
+        throw new UnsupportedOperationException("Implement findMode");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root1 = TreeNode(1);
-        // root1.right = TreeNode(2)
-        // root1.right.left = TreeNode(2)
-        // assert solution.findMode(root1) == [2]  // needs locals (port helpers): ['root1']
+        RangeSumBstSimilar2 sol = new RangeSumBstSimilar2();
+    // root1 = TreeNode(1);
+    // root1.right = TreeNode(2)
+    // root1.right.left = TreeNode(2)
+    // assert solution.findMode(root1) == [2]  // needs locals (port helpers): ['root1']
         System.out.println("✓ Test case 1 passed");
-        // root2 = TreeNode(0);
-        // assert solution.findMode(root2) == [0]  // needs locals (port helpers): ['root2']
+    // root2 = TreeNode(0);
+    // assert solution.findMode(root2) == [0]  // needs locals (port helpers): ['root2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

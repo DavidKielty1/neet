@@ -28,95 +28,91 @@ import java.util.function.*;
 
 
 public class ValidAnagramSimilar1 {
+    public List<Integer> findAnagrams(String s, String p) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> findAnagrams(String s, String p) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if len(p) > len(s):
+    // return []
+    // result = []
+    // p_count = Counter(p)
+    // window_count = Counter(s[:len(p)])
+    // if window_count == p_count:
+    // result.append(0)
+    // for i in range(len(p), len(s)):
+    // window_count[s[i]] += 1
+    // old_char = s[i - len(p)]
+    // window_count[old_char] -= 1
+    // if window_count[old_char] == 0:
+    // del window_count[old_char]
+    // if window_count == p_count:
+    // result.append(i - len(p) + 1)
+    // return result
 
-            //
-
-            //
-
-            // if len(p) > len(s):
-            // return []
-            // result = []
-            // p_count = Counter(p)
-            // window_count = Counter(s[:len(p)])
-            // if window_count == p_count:
-            // result.append(0)
-            // for i in range(len(p), len(s)):
-            // window_count[s[i]] += 1
-            // old_char = s[i - len(p)]
-            // window_count[old_char] -= 1
-            // if window_count[old_char] == 0:
-            // del window_count[old_char]
-            // if window_count == p_count:
-            // result.append(i - len(p) + 1)
-            // return result
-
-            throw new UnsupportedOperationException("Implement findAnagrams");
-        }
-
+        throw new UnsupportedOperationException("Implement findAnagrams");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidAnagramSimilar1 sol = new ValidAnagramSimilar1();
         assert java.util.Objects.equals(sol.findAnagrams("cbaebabacd", "abc"), java.util.List.of(0, 6));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.findAnagrams("abab", "ab"), java.util.List.of(0, 1, 2));

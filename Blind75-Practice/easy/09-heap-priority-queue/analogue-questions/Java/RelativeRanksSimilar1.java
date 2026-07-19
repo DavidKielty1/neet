@@ -38,81 +38,77 @@ import java.util.function.*;
 
 
 public class RelativeRanksSimilar1 {
+    public List<Integer> frequencySort(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> frequencySort(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // count = Counter(nums)
+    // return sorted(nums, key=lambda x: (count[x], -x))
 
-            //
-
-            //
-
-            // count = Counter(nums)
-            // return sorted(nums, key=lambda x: (count[x], -x))
-
-            throw new UnsupportedOperationException("Implement frequencySort");
-        }
-
+        throw new UnsupportedOperationException("Implement frequencySort");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        RelativeRanksSimilar1 sol = new RelativeRanksSimilar1();
         assert java.util.Objects.equals(sol.frequencySort(java.util.List.of(1, 1, 2, 2, 2, 3)), java.util.List.of(3, 1, 1, 2, 2, 2));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.frequencySort(java.util.List.of(2, 3, 1, 3, 2)), java.util.List.of(1, 3, 3, 2, 2));

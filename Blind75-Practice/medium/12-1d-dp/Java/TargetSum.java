@@ -32,87 +32,86 @@
  */
 
 public class TargetSum {
-    static class Solution {
-        public int findTargetSumWays(int[] nums, int target) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int findTargetSumWays(int[] nums, int target) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int total = 0;
-            // for (int n : nums) {
-            //     total += n;
-            // }
-            // if ((total + target) % 2 != 0 || total < Math.abs(target)) {
-            //     return 0;
-            // }
-            // int subsetTarget = (total + target) / 2;
-            // int[] dp = new int[subsetTarget + 1];
-            // dp[0] = 1;
-            // for (int n : nums) {
-            //     for (int s = subsetTarget; s >= n; s--) {
-            //         dp[s] += dp[s - n];
-            //     }
-            // }
-            // return dp[subsetTarget];
-        }
+    // int total = 0;
+    // for (int n : nums) {
+    //     total += n;
+    // }
+    // if ((total + target) % 2 != 0 || total < Math.abs(target)) {
+    //     return 0;
+    // }
+    // int subsetTarget = (total + target) / 2;
+    // int[] dp = new int[subsetTarget + 1];
+    // dp[0] = 1;
+    // for (int n : nums) {
+    //     for (int s = subsetTarget; s >= n; s--) {
+    //         dp[s] += dp[s - n];
+    //     }
+    // }
+    // return dp[subsetTarget];
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TargetSum sol = new TargetSum();
         assert sol.findTargetSumWays(new int[] {1, 1}, 0) == 2;
         assert sol.findTargetSumWays(new int[] {1}, 1) == 1;
         System.out.println("All test cases passed!");

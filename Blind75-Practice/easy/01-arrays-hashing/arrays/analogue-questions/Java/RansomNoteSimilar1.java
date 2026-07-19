@@ -40,96 +40,92 @@ import java.util.function.*;
 
 
 public class RansomNoteSimilar1 {
+    public boolean wordPattern(String pattern, String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean wordPattern(String pattern, String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // words = s.split()
+    // if len(pattern) != len(words):
+    // return False
+    // char_to_word = {}
+    // word_to_char = {}
+    // for char, word in zip(pattern, words):
+    // if char in char_to_word:
+    // if char_to_word[char] != word:
+    // return False
+    // else:
+    // char_to_word[char] = word
+    // if word in word_to_char:
+    // if word_to_char[word] != char:
+    // return False
+    // else:
+    // word_to_char[word] = char
+    // return True
 
-            //
-
-            //
-
-            // words = s.split()
-            // if len(pattern) != len(words):
-            // return False
-            // char_to_word = {}
-            // word_to_char = {}
-            // for char, word in zip(pattern, words):
-            // if char in char_to_word:
-            // if char_to_word[char] != word:
-            // return False
-            // else:
-            // char_to_word[char] = word
-            // if word in word_to_char:
-            // if word_to_char[word] != char:
-            // return False
-            // else:
-            // word_to_char[word] = char
-            // return True
-
-            throw new UnsupportedOperationException("Implement wordPattern");
-        }
-
+        throw new UnsupportedOperationException("Implement wordPattern");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        RansomNoteSimilar1 sol = new RansomNoteSimilar1();
         assert (sol.wordPattern("abba", "dog cat cat dog") == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.wordPattern("abba", "dog cat cat fish") == false);

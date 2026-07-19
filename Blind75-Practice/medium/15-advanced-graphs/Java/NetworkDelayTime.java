@@ -37,90 +37,89 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class NetworkDelayTime {
-    static class Solution {
-        public int networkDelayTime(int[][] times, int n, int k) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int networkDelayTime(int[][] times, int n, int k) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // List<int[]>[] graph = new ArrayList[n + 1];
-            // for (int i = 1; i <= n; i++) {
-            //     graph[i] = new ArrayList<>();
-            // }
-            // for (int[] time : times) {
-            //     graph[time[0]].add(new int[] {time[1], time[2]});
-            // }
-            // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[1] - b[1]);
-            // minHeap.offer(new int[] {k, 0});
-            // boolean[] visited = new boolean[n + 1];
-            // int maxTime = 0;
-            // int seen = 0;
-            // while (!minHeap.isEmpty()) {
-            //     int[] current = minHeap.poll();
-            //     int node = current[0];
-            //     int time = current[1];
-            //     if (visited[node]) {
-            //         continue;
-            //     }
-            //     visited[node] = true;
-            //     seen++;
-            //     maxTime = time;
-            //     for (int[] edge : graph[node]) {
-            //         if (!visited[edge[0]]) {
-            //             minHeap.offer(new int[] {edge[0], time + edge[1]});
-            //         }
-            //     }
-            // }
-            // return seen == n ? maxTime : -1;
-        }
+    // List<int[]>[] graph = new ArrayList[n + 1];
+    // for (int i = 1; i <= n; i++) {
+    //     graph[i] = new ArrayList<>();
+    // }
+    // for (int[] time : times) {
+    //     graph[time[0]].add(new int[] {time[1], time[2]});
+    // }
+    // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+    // minHeap.offer(new int[] {k, 0});
+    // boolean[] visited = new boolean[n + 1];
+    // int maxTime = 0;
+    // int seen = 0;
+    // while (!minHeap.isEmpty()) {
+    //     int[] current = minHeap.poll();
+    //     int node = current[0];
+    //     int time = current[1];
+    //     if (visited[node]) {
+    //         continue;
+    //     }
+    //     visited[node] = true;
+    //     seen++;
+    //     maxTime = time;
+    //     for (int[] edge : graph[node]) {
+    //         if (!visited[edge[0]]) {
+    //             minHeap.offer(new int[] {edge[0], time + edge[1]});
+    //         }
+    //     }
+    // }
+    // return seen == n ? maxTime : -1;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement networkDelayTime and add checks.");

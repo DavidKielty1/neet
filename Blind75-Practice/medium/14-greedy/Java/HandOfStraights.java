@@ -30,83 +30,82 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class HandOfStraights {
-    static class Solution {
-        public boolean isNStraightHand(int[] hand, int groupSize) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public boolean isNStraightHand(int[] hand, int groupSize) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // if (hand.length % groupSize != 0) {
-            //     return false;
-            // }
-            // TreeMap<Integer, Integer> count = new TreeMap<>();
-            // for (int card : hand) {
-            //     count.put(card, count.getOrDefault(card, 0) + 1);
-            // }
-            // while (!count.isEmpty()) {
-            //     int start = count.firstKey();
-            //     for (int card = start; card < start + groupSize; card++) {
-            //         Integer current = count.get(card);
-            //         if (current == null) {
-            //             return false;
-            //         }
-            //         if (current == 1) {
-            //             count.remove(card);
-            //         } else {
-            //             count.put(card, current - 1);
-            //         }
-            //     }
-            // }
-            // return true;
-        }
+    // if (hand.length % groupSize != 0) {
+    //     return false;
+    // }
+    // TreeMap<Integer, Integer> count = new TreeMap<>();
+    // for (int card : hand) {
+    //     count.put(card, count.getOrDefault(card, 0) + 1);
+    // }
+    // while (!count.isEmpty()) {
+    //     int start = count.firstKey();
+    //     for (int card = start; card < start + groupSize; card++) {
+    //         Integer current = count.get(card);
+    //         if (current == null) {
+    //             return false;
+    //         }
+    //         if (current == 1) {
+    //             count.remove(card);
+    //         } else {
+    //             count.put(card, current - 1);
+    //         }
+    //     }
+    // }
+    // return true;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement isNStraightHand and add checks.");

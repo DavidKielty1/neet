@@ -32,7 +32,6 @@ import java.util.function.*;
 
 
 public class ReverseLinkedListSimilar3 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -49,98 +48,98 @@ public class ReverseLinkedListSimilar3 {
         }
     }
 
-    static class Solution {
-        public ListNode swapPairs(ListNode head) {
-            //
 
-            //
+    public ListNode swapPairs(ListNode head) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // dummy = ListNode(0)
-            // dummy.next = head
-            // prev = dummy
-            // while prev.next and prev.next.next:
-            // first = prev.next
-            // second = prev.next.next
-            // first.next = second.next
-            // second.next = first
-            // prev.next = second
-            // prev = first
-            // return dummy.next
+    //
 
-            throw new UnsupportedOperationException("Implement swapPairs");
-        }
+    // dummy = ListNode(0)
+    // dummy.next = head
+    // prev = dummy
+    // while prev.next and prev.next.next:
+    // first = prev.next
+    // second = prev.next.next
+    // first.next = second.next
+    // second.next = first
+    // prev.next = second
+    // prev = first
+    // return dummy.next
 
+        throw new UnsupportedOperationException("Implement swapPairs");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head = create_list(java.util.List.of(1,2,3,4));
-        // swapped = sol.swapPairs(head);
-        // assert list_to_array(swapped) == [2, 1, 4, 3]  // needs locals (port helpers): ['list_to_array', 'swapped']
+        ReverseLinkedListSimilar3 sol = new ReverseLinkedListSimilar3();
+    // head = create_list(java.util.List.of(1,2,3,4));
+    // swapped = sol.swapPairs(head);
+    // assert list_to_array(swapped) == [2, 1, 4, 3]  // needs locals (port helpers): ['list_to_array', 'swapped']
         System.out.println("✓ Test case 1 passed");
-        // head = create_list([]);
-        // swapped = sol.swapPairs(head);
-        // assert list_to_array(swapped) == []  // needs locals (port helpers): ['list_to_array', 'swapped']
+    // head = create_list([]);
+    // swapped = sol.swapPairs(head);
+    // assert list_to_array(swapped) == []  // needs locals (port helpers): ['list_to_array', 'swapped']
         System.out.println("✓ Test case 2 passed");
-        // head = create_list(java.util.List.of(1));
-        // swapped = sol.swapPairs(head);
-        // assert list_to_array(swapped) == [1]  // needs locals (port helpers): ['list_to_array', 'swapped']
+    // head = create_list(java.util.List.of(1));
+    // swapped = sol.swapPairs(head);
+    // assert list_to_array(swapped) == [1]  // needs locals (port helpers): ['list_to_array', 'swapped']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

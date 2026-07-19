@@ -43,88 +43,84 @@ import java.util.function.*;
 
 
 public class AddBinarySimilar3 {
+    public List<Integer> addToArrayForm(List<Integer> num, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> addToArrayForm(List<Integer> num, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = []
+    // i = len(num) - 1
+    // while i >= 0 or k > 0:
+    // if i >= 0:
+    // k += num[i]
+    // i -= 1
+    // result.append(k % 10)
+    // k //= 10
+    // return result[::-1]
 
-            //
-
-            //
-
-            // result = []
-            // i = len(num) - 1
-            // while i >= 0 or k > 0:
-            // if i >= 0:
-            // k += num[i]
-            // i -= 1
-            // result.append(k % 10)
-            // k //= 10
-            // return result[::-1]
-
-            throw new UnsupportedOperationException("Implement addToArrayForm");
-        }
-
+        throw new UnsupportedOperationException("Implement addToArrayForm");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        AddBinarySimilar3 sol = new AddBinarySimilar3();
         assert java.util.Objects.equals(sol.addToArrayForm(java.util.List.of(1, 2, 0, 0), 34), java.util.List.of(1, 2, 3, 4));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.addToArrayForm(java.util.List.of(2, 7, 4), 181), java.util.List.of(4, 5, 5));

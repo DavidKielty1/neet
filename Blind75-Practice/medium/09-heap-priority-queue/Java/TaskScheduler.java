@@ -42,94 +42,93 @@
  */
 
 public class TaskScheduler {
-    static class Solution {
-        public int leastInterval(char[] tasks, int n) {
-            int maxCount = 0;
-            int[] counts = new int[26];
-            for (char task : tasks) {
-                counts[task - 'a']++;
-                maxCount = Math.max(maxCount, counts[task - 'a']);
-            }
-
-
-            int numberOfMaxTasks = 0;
-            for (int count : counts) {
-                if (count == maxCount) {
-                    numberOfMaxTasks++;
-                }
-            }
-
-            int frameLength = (maxCount - 1) * (n + 1) + numberOfMaxTasks;
-            return Math.max(tasks.length, frameLength);
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-
-            // int[] counts = new int[26];
-            // int maxCount = 0;
-            // for (char task : tasks) {
-            //     counts[task - 'A']++;
-            //     maxCount = Math.max(maxCount, counts[task - 'A']);
-            // }
-            //
-            // int numberOfMaxTasks = 0;
-            // for (int count : counts) {
-            //     if (count == maxCount) {
-            //         numberOfMaxTasks++;
-            //     }
-            // }
-            //
-            // int frameLength = (maxCount - 1) * (n + 1) + numberOfMaxTasks;
-            // return Math.max(tasks.length, frameLength);
+    public int leastInterval(char[] tasks, int n) {
+        int maxCount = 0;
+        int[] counts = new int[26];
+        for (char task : tasks) {
+            counts[task - 'a']++;
+            maxCount = Math.max(maxCount, counts[task - 'a']);
         }
+
+
+        int numberOfMaxTasks = 0;
+        for (int count : counts) {
+            if (count == maxCount) {
+                numberOfMaxTasks++;
+            }
+        }
+
+        int frameLength = (maxCount - 1) * (n + 1) + numberOfMaxTasks;
+        return Math.max(tasks.length, frameLength);
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
+    // int[] counts = new int[26];
+    // int maxCount = 0;
+    // for (char task : tasks) {
+    //     counts[task - 'A']++;
+    //     maxCount = Math.max(maxCount, counts[task - 'A']);
+    // }
+    //
+    // int numberOfMaxTasks = 0;
+    // for (int count : counts) {
+    //     if (count == maxCount) {
+    //         numberOfMaxTasks++;
+    //     }
+    // }
+    //
+    // int frameLength = (maxCount - 1) * (n + 1) + numberOfMaxTasks;
+    // return Math.max(tasks.length, frameLength);
     }
+    
 
     public static void main(String[] args) {
         System.out.println("TaskScheduler practice stub ready.");

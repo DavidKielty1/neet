@@ -37,99 +37,98 @@
  */
 
 public class DecodeString {
-    static class Solution {
-        public String decodeString(String s) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public String decodeString(String s) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            //
-            //  resCurrent = aaabcbc
-            //  3 [ a ] 2 [ b c ]
-            // count      = 0
-            // countStack = ()
-            // current    = (a,a,a,b,c,b,c) -> 'aaabcbc'
-            // stringStack= ()
-            // repeat     = 2
-            // previous   = (a,a,a,b,c,b,c)
-            
-            // Deque<Integer> countStack = new ArrayDeque<>();
-            // Deque<StringBuilder> stringStack = new ArrayDeque<>();
-            // StringBuilder current = new StringBuilder();
-            // int count = 0;
-            
-            // for (char ch : s.toCharArray()) {
-            //     if (Character.isDigit(ch)) {
-            //         count = count * 10 + (ch - '0');
-            //     } else if (ch == '[') {
-            //         countStack.push(count);
-            //         stringStack.push(current);
-            //         count = 0;
-            //         current = new StringBuilder();
-            //     } else if (ch == ']') {
-            //         int repeat = countStack.pop();
-            //         StringBuilder previous = stringStack.pop();
-            //         for (int i = 0; i < repeat; i++) {
-            //             previous.append(current);
-            //         }
-            //         current =  previous;
-            //     } else {
-            //         current.append(ch);
-            //     }
-            // }
-            // return current.toString();
-        }
+    //
+    //  resCurrent = aaabcbc
+    //  3 [ a ] 2 [ b c ]
+    // count      = 0
+    // countStack = ()
+    // current    = (a,a,a,b,c,b,c) -> 'aaabcbc'
+    // stringStack= ()
+    // repeat     = 2
+    // previous   = (a,a,a,b,c,b,c)
+        
+    // Deque<Integer> countStack = new ArrayDeque<>();
+    // Deque<StringBuilder> stringStack = new ArrayDeque<>();
+    // StringBuilder current = new StringBuilder();
+    // int count = 0;
+        
+    // for (char ch : s.toCharArray()) {
+    //     if (Character.isDigit(ch)) {
+    //         count = count * 10 + (ch - '0');
+    //     } else if (ch == '[') {
+    //         countStack.push(count);
+    //         stringStack.push(current);
+    //         count = 0;
+    //         current = new StringBuilder();
+    //     } else if (ch == ']') {
+    //         int repeat = countStack.pop();
+    //         StringBuilder previous = stringStack.pop();
+    //         for (int i = 0; i < repeat; i++) {
+    //             previous.append(current);
+    //         }
+    //         current =  previous;
+    //     } else {
+    //         current.append(ch);
+    //     }
+    // }
+    // return current.toString();
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        DecodeString sol = new DecodeString();
         assert sol.decodeString("3[a]2[bc]").equals("aaabcbc");
         assert sol.decodeString("3[a2[c]]").equals("accaccacc");
         assert sol.decodeString("2[abc]3[cd]ef").equals("abcabccdcdcdef");

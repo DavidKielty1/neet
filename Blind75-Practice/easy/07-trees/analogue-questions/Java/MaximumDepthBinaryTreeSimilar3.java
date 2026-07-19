@@ -34,7 +34,6 @@ import java.util.function.*;
 
 
 public class MaximumDepthBinaryTreeSimilar3 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -53,90 +52,90 @@ public class MaximumDepthBinaryTreeSimilar3 {
         }
     }
 
-    static class Solution {
-        public boolean hasPathSum(TreeNode root, int targetSum) {
-            //
 
-            //
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not root:
-            // return False
-            // if not root.left and (not root.right):
-            // return root.val == targetSum
-            // new_target = targetSum - root.val
-            // return self.hasPathSum(root.left, new_target) or self.hasPathSum(root.right, new_target)
+    //
 
-            throw new UnsupportedOperationException("Implement hasPathSum");
-        }
+    // if not root:
+    // return False
+    // if not root.left and (not root.right):
+    // return root.val == targetSum
+    // new_target = targetSum - root.val
+    // return self.hasPathSum(root.left, new_target) or self.hasPathSum(root.right, new_target)
 
+        throw new UnsupportedOperationException("Implement hasPathSum");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree([5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1]);
-        // assert solution.hasPathSum(root, 22) == True  // needs locals (port helpers): ['root']
+        MaximumDepthBinaryTreeSimilar3 sol = new MaximumDepthBinaryTreeSimilar3();
+    // root = create_tree([5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1]);
+    // assert solution.hasPathSum(root, 22) == True  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree(java.util.List.of(1,2,3));
-        // assert solution.hasPathSum(root, 5) == False  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(1,2,3));
+    // assert solution.hasPathSum(root, 5) == False  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
-        // root = create_tree([]);
-        // assert solution.hasPathSum(root, 0) == False  // needs locals (port helpers): ['root']
+    // root = create_tree([]);
+    // assert solution.hasPathSum(root, 0) == False  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

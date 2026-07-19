@@ -34,92 +34,88 @@ import java.util.function.*;
 
 
 public class MaximumSubarraySimilar2 {
+    public int maxProduct(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maxProduct(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not nums:
+    // return 0
+    // max_product = nums[0]
+    // max_ending = nums[0]
+    // min_ending = nums[0]
+    // for i in range(1, len(nums)):
+    // num = nums[i]
+    // if num < 0:
+    // max_ending, min_ending = (min_ending, max_ending)
+    // max_ending = max(num, max_ending * num)
+    // min_ending = min(num, min_ending * num)
+    // max_product = max(max_product, max_ending)
+    // return max_product
 
-            //
-
-            //
-
-            // if not nums:
-            // return 0
-            // max_product = nums[0]
-            // max_ending = nums[0]
-            // min_ending = nums[0]
-            // for i in range(1, len(nums)):
-            // num = nums[i]
-            // if num < 0:
-            // max_ending, min_ending = (min_ending, max_ending)
-            // max_ending = max(num, max_ending * num)
-            // min_ending = min(num, min_ending * num)
-            // max_product = max(max_product, max_ending)
-            // return max_product
-
-            throw new UnsupportedOperationException("Implement maxProduct");
-        }
-
+        throw new UnsupportedOperationException("Implement maxProduct");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MaximumSubarraySimilar2 sol = new MaximumSubarraySimilar2();
         assert (sol.maxProduct(java.util.List.of(2, 3, -2, 4)) == 6);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maxProduct(java.util.List.of(-2, 0, -1)) == 0);

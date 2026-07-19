@@ -39,86 +39,82 @@ import java.util.function.*;
 
 
 public class BackspaceStringCompareSimilar1 {
+    public String removeDuplicates(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String removeDuplicates(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // stack = []
+    // for char in s:
+    // if stack and stack[-1] == char:
+    // stack.pop()
+    // else:
+    // stack.append(char)
+    // return ''.join(stack)
 
-            //
-
-            //
-
-            // stack = []
-            // for char in s:
-            // if stack and stack[-1] == char:
-            // stack.pop()
-            // else:
-            // stack.append(char)
-            // return ''.join(stack)
-
-            throw new UnsupportedOperationException("Implement removeDuplicates");
-        }
-
+        throw new UnsupportedOperationException("Implement removeDuplicates");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BackspaceStringCompareSimilar1 sol = new BackspaceStringCompareSimilar1();
         assert (sol.removeDuplicates("abbaca") == "ca");
         System.out.println("✓ Test case 1 passed");
         assert (sol.removeDuplicates("azxxzy") == "ay");

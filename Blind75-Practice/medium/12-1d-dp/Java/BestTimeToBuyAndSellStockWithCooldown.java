@@ -31,80 +31,79 @@
  */
 
 public class BestTimeToBuyAndSellStockWithCooldown {
-    static class Solution {
-        public int maxProfit(int[] prices) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int maxProfit(int[] prices) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int sold = 0;
-            // int hold = Integer.MIN_VALUE;
-            // int rest = 0;
-            // for (int price : prices) {
-            //     int prevSold = sold;
-            //     sold = hold + price;
-            //     hold = Math.max(hold, rest - price);
-            //     rest = Math.max(rest, prevSold);
-            // }
-            // return Math.max(sold, rest);
-        }
+    // int sold = 0;
+    // int hold = Integer.MIN_VALUE;
+    // int rest = 0;
+    // for (int price : prices) {
+    //     int prevSold = sold;
+    //     sold = hold + price;
+    //     hold = Math.max(hold, rest - price);
+    //     rest = Math.max(rest, prevSold);
+    // }
+    // return Math.max(sold, rest);
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BestTimeToBuyAndSellStockWithCooldown sol = new BestTimeToBuyAndSellStockWithCooldown();
         assert sol.maxProfit(new int[] {1, 2, 3, 0, 2}) == 3;
         assert sol.maxProfit(new int[] {1}) == 0;
         System.out.println("All test cases passed!");

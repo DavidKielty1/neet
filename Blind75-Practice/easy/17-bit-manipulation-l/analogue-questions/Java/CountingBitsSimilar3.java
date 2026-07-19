@@ -34,91 +34,87 @@ import java.util.function.*;
 
 
 public class CountingBitsSimilar3 {
+    public int countPrimeSetBits(int left, int right) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int countPrimeSetBits(int left, int right) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // primes = {2, 3, 5, 7, 11, 13, 17, 19}
+    // def count_bits(n):
+    // count = 0
+    // while n:
+    // count += n & 1
+    // n >>= 1
+    // return count
+    // result = 0
+    // for num in range(left, right + 1):
+    // if count_bits(num) in primes:
+    // result += 1
+    // return result
 
-            //
-
-            //
-
-            // primes = {2, 3, 5, 7, 11, 13, 17, 19}
-            // def count_bits(n):
-            // count = 0
-            // while n:
-            // count += n & 1
-            // n >>= 1
-            // return count
-            // result = 0
-            // for num in range(left, right + 1):
-            // if count_bits(num) in primes:
-            // result += 1
-            // return result
-
-            throw new UnsupportedOperationException("Implement countPrimeSetBits");
-        }
-
+        throw new UnsupportedOperationException("Implement countPrimeSetBits");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        CountingBitsSimilar3 sol = new CountingBitsSimilar3();
         assert (sol.countPrimeSetBits(6, 10) == 4);
         System.out.println("✓ Test case 1 passed");
         assert (sol.countPrimeSetBits(10, 15) == 5);

@@ -32,86 +32,82 @@ import java.util.function.*;
 
 
 public class HappyNumberSimilar2 {
+    public int addDigits(int num) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int addDigits(int num) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // while num >= 10:
+    // digit_sum = 0
+    // while num > 0:
+    // digit_sum += num % 10
+    // num //= 10
+    // num = digit_sum
+    // return num
 
-            //
-
-            //
-
-            // while num >= 10:
-            // digit_sum = 0
-            // while num > 0:
-            // digit_sum += num % 10
-            // num //= 10
-            // num = digit_sum
-            // return num
-
-            throw new UnsupportedOperationException("Implement addDigits");
-        }
-
+        throw new UnsupportedOperationException("Implement addDigits");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        HappyNumberSimilar2 sol = new HappyNumberSimilar2();
         assert (sol.addDigits(38) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.addDigits(0) == 0);

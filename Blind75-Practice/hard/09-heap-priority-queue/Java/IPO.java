@@ -32,84 +32,83 @@
  * - 0 <= capital[i] <= 10^9
  */
 public class IPO {
-    static class Solution {
-        public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int n = profits.length;
-            // int[][] projects = new int[n][2];
-            // for (int i = 0; i < n; i++) {
-            //     projects[i][0] = capital[i];
-            //     projects[i][1] = profits[i];
-            // }
-            // Arrays.sort(projects, Comparator.comparingInt(project -> project[0]));
-            //
-            // PriorityQueue<Integer> affordableProfits =
-            //         new PriorityQueue<>(Collections.reverseOrder());
-            // int index = 0;
-            // for (int picked = 0; picked < k; picked++) {
-            //     while (index < n && projects[index][0] <= w) {
-            //         affordableProfits.offer(projects[index][1]);
-            //         index++;
-            //     }
-            //     if (affordableProfits.isEmpty()) {
-            //         break;
-            //     }
-            //     w += affordableProfits.poll();
-            // }
-            // return w;
-            throw new UnsupportedOperationException("Implement findMaximizedCapital");
-        }
+    // int n = profits.length;
+    // int[][] projects = new int[n][2];
+    // for (int i = 0; i < n; i++) {
+    //     projects[i][0] = capital[i];
+    //     projects[i][1] = profits[i];
+    // }
+    // Arrays.sort(projects, Comparator.comparingInt(project -> project[0]));
+    //
+    // PriorityQueue<Integer> affordableProfits =
+    //         new PriorityQueue<>(Collections.reverseOrder());
+    // int index = 0;
+    // for (int picked = 0; picked < k; picked++) {
+    //     while (index < n && projects[index][0] <= w) {
+    //         affordableProfits.offer(projects[index][1]);
+    //         index++;
+    //     }
+    //     if (affordableProfits.isEmpty()) {
+    //         break;
+    //     }
+    //     w += affordableProfits.poll();
+    // }
+    // return w;
+        throw new UnsupportedOperationException("Implement findMaximizedCapital");
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement findMaximizedCapital and add checks.");

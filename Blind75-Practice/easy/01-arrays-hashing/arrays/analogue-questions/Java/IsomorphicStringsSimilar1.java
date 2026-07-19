@@ -39,89 +39,85 @@ import java.util.function.*;
 
 
 public class IsomorphicStringsSimilar1 {
+    public boolean areSimilar(String s1, String s2) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean areSimilar(String s1, String s2) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // diff = []
+    // for i in range(len(s1)):
+    // if s1[i] != s2[i]:
+    // diff.append(i)
+    // if len(diff) == 0:
+    // return True
+    // if len(diff) == 2:
+    // i, j = diff
+    // return s1[i] == s2[j] and s1[j] == s2[i]
+    // return False
 
-            //
-
-            //
-
-            // diff = []
-            // for i in range(len(s1)):
-            // if s1[i] != s2[i]:
-            // diff.append(i)
-            // if len(diff) == 0:
-            // return True
-            // if len(diff) == 2:
-            // i, j = diff
-            // return s1[i] == s2[j] and s1[j] == s2[i]
-            // return False
-
-            throw new UnsupportedOperationException("Implement areSimilar");
-        }
-
+        throw new UnsupportedOperationException("Implement areSimilar");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        IsomorphicStringsSimilar1 sol = new IsomorphicStringsSimilar1();
         assert (sol.areSimilar("bank", "kanb") == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.areSimilar("attack", "defend") == false);

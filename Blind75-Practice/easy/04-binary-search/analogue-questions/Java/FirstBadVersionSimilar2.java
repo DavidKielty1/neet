@@ -36,92 +36,88 @@ import java.util.function.*;
 
 
 public class FirstBadVersionSimilar2 {
+    public int mySqrt(int x) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int mySqrt(int x) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if x < 2:
+    // return x
+    // left, right = (1, x // 2)
+    // while left <= right:
+    // mid = left + (right - left) // 2
+    // square = mid * mid
+    // if square == x:
+    // return mid
+    // elif square < x:
+    // left = mid + 1
+    // else:
+    // right = mid - 1
+    // return right
 
-            //
-
-            //
-
-            // if x < 2:
-            // return x
-            // left, right = (1, x // 2)
-            // while left <= right:
-            // mid = left + (right - left) // 2
-            // square = mid * mid
-            // if square == x:
-            // return mid
-            // elif square < x:
-            // left = mid + 1
-            // else:
-            // right = mid - 1
-            // return right
-
-            throw new UnsupportedOperationException("Implement mySqrt");
-        }
-
+        throw new UnsupportedOperationException("Implement mySqrt");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        FirstBadVersionSimilar2 sol = new FirstBadVersionSimilar2();
         assert (sol.mySqrt(4) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.mySqrt(8) == 2);

@@ -47,82 +47,78 @@ import java.util.function.*;
 
 
 public class RelativeRanksSimilar2 {
+    public List<Integer> maxSubsequence(List<Integer> nums, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> maxSubsequence(List<Integer> nums, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // indices = sorted(range(len(nums)), key=lambda i: nums[i], reverse=True)
+    // selected_indices = sorted(indices[:k])
+    // return [nums[i] for i in selected_indices]
 
-            //
-
-            //
-
-            // indices = sorted(range(len(nums)), key=lambda i: nums[i], reverse=True)
-            // selected_indices = sorted(indices[:k])
-            // return [nums[i] for i in selected_indices]
-
-            throw new UnsupportedOperationException("Implement maxSubsequence");
-        }
-
+        throw new UnsupportedOperationException("Implement maxSubsequence");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        RelativeRanksSimilar2 sol = new RelativeRanksSimilar2();
         assert java.util.Objects.equals(sol.maxSubsequence(java.util.List.of(2, 1, 3, 3), 2), java.util.List.of(3, 3));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.maxSubsequence(java.util.List.of(-1, -2, 3, 4), 3), java.util.List.of(-1, 3, 4));

@@ -41,38 +41,36 @@
 import java.util.ArrayDeque;
 
 public class BaseballGameSimilar2 {
+    public int calculateQuizScore(String[] operations) {
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
+        for ( String op : operations) {
+            switch (op) {
+                case "H":
+                // plus last /2
+                    stack.addLast(Math.floorDiv(stack.peekLast(), 2));
+                    break;
+                case "C":
+                // remove last
 
-    static class Solution {
-        public int calculateQuizScore(String[] operations) {
-            ArrayDeque<Integer> stack = new ArrayDeque<>();
-            for ( String op : operations) {
-                switch (op) {
-                    case "H":
-                        // plus last /2
-                        stack.addLast(Math.floorDiv(stack.peekLast(), 2));
-                        break;
-                    case "C":
-                        // remove last
+                    break;
+                case "D":
+                // double 
 
-                        break;
-                    case "D":
-                        // double 
+                    break;
+                case "+":
+                // add last 2
 
-                        break;
-                    case "+":
-                        // add last 2
+                    break;
+                default: Integer.parseInt(op);
 
-                        break;
-                    default: Integer.parseInt(op);
-
-                }
             }
-            // out of for loop
         }
+    // out of for loop
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BaseballGameSimilar2 sol = new BaseballGameSimilar2();
         assert (sol.calculateQuizScore(
                 new String[] {"8", "H", "D", "+", "C", "3"}) == 23);
         System.out.println("✓ Test case 1 passed");

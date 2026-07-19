@@ -31,92 +31,90 @@
  */
 
 public class NumberOfConnectedComponentsInAnUndirectedGraph {
-
-    static class Solution {
-        public int countComponents(int n, int[][] edges) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // List<List<Integer>> graph = new ArrayList<>();
-            // for (int i = 0; i < n; i++) {
-            //     graph.add(new ArrayList<>());
-            // }
-            // for (int[] edge : edges) {
-            //     graph.get(edge[0]).add(edge[1]);
-            //     graph.get(edge[1]).add(edge[0]);
-            // }
-            //
-            // boolean[] visited = new boolean[n];
-            // int components = 0;
-            // for (int node = 0; node < n; node++) {
-            //     if (!visited[node]) {
-            //         components++;
-            //         dfs(graph, visited, node);
-            //     }
-            // }
-            //
-            // return components;
-            //
-            // private void dfs(List<List<Integer>> graph, boolean[] visited, int node) {
-            //     if (visited[node]) {
-            //         return;
-            //     }
-            //     visited[node] = true;
-            //     for (int next : graph.get(node)) {
-            //         dfs(graph, visited, next);
-            //     }
-            // }
-        }
+    public int countComponents(int n, int[][] edges) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // List<List<Integer>> graph = new ArrayList<>();
+    // for (int i = 0; i < n; i++) {
+    //     graph.add(new ArrayList<>());
+    // }
+    // for (int[] edge : edges) {
+    //     graph.get(edge[0]).add(edge[1]);
+    //     graph.get(edge[1]).add(edge[0]);
+    // }
+    //
+    // boolean[] visited = new boolean[n];
+    // int components = 0;
+    // for (int node = 0; node < n; node++) {
+    //     if (!visited[node]) {
+    //         components++;
+    //         dfs(graph, visited, node);
+    //     }
+    // }
+    //
+    // return components;
+    //
+    // private void dfs(List<List<Integer>> graph, boolean[] visited, int node) {
+    //     if (visited[node]) {
+    //         return;
+    //     }
+    //     visited[node] = true;
+    //     for (int next : graph.get(node)) {
+    //         dfs(graph, visited, next);
+    //     }
+    // }
     }
+    
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        NumberOfConnectedComponentsInAnUndirectedGraph solution = new NumberOfConnectedComponentsInAnUndirectedGraph();
         assert solution.countComponents(5, new int[][] {{0, 1}, {1, 2}, {3, 4}}) == 2;
         assert solution.countComponents(5, new int[][] {{0, 1}, {1, 2}, {2, 3}, {3, 4}}) == 1;
         System.out.println("All test cases passed!");

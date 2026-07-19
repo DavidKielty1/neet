@@ -30,91 +30,87 @@ import java.util.function.*;
 
 
 public class BestTimeBuySellSimilar2 {
+    public int maxProfit(List<Integer> prices) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maxProfit(List<Integer> prices) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if len(prices) <= 1:
+    // return 0
+    // hold = -prices[0]
+    // sold = 0
+    // rest = 0
+    // for price in prices[1:]:
+    // prev_sold = sold
+    // prev_hold = hold
+    // sold = prev_hold + price
+    // hold = max(prev_hold, rest - price)
+    // rest = max(rest, prev_sold)
+    // return max(sold, rest)
 
-            //
-
-            //
-
-            // if len(prices) <= 1:
-            // return 0
-            // hold = -prices[0]
-            // sold = 0
-            // rest = 0
-            // for price in prices[1:]:
-            // prev_sold = sold
-            // prev_hold = hold
-            // sold = prev_hold + price
-            // hold = max(prev_hold, rest - price)
-            // rest = max(rest, prev_sold)
-            // return max(sold, rest)
-
-            throw new UnsupportedOperationException("Implement maxProfit");
-        }
-
+        throw new UnsupportedOperationException("Implement maxProfit");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BestTimeBuySellSimilar2 sol = new BestTimeBuySellSimilar2();
         assert (sol.maxProfit(java.util.List.of(1, 2, 3, 0, 2)) == 3);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maxProfit(java.util.List.of(1)) == 0);

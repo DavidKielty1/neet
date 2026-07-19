@@ -28,7 +28,6 @@ import java.util.function.*;
 
 
 public class MergeTwoSortedListsSimilar3 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -45,92 +44,92 @@ public class MergeTwoSortedListsSimilar3 {
         }
     }
 
-    static class Solution {
-        public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-            //
 
-            //
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not headA or not headB:
-            // return None
-            // pointerA = headA
-            // pointerB = headB
-            // while pointerA != pointerB:
-            // pointerA = pointerA.next if pointerA else headB
-            // pointerB = pointerB.next if pointerB else headA
-            // return pointerA
+    //
 
-            throw new UnsupportedOperationException("Implement getIntersectionNode");
-        }
+    // if not headA or not headB:
+    // return None
+    // pointerA = headA
+    // pointerB = headB
+    // while pointerA != pointerB:
+    // pointerA = pointerA.next if pointerA else headB
+    // pointerB = pointerB.next if pointerB else headA
+    // return pointerA
 
+        throw new UnsupportedOperationException("Implement getIntersectionNode");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // headA, headB, intersection = create_intersection([4, 1, 8, 4, 5], [5, 6, 1, 8, 4, 5], 2, 3)
-        // result = sol.getIntersectionNode(headA, headB);
-        // assert result == intersection  // needs locals (port helpers): ['intersection', 'result']
+        MergeTwoSortedListsSimilar3 sol = new MergeTwoSortedListsSimilar3();
+    // headA, headB, intersection = create_intersection([4, 1, 8, 4, 5], [5, 6, 1, 8, 4, 5], 2, 3)
+    // result = sol.getIntersectionNode(headA, headB);
+    // assert result == intersection  // needs locals (port helpers): ['intersection', 'result']
         System.out.println("✓ Test case 1 passed");
-        // listA = create_list(java.util.List.of(2,6,4));
-        // listB = create_list(java.util.List.of(1,5));
-        // result = sol.getIntersectionNode(listA, listB);
-        // assert result is None  // needs locals (port helpers): ['result']
+    // listA = create_list(java.util.List.of(2,6,4));
+    // listB = create_list(java.util.List.of(1,5));
+    // result = sol.getIntersectionNode(listA, listB);
+    // assert result is None  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

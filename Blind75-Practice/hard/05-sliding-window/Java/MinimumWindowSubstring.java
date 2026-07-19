@@ -31,97 +31,96 @@
  * - s and t consist of uppercase and lowercase English letters
  */
 public class MinimumWindowSubstring {
-    static class Solution {
-        public String minWindow(String s, String t) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public String minWindow(String s, String t) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int[] need = new int[128];
-            // for (char c : t.toCharArray()) {
-            //     need[c]++;
-            // }
-            //
-            // int missing = t.length();
-            // int left = 0;
-            // int bestStart = 0;
-            // int bestLength = Integer.MAX_VALUE;
-            //
-            // for (int right = 0; right < s.length(); right++) {
-            //     char added = s.charAt(right);
-            //     if (need[added] > 0) {
-            //         missing--;
-            //     }
-            //     need[added]--;
-            //
-            //     while (missing == 0) {
-            //         int currentLength = right - left + 1;
-            //         if (currentLength < bestLength) {
-            //             bestLength = currentLength;
-            //             bestStart = left;
-            //         }
-            //
-            //         char removed = s.charAt(left++);
-            //         need[removed]++;
-            //         if (need[removed] > 0) {
-            //             missing++;
-            //         }
-            //     }
-            // }
-            //
-            // return bestLength == Integer.MAX_VALUE
-            //         ? ""
-            //         : s.substring(bestStart, bestStart + bestLength);
-            throw new UnsupportedOperationException("Implement minWindow");
-        }
+    // int[] need = new int[128];
+    // for (char c : t.toCharArray()) {
+    //     need[c]++;
+    // }
+    //
+    // int missing = t.length();
+    // int left = 0;
+    // int bestStart = 0;
+    // int bestLength = Integer.MAX_VALUE;
+    //
+    // for (int right = 0; right < s.length(); right++) {
+    //     char added = s.charAt(right);
+    //     if (need[added] > 0) {
+    //         missing--;
+    //     }
+    //     need[added]--;
+    //
+    //     while (missing == 0) {
+    //         int currentLength = right - left + 1;
+    //         if (currentLength < bestLength) {
+    //             bestLength = currentLength;
+    //             bestStart = left;
+    //         }
+    //
+    //         char removed = s.charAt(left++);
+    //         need[removed]++;
+    //         if (need[removed] > 0) {
+    //             missing++;
+    //         }
+    //     }
+    // }
+    //
+    // return bestLength == Integer.MAX_VALUE
+    //         ? ""
+    //         : s.substring(bestStart, bestStart + bestLength);
+        throw new UnsupportedOperationException("Implement minWindow");
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement minWindow and add checks.");

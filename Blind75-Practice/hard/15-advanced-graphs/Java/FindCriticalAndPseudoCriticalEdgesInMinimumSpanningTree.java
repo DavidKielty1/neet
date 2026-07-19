@@ -32,101 +32,100 @@
  * - All pairs (ai, bi) are distinct
  */
 public class FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree {
-    static class Solution {
-        public java.util.List<java.util.List<Integer>> findCriticalAndPseudoCriticalEdges(
-                int n, int[][] edges) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public java.util.List<java.util.List<Integer>> findCriticalAndPseudoCriticalEdges(
+            int n, int[][] edges) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int m = edges.length;
-            // int[][] indexed = new int[m][4];
-            // for (int i = 0; i < m; i++) {
-            //     indexed[i] = new int[] {edges[i][0], edges[i][1], edges[i][2], i};
-            // }
-            // Arrays.sort(indexed, Comparator.comparingInt(edge -> edge[2]));
-            //
-            // int baseWeight = kruskal(n, indexed, -1, -1);
-            // List<Integer> critical = new ArrayList<>();
-            // List<Integer> pseudoCritical = new ArrayList<>();
-            //
-            // for (int i = 0; i < m; i++) {
-            //     if (kruskal(n, indexed, i, -1) > baseWeight) {
-            //         critical.add(indexed[i][3]);
-            //     } else if (kruskal(n, indexed, -1, i) == baseWeight) {
-            //         pseudoCritical.add(indexed[i][3]);
-            //     }
-            // }
-            //
-            // return Arrays.asList(critical, pseudoCritical);
-            throw new UnsupportedOperationException("Implement findCriticalAndPseudoCriticalEdges");
-        }
-
-        // private int kruskal(int n, int[][] edges, int skip, int force) {
-        //     UnionFind uf = new UnionFind(n);
-        //     int weight = 0;
-        //     if (force != -1) {
-        //         uf.union(edges[force][0], edges[force][1]);
-        //         weight += edges[force][2];
-        //     }
-        //     for (int i = 0; i < edges.length; i++) {
-        //         if (i == skip) {
-        //             continue;
-        //         }
-        //         if (uf.union(edges[i][0], edges[i][1])) {
-        //             weight += edges[i][2];
-        //         }
-        //     }
-        //     return uf.components == 1 ? weight : Integer.MAX_VALUE;
-        // }
+    // int m = edges.length;
+    // int[][] indexed = new int[m][4];
+    // for (int i = 0; i < m; i++) {
+    //     indexed[i] = new int[] {edges[i][0], edges[i][1], edges[i][2], i};
+    // }
+    // Arrays.sort(indexed, Comparator.comparingInt(edge -> edge[2]));
+    //
+    // int baseWeight = kruskal(n, indexed, -1, -1);
+    // List<Integer> critical = new ArrayList<>();
+    // List<Integer> pseudoCritical = new ArrayList<>();
+    //
+    // for (int i = 0; i < m; i++) {
+    //     if (kruskal(n, indexed, i, -1) > baseWeight) {
+    //         critical.add(indexed[i][3]);
+    //     } else if (kruskal(n, indexed, -1, i) == baseWeight) {
+    //         pseudoCritical.add(indexed[i][3]);
+    //     }
+    // }
+    //
+    // return Arrays.asList(critical, pseudoCritical);
+        throw new UnsupportedOperationException("Implement findCriticalAndPseudoCriticalEdges");
     }
+
+    // private int kruskal(int n, int[][] edges, int skip, int force) {
+    //     UnionFind uf = new UnionFind(n);
+    //     int weight = 0;
+    //     if (force != -1) {
+    //         uf.union(edges[force][0], edges[force][1]);
+    //         weight += edges[force][2];
+    //     }
+    //     for (int i = 0; i < edges.length; i++) {
+    //         if (i == skip) {
+    //             continue;
+    //         }
+    //         if (uf.union(edges[i][0], edges[i][1])) {
+    //             weight += edges[i][2];
+    //         }
+    //     }
+    //     return uf.components == 1 ? weight : Integer.MAX_VALUE;
+    // }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement MST classification and add checks.");

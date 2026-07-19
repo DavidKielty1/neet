@@ -35,84 +35,84 @@ public class BinarySearchSimilar1 {
 
 
 
-    static class Solution {
-        public int firstBadVersion(int n) {
-            //
 
-            //
+    public int firstBadVersion(int n) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // left, right = (1, n)
-            // while left < right:
-            // mid = left + (right - left) // 2
-            // if isBadVersion(mid):
-            // right = mid
-            // else:
-            // left = mid + 1
-            // return left
+    //
 
-            throw new UnsupportedOperationException("Implement firstBadVersion");
-        }
+    // left, right = (1, n)
+    // while left < right:
+    // mid = left + (right - left) // 2
+    // if isBadVersion(mid):
+    // right = mid
+    // else:
+    // left = mid + 1
+    // return left
 
+        throw new UnsupportedOperationException("Implement firstBadVersion");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BinarySearchSimilar1 sol = new BinarySearchSimilar1();
         BinarySearchSimilar1.BAD_VERSION = 4;
         assert (sol.firstBadVersion(5) == 4);
         System.out.println("✓ Test case 1 passed");

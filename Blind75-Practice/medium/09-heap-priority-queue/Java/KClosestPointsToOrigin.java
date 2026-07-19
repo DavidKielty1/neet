@@ -37,82 +37,81 @@
  */
 
 public class KClosestPointsToOrigin {
-    static class Solution {
-        public int[][] kClosest(int[][] points, int k) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int[][] kClosest(int[][] points, int k) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-        //     PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) 
-        //                     -> Integer.compare(distanceSquared(b), distanceSquared(a)));
+    //     PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) 
+    //                     -> Integer.compare(distanceSquared(b), distanceSquared(a)));
 
-        //     for (int[] point : points) {
-        //         maxHeap.offer(point);
-        //         if (maxHeap.size() > k) {
-        //             maxHeap.poll();
-        //         }
-        //     }
-            
-        //     int[][] answer = new int[k][2];
-        //     for (int i = 0; i < k; i++) {
-        //         answer[i] = maxHeap.poll();
-        //     }
-        //     return answer;
-        // }
+    //     for (int[] point : points) {
+    //         maxHeap.offer(point);
+    //         if (maxHeap.size() > k) {
+    //             maxHeap.poll();
+    //         }
+    //     }
+        
+    //     int[][] answer = new int[k][2];
+    //     for (int i = 0; i < k; i++) {
+    //         answer[i] = maxHeap.poll();
+    //     }
+    //     return answer;
+    // }
 
-        // private int distanceSquared(int[] point) {
-        //     return point[0] * point[0] + point[1] * point[1];
-        // }
+    // private int distanceSquared(int[] point) {
+    //     return point[0] * point[0] + point[1] * point[1];
+    // }
     }
 
     public static void main(String[] args) {
-        System.out.println("KClosestPointsToOrigin practice stub ready.");
+    System.out.println("KClosestPointsToOrigin practice stub ready.");
     }
-}
+

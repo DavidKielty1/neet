@@ -38,81 +38,77 @@ import java.util.function.*;
 
 
 public class NumberOf1BitsSimilar3 {
+    public boolean hasAlternatingBits(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean hasAlternatingBits(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // xor_result = n ^ n >> 1
+    // return xor_result & xor_result + 1 == 0
 
-            //
-
-            //
-
-            // xor_result = n ^ n >> 1
-            // return xor_result & xor_result + 1 == 0
-
-            throw new UnsupportedOperationException("Implement hasAlternatingBits");
-        }
-
+        throw new UnsupportedOperationException("Implement hasAlternatingBits");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        NumberOf1BitsSimilar3 sol = new NumberOf1BitsSimilar3();
         assert (sol.hasAlternatingBits(5) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.hasAlternatingBits(7) == false);

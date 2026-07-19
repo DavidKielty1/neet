@@ -45,7 +45,6 @@ import java.util.function.*;
 
 
 public class RemoveLinkedListElementsSimilar3 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -62,107 +61,107 @@ public class RemoveLinkedListElementsSimilar3 {
         }
     }
 
-    static class Solution {
-        public ListNode deleteNodes(ListNode head, int m, int n) {
-            //
 
-            //
+    public ListNode deleteNodes(ListNode head, int m, int n) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // current = head
-            // while current:
-            // for _ in range(m - 1):
-            // if not current:
-            // return head
-            // current = current.next
-            // if not current:
-            // return head
-            // temp = current.next
-            // for _ in range(n):
-            // if not temp:
-            // break
-            // temp = temp.next
-            // current.next = temp
-            // current = current.next
-            // return head
+    //
 
-            throw new UnsupportedOperationException("Implement deleteNodes");
-        }
+    // current = head
+    // while current:
+    // for _ in range(m - 1):
+    // if not current:
+    // return head
+    // current = current.next
+    // if not current:
+    // return head
+    // temp = current.next
+    // for _ in range(n):
+    // if not temp:
+    // break
+    // temp = temp.next
+    // current.next = temp
+    // current = current.next
+    // return head
 
+        throw new UnsupportedOperationException("Implement deleteNodes");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head1 = ListNode(1);
-        // curr = head1;
-        // for i in range(2, 14):
-        //     curr.next = ListNode(i)
-        //     curr = curr.next
-        // result1 = sol.deleteNodes(head1, 2, 3);
-        // assert list_to_array(result1) == [1, 2, 6, 7, 11, 12]  // needs locals (port helpers): ['list_to_array', 'result1']
+        RemoveLinkedListElementsSimilar3 sol = new RemoveLinkedListElementsSimilar3();
+    // head1 = ListNode(1);
+    // curr = head1;
+    // for i in range(2, 14):
+    //     curr.next = ListNode(i)
+    //     curr = curr.next
+    // result1 = sol.deleteNodes(head1, 2, 3);
+    // assert list_to_array(result1) == [1, 2, 6, 7, 11, 12]  // needs locals (port helpers): ['list_to_array', 'result1']
         System.out.println("✓ Test case 1 passed");
-        // head2 = ListNode(1);
-        // curr = head2;
-        // for i in range(2, 12):
-        //     curr.next = ListNode(i)
-        //     curr = curr.next
-        // result2 = sol.deleteNodes(head2, 1, 3);
-        // assert list_to_array(result2) == [1, 5, 9]  // needs locals (port helpers): ['list_to_array', 'result2']
+    // head2 = ListNode(1);
+    // curr = head2;
+    // for i in range(2, 12):
+    //     curr.next = ListNode(i)
+    //     curr = curr.next
+    // result2 = sol.deleteNodes(head2, 1, 3);
+    // assert list_to_array(result2) == [1, 5, 9]  // needs locals (port helpers): ['list_to_array', 'result2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

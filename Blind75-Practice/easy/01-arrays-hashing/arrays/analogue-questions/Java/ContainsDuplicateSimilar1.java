@@ -32,85 +32,81 @@ import java.util.function.*;
 
 
 public class ContainsDuplicateSimilar1 {
+    public boolean containsNearbyDuplicate(List<Integer> nums, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean containsNearbyDuplicate(List<Integer> nums, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // seen = {}
+    // for i, num in enumerate(nums):
+    // if num in seen and i - seen[num] <= k:
+    // return True
+    // seen[num] = i
+    // return False
 
-            //
-
-            //
-
-            // seen = {}
-            // for i, num in enumerate(nums):
-            // if num in seen and i - seen[num] <= k:
-            // return True
-            // seen[num] = i
-            // return False
-
-            throw new UnsupportedOperationException("Implement containsNearbyDuplicate");
-        }
-
+        throw new UnsupportedOperationException("Implement containsNearbyDuplicate");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ContainsDuplicateSimilar1 sol = new ContainsDuplicateSimilar1();
         assert (sol.containsNearbyDuplicate(java.util.List.of(1, 2, 3, 1), 3) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.containsNearbyDuplicate(java.util.List.of(1, 0, 1, 1), 1) == true);

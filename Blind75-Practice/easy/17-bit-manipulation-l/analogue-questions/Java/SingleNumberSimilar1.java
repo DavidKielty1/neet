@@ -30,85 +30,81 @@ import java.util.function.*;
 
 
 public class SingleNumberSimilar1 {
+    public String findTheDifference(String s, String t) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String findTheDifference(String s, String t) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = 0
+    // for char in s:
+    // result ^= ord(char)
+    // for char in t:
+    // result ^= ord(char)
+    // return chr(result)
 
-            //
-
-            //
-
-            // result = 0
-            // for char in s:
-            // result ^= ord(char)
-            // for char in t:
-            // result ^= ord(char)
-            // return chr(result)
-
-            throw new UnsupportedOperationException("Implement findTheDifference");
-        }
-
+        throw new UnsupportedOperationException("Implement findTheDifference");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SingleNumberSimilar1 sol = new SingleNumberSimilar1();
         assert (sol.findTheDifference("abcd", "abcde") == "e");
         System.out.println("✓ Test case 1 passed");
         assert (sol.findTheDifference("", "y") == "y");

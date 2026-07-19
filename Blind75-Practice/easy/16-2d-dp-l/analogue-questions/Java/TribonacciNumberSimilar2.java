@@ -50,91 +50,87 @@ import java.util.function.*;
 
 
 public class TribonacciNumberSimilar2 {
+    public int getMaximumGenerated(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int getMaximumGenerated(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n == 0:
+    // return 0
+    // if n == 1:
+    // return 1
+    // nums = [0] * (n + 1)
+    // nums[1] = 1
+    // for i in range(2, n + 1):
+    // if i % 2 == 0:
+    // nums[i] = nums[i // 2]
+    // else:
+    // nums[i] = nums[i // 2] + nums[i // 2 + 1]
+    // return max(nums)
 
-            //
-
-            //
-
-            // if n == 0:
-            // return 0
-            // if n == 1:
-            // return 1
-            // nums = [0] * (n + 1)
-            // nums[1] = 1
-            // for i in range(2, n + 1):
-            // if i % 2 == 0:
-            // nums[i] = nums[i // 2]
-            // else:
-            // nums[i] = nums[i // 2] + nums[i // 2 + 1]
-            // return max(nums)
-
-            throw new UnsupportedOperationException("Implement getMaximumGenerated");
-        }
-
+        throw new UnsupportedOperationException("Implement getMaximumGenerated");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TribonacciNumberSimilar2 sol = new TribonacciNumberSimilar2();
         assert (sol.getMaximumGenerated(7) == 3);
         System.out.println("✓ Test case 1 passed");
         assert (sol.getMaximumGenerated(2) == 1);

@@ -28,103 +28,102 @@
  * - 1 <= nums[i] <= 10^5
  */
 public class GreatestCommonDivisorTraversal {
-    static class Solution {
-        public boolean canTraverseAllPairs(int[] nums) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public boolean canTraverseAllPairs(int[] nums) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // if (nums.length == 1) {
-            //     return true;
-            // }
-            // for (int num : nums) {
-            //     if (num == 1) {
-            //         return false;
-            //     }
-            // }
-            //
-            // UnionFind uf = new UnionFind(nums.length);
-            // Map<Integer, Integer> factorOwner = new HashMap<>();
-            // for (int i = 0; i < nums.length; i++) {
-            //     int value = nums[i];
-            //     for (int factor = 2; factor * factor <= value; factor++) {
-            //         if (value % factor == 0) {
-            //             connectByFactor(factorOwner, uf, factor, i);
-            //             while (value % factor == 0) {
-            //                 value /= factor;
-            //             }
-            //         }
-            //     }
-            //     if (value > 1) {
-            //         connectByFactor(factorOwner, uf, value, i);
-            //     }
-            // }
-            //
-            // int root = uf.find(0);
-            // for (int i = 1; i < nums.length; i++) {
-            //     if (uf.find(i) != root) {
-            //         return false;
-            //     }
-            // }
-            // return true;
-            throw new UnsupportedOperationException("Implement canTraverseAllPairs");
-        }
-
-        // private void connectByFactor(Map<Integer, Integer> owner, UnionFind uf, int factor, int index) {
-        //     if (owner.containsKey(factor)) {
-        //         uf.union(index, owner.get(factor));
-        //     } else {
-        //         owner.put(factor, index);
-        //     }
-        // }
+    // if (nums.length == 1) {
+    //     return true;
+    // }
+    // for (int num : nums) {
+    //     if (num == 1) {
+    //         return false;
+    //     }
+    // }
+    //
+    // UnionFind uf = new UnionFind(nums.length);
+    // Map<Integer, Integer> factorOwner = new HashMap<>();
+    // for (int i = 0; i < nums.length; i++) {
+    //     int value = nums[i];
+    //     for (int factor = 2; factor * factor <= value; factor++) {
+    //         if (value % factor == 0) {
+    //             connectByFactor(factorOwner, uf, factor, i);
+    //             while (value % factor == 0) {
+    //                 value /= factor;
+    //             }
+    //         }
+    //     }
+    //     if (value > 1) {
+    //         connectByFactor(factorOwner, uf, value, i);
+    //     }
+    // }
+    //
+    // int root = uf.find(0);
+    // for (int i = 1; i < nums.length; i++) {
+    //     if (uf.find(i) != root) {
+    //         return false;
+    //     }
+    // }
+    // return true;
+        throw new UnsupportedOperationException("Implement canTraverseAllPairs");
     }
+
+    // private void connectByFactor(Map<Integer, Integer> owner, UnionFind uf, int factor, int index) {
+    //     if (owner.containsKey(factor)) {
+    //         uf.union(index, owner.get(factor));
+    //     } else {
+    //         owner.put(factor, index);
+    //     }
+    // }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement canTraverseAllPairs and add checks.");

@@ -31,88 +31,84 @@ import java.util.function.*;
 
 
 public class MaximumSubarraySimilar1 {
+    public int maxProfit(List<Integer> prices) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maxProfit(List<Integer> prices) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not prices:
+    // return 0
+    // min_price = float('inf')
+    // max_profit = 0
+    // for price in prices:
+    // min_price = min(min_price, price)
+    // profit = price - min_price
+    // max_profit = max(max_profit, profit)
+    // return max_profit
 
-            //
-
-            //
-
-            // if not prices:
-            // return 0
-            // min_price = float('inf')
-            // max_profit = 0
-            // for price in prices:
-            // min_price = min(min_price, price)
-            // profit = price - min_price
-            // max_profit = max(max_profit, profit)
-            // return max_profit
-
-            throw new UnsupportedOperationException("Implement maxProfit");
-        }
-
+        throw new UnsupportedOperationException("Implement maxProfit");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MaximumSubarraySimilar1 sol = new MaximumSubarraySimilar1();
         assert (sol.maxProfit(java.util.List.of(7, 1, 5, 3, 6, 4)) == 5);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maxProfit(java.util.List.of(7, 6, 4, 3, 1)) == 0);

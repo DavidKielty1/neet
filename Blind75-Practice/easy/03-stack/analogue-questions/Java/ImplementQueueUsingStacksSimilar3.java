@@ -41,29 +41,25 @@ import java.util.function.*;
 
 
 public class ImplementQueueUsingStacksSimilar3 {
+    // (no Solution class)
 
-
-
-    static class Solution {
-        // (no Solution class)
-
-    }
+    
 
     public static void main(String[] args) {
-        // q = FrontMiddleBackQueue();
-        // q.pushFront(1)
-        // q.pushBack(2)
-        // q.pushMiddle(3)
-        // q.pushMiddle(4)
-        // assert q.popFront() == 1  // needs locals (port helpers): ['q']
+    // q = FrontMiddleBackQueue();
+    // q.pushFront(1)
+    // q.pushBack(2)
+    // q.pushMiddle(3)
+    // q.pushMiddle(4)
+    // assert q.popFront() == 1  // needs locals (port helpers): ['q']
         System.out.println("✓ Pop front passed");
-        // assert q.popMiddle() == 3  // needs locals (port helpers): ['q']
+    // assert q.popMiddle() == 3  // needs locals (port helpers): ['q']
         System.out.println("✓ Pop middle 1 passed");
-        // assert q.popMiddle() == 4  // needs locals (port helpers): ['q']
+    // assert q.popMiddle() == 4  // needs locals (port helpers): ['q']
         System.out.println("✓ Pop middle 2 passed");
-        // assert q.popBack() == 2  // needs locals (port helpers): ['q']
+    // assert q.popBack() == 2  // needs locals (port helpers): ['q']
         System.out.println("✓ Pop back passed");
-        // assert q.popFront() == -1  // needs locals (port helpers): ['q']
+    // assert q.popFront() == -1  // needs locals (port helpers): ['q']
         System.out.println("✓ Empty pop passed");
         System.out.println("\nAll test cases passed!");
     }

@@ -48,89 +48,88 @@
 import java.util.Arrays;
 
 public class AsteroidCollision {
-    static class Solution {
-        public int[] asteroidCollision(int[] asteroids) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int[] asteroidCollision(int[] asteroids) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Deque<Integer> stack = new ArrayDeque<>();
-            // for (int asteroid : asteroids) {
-            //     boolean destroyed = false;
-            //     while (!stack.isEmpty() && stack.peekLast() > 0 && asteroid < 0) {
-            //         int top = stack.peekLast();
-            //         if (top < -asteroid) {
-            //             stack.pollLast();
-            //             continue;
-            //         }
-            //         if (top == -asteroid) {
-            //             stack.pollLast();
-            //         }
-            //         destroyed = true;
-            //         break;
-            //     }
-            //     if (!destroyed) {
-            //         stack.offerLast(asteroid);
-            //     }
-            // }
-            // int[] result = new int[stack.size()];
-            // int i = 0;
-            // for (int value : stack) {
-            //     result[i++] = value;
-            // }
-            // return result;
-        }
+    // Deque<Integer> stack = new ArrayDeque<>();
+    // for (int asteroid : asteroids) {
+    //     boolean destroyed = false;
+    //     while (!stack.isEmpty() && stack.peekLast() > 0 && asteroid < 0) {
+    //         int top = stack.peekLast();
+    //         if (top < -asteroid) {
+    //             stack.pollLast();
+    //             continue;
+    //         }
+    //         if (top == -asteroid) {
+    //             stack.pollLast();
+    //         }
+    //         destroyed = true;
+    //         break;
+    //     }
+    //     if (!destroyed) {
+    //         stack.offerLast(asteroid);
+    //     }
+    // }
+    // int[] result = new int[stack.size()];
+    // int i = 0;
+    // for (int value : stack) {
+    //     result[i++] = value;
+    // }
+    // return result;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        AsteroidCollision sol = new AsteroidCollision();
         assert Arrays.equals(sol.asteroidCollision(new int[] {5, 10, -5}), new int[] {5, 10});
         assert Arrays.equals(sol.asteroidCollision(new int[] {8, -8}), new int[] {});
         assert Arrays.equals(sol.asteroidCollision(new int[] {10, 2, -5}), new int[] {10});

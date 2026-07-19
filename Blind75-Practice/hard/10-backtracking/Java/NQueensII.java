@@ -22,81 +22,80 @@
  * - 1 <= n <= 9
  */
 public class NQueensII {
-    static class Solution {
-        public int totalNQueens(int n) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int totalNQueens(int n) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // return count(0, n, new boolean[n], new boolean[2 * n], new boolean[2 * n]);
-            throw new UnsupportedOperationException("Implement totalNQueens");
-        }
-
-        // private int count(int row, int n, boolean[] cols, boolean[] diag, boolean[] antiDiag) {
-        //     if (row == n) {
-        //         return 1;
-        //     }
-        //     int total = 0;
-        //     for (int col = 0; col < n; col++) {
-        //         int d = row - col + n;
-        //         int a = row + col;
-        //         if (cols[col] || diag[d] || antiDiag[a]) {
-        //             continue;
-        //         }
-        //         cols[col] = diag[d] = antiDiag[a] = true;
-        //         total += count(row + 1, n, cols, diag, antiDiag);
-        //         cols[col] = diag[d] = antiDiag[a] = false;
-        //     }
-        //     return total;
-        // }
+    // return count(0, n, new boolean[n], new boolean[2 * n], new boolean[2 * n]);
+        throw new UnsupportedOperationException("Implement totalNQueens");
     }
+
+    // private int count(int row, int n, boolean[] cols, boolean[] diag, boolean[] antiDiag) {
+    //     if (row == n) {
+    //         return 1;
+    //     }
+    //     int total = 0;
+    //     for (int col = 0; col < n; col++) {
+    //         int d = row - col + n;
+    //         int a = row + col;
+    //         if (cols[col] || diag[d] || antiDiag[a]) {
+    //             continue;
+    //         }
+    //         cols[col] = diag[d] = antiDiag[a] = true;
+    //         total += count(row + 1, n, cols, diag, antiDiag);
+    //         cols[col] = diag[d] = antiDiag[a] = false;
+    //     }
+    //     return total;
+    // }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement totalNQueens and add checks.");

@@ -34,88 +34,84 @@ import java.util.function.*;
 
 
 public class MeetingRoomsSimilar1 {
+    public boolean hasOverlap(List<List<Integer>> intervals) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean hasOverlap(List<List<Integer>> intervals) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if len(intervals) <= 1:
+    // return False
+    // intervals.sort(key=lambda x: x[0])
+    // for i in range(1, len(intervals)):
+    // prev_end = intervals[i - 1][1]
+    // curr_start = intervals[i][0]
+    // if curr_start < prev_end:
+    // return True
+    // return False
 
-            //
-
-            //
-
-            // if len(intervals) <= 1:
-            // return False
-            // intervals.sort(key=lambda x: x[0])
-            // for i in range(1, len(intervals)):
-            // prev_end = intervals[i - 1][1]
-            // curr_start = intervals[i][0]
-            // if curr_start < prev_end:
-            // return True
-            // return False
-
-            throw new UnsupportedOperationException("Implement hasOverlap");
-        }
-
+        throw new UnsupportedOperationException("Implement hasOverlap");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MeetingRoomsSimilar1 sol = new MeetingRoomsSimilar1();
         assert (sol.hasOverlap(java.util.List.of(java.util.List.of(0, 30), java.util.List.of(5, 10), java.util.List.of(15, 20))) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.hasOverlap(java.util.List.of(java.util.List.of(7, 10), java.util.List.of(2, 4))) == false);

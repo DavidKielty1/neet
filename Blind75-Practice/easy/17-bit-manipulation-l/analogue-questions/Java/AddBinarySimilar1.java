@@ -38,93 +38,89 @@ import java.util.function.*;
 
 
 public class AddBinarySimilar1 {
+    public String addStrings(String num1, String num2) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String addStrings(String num1, String num2) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = []
+    // carry = 0
+    // i, j = (len(num1) - 1, len(num2) - 1)
+    // while i >= 0 or j >= 0 or carry:
+    // total = carry
+    // if i >= 0:
+    // total += int(num1[i])
+    // i -= 1
+    // if j >= 0:
+    // total += int(num2[j])
+    // j -= 1
+    // result.append(str(total % 10))
+    // carry = total // 10
+    // return ''.join(reversed(result))
 
-            //
-
-            //
-
-            // result = []
-            // carry = 0
-            // i, j = (len(num1) - 1, len(num2) - 1)
-            // while i >= 0 or j >= 0 or carry:
-            // total = carry
-            // if i >= 0:
-            // total += int(num1[i])
-            // i -= 1
-            // if j >= 0:
-            // total += int(num2[j])
-            // j -= 1
-            // result.append(str(total % 10))
-            // carry = total // 10
-            // return ''.join(reversed(result))
-
-            throw new UnsupportedOperationException("Implement addStrings");
-        }
-
+        throw new UnsupportedOperationException("Implement addStrings");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        AddBinarySimilar1 sol = new AddBinarySimilar1();
         assert (sol.addStrings("11", "123") == "134");
         System.out.println("✓ Test case 1 passed");
         assert (sol.addStrings("456", "77") == "533");

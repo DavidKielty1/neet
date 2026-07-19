@@ -28,90 +28,74 @@
  * - When a duplicate appears, shrink from the left until the window is valid again.
  */
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class LongestSubstringWithoutRepeatingCharacters {
-    static class Solution {
-        public int lengthOfLongestSubstring(String s) {
-            Set<Character> seen = new HashSet<>();
-            int longest = 0;
-            int left = 0;
-            
-            for (int right = 0; right < s.length(); right++) {
-                while(seen.contains(s.charAt(right))) {
-                    seen.remove(s.charAt(left++));
-                }
-                seen.add(s.charAt(right));
-                longest = Math.max(longest, seen.size());
-            }
-            return longest;
+    public int lengthOfLongestSubstring(String s) {
 
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Set<Character> window = new HashSet<>();
-            // int left = 0;
-            // int best = 0;
-            // for (int right = 0; right < s.length(); right++) {
-            //     while (window.contains(s.charAt(right))) {
-            //         window.remove(s.charAt(left++));
-            //     }
-            //     window.add(s.charAt(right));
-            //     best = Math.max(best, right - left + 1);
-            // }
-            // return best;
-        }
+    // Set<Character> window = new HashSet<>();
+    // int left = 0;
+    // int best = 0;
+    // for (int right = 0; right < s.length(); right++) {
+    //     while (window.contains(s.charAt(right))) {
+    //         window.remove(s.charAt(left++));
+    //     }
+    //     window.add(s.charAt(right));
+    //     best = Math.max(best, right - left + 1);
+    // }
+    // return best;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LongestSubstringWithoutRepeatingCharacters sol = new LongestSubstringWithoutRepeatingCharacters();
         assert sol.lengthOfLongestSubstring("abcabcbb") == 3;
         assert sol.lengthOfLongestSubstring("bbbbb") == 1;
         assert sol.lengthOfLongestSubstring("pwwkew") == 3;

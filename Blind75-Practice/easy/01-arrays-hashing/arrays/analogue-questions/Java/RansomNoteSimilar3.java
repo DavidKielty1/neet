@@ -35,82 +35,78 @@ import java.util.function.*;
 
 
 public class RansomNoteSimilar3 {
+    public boolean areOccurrencesEqual(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean areOccurrencesEqual(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // count = Counter(s)
+    // frequencies = list(count.values())
+    // return len(set(frequencies)) == 1
 
-            //
-
-            //
-
-            // count = Counter(s)
-            // frequencies = list(count.values())
-            // return len(set(frequencies)) == 1
-
-            throw new UnsupportedOperationException("Implement areOccurrencesEqual");
-        }
-
+        throw new UnsupportedOperationException("Implement areOccurrencesEqual");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        RansomNoteSimilar3 sol = new RansomNoteSimilar3();
         assert (sol.areOccurrencesEqual("abacbc") == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.areOccurrencesEqual("aaabb") == false);

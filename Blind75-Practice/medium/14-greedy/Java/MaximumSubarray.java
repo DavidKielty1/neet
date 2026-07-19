@@ -27,68 +27,67 @@
  * - -10^4 <= nums[i] <= 10^4
  */
 public class MaximumSubarray {
-    static class Solution {
-        public int maxSubArray(int[] nums) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int maxSubArray(int[] nums) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int current = nums[0];
-            // int best = nums[0];
-            // for (int i = 1; i < nums.length; i++) {
-            //     current = Math.max(nums[i], current + nums[i]);
-            //     best = Math.max(best, current);
-            // }
-            // return best;
-        }
+    // int current = nums[0];
+    // int best = nums[0];
+    // for (int i = 1; i < nums.length; i++) {
+    //     current = Math.max(nums[i], current + nums[i]);
+    //     best = Math.max(best, current);
+    // }
+    // return best;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement maxSubArray and add checks.");

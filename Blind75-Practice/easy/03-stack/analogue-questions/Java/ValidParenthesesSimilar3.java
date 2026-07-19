@@ -40,88 +40,84 @@ import java.util.function.*;
 
 
 public class ValidParenthesesSimilar3 {
+    public int scoreOfParentheses(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int scoreOfParentheses(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // stack = [0]
+    // for char in s:
+    // if char == '(':
+    // stack.append(0)
+    // else:
+    // top = stack.pop()
+    // score = max(2 * top, 1)
+    // stack[-1] += score
+    // return stack[0]
 
-            //
-
-            //
-
-            // stack = [0]
-            // for char in s:
-            // if char == '(':
-            // stack.append(0)
-            // else:
-            // top = stack.pop()
-            // score = max(2 * top, 1)
-            // stack[-1] += score
-            // return stack[0]
-
-            throw new UnsupportedOperationException("Implement scoreOfParentheses");
-        }
-
+        throw new UnsupportedOperationException("Implement scoreOfParentheses");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidParenthesesSimilar3 sol = new ValidParenthesesSimilar3();
         assert (sol.scoreOfParentheses("()") == 1);
         System.out.println("✓ Test case 1 passed");
         assert (sol.scoreOfParentheses("(())") == 2);

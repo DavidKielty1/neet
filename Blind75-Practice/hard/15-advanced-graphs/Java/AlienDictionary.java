@@ -32,109 +32,108 @@
  * - words[i] consists of lowercase English letters
  */
 public class AlienDictionary {
-    static class Solution {
-        public String alienOrder(String[] words) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public String alienOrder(String[] words) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Map<Character, Set<Character>> graph = new HashMap<>();
-            // Map<Character, Integer> indegree = new HashMap<>();
-            // for (String word : words) {
-            //     for (char c : word.toCharArray()) {
-            //         graph.putIfAbsent(c, new HashSet<>());
-            //         indegree.putIfAbsent(c, 0);
-            //     }
-            // }
-            //
-            // for (int i = 0; i + 1 < words.length; i++) {
-            //     String first = words[i];
-            //     String second = words[i + 1];
-            //     if (first.length() > second.length() && first.startsWith(second)) {
-            //         return "";
-            //     }
-            //     for (int j = 0; j < Math.min(first.length(), second.length()); j++) {
-            //         char from = first.charAt(j);
-            //         char to = second.charAt(j);
-            //         if (from != to) {
-            //             if (graph.get(from).add(to)) {
-            //                 indegree.put(to, indegree.get(to) + 1);
-            //             }
-            //             break;
-            //         }
-            //     }
-            // }
-            //
-            // Queue<Character> queue = new ArrayDeque<>();
-            // for (Map.Entry<Character, Integer> entry : indegree.entrySet()) {
-            //     if (entry.getValue() == 0) {
-            //         queue.offer(entry.getKey());
-            //     }
-            // }
-            //
-            // StringBuilder order = new StringBuilder();
-            // while (!queue.isEmpty()) {
-            //     char current = queue.poll();
-            //     order.append(current);
-            //     for (char next : graph.get(current)) {
-            //         indegree.put(next, indegree.get(next) - 1);
-            //         if (indegree.get(next) == 0) {
-            //             queue.offer(next);
-            //         }
-            //     }
-            // }
-            //
-            // return order.length() == indegree.size() ? order.toString() : "";
-            throw new UnsupportedOperationException("Implement alienOrder");
-        }
+    // Map<Character, Set<Character>> graph = new HashMap<>();
+    // Map<Character, Integer> indegree = new HashMap<>();
+    // for (String word : words) {
+    //     for (char c : word.toCharArray()) {
+    //         graph.putIfAbsent(c, new HashSet<>());
+    //         indegree.putIfAbsent(c, 0);
+    //     }
+    // }
+    //
+    // for (int i = 0; i + 1 < words.length; i++) {
+    //     String first = words[i];
+    //     String second = words[i + 1];
+    //     if (first.length() > second.length() && first.startsWith(second)) {
+    //         return "";
+    //     }
+    //     for (int j = 0; j < Math.min(first.length(), second.length()); j++) {
+    //         char from = first.charAt(j);
+    //         char to = second.charAt(j);
+    //         if (from != to) {
+    //             if (graph.get(from).add(to)) {
+    //                 indegree.put(to, indegree.get(to) + 1);
+    //             }
+    //             break;
+    //         }
+    //     }
+    // }
+    //
+    // Queue<Character> queue = new ArrayDeque<>();
+    // for (Map.Entry<Character, Integer> entry : indegree.entrySet()) {
+    //     if (entry.getValue() == 0) {
+    //         queue.offer(entry.getKey());
+    //     }
+    // }
+    //
+    // StringBuilder order = new StringBuilder();
+    // while (!queue.isEmpty()) {
+    //     char current = queue.poll();
+    //     order.append(current);
+    //     for (char next : graph.get(current)) {
+    //         indegree.put(next, indegree.get(next) - 1);
+    //         if (indegree.get(next) == 0) {
+    //             queue.offer(next);
+    //         }
+    //     }
+    // }
+    //
+    // return order.length() == indegree.size() ? order.toString() : "";
+        throw new UnsupportedOperationException("Implement alienOrder");
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement alienOrder and add checks.");

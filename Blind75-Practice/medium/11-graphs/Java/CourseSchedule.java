@@ -36,94 +36,92 @@
  */
 
 public class CourseSchedule {
-
-    static class Solution {
-        public boolean canFinish(int numCourses, int[][] prerequisites) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // List<List<Integer>> graph = new ArrayList<>();
-            // int[] indegree = new int[numCourses];
-            // for (int i = 0; i < numCourses; i++) {
-            //     graph.add(new ArrayList<>());
-            // }
-            //
-            // for (int[] edge : prerequisites) {
-            //     graph.get(edge[1]).add(edge[0]);
-            //     indegree[edge[0]]++;
-            // }
-            //
-            // Queue<Integer> queue = new ArrayDeque<>();
-            // for (int course = 0; course < numCourses; course++) {
-            //     if (indegree[course] == 0) {
-            //         queue.offer(course);
-            //     }
-            // }
-            //
-            // int taken = 0;
-            // while (!queue.isEmpty()) {
-            //     int course = queue.poll();
-            //     taken++;
-            //     for (int next : graph.get(course)) {
-            //         indegree[next]--;
-            //         if (indegree[next] == 0) {
-            //             queue.offer(next);
-            //         }
-            //     }
-            // }
-            //
-            // return taken == numCourses;
-        }
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // List<List<Integer>> graph = new ArrayList<>();
+    // int[] indegree = new int[numCourses];
+    // for (int i = 0; i < numCourses; i++) {
+    //     graph.add(new ArrayList<>());
+    // }
+    //
+    // for (int[] edge : prerequisites) {
+    //     graph.get(edge[1]).add(edge[0]);
+    //     indegree[edge[0]]++;
+    // }
+    //
+    // Queue<Integer> queue = new ArrayDeque<>();
+    // for (int course = 0; course < numCourses; course++) {
+    //     if (indegree[course] == 0) {
+    //         queue.offer(course);
+    //     }
+    // }
+    //
+    // int taken = 0;
+    // while (!queue.isEmpty()) {
+    //     int course = queue.poll();
+    //     taken++;
+    //     for (int next : graph.get(course)) {
+    //         indegree[next]--;
+    //         if (indegree[next] == 0) {
+    //             queue.offer(next);
+    //         }
+    //     }
+    // }
+    //
+    // return taken == numCourses;
     }
+    
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        CourseSchedule solution = new CourseSchedule();
         assert solution.canFinish(2, new int[][] {{1, 0}});
         assert !solution.canFinish(2, new int[][] {{1, 0}, {0, 1}});
         System.out.println("All test cases passed!");

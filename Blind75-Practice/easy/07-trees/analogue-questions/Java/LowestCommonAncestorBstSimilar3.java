@@ -30,7 +30,6 @@ import java.util.function.*;
 
 
 public class LowestCommonAncestorBstSimilar3 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -49,92 +48,92 @@ public class LowestCommonAncestorBstSimilar3 {
         }
     }
 
-    static class Solution {
-        public TreeNode searchBST(TreeNode root, int val) {
-            //
 
-            //
+    public TreeNode searchBST(TreeNode root, int val) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // current = root
-            // while current:
-            // if current.val == val:
-            // return current
-            // elif val < current.val:
-            // current = current.left
-            // else:
-            // current = current.right
-            // return None
+    //
 
-            throw new UnsupportedOperationException("Implement searchBST");
-        }
+    // current = root
+    // while current:
+    // if current.val == val:
+    // return current
+    // elif val < current.val:
+    // current = current.left
+    // else:
+    // current = current.right
+    // return None
 
+        throw new UnsupportedOperationException("Implement searchBST");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree(java.util.List.of(4,2,7,1,3));
-        // result = sol.searchBST(root, 2);
-        // assert result and result.val == 2  // needs locals (port helpers): ['result']
+        LowestCommonAncestorBstSimilar3 sol = new LowestCommonAncestorBstSimilar3();
+    // root = create_tree(java.util.List.of(4,2,7,1,3));
+    // result = sol.searchBST(root, 2);
+    // assert result and result.val == 2  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree(java.util.List.of(4,2,7,1,3));
-        // result = sol.searchBST(root, 5);
-        // assert result is None  // needs locals (port helpers): ['result']
+    // root = create_tree(java.util.List.of(4,2,7,1,3));
+    // result = sol.searchBST(root, 5);
+    // assert result is None  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

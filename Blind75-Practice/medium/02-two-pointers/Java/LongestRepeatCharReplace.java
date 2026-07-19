@@ -30,81 +30,82 @@
  */
 
 public class LongestRepeatCharReplace {
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
+    public int findLongestRepeatedString (String s, int k) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-        // int[] counts = new int[26];
-        // int left = 0;
-        // int maxFreq = 0;
-        // int best = 0;
-        //
-        // for (int right = 0; right < s.length(); right++) {
-        //     int index = s.charAt(right) - 'A';
-        //     counts[index]++;
-        //     maxFreq = Math.max(maxFreq, counts[index]);
-        //
-        //     while (right - left + 1 - maxFreq > k) {
-        //         counts[s.charAt(left) - 'A']--;
-        //         left++;
-        //     }
-        //
-        //     best = Math.max(best, right - left + 1);
-        // }
-        //
-        // return best;
+    // int[] counts = new int[26];
+    // int left = 0;
+    // int maxFreq = 0;
+    // int best = 0;
+    //
+    // for (int right = 0; right < s.length(); right++) {
+    //     int index = s.charAt(right) - 'A';
+    //     counts[index]++;
+    //     maxFreq = Math.max(maxFreq, counts[index]);
+    //
+    //     while (right - left + 1 - maxFreq > k) {
+    //         counts[s.charAt(left) - 'A']--;
+    //         left++;
+    //     }
+    //
+    //     best = Math.max(best, right - left + 1);
+    // }
+    //
+    // return best;
         
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LongestRepeatCharReplace sol = new LongestRepeatCharReplace();
         assert sol.characterReplacement("ABAB", 2) == 4;
         assert sol.characterReplacement("AABABBA", 1) == 4;
         assert sol.characterReplacement("AAAA", 0) == 4;

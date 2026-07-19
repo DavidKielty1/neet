@@ -35,92 +35,88 @@ import java.util.function.*;
 
 
 public class SearchInsertPositionSimilar3 {
+    public boolean isPerfectSquare(int num) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isPerfectSquare(int num) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if num < 2:
+    // return True
+    // left, right = (2, num // 2)
+    // while left <= right:
+    // mid = left + (right - left) // 2
+    // square = mid * mid
+    // if square == num:
+    // return True
+    // elif square < num:
+    // left = mid + 1
+    // else:
+    // right = mid - 1
+    // return False
 
-            //
-
-            //
-
-            // if num < 2:
-            // return True
-            // left, right = (2, num // 2)
-            // while left <= right:
-            // mid = left + (right - left) // 2
-            // square = mid * mid
-            // if square == num:
-            // return True
-            // elif square < num:
-            // left = mid + 1
-            // else:
-            // right = mid - 1
-            // return False
-
-            throw new UnsupportedOperationException("Implement isPerfectSquare");
-        }
-
+        throw new UnsupportedOperationException("Implement isPerfectSquare");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SearchInsertPositionSimilar3 sol = new SearchInsertPositionSimilar3();
         assert (sol.isPerfectSquare(16) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isPerfectSquare(14) == false);

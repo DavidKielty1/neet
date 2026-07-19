@@ -32,7 +32,6 @@ import java.util.function.*;
 
 
 public class SubtreeOfAnotherTreeSimilar3 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -51,96 +50,96 @@ public class SubtreeOfAnotherTreeSimilar3 {
         }
     }
 
-    static class Solution {
-        public List<Integer> findFrequentTreeSum(TreeNode root) {
-            //
 
-            //
+    public List<Integer> findFrequentTreeSum(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // sum_count = Counter()
-            // def get_sum(node):
-            // if not node:
-            // return 0
-            // left_sum = get_sum(node.left)
-            // right_sum = get_sum(node.right)
-            // total_sum = left_sum + right_sum + node.val
-            // sum_count[total_sum] += 1
-            // return total_sum
-            // get_sum(root)
-            // if not sum_count:
-            // return []
-            // max_freq = max(sum_count.values())
-            // return [s for s, freq in sum_count.items() if freq == max_freq]
+    //
 
-            throw new UnsupportedOperationException("Implement findFrequentTreeSum");
-        }
+    // sum_count = Counter()
+    // def get_sum(node):
+    // if not node:
+    // return 0
+    // left_sum = get_sum(node.left)
+    // right_sum = get_sum(node.right)
+    // total_sum = left_sum + right_sum + node.val
+    // sum_count[total_sum] += 1
+    // return total_sum
+    // get_sum(root)
+    // if not sum_count:
+    // return []
+    // max_freq = max(sum_count.values())
+    // return [s for s, freq in sum_count.items() if freq == max_freq]
 
+        throw new UnsupportedOperationException("Implement findFrequentTreeSum");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree([5, 2, -3]);
-        // result = sorted(sol.findFrequentTreeSum(root));
-        // assert result == sorted([2, -3, 4])  // needs locals (port helpers): ['result']
+        SubtreeOfAnotherTreeSimilar3 sol = new SubtreeOfAnotherTreeSimilar3();
+    // root = create_tree([5, 2, -3]);
+    // result = sorted(sol.findFrequentTreeSum(root));
+    // assert result == sorted([2, -3, 4])  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree([5, 2, -5]);
-        // assert solution.findFrequentTreeSum(root) == [2]  // needs locals (port helpers): ['root']
+    // root = create_tree([5, 2, -5]);
+    // assert solution.findFrequentTreeSum(root) == [2]  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

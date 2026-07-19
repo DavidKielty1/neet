@@ -42,105 +42,103 @@
  */
 
 public class OpenTheLock {
-
-    static class Solution {
-        public int openLock(String[] deadends, String target) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // Set<String> blocked = new HashSet<>(Arrays.asList(deadends));
-            // if (blocked.contains("0000")) {
-            //     return -1;
-            // }
-            //
-            // Queue<String> queue = new ArrayDeque<>();
-            // Set<String> visited = new HashSet<>();
-            // queue.offer("0000");
-            // visited.add("0000");
-            //
-            // int steps = 0;
-            // while (!queue.isEmpty()) {
-            //     int size = queue.size();
-            //     for (int i = 0; i < size; i++) {
-            //         String current = queue.poll();
-            //         if (current.equals(target)) {
-            //             return steps;
-            //         }
-            //
-            //         char[] chars = current.toCharArray();
-            //         for (int pos = 0; pos < 4; pos++) {
-            //             char original = chars[pos];
-            //
-            //             chars[pos] = original == '9' ? '0' : (char) (original + 1);
-            //             String up = new String(chars);
-            //             if (!blocked.contains(up) && visited.add(up)) {
-            //                 queue.offer(up);
-            //             }
-            //
-            //             chars[pos] = original == '0' ? '9' : (char) (original - 1);
-            //             String down = new String(chars);
-            //             if (!blocked.contains(down) && visited.add(down)) {
-            //                 queue.offer(down);
-            //             }
-            //
-            //             chars[pos] = original;
-            //         }
-            //     }
-            //     steps++;
-            // }
-            //
-            // return -1;
-        }
+    public int openLock(String[] deadends, String target) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // Set<String> blocked = new HashSet<>(Arrays.asList(deadends));
+    // if (blocked.contains("0000")) {
+    //     return -1;
+    // }
+    //
+    // Queue<String> queue = new ArrayDeque<>();
+    // Set<String> visited = new HashSet<>();
+    // queue.offer("0000");
+    // visited.add("0000");
+    //
+    // int steps = 0;
+    // while (!queue.isEmpty()) {
+    //     int size = queue.size();
+    //     for (int i = 0; i < size; i++) {
+    //         String current = queue.poll();
+    //         if (current.equals(target)) {
+    //             return steps;
+    //         }
+    //
+    //         char[] chars = current.toCharArray();
+    //         for (int pos = 0; pos < 4; pos++) {
+    //             char original = chars[pos];
+    //
+    //             chars[pos] = original == '9' ? '0' : (char) (original + 1);
+    //             String up = new String(chars);
+    //             if (!blocked.contains(up) && visited.add(up)) {
+    //                 queue.offer(up);
+    //             }
+    //
+    //             chars[pos] = original == '0' ? '9' : (char) (original - 1);
+    //             String down = new String(chars);
+    //             if (!blocked.contains(down) && visited.add(down)) {
+    //                 queue.offer(down);
+    //             }
+    //
+    //             chars[pos] = original;
+    //         }
+    //     }
+    //     steps++;
+    // }
+    //
+    // return -1;
     }
+    
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        OpenTheLock solution = new OpenTheLock();
         assert solution.openLock(
                 new String[] {"0201", "0101", "0102", "1212", "2002"},
                 "0202") == 6;

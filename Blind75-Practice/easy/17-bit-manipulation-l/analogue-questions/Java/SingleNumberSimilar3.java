@@ -34,84 +34,80 @@ import java.util.function.*;
 
 
 public class SingleNumberSimilar3 {
+    public int missingNumber(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int missingNumber(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // n = len(nums)
+    // result = n
+    // for i in range(n):
+    // result ^= i ^ nums[i]
+    // return result
 
-            //
-
-            //
-
-            // n = len(nums)
-            // result = n
-            // for i in range(n):
-            // result ^= i ^ nums[i]
-            // return result
-
-            throw new UnsupportedOperationException("Implement missingNumber");
-        }
-
+        throw new UnsupportedOperationException("Implement missingNumber");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SingleNumberSimilar3 sol = new SingleNumberSimilar3();
         assert (sol.missingNumber(java.util.List.of(3, 0, 1)) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.missingNumber(java.util.List.of(0, 1)) == 2);

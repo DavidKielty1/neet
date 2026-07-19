@@ -28,81 +28,80 @@
 import java.util.Arrays;
 
 public class SlidingWindowMaximum {
-    static class Solution {
-        public int[] maxSlidingWindow(int[] nums, int k) {
+    public int[] maxSlidingWindow(int[] nums, int k) {
 
-            // return new int[stack.size] { turn stack into int array}
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // 
-            //
+    // return new int[stack.size] { turn stack into int array}
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // 
+    //
 
-            // int n = nums.length;
-            // int[] answer = new int[n - k + 1];
-            // Deque<Integer> deque = new ArrayDeque<>();
-            // for (int i = 0; i < n; i++) {
-            //     while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
-            //         deque.pollFirst();
-            //     }
-            
-            //     while (!deque.isEmpty() && nums[deque.peekLast()] <= nums[i]) {
-            //         deque.pollLast();
-            //     }
+    // int n = nums.length;
+    // int[] answer = new int[n - k + 1];
+    // Deque<Integer> deque = new ArrayDeque<>();
+    // for (int i = 0; i < n; i++) {
+    //     while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
+    //         deque.pollFirst();
+    //     }
+        
+    //     while (!deque.isEmpty() && nums[deque.peekLast()] <= nums[i]) {
+    //         deque.pollLast();
+    //     }
 
-            //     deque.offerLast(i);
+    //     deque.offerLast(i);
 
-            //     if (i >= k - 1) {
-            //         answer[i - k + 1] = nums[deque.peekFirst()];
-            //     }
-            // }
-            // return answer;
-        }
+    //     if (i >= k - 1) {
+    //         answer[i - k + 1] = nums[deque.peekFirst()];
+    //     }
+    // }
+    // return answer;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SlidingWindowMaximum sol = new SlidingWindowMaximum();
         assert Arrays.equals(sol.maxSlidingWindow(new int[] {1, 3, -1, -3, 5, 3, 6, 7}, 3), new int[] {3, 3, 5, 5, 6, 7});
         assert Arrays.equals(sol.maxSlidingWindow(new int[] {1}, 1), new int[] {1});
         System.out.println("All test cases passed!");

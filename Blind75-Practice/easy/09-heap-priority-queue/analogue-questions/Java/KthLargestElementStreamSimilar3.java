@@ -27,85 +27,81 @@ import java.util.function.*;
 
 
 public class KthLargestElementStreamSimilar3 {
+    public int findKthSmallest(List<Integer> nums, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int findKthSmallest(List<Integer> nums, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // heap = []
+    // for num in nums:
+    // heapq.heappush(heap, -num)
+    // if len(heap) > k:
+    // heapq.heappop(heap)
+    // return -heap[0]
 
-            //
-
-            //
-
-            // heap = []
-            // for num in nums:
-            // heapq.heappush(heap, -num)
-            // if len(heap) > k:
-            // heapq.heappop(heap)
-            // return -heap[0]
-
-            throw new UnsupportedOperationException("Implement findKthSmallest");
-        }
-
+        throw new UnsupportedOperationException("Implement findKthSmallest");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        KthLargestElementStreamSimilar3 sol = new KthLargestElementStreamSimilar3();
         assert (sol.findKthSmallest(java.util.List.of(3, 2, 1, 5, 6, 4), 2) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.findKthSmallest(java.util.List.of(3, 2, 3, 1, 2, 4, 5, 5, 6), 4) == 3);

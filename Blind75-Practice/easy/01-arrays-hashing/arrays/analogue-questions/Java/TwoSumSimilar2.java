@@ -34,86 +34,82 @@ import java.util.function.*;
 
 
 public class TwoSumSimilar2 {
+    public int twoSumCount(List<Integer> nums, int target) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int twoSumCount(List<Integer> nums, int target) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // count = 0
+    // seen = defaultdict(int)
+    // for num in nums:
+    // complement = target - num
+    // count += seen[complement]
+    // seen[num] += 1
+    // return count
 
-            //
-
-            //
-
-            // count = 0
-            // seen = defaultdict(int)
-            // for num in nums:
-            // complement = target - num
-            // count += seen[complement]
-            // seen[num] += 1
-            // return count
-
-            throw new UnsupportedOperationException("Implement twoSumCount");
-        }
-
+        throw new UnsupportedOperationException("Implement twoSumCount");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TwoSumSimilar2 sol = new TwoSumSimilar2();
         assert (sol.twoSumCount(java.util.List.of(1, 2, 3, 2, 1), 3) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.twoSumCount(java.util.List.of(1, 1, 1, 1), 2) == 6);

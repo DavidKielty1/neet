@@ -33,90 +33,86 @@ import java.util.function.*;
 
 
 public class PowerOfThreeSimilar3 {
+    public boolean checkPerfectNumber(int num) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean checkPerfectNumber(int num) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if num <= 1:
+    // return False
+    // divisor_sum = 1
+    // i = 2
+    // while i * i <= num:
+    // if num % i == 0:
+    // divisor_sum += i
+    // if i != num // i:
+    // divisor_sum += num // i
+    // i += 1
+    // return divisor_sum == num
 
-            //
-
-            //
-
-            // if num <= 1:
-            // return False
-            // divisor_sum = 1
-            // i = 2
-            // while i * i <= num:
-            // if num % i == 0:
-            // divisor_sum += i
-            // if i != num // i:
-            // divisor_sum += num // i
-            // i += 1
-            // return divisor_sum == num
-
-            throw new UnsupportedOperationException("Implement checkPerfectNumber");
-        }
-
+        throw new UnsupportedOperationException("Implement checkPerfectNumber");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfThreeSimilar3 sol = new PowerOfThreeSimilar3();
         assert (sol.checkPerfectNumber(28) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.checkPerfectNumber(7) == false);

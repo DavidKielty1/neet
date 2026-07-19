@@ -59,90 +59,86 @@ import java.util.function.*;
 
 
 public class ImplementQueueUsingStacksSimilar2 {
+    public List<String> buildArray(List<Integer> target, int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<String> buildArray(List<Integer> target, int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = []
+    // target_idx = 0
+    // for num in range(1, n + 1):
+    // result.append('Push')
+    // if num == target[target_idx]:
+    // target_idx += 1
+    // if target_idx == len(target):
+    // break
+    // else:
+    // result.append('Pop')
+    // return result
 
-            //
-
-            //
-
-            // result = []
-            // target_idx = 0
-            // for num in range(1, n + 1):
-            // result.append('Push')
-            // if num == target[target_idx]:
-            // target_idx += 1
-            // if target_idx == len(target):
-            // break
-            // else:
-            // result.append('Pop')
-            // return result
-
-            throw new UnsupportedOperationException("Implement buildArray");
-        }
-
+        throw new UnsupportedOperationException("Implement buildArray");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ImplementQueueUsingStacksSimilar2 sol = new ImplementQueueUsingStacksSimilar2();
         assert java.util.Objects.equals(sol.buildArray(java.util.List.of(1, 3), 3), java.util.List.of("Push", "Push", "Pop", "Push"));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.buildArray(java.util.List.of(1, 2, 3), 3), java.util.List.of("Push", "Push", "Push"));

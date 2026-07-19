@@ -36,95 +36,91 @@ import java.util.function.*;
 
 
 public class ValidAnagramSimilar3 {
+    public boolean isIsomorphic(String s, String t) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isIsomorphic(String s, String t) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if len(s) != len(t):
+    // return False
+    // s_to_t = {}
+    // t_to_s = {}
+    // for char_s, char_t in zip(s, t):
+    // if char_s in s_to_t:
+    // if s_to_t[char_s] != char_t:
+    // return False
+    // else:
+    // s_to_t[char_s] = char_t
+    // if char_t in t_to_s:
+    // if t_to_s[char_t] != char_s:
+    // return False
+    // else:
+    // t_to_s[char_t] = char_s
+    // return True
 
-            //
-
-            //
-
-            // if len(s) != len(t):
-            // return False
-            // s_to_t = {}
-            // t_to_s = {}
-            // for char_s, char_t in zip(s, t):
-            // if char_s in s_to_t:
-            // if s_to_t[char_s] != char_t:
-            // return False
-            // else:
-            // s_to_t[char_s] = char_t
-            // if char_t in t_to_s:
-            // if t_to_s[char_t] != char_s:
-            // return False
-            // else:
-            // t_to_s[char_t] = char_s
-            // return True
-
-            throw new UnsupportedOperationException("Implement isIsomorphic");
-        }
-
+        throw new UnsupportedOperationException("Implement isIsomorphic");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidAnagramSimilar3 sol = new ValidAnagramSimilar3();
         assert (sol.isIsomorphic("egg", "add") == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isIsomorphic("foo", "bar") == false);

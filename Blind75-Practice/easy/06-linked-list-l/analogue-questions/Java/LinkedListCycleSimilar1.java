@@ -32,7 +32,6 @@ import java.util.function.*;
 
 
 public class LinkedListCycleSimilar1 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -49,104 +48,104 @@ public class LinkedListCycleSimilar1 {
         }
     }
 
-    static class Solution {
-        public ListNode detectCycle(ListNode head) {
-            //
 
-            //
+    public ListNode detectCycle(ListNode head) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not head or not head.next:
-            // return None
-            // slow = fast = head
-            // has_cycle = False
-            // while fast and fast.next:
-            // slow = slow.next
-            // fast = fast.next.next
-            // if slow == fast:
-            // has_cycle = True
-            // break
-            // if not has_cycle:
-            // return None
-            // slow = head
-            // while slow != fast:
-            // slow = slow.next
-            // fast = fast.next
-            // return slow
+    //
 
-            throw new UnsupportedOperationException("Implement detectCycle");
-        }
+    // if not head or not head.next:
+    // return None
+    // slow = fast = head
+    // has_cycle = False
+    // while fast and fast.next:
+    // slow = slow.next
+    // fast = fast.next.next
+    // if slow == fast:
+    // has_cycle = True
+    // break
+    // if not has_cycle:
+    // return None
+    // slow = head
+    // while slow != fast:
+    // slow = slow.next
+    // fast = fast.next
+    // return slow
 
+        throw new UnsupportedOperationException("Implement detectCycle");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head = create_list_with_cycle([3, 2, 0, -4], 1);
-        // result = sol.detectCycle(head);
-        // assert result is not None and result.val == 2  // needs locals (port helpers): ['result']
+        LinkedListCycleSimilar1 sol = new LinkedListCycleSimilar1();
+    // head = create_list_with_cycle([3, 2, 0, -4], 1);
+    // result = sol.detectCycle(head);
+    // assert result is not None and result.val == 2  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 1 passed");
-        // head = create_list_with_cycle(java.util.List.of(1,2), 0);
-        // result = sol.detectCycle(head);
-        // assert result is not None and result.val == 1  // needs locals (port helpers): ['result']
+    // head = create_list_with_cycle(java.util.List.of(1,2), 0);
+    // result = sol.detectCycle(head);
+    // assert result is not None and result.val == 1  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 2 passed");
-        // head = create_list_with_cycle(java.util.List.of(1), -1);
-        // result = sol.detectCycle(head);
-        // assert result is None  // needs locals (port helpers): ['result']
+    // head = create_list_with_cycle(java.util.List.of(1), -1);
+    // result = sol.detectCycle(head);
+    // assert result is None  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

@@ -27,73 +27,72 @@
  * - 1 <= ai, bi, ci, x, y, z <= 1000
  */
 public class MergeTripletsToFormTargetTriplet {
-    static class Solution {
-        public boolean mergeTriplets(int[][] triplets, int[] target) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public boolean mergeTriplets(int[][] triplets, int[] target) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // boolean foundA = false;
-            // boolean foundB = false;
-            // boolean foundC = false;
-            // for (int[] triplet : triplets) {
-            //     if (triplet[0] > target[0] || triplet[1] > target[1] || triplet[2] > target[2]) {
-            //         continue;
-            //     }
-            //     foundA |= triplet[0] == target[0];
-            //     foundB |= triplet[1] == target[1];
-            //     foundC |= triplet[2] == target[2];
-            // }
-            // return foundA && foundB && foundC;
-        }
+    // boolean foundA = false;
+    // boolean foundB = false;
+    // boolean foundC = false;
+    // for (int[] triplet : triplets) {
+    //     if (triplet[0] > target[0] || triplet[1] > target[1] || triplet[2] > target[2]) {
+    //         continue;
+    //     }
+    //     foundA |= triplet[0] == target[0];
+    //     foundB |= triplet[1] == target[1];
+    //     foundC |= triplet[2] == target[2];
+    // }
+    // return foundA && foundB && foundC;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement mergeTriplets and add checks.");

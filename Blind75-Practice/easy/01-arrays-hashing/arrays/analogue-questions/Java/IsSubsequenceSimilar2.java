@@ -34,91 +34,87 @@ import java.util.function.*;
 
 
 public class IsSubsequenceSimilar2 {
+    public String findLongestWord(String s, List<String> dictionary) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String findLongestWord(String s, List<String> dictionary) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def is_subsequence(word: str) -> bool:
+    // w_idx = 0
+    // for char in s:
+    // if w_idx < len(word) and char == word[w_idx]:
+    // w_idx += 1
+    // return w_idx == len(word)
+    // result = ''
+    // for word in dictionary:
+    // if is_subsequence(word):
+    // if len(word) > len(result) or (len(word) == len(result) and word < result):
+    // result = word
+    // return result
 
-            //
-
-            //
-
-            // def is_subsequence(word: str) -> bool:
-            // w_idx = 0
-            // for char in s:
-            // if w_idx < len(word) and char == word[w_idx]:
-            // w_idx += 1
-            // return w_idx == len(word)
-            // result = ''
-            // for word in dictionary:
-            // if is_subsequence(word):
-            // if len(word) > len(result) or (len(word) == len(result) and word < result):
-            // result = word
-            // return result
-
-            throw new UnsupportedOperationException("Implement findLongestWord");
-        }
-
+        throw new UnsupportedOperationException("Implement findLongestWord");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        IsSubsequenceSimilar2 sol = new IsSubsequenceSimilar2();
         assert (sol.findLongestWord("abpcplea", java.util.List.of("ale", "apple", "monkey", "plea")) == "apple");
         System.out.println("✓ Test case 1 passed");
         assert (sol.findLongestWord("abpcplea", java.util.List.of("a", "b", "c")) == "a");

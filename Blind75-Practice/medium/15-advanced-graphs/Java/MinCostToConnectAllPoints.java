@@ -28,86 +28,85 @@
 import java.util.PriorityQueue;
 
 public class MinCostToConnectAllPoints {
-    static class Solution {
-        public int minCostConnectPoints(int[][] points) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int minCostConnectPoints(int[][] points) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int n = points.length;
-            // boolean[] visited = new boolean[n];
-            // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
-            // minHeap.offer(new int[] {0, 0});
-            // int total = 0;
-            // int used = 0;
-            // while (used < n) {
-            //     int[] current = minHeap.poll();
-            //     int cost = current[0];
-            //     int index = current[1];
-            //     if (visited[index]) {
-            //         continue;
-            //     }
-            //     visited[index] = true;
-            //     total += cost;
-            //     used++;
-            //     for (int next = 0; next < n; next++) {
-            //         if (!visited[next]) {
-            //             int distance = Math.abs(points[index][0] - points[next][0])
-            //                     + Math.abs(points[index][1] - points[next][1]);
-            //             minHeap.offer(new int[] {distance, next});
-            //         }
-            //     }
-            // }
-            // return total;
-        }
+    // int n = points.length;
+    // boolean[] visited = new boolean[n];
+    // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+    // minHeap.offer(new int[] {0, 0});
+    // int total = 0;
+    // int used = 0;
+    // while (used < n) {
+    //     int[] current = minHeap.poll();
+    //     int cost = current[0];
+    //     int index = current[1];
+    //     if (visited[index]) {
+    //         continue;
+    //     }
+    //     visited[index] = true;
+    //     total += cost;
+    //     used++;
+    //     for (int next = 0; next < n; next++) {
+    //         if (!visited[next]) {
+    //             int distance = Math.abs(points[index][0] - points[next][0])
+    //                     + Math.abs(points[index][1] - points[next][1]);
+    //             minHeap.offer(new int[] {distance, next});
+    //         }
+    //     }
+    // }
+    // return total;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement minCostConnectPoints and add checks.");

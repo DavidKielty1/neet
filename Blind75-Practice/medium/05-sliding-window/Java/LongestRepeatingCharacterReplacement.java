@@ -30,99 +30,79 @@
  */
 
 public class LongestRepeatingCharacterReplacement {
-    static class Solution {
-        public int characterReplacement(String s, int k) {
-            int left = 0;
-            int maxFreq = 0;
-            int longestWindow = 0;
-            int[] count = new int[26];
+    public int characterReplacement(String s, int k) {
 
-            for (int right = 0; right < s.length(); right++) {
-                int rChar = s.charAt(right) - 'A';
-                count[rChar]++;
-                maxFreq = Math.max(maxFreq, count[rChar]);
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-                while (right - left + 1 - maxFreq > k) {
-                    count[s.charAt(left) - 'A']--;
-                    left++;
-                }
-
-                longestWindow = Math.max(longestWindow, right - left + 1);
-            }
-
-            return longestWindow;
-
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-
-            // int[] counts = new int[26];
-            // int left = 0;
-            // int maxFreq = 0;
-            // int best = 0;
-            // for (int right = 0; right < s.length(); right++) {
-            //     int index = s.charAt(right) - 'A';
-            //     counts[index]++;
-            //     maxFreq = Math.max(maxFreq, counts[index]);
-            //     while (right - left + 1 - maxFreq > k) {
-            //         counts[s.charAt(left) - 'A']--;
-            //         left++;
-            //     }
-            //     best = Math.max(best, right - left + 1);
-            // }
-            // return best;
-        }
+    // int[] counts = new int[26];
+    // int left = 0;
+    // int maxFreq = 0;
+    // int best = 0;
+    // for (int right = 0; right < s.length(); right++) {
+    //     int index = s.charAt(right) - 'A';
+    //     counts[index]++;
+    //     maxFreq = Math.max(maxFreq, counts[index]);
+    //     while (right - left + 1 - maxFreq > k) {
+    //         counts[s.charAt(left) - 'A']--;
+    //         left++;
+    //     }
+    //     best = Math.max(best, right - left + 1);
+    // }
+    // return best;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LongestRepeatingCharacterReplacement sol = new LongestRepeatingCharacterReplacement();
         assert sol.characterReplacement("ABAB", 2) == 4;
         assert sol.characterReplacement("AABABBA", 1) == 4;
         System.out.println("All test cases passed!");

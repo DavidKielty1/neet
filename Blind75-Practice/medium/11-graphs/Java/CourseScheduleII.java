@@ -39,95 +39,93 @@
  */
 
 public class CourseScheduleII {
-
-    static class Solution {
-        public int[] findOrder(int numCourses, int[][] prerequisites) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // List<List<Integer>> graph = new ArrayList<>();
-            // int[] indegree = new int[numCourses];
-            // for (int i = 0; i < numCourses; i++) {
-            //     graph.add(new ArrayList<>());
-            // }
-            //
-            // for (int[] edge : prerequisites) {
-            //     graph.get(edge[1]).add(edge[0]);
-            //     indegree[edge[0]]++;
-            // }
-            //
-            // Queue<Integer> queue = new ArrayDeque<>();
-            // for (int course = 0; course < numCourses; course++) {
-            //     if (indegree[course] == 0) {
-            //         queue.offer(course);
-            //     }
-            // }
-            //
-            // int[] order = new int[numCourses];
-            // int idx = 0;
-            // while (!queue.isEmpty()) {
-            //     int course = queue.poll();
-            //     order[idx++] = course;
-            //     for (int next : graph.get(course)) {
-            //         indegree[next]--;
-            //         if (indegree[next] == 0) {
-            //             queue.offer(next);
-            //         }
-            //     }
-            // }
-            //
-            // return idx == numCourses ? order : new int[0];
-        }
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // List<List<Integer>> graph = new ArrayList<>();
+    // int[] indegree = new int[numCourses];
+    // for (int i = 0; i < numCourses; i++) {
+    //     graph.add(new ArrayList<>());
+    // }
+    //
+    // for (int[] edge : prerequisites) {
+    //     graph.get(edge[1]).add(edge[0]);
+    //     indegree[edge[0]]++;
+    // }
+    //
+    // Queue<Integer> queue = new ArrayDeque<>();
+    // for (int course = 0; course < numCourses; course++) {
+    //     if (indegree[course] == 0) {
+    //         queue.offer(course);
+    //     }
+    // }
+    //
+    // int[] order = new int[numCourses];
+    // int idx = 0;
+    // while (!queue.isEmpty()) {
+    //     int course = queue.poll();
+    //     order[idx++] = course;
+    //     for (int next : graph.get(course)) {
+    //         indegree[next]--;
+    //         if (indegree[next] == 0) {
+    //             queue.offer(next);
+    //         }
+    //     }
+    // }
+    //
+    // return idx == numCourses ? order : new int[0];
     }
+    
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        CourseScheduleII solution = new CourseScheduleII();
         int[] order = solution.findOrder(4, new int[][] {{1, 0}, {2, 0}, {3, 1}, {3, 2}});
         assert order.length == 4;
         System.out.println("All test cases passed!");

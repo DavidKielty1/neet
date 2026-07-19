@@ -44,87 +44,83 @@ import java.util.function.*;
 
 
 public class FirstBadVersionSimilar3 {
+    public int peakIndexInMountainArray(List<Integer> arr) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int peakIndexInMountainArray(List<Integer> arr) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // left, right = (0, len(arr) - 1)
+    // while left < right:
+    // mid = left + (right - left) // 2
+    // if arr[mid] < arr[mid + 1]:
+    // left = mid + 1
+    // else:
+    // right = mid
+    // return left
 
-            //
-
-            //
-
-            // left, right = (0, len(arr) - 1)
-            // while left < right:
-            // mid = left + (right - left) // 2
-            // if arr[mid] < arr[mid + 1]:
-            // left = mid + 1
-            // else:
-            // right = mid
-            // return left
-
-            throw new UnsupportedOperationException("Implement peakIndexInMountainArray");
-        }
-
+        throw new UnsupportedOperationException("Implement peakIndexInMountainArray");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        FirstBadVersionSimilar3 sol = new FirstBadVersionSimilar3();
         assert (sol.peakIndexInMountainArray(java.util.List.of(0, 1, 0)) == 1);
         System.out.println("✓ Test case 1 passed");
         assert (sol.peakIndexInMountainArray(java.util.List.of(0, 2, 1, 0)) == 1);

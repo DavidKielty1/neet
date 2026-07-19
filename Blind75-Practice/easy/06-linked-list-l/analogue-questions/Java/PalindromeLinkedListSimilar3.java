@@ -36,7 +36,6 @@ import java.util.function.*;
 
 
 public class PalindromeLinkedListSimilar3 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -53,91 +52,91 @@ public class PalindromeLinkedListSimilar3 {
         }
     }
 
-    static class Solution {
-        public int getDecimalValue(ListNode head) {
-            //
 
-            //
+    public int getDecimalValue(ListNode head) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // result = 0
-            // while head:
-            // result = result * 2 + head.val
-            // head = head.next
-            // return result
+    //
 
-            throw new UnsupportedOperationException("Implement getDecimalValue");
-        }
+    // result = 0
+    // while head:
+    // result = result * 2 + head.val
+    // head = head.next
+    // return result
 
+        throw new UnsupportedOperationException("Implement getDecimalValue");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head1 = ListNode(1);
-        // head1.next = ListNode(0)
-        // head1.next.next = ListNode(1)
-        // assert solution.getDecimalValue(head1) == 5  // needs locals (port helpers): ['head1']
+        PalindromeLinkedListSimilar3 sol = new PalindromeLinkedListSimilar3();
+    // head1 = ListNode(1);
+    // head1.next = ListNode(0)
+    // head1.next.next = ListNode(1)
+    // assert solution.getDecimalValue(head1) == 5  // needs locals (port helpers): ['head1']
         System.out.println("✓ Test case 1 passed");
-        // head2 = ListNode(0);
-        // assert solution.getDecimalValue(head2) == 0  // needs locals (port helpers): ['head2']
+    // head2 = ListNode(0);
+    // assert solution.getDecimalValue(head2) == 0  // needs locals (port helpers): ['head2']
         System.out.println("✓ Test case 2 passed");
-        // head3 = ListNode(1);
-        // assert solution.getDecimalValue(head3) == 1  // needs locals (port helpers): ['head3']
+    // head3 = ListNode(1);
+    // assert solution.getDecimalValue(head3) == 1  // needs locals (port helpers): ['head3']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

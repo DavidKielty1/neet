@@ -45,91 +45,87 @@ import java.util.function.*;
 
 
 public class PascalsTriangleIiSimilar2 {
+    public List<String> summaryRanges(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<String> summaryRanges(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not nums:
+    // return []
+    // result = []
+    // start = 0
+    // for i in range(len(nums)):
+    // if i == len(nums) - 1 or nums[i] + 1 != nums[i + 1]:
+    // if start == i:
+    // result.append(str(nums[start]))
+    // else:
+    // result.append(f'{nums[start]}->{nums[i]}')
+    // start = i + 1
+    // return result
 
-            //
-
-            //
-
-            // if not nums:
-            // return []
-            // result = []
-            // start = 0
-            // for i in range(len(nums)):
-            // if i == len(nums) - 1 or nums[i] + 1 != nums[i + 1]:
-            // if start == i:
-            // result.append(str(nums[start]))
-            // else:
-            // result.append(f'{nums[start]}->{nums[i]}')
-            // start = i + 1
-            // return result
-
-            throw new UnsupportedOperationException("Implement summaryRanges");
-        }
-
+        throw new UnsupportedOperationException("Implement summaryRanges");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PascalsTriangleIiSimilar2 sol = new PascalsTriangleIiSimilar2();
         assert java.util.Objects.equals(sol.summaryRanges(java.util.List.of(0, 1, 2, 4, 5, 7)), java.util.List.of("0->2", "4->5", "7"));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.summaryRanges(java.util.List.of(0, 2, 3, 4, 6, 8, 9)), java.util.List.of("0", "2->4", "6", "8->9"));

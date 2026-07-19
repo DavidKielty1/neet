@@ -33,94 +33,93 @@
  * - All words in wordList are unique
  */
 public class WordLadder {
-    static class Solution {
-        public int ladderLength(String beginWord, String endWord, java.util.List<String> wordList) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int ladderLength(String beginWord, String endWord, java.util.List<String> wordList) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Set<String> words = new HashSet<>(wordList);
-            // if (!words.contains(endWord)) {
-            //     return 0;
-            // }
-            //
-            // Queue<String> queue = new ArrayDeque<>();
-            // queue.offer(beginWord);
-            // int steps = 1;
-            //
-            // while (!queue.isEmpty()) {
-            //     for (int size = queue.size(); size > 0; size--) {
-            //         String word = queue.poll();
-            //         if (word.equals(endWord)) {
-            //             return steps;
-            //         }
-            //         char[] chars = word.toCharArray();
-            //         for (int i = 0; i < chars.length; i++) {
-            //             char original = chars[i];
-            //             for (char c = 'a'; c <= 'z'; c++) {
-            //                 chars[i] = c;
-            //                 String next = new String(chars);
-            //                 if (words.remove(next)) {
-            //                     queue.offer(next);
-            //                 }
-            //             }
-            //             chars[i] = original;
-            //         }
-            //     }
-            //     steps++;
-            // }
-            //
-            // return 0;
-            throw new UnsupportedOperationException("Implement ladderLength");
-        }
+    // Set<String> words = new HashSet<>(wordList);
+    // if (!words.contains(endWord)) {
+    //     return 0;
+    // }
+    //
+    // Queue<String> queue = new ArrayDeque<>();
+    // queue.offer(beginWord);
+    // int steps = 1;
+    //
+    // while (!queue.isEmpty()) {
+    //     for (int size = queue.size(); size > 0; size--) {
+    //         String word = queue.poll();
+    //         if (word.equals(endWord)) {
+    //             return steps;
+    //         }
+    //         char[] chars = word.toCharArray();
+    //         for (int i = 0; i < chars.length; i++) {
+    //             char original = chars[i];
+    //             for (char c = 'a'; c <= 'z'; c++) {
+    //                 chars[i] = c;
+    //                 String next = new String(chars);
+    //                 if (words.remove(next)) {
+    //                     queue.offer(next);
+    //                 }
+    //             }
+    //             chars[i] = original;
+    //         }
+    //     }
+    //     steps++;
+    // }
+    //
+    // return 0;
+        throw new UnsupportedOperationException("Implement ladderLength");
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement ladderLength and add checks.");

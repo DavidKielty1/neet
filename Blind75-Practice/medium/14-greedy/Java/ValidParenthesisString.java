@@ -29,80 +29,79 @@
  * - s[i] is '(', ')' or '*'
  */
 public class ValidParenthesisString {
-    static class Solution {
-        public boolean checkValidString(String s) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public boolean checkValidString(String s) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int minOpen = 0;
-            // int maxOpen = 0;
-            // for (char c : s.toCharArray()) {
-            //     if (c == '(') {
-            //         minOpen++;
-            //         maxOpen++;
-            //     } else if (c == ')') {
-            //         minOpen--;
-            //         maxOpen--;
-            //     } else {
-            //         minOpen--;
-            //         maxOpen++;
-            //     }
-            //     if (maxOpen < 0) {
-            //         return false;
-            //     }
-            //     minOpen = Math.max(minOpen, 0);
-            // }
-            // return minOpen == 0;
-        }
+    // int minOpen = 0;
+    // int maxOpen = 0;
+    // for (char c : s.toCharArray()) {
+    //     if (c == '(') {
+    //         minOpen++;
+    //         maxOpen++;
+    //     } else if (c == ')') {
+    //         minOpen--;
+    //         maxOpen--;
+    //     } else {
+    //         minOpen--;
+    //         maxOpen++;
+    //     }
+    //     if (maxOpen < 0) {
+    //         return false;
+    //     }
+    //     minOpen = Math.max(minOpen, 0);
+    // }
+    // return minOpen == 0;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement checkValidString and add checks.");

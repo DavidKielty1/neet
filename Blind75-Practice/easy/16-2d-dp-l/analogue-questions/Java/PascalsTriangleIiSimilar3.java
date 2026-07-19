@@ -38,86 +38,82 @@ import java.util.function.*;
 
 
 public class PascalsTriangleIiSimilar3 {
+    public boolean isMonotonic(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isMonotonic(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // increasing = decreasing = True
+    // for i in range(len(nums) - 1):
+    // if nums[i] > nums[i + 1]:
+    // increasing = False
+    // if nums[i] < nums[i + 1]:
+    // decreasing = False
+    // return increasing or decreasing
 
-            //
-
-            //
-
-            // increasing = decreasing = True
-            // for i in range(len(nums) - 1):
-            // if nums[i] > nums[i + 1]:
-            // increasing = False
-            // if nums[i] < nums[i + 1]:
-            // decreasing = False
-            // return increasing or decreasing
-
-            throw new UnsupportedOperationException("Implement isMonotonic");
-        }
-
+        throw new UnsupportedOperationException("Implement isMonotonic");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PascalsTriangleIiSimilar3 sol = new PascalsTriangleIiSimilar3();
         assert (sol.isMonotonic(java.util.List.of(1, 2, 2, 3)) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isMonotonic(java.util.List.of(6, 5, 4, 4)) == true);

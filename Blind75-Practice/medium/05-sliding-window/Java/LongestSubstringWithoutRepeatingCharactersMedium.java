@@ -22,88 +22,87 @@
  */
 
 public class LongestSubstringWithoutRepeatingCharactersMedium {
-    static class Solution {
-        public int lengthOfLongestSubstringKDistinct(String s, int k) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int lengthOfLongestSubstringKDistinct(String s, int k) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // if (k == 0) {
-            //     return 0;
-            // }
+    // if (k == 0) {
+    //     return 0;
+    // }
 
-            // Map<Character, Integer> map = new HashMap<>();
-            // int left = 0;
-            // int longestSubstring = 0;
+    // Map<Character, Integer> map = new HashMap<>();
+    // int left = 0;
+    // int longestSubstring = 0;
 
-            // for (int right = 0; right < s.length(); right++) {
-            //     char rChar = s.charAt(right);
+    // for (int right = 0; right < s.length(); right++) {
+    //     char rChar = s.charAt(right);
 
-            //     map.merge(rChar, 1, Integer::sum);
+    //     map.merge(rChar, 1, Integer::sum);
 
-            //     while (map.size() > k) {
-            //         char lChar = s.charAt(left);
-            //         map.merge(lChar, -1, Integer::sum);
-            //         map.remove(lChar, 0);
-            //         left++;
-            //     }
+    //     while (map.size() > k) {
+    //         char lChar = s.charAt(left);
+    //         map.merge(lChar, -1, Integer::sum);
+    //         map.remove(lChar, 0);
+    //         left++;
+    //     }
 
-            //     longestSubstring = Math.max(longestSubstring, right - left + 1);
-            // }
+    //     longestSubstring = Math.max(longestSubstring, right - left + 1);
+    // }
 
-            // return longestSubstring;
-        }
+    // return longestSubstring;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LongestSubstringWithoutRepeatingCharactersMedium sol = new LongestSubstringWithoutRepeatingCharactersMedium();
         assert sol.lengthOfLongestSubstringKDistinct("eceba", 2) == 3;
         assert sol.lengthOfLongestSubstringKDistinct("ccaabbb", 2) == 5;
         System.out.println("All test cases passed!");

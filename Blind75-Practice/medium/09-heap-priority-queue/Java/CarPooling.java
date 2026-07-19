@@ -43,78 +43,77 @@
  */
 
 public class CarPooling {
-    static class Solution {
-        public boolean carPooling(int[][] trips, int capacity) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public boolean carPooling(int[][] trips, int capacity) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Arrays.sort(trips, Comparator.comparingInt(a -> a[1]));
-            // PriorityQueue<int[]> minHeap = new PriorityQueue<>(
-            //         Comparator.comparingInt(a -> a[2]));
-            // int passengers = 0;
-            //
-            // for (int[] trip : trips) {
-            //     while (!minHeap.isEmpty() && minHeap.peek()[2] <= trip[1]) {
-            //         passengers -= minHeap.poll()[0];
-            //     }
-            //
-            //     passengers += trip[0];
-            //     if (passengers > capacity) {
-            //         return false;
-            //     }
-            //     minHeap.offer(trip);
-            // }
-            // return true;
-        }
+    // Arrays.sort(trips, Comparator.comparingInt(a -> a[1]));
+    // PriorityQueue<int[]> minHeap = new PriorityQueue<>(
+    //         Comparator.comparingInt(a -> a[2]));
+    // int passengers = 0;
+    //
+    // for (int[] trip : trips) {
+    //     while (!minHeap.isEmpty() && minHeap.peek()[2] <= trip[1]) {
+    //         passengers -= minHeap.poll()[0];
+    //     }
+    //
+    //     passengers += trip[0];
+    //     if (passengers > capacity) {
+    //         return false;
+    //     }
+    //     minHeap.offer(trip);
+    // }
+    // return true;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("CarPooling practice stub ready.");

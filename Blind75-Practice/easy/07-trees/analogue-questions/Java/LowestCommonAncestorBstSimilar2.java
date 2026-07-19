@@ -28,7 +28,6 @@ import java.util.function.*;
 
 
 public class LowestCommonAncestorBstSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -47,94 +46,94 @@ public class LowestCommonAncestorBstSimilar2 {
         }
     }
 
-    static class Solution {
-        public int kthSmallest(TreeNode root, int k) {
-            //
 
-            //
+    public int kthSmallest(TreeNode root, int k) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // self.count = 0
-            // self.result = None
-            // def inorder(node):
-            // if not node or self.result is not None:
-            // return
-            // inorder(node.left)
-            // self.count += 1
-            // if self.count == k:
-            // self.result = node.val
-            // return
-            // inorder(node.right)
-            // inorder(root)
-            // return self.result
+    //
 
-            throw new UnsupportedOperationException("Implement kthSmallest");
-        }
+    // self.count = 0
+    // self.result = None
+    // def inorder(node):
+    // if not node or self.result is not None:
+    // return
+    // inorder(node.left)
+    // self.count += 1
+    // if self.count == k:
+    // self.result = node.val
+    // return
+    // inorder(node.right)
+    // inorder(root)
+    // return self.result
 
+        throw new UnsupportedOperationException("Implement kthSmallest");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree([3, 1, 4, null, 2]);
-        // assert solution.kthSmallest(root, 1) == 1  // needs locals (port helpers): ['root']
+        LowestCommonAncestorBstSimilar2 sol = new LowestCommonAncestorBstSimilar2();
+    // root = create_tree([3, 1, 4, null, 2]);
+    // assert solution.kthSmallest(root, 1) == 1  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree([5, 3, 6, 2, 4, null, null, 1]);
-        // assert solution.kthSmallest(root, 3) == 3  // needs locals (port helpers): ['root']
+    // root = create_tree([5, 3, 6, 2, 4, null, null, 1]);
+    // assert solution.kthSmallest(root, 3) == 3  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

@@ -34,7 +34,6 @@ import java.util.function.*;
 
 
 public class MergeTwoSortedListsSimilar2 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -51,106 +50,106 @@ public class MergeTwoSortedListsSimilar2 {
         }
     }
 
-    static class Solution {
-        public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-            //
 
-            //
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // dummy = ListNode(0)
-            // current = dummy
-            // carry = 0
-            // while l1 or l2 or carry:
-            // val1 = l1.val if l1 else 0
-            // val2 = l2.val if l2 else 0
-            // total = val1 + val2 + carry
-            // carry = total // 10
-            // digit = total % 10
-            // current.next = ListNode(digit)
-            // current = current.next
-            // if l1:
-            // l1 = l1.next
-            // if l2:
-            // l2 = l2.next
-            // return dummy.next
+    //
 
-            throw new UnsupportedOperationException("Implement addTwoNumbers");
-        }
+    // dummy = ListNode(0)
+    // current = dummy
+    // carry = 0
+    // while l1 or l2 or carry:
+    // val1 = l1.val if l1 else 0
+    // val2 = l2.val if l2 else 0
+    // total = val1 + val2 + carry
+    // carry = total // 10
+    // digit = total % 10
+    // current.next = ListNode(digit)
+    // current = current.next
+    // if l1:
+    // l1 = l1.next
+    // if l2:
+    // l2 = l2.next
+    // return dummy.next
 
+        throw new UnsupportedOperationException("Implement addTwoNumbers");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // l1 = create_list(java.util.List.of(2,4,3));
-        // l2 = create_list(java.util.List.of(5,6,4));
-        // result = sol.addTwoNumbers(l1, l2);
-        // assert list_to_array(result) == [7, 0, 8]  // needs locals (port helpers): ['list_to_array', 'result']
+        MergeTwoSortedListsSimilar2 sol = new MergeTwoSortedListsSimilar2();
+    // l1 = create_list(java.util.List.of(2,4,3));
+    // l2 = create_list(java.util.List.of(5,6,4));
+    // result = sol.addTwoNumbers(l1, l2);
+    // assert list_to_array(result) == [7, 0, 8]  // needs locals (port helpers): ['list_to_array', 'result']
         System.out.println("✓ Test case 1 passed");
-        // l1 = create_list(java.util.List.of(0));
-        // l2 = create_list(java.util.List.of(0));
-        // result = sol.addTwoNumbers(l1, l2);
-        // assert list_to_array(result) == [0]  // needs locals (port helpers): ['list_to_array', 'result']
+    // l1 = create_list(java.util.List.of(0));
+    // l2 = create_list(java.util.List.of(0));
+    // result = sol.addTwoNumbers(l1, l2);
+    // assert list_to_array(result) == [0]  // needs locals (port helpers): ['list_to_array', 'result']
         System.out.println("✓ Test case 2 passed");
-        // l1 = create_list(java.util.List.of(9,9,9,9,9,9,9));
-        // l2 = create_list(java.util.List.of(9,9,9,9));
-        // result = sol.addTwoNumbers(l1, l2);
-        // assert list_to_array(result) == [8, 9, 9, 9, 0, 0, 0, 1]  // needs locals (port helpers): ['list_to_array', 'result']
+    // l1 = create_list(java.util.List.of(9,9,9,9,9,9,9));
+    // l2 = create_list(java.util.List.of(9,9,9,9));
+    // result = sol.addTwoNumbers(l1, l2);
+    // assert list_to_array(result) == [8, 9, 9, 9, 0, 0, 0, 1]  // needs locals (port helpers): ['list_to_array', 'result']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

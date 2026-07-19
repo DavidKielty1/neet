@@ -37,19 +37,17 @@
  * - The input is valid, including every "C" removing two existing scores
  */
 public class BaseballGameSimilar3 {
-
-    static class Solution {
-        public int tallyMatchPoints(String[] operations) {
-            // Keep valid scores in stack order.
-            // D uses the most recent score.
-            // + uses the most recent two scores.
-            // C removes the last two valid entries instead of one.
-            throw new UnsupportedOperationException("Implement tallyMatchPoints");
-        }
+    public int tallyMatchPoints(String[] operations) {
+    // Keep valid scores in stack order.
+    // D uses the most recent score.
+    // + uses the most recent two scores.
+    // C removes the last two valid entries instead of one.
+        throw new UnsupportedOperationException("Implement tallyMatchPoints");
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BaseballGameSimilar3 sol = new BaseballGameSimilar3();
         assert (sol.tallyMatchPoints(new String[] {"5", "-2", "4", "C", "9", "+", "+"}) == 51);
         System.out.println("✓ Test case 1 passed");
         assert (sol.tallyMatchPoints(new String[] {"3", "7", "D", "C"}) == 3);

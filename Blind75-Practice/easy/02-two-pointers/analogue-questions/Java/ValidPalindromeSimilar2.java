@@ -31,97 +31,93 @@ Constraints:
  */
 
 public class ValidPalindromeSimilar2 {
+    public int removePalindromeSub(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int removePalindromeSub(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not s:
+    // return 0
+    // left, right = (0, len(s) - 1)
+    // while left < right:
+    // if s[left] != s[right]:
+    // return 2
+    // left += 1
+    // right -= 1
+    // return 1
+    // if not s:
+    // return 0
+    // left, right = (0, len(s) - 1)
+    // while left < right:
+    // if s[left] != s[right]:
+    // return 2
+    // left += 1
+    // right -= 1
+    // return 1
 
-            //
-
-            //
-
-            // if not s:
-            // return 0
-            // left, right = (0, len(s) - 1)
-            // while left < right:
-            // if s[left] != s[right]:
-            // return 2
-            // left += 1
-            // right -= 1
-            // return 1
-            // if not s:
-            // return 0
-            // left, right = (0, len(s) - 1)
-            // while left < right:
-            // if s[left] != s[right]:
-            // return 2
-            // left += 1
-            // right -= 1
-            // return 1
-
-            throw new UnsupportedOperationException("Implement removePalindromeSub");
-        }
-
+        throw new UnsupportedOperationException("Implement removePalindromeSub");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidPalindromeSimilar2 sol = new ValidPalindromeSimilar2();
         assert (sol.removePalindromeSub("ababa") == 1);
         System.out.println("✓ Test case 1 passed");
         assert (sol.removePalindromeSub("aaabbb") == 2);

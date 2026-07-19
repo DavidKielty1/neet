@@ -36,100 +36,96 @@ import java.util.function.*;
 
 
 public class MaximumSubarraySimilar3 {
+    public int maxSubarraySumCircular(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maxSubarraySumCircular(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def kadane_max(arr):
+    // max_sum = arr[0]
+    // current_max = arr[0]
+    // for num in arr[1:]:
+    // current_max = max(num, current_max + num)
+    // max_sum = max(max_sum, current_max)
+    // return max_sum
+    // def kadane_min(arr):
+    // min_sum = arr[0]
+    // current_min = arr[0]
+    // for num in arr[1:]:
+    // current_min = min(num, current_min + num)
+    // min_sum = min(min_sum, current_min)
+    // return min_sum
+    // max_kadane = kadane_max(nums)
+    // min_kadane = kadane_min(nums)
+    // total_sum = sum(nums)
+    // if total_sum == min_kadane:
+    // return max_kadane
+    // max_circular = total_sum - min_kadane
+    // return max(max_kadane, max_circular)
 
-            //
-
-            //
-
-            // def kadane_max(arr):
-            // max_sum = arr[0]
-            // current_max = arr[0]
-            // for num in arr[1:]:
-            // current_max = max(num, current_max + num)
-            // max_sum = max(max_sum, current_max)
-            // return max_sum
-            // def kadane_min(arr):
-            // min_sum = arr[0]
-            // current_min = arr[0]
-            // for num in arr[1:]:
-            // current_min = min(num, current_min + num)
-            // min_sum = min(min_sum, current_min)
-            // return min_sum
-            // max_kadane = kadane_max(nums)
-            // min_kadane = kadane_min(nums)
-            // total_sum = sum(nums)
-            // if total_sum == min_kadane:
-            // return max_kadane
-            // max_circular = total_sum - min_kadane
-            // return max(max_kadane, max_circular)
-
-            throw new UnsupportedOperationException("Implement maxSubarraySumCircular");
-        }
-
+        throw new UnsupportedOperationException("Implement maxSubarraySumCircular");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MaximumSubarraySimilar3 sol = new MaximumSubarraySimilar3();
         assert (sol.maxSubarraySumCircular(java.util.List.of(1, -2, 3, -2)) == 3);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maxSubarraySumCircular(java.util.List.of(5, -3, 5)) == 10);

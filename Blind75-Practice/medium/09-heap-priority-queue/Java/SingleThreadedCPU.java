@@ -39,95 +39,94 @@
  * Notes:
  */
 public class SingleThreadedCPU {
-    static class Solution {
-        public int[] getOrder(int[][] tasks) {
-            // 
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int[] getOrder(int[][] tasks) {
+    // 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // initial tasks = [[1,2],[2,4],[3,2],[4,1]]
+    // initial tasks = [[1,2],[2,4],[3,2],[4,1]]
 
-            // int n = tasks.length;
-            
-            // int[][] indexed = new int[n][3];
-            // for (int i = 0; i < n; i++) {
-            //     indexed[i] = new int[] {tasks[i][0], tasks[i][1], i};
-            // }
-            
-            // Arrays.sort(indexed, Comparator.comparingInt(a -> a[0]));
-            // result = [[1,2,0][2,4,1][3,2,2][4,1,3]]
-            
-            //
-            // PriorityQueue<int[]> minHeap = new PriorityQueue<>(
-            //         (a, b) -> a[1] == b[1]
-            //                 ? Integer.compare(a[2], b[2])
-            //                 : Integer.compare(a[1], b[1]));
-            //
-            // int[] order = new int[n];
-            // int orderIndex = 0;
-            // int taskIndex = 0;
-            // long time = 0;
+    // int n = tasks.length;
+        
+    // int[][] indexed = new int[n][3];
+    // for (int i = 0; i < n; i++) {
+    //     indexed[i] = new int[] {tasks[i][0], tasks[i][1], i};
+    // }
+        
+    // Arrays.sort(indexed, Comparator.comparingInt(a -> a[0]));
+    // result = [[1,2,0][2,4,1][3,2,2][4,1,3]]
+        
+    //
+    // PriorityQueue<int[]> minHeap = new PriorityQueue<>(
+    //         (a, b) -> a[1] == b[1]
+    //                 ? Integer.compare(a[2], b[2])
+    //                 : Integer.compare(a[1], b[1]));
+    //
+    // int[] order = new int[n];
+    // int orderIndex = 0;
+    // int taskIndex = 0;
+    // long time = 0;
 
-            // while (taskIndex < n || !minHeap.isEmpty()) {
-            //     if (minHeap.isEmpty() && time < indexed[taskIndex][0]) {
-            //         time = indexed[taskIndex][0];
-            //     }
-            //     while (taskIndex < n && indexed[taskIndex][0] <= time) {
-            //         minHeap.offer(indexed[taskIndex++]);
-            //     }
-            //     int[] current = minHeap.poll();
-            //     order[orderIndex++] = current[2];
-            //     time += current[1];
-            // }
-            // return order;
-        }
+    // while (taskIndex < n || !minHeap.isEmpty()) {
+    //     if (minHeap.isEmpty() && time < indexed[taskIndex][0]) {
+    //         time = indexed[taskIndex][0];
+    //     }
+    //     while (taskIndex < n && indexed[taskIndex][0] <= time) {
+    //         minHeap.offer(indexed[taskIndex++]);
+    //     }
+    //     int[] current = minHeap.poll();
+    //     order[orderIndex++] = current[2];
+    //     time += current[1];
+    // }
+    // return order;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("SingleThreadedCPU practice stub ready.");

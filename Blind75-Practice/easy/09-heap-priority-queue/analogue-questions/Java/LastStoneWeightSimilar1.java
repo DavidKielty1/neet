@@ -31,87 +31,83 @@ import java.util.function.*;
 
 
 public class LastStoneWeightSimilar1 {
+    public int lastStoneWeightII(List<Integer> stones) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int lastStoneWeightII(List<Integer> stones) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // heap = [-stone for stone in stones]
+    // heapq.heapify(heap)
+    // while len(heap) > 1:
+    // first = -heapq.heappop(heap)
+    // second = -heapq.heappop(heap)
+    // if first != second:
+    // heapq.heappush(heap, -(first - second))
+    // return -heap[0] if heap else 0
 
-            //
-
-            //
-
-            // heap = [-stone for stone in stones]
-            // heapq.heapify(heap)
-            // while len(heap) > 1:
-            // first = -heapq.heappop(heap)
-            // second = -heapq.heappop(heap)
-            // if first != second:
-            // heapq.heappush(heap, -(first - second))
-            // return -heap[0] if heap else 0
-
-            throw new UnsupportedOperationException("Implement lastStoneWeightII");
-        }
-
+        throw new UnsupportedOperationException("Implement lastStoneWeightII");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LastStoneWeightSimilar1 sol = new LastStoneWeightSimilar1();
         assert (sol.lastStoneWeightII(java.util.List.of(2, 7, 4, 1, 8, 1)) == 1);
         System.out.println("✓ Test case 1 passed");
         assert (sol.lastStoneWeightII(java.util.List.of(31, 26, 33, 21, 40)) == 5);

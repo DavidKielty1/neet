@@ -31,88 +31,87 @@
  */
 
 public class LastStoneWeightII {
-    static class Solution {
-        public int lastStoneWeightII(int[] stones) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int lastStoneWeightII(int[] stones) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int total = 0;
-            // for (int s : stones) {
-            //     total += s;
-            // }
-            // int capacity = total / 2;
-            // boolean[] dp = new boolean[capacity + 1];
-            // dp[0] = true;
-            // for (int s : stones) {
-            //     for (int w = capacity; w >= s; w--) {
-            //         dp[w] = dp[w] || dp[w - s];
-            //     }
-            // }
-            // for (int w = capacity; w >= 0; w--) {
-            //     if (dp[w]) {
-            //         return total - 2 * w;
-            //     }
-            // }
-            // return 0;
-        }
+    // int total = 0;
+    // for (int s : stones) {
+    //     total += s;
+    // }
+    // int capacity = total / 2;
+    // boolean[] dp = new boolean[capacity + 1];
+    // dp[0] = true;
+    // for (int s : stones) {
+    //     for (int w = capacity; w >= s; w--) {
+    //         dp[w] = dp[w] || dp[w - s];
+    //     }
+    // }
+    // for (int w = capacity; w >= 0; w--) {
+    //     if (dp[w]) {
+    //         return total - 2 * w;
+    //     }
+    // }
+    // return 0;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LastStoneWeightII sol = new LastStoneWeightII();
         assert sol.lastStoneWeightII(new int[] {2, 7, 4, 1, 8, 1}) == 1;
         assert sol.lastStoneWeightII(new int[] {31, 26, 33, 21, 40}) == 5;
         System.out.println("All test cases passed!");

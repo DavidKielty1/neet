@@ -30,7 +30,6 @@ import java.util.function.*;
 
 
 public class InvertBinaryTreeSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -49,99 +48,99 @@ public class InvertBinaryTreeSimilar2 {
         }
     }
 
-    static class Solution {
-        public void flatten(TreeNode root) {
-            //
 
-            //
+    public void flatten(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not root:
-            // return
-            // nodes = []
-            // def inorder(node):
-            // if not node:
-            // return
-            // inorder(node.left)
-            // nodes.append(node)
-            // inorder(node.right)
-            // inorder(root)
-            // for i in range(len(nodes) - 1):
-            // nodes[i].left = None
-            // nodes[i].right = nodes[i + 1]
-            // if nodes:
-            // nodes[-1].left = None
-            // nodes[-1].right = None
+    //
 
-            throw new UnsupportedOperationException("Implement flatten");
-        }
+    // if not root:
+    // return
+    // nodes = []
+    // def inorder(node):
+    // if not node:
+    // return
+    // inorder(node.left)
+    // nodes.append(node)
+    // inorder(node.right)
+    // inorder(root)
+    // for i in range(len(nodes) - 1):
+    // nodes[i].left = None
+    // nodes[i].right = nodes[i + 1]
+    // if nodes:
+    // nodes[-1].left = None
+    // nodes[-1].right = None
 
+        throw new UnsupportedOperationException("Implement flatten");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree(java.util.List.of(1,2,3,4,5));
-        // solution.flatten(root)
-        // assert tree_to_list(root) == [4, 2, 5, 1, 3]  // needs locals (port helpers): ['root', 'tree_to_list']
+        InvertBinaryTreeSimilar2 sol = new InvertBinaryTreeSimilar2();
+    // root = create_tree(java.util.List.of(1,2,3,4,5));
+    // solution.flatten(root)
+    // assert tree_to_list(root) == [4, 2, 5, 1, 3]  // needs locals (port helpers): ['root', 'tree_to_list']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree([]);
-        // solution.flatten(root)
-        // assert tree_to_list(root) == []  // needs locals (port helpers): ['root', 'tree_to_list']
+    // root = create_tree([]);
+    // solution.flatten(root)
+    // assert tree_to_list(root) == []  // needs locals (port helpers): ['root', 'tree_to_list']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

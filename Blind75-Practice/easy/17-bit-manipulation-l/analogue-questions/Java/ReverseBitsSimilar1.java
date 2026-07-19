@@ -30,93 +30,89 @@ import java.util.function.*;
 
 
 public class ReverseBitsSimilar1 {
+    public int reverse(int x) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int reverse(int x) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // INT_MIN, INT_MAX = (-2 ** 31, 2 ** 31 - 1)
+    // sign = -1 if x < 0 else 1
+    // x = abs(x)
+    // result = 0
+    // while x:
+    // digit = x % 10
+    // x //= 10
+    // if result > INT_MAX // 10:
+    // return 0
+    // result = result * 10 + digit
+    // result *= sign
+    // if result < INT_MIN or result > INT_MAX:
+    // return 0
+    // return result
 
-            //
-
-            //
-
-            // INT_MIN, INT_MAX = (-2 ** 31, 2 ** 31 - 1)
-            // sign = -1 if x < 0 else 1
-            // x = abs(x)
-            // result = 0
-            // while x:
-            // digit = x % 10
-            // x //= 10
-            // if result > INT_MAX // 10:
-            // return 0
-            // result = result * 10 + digit
-            // result *= sign
-            // if result < INT_MIN or result > INT_MAX:
-            // return 0
-            // return result
-
-            throw new UnsupportedOperationException("Implement reverse");
-        }
-
+        throw new UnsupportedOperationException("Implement reverse");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ReverseBitsSimilar1 sol = new ReverseBitsSimilar1();
         assert (sol.reverse(123) == 321);
         System.out.println("✓ Test case 1 passed");
         assert (sol.reverse(-123) == -321);

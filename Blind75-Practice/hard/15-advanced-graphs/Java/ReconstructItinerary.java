@@ -30,80 +30,79 @@
  * - fromi and toi consist of uppercase English letters
  */
 public class ReconstructItinerary {
-    static class Solution {
-        public java.util.List<String> findItinerary(
-                java.util.List<java.util.List<String>> tickets) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public java.util.List<String> findItinerary(
+            java.util.List<java.util.List<String>> tickets) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Map<String, PriorityQueue<String>> graph = new HashMap<>();
-            // for (List<String> ticket : tickets) {
-            //     graph.computeIfAbsent(ticket.get(0), key -> new PriorityQueue<>()).offer(ticket.get(1));
-            // }
-            //
-            // LinkedList<String> route = new LinkedList<>();
-            // dfs("JFK", graph, route);
-            // return route;
-            throw new UnsupportedOperationException("Implement findItinerary");
-        }
-
-        // private void dfs(String airport, Map<String, PriorityQueue<String>> graph,
-        //         LinkedList<String> route) {
-        //     PriorityQueue<String> destinations = graph.get(airport);
-        //     while (destinations != null && !destinations.isEmpty()) {
-        //         dfs(destinations.poll(), graph, route);
-        //     }
-        //     route.addFirst(airport);
-        // }
+    // Map<String, PriorityQueue<String>> graph = new HashMap<>();
+    // for (List<String> ticket : tickets) {
+    //     graph.computeIfAbsent(ticket.get(0), key -> new PriorityQueue<>()).offer(ticket.get(1));
+    // }
+    //
+    // LinkedList<String> route = new LinkedList<>();
+    // dfs("JFK", graph, route);
+    // return route;
+        throw new UnsupportedOperationException("Implement findItinerary");
     }
+
+    // private void dfs(String airport, Map<String, PriorityQueue<String>> graph,
+    //         LinkedList<String> route) {
+    //     PriorityQueue<String> destinations = graph.get(airport);
+    //     while (destinations != null && !destinations.isEmpty()) {
+    //         dfs(destinations.poll(), graph, route);
+    //     }
+    //     route.addFirst(airport);
+    // }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement findItinerary and add checks.");

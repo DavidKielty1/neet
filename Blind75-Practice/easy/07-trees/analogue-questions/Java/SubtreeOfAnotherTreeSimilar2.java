@@ -38,7 +38,6 @@ import java.util.function.*;
 
 
 public class SubtreeOfAnotherTreeSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -57,95 +56,95 @@ public class SubtreeOfAnotherTreeSimilar2 {
         }
     }
 
-    static class Solution {
-        public int findTilt(TreeNode root) {
-            //
 
-            //
+    public int findTilt(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // self.total_tilt = 0
-            // def get_sum_and_tilt(node):
-            // if not node:
-            // return 0
-            // left_sum = get_sum_and_tilt(node.left)
-            // right_sum = get_sum_and_tilt(node.right)
-            // tilt = abs(left_sum - right_sum)
-            // self.total_tilt += tilt
-            // return left_sum + right_sum + node.val
-            // get_sum_and_tilt(root)
-            // return self.total_tilt
+    //
 
-            throw new UnsupportedOperationException("Implement findTilt");
-        }
+    // self.total_tilt = 0
+    // def get_sum_and_tilt(node):
+    // if not node:
+    // return 0
+    // left_sum = get_sum_and_tilt(node.left)
+    // right_sum = get_sum_and_tilt(node.right)
+    // tilt = abs(left_sum - right_sum)
+    // self.total_tilt += tilt
+    // return left_sum + right_sum + node.val
+    // get_sum_and_tilt(root)
+    // return self.total_tilt
 
+        throw new UnsupportedOperationException("Implement findTilt");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree(java.util.List.of(1,2,3));
-        // assert solution.findTilt(root) == 1  // needs locals (port helpers): ['root']
+        SubtreeOfAnotherTreeSimilar2 sol = new SubtreeOfAnotherTreeSimilar2();
+    // root = create_tree(java.util.List.of(1,2,3));
+    // assert solution.findTilt(root) == 1  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree([4, 2, 9, 3, 5, null, 7]);
-        // assert solution.findTilt(root) == 15  // needs locals (port helpers): ['root']
+    // root = create_tree([4, 2, 9, 3, 5, null, 7]);
+    // assert solution.findTilt(root) == 15  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
-        // root = create_tree(java.util.List.of(21,7,14,1,1,2,2,3,3));
-        // assert solution.findTilt(root) == 9  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(21,7,14,1,1,2,2,3,3));
+    // assert solution.findTilt(root) == 9  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

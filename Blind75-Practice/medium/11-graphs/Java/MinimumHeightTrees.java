@@ -37,98 +37,96 @@
 import java.util.List;
 
 public class MinimumHeightTrees {
-
-    static class Solution {
-        public List<Integer> findMinHeightTrees(int n, int[][] edges) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // if (n == 1) {
-            //     return Collections.singletonList(0);
-            // }
-            //
-            // List<Set<Integer>> graph = new ArrayList<>();
-            // for (int i = 0; i < n; i++) {
-            //     graph.add(new HashSet<>());
-            // }
-            // for (int[] edge : edges) {
-            //     graph.get(edge[0]).add(edge[1]);
-            //     graph.get(edge[1]).add(edge[0]);
-            // }
-            //
-            // List<Integer> leaves = new ArrayList<>();
-            // for (int node = 0; node < n; node++) {
-            //     if (graph.get(node).size() == 1) {
-            //         leaves.add(node);
-            //     }
-            // }
-            //
-            // int remaining = n;
-            // while (remaining > 2) {
-            //     remaining -= leaves.size();
-            //     List<Integer> nextLeaves = new ArrayList<>();
-            //     for (int leaf : leaves) {
-            //         int neighbor = graph.get(leaf).iterator().next();
-            //         graph.get(neighbor).remove(leaf);
-            //         if (graph.get(neighbor).size() == 1) {
-            //             nextLeaves.add(neighbor);
-            //         }
-            //     }
-            //     leaves = nextLeaves;
-            // }
-            //
-            // return leaves;
-        }
+    public List<Integer> findMinHeightTrees(int n, int[][] edges) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // if (n == 1) {
+    //     return Collections.singletonList(0);
+    // }
+    //
+    // List<Set<Integer>> graph = new ArrayList<>();
+    // for (int i = 0; i < n; i++) {
+    //     graph.add(new HashSet<>());
+    // }
+    // for (int[] edge : edges) {
+    //     graph.get(edge[0]).add(edge[1]);
+    //     graph.get(edge[1]).add(edge[0]);
+    // }
+    //
+    // List<Integer> leaves = new ArrayList<>();
+    // for (int node = 0; node < n; node++) {
+    //     if (graph.get(node).size() == 1) {
+    //         leaves.add(node);
+    //     }
+    // }
+    //
+    // int remaining = n;
+    // while (remaining > 2) {
+    //     remaining -= leaves.size();
+    //     List<Integer> nextLeaves = new ArrayList<>();
+    //     for (int leaf : leaves) {
+    //         int neighbor = graph.get(leaf).iterator().next();
+    //         graph.get(neighbor).remove(leaf);
+    //         if (graph.get(neighbor).size() == 1) {
+    //             nextLeaves.add(neighbor);
+    //         }
+    //     }
+    //     leaves = nextLeaves;
+    // }
+    //
+    // return leaves;
     }
+    
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        MinimumHeightTrees solution = new MinimumHeightTrees();
         List<Integer> roots = solution.findMinHeightTrees(4, new int[][] {{1, 0}, {1, 2}, {1, 3}});
         assert roots.size() == 1;
         assert roots.get(0) == 1;

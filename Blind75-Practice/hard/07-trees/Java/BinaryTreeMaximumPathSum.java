@@ -38,77 +38,77 @@ public class BinaryTreeMaximumPathSum {
         }
     }
 
-    static class Solution {
-        public int maxPathSum(TreeNode root) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
 
-            // int[] best = {Integer.MIN_VALUE};
-            // maxGain(root, best);
-            // return best[0];
-            throw new UnsupportedOperationException("Implement maxPathSum");
-        }
+    public int maxPathSum(TreeNode root) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-        // private int maxGain(TreeNode node, int[] best) {
-        //     if (node == null) {
-        //         return 0;
-        //     }
-        //
-        //     int leftGain = Math.max(0, maxGain(node.left, best));
-        //     int rightGain = Math.max(0, maxGain(node.right, best));
-        //     best[0] = Math.max(best[0], node.val + leftGain + rightGain);
-        //
-        //     return node.val + Math.max(leftGain, rightGain);
-        // }
+    // int[] best = {Integer.MIN_VALUE};
+    // maxGain(root, best);
+    // return best[0];
+        throw new UnsupportedOperationException("Implement maxPathSum");
     }
+
+    // private int maxGain(TreeNode node, int[] best) {
+    //     if (node == null) {
+    //         return 0;
+    //     }
+    //
+    //     int leftGain = Math.max(0, maxGain(node.left, best));
+    //     int rightGain = Math.max(0, maxGain(node.right, best));
+    //     best[0] = Math.max(best[0], node.val + leftGain + rightGain);
+    //
+    //     return node.val + Math.max(leftGain, rightGain);
+    // }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement maxPathSum and add checks.");

@@ -41,83 +41,79 @@ import java.util.function.*;
 
 
 public class PalindromeNumberSimilar2 {
+    public int missingNumber(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int missingNumber(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // n = len(nums)
+    // expected_sum = n * (n + 1) // 2
+    // actual_sum = sum(nums)
+    // return expected_sum - actual_sum
 
-            //
-
-            //
-
-            // n = len(nums)
-            // expected_sum = n * (n + 1) // 2
-            // actual_sum = sum(nums)
-            // return expected_sum - actual_sum
-
-            throw new UnsupportedOperationException("Implement missingNumber");
-        }
-
+        throw new UnsupportedOperationException("Implement missingNumber");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PalindromeNumberSimilar2 sol = new PalindromeNumberSimilar2();
         assert (sol.missingNumber(java.util.List.of(3, 0, 1)) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.missingNumber(java.util.List.of(0, 1)) == 2);

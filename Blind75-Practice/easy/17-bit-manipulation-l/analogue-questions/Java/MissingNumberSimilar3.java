@@ -37,96 +37,92 @@ import java.util.function.*;
 
 
 public class MissingNumberSimilar3 {
+    public List<List<Integer>> findMissingRanges(List<Integer> nums, int lower, int upper) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<List<Integer>> findMissingRanges(List<Integer> nums, int lower, int upper) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = []
+    // def add_range(start, end):
+    // if start <= end:
+    // result.append([start, end])
+    // if not nums:
+    // add_range(lower, upper)
+    // return result
+    // if nums[0] > lower:
+    // add_range(lower, nums[0] - 1)
+    // for i in range(len(nums) - 1):
+    // if nums[i + 1] - nums[i] > 1:
+    // add_range(nums[i] + 1, nums[i + 1] - 1)
+    // if nums[-1] < upper:
+    // add_range(nums[-1] + 1, upper)
+    // return result
 
-            //
-
-            //
-
-            // result = []
-            // def add_range(start, end):
-            // if start <= end:
-            // result.append([start, end])
-            // if not nums:
-            // add_range(lower, upper)
-            // return result
-            // if nums[0] > lower:
-            // add_range(lower, nums[0] - 1)
-            // for i in range(len(nums) - 1):
-            // if nums[i + 1] - nums[i] > 1:
-            // add_range(nums[i] + 1, nums[i + 1] - 1)
-            // if nums[-1] < upper:
-            // add_range(nums[-1] + 1, upper)
-            // return result
-
-            throw new UnsupportedOperationException("Implement findMissingRanges");
-        }
-
+        throw new UnsupportedOperationException("Implement findMissingRanges");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // result1 = sol.findMissingRanges(java.util.List.of(0,1,3,50,75), 0, 99);
-        // assert result1 == [[2, 2], [4, 49], [51, 74], [76, 99]]  // needs locals (port helpers): ['result1']
+        MissingNumberSimilar3 sol = new MissingNumberSimilar3();
+    // result1 = sol.findMissingRanges(java.util.List.of(0,1,3,50,75), 0, 99);
+    // assert result1 == [[2, 2], [4, 49], [51, 74], [76, 99]]  // needs locals (port helpers): ['result1']
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.findMissingRanges(java.util.List.of(-1), -1, -1), java.util.List.of());
         System.out.println("✓ Test case 2 passed");

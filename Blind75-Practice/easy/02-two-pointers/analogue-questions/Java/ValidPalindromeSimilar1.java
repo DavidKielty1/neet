@@ -31,93 +31,89 @@ import java.util.function.*;
 
 
 public class ValidPalindromeSimilar1 {
+    public boolean validPalindrome(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean validPalindrome(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def is_palindrome(left: int, right: int) -> bool:
+    // while left < right:
+    // if s[left] != s[right]:
+    // return False
+    // left += 1
+    // right -= 1
+    // return True
+    // left, right = (0, len(s) - 1)
+    // while left < right:
+    // if s[left] != s[right]:
+    // return is_palindrome(left + 1, right) or is_palindrome(left, right - 1)
+    // left += 1
+    // right -= 1
+    // return True
 
-            //
-
-            //
-
-            // def is_palindrome(left: int, right: int) -> bool:
-            // while left < right:
-            // if s[left] != s[right]:
-            // return False
-            // left += 1
-            // right -= 1
-            // return True
-            // left, right = (0, len(s) - 1)
-            // while left < right:
-            // if s[left] != s[right]:
-            // return is_palindrome(left + 1, right) or is_palindrome(left, right - 1)
-            // left += 1
-            // right -= 1
-            // return True
-
-            throw new UnsupportedOperationException("Implement validPalindrome");
-        }
-
+        throw new UnsupportedOperationException("Implement validPalindrome");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidPalindromeSimilar1 sol = new ValidPalindromeSimilar1();
         assert sol.validPalindrome("aba");
         System.out.println("✓ Test case 1 passed");
         assert sol.validPalindrome("abca");

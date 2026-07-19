@@ -31,92 +31,88 @@ import java.util.function.*;
 
 
 public class TwoSumSimilar3 {
+    public int twoSumLessThanK(List<Integer> nums, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int twoSumLessThanK(List<Integer> nums, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if len(nums) < 2:
+    // return -1
+    // nums.sort()
+    // left, right = (0, len(nums) - 1)
+    // max_sum = -1
+    // while left < right:
+    // current_sum = nums[left] + nums[right]
+    // if current_sum < k:
+    // max_sum = max(max_sum, current_sum)
+    // left += 1
+    // else:
+    // right -= 1
+    // return max_sum
 
-            //
-
-            //
-
-            // if len(nums) < 2:
-            // return -1
-            // nums.sort()
-            // left, right = (0, len(nums) - 1)
-            // max_sum = -1
-            // while left < right:
-            // current_sum = nums[left] + nums[right]
-            // if current_sum < k:
-            // max_sum = max(max_sum, current_sum)
-            // left += 1
-            // else:
-            // right -= 1
-            // return max_sum
-
-            throw new UnsupportedOperationException("Implement twoSumLessThanK");
-        }
-
+        throw new UnsupportedOperationException("Implement twoSumLessThanK");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TwoSumSimilar3 sol = new TwoSumSimilar3();
         assert (sol.twoSumLessThanK(java.util.List.of(34, 23, 1, 24, 75, 33, 54, 8), 60) == 58);
         System.out.println("✓ Test case 1 passed");
         assert (sol.twoSumLessThanK(java.util.List.of(10, 20, 30), 15) == -1);

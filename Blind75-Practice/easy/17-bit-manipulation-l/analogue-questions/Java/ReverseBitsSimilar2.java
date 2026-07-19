@@ -37,84 +37,80 @@ import java.util.function.*;
 
 
 public class ReverseBitsSimilar2 {
+    public int bitwiseComplement(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int bitwiseComplement(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n == 0:
+    // return 1
+    // bits = n.bit_length()
+    // mask = (1 << bits) - 1
+    // return n ^ mask
 
-            //
-
-            //
-
-            // if n == 0:
-            // return 1
-            // bits = n.bit_length()
-            // mask = (1 << bits) - 1
-            // return n ^ mask
-
-            throw new UnsupportedOperationException("Implement bitwiseComplement");
-        }
-
+        throw new UnsupportedOperationException("Implement bitwiseComplement");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ReverseBitsSimilar2 sol = new ReverseBitsSimilar2();
         assert (sol.bitwiseComplement(5) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.bitwiseComplement(7) == 0);

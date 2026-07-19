@@ -26,94 +26,93 @@
  * - 1 <= k <= min(50, nums.length)
  */
 public class SplitArrayLargestSum {
-    static class Solution {
-        public int splitArray(int[] nums, int k) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int splitArray(int[] nums, int k) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int left = 0;
-            // int right = 0;
-            // for (int num : nums) {
-            //     left = Math.max(left, num);
-            //     right += num;
-            // }
-            //
-            // while (left < right) {
-            //     int mid = left + (right - left) / 2;
-            //     if (canSplit(nums, k, mid)) {
-            //         right = mid;
-            //     } else {
-            //         left = mid + 1;
-            //     }
-            // }
-            //
-            // return left;
-            throw new UnsupportedOperationException("Implement splitArray");
-        }
-
-        @SuppressWarnings("unused")
-        private boolean canSplit(int[] nums, int k, int maxAllowedSum) {
-            // int groups = 1;
-            // int currentSum = 0;
-            // for (int num : nums) {
-            //     if (currentSum + num > maxAllowedSum) {
-            //         groups++;
-            //         currentSum = 0;
-            //     }
-            //     currentSum += num;
-            // }
-            // return groups <= k;
-            throw new UnsupportedOperationException("Implement canSplit");
-        }
+    // int left = 0;
+    // int right = 0;
+    // for (int num : nums) {
+    //     left = Math.max(left, num);
+    //     right += num;
+    // }
+    //
+    // while (left < right) {
+    //     int mid = left + (right - left) / 2;
+    //     if (canSplit(nums, k, mid)) {
+    //         right = mid;
+    //     } else {
+    //         left = mid + 1;
+    //     }
+    // }
+    //
+    // return left;
+        throw new UnsupportedOperationException("Implement splitArray");
     }
+
+    @SuppressWarnings("unused")
+    private boolean canSplit(int[] nums, int k, int maxAllowedSum) {
+    // int groups = 1;
+    // int currentSum = 0;
+    // for (int num : nums) {
+    //     if (currentSum + num > maxAllowedSum) {
+    //         groups++;
+    //         currentSum = 0;
+    //     }
+    //     currentSum += num;
+    // }
+    // return groups <= k;
+        throw new UnsupportedOperationException("Implement canSplit");
+    }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement splitArray and add checks.");

@@ -29,74 +29,73 @@
  * - 1 <= minJump <= maxJump < s.length
  */
 public class JumpGameVII {
-    static class Solution {
-        public boolean canReach(String s, int minJump, int maxJump) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public boolean canReach(String s, int minJump, int maxJump) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // boolean[] reachable = new boolean[s.length()];
-            // reachable[0] = true;
-            // int reachableCount = 0;
-            // for (int i = 1; i < s.length(); i++) {
-            //     if (i - minJump >= 0 && reachable[i - minJump]) {
-            //         reachableCount++;
-            //     }
-            //     if (i - maxJump - 1 >= 0 && reachable[i - maxJump - 1]) {
-            //         reachableCount--;
-            //     }
-            //     reachable[i] = s.charAt(i) == '0' && reachableCount > 0;
-            // }
-            // return reachable[s.length() - 1];
-        }
+    // boolean[] reachable = new boolean[s.length()];
+    // reachable[0] = true;
+    // int reachableCount = 0;
+    // for (int i = 1; i < s.length(); i++) {
+    //     if (i - minJump >= 0 && reachable[i - minJump]) {
+    //         reachableCount++;
+    //     }
+    //     if (i - maxJump - 1 >= 0 && reachable[i - maxJump - 1]) {
+    //         reachableCount--;
+    //     }
+    //     reachable[i] = s.charAt(i) == '0' && reachableCount > 0;
+    // }
+    // return reachable[s.length() - 1];
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement canReach and add checks.");

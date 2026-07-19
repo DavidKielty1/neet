@@ -37,82 +37,78 @@ import java.util.function.*;
 
 
 public class PowerOfFourSimilar1 {
+    public int findComplement(int num) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int findComplement(int num) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // bit_length = num.bit_length()
+    // mask = (1 << bit_length) - 1
+    // return num ^ mask
 
-            //
-
-            //
-
-            // bit_length = num.bit_length()
-            // mask = (1 << bit_length) - 1
-            // return num ^ mask
-
-            throw new UnsupportedOperationException("Implement findComplement");
-        }
-
+        throw new UnsupportedOperationException("Implement findComplement");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfFourSimilar1 sol = new PowerOfFourSimilar1();
         assert (sol.findComplement(5) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.findComplement(1) == 0);

@@ -30,89 +30,85 @@ import java.util.function.*;
 
 
 public class ContainsDuplicateSimilar2 {
+    public boolean containsNearbyAlmostDuplicate(List<Integer> nums, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean containsNearbyAlmostDuplicate(List<Integer> nums, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if k == 0:
+    // return False
+    // window = set()
+    // for i, num in enumerate(nums):
+    // if num in window:
+    // return True
+    // window.add(num)
+    // if i >= k:
+    // window.remove(nums[i - k])
+    // return False
 
-            //
-
-            //
-
-            // if k == 0:
-            // return False
-            // window = set()
-            // for i, num in enumerate(nums):
-            // if num in window:
-            // return True
-            // window.add(num)
-            // if i >= k:
-            // window.remove(nums[i - k])
-            // return False
-
-            throw new UnsupportedOperationException("Implement containsNearbyAlmostDuplicate");
-        }
-
+        throw new UnsupportedOperationException("Implement containsNearbyAlmostDuplicate");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ContainsDuplicateSimilar2 sol = new ContainsDuplicateSimilar2();
         assert (sol.containsNearbyAlmostDuplicate(java.util.List.of(1, 2, 3, 1), 3) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.containsNearbyAlmostDuplicate(java.util.List.of(1, 5, 9, 1, 5, 9), 2) == false);

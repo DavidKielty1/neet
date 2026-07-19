@@ -28,7 +28,6 @@ import java.util.function.*;
 
 
 public class LowestCommonAncestorBstSimilar1 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -47,91 +46,91 @@ public class LowestCommonAncestorBstSimilar1 {
         }
     }
 
-    static class Solution {
-        public int closestValue(TreeNode root, double target) {
-            //
 
-            //
+    public int closestValue(TreeNode root, double target) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // closest = root.val
-            // current = root
-            // while current:
-            // if abs(current.val - target) < abs(closest - target):
-            // closest = current.val
-            // if target < current.val:
-            // current = current.left
-            // else:
-            // current = current.right
-            // return closest
+    //
 
-            throw new UnsupportedOperationException("Implement closestValue");
-        }
+    // closest = root.val
+    // current = root
+    // while current:
+    // if abs(current.val - target) < abs(closest - target):
+    // closest = current.val
+    // if target < current.val:
+    // current = current.left
+    // else:
+    // current = current.right
+    // return closest
 
+        throw new UnsupportedOperationException("Implement closestValue");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree(java.util.List.of(4,2,5,1,3));
-        // assert solution.closestValue(root, 3.714286) == 4  // needs locals (port helpers): ['root']
+        LowestCommonAncestorBstSimilar1 sol = new LowestCommonAncestorBstSimilar1();
+    // root = create_tree(java.util.List.of(4,2,5,1,3));
+    // assert solution.closestValue(root, 3.714286) == 4  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree(java.util.List.of(1));
-        // assert solution.closestValue(root, 4.428571) == 1  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(1));
+    // assert solution.closestValue(root, 4.428571) == 1  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

@@ -38,87 +38,83 @@ import java.util.function.*;
 
 
 public class LengthOfLastWordSimilar2 {
+    public List<String> uncommonFromSentences(String s1, String s2) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<String> uncommonFromSentences(String s1, String s2) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // words = s1.split() + s2.split()
+    // word_count = Counter(words)
+    // return [word for word, count in word_count.items() if count == 1]
 
-            //
-
-            //
-
-            // words = s1.split() + s2.split()
-            // word_count = Counter(words)
-            // return [word for word, count in word_count.items() if count == 1]
-
-            throw new UnsupportedOperationException("Implement uncommonFromSentences");
-        }
-
+        throw new UnsupportedOperationException("Implement uncommonFromSentences");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // result1 = sol.uncommonFromSentences("this apple is sweet", "this apple is sour");
-        // assert set(result1) == set(['sweet', 'sour'])  // needs locals (port helpers): ['result1']
+        LengthOfLastWordSimilar2 sol = new LengthOfLastWordSimilar2();
+    // result1 = sol.uncommonFromSentences("this apple is sweet", "this apple is sour");
+    // assert set(result1) == set(['sweet', 'sour'])  // needs locals (port helpers): ['result1']
         System.out.println("✓ Test case 1 passed");
-        // result2 = sol.uncommonFromSentences("apple apple", "banana");
-        // assert result2 == ['banana']  // needs locals (port helpers): ['result2']
+    // result2 = sol.uncommonFromSentences("apple apple", "banana");
+    // assert result2 == ['banana']  // needs locals (port helpers): ['result2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

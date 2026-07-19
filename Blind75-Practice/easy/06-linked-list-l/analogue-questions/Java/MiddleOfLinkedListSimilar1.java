@@ -43,7 +43,6 @@ import java.util.function.*;
 
 
 public class MiddleOfLinkedListSimilar1 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -60,102 +59,102 @@ public class MiddleOfLinkedListSimilar1 {
         }
     }
 
-    static class Solution {
-        public ListNode deleteMiddle(ListNode head) {
-            //
 
-            //
+    public ListNode deleteMiddle(ListNode head) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not head or not head.next:
-            // return None
-            // dummy = ListNode(0, head)
-            // slow = dummy
-            // fast = head
-            // while fast and fast.next:
-            // slow = slow.next
-            // fast = fast.next.next
-            // slow.next = slow.next.next
-            // return dummy.next
+    //
 
-            throw new UnsupportedOperationException("Implement deleteMiddle");
-        }
+    // if not head or not head.next:
+    // return None
+    // dummy = ListNode(0, head)
+    // slow = dummy
+    // fast = head
+    // while fast and fast.next:
+    // slow = slow.next
+    // fast = fast.next.next
+    // slow.next = slow.next.next
+    // return dummy.next
 
+        throw new UnsupportedOperationException("Implement deleteMiddle");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head1 = ListNode(1);
-        // head1.next = ListNode(3)
-        // head1.next.next = ListNode(4)
-        // head1.next.next.next = ListNode(7)
-        // head1.next.next.next.next = ListNode(1)
-        // head1.next.next.next.next.next = ListNode(2)
-        // head1.next.next.next.next.next.next = ListNode(6)
-        // result1 = sol.deleteMiddle(head1);
-        // assert list_to_array(result1) == [1, 3, 4, 1, 2, 6]  // needs locals (port helpers): ['list_to_array', 'result1']
+        MiddleOfLinkedListSimilar1 sol = new MiddleOfLinkedListSimilar1();
+    // head1 = ListNode(1);
+    // head1.next = ListNode(3)
+    // head1.next.next = ListNode(4)
+    // head1.next.next.next = ListNode(7)
+    // head1.next.next.next.next = ListNode(1)
+    // head1.next.next.next.next.next = ListNode(2)
+    // head1.next.next.next.next.next.next = ListNode(6)
+    // result1 = sol.deleteMiddle(head1);
+    // assert list_to_array(result1) == [1, 3, 4, 1, 2, 6]  // needs locals (port helpers): ['list_to_array', 'result1']
         System.out.println("✓ Test case 1 passed");
-        // head2 = ListNode(1);
-        // head2.next = ListNode(2)
-        // head2.next.next = ListNode(3)
-        // head2.next.next.next = ListNode(4)
-        // result2 = sol.deleteMiddle(head2);
-        // assert list_to_array(result2) == [1, 2, 4]  // needs locals (port helpers): ['list_to_array', 'result2']
+    // head2 = ListNode(1);
+    // head2.next = ListNode(2)
+    // head2.next.next = ListNode(3)
+    // head2.next.next.next = ListNode(4)
+    // result2 = sol.deleteMiddle(head2);
+    // assert list_to_array(result2) == [1, 2, 4]  // needs locals (port helpers): ['list_to_array', 'result2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

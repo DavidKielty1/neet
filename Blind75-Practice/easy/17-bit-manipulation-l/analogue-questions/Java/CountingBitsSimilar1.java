@@ -31,86 +31,82 @@ import java.util.function.*;
 
 
 public class CountingBitsSimilar1 {
+    public List<Integer> sortByBits(List<Integer> arr) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> sortByBits(List<Integer> arr) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def count_ones(n):
+    // count = 0
+    // while n:
+    // n &= n - 1
+    // count += 1
+    // return count
+    // return sorted(arr, key=lambda x: (count_ones(x), x))
 
-            //
-
-            //
-
-            // def count_ones(n):
-            // count = 0
-            // while n:
-            // n &= n - 1
-            // count += 1
-            // return count
-            // return sorted(arr, key=lambda x: (count_ones(x), x))
-
-            throw new UnsupportedOperationException("Implement sortByBits");
-        }
-
+        throw new UnsupportedOperationException("Implement sortByBits");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        CountingBitsSimilar1 sol = new CountingBitsSimilar1();
         assert java.util.Objects.equals(sol.sortByBits(java.util.List.of(0, 1, 2, 3, 4, 5, 6, 7, 8)), java.util.List.of(0, 1, 2, 4, 8, 3, 5, 6, 7));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.sortByBits(java.util.List.of(1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1)), java.util.List.of(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024));

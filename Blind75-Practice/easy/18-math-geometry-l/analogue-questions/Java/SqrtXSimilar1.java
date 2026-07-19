@@ -36,90 +36,86 @@ import java.util.function.*;
 
 
 public class SqrtXSimilar1 {
+    public double myPow(double x, int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public double myPow(double x, int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def helper(x, n):
+    // if n == 0:
+    // return 1
+    // half = helper(x, n // 2)
+    // if n % 2 == 0:
+    // return half * half
+    // else:
+    // return half * half * x
+    // if n < 0:
+    // return 1 / helper(x, -n)
+    // return helper(x, n)
 
-            //
-
-            //
-
-            // def helper(x, n):
-            // if n == 0:
-            // return 1
-            // half = helper(x, n // 2)
-            // if n % 2 == 0:
-            // return half * half
-            // else:
-            // return half * half * x
-            // if n < 0:
-            // return 1 / helper(x, -n)
-            // return helper(x, n)
-
-            throw new UnsupportedOperationException("Implement myPow");
-        }
-
+        throw new UnsupportedOperationException("Implement myPow");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SqrtXSimilar1 sol = new SqrtXSimilar1();
         assert (Math.abs((sol.myPow(2.0, 10) - 1024.0)) < 0.0001);
         System.out.println("✓ Test case 1 passed");
         assert (Math.abs((sol.myPow(2.1, 3) - 9.261)) < 0.0001);

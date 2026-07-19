@@ -36,81 +36,77 @@ import java.util.function.*;
 
 
 public class PowerOfFourSimilar3 {
+    public boolean hasAlternatingBits(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean hasAlternatingBits(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // xor = n ^ n >> 1
+    // return xor & xor + 1 == 0
 
-            //
-
-            //
-
-            // xor = n ^ n >> 1
-            // return xor & xor + 1 == 0
-
-            throw new UnsupportedOperationException("Implement hasAlternatingBits");
-        }
-
+        throw new UnsupportedOperationException("Implement hasAlternatingBits");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfFourSimilar3 sol = new PowerOfFourSimilar3();
         assert (sol.hasAlternatingBits(5) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.hasAlternatingBits(7) == false);

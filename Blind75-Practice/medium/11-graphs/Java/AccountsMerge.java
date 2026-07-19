@@ -53,88 +53,86 @@
 import java.util.List;
 
 public class AccountsMerge {
-
-    static class Solution {
-        public List<List<String>> accountsMerge(List<List<String>> accounts) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // Map<String, Set<String>> graph = new HashMap<>();
-            // Map<String, String> emailToName = new HashMap<>();
-            //
-            // for (List<String> account : accounts) {
-            //     String name = account.get(0);
-            //     for (int i = 1; i < account.size(); i++) {
-            //         emailToName.put(account.get(i), name);
-            //         graph.putIfAbsent(account.get(i), new HashSet<>());
-            //         if (i > 1) {
-            //             String firstEmail = account.get(1);
-            //             graph.get(firstEmail).add(account.get(i));
-            //             graph.get(account.get(i)).add(firstEmail);
-            //         }
-            //     }
-            // }
-            //
-            // List<List<String>> merged = new ArrayList<>();
-            // Set<String> visited = new HashSet<>();
-            // for (String email : graph.keySet()) {
-            //     if (visited.add(email)) {
-            //         List<String> component = new ArrayList<>();
-            //         dfs(email, graph, visited, component);
-            //         Collections.sort(component);
-            //         component.add(0, emailToName.get(email));
-            //         merged.add(component);
-            //     }
-            // }
-            // return merged;
-        }
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // Map<String, Set<String>> graph = new HashMap<>();
+    // Map<String, String> emailToName = new HashMap<>();
+    //
+    // for (List<String> account : accounts) {
+    //     String name = account.get(0);
+    //     for (int i = 1; i < account.size(); i++) {
+    //         emailToName.put(account.get(i), name);
+    //         graph.putIfAbsent(account.get(i), new HashSet<>());
+    //         if (i > 1) {
+    //             String firstEmail = account.get(1);
+    //             graph.get(firstEmail).add(account.get(i));
+    //             graph.get(account.get(i)).add(firstEmail);
+    //         }
+    //     }
+    // }
+    //
+    // List<List<String>> merged = new ArrayList<>();
+    // Set<String> visited = new HashSet<>();
+    // for (String email : graph.keySet()) {
+    //     if (visited.add(email)) {
+    //         List<String> component = new ArrayList<>();
+    //         dfs(email, graph, visited, component);
+    //         Collections.sort(component);
+    //         component.add(0, emailToName.get(email));
+    //         merged.add(component);
+    //     }
+    // }
+    // return merged;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement accountsMerge and add checks.");

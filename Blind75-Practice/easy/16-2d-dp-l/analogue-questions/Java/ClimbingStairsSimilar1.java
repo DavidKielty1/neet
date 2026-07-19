@@ -38,87 +38,83 @@ import java.util.function.*;
 
 
 public class ClimbingStairsSimilar1 {
+    public int fib(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int fib(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n <= 1:
+    // return n
+    // prev2, prev1 = (0, 1)
+    // for i in range(2, n + 1):
+    // current = prev1 + prev2
+    // prev2 = prev1
+    // prev1 = current
+    // return prev1
 
-            //
-
-            //
-
-            // if n <= 1:
-            // return n
-            // prev2, prev1 = (0, 1)
-            // for i in range(2, n + 1):
-            // current = prev1 + prev2
-            // prev2 = prev1
-            // prev1 = current
-            // return prev1
-
-            throw new UnsupportedOperationException("Implement fib");
-        }
-
+        throw new UnsupportedOperationException("Implement fib");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ClimbingStairsSimilar1 sol = new ClimbingStairsSimilar1();
         assert (sol.fib(2) == 1);
         System.out.println("✓ Test case 1 passed");
         assert (sol.fib(3) == 2);

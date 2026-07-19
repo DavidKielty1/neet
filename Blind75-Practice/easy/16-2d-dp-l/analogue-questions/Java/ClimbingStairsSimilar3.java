@@ -32,88 +32,84 @@ import java.util.function.*;
 
 
 public class ClimbingStairsSimilar3 {
+    public int minCostToReachTop(int n, List<Integer> cost) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int minCostToReachTop(int n, List<Integer> cost) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n <= 1:
+    // return 0
+    // cost = cost + [0]
+    // prev2, prev1 = (cost[0], cost[1])
+    // for i in range(2, len(cost)):
+    // current = cost[i] + min(prev1, prev2)
+    // prev2 = prev1
+    // prev1 = current
+    // return prev1
 
-            //
-
-            //
-
-            // if n <= 1:
-            // return 0
-            // cost = cost + [0]
-            // prev2, prev1 = (cost[0], cost[1])
-            // for i in range(2, len(cost)):
-            // current = cost[i] + min(prev1, prev2)
-            // prev2 = prev1
-            // prev1 = current
-            // return prev1
-
-            throw new UnsupportedOperationException("Implement minCostToReachTop");
-        }
-
+        throw new UnsupportedOperationException("Implement minCostToReachTop");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ClimbingStairsSimilar3 sol = new ClimbingStairsSimilar3();
         assert (sol.minCostToReachTop(3, java.util.List.of(10, 15, 20)) == 15);
         System.out.println("✓ Test case 1 passed");
         assert (sol.minCostToReachTop(5, java.util.List.of(1, 100, 1, 1, 1, 100)) == 3);

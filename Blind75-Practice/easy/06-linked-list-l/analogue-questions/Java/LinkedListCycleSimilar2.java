@@ -30,92 +30,88 @@ import java.util.function.*;
 
 
 public class LinkedListCycleSimilar2 {
+    public boolean isHappy(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isHappy(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def get_next(num):
+    // total = 0
+    // while num > 0:
+    // digit = num % 10
+    // total += digit * digit
+    // num //= 10
+    // return total
+    // slow = n
+    // fast = get_next(n)
+    // while fast != 1 and slow != fast:
+    // slow = get_next(slow)
+    // fast = get_next(get_next(fast))
+    // return fast == 1
 
-            //
-
-            //
-
-            // def get_next(num):
-            // total = 0
-            // while num > 0:
-            // digit = num % 10
-            // total += digit * digit
-            // num //= 10
-            // return total
-            // slow = n
-            // fast = get_next(n)
-            // while fast != 1 and slow != fast:
-            // slow = get_next(slow)
-            // fast = get_next(get_next(fast))
-            // return fast == 1
-
-            throw new UnsupportedOperationException("Implement isHappy");
-        }
-
+        throw new UnsupportedOperationException("Implement isHappy");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LinkedListCycleSimilar2 sol = new LinkedListCycleSimilar2();
         assert (sol.isHappy(19) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isHappy(2) == false);

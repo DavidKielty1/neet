@@ -28,57 +28,6 @@ import java.util.List;
 
 class KSumJava {
     public List<List<Integer>> kSum(int[] nums, int target, int k) {
-        List<List<Integer>> result = new ArrayList<>();
-        Arrays.sort(nums);
-        kSum(nums, k, target, 0, new ArrayList<>(), result);
-        return result;
-    }
-
-    private void kSum(int[] nums, int k, long target, int start, List<Integer> path,            List<List<Integer>> result) {
-        if (k == 2) {
-            twoSum(nums, start, target, path, result);
-            return;
-        }
-
-        for (int i = start; i <= nums.length - k; i++) {
-            if (i > start && nums[i] == nums[i - 1]) {
-                continue;
-            }
-
-            path.add(nums[i]);
-            kSum(nums, k - 1, target - nums[i], i + 1, path, result);
-            path.remove(path.size() - 1);
-        }
-    }
-
-    private void twoSum(int[] nums, int start, long target, List<Integer> path, List<List<Integer>> result) {
-        int left = start;
-        int right = nums.length - 1;
-
-        while (left < right) {
-            long sum = (long) nums[left] + nums[right];
-            if (sum == target) {
-                List<Integer> entry = new ArrayList<>(path);
-                entry.add(nums[left]);
-                entry.add(nums[right]);
-                result.add(entry);
-
-                left++;
-                right--;
-
-                while (left < right && nums[left] == nums[left - 1]) {
-                    left++;
-                }
-                while (left < right && nums[right] == nums[right + 1]) {
-                    right--;
-                }
-            } else if (sum > target) {
-                right--;
-            } else {
-                left++;
-            }
-        }
-    }
 
     //
     //
@@ -184,7 +133,7 @@ class KSumJava {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        KSumJava sol = new KSumJava();
         List<List<Integer>> result = sol.kSum(new int[] {1, 0, -1, 0, -2, 2}, 0, 4);
         assert result.size() == 3;
         assert sol.kSum(new int[] {2, 2, 2, 2, 2}, 8, 4).size() == 1;

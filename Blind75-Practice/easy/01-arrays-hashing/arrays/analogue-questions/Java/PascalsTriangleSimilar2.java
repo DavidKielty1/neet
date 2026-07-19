@@ -49,80 +49,76 @@ import java.util.function.*;
 
 
 public class PascalsTriangleSimilar2 {
+    public int maximumWealth(List<List<Integer>> accounts) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maximumWealth(List<List<Integer>> accounts) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // return max((sum(customer) for customer in accounts))
 
-            //
-
-            //
-
-            // return max((sum(customer) for customer in accounts))
-
-            throw new UnsupportedOperationException("Implement maximumWealth");
-        }
-
+        throw new UnsupportedOperationException("Implement maximumWealth");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PascalsTriangleSimilar2 sol = new PascalsTriangleSimilar2();
         assert (sol.maximumWealth(java.util.List.of(java.util.List.of(1, 2, 3), java.util.List.of(3, 2, 1))) == 6);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maximumWealth(java.util.List.of(java.util.List.of(1, 5), java.util.List.of(7, 3), java.util.List.of(3, 5))) == 10);

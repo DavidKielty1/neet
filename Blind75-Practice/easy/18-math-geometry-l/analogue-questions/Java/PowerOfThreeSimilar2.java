@@ -38,84 +38,80 @@ import java.util.function.*;
 
 
 public class PowerOfThreeSimilar2 {
+    public int trailingZeroes(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int trailingZeroes(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // count = 0
+    // while n > 0:
+    // n //= 5
+    // count += n
+    // return count
 
-            //
-
-            //
-
-            // count = 0
-            // while n > 0:
-            // n //= 5
-            // count += n
-            // return count
-
-            throw new UnsupportedOperationException("Implement trailingZeroes");
-        }
-
+        throw new UnsupportedOperationException("Implement trailingZeroes");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfThreeSimilar2 sol = new PowerOfThreeSimilar2();
         assert (sol.trailingZeroes(3) == 0);
         System.out.println("✓ Test case 1 passed");
         assert (sol.trailingZeroes(5) == 1);

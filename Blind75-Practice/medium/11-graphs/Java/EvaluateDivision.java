@@ -44,84 +44,82 @@
 import java.util.List;
 
 public class EvaluateDivision {
-
-    static class Solution {
-        public double[] calcEquation(
-                List<List<String>> equations, double[] values, List<List<String>> queries) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // Map<String, Map<String, Double>> graph = new HashMap<>();
-            // for (int i = 0; i < equations.size(); i++) {
-            //     String a = equations.get(i).get(0);
-            //     String b = equations.get(i).get(1);
-            //     graph.computeIfAbsent(a, key -> new HashMap<>()).put(b, values[i]);
-            //     graph.computeIfAbsent(b, key -> new HashMap<>()).put(a, 1.0 / values[i]);
-            // }
-            //
-            // double[] answer = new double[queries.size()];
-            // for (int i = 0; i < queries.size(); i++) {
-            //     String src = queries.get(i).get(0);
-            //     String dst = queries.get(i).get(1);
-            //     if (!graph.containsKey(src) || !graph.containsKey(dst)) {
-            //         answer[i] = -1.0;
-            //         continue;
-            //     }
-            //     if (src.equals(dst)) {
-            //         answer[i] = 1.0;
-            //         continue;
-            //     }
-            //     answer[i] = dfs(src, dst, graph, new HashSet<>(), 1.0);
-            // }
-            // return answer;
-        }
+    public double[] calcEquation(
+            List<List<String>> equations, double[] values, List<List<String>> queries) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // Map<String, Map<String, Double>> graph = new HashMap<>();
+    // for (int i = 0; i < equations.size(); i++) {
+    //     String a = equations.get(i).get(0);
+    //     String b = equations.get(i).get(1);
+    //     graph.computeIfAbsent(a, key -> new HashMap<>()).put(b, values[i]);
+    //     graph.computeIfAbsent(b, key -> new HashMap<>()).put(a, 1.0 / values[i]);
+    // }
+    //
+    // double[] answer = new double[queries.size()];
+    // for (int i = 0; i < queries.size(); i++) {
+    //     String src = queries.get(i).get(0);
+    //     String dst = queries.get(i).get(1);
+    //     if (!graph.containsKey(src) || !graph.containsKey(dst)) {
+    //         answer[i] = -1.0;
+    //         continue;
+    //     }
+    //     if (src.equals(dst)) {
+    //         answer[i] = 1.0;
+    //         continue;
+    //     }
+    //     answer[i] = dfs(src, dst, graph, new HashSet<>(), 1.0);
+    // }
+    // return answer;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement calcEquation and add assertions.");

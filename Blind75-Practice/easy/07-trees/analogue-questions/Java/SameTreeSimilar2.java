@@ -27,7 +27,6 @@ import java.util.function.*;
 
 
 public class SameTreeSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -46,94 +45,94 @@ public class SameTreeSimilar2 {
         }
     }
 
-    static class Solution {
-        public boolean isUnivalTree(TreeNode root) {
-            //
 
-            //
+    public boolean isUnivalTree(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not root:
-            // return True
-            // target_val = root.val
-            // def check_unival(node):
-            // if not node:
-            // return True
-            // if node.val != target_val:
-            // return False
-            // return check_unival(node.left) and check_unival(node.right)
-            // return check_unival(root)
+    //
 
-            throw new UnsupportedOperationException("Implement isUnivalTree");
-        }
+    // if not root:
+    // return True
+    // target_val = root.val
+    // def check_unival(node):
+    // if not node:
+    // return True
+    // if node.val != target_val:
+    // return False
+    // return check_unival(node.left) and check_unival(node.right)
+    // return check_unival(root)
 
+        throw new UnsupportedOperationException("Implement isUnivalTree");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree([1, 1, 1, 1, 1, null, 1]);
-        // assert solution.isUnivalTree(root) == True  // needs locals (port helpers): ['root']
+        SameTreeSimilar2 sol = new SameTreeSimilar2();
+    // root = create_tree([1, 1, 1, 1, 1, null, 1]);
+    // assert solution.isUnivalTree(root) == True  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree(java.util.List.of(2,2,2,5,2));
-        // assert solution.isUnivalTree(root) == False  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(2,2,2,5,2));
+    // assert solution.isUnivalTree(root) == False  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
-        // root = create_tree(java.util.List.of(1));
-        // assert solution.isUnivalTree(root) == True  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(1));
+    // assert solution.isUnivalTree(root) == True  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

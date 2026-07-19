@@ -47,84 +47,80 @@ import java.util.function.*;
 
 
 public class LengthOfLastWordSimilar3 {
+    public String reversePrefix(String word, String ch) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String reversePrefix(String word, String ch) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // try:
+    // idx = word.index(ch)
+    // return word[:idx + 1][::-1] + word[idx + 1:]
+    // except ValueError:
+    // return word
 
-            //
-
-            //
-
-            // try:
-            // idx = word.index(ch)
-            // return word[:idx + 1][::-1] + word[idx + 1:]
-            // except ValueError:
-            // return word
-
-            throw new UnsupportedOperationException("Implement reversePrefix");
-        }
-
+        throw new UnsupportedOperationException("Implement reversePrefix");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LengthOfLastWordSimilar3 sol = new LengthOfLastWordSimilar3();
         assert (sol.reversePrefix("abcdefd", "d") == "dcbaefd");
         System.out.println("✓ Test case 1 passed");
         assert (sol.reversePrefix("xyxzxe", "z") == "zxyxxe");

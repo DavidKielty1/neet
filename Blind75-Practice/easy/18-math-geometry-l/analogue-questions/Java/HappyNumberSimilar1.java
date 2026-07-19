@@ -33,85 +33,81 @@ import java.util.function.*;
 
 
 public class HappyNumberSimilar1 {
+    public boolean isUgly(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isUgly(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n <= 0:
+    // return False
+    // for factor in [2, 3, 5]:
+    // while n % factor == 0:
+    // n //= factor
+    // return n == 1
 
-            //
-
-            //
-
-            // if n <= 0:
-            // return False
-            // for factor in [2, 3, 5]:
-            // while n % factor == 0:
-            // n //= factor
-            // return n == 1
-
-            throw new UnsupportedOperationException("Implement isUgly");
-        }
-
+        throw new UnsupportedOperationException("Implement isUgly");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        HappyNumberSimilar1 sol = new HappyNumberSimilar1();
         assert (sol.isUgly(6) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isUgly(1) == true);

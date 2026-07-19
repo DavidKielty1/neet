@@ -33,91 +33,89 @@
  */
 
 public class GraphValidTree {
-
-    static class Solution {
-        public boolean validTree(int n, int[][] edges) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // if (edges.length != n - 1) {
-            //     return false;
-            // }
-            //
-            // List<List<Integer>> graph = new ArrayList<>();
-            // for (int i = 0; i < n; i++) {
-            //     graph.add(new ArrayList<>());
-            // }
-            // for (int[] edge : edges) {
-            //     graph.get(edge[0]).add(edge[1]);
-            //     graph.get(edge[1]).add(edge[0]);
-            // }
-            //
-            // Set<Integer> visited = new HashSet<>();
-            // Deque<Integer> stack = new ArrayDeque<>();
-            // stack.push(0);
-            // visited.add(0);
-            //
-            // while (!stack.isEmpty()) {
-            //     int node = stack.pop();
-            //     for (int next : graph.get(node)) {
-            //         if (visited.add(next)) {
-            //             stack.push(next);
-            //         }
-            //     }
-            // }
-            //
-            // return visited.size() == n;
-        }
+    public boolean validTree(int n, int[][] edges) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // if (edges.length != n - 1) {
+    //     return false;
+    // }
+    //
+    // List<List<Integer>> graph = new ArrayList<>();
+    // for (int i = 0; i < n; i++) {
+    //     graph.add(new ArrayList<>());
+    // }
+    // for (int[] edge : edges) {
+    //     graph.get(edge[0]).add(edge[1]);
+    //     graph.get(edge[1]).add(edge[0]);
+    // }
+    //
+    // Set<Integer> visited = new HashSet<>();
+    // Deque<Integer> stack = new ArrayDeque<>();
+    // stack.push(0);
+    // visited.add(0);
+    //
+    // while (!stack.isEmpty()) {
+    //     int node = stack.pop();
+    //     for (int next : graph.get(node)) {
+    //         if (visited.add(next)) {
+    //             stack.push(next);
+    //         }
+    //     }
+    // }
+    //
+    // return visited.size() == n;
     }
+    
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        GraphValidTree solution = new GraphValidTree();
         assert solution.validTree(5, new int[][] {{0, 1}, {0, 2}, {0, 3}, {1, 4}});
         assert !solution.validTree(5, new int[][] {{0, 1}, {1, 2}, {2, 3}, {1, 3}, {1, 4}});
         System.out.println("All test cases passed!");

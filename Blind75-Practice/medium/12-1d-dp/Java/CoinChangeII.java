@@ -38,78 +38,77 @@
  */
 
 public class CoinChangeII {
-    static class Solution {
-        public int change(int amount, int[] coins) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int change(int amount, int[] coins) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int[] dp = new int[amount + 1];
-            // dp[0] = 1;
-            // for (int coin : coins) {
-            //     for (int s = coin; s <= amount; s++) {
-            //         dp[s] += dp[s - coin];
-            //     }
-            // }
-            // return dp[amount];
-        }
+    // int[] dp = new int[amount + 1];
+    // dp[0] = 1;
+    // for (int coin : coins) {
+    //     for (int s = coin; s <= amount; s++) {
+    //         dp[s] += dp[s - coin];
+    //     }
+    // }
+    // return dp[amount];
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        CoinChangeII sol = new CoinChangeII();
         assert sol.change(5, new int[] {1, 2, 5}) == 4;
         assert sol.change(3, new int[] {2}) == 0;
         assert sol.change(10, new int[] {10}) == 1;

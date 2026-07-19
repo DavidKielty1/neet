@@ -27,7 +27,6 @@ import java.util.function.*;
 
 
 public class BalancedBinaryTreeSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -46,97 +45,97 @@ public class BalancedBinaryTreeSimilar2 {
         }
     }
 
-    static class Solution {
-        public List<String> binaryTreePaths(TreeNode root) {
-            //
 
-            //
+    public List<String> binaryTreePaths(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not root:
-            // return []
-            // paths = []
-            // def dfs(node, path):
-            // if not node:
-            // return
-            // path.append(str(node.val))
-            // if not node.left and (not node.right):
-            // paths.append('->'.join(path))
-            // else:
-            // dfs(node.left, path)
-            // dfs(node.right, path)
-            // path.pop()
-            // dfs(root, [])
-            // return paths
+    //
 
-            throw new UnsupportedOperationException("Implement binaryTreePaths");
-        }
+    // if not root:
+    // return []
+    // paths = []
+    // def dfs(node, path):
+    // if not node:
+    // return
+    // path.append(str(node.val))
+    // if not node.left and (not node.right):
+    // paths.append('->'.join(path))
+    // else:
+    // dfs(node.left, path)
+    // dfs(node.right, path)
+    // path.pop()
+    // dfs(root, [])
+    // return paths
 
+        throw new UnsupportedOperationException("Implement binaryTreePaths");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree([1, 2, 3, null, 5]);
-        // result = sorted(sol.binaryTreePaths(root));
-        // assert result == ['1->2->5', '1->3']  // needs locals (port helpers): ['result']
+        BalancedBinaryTreeSimilar2 sol = new BalancedBinaryTreeSimilar2();
+    // root = create_tree([1, 2, 3, null, 5]);
+    // result = sorted(sol.binaryTreePaths(root));
+    // assert result == ['1->2->5', '1->3']  // needs locals (port helpers): ['result']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree(java.util.List.of(1));
-        // assert solution.binaryTreePaths(root) == ['1']  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(1));
+    // assert solution.binaryTreePaths(root) == ['1']  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

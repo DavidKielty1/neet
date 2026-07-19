@@ -32,97 +32,96 @@
  */
 
 public class PathWithMinimumEffort {
-    static class Solution {
-        public int minimumEffortPath(int[][] heights) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int minimumEffortPath(int[][] heights) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int rows = heights.length;
-            // int cols = heights[0].length;
-            // int[][] effort = new int[rows][cols];
-            // for (int[] row : effort) {
-            //     Arrays.fill(row, Integer.MAX_VALUE);
-            // }
-            // effort[0][0] = 0;
-            // int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-            // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
-            // minHeap.offer(new int[] {0, 0, 0});
-            // while (!minHeap.isEmpty()) {
-            //     int[] current = minHeap.poll();
-            //     int currentEffort = current[0];
-            //     int row = current[1];
-            //     int col = current[2];
-            //     if (row == rows - 1 && col == cols - 1) {
-            //         return currentEffort;
-            //     }
-            //     if (currentEffort > effort[row][col]) {
-            //         continue;
-            //     }
-            //     for (int[] dir : directions) {
-            //         int nextRow = row + dir[0];
-            //         int nextCol = col + dir[1];
-            //         if (nextRow < 0 || nextRow == rows || nextCol < 0 || nextCol == cols) {
-            //             continue;
-            //         }
-            //         int nextEffort = Math.max(currentEffort,
-            //                 Math.abs(heights[row][col] - heights[nextRow][nextCol]));
-            //         if (nextEffort < effort[nextRow][nextCol]) {
-            //             effort[nextRow][nextCol] = nextEffort;
-            //             minHeap.offer(new int[] {nextEffort, nextRow, nextCol});
-            //         }
-            //     }
-            // }
-            // return 0;
-        }
+    // int rows = heights.length;
+    // int cols = heights[0].length;
+    // int[][] effort = new int[rows][cols];
+    // for (int[] row : effort) {
+    //     Arrays.fill(row, Integer.MAX_VALUE);
+    // }
+    // effort[0][0] = 0;
+    // int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+    // minHeap.offer(new int[] {0, 0, 0});
+    // while (!minHeap.isEmpty()) {
+    //     int[] current = minHeap.poll();
+    //     int currentEffort = current[0];
+    //     int row = current[1];
+    //     int col = current[2];
+    //     if (row == rows - 1 && col == cols - 1) {
+    //         return currentEffort;
+    //     }
+    //     if (currentEffort > effort[row][col]) {
+    //         continue;
+    //     }
+    //     for (int[] dir : directions) {
+    //         int nextRow = row + dir[0];
+    //         int nextCol = col + dir[1];
+    //         if (nextRow < 0 || nextRow == rows || nextCol < 0 || nextCol == cols) {
+    //             continue;
+    //         }
+    //         int nextEffort = Math.max(currentEffort,
+    //                 Math.abs(heights[row][col] - heights[nextRow][nextCol]));
+    //         if (nextEffort < effort[nextRow][nextCol]) {
+    //             effort[nextRow][nextCol] = nextEffort;
+    //             minHeap.offer(new int[] {nextEffort, nextRow, nextCol});
+    //         }
+    //     }
+    // }
+    // return 0;
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement minimumEffortPath and add checks.");

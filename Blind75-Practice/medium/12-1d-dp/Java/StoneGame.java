@@ -32,89 +32,88 @@
  */
 
 public class StoneGame {
-    static class Solution {
-        public boolean stoneGame(int[] piles) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public boolean stoneGame(int[] piles) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // return true;
-            //
-            // // DP version (interval score difference):
-            // // int n = piles.length;
-            // // int[][] memo = new int[n][n];
-            // // return scoreDiff(piles, 0, n - 1, memo) > 0;
-        }
-
-        // private int scoreDiff(int[] piles, int left, int right, int[][] memo) {
-        //     if (left > right) {
-        //         return 0;
-        //     }
-        //     if (memo[left][right] != 0) {
-        //         return memo[left][right];
-        //     }
-        //     int takeLeft = piles[left] - scoreDiff(piles, left + 1, right, memo);
-        //     int takeRight = piles[right] - scoreDiff(piles, left, right - 1, memo);
-        //     memo[left][right] = Math.max(takeLeft, takeRight);
-        //     return memo[left][right];
-        // }
+    // return true;
+    //
+    // // DP version (interval score difference):
+    // // int n = piles.length;
+    // // int[][] memo = new int[n][n];
+    // // return scoreDiff(piles, 0, n - 1, memo) > 0;
     }
 
+    // private int scoreDiff(int[] piles, int left, int right, int[][] memo) {
+    //     if (left > right) {
+    //         return 0;
+    //     }
+    //     if (memo[left][right] != 0) {
+    //         return memo[left][right];
+    //     }
+    //     int takeLeft = piles[left] - scoreDiff(piles, left + 1, right, memo);
+    //     int takeRight = piles[right] - scoreDiff(piles, left, right - 1, memo);
+    //     memo[left][right] = Math.max(takeLeft, takeRight);
+    //     return memo[left][right];
+    // }
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        StoneGame sol = new StoneGame();
         assert sol.stoneGame(new int[] {5, 3, 4, 5});
         assert sol.stoneGame(new int[] {3, 7, 2, 3});
         System.out.println("All test cases passed!");

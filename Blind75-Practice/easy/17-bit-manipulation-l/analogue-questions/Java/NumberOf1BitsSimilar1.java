@@ -32,82 +32,78 @@ import java.util.function.*;
 
 
 public class NumberOf1BitsSimilar1 {
+    public boolean isPowerOfTwo(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isPowerOfTwo(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n <= 0:
+    // return False
+    // return n & n - 1 == 0
 
-            //
-
-            //
-
-            // if n <= 0:
-            // return False
-            // return n & n - 1 == 0
-
-            throw new UnsupportedOperationException("Implement isPowerOfTwo");
-        }
-
+        throw new UnsupportedOperationException("Implement isPowerOfTwo");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        NumberOf1BitsSimilar1 sol = new NumberOf1BitsSimilar1();
         assert (sol.isPowerOfTwo(1) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isPowerOfTwo(16) == true);

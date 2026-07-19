@@ -41,85 +41,81 @@ import java.util.function.*;
 
 
 public class TribonacciNumberSimilar1 {
+    public int fib(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int fib(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n <= 1:
+    // return n
+    // a, b = (0, 1)
+    // for _ in range(2, n + 1):
+    // a, b = (b, a + b)
+    // return b
 
-            //
-
-            //
-
-            // if n <= 1:
-            // return n
-            // a, b = (0, 1)
-            // for _ in range(2, n + 1):
-            // a, b = (b, a + b)
-            // return b
-
-            throw new UnsupportedOperationException("Implement fib");
-        }
-
+        throw new UnsupportedOperationException("Implement fib");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TribonacciNumberSimilar1 sol = new TribonacciNumberSimilar1();
         assert (sol.fib(2) == 1);
         System.out.println("✓ Test case 1 passed");
         assert (sol.fib(3) == 2);

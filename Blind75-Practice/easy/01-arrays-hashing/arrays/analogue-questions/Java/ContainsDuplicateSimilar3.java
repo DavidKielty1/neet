@@ -31,89 +31,85 @@ import java.util.function.*;
 
 
 public class ContainsDuplicateSimilar3 {
+    public List<Integer> findDuplicates(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> findDuplicates(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // seen = set()
+    // duplicates = set()
+    // for num in nums:
+    // if num in seen:
+    // duplicates.add(num)
+    // else:
+    // seen.add(num)
+    // return list(duplicates)
 
-            //
-
-            //
-
-            // seen = set()
-            // duplicates = set()
-            // for num in nums:
-            // if num in seen:
-            // duplicates.add(num)
-            // else:
-            // seen.add(num)
-            // return list(duplicates)
-
-            throw new UnsupportedOperationException("Implement findDuplicates");
-        }
-
+        throw new UnsupportedOperationException("Implement findDuplicates");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // result1 = sorted(sol.findDuplicates(java.util.List.of(4,3,2,7,8,2,3,1)));
-        // assert result1 == [2, 3]  // needs locals (port helpers): ['result1']
+        ContainsDuplicateSimilar3 sol = new ContainsDuplicateSimilar3();
+    // result1 = sorted(sol.findDuplicates(java.util.List.of(4,3,2,7,8,2,3,1)));
+    // assert result1 == [2, 3]  // needs locals (port helpers): ['result1']
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.findDuplicates(java.util.List.of(1, 1, 2)), java.util.List.of(1));
         System.out.println("✓ Test case 2 passed");

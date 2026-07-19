@@ -43,84 +43,82 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CourseScheduleIV {
-
-    static class Solution {
-        public List<Boolean> checkIfPrerequisite(
-                int numCourses, int[][] prerequisites, int[][] queries) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // boolean[][] reachable = new boolean[numCourses][numCourses];
-            // for (int[] edge : prerequisites) {
-            //     reachable[edge[0]][edge[1]] = true;
-            // }
-            //
-            // for (int mid = 0; mid < numCourses; mid++) {
-            //     for (int from = 0; from < numCourses; from++) {
-            //         for (int to = 0; to < numCourses; to++) {
-            //             reachable[from][to] =
-            //                     reachable[from][to]
-            //                             || (reachable[from][mid] && reachable[mid][to]);
-            //         }
-            //     }
-            // }
-            //
-            // List<Boolean> answer = new ArrayList<>();
-            // for (int[] query : queries) {
-            //     answer.add(reachable[query[0]][query[1]]);
-            // }
-            // return answer;
-        }
+    public List<Boolean> checkIfPrerequisite(
+            int numCourses, int[][] prerequisites, int[][] queries) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // boolean[][] reachable = new boolean[numCourses][numCourses];
+    // for (int[] edge : prerequisites) {
+    //     reachable[edge[0]][edge[1]] = true;
+    // }
+    //
+    // for (int mid = 0; mid < numCourses; mid++) {
+    //     for (int from = 0; from < numCourses; from++) {
+    //         for (int to = 0; to < numCourses; to++) {
+    //             reachable[from][to] =
+    //                     reachable[from][to]
+    //                             || (reachable[from][mid] && reachable[mid][to]);
+    //         }
+    //     }
+    // }
+    //
+    // List<Boolean> answer = new ArrayList<>();
+    // for (int[] query : queries) {
+    //     answer.add(reachable[query[0]][query[1]]);
+    // }
+    // return answer;
     }
+    
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        CourseScheduleIV solution = new CourseScheduleIV();
         List<Boolean> answer =
                 solution.checkIfPrerequisite(
                         2,

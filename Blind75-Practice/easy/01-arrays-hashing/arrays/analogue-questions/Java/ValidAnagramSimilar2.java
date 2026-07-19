@@ -32,88 +32,84 @@ import java.util.function.*;
 
 
 public class ValidAnagramSimilar2 {
+    public List<List<String>> groupAnagrams(List<String> strs) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<List<String>> groupAnagrams(List<String> strs) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // anagram_groups = defaultdict(list)
+    // for s in strs:
+    // key = ''.join(sorted(s))
+    // anagram_groups[key].append(s)
+    // return list(anagram_groups.values())
 
-            //
-
-            //
-
-            // anagram_groups = defaultdict(list)
-            // for s in strs:
-            // key = ''.join(sorted(s))
-            // anagram_groups[key].append(s)
-            // return list(anagram_groups.values())
-
-            throw new UnsupportedOperationException("Implement groupAnagrams");
-        }
-
+        throw new UnsupportedOperationException("Implement groupAnagrams");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // result1 = sol.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
-        // result1_sorted = [sorted(group) for group in result1];
-        // expected1_sorted = [sorted(group) for group in [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]];
-        // assert sorted(result1_sorted) == sorted(expected1_sorted)  // needs locals (port helpers): ['expected1_sorted', 'result1_sorted']
+        ValidAnagramSimilar2 sol = new ValidAnagramSimilar2();
+    // result1 = sol.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
+    // result1_sorted = [sorted(group) for group in result1];
+    // expected1_sorted = [sorted(group) for group in [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]];
+    // assert sorted(result1_sorted) == sorted(expected1_sorted)  // needs locals (port helpers): ['expected1_sorted', 'result1_sorted']
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.groupAnagrams(java.util.List.of("")), java.util.List.of(java.util.List.of("")));
         System.out.println("✓ Test case 2 passed");

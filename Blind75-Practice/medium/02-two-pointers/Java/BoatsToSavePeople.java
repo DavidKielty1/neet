@@ -29,78 +29,77 @@
  */
 
 public class BoatsToSavePeople {
-    static class Solution {
-        public int numRescueBoats(int[] people, int limit) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int numRescueBoats(int[] people, int limit) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Arrays.sort(people);
-            // int left = 0;
-            // int right = people.length - 1;
-            // int boats = 0;
-            //
-            // while (left <= right) {
-            //     if (people[left] + people[right] <= limit) {
-            //         left++;
-            //     }
-            //     right--;
-            //     boats++;
-            // }
-            //
-            // return boats;
-        }
+    // Arrays.sort(people);
+    // int left = 0;
+    // int right = people.length - 1;
+    // int boats = 0;
+    //
+    // while (left <= right) {
+    //     if (people[left] + people[right] <= limit) {
+    //         left++;
+    //     }
+    //     right--;
+    //     boats++;
+    // }
+    //
+    // return boats;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BoatsToSavePeople sol = new BoatsToSavePeople();
         assert sol.numRescueBoats(new int[] {1, 2}, 3) == 1;
         assert sol.numRescueBoats(new int[] {3, 2, 2, 1}, 3) == 3;
         assert sol.numRescueBoats(new int[] {3, 5, 3, 4}, 5) == 4;

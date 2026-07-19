@@ -36,106 +36,105 @@
 import java.util.List;
 
 public class SubstringWithConcatenationOfAllWords {
-    static class Solution {
-        public List<Integer> findSubstring(String s, String[] words) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public List<Integer> findSubstring(String s, String[] words) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Map<String, Integer> need = new HashMap<>();
-            // for (String word : words) {
-            //     need.put(word, need.getOrDefault(word, 0) + 1);
-            // }
-            //
-            // List<Integer> result = new ArrayList<>();
-            // int wordLength = words[0].length();
-            // int wordCount = words.length;
-            // int windowLength = wordLength * wordCount;
-            //
-            // for (int offset = 0; offset < wordLength; offset++) {
-            //     int left = offset;
-            //     int matched = 0;
-            //     Map<String, Integer> seen = new HashMap<>();
-            //
-            //     for (int right = offset; right + wordLength <= s.length(); right += wordLength) {
-            //         String word = s.substring(right, right + wordLength);
-            //         if (!need.containsKey(word)) {
-            //             seen.clear();
-            //             matched = 0;
-            //             left = right + wordLength;
-            //             continue;
-            //         }
-            //
-            //         seen.put(word, seen.getOrDefault(word, 0) + 1);
-            //         matched++;
-            //         while (seen.get(word) > need.get(word)) {
-            //             String removed = s.substring(left, left + wordLength);
-            //             seen.put(removed, seen.get(removed) - 1);
-            //             matched--;
-            //             left += wordLength;
-            //         }
-            //
-            //         if (matched == wordCount) {
-            //             result.add(left);
-            //             String removed = s.substring(left, left + wordLength);
-            //             seen.put(removed, seen.get(removed) - 1);
-            //             matched--;
-            //             left += wordLength;
-            //         }
-            //     }
-            // }
-            //
-            // return result;
-            throw new UnsupportedOperationException("Implement findSubstring");
-        }
+    // Map<String, Integer> need = new HashMap<>();
+    // for (String word : words) {
+    //     need.put(word, need.getOrDefault(word, 0) + 1);
+    // }
+    //
+    // List<Integer> result = new ArrayList<>();
+    // int wordLength = words[0].length();
+    // int wordCount = words.length;
+    // int windowLength = wordLength * wordCount;
+    //
+    // for (int offset = 0; offset < wordLength; offset++) {
+    //     int left = offset;
+    //     int matched = 0;
+    //     Map<String, Integer> seen = new HashMap<>();
+    //
+    //     for (int right = offset; right + wordLength <= s.length(); right += wordLength) {
+    //         String word = s.substring(right, right + wordLength);
+    //         if (!need.containsKey(word)) {
+    //             seen.clear();
+    //             matched = 0;
+    //             left = right + wordLength;
+    //             continue;
+    //         }
+    //
+    //         seen.put(word, seen.getOrDefault(word, 0) + 1);
+    //         matched++;
+    //         while (seen.get(word) > need.get(word)) {
+    //             String removed = s.substring(left, left + wordLength);
+    //             seen.put(removed, seen.get(removed) - 1);
+    //             matched--;
+    //             left += wordLength;
+    //         }
+    //
+    //         if (matched == wordCount) {
+    //             result.add(left);
+    //             String removed = s.substring(left, left + wordLength);
+    //             seen.put(removed, seen.get(removed) - 1);
+    //             matched--;
+    //             left += wordLength;
+    //         }
+    //     }
+    // }
+    //
+    // return result;
+        throw new UnsupportedOperationException("Implement findSubstring");
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement findSubstring and add checks.");

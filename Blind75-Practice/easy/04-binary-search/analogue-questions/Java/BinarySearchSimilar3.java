@@ -33,93 +33,89 @@ import java.util.function.*;
 
 
 public class BinarySearchSimilar3 {
+    public int mySqrt(int x) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int mySqrt(int x) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if x < 2:
+    // return x
+    // left, right = (1, x)
+    // result = 0
+    // while left <= right:
+    // mid = left + (right - left) // 2
+    // if mid * mid == x:
+    // return mid
+    // elif mid * mid < x:
+    // result = mid
+    // left = mid + 1
+    // else:
+    // right = mid - 1
+    // return result
 
-            //
-
-            //
-
-            // if x < 2:
-            // return x
-            // left, right = (1, x)
-            // result = 0
-            // while left <= right:
-            // mid = left + (right - left) // 2
-            // if mid * mid == x:
-            // return mid
-            // elif mid * mid < x:
-            // result = mid
-            // left = mid + 1
-            // else:
-            // right = mid - 1
-            // return result
-
-            throw new UnsupportedOperationException("Implement mySqrt");
-        }
-
+        throw new UnsupportedOperationException("Implement mySqrt");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BinarySearchSimilar3 sol = new BinarySearchSimilar3();
         assert (sol.mySqrt(4) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.mySqrt(8) == 2);

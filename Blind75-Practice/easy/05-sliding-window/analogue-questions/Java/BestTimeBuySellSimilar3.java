@@ -30,93 +30,89 @@ import java.util.function.*;
 
 
 public class BestTimeBuySellSimilar3 {
+    public int maxProfitInWindow(List<Integer> prices, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maxProfitInWindow(List<Integer> prices, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not prices or k <= 1:
+    // return 0
+    // max_profit = 0
+    // for i in range(len(prices) - k + 1):
+    // window = prices[i:i + k]
+    // min_price = min(window)
+    // max_price = max(window)
+    // window_profit = 0
+    // min_so_far = float('inf')
+    // for price in window:
+    // min_so_far = min(min_so_far, price)
+    // window_profit = max(window_profit, price - min_so_far)
+    // max_profit = max(max_profit, window_profit)
+    // return max_profit
 
-            //
-
-            //
-
-            // if not prices or k <= 1:
-            // return 0
-            // max_profit = 0
-            // for i in range(len(prices) - k + 1):
-            // window = prices[i:i + k]
-            // min_price = min(window)
-            // max_price = max(window)
-            // window_profit = 0
-            // min_so_far = float('inf')
-            // for price in window:
-            // min_so_far = min(min_so_far, price)
-            // window_profit = max(window_profit, price - min_so_far)
-            // max_profit = max(max_profit, window_profit)
-            // return max_profit
-
-            throw new UnsupportedOperationException("Implement maxProfitInWindow");
-        }
-
+        throw new UnsupportedOperationException("Implement maxProfitInWindow");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BestTimeBuySellSimilar3 sol = new BestTimeBuySellSimilar3();
         assert (sol.maxProfitInWindow(java.util.List.of(1, 5, 3, 8, 2, 9), 3) == 7);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maxProfitInWindow(java.util.List.of(7, 1, 5, 3, 6, 4), 4) == 5);

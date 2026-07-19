@@ -53,90 +53,86 @@ import java.util.function.*;
 
 
 public class BackspaceStringCompareSimilar2 {
+    public int calPoints(List<String> operations) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int calPoints(List<String> operations) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // stack = []
+    // for op in operations:
+    // if op == 'C':
+    // stack.pop()
+    // elif op == 'D':
+    // stack.append(stack[-1] * 2)
+    // elif op == '+':
+    // stack.append(stack[-1] + stack[-2])
+    // else:
+    // stack.append(int(op))
+    // return sum(stack)
 
-            //
-
-            //
-
-            // stack = []
-            // for op in operations:
-            // if op == 'C':
-            // stack.pop()
-            // elif op == 'D':
-            // stack.append(stack[-1] * 2)
-            // elif op == '+':
-            // stack.append(stack[-1] + stack[-2])
-            // else:
-            // stack.append(int(op))
-            // return sum(stack)
-
-            throw new UnsupportedOperationException("Implement calPoints");
-        }
-
+        throw new UnsupportedOperationException("Implement calPoints");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BackspaceStringCompareSimilar2 sol = new BackspaceStringCompareSimilar2();
         assert (sol.calPoints(java.util.List.of("5", "2", "C", "D", "+")) == 30);
         System.out.println("✓ Test case 1 passed");
         assert (sol.calPoints(java.util.List.of("5", "-2", "4", "C", "D", "9", "+", "+")) == 27);

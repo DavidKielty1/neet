@@ -49,91 +49,87 @@ import java.util.function.*;
 
 
 public class BackspaceStringCompareSimilar3 {
+    public String removeOuterParentheses(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String removeOuterParentheses(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = []
+    // balance = 0
+    // for char in s:
+    // if char == '(':
+    // if balance > 0:
+    // result.append(char)
+    // balance += 1
+    // else:
+    // balance -= 1
+    // if balance > 0:
+    // result.append(char)
+    // return ''.join(result)
 
-            //
-
-            //
-
-            // result = []
-            // balance = 0
-            // for char in s:
-            // if char == '(':
-            // if balance > 0:
-            // result.append(char)
-            // balance += 1
-            // else:
-            // balance -= 1
-            // if balance > 0:
-            // result.append(char)
-            // return ''.join(result)
-
-            throw new UnsupportedOperationException("Implement removeOuterParentheses");
-        }
-
+        throw new UnsupportedOperationException("Implement removeOuterParentheses");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BackspaceStringCompareSimilar3 sol = new BackspaceStringCompareSimilar3();
         assert (sol.removeOuterParentheses("(()())(())") == "()()()");
         System.out.println("✓ Test case 1 passed");
         assert (sol.removeOuterParentheses("(()())(())(()(()))") == "()()()()(())");

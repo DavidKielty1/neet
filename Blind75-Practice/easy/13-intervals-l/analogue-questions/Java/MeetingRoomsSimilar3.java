@@ -39,89 +39,85 @@ import java.util.function.*;
 
 
 public class MeetingRoomsSimilar3 {
+    public int findMinArrowShots(List<List<Integer>> points) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int findMinArrowShots(List<List<Integer>> points) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not points:
+    // return 0
+    // points.sort(key=lambda x: x[1])
+    // arrows = 1
+    // arrow_pos = points[0][1]
+    // for i in range(1, len(points)):
+    // if points[i][0] > arrow_pos:
+    // arrows += 1
+    // arrow_pos = points[i][1]
+    // return arrows
 
-            //
-
-            //
-
-            // if not points:
-            // return 0
-            // points.sort(key=lambda x: x[1])
-            // arrows = 1
-            // arrow_pos = points[0][1]
-            // for i in range(1, len(points)):
-            // if points[i][0] > arrow_pos:
-            // arrows += 1
-            // arrow_pos = points[i][1]
-            // return arrows
-
-            throw new UnsupportedOperationException("Implement findMinArrowShots");
-        }
-
+        throw new UnsupportedOperationException("Implement findMinArrowShots");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MeetingRoomsSimilar3 sol = new MeetingRoomsSimilar3();
         assert (sol.findMinArrowShots(java.util.List.of(java.util.List.of(10, 16), java.util.List.of(2, 8), java.util.List.of(1, 6), java.util.List.of(7, 12))) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.findMinArrowShots(java.util.List.of(java.util.List.of(1, 2), java.util.List.of(3, 4), java.util.List.of(5, 6), java.util.List.of(7, 8))) == 4);

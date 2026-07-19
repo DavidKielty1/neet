@@ -30,94 +30,90 @@ import java.util.function.*;
 
 
 public class CountingBitsSimilar2 {
+    public List<String> readBinaryWatch(int turnedOn) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<String> readBinaryWatch(int turnedOn) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def count_bits(n):
+    // count = 0
+    // while n:
+    // count += n & 1
+    // n >>= 1
+    // return count
+    // result = []
+    // for hour in range(12):
+    // for minute in range(60):
+    // if count_bits(hour) + count_bits(minute) == turnedOn:
+    // result.append(f'{hour}:{minute:02d}')
+    // return result
 
-            //
-
-            //
-
-            // def count_bits(n):
-            // count = 0
-            // while n:
-            // count += n & 1
-            // n >>= 1
-            // return count
-            // result = []
-            // for hour in range(12):
-            // for minute in range(60):
-            // if count_bits(hour) + count_bits(minute) == turnedOn:
-            // result.append(f'{hour}:{minute:02d}')
-            // return result
-
-            throw new UnsupportedOperationException("Implement readBinaryWatch");
-        }
-
+        throw new UnsupportedOperationException("Implement readBinaryWatch");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // result1 = sol.readBinaryWatch(1);
-        // expected1 = ["0:01", "0:02", "0:04", "0:08", "0:16", "0:32", "1:00", "2:00", "4:00", "8:00"];
-        // assert sorted(result1) == sorted(expected1)  // needs locals (port helpers): ['expected1', 'result1']
+        CountingBitsSimilar2 sol = new CountingBitsSimilar2();
+    // result1 = sol.readBinaryWatch(1);
+    // expected1 = ["0:01", "0:02", "0:04", "0:08", "0:16", "0:32", "1:00", "2:00", "4:00", "8:00"];
+    // assert sorted(result1) == sorted(expected1)  // needs locals (port helpers): ['expected1', 'result1']
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.readBinaryWatch(9), java.util.List.of());
         System.out.println("✓ Test case 2 passed");

@@ -30,90 +30,86 @@ import java.util.function.*;
 
 
 public class PowerOfThreeSimilar1 {
+    public int findNthDigit(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int findNthDigit(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // length = 1
+    // count = 9
+    // start = 1
+    // while n > length * count:
+    // n -= length * count
+    // length += 1
+    // count *= 10
+    // start *= 10
+    // num = start + (n - 1) // length
+    // digit_index = (n - 1) % length
+    // return int(str(num)[digit_index])
 
-            //
-
-            //
-
-            // length = 1
-            // count = 9
-            // start = 1
-            // while n > length * count:
-            // n -= length * count
-            // length += 1
-            // count *= 10
-            // start *= 10
-            // num = start + (n - 1) // length
-            // digit_index = (n - 1) % length
-            // return int(str(num)[digit_index])
-
-            throw new UnsupportedOperationException("Implement findNthDigit");
-        }
-
+        throw new UnsupportedOperationException("Implement findNthDigit");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfThreeSimilar1 sol = new PowerOfThreeSimilar1();
         assert (sol.findNthDigit(3) == 3);
         System.out.println("✓ Test case 1 passed");
         assert (sol.findNthDigit(11) == 0);

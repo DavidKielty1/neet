@@ -32,91 +32,87 @@ import java.util.function.*;
 
 
 public class MinCostClimbingStairsSimilar1 {
+    public int rob(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int rob(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not nums:
+    // return 0
+    // if len(nums) == 1:
+    // return nums[0]
+    // prev2, prev1 = (0, nums[0])
+    // for i in range(1, len(nums)):
+    // rob_current = nums[i] + prev2
+    // skip_current = prev1
+    // current = max(rob_current, skip_current)
+    // prev2 = prev1
+    // prev1 = current
+    // return prev1
 
-            //
-
-            //
-
-            // if not nums:
-            // return 0
-            // if len(nums) == 1:
-            // return nums[0]
-            // prev2, prev1 = (0, nums[0])
-            // for i in range(1, len(nums)):
-            // rob_current = nums[i] + prev2
-            // skip_current = prev1
-            // current = max(rob_current, skip_current)
-            // prev2 = prev1
-            // prev1 = current
-            // return prev1
-
-            throw new UnsupportedOperationException("Implement rob");
-        }
-
+        throw new UnsupportedOperationException("Implement rob");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MinCostClimbingStairsSimilar1 sol = new MinCostClimbingStairsSimilar1();
         assert (sol.rob(java.util.List.of(1, 2, 3, 1)) == 4);
         System.out.println("✓ Test case 1 passed");
         assert (sol.rob(java.util.List.of(2, 7, 9, 3, 1)) == 12);

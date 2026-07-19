@@ -33,7 +33,6 @@ import java.util.function.*;
 
 
 public class BinaryTreePathsSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -52,92 +51,92 @@ public class BinaryTreePathsSimilar2 {
         }
     }
 
-    static class Solution {
-        public int sumOfLeftLeaves(TreeNode root) {
-            //
 
-            //
+    public int sumOfLeftLeaves(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // def dfs(node, is_left):
-            // if not node:
-            // return 0
-            // if not node.left and (not node.right) and is_left:
-            // return node.val
-            // return dfs(node.left, True) + dfs(node.right, False)
-            // return dfs(root, False)
+    //
 
-            throw new UnsupportedOperationException("Implement sumOfLeftLeaves");
-        }
+    // def dfs(node, is_left):
+    // if not node:
+    // return 0
+    // if not node.left and (not node.right) and is_left:
+    // return node.val
+    // return dfs(node.left, True) + dfs(node.right, False)
+    // return dfs(root, False)
 
+        throw new UnsupportedOperationException("Implement sumOfLeftLeaves");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root1 = TreeNode(3);
-        // root1.left = TreeNode(9)
-        // root1.right = TreeNode(20)
-        // root1.right.left = TreeNode(15)
-        // root1.right.right = TreeNode(7)
-        // assert solution.sumOfLeftLeaves(root1) == 24  // needs locals (port helpers): ['root1']
+        BinaryTreePathsSimilar2 sol = new BinaryTreePathsSimilar2();
+    // root1 = TreeNode(3);
+    // root1.left = TreeNode(9)
+    // root1.right = TreeNode(20)
+    // root1.right.left = TreeNode(15)
+    // root1.right.right = TreeNode(7)
+    // assert solution.sumOfLeftLeaves(root1) == 24  // needs locals (port helpers): ['root1']
         System.out.println("✓ Test case 1 passed");
-        // root2 = TreeNode(1);
-        // assert solution.sumOfLeftLeaves(root2) == 0  // needs locals (port helpers): ['root2']
+    // root2 = TreeNode(1);
+    // assert solution.sumOfLeftLeaves(root2) == 0  // needs locals (port helpers): ['root2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

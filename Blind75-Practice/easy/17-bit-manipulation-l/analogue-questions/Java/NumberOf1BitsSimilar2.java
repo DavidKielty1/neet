@@ -32,84 +32,80 @@ import java.util.function.*;
 
 
 public class NumberOf1BitsSimilar2 {
+    public boolean isPowerOfFour(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isPowerOfFour(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n <= 0:
+    // return False
+    // if n & n - 1 != 0:
+    // return False
+    // return n & 1431655765 != 0
 
-            //
-
-            //
-
-            // if n <= 0:
-            // return False
-            // if n & n - 1 != 0:
-            // return False
-            // return n & 1431655765 != 0
-
-            throw new UnsupportedOperationException("Implement isPowerOfFour");
-        }
-
+        throw new UnsupportedOperationException("Implement isPowerOfFour");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        NumberOf1BitsSimilar2 sol = new NumberOf1BitsSimilar2();
         assert (sol.isPowerOfFour(16) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isPowerOfFour(5) == false);

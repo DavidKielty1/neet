@@ -38,7 +38,6 @@ import java.util.function.*;
 
 
 public class MiddleOfLinkedListSimilar2 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -55,96 +54,96 @@ public class MiddleOfLinkedListSimilar2 {
         }
     }
 
-    static class Solution {
-        public ListNode removeNthFromEnd(ListNode head, int n) {
-            //
 
-            //
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // dummy = ListNode(0, head)
-            // left = right = dummy
-            // for _ in range(n + 1):
-            // right = right.next
-            // while right:
-            // left = left.next
-            // right = right.next
-            // left.next = left.next.next
-            // return dummy.next
+    //
 
-            throw new UnsupportedOperationException("Implement removeNthFromEnd");
-        }
+    // dummy = ListNode(0, head)
+    // left = right = dummy
+    // for _ in range(n + 1):
+    // right = right.next
+    // while right:
+    // left = left.next
+    // right = right.next
+    // left.next = left.next.next
+    // return dummy.next
 
+        throw new UnsupportedOperationException("Implement removeNthFromEnd");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head1 = ListNode(1);
-        // head1.next = ListNode(2)
-        // head1.next.next = ListNode(3)
-        // head1.next.next.next = ListNode(4)
-        // head1.next.next.next.next = ListNode(5)
-        // result1 = sol.removeNthFromEnd(head1, 2);
-        // assert list_to_array(result1) == [1, 2, 3, 5]  // needs locals (port helpers): ['list_to_array', 'result1']
+        MiddleOfLinkedListSimilar2 sol = new MiddleOfLinkedListSimilar2();
+    // head1 = ListNode(1);
+    // head1.next = ListNode(2)
+    // head1.next.next = ListNode(3)
+    // head1.next.next.next = ListNode(4)
+    // head1.next.next.next.next = ListNode(5)
+    // result1 = sol.removeNthFromEnd(head1, 2);
+    // assert list_to_array(result1) == [1, 2, 3, 5]  // needs locals (port helpers): ['list_to_array', 'result1']
         System.out.println("✓ Test case 1 passed");
-        // head2 = ListNode(1);
-        // result2 = sol.removeNthFromEnd(head2, 1);
-        // assert list_to_array(result2) == []  // needs locals (port helpers): ['list_to_array', 'result2']
+    // head2 = ListNode(1);
+    // result2 = sol.removeNthFromEnd(head2, 1);
+    // assert list_to_array(result2) == []  // needs locals (port helpers): ['list_to_array', 'result2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

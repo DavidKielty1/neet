@@ -33,80 +33,76 @@ import java.util.function.*;
 
 
 public class RansomNoteSimilar2 {
+    public boolean checkIfPangram(String sentence) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean checkIfPangram(String sentence) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // return len(set(sentence)) == 26
 
-            //
-
-            //
-
-            // return len(set(sentence)) == 26
-
-            throw new UnsupportedOperationException("Implement checkIfPangram");
-        }
-
+        throw new UnsupportedOperationException("Implement checkIfPangram");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        RansomNoteSimilar2 sol = new RansomNoteSimilar2();
         assert (sol.checkIfPangram("thequickbrownfoxjumpsoverthelazydog") == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.checkIfPangram("leetcode") == false);

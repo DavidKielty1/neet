@@ -36,85 +36,81 @@ import java.util.function.*;
 
 
 public class PowerOfFourSimilar2 {
+    public int hammingDistance(int x, int y) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int hammingDistance(int x, int y) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // xor = x ^ y
+    // count = 0
+    // while xor:
+    // count += xor & 1
+    // xor >>= 1
+    // return count
 
-            //
-
-            //
-
-            // xor = x ^ y
-            // count = 0
-            // while xor:
-            // count += xor & 1
-            // xor >>= 1
-            // return count
-
-            throw new UnsupportedOperationException("Implement hammingDistance");
-        }
-
+        throw new UnsupportedOperationException("Implement hammingDistance");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfFourSimilar2 sol = new PowerOfFourSimilar2();
         assert (sol.hammingDistance(1, 4) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.hammingDistance(3, 1) == 1);

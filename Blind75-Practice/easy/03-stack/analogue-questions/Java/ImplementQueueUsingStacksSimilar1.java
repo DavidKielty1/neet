@@ -39,26 +39,22 @@ import java.util.function.*;
 
 
 public class ImplementQueueUsingStacksSimilar1 {
+    // (no Solution class)
 
-
-
-    static class Solution {
-        // (no Solution class)
-
-    }
+    
 
     public static void main(String[] args) {
-        // stack = MyStack();
-        // stack.push(1)
-        // stack.push(2)
-        // assert stack.top() == 2  // needs locals (port helpers): ['stack']
-        // assert stack.pop() == 2  // needs locals (port helpers): ['stack']
-        // assert stack.empty() == False  // needs locals (port helpers): ['stack']
+    // stack = MyStack();
+    // stack.push(1)
+    // stack.push(2)
+    // assert stack.top() == 2  // needs locals (port helpers): ['stack']
+    // assert stack.pop() == 2  // needs locals (port helpers): ['stack']
+    // assert stack.empty() == False  // needs locals (port helpers): ['stack']
         System.out.println("✓ Test case 1 passed");
-        // stack2 = MyStack();
-        // stack2.push(1)
-        // assert stack2.pop() == 1  // needs locals (port helpers): ['stack2']
-        // assert stack2.empty() == True  // needs locals (port helpers): ['stack2']
+    // stack2 = MyStack();
+    // stack2.push(1)
+    // assert stack2.pop() == 1  // needs locals (port helpers): ['stack2']
+    // assert stack2.empty() == True  // needs locals (port helpers): ['stack2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

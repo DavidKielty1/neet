@@ -30,7 +30,6 @@ import java.util.function.*;
 
 
 public class ReverseLinkedListSimilar2 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -47,91 +46,91 @@ public class ReverseLinkedListSimilar2 {
         }
     }
 
-    static class Solution {
-        public ListNode reverseBetween(ListNode head) {
-            //
 
-            //
+    public ListNode reverseBetween(ListNode head) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // prev = None
-            // current = head
-            // while current:
-            // next_node = current.next
-            // current.next = prev
-            // prev = current
-            // current = next_node
-            // return prev
+    //
 
-            throw new UnsupportedOperationException("Implement reverseBetween");
-        }
+    // prev = None
+    // current = head
+    // while current:
+    // next_node = current.next
+    // current.next = prev
+    // prev = current
+    // current = next_node
+    // return prev
 
+        throw new UnsupportedOperationException("Implement reverseBetween");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head = create_list(java.util.List.of(1,2,3,4,5));
-        // reversed_head = sol.reverseBetween(head);
-        // assert list_to_array(reversed_head) == [5, 4, 3, 2, 1]  // needs locals (port helpers): ['list_to_array', 'reversed_head']
+        ReverseLinkedListSimilar2 sol = new ReverseLinkedListSimilar2();
+    // head = create_list(java.util.List.of(1,2,3,4,5));
+    // reversed_head = sol.reverseBetween(head);
+    // assert list_to_array(reversed_head) == [5, 4, 3, 2, 1]  // needs locals (port helpers): ['list_to_array', 'reversed_head']
         System.out.println("✓ Test case 1 passed");
-        // head = create_list(java.util.List.of(5));
-        // reversed_head = sol.reverseBetween(head);
-        // assert list_to_array(reversed_head) == [5]  // needs locals (port helpers): ['list_to_array', 'reversed_head']
+    // head = create_list(java.util.List.of(5));
+    // reversed_head = sol.reverseBetween(head);
+    // assert list_to_array(reversed_head) == [5]  // needs locals (port helpers): ['list_to_array', 'reversed_head']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

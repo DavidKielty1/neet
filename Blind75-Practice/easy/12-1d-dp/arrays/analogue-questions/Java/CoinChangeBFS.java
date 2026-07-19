@@ -37,40 +37,38 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class CoinChangeBFS {
+    public int coinChange(int[] coins, int amount) {
+        if (amount == 0) return 0;
 
-    static class Solution {
-        public int coinChange(int[] coins, int amount) {
-            if (amount == 0) return 0;
+        boolean[] visited = new boolean[amount + 1];
+        Queue<Integer> queue = new LinkedList<>();
 
-            boolean[] visited = new boolean[amount + 1];
-            Queue<Integer> queue = new LinkedList<>();
+        queue.add(0);
+        visited[0] = true;
+        int steps = 0;
 
-            queue.add(0);
-            visited[0] = true;
-            int steps = 0;
-
-            while (!queue.isEmpty()) {
-                int size = queue.size();
-                steps++;
-                for (int i = 0; i < size; i++) {
-                    int curr = queue.poll();
-                    for (int coin : coins) {
-                        int next = curr + coin;
-                        if (next == amount) return steps;
-                        if (next < amount && !visited[next]) {
-                            visited[next] = true;
-                            queue.add(next);
-                        }
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            steps++;
+            for (int i = 0; i < size; i++) {
+                int curr = queue.poll();
+                for (int coin : coins) {
+                    int next = curr + coin;
+                    if (next == amount) return steps;
+                    if (next < amount && !visited[next]) {
+                        visited[next] = true;
+                        queue.add(next);
                     }
                 }
             }
-
-            return -1;
         }
+
+        return -1;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        CoinChangeBFS sol = new CoinChangeBFS();
 
         assert sol.coinChange(new int[]{1, 5, 6, 9}, 11) == 2 : "expected 2";
         System.out.println("✓ Test 1 passed — [1,5,6,9], amount=11 → 2  (5+6)");

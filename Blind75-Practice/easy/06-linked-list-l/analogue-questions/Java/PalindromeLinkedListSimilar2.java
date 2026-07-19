@@ -51,7 +51,6 @@ import java.util.function.*;
 
 
 public class PalindromeLinkedListSimilar2 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -68,108 +67,108 @@ public class PalindromeLinkedListSimilar2 {
         }
     }
 
-    static class Solution {
-        public int pairSum(ListNode head) {
-            //
 
-            //
+    public int pairSum(ListNode head) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // slow = fast = head
-            // while fast and fast.next:
-            // slow = slow.next
-            // fast = fast.next.next
-            // prev = None
-            // while slow:
-            // next_node = slow.next
-            // slow.next = prev
-            // prev = slow
-            // slow = next_node
-            // max_sum = 0
-            // first, second = (head, prev)
-            // while second:
-            // max_sum = max(max_sum, first.val + second.val)
-            // first = first.next
-            // second = second.next
-            // return max_sum
+    //
 
-            throw new UnsupportedOperationException("Implement pairSum");
-        }
+    // slow = fast = head
+    // while fast and fast.next:
+    // slow = slow.next
+    // fast = fast.next.next
+    // prev = None
+    // while slow:
+    // next_node = slow.next
+    // slow.next = prev
+    // prev = slow
+    // slow = next_node
+    // max_sum = 0
+    // first, second = (head, prev)
+    // while second:
+    // max_sum = max(max_sum, first.val + second.val)
+    // first = first.next
+    // second = second.next
+    // return max_sum
 
+        throw new UnsupportedOperationException("Implement pairSum");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head1 = ListNode(5);
-        // head1.next = ListNode(4)
-        // head1.next.next = ListNode(2)
-        // head1.next.next.next = ListNode(1)
-        // assert solution.pairSum(head1) == 6  // needs locals (port helpers): ['head1']
+        PalindromeLinkedListSimilar2 sol = new PalindromeLinkedListSimilar2();
+    // head1 = ListNode(5);
+    // head1.next = ListNode(4)
+    // head1.next.next = ListNode(2)
+    // head1.next.next.next = ListNode(1)
+    // assert solution.pairSum(head1) == 6  // needs locals (port helpers): ['head1']
         System.out.println("✓ Test case 1 passed");
-        // head2 = ListNode(4);
-        // head2.next = ListNode(2)
-        // head2.next.next = ListNode(2)
-        // head2.next.next.next = ListNode(3)
-        // assert solution.pairSum(head2) == 7  // needs locals (port helpers): ['head2']
+    // head2 = ListNode(4);
+    // head2.next = ListNode(2)
+    // head2.next.next = ListNode(2)
+    // head2.next.next.next = ListNode(3)
+    // assert solution.pairSum(head2) == 7  // needs locals (port helpers): ['head2']
         System.out.println("✓ Test case 2 passed");
-        // head3 = ListNode(1);
-        // head3.next = ListNode(100000)
-        // assert solution.pairSum(head3) == 100001  // needs locals (port helpers): ['head3']
+    // head3 = ListNode(1);
+    // head3.next = ListNode(100000)
+    // assert solution.pairSum(head3) == 100001  // needs locals (port helpers): ['head3']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

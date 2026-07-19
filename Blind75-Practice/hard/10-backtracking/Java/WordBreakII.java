@@ -30,87 +30,86 @@
  * - All strings in wordDict are unique
  */
 public class WordBreakII {
-    static class Solution {
-        public java.util.List<String> wordBreak(String s, java.util.List<String> wordDict) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public java.util.List<String> wordBreak(String s, java.util.List<String> wordDict) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Set<String> words = new HashSet<>(wordDict);
-            // return dfs(s, 0, words, new HashMap<>());
-            throw new UnsupportedOperationException("Implement wordBreak");
-        }
-
-        // private List<String> dfs(String s, int start, Set<String> words,
-        //         Map<Integer, List<String>> memo) {
-        //     if (memo.containsKey(start)) {
-        //         return memo.get(start);
-        //     }
-        //     List<String> result = new ArrayList<>();
-        //     if (start == s.length()) {
-        //         result.add("");
-        //         return result;
-        //     }
-        //     for (int end = start + 1; end <= s.length(); end++) {
-        //         String prefix = s.substring(start, end);
-        //         if (!words.contains(prefix)) {
-        //             continue;
-        //         }
-        //         for (String suffix : dfs(s, end, words, memo)) {
-        //             result.add(prefix + (suffix.isEmpty() ? "" : " " + suffix));
-        //         }
-        //     }
-        //     memo.put(start, result);
-        //     return result;
-        // }
+    // Set<String> words = new HashSet<>(wordDict);
+    // return dfs(s, 0, words, new HashMap<>());
+        throw new UnsupportedOperationException("Implement wordBreak");
     }
+
+    // private List<String> dfs(String s, int start, Set<String> words,
+    //         Map<Integer, List<String>> memo) {
+    //     if (memo.containsKey(start)) {
+    //         return memo.get(start);
+    //     }
+    //     List<String> result = new ArrayList<>();
+    //     if (start == s.length()) {
+    //         result.add("");
+    //         return result;
+    //     }
+    //     for (int end = start + 1; end <= s.length(); end++) {
+    //         String prefix = s.substring(start, end);
+    //         if (!words.contains(prefix)) {
+    //             continue;
+    //         }
+    //         for (String suffix : dfs(s, end, words, memo)) {
+    //             result.add(prefix + (suffix.isEmpty() ? "" : " " + suffix));
+    //         }
+    //     }
+    //     memo.put(start, result);
+    //     return result;
+    // }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement wordBreak and add checks.");

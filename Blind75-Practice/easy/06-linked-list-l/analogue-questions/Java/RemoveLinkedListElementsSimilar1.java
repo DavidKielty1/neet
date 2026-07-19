@@ -47,7 +47,6 @@ import java.util.function.*;
 
 
 public class RemoveLinkedListElementsSimilar1 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -64,93 +63,93 @@ public class RemoveLinkedListElementsSimilar1 {
         }
     }
 
-    static class Solution {
-        public void deleteNode(ListNode node) {
-            //
 
-            //
+    public void deleteNode(ListNode node) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // node.val = node.next.val
-            // node.next = node.next.next
+    //
 
-            throw new UnsupportedOperationException("Implement deleteNode");
-        }
+    // node.val = node.next.val
+    // node.next = node.next.next
 
+        throw new UnsupportedOperationException("Implement deleteNode");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head1 = ListNode(4);
-        // node_to_delete = ListNode(5);
-        // head1.next = node_to_delete
-        // head1.next.next = ListNode(1)
-        // head1.next.next.next = ListNode(9)
-        // solution.deleteNode(node_to_delete)
-        // assert list_to_array(head1) == [4, 1, 9]  // needs locals (port helpers): ['head1', 'list_to_array']
+        RemoveLinkedListElementsSimilar1 sol = new RemoveLinkedListElementsSimilar1();
+    // head1 = ListNode(4);
+    // node_to_delete = ListNode(5);
+    // head1.next = node_to_delete
+    // head1.next.next = ListNode(1)
+    // head1.next.next.next = ListNode(9)
+    // solution.deleteNode(node_to_delete)
+    // assert list_to_array(head1) == [4, 1, 9]  // needs locals (port helpers): ['head1', 'list_to_array']
         System.out.println("✓ Test case 1 passed");
-        // head2 = ListNode(4);
-        // head2.next = ListNode(5)
-        // node_to_delete2 = ListNode(1);
-        // head2.next.next = node_to_delete2
-        // head2.next.next.next = ListNode(9)
-        // solution.deleteNode(node_to_delete2)
-        // assert list_to_array(head2) == [4, 5, 9]  // needs locals (port helpers): ['head2', 'list_to_array']
+    // head2 = ListNode(4);
+    // head2.next = ListNode(5)
+    // node_to_delete2 = ListNode(1);
+    // head2.next.next = node_to_delete2
+    // head2.next.next.next = ListNode(9)
+    // solution.deleteNode(node_to_delete2)
+    // assert list_to_array(head2) == [4, 5, 9]  // needs locals (port helpers): ['head2', 'list_to_array']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

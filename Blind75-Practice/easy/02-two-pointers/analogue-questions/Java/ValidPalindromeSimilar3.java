@@ -28,96 +28,92 @@ Constraints:
  */
 
 public class ValidPalindromeSimilar3 {
+    public String longestPalindrome(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String longestPalindrome(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not s:
+    // return ''
+    // def expand_from_center(left: int, right: int) -> str:
+    // while left >= 0 and right < len(s) and (s[left] == s[right]):
+    // left -= 1
+    // right += 1
+    // return s[left + 1:right]
+    // longest = ''
+    // for i in range(len(s)):
+    // odd_palindrome = expand_from_center(i, i)
+    // even_palindrome = expand_from_center(i, i + 1)
+    // current_longest = odd_palindrome if len(odd_palindrome) > len(even_palindrome) else even_palindrome
+    // if len(current_longest) > len(longest):
+    // longest = current_longest
+    // return longest
 
-            //
-
-            //
-
-            // if not s:
-            // return ''
-            // def expand_from_center(left: int, right: int) -> str:
-            // while left >= 0 and right < len(s) and (s[left] == s[right]):
-            // left -= 1
-            // right += 1
-            // return s[left + 1:right]
-            // longest = ''
-            // for i in range(len(s)):
-            // odd_palindrome = expand_from_center(i, i)
-            // even_palindrome = expand_from_center(i, i + 1)
-            // current_longest = odd_palindrome if len(odd_palindrome) > len(even_palindrome) else even_palindrome
-            // if len(current_longest) > len(longest):
-            // longest = current_longest
-            // return longest
-
-            throw new UnsupportedOperationException("Implement longestPalindrome");
-        }
-
+        throw new UnsupportedOperationException("Implement longestPalindrome");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // result1 = sol.longestPalindrome("babad");
-        // assert result1 in ['bab', 'aba']  // needs locals (port helpers): ['result1']
+        ValidPalindromeSimilar3 sol = new ValidPalindromeSimilar3();
+    // result1 = sol.longestPalindrome("babad");
+    // assert result1 in ['bab', 'aba']  // needs locals (port helpers): ['result1']
         System.out.println("✓ Test case 1 passed");
         assert (sol.longestPalindrome("cbbd") == "bb");
         System.out.println("✓ Test case 2 passed");

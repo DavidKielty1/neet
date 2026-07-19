@@ -40,89 +40,85 @@ import java.util.function.*;
 
 
 public class ValidParenthesesSimilar2 {
+    public int minAddToMakeValid(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int minAddToMakeValid(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // open_needed = 0
+    // close_needed = 0
+    // for char in s:
+    // if char == '(':
+    // open_needed += 1
+    // elif open_needed > 0:
+    // open_needed -= 1
+    // else:
+    // close_needed += 1
+    // return open_needed + close_needed
 
-            //
-
-            //
-
-            // open_needed = 0
-            // close_needed = 0
-            // for char in s:
-            // if char == '(':
-            // open_needed += 1
-            // elif open_needed > 0:
-            // open_needed -= 1
-            // else:
-            // close_needed += 1
-            // return open_needed + close_needed
-
-            throw new UnsupportedOperationException("Implement minAddToMakeValid");
-        }
-
+        throw new UnsupportedOperationException("Implement minAddToMakeValid");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidParenthesesSimilar2 sol = new ValidParenthesesSimilar2();
         assert (sol.minAddToMakeValid("())") == 1);
         System.out.println("✓ Test case 1 passed");
         assert (sol.minAddToMakeValid("(((") == 3);

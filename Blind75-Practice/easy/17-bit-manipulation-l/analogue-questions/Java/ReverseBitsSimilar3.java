@@ -40,89 +40,85 @@ import java.util.function.*;
 
 
 public class ReverseBitsSimilar3 {
+    public int numberOfSteps(int num) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int numberOfSteps(int num) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if num == 0:
+    // return 0
+    // steps = 0
+    // while num > 0:
+    // if num & 1:
+    // num -= 1
+    // else:
+    // num >>= 1
+    // steps += 1
+    // return steps
 
-            //
-
-            //
-
-            // if num == 0:
-            // return 0
-            // steps = 0
-            // while num > 0:
-            // if num & 1:
-            // num -= 1
-            // else:
-            // num >>= 1
-            // steps += 1
-            // return steps
-
-            throw new UnsupportedOperationException("Implement numberOfSteps");
-        }
-
+        throw new UnsupportedOperationException("Implement numberOfSteps");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ReverseBitsSimilar3 sol = new ReverseBitsSimilar3();
         assert (sol.numberOfSteps(14) == 6);
         System.out.println("✓ Test case 1 passed");
         assert (sol.numberOfSteps(8) == 4);

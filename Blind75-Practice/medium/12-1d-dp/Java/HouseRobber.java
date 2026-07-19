@@ -35,79 +35,78 @@
  */
 
 public class HouseRobber {
-    static class Solution {
-        public int rob(int[] nums) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int rob(int[] nums) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int prev2 = 0;
-            // int prev1 = 0;
-            // for (int n : nums) {
-            //     int current = Math.max(prev1, prev2 + n);
-            //     prev2 = prev1;
-            //     prev1 = current;
-            // }
-            // return prev1;
-        }
+    // int prev2 = 0;
+    // int prev1 = 0;
+    // for (int n : nums) {
+    //     int current = Math.max(prev1, prev2 + n);
+    //     prev2 = prev1;
+    //     prev1 = current;
+    // }
+    // return prev1;
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        HouseRobber sol = new HouseRobber();
         assert sol.rob(new int[] {1, 2, 3, 1}) == 4;
         assert sol.rob(new int[] {2, 7, 9, 3, 1}) == 12;
         System.out.println("All test cases passed!");

@@ -35,94 +35,93 @@
  */
 
 public class KokoEatingBananas {
-    static class Solution {
-        public int minEatingSpeed(int[] piles, int h) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int minEatingSpeed(int[] piles, int h) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
 
-        //     int left = 1;
-        //     int right = 0;
-        //     for (int pile : piles) {
-        //         right = Math.max(right, pile);
-        //     }
+    //     int left = 1;
+    //     int right = 0;
+    //     for (int pile : piles) {
+    //         right = Math.max(right, pile);
+    //     }
 
-        //     while (left < right) {
-        //         int mid = left + (right - left) / 2;
-        //         if (calculateSpareTime(piles, mid, h)) {
-        //             right = mid;
-        //         } else {
-        //             left = mid + 1;
-        //         }
-        //     }
-        //     return left;
-        // }
+    //     while (left < right) {
+    //         int mid = left + (right - left) / 2;
+    //         if (calculateSpareTime(piles, mid, h)) {
+    //             right = mid;
+    //         } else {
+    //             left = mid + 1;
+    //         }
+    //     }
+    //     return left;
+    // }
 
-        // private boolean calculateSpareTime(int[] piles, int hourlyEatRate, int maxHours) {
-        //     int hours = 0;
-        //     for (int pile : piles) {
-        //         int fullHours = pile / hourlyEatRate;
-        //         int leftover = pile % hourlyEatRate;
-        //         if (leftover > 0) {
-        //             fullHours++;
-        //         }
-        //         hours += fullHours;
-        //     }
-        //     return hours <= maxHours;
-        // }
-        }
+    // private boolean calculateSpareTime(int[] piles, int hourlyEatRate, int maxHours) {
+    //     int hours = 0;
+    //     for (int pile : piles) {
+    //         int fullHours = pile / hourlyEatRate;
+    //         int leftover = pile % hourlyEatRate;
+    //         if (leftover > 0) {
+    //             fullHours++;
+    //         }
+    //         hours += fullHours;
+    //     }
+    //     return hours <= maxHours;
+    // }
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        KokoEatingBananas sol = new KokoEatingBananas();
         assert sol.minEatingSpeed(new int[] {3, 6, 7, 11}, 8) == 4;
         assert sol.minEatingSpeed(new int[] {30, 11, 23, 4, 20}, 5) == 30;
         assert sol.minEatingSpeed(new int[] {30, 11, 23, 4, 20}, 6) == 23;

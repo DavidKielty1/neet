@@ -33,91 +33,87 @@ import java.util.function.*;
 
 
 public class MeetingRoomsSimilar2 {
+    public List<List<Integer>> merge(List<List<Integer>> intervals) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<List<Integer>> merge(List<List<Integer>> intervals) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not intervals:
+    // return []
+    // intervals.sort(key=lambda x: x[0])
+    // merged = [intervals[0]]
+    // for i in range(1, len(intervals)):
+    // last = merged[-1]
+    // current = intervals[i]
+    // if current[0] <= last[1]:
+    // last[1] = max(last[1], current[1])
+    // else:
+    // merged.append(current)
+    // return merged
 
-            //
-
-            //
-
-            // if not intervals:
-            // return []
-            // intervals.sort(key=lambda x: x[0])
-            // merged = [intervals[0]]
-            // for i in range(1, len(intervals)):
-            // last = merged[-1]
-            // current = intervals[i]
-            // if current[0] <= last[1]:
-            // last[1] = max(last[1], current[1])
-            // else:
-            // merged.append(current)
-            // return merged
-
-            throw new UnsupportedOperationException("Implement merge");
-        }
-
+        throw new UnsupportedOperationException("Implement merge");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MeetingRoomsSimilar2 sol = new MeetingRoomsSimilar2();
         assert java.util.Objects.equals(sol.merge(java.util.List.of(java.util.List.of(1, 3), java.util.List.of(2, 6), java.util.List.of(8, 10), java.util.List.of(15, 18))), java.util.List.of(java.util.List.of(1, 6), java.util.List.of(8, 10), java.util.List.of(15, 18)));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.merge(java.util.List.of(java.util.List.of(1, 4), java.util.List.of(4, 5))), java.util.List.of(java.util.List.of(1, 5)));

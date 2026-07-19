@@ -29,91 +29,87 @@ Constraints:
  */
 
 public class ValidParenthesesSimilar1 {
+    public String removeOuterParentheses(String s) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String removeOuterParentheses(String s) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = []
+    // depth = 0
+    // for char in s:
+    // if char == '(':
+    // if depth > 0:
+    // result.append(char)
+    // depth += 1
+    // else:
+    // depth -= 1
+    // if depth > 0:
+    // result.append(char)
+    // return ''.join(result)
 
-            //
-
-            //
-
-            // result = []
-            // depth = 0
-            // for char in s:
-            // if char == '(':
-            // if depth > 0:
-            // result.append(char)
-            // depth += 1
-            // else:
-            // depth -= 1
-            // if depth > 0:
-            // result.append(char)
-            // return ''.join(result)
-
-            throw new UnsupportedOperationException("Implement removeOuterParentheses");
-        }
-
+        throw new UnsupportedOperationException("Implement removeOuterParentheses");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidParenthesesSimilar1 sol = new ValidParenthesesSimilar1();
         assert (sol.removeOuterParentheses("(()())(())") == "()()()");
         System.out.println("✓ Test case 1 passed");
         assert (sol.removeOuterParentheses("(()())(())(()(()))") == "()()()()(())");

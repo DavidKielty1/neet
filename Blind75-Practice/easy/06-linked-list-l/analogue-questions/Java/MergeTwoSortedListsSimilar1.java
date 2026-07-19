@@ -36,7 +36,6 @@ import java.util.function.*;
 
 
 public class MergeTwoSortedListsSimilar1 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -53,173 +52,173 @@ public class MergeTwoSortedListsSimilar1 {
         }
     }
 
-    static class Solution {
-        public ListNode mergeKLists(List<ListNode> lists) {
-            //
 
-            //
+    public ListNode mergeKLists(List<ListNode> lists) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not lists or all((l is None for l in lists)):
-            // return None
-            // lists = [l for l in lists if l is not None]
-            // if not lists:
-            // return None
-            // result = lists[0]
-            // for i in range(1, len(lists)):
-            // result = self.mergeTwoLists(result, lists[i])
-            // return result
+    //
 
-            throw new UnsupportedOperationException("Implement mergeKLists");
-        }
+    // if not lists or all((l is None for l in lists)):
+    // return None
+    // lists = [l for l in lists if l is not None]
+    // if not lists:
+    // return None
+    // result = lists[0]
+    // for i in range(1, len(lists)):
+    // result = self.mergeTwoLists(result, lists[i])
+    // return result
 
-        public Object mergeTwoLists(Object l1, Object l2) {
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            //
-
-            // dummy = ListNode(0)
-            // current = dummy
-            // while l1 and l2:
-            // if l1.val < l2.val:
-            // current.next = l1
-            // l1 = l1.next
-            // else:
-            // current.next = l2
-            // l2 = l2.next
-            // current = current.next
-            // current.next = l1 or l2
-            // return dummy.next
-
-            throw new UnsupportedOperationException("Implement mergeTwoLists");
-        }
-
+        throw new UnsupportedOperationException("Implement mergeKLists");
     }
 
+    public Object mergeTwoLists(Object l1, Object l2) {
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    // dummy = ListNode(0)
+    // current = dummy
+    // while l1 and l2:
+    // if l1.val < l2.val:
+    // current.next = l1
+    // l1 = l1.next
+    // else:
+    // current.next = l2
+    // l2 = l2.next
+    // current = current.next
+    // current.next = l1 or l2
+    // return dummy.next
+
+        throw new UnsupportedOperationException("Implement mergeTwoLists");
+    }
+
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // lists = [create_list(java.util.List.of(1,4,5)), create_list(java.util.List.of(1,3,4))];
-        // merged = sol.mergeKLists(lists);
-        // assert list_to_array(merged) == [1, 1, 3, 4, 4, 5]  // needs locals (port helpers): ['list_to_array', 'merged']
+        MergeTwoSortedListsSimilar1 sol = new MergeTwoSortedListsSimilar1();
+    // lists = [create_list(java.util.List.of(1,4,5)), create_list(java.util.List.of(1,3,4))];
+    // merged = sol.mergeKLists(lists);
+    // assert list_to_array(merged) == [1, 1, 3, 4, 4, 5]  // needs locals (port helpers): ['list_to_array', 'merged']
         System.out.println("✓ Test case 1 passed");
-        // lists = java.util.List.of();
-        // merged = sol.mergeKLists(lists);
-        // assert list_to_array(merged) == []  // needs locals (port helpers): ['list_to_array', 'merged']
+    // lists = java.util.List.of();
+    // merged = sol.mergeKLists(lists);
+    // assert list_to_array(merged) == []  // needs locals (port helpers): ['list_to_array', 'merged']
         System.out.println("✓ Test case 2 passed");
-        // lists = [null];
-        // merged = sol.mergeKLists(lists);
-        // assert list_to_array(merged) == []  // needs locals (port helpers): ['list_to_array', 'merged']
+    // lists = [null];
+    // merged = sol.mergeKLists(lists);
+    // assert list_to_array(merged) == []  // needs locals (port helpers): ['list_to_array', 'merged']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

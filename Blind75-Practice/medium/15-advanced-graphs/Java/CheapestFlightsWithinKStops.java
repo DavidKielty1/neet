@@ -34,79 +34,78 @@
 import java.util.Arrays;
 
 public class CheapestFlightsWithinKStops {
-    static class Solution {
-        public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int inf = 1_000_000_000;
-            // int[] prices = new int[n];
-            // Arrays.fill(prices, inf);
-            // prices[src] = 0;
-            // for (int stops = 0; stops <= k; stops++) {
-            //     int[] next = prices.clone();
-            //     for (int[] flight : flights) {
-            //         int from = flight[0];
-            //         int to = flight[1];
-            //         int price = flight[2];
-            //         if (prices[from] == inf) {
-            //             continue;
-            //         }
-            //         next[to] = Math.min(next[to], prices[from] + price);
-            //     }
-            //     prices = next;
-            // }
-            // return prices[dst] == inf ? -1 : prices[dst];
-        }
+    // int inf = 1_000_000_000;
+    // int[] prices = new int[n];
+    // Arrays.fill(prices, inf);
+    // prices[src] = 0;
+    // for (int stops = 0; stops <= k; stops++) {
+    //     int[] next = prices.clone();
+    //     for (int[] flight : flights) {
+    //         int from = flight[0];
+    //         int to = flight[1];
+    //         int price = flight[2];
+    //         if (prices[from] == inf) {
+    //             continue;
+    //         }
+    //         next[to] = Math.min(next[to], prices[from] + price);
+    //     }
+    //     prices = next;
+    // }
+    // return prices[dst] == inf ? -1 : prices[dst];
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement findCheapestPrice and add checks.");

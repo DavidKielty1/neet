@@ -42,91 +42,87 @@ import java.util.function.*;
 
 
 public class LongestCommonPrefixSimilar1 {
+    public List<String> stringMatching(List<String> words) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<String> stringMatching(List<String> words) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // result = []
+    // for i in range(len(words)):
+    // for j in range(len(words)):
+    // if i != j and words[i] in words[j]:
+    // result.append(words[i])
+    // break
+    // return result
 
-            //
-
-            //
-
-            // result = []
-            // for i in range(len(words)):
-            // for j in range(len(words)):
-            // if i != j and words[i] in words[j]:
-            // result.append(words[i])
-            // break
-            // return result
-
-            throw new UnsupportedOperationException("Implement stringMatching");
-        }
-
+        throw new UnsupportedOperationException("Implement stringMatching");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // result1 = sol.stringMatching(["mass", "as", "hero", "superhero"]);
-        // assert set(result1) == set(['as', 'hero'])  // needs locals (port helpers): ['result1']
+        LongestCommonPrefixSimilar1 sol = new LongestCommonPrefixSimilar1();
+    // result1 = sol.stringMatching(["mass", "as", "hero", "superhero"]);
+    // assert set(result1) == set(['as', 'hero'])  // needs locals (port helpers): ['result1']
         System.out.println("✓ Test case 1 passed");
-        // result2 = sol.stringMatching(["leetcode", "et", "code"]);
-        // assert set(result2) == set(['et', 'code'])  // needs locals (port helpers): ['result2']
+    // result2 = sol.stringMatching(["leetcode", "et", "code"]);
+    // assert set(result2) == set(['et', 'code'])  // needs locals (port helpers): ['result2']
         System.out.println("✓ Test case 2 passed");
         assert java.util.Objects.equals(sol.stringMatching(java.util.List.of("blue", "green", "bu")), java.util.List.of());
         System.out.println("✓ Test case 3 passed");

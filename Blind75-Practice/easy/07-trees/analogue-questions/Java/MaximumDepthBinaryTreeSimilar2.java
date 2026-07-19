@@ -30,7 +30,6 @@ import java.util.function.*;
 
 
 public class MaximumDepthBinaryTreeSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -49,87 +48,87 @@ public class MaximumDepthBinaryTreeSimilar2 {
         }
     }
 
-    static class Solution {
-        public int countNodes(TreeNode root) {
-            //
 
-            //
+    public int countNodes(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if not root:
-            // return 0
-            // return 1 + self.countNodes(root.left) + self.countNodes(root.right)
+    //
 
-            throw new UnsupportedOperationException("Implement countNodes");
-        }
+    // if not root:
+    // return 0
+    // return 1 + self.countNodes(root.left) + self.countNodes(root.right)
 
+        throw new UnsupportedOperationException("Implement countNodes");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree(java.util.List.of(1,2,3,4,5,6));
-        // assert solution.countNodes(root) == 6  // needs locals (port helpers): ['root']
+        MaximumDepthBinaryTreeSimilar2 sol = new MaximumDepthBinaryTreeSimilar2();
+    // root = create_tree(java.util.List.of(1,2,3,4,5,6));
+    // assert solution.countNodes(root) == 6  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree([]);
-        // assert solution.countNodes(root) == 0  // needs locals (port helpers): ['root']
+    // root = create_tree([]);
+    // assert solution.countNodes(root) == 0  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
-        // root = create_tree(java.util.List.of(1));
-        // assert solution.countNodes(root) == 1  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(1));
+    // assert solution.countNodes(root) == 1  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");
     }

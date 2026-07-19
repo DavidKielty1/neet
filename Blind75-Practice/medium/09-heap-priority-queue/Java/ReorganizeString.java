@@ -36,100 +36,99 @@
  */
 
 public class ReorganizeString {
-    static class Solution {
-        public String reorganizeString(String s) {
+    public String reorganizeString(String s) {
 
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int[] counts = new int[26];
-            // int maxCount = 0;
+    // int[] counts = new int[26];
+    // int maxCount = 0;
 
-            // for (char ch : s.toCharArray()) {
-            //     counts[ch - 'a']++;
-            //     maxCount = Math.max(maxCount, counts[ch - 'a']);
-            // }
+    // for (char ch : s.toCharArray()) {
+    //     counts[ch - 'a']++;
+    //     maxCount = Math.max(maxCount, counts[ch - 'a']);
+    // }
 
-            // if (maxCount > (s.length() + 1) / 2) {
-            //     return "";
-            // }
-            //
-            // PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
-            //         (a, b) -> Integer.compare(b[1], a[1]));
+    // if (maxCount > (s.length() + 1) / 2) {
+    //     return "";
+    // }
+    //
+    // PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
+    //         (a, b) -> Integer.compare(b[1], a[1]));
 
-            // for (int i = 0; i < 26; i++) {
-            //     if (counts[i] > 0) {
-            //         maxHeap.offer(new int[] {'a' + i, counts[i]});
-            //     }
-            // }
-            //
-            // StringBuilder result = new StringBuilder();
-            // while (maxHeap.size() >= 2) {
-            //     int[] first = maxHeap.poll();
-            //     int[] second = maxHeap.poll();
-            //     result.append((char) first[0]);
-            //     result.append((char) second[0]);
-            //     if (--first[1] > 0) {
-            //         maxHeap.offer(first);
-            //     }
-            //     if (--second[1] > 0) {
-            //         maxHeap.offer(second);
-            //     }
-            // }
-            // if (!maxHeap.isEmpty()) {
-            //     result.append((char) maxHeap.poll()[0]);
-            // }
-            // return result.toString();
-        }
+    // for (int i = 0; i < 26; i++) {
+    //     if (counts[i] > 0) {
+    //         maxHeap.offer(new int[] {'a' + i, counts[i]});
+    //     }
+    // }
+    //
+    // StringBuilder result = new StringBuilder();
+    // while (maxHeap.size() >= 2) {
+    //     int[] first = maxHeap.poll();
+    //     int[] second = maxHeap.poll();
+    //     result.append((char) first[0]);
+    //     result.append((char) second[0]);
+    //     if (--first[1] > 0) {
+    //         maxHeap.offer(first);
+    //     }
+    //     if (--second[1] > 0) {
+    //         maxHeap.offer(second);
+    //     }
+    // }
+    // if (!maxHeap.isEmpty()) {
+    //     result.append((char) maxHeap.poll()[0]);
+    // }
+    // return result.toString();
     }
+    
 
     public static void main(String[] args) {
         System.out.println("ReorganizeString practice stub ready.");

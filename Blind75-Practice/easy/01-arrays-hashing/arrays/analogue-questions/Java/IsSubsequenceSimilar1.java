@@ -37,86 +37,82 @@ import java.util.function.*;
 
 
 public class IsSubsequenceSimilar1 {
+    public int numMatchingSubseq(String s, List<String> words) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int numMatchingSubseq(String s, List<String> words) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // def is_subsequence(word: str) -> bool:
+    // w_idx = 0
+    // for char in s:
+    // if w_idx < len(word) and char == word[w_idx]:
+    // w_idx += 1
+    // return w_idx == len(word)
+    // return sum((is_subsequence(word) for word in words))
 
-            //
-
-            //
-
-            // def is_subsequence(word: str) -> bool:
-            // w_idx = 0
-            // for char in s:
-            // if w_idx < len(word) and char == word[w_idx]:
-            // w_idx += 1
-            // return w_idx == len(word)
-            // return sum((is_subsequence(word) for word in words))
-
-            throw new UnsupportedOperationException("Implement numMatchingSubseq");
-        }
-
+        throw new UnsupportedOperationException("Implement numMatchingSubseq");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        IsSubsequenceSimilar1 sol = new IsSubsequenceSimilar1();
         assert (sol.numMatchingSubseq("abcde", java.util.List.of("a", "bb", "acd", "ace")) == 3);
         System.out.println("✓ Test case 1 passed");
         assert (sol.numMatchingSubseq("dsahjpjauf", java.util.List.of("ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax")) == 2);

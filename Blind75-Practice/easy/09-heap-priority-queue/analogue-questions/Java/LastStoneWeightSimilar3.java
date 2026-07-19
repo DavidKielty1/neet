@@ -33,88 +33,84 @@ import java.util.function.*;
 
 
 public class LastStoneWeightSimilar3 {
+    public int connectSticks(List<Integer> sticks) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int connectSticks(List<Integer> sticks) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // heapq.heapify(sticks)
+    // total_cost = 0
+    // while len(sticks) > 1:
+    // first = heapq.heappop(sticks)
+    // second = heapq.heappop(sticks)
+    // cost = first + second
+    // total_cost += cost
+    // heapq.heappush(sticks, cost)
+    // return total_cost
 
-            //
-
-            //
-
-            // heapq.heapify(sticks)
-            // total_cost = 0
-            // while len(sticks) > 1:
-            // first = heapq.heappop(sticks)
-            // second = heapq.heappop(sticks)
-            // cost = first + second
-            // total_cost += cost
-            // heapq.heappush(sticks, cost)
-            // return total_cost
-
-            throw new UnsupportedOperationException("Implement connectSticks");
-        }
-
+        throw new UnsupportedOperationException("Implement connectSticks");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LastStoneWeightSimilar3 sol = new LastStoneWeightSimilar3();
         assert (sol.connectSticks(java.util.List.of(2, 4, 3)) == 14);
         System.out.println("✓ Test case 1 passed");
         assert (sol.connectSticks(java.util.List.of(1, 8, 3, 5)) == 30);

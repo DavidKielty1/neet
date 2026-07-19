@@ -34,69 +34,68 @@
  */
 
 public class KthLargestElementInAnArray {
-    static class Solution {
-        public int findKthLargest(int[] nums, int k) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int findKthLargest(int[] nums, int k) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // java.util.PriorityQueue<Integer> minHeap = new java.util.PriorityQueue<>();
-            // for (int num : nums) {
-            //     minHeap.offer(num);
-            //     if (minHeap.size() > k) {
-            //         minHeap.poll();
-            //     }
-            // }
-            // return minHeap.peek();
-        }
+    // java.util.PriorityQueue<Integer> minHeap = new java.util.PriorityQueue<>();
+    // for (int num : nums) {
+    //     minHeap.offer(num);
+    //     if (minHeap.size() > k) {
+    //         minHeap.poll();
+    //     }
+    // }
+    // return minHeap.peek();
     }
+    
 
     public static void main(String[] args) {
         System.out.println("KthLargestElementInAnArray practice stub ready.");

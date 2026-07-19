@@ -32,87 +32,83 @@ import java.util.function.*;
 
 
 public class LastStoneWeightSimilar2 {
+    public int maximumProduct(List<Integer> nums, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maximumProduct(List<Integer> nums, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // heapq.heapify(nums)
+    // for _ in range(k):
+    // smallest = heapq.heappop(nums)
+    // heapq.heappush(nums, smallest + 1)
+    // product = 1
+    // for num in nums:
+    // product *= num
+    // return product
 
-            //
-
-            //
-
-            // heapq.heapify(nums)
-            // for _ in range(k):
-            // smallest = heapq.heappop(nums)
-            // heapq.heappush(nums, smallest + 1)
-            // product = 1
-            // for num in nums:
-            // product *= num
-            // return product
-
-            throw new UnsupportedOperationException("Implement maximumProduct");
-        }
-
+        throw new UnsupportedOperationException("Implement maximumProduct");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LastStoneWeightSimilar2 sol = new LastStoneWeightSimilar2();
         assert (sol.maximumProduct(java.util.List.of(0, 4), 5) == 20);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maximumProduct(java.util.List.of(6, 3, 3, 2), 2) == 216);

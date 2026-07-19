@@ -22,77 +22,76 @@
  * - 0 <= heights[i] <= 10^4
  */
 public class LargestRectangleInHistogram {
-    static class Solution {
-        public int largestRectangleArea(int[] heights) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int largestRectangleArea(int[] heights) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // Deque<Integer> stack = new ArrayDeque<>();
-            // int best = 0;
-            //
-            // for (int i = 0; i <= heights.length; i++) {
-            //     int currentHeight = i == heights.length ? 0 : heights[i];
-            //     while (!stack.isEmpty() && heights[stack.peek()] > currentHeight) {
-            //         int height = heights[stack.pop()];
-            //         int leftBoundary = stack.isEmpty() ? -1 : stack.peek();
-            //         int width = i - leftBoundary - 1;
-            //         best = Math.max(best, height * width);
-            //     }
-            //     stack.push(i);
-            // }
-            //
-            // return best;
-            throw new UnsupportedOperationException("Implement largestRectangleArea");
-        }
+    // Deque<Integer> stack = new ArrayDeque<>();
+    // int best = 0;
+    //
+    // for (int i = 0; i <= heights.length; i++) {
+    //     int currentHeight = i == heights.length ? 0 : heights[i];
+    //     while (!stack.isEmpty() && heights[stack.peek()] > currentHeight) {
+    //         int height = heights[stack.pop()];
+    //         int leftBoundary = stack.isEmpty() ? -1 : stack.peek();
+    //         int width = i - leftBoundary - 1;
+    //         best = Math.max(best, height * width);
+    //     }
+    //     stack.push(i);
+    // }
+    //
+    // return best;
+        throw new UnsupportedOperationException("Implement largestRectangleArea");
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement largestRectangleArea and add checks.");

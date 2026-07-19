@@ -50,86 +50,82 @@ import java.util.function.*;
 
 
 public class IsSubsequenceSimilar3 {
+    public boolean canMakeSubsequence(String str1, String str2) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean canMakeSubsequence(String str1, String str2) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // j = 0
+    // for i in range(len(str1)):
+    // if j < len(str2):
+    // next_char = 'a' if str1[i] == 'z' else chr(ord(str1[i]) + 1)
+    // if str1[i] == str2[j] or next_char == str2[j]:
+    // j += 1
+    // return j == len(str2)
 
-            //
-
-            //
-
-            // j = 0
-            // for i in range(len(str1)):
-            // if j < len(str2):
-            // next_char = 'a' if str1[i] == 'z' else chr(ord(str1[i]) + 1)
-            // if str1[i] == str2[j] or next_char == str2[j]:
-            // j += 1
-            // return j == len(str2)
-
-            throw new UnsupportedOperationException("Implement canMakeSubsequence");
-        }
-
+        throw new UnsupportedOperationException("Implement canMakeSubsequence");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        IsSubsequenceSimilar3 sol = new IsSubsequenceSimilar3();
         assert (sol.canMakeSubsequence("abc", "ad") == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.canMakeSubsequence("zc", "ad") == true);

@@ -32,86 +32,82 @@ import java.util.function.*;
 
 
 public class LongestCommonPrefixSimilar3 {
+    public String thousandSeparator(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public String thousandSeparator(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // s = str(n)
+    // result = []
+    // for i, digit in enumerate(reversed(s)):
+    // if i > 0 and i % 3 == 0:
+    // result.append('.')
+    // result.append(digit)
+    // return ''.join(reversed(result))
 
-            //
-
-            //
-
-            // s = str(n)
-            // result = []
-            // for i, digit in enumerate(reversed(s)):
-            // if i > 0 and i % 3 == 0:
-            // result.append('.')
-            // result.append(digit)
-            // return ''.join(reversed(result))
-
-            throw new UnsupportedOperationException("Implement thousandSeparator");
-        }
-
+        throw new UnsupportedOperationException("Implement thousandSeparator");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LongestCommonPrefixSimilar3 sol = new LongestCommonPrefixSimilar3();
         assert (sol.thousandSeparator(987) == "987");
         System.out.println("✓ Test case 1 passed");
         assert (sol.thousandSeparator(1234) == "1.234");

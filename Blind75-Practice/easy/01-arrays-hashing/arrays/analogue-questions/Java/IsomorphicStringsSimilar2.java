@@ -42,91 +42,87 @@ import java.util.function.*;
 
 
 public class IsomorphicStringsSimilar2 {
+    public boolean areAlmostEqual(String s1, String s2) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean areAlmostEqual(String s1, String s2) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if s1 == s2:
+    // return True
+    // diff_indices = []
+    // for i in range(len(s1)):
+    // if s1[i] != s2[i]:
+    // diff_indices.append(i)
+    // if len(diff_indices) > 2:
+    // return False
+    // if len(diff_indices) != 2:
+    // return False
+    // i, j = diff_indices
+    // return s1[i] == s2[j] and s1[j] == s2[i]
 
-            //
-
-            //
-
-            // if s1 == s2:
-            // return True
-            // diff_indices = []
-            // for i in range(len(s1)):
-            // if s1[i] != s2[i]:
-            // diff_indices.append(i)
-            // if len(diff_indices) > 2:
-            // return False
-            // if len(diff_indices) != 2:
-            // return False
-            // i, j = diff_indices
-            // return s1[i] == s2[j] and s1[j] == s2[i]
-
-            throw new UnsupportedOperationException("Implement areAlmostEqual");
-        }
-
+        throw new UnsupportedOperationException("Implement areAlmostEqual");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        IsomorphicStringsSimilar2 sol = new IsomorphicStringsSimilar2();
         assert (sol.areAlmostEqual("bank", "kanb") == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.areAlmostEqual("attack", "defend") == false);

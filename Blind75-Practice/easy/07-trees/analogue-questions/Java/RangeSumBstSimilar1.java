@@ -30,7 +30,6 @@ import java.util.function.*;
 
 
 public class RangeSumBstSimilar1 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -49,102 +48,102 @@ public class RangeSumBstSimilar1 {
         }
     }
 
-    static class Solution {
-        public int getMinimumDifference(TreeNode root) {
-            //
 
-            //
+    public int getMinimumDifference(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // self.min_diff = float('inf')
-            // self.prev = None
-            // def inorder(node):
-            // if not node:
-            // return
-            // inorder(node.left)
-            // if self.prev is not None:
-            // self.min_diff = min(self.min_diff, node.val - self.prev)
-            // self.prev = node.val
-            // inorder(node.right)
-            // inorder(root)
-            // return self.min_diff
+    //
 
-            throw new UnsupportedOperationException("Implement getMinimumDifference");
-        }
+    // self.min_diff = float('inf')
+    // self.prev = None
+    // def inorder(node):
+    // if not node:
+    // return
+    // inorder(node.left)
+    // if self.prev is not None:
+    // self.min_diff = min(self.min_diff, node.val - self.prev)
+    // self.prev = node.val
+    // inorder(node.right)
+    // inorder(root)
+    // return self.min_diff
 
+        throw new UnsupportedOperationException("Implement getMinimumDifference");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root1 = TreeNode(4);
-        // root1.left = TreeNode(2)
-        // root1.right = TreeNode(6)
-        // root1.left.left = TreeNode(1)
-        // root1.left.right = TreeNode(3)
-        // assert solution.getMinimumDifference(root1) == 1  // needs locals (port helpers): ['root1']
+        RangeSumBstSimilar1 sol = new RangeSumBstSimilar1();
+    // root1 = TreeNode(4);
+    // root1.left = TreeNode(2)
+    // root1.right = TreeNode(6)
+    // root1.left.left = TreeNode(1)
+    // root1.left.right = TreeNode(3)
+    // assert solution.getMinimumDifference(root1) == 1  // needs locals (port helpers): ['root1']
         System.out.println("✓ Test case 1 passed");
-        sol = new Solution();
-        // root2 = TreeNode(1);
-        // root2.left = TreeNode(0)
-        // root2.right = TreeNode(48)
-        // root2.right.left = TreeNode(12)
-        // root2.right.right = TreeNode(49)
-        // assert solution.getMinimumDifference(root2) == 1  // needs locals (port helpers): ['root2']
+        sol = new RangeSumBstSimilar1();
+    // root2 = TreeNode(1);
+    // root2.left = TreeNode(0)
+    // root2.right = TreeNode(48)
+    // root2.right.left = TreeNode(12)
+    // root2.right.right = TreeNode(49)
+    // assert solution.getMinimumDifference(root2) == 1  // needs locals (port helpers): ['root2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

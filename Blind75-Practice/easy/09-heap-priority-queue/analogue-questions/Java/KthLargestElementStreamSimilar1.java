@@ -27,85 +27,81 @@ import java.util.function.*;
 
 
 public class KthLargestElementStreamSimilar1 {
+    public int findKthLargest(List<Integer> nums, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int findKthLargest(List<Integer> nums, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // heap = []
+    // for num in nums:
+    // heapq.heappush(heap, num)
+    // if len(heap) > k:
+    // heapq.heappop(heap)
+    // return heap[0]
 
-            //
-
-            //
-
-            // heap = []
-            // for num in nums:
-            // heapq.heappush(heap, num)
-            // if len(heap) > k:
-            // heapq.heappop(heap)
-            // return heap[0]
-
-            throw new UnsupportedOperationException("Implement findKthLargest");
-        }
-
+        throw new UnsupportedOperationException("Implement findKthLargest");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        KthLargestElementStreamSimilar1 sol = new KthLargestElementStreamSimilar1();
         assert (sol.findKthLargest(java.util.List.of(3, 2, 1, 5, 6, 4), 2) == 5);
         System.out.println("✓ Test case 1 passed");
         assert (sol.findKthLargest(java.util.List.of(3, 2, 3, 1, 2, 4, 5, 5, 6), 4) == 4);

@@ -32,95 +32,94 @@
  */
 
 public class StoneGameII {
-    static class Solution {
-        public int stoneGameII(int[] piles) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int stoneGameII(int[] piles) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int n = piles.length;
-            // int[] suffix = new int[n + 1];
-            // for (int i = n - 1; i >= 0; i--) {
-            //     suffix[i] = suffix[i + 1] + piles[i];
-            // }
-            // int[][] memo = new int[n][n + 1];
-            // return dfs(0, 1, piles, suffix, memo);
-        }
-
-        // private int dfs(int i, int m, int[] piles, int[] suffix, int[][] memo) {
-        //     if (i >= piles.length) {
-        //         return 0;
-        //     }
-        //     if (memo[i][m] != 0) {
-        //         return memo[i][m];
-        //     }
-        //     int best = 0;
-        //     int takeLimit = Math.min(2 * m, piles.length - i);
-        //     for (int x = 1; x <= takeLimit; x++) {
-        //         int stones = suffix[i] - suffix[i + x];
-        //         int opponent = dfs(i + x, Math.max(m, x), piles, suffix, memo);
-        //         best = Math.max(best, stones - opponent);
-        //     }
-        //     memo[i][m] = best;
-        //     return best;
-        // }
+    // int n = piles.length;
+    // int[] suffix = new int[n + 1];
+    // for (int i = n - 1; i >= 0; i--) {
+    //     suffix[i] = suffix[i + 1] + piles[i];
+    // }
+    // int[][] memo = new int[n][n + 1];
+    // return dfs(0, 1, piles, suffix, memo);
     }
 
+    // private int dfs(int i, int m, int[] piles, int[] suffix, int[][] memo) {
+    //     if (i >= piles.length) {
+    //         return 0;
+    //     }
+    //     if (memo[i][m] != 0) {
+    //         return memo[i][m];
+    //     }
+    //     int best = 0;
+    //     int takeLimit = Math.min(2 * m, piles.length - i);
+    //     for (int x = 1; x <= takeLimit; x++) {
+    //         int stones = suffix[i] - suffix[i + x];
+    //         int opponent = dfs(i + x, Math.max(m, x), piles, suffix, memo);
+    //         best = Math.max(best, stones - opponent);
+    //     }
+    //     memo[i][m] = best;
+    //     return best;
+    // }
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        StoneGameII sol = new StoneGameII();
         assert sol.stoneGameII(new int[] {2, 7, 9, 4, 4}) == 10;
         assert sol.stoneGameII(new int[] {1, 2, 3, 4, 5, 100}) == 104;
         System.out.println("All test cases passed!");

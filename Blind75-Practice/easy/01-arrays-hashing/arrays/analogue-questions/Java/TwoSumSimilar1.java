@@ -36,89 +36,85 @@ import java.util.function.*;
 
 
 public class TwoSumSimilar1 {
+    public List<Integer> twoSum(List<Integer> numbers, int target) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> twoSum(List<Integer> numbers, int target) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // left, right = (0, len(numbers) - 1)
+    // while left < right:
+    // current_sum = numbers[left] + numbers[right]
+    // if current_sum == target:
+    // return [left + 1, right + 1]
+    // elif current_sum < target:
+    // left += 1
+    // else:
+    // right -= 1
+    // return []
 
-            //
-
-            //
-
-            // left, right = (0, len(numbers) - 1)
-            // while left < right:
-            // current_sum = numbers[left] + numbers[right]
-            // if current_sum == target:
-            // return [left + 1, right + 1]
-            // elif current_sum < target:
-            // left += 1
-            // else:
-            // right -= 1
-            // return []
-
-            throw new UnsupportedOperationException("Implement twoSum");
-        }
-
+        throw new UnsupportedOperationException("Implement twoSum");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TwoSumSimilar1 sol = new TwoSumSimilar1();
         assert java.util.Objects.equals(sol.twoSum(java.util.List.of(2, 7, 11, 15), 9), java.util.List.of(1, 2));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.twoSum(java.util.List.of(2, 3, 4), 6), java.util.List.of(1, 3));

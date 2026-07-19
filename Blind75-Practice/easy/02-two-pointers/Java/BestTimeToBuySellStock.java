@@ -25,83 +25,81 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 */
 public class BestTimeToBuySellStock {
-
-    static class Solution {
-        public int maxProfit(int[] prices) {
+    public int maxProfit(int[] prices) {
 
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // if (prices == null || prices.length == 0) {
-                // return 0;
-            // }
-            // int lowestPrice = prices[0];
-            // int bestSellSoFar = 0;
-            // for (int price : prices) {
-                // lowestPrice = Math.min(lowestPrice, price);
-                // bestSellSoFar = Math.max(bestSellSoFar, price - lowestPrice);
-            // }
-            // return bestSellSoFar;
+    // if (prices == null || prices.length == 0) {
+        // return 0;
+    // }
+    // int lowestPrice = prices[0];
+    // int bestSellSoFar = 0;
+    // for (int price : prices) {
+        // lowestPrice = Math.min(lowestPrice, price);
+        // bestSellSoFar = Math.max(bestSellSoFar, price - lowestPrice);
+    // }
+    // return bestSellSoFar;
 
-            throw new UnsupportedOperationException("Implement maxProfit");
-        }
+        throw new UnsupportedOperationException("Implement maxProfit");
     }
+    
 
     static class SolutionSlidingWindow {
         /*
@@ -109,25 +107,25 @@ public class BestTimeToBuySellStock {
          * - left = buy day
          * - right = sell day
          */
-        // public int maxProfit(int[] prices) {
-        //     int left = 0;
-        //     int right = 1;
-        //     int maxProfit = 0;
-        //     while (right < prices.length) {
-        //         if (prices[left] < prices[right]) {
-        //             int profit = prices[right] - prices[left];
-        //             maxProfit = Math.max(maxProfit, profit);
-        //         } else {
-        //             left = right;
-        //         }
-        //         right++;
-        //     }
-        //     return maxProfit;
-        // }
+    // public int maxProfit(int[] prices) {
+    //     int left = 0;
+    //     int right = 1;
+    //     int maxProfit = 0;
+    //     while (right < prices.length) {
+    //         if (prices[left] < prices[right]) {
+    //             int profit = prices[right] - prices[left];
+    //             maxProfit = Math.max(maxProfit, profit);
+    //         } else {
+    //             left = right;
+    //         }
+    //         right++;
+    //     }
+    //     return maxProfit;
+    // }
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        BestTimeToBuySellStock solution = new BestTimeToBuySellStock();
 
         assert solution.maxProfit(new int[] {7, 1, 5, 3, 6, 4}) == 5;
         System.out.println("✓ Test case 1 passed");

@@ -30,7 +30,6 @@ import java.util.function.*;
 
 
 public class DiameterOfBinaryTreeSimilar1 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -49,96 +48,96 @@ public class DiameterOfBinaryTreeSimilar1 {
         }
     }
 
-    static class Solution {
-        public int longestUnivaluePath(TreeNode root) {
-            //
 
-            //
+    public int longestUnivaluePath(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // self.max_path = 0
-            // def dfs(node):
-            // if not node:
-            // return 0
-            // left_len = dfs(node.left)
-            // right_len = dfs(node.right)
-            // left_path = right_path = 0
-            // if node.left and node.left.val == node.val:
-            // left_path = left_len + 1
-            // if node.right and node.right.val == node.val:
-            // right_path = right_len + 1
-            // self.max_path = max(self.max_path, left_path + right_path)
-            // return max(left_path, right_path)
-            // dfs(root)
-            // return self.max_path
+    //
 
-            throw new UnsupportedOperationException("Implement longestUnivaluePath");
-        }
+    // self.max_path = 0
+    // def dfs(node):
+    // if not node:
+    // return 0
+    // left_len = dfs(node.left)
+    // right_len = dfs(node.right)
+    // left_path = right_path = 0
+    // if node.left and node.left.val == node.val:
+    // left_path = left_len + 1
+    // if node.right and node.right.val == node.val:
+    // right_path = right_len + 1
+    // self.max_path = max(self.max_path, left_path + right_path)
+    // return max(left_path, right_path)
+    // dfs(root)
+    // return self.max_path
 
+        throw new UnsupportedOperationException("Implement longestUnivaluePath");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree([5, 4, 5, 1, 1, null, 5]);
-        // assert solution.longestUnivaluePath(root) == 2  // needs locals (port helpers): ['root']
+        DiameterOfBinaryTreeSimilar1 sol = new DiameterOfBinaryTreeSimilar1();
+    // root = create_tree([5, 4, 5, 1, 1, null, 5]);
+    // assert solution.longestUnivaluePath(root) == 2  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree([1, 4, 5, 4, 4, null, 5]);
-        // assert solution.longestUnivaluePath(root) == 2  // needs locals (port helpers): ['root']
+    // root = create_tree([1, 4, 5, 4, 4, null, 5]);
+    // assert solution.longestUnivaluePath(root) == 2  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

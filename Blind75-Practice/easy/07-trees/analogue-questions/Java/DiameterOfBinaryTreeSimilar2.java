@@ -29,7 +29,6 @@ import java.util.function.*;
 
 
 public class DiameterOfBinaryTreeSimilar2 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -48,98 +47,98 @@ public class DiameterOfBinaryTreeSimilar2 {
         }
     }
 
-    static class Solution {
-        public int maxPathSum(TreeNode root) {
-            //
 
-            //
+    public int maxPathSum(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // self.max_sum = float('-inf')
-            // def dfs(node):
-            // if not node:
-            // return float('-inf')
-            // if not node.left and (not node.right):
-            // return node.val
-            // left_max = dfs(node.left)
-            // right_max = dfs(node.right)
-            // if node.left and node.right:
-            // path_sum = left_max + node.val + right_max
-            // self.max_sum = max(self.max_sum, path_sum)
-            // return max(left_max, right_max) + node.val
-            // if node.left:
-            // return left_max + node.val
-            // return right_max + node.val
-            // dfs(root)
-            // return self.max_sum
+    //
 
-            throw new UnsupportedOperationException("Implement maxPathSum");
-        }
+    // self.max_sum = float('-inf')
+    // def dfs(node):
+    // if not node:
+    // return float('-inf')
+    // if not node.left and (not node.right):
+    // return node.val
+    // left_max = dfs(node.left)
+    // right_max = dfs(node.right)
+    // if node.left and node.right:
+    // path_sum = left_max + node.val + right_max
+    // self.max_sum = max(self.max_sum, path_sum)
+    // return max(left_max, right_max) + node.val
+    // if node.left:
+    // return left_max + node.val
+    // return right_max + node.val
+    // dfs(root)
+    // return self.max_sum
 
+        throw new UnsupportedOperationException("Implement maxPathSum");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree([-10, 9, 20, null, null, 15, 7]);
-        // assert solution.maxPathSum(root) == 42  // needs locals (port helpers): ['root']
+        DiameterOfBinaryTreeSimilar2 sol = new DiameterOfBinaryTreeSimilar2();
+    // root = create_tree([-10, 9, 20, null, null, 15, 7]);
+    // assert solution.maxPathSum(root) == 42  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree(java.util.List.of(1,2,3));
-        // assert solution.maxPathSum(root) == 6  // needs locals (port helpers): ['root']
+    // root = create_tree(java.util.List.of(1,2,3));
+    // assert solution.maxPathSum(root) == 6  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

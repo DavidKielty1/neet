@@ -48,90 +48,86 @@ import java.util.function.*;
 
 
 public class LongestCommonPrefixSimilar2 {
+    public boolean canConvertString(String s, String t, int k) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean canConvertString(String s, String t, int k) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if len(s) != len(t):
+    // return False
+    // shift_count = Counter()
+    // for i in range(len(s)):
+    // if s[i] != t[i]:
+    // shift = (ord(t[i]) - ord(s[i])) % 26
+    // shift_count[shift] += 1
+    // for shift, count in shift_count.items():
+    // if shift + (count - 1) * 26 > k:
+    // return False
+    // return True
 
-            //
-
-            //
-
-            // if len(s) != len(t):
-            // return False
-            // shift_count = Counter()
-            // for i in range(len(s)):
-            // if s[i] != t[i]:
-            // shift = (ord(t[i]) - ord(s[i])) % 26
-            // shift_count[shift] += 1
-            // for shift, count in shift_count.items():
-            // if shift + (count - 1) * 26 > k:
-            // return False
-            // return True
-
-            throw new UnsupportedOperationException("Implement canConvertString");
-        }
-
+        throw new UnsupportedOperationException("Implement canConvertString");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        LongestCommonPrefixSimilar2 sol = new LongestCommonPrefixSimilar2();
         assert (sol.canConvertString("input", "ouput", 9) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.canConvertString("abc", "bcd", 10) == false);

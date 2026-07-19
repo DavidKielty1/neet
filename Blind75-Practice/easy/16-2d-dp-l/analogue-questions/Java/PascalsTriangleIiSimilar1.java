@@ -42,86 +42,82 @@ import java.util.function.*;
 
 
 public class PascalsTriangleIiSimilar1 {
+    public List<Integer> twoSum(List<Integer> nums, int target) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> twoSum(List<Integer> nums, int target) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // seen = {}
+    // for i, num in enumerate(nums):
+    // complement = target - num
+    // if complement in seen:
+    // return [seen[complement], i]
+    // seen[num] = i
+    // return []
 
-            //
-
-            //
-
-            // seen = {}
-            // for i, num in enumerate(nums):
-            // complement = target - num
-            // if complement in seen:
-            // return [seen[complement], i]
-            // seen[num] = i
-            // return []
-
-            throw new UnsupportedOperationException("Implement twoSum");
-        }
-
+        throw new UnsupportedOperationException("Implement twoSum");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PascalsTriangleIiSimilar1 sol = new PascalsTriangleIiSimilar1();
         assert java.util.Objects.equals(sol.twoSum(java.util.List.of(2, 7, 11, 15), 9), java.util.List.of(0, 1));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.twoSum(java.util.List.of(3, 2, 4), 6), java.util.List.of(1, 2));

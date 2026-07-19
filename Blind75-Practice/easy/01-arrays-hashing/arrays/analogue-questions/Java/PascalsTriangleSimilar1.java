@@ -36,87 +36,83 @@ import java.util.function.*;
 
 
 public class PascalsTriangleSimilar1 {
+    public List<Integer> getRow(int rowIndex) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public List<Integer> getRow(int rowIndex) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // row = [1]
+    // for i in range(rowIndex):
+    // new_row = [1]
+    // for j in range(len(row) - 1):
+    // new_row.append(row[j] + row[j + 1])
+    // new_row.append(1)
+    // row = new_row
+    // return row
 
-            //
-
-            //
-
-            // row = [1]
-            // for i in range(rowIndex):
-            // new_row = [1]
-            // for j in range(len(row) - 1):
-            // new_row.append(row[j] + row[j + 1])
-            // new_row.append(1)
-            // row = new_row
-            // return row
-
-            throw new UnsupportedOperationException("Implement getRow");
-        }
-
+        throw new UnsupportedOperationException("Implement getRow");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PascalsTriangleSimilar1 sol = new PascalsTriangleSimilar1();
         assert java.util.Objects.equals(sol.getRow(3), java.util.List.of(1, 3, 3, 1));
         System.out.println("✓ Test case 1 passed");
         assert java.util.Objects.equals(sol.getRow(0), java.util.List.of(1));

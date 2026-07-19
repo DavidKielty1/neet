@@ -46,98 +46,94 @@ import java.util.function.*;
 
 
 public class FirstBadVersionSimilar1 {
+    public int guessNumber(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int guessNumber(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // left, right = (1, n)
+    // while left <= right:
+    // mid = left + (right - left) // 2
+    // result = guess(mid)
+    // if result == 0:
+    // return mid
+    // elif result == -1:
+    // right = mid - 1
+    // else:
+    // left = mid + 1
+    // return -1
 
-            //
-
-            //
-
-            // left, right = (1, n)
-            // while left <= right:
-            // mid = left + (right - left) // 2
-            // result = guess(mid)
-            // if result == 0:
-            // return mid
-            // elif result == -1:
-            // right = mid - 1
-            // else:
-            // left = mid + 1
-            // return -1
-
-            throw new UnsupportedOperationException("Implement guessNumber");
-        }
-
+        throw new UnsupportedOperationException("Implement guessNumber");
     }
 
+    
+
     public static void main(String[] args) {
-        // test_api = TestAPI(6);
-        // nested def guess — see Python file
-        Solution sol = new Solution();
+    // test_api = TestAPI(6);
+    // nested def guess — see Python file
+        FirstBadVersionSimilar1 sol = new FirstBadVersionSimilar1();
         assert (sol.guessNumber(10) == 6);
         System.out.println("✓ Test case 1 passed");
-        // test_api = TestAPI(1);
+    // test_api = TestAPI(1);
         assert (sol.guessNumber(1) == 1);
         System.out.println("✓ Test case 2 passed");
-        // test_api = TestAPI(1);
+    // test_api = TestAPI(1);
         assert (sol.guessNumber(2) == 1);
         System.out.println("✓ Test case 3 passed");
         System.out.println("\nAll test cases passed!");

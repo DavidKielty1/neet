@@ -39,84 +39,80 @@ import java.util.function.*;
 
 
 public class PowerOfTwoSimilar1 {
+    public boolean isPowerOfThree(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean isPowerOfThree(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if n <= 0:
+    // return False
+    // while n % 3 == 0:
+    // n //= 3
+    // return n == 1
 
-            //
-
-            //
-
-            // if n <= 0:
-            // return False
-            // while n % 3 == 0:
-            // n //= 3
-            // return n == 1
-
-            throw new UnsupportedOperationException("Implement isPowerOfThree");
-        }
-
+        throw new UnsupportedOperationException("Implement isPowerOfThree");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfTwoSimilar1 sol = new PowerOfTwoSimilar1();
         assert (sol.isPowerOfThree(27) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.isPowerOfThree(0) == false);

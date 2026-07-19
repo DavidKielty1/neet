@@ -31,85 +31,81 @@ import java.util.function.*;
 
 
 public class MissingNumberSimilar2 {
+    public int firstMissingPositive(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int firstMissingPositive(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // num_set = set(nums)
+    // i = 1
+    // while True:
+    // if i not in num_set:
+    // return i
+    // i += 1
 
-            //
-
-            //
-
-            // num_set = set(nums)
-            // i = 1
-            // while True:
-            // if i not in num_set:
-            // return i
-            // i += 1
-
-            throw new UnsupportedOperationException("Implement firstMissingPositive");
-        }
-
+        throw new UnsupportedOperationException("Implement firstMissingPositive");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MissingNumberSimilar2 sol = new MissingNumberSimilar2();
         assert (sol.firstMissingPositive(java.util.List.of(1, 2, 0)) == 3);
         System.out.println("✓ Test case 1 passed");
         assert (sol.firstMissingPositive(java.util.List.of(3, 4, -1, 1)) == 2);

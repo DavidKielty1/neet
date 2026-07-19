@@ -46,88 +46,86 @@
  */
 
 public class WallsAndGates {
-
-    static class Solution {
-        public void wallsAndGates(int[][] rooms) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            // Queue<int[]> queue = new ArrayDeque<>();
-            // int rows = rooms.length;
-            // int cols = rooms[0].length;
-            //
-            // for (int r = 0; r < rows; r++) {
-            //     for (int c = 0; c < cols; c++) {
-            //         if (rooms[r][c] == 0) {
-            //             queue.offer(new int[] {r, c});
-            //         }
-            //     }
-            // }
-            //
-            // int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-            // while (!queue.isEmpty()) {
-            //     int[] cell = queue.poll();
-            //     for (int[] dir : dirs) {
-            //         int nr = cell[0] + dir[0];
-            //         int nc = cell[1] + dir[1];
-            //         if (nr < 0 || nc < 0 || nr == rows || nc == cols) {
-            //             continue;
-            //         }
-            //         if (rooms[nr][nc] != Integer.MAX_VALUE) {
-            //             continue;
-            //         }
-            //         rooms[nr][nc] = rooms[cell[0]][cell[1]] + 1;
-            //         queue.offer(new int[] {nr, nc});
-            //     }
-            // }
-        }
+    public void wallsAndGates(int[][] rooms) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // Queue<int[]> queue = new ArrayDeque<>();
+    // int rows = rooms.length;
+    // int cols = rooms[0].length;
+    //
+    // for (int r = 0; r < rows; r++) {
+    //     for (int c = 0; c < cols; c++) {
+    //         if (rooms[r][c] == 0) {
+    //             queue.offer(new int[] {r, c});
+    //         }
+    //     }
+    // }
+    //
+    // int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    // while (!queue.isEmpty()) {
+    //     int[] cell = queue.poll();
+    //     for (int[] dir : dirs) {
+    //         int nr = cell[0] + dir[0];
+    //         int nc = cell[1] + dir[1];
+    //         if (nr < 0 || nc < 0 || nr == rows || nc == cols) {
+    //             continue;
+    //         }
+    //         if (rooms[nr][nc] != Integer.MAX_VALUE) {
+    //             continue;
+    //         }
+    //         rooms[nr][nc] = rooms[cell[0]][cell[1]] + 1;
+    //         queue.offer(new int[] {nr, nc});
+    //     }
+    // }
     }
+    
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready. Implement wallsAndGates and add assertions.");

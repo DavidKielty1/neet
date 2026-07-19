@@ -27,7 +27,6 @@ import java.util.function.*;
 
 
 public class BalancedBinaryTreeSimilar1 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -46,93 +45,93 @@ public class BalancedBinaryTreeSimilar1 {
         }
     }
 
-    static class Solution {
-        public int minDiffInBST(TreeNode root) {
-            //
 
-            //
+    public int minDiffInBST(TreeNode root) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // self.prev = None
-            // self.min_diff = float('inf')
-            // def inorder(node):
-            // if not node:
-            // return
-            // inorder(node.left)
-            // if self.prev is not None:
-            // self.min_diff = min(self.min_diff, node.val - self.prev)
-            // self.prev = node.val
-            // inorder(node.right)
-            // inorder(root)
-            // return self.min_diff
+    //
 
-            throw new UnsupportedOperationException("Implement minDiffInBST");
-        }
+    // self.prev = None
+    // self.min_diff = float('inf')
+    // def inorder(node):
+    // if not node:
+    // return
+    // inorder(node.left)
+    // if self.prev is not None:
+    // self.min_diff = min(self.min_diff, node.val - self.prev)
+    // self.prev = node.val
+    // inorder(node.right)
+    // inorder(root)
+    // return self.min_diff
 
+        throw new UnsupportedOperationException("Implement minDiffInBST");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root = create_tree(java.util.List.of(4,2,6,1,3));
-        // assert solution.minDiffInBST(root) == 1  // needs locals (port helpers): ['root']
+        BalancedBinaryTreeSimilar1 sol = new BalancedBinaryTreeSimilar1();
+    // root = create_tree(java.util.List.of(4,2,6,1,3));
+    // assert solution.minDiffInBST(root) == 1  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 1 passed");
-        // root = create_tree([1, 0, 48, null, null, 12, 49]);
-        // assert solution.minDiffInBST(root) == 1  // needs locals (port helpers): ['root']
+    // root = create_tree([1, 0, 48, null, null, 12, 49]);
+    // assert solution.minDiffInBST(root) == 1  // needs locals (port helpers): ['root']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

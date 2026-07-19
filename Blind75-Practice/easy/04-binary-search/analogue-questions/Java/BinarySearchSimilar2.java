@@ -33,89 +33,85 @@ import java.util.function.*;
 
 
 public class BinarySearchSimilar2 {
+    public int searchInsert(List<Integer> nums, int target) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int searchInsert(List<Integer> nums, int target) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // left, right = (0, len(nums) - 1)
+    // while left <= right:
+    // mid = left + (right - left) // 2
+    // if nums[mid] == target:
+    // return mid
+    // elif nums[mid] < target:
+    // left = mid + 1
+    // else:
+    // right = mid - 1
+    // return left
 
-            //
-
-            //
-
-            // left, right = (0, len(nums) - 1)
-            // while left <= right:
-            // mid = left + (right - left) // 2
-            // if nums[mid] == target:
-            // return mid
-            // elif nums[mid] < target:
-            // left = mid + 1
-            // else:
-            // right = mid - 1
-            // return left
-
-            throw new UnsupportedOperationException("Implement searchInsert");
-        }
-
+        throw new UnsupportedOperationException("Implement searchInsert");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BinarySearchSimilar2 sol = new BinarySearchSimilar2();
         assert (sol.searchInsert(java.util.List.of(1, 3, 5, 6), 5) == 2);
         System.out.println("✓ Test case 1 passed");
         assert (sol.searchInsert(java.util.List.of(1, 3, 5, 6), 2) == 1);

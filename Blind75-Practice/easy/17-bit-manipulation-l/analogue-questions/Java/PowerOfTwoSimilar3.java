@@ -36,84 +36,80 @@ import java.util.function.*;
 
 
 public class PowerOfTwoSimilar3 {
+    public int hammingWeight(int n) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int hammingWeight(int n) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // count = 0
+    // while n:
+    // n &= n - 1
+    // count += 1
+    // return count
 
-            //
-
-            //
-
-            // count = 0
-            // while n:
-            // n &= n - 1
-            // count += 1
-            // return count
-
-            throw new UnsupportedOperationException("Implement hammingWeight");
-        }
-
+        throw new UnsupportedOperationException("Implement hammingWeight");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        PowerOfTwoSimilar3 sol = new PowerOfTwoSimilar3();
         assert (sol.hammingWeight(11) == 3);
         System.out.println("✓ Test case 1 passed");
         assert (sol.hammingWeight(128) == 1);

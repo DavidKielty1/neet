@@ -30,78 +30,77 @@
  */
 
 public class UniquePaths {
-    static class Solution {
-        public int uniquePaths(int m, int n) {
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int uniquePaths(int m, int n) {
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int[] dp = new int[n];
-            // Arrays.fill(dp, 1);
-            // for (int row = 1; row < m; row++) {
-            //     for (int col = 1; col < n; col++) {
-            //         dp[col] += dp[col - 1];
-            //     }
-            // }
-            // return dp[n - 1];
-        }
+    // int[] dp = new int[n];
+    // Arrays.fill(dp, 1);
+    // for (int row = 1; row < m; row++) {
+    //     for (int col = 1; col < n; col++) {
+    //         dp[col] += dp[col - 1];
+    //     }
+    // }
+    // return dp[n - 1];
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        UniquePaths sol = new UniquePaths();
         assert sol.uniquePaths(3, 7) == 28;
         assert sol.uniquePaths(3, 2) == 3;
         System.out.println("All test cases passed!");

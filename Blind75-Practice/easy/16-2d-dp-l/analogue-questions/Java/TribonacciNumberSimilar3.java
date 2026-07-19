@@ -45,86 +45,82 @@ import java.util.function.*;
 
 
 public class TribonacciNumberSimilar3 {
+    public int minCostClimbingStairs(List<Integer> cost) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int minCostClimbingStairs(List<Integer> cost) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // prev2 = cost[0]
+    // prev1 = cost[1]
+    // for i in range(2, len(cost)):
+    // current = cost[i] + min(prev1, prev2)
+    // prev2 = prev1
+    // prev1 = current
+    // return min(prev1, prev2)
 
-            //
-
-            //
-
-            // prev2 = cost[0]
-            // prev1 = cost[1]
-            // for i in range(2, len(cost)):
-            // current = cost[i] + min(prev1, prev2)
-            // prev2 = prev1
-            // prev1 = current
-            // return min(prev1, prev2)
-
-            throw new UnsupportedOperationException("Implement minCostClimbingStairs");
-        }
-
+        throw new UnsupportedOperationException("Implement minCostClimbingStairs");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TribonacciNumberSimilar3 sol = new TribonacciNumberSimilar3();
         assert (sol.minCostClimbingStairs(java.util.List.of(10, 15, 20)) == 15);
         System.out.println("✓ Test case 1 passed");
         assert (sol.minCostClimbingStairs(java.util.List.of(1, 100, 1, 1, 1, 100, 1, 1, 1, 1)) == 6);

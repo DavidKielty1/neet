@@ -31,7 +31,6 @@ import java.util.function.*;
 
 
 public class RemoveLinkedListElementsSimilar2 {
-
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -48,96 +47,96 @@ public class RemoveLinkedListElementsSimilar2 {
         }
     }
 
-    static class Solution {
-        public ListNode deleteDuplicates(ListNode head) {
-            //
 
-            //
+    public ListNode deleteDuplicates(ListNode head) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // current = head
-            // while current and current.next:
-            // if current.val == current.next.val:
-            // current.next = current.next.next
-            // else:
-            // current = current.next
-            // return head
+    //
 
-            throw new UnsupportedOperationException("Implement deleteDuplicates");
-        }
+    // current = head
+    // while current and current.next:
+    // if current.val == current.next.val:
+    // current.next = current.next.next
+    // else:
+    // current = current.next
+    // return head
 
+        throw new UnsupportedOperationException("Implement deleteDuplicates");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // head1 = ListNode(1);
-        // head1.next = ListNode(1)
-        // head1.next.next = ListNode(2)
-        // result1 = sol.deleteDuplicates(head1);
-        // assert list_to_array(result1) == [1, 2]  // needs locals (port helpers): ['list_to_array', 'result1']
+        RemoveLinkedListElementsSimilar2 sol = new RemoveLinkedListElementsSimilar2();
+    // head1 = ListNode(1);
+    // head1.next = ListNode(1)
+    // head1.next.next = ListNode(2)
+    // result1 = sol.deleteDuplicates(head1);
+    // assert list_to_array(result1) == [1, 2]  // needs locals (port helpers): ['list_to_array', 'result1']
         System.out.println("✓ Test case 1 passed");
-        // head2 = ListNode(1);
-        // head2.next = ListNode(1)
-        // head2.next.next = ListNode(2)
-        // head2.next.next.next = ListNode(3)
-        // head2.next.next.next.next = ListNode(3)
-        // result2 = sol.deleteDuplicates(head2);
-        // assert list_to_array(result2) == [1, 2, 3]  // needs locals (port helpers): ['list_to_array', 'result2']
+    // head2 = ListNode(1);
+    // head2.next = ListNode(1)
+    // head2.next.next = ListNode(2)
+    // head2.next.next.next = ListNode(3)
+    // head2.next.next.next.next = ListNode(3)
+    // result2 = sol.deleteDuplicates(head2);
+    // assert list_to_array(result2) == [1, 2, 3]  // needs locals (port helpers): ['list_to_array', 'result2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

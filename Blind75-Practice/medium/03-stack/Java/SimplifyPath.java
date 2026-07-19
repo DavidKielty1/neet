@@ -44,111 +44,110 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class SimplifyPath {
-    static class Solution {
-        public String simplifyPath(String path) {
-            Deque<String> dirs = new ArrayDeque<>();
+    public String simplifyPath(String path) {
+        Deque<String> dirs = new ArrayDeque<>();
 
-            for (String dir : path.split("/")){
-                if (dir.equals(".") || dir.isEmpty()) {
-                    continue;
+        for (String dir : path.split("/")){
+            if (dir.equals(".") || dir.isEmpty()) {
+                continue;
+            }
+
+            if (dir.equals("..")) {
+                if (!dirs.isEmpty()) {
+                    dirs.pollFirst();
                 }
-
-                if (dir.equals("..")) {
-                    if (!dirs.isEmpty()) {
-                        dirs.pollFirst();
-                    }
-                } else {
-                    dirs.push(dir);
-                }
+            } else {
+                dirs.push(dir);
             }
-            
-            if (dirs.isEmpty()) {
-                return "/";
-            }
-
-            StringBuilder result = new StringBuilder();
-            for (String dir : dirs) {
-                result.append("/").append(dir);
-            }
-            return result.toString();
-
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-
-            // Deque<String> stack = new ArrayDeque<>();
-            // for (String part : path.split("/")) {
-            //     if (part.isEmpty() || part.equals(".")) {
-            //         continue;
-            //     }
-            //     if (part.equals("..")) {
-            //         if (!stack.isEmpty()) {
-            //             stack.pollLast();
-            //         }
-            //     } else {
-            //         stack.offerLast(part);
-            //     }
-            // }
-            // if (stack.isEmpty()) {
-            //     return "/";
-            // }
-            // StringBuilder result = new StringBuilder();
-            // for (String dir : stack) {
-            //     result.append('/').append(dir);
-            // }
-            // return result.toString();
         }
+        
+        if (dirs.isEmpty()) {
+            return "/";
+        }
+
+        StringBuilder result = new StringBuilder();
+        for (String dir : dirs) {
+            result.append("/").append(dir);
+        }
+        return result.toString();
+
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
+    // Deque<String> stack = new ArrayDeque<>();
+    // for (String part : path.split("/")) {
+    //     if (part.isEmpty() || part.equals(".")) {
+    //         continue;
+    //     }
+    //     if (part.equals("..")) {
+    //         if (!stack.isEmpty()) {
+    //             stack.pollLast();
+    //         }
+    //     } else {
+    //         stack.offerLast(part);
+    //     }
+    // }
+    // if (stack.isEmpty()) {
+    //     return "/";
+    // }
+    // StringBuilder result = new StringBuilder();
+    // for (String dir : stack) {
+    //     result.append('/').append(dir);
+    // }
+    // return result.toString();
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SimplifyPath sol = new SimplifyPath();
         assert sol.simplifyPath("/home/").equals("/home");
         assert sol.simplifyPath("/../").equals("/");
         assert sol.simplifyPath("/home//foo/").equals("/home/foo");

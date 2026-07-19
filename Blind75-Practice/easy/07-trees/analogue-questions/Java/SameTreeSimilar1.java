@@ -28,7 +28,6 @@ import java.util.function.*;
 
 
 public class SameTreeSimilar1 {
-
     public static class TreeNode {
         public int val;
         public TreeNode left;
@@ -47,90 +46,90 @@ public class SameTreeSimilar1 {
         }
     }
 
-    static class Solution {
-        public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-            //
 
-            //
+    public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            // def get_leaves(node):
-            // if not node:
-            // return []
-            // if not node.left and (not node.right):
-            // return [node.val]
-            // return get_leaves(node.left) + get_leaves(node.right)
-            // return get_leaves(root1) == get_leaves(root2)
+    //
 
-            throw new UnsupportedOperationException("Implement leafSimilar");
-        }
+    // def get_leaves(node):
+    // if not node:
+    // return []
+    // if not node.left and (not node.right):
+    // return [node.val]
+    // return get_leaves(node.left) + get_leaves(node.right)
+    // return get_leaves(root1) == get_leaves(root2)
 
+        throw new UnsupportedOperationException("Implement leafSimilar");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        // root1 = create_tree([3, 5, 1, 6, 2, 9, 8, null, null, 7, 4]);
-        // root2 = create_tree([3, 5, 1, 6, 7, 4, 2, null, null, null, null, null, null, 9, 8]);
-        // assert solution.leafSimilar(root1, root2) == True  // needs locals (port helpers): ['root1', 'root2']
+        SameTreeSimilar1 sol = new SameTreeSimilar1();
+    // root1 = create_tree([3, 5, 1, 6, 2, 9, 8, null, null, 7, 4]);
+    // root2 = create_tree([3, 5, 1, 6, 7, 4, 2, null, null, null, null, null, null, 9, 8]);
+    // assert solution.leafSimilar(root1, root2) == True  // needs locals (port helpers): ['root1', 'root2']
         System.out.println("✓ Test case 1 passed");
-        // root1 = create_tree(java.util.List.of(1,2,3));
-        // root2 = create_tree(java.util.List.of(1,3,2));
-        // assert solution.leafSimilar(root1, root2) == False  // needs locals (port helpers): ['root1', 'root2']
+    // root1 = create_tree(java.util.List.of(1,2,3));
+    // root2 = create_tree(java.util.List.of(1,3,2));
+    // assert solution.leafSimilar(root1, root2) == False  // needs locals (port helpers): ['root1', 'root2']
         System.out.println("✓ Test case 2 passed");
         System.out.println("\nAll test cases passed!");
     }

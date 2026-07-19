@@ -34,78 +34,77 @@
  */
 
 public class TwoSumIIInputArrayIsSorted {
-    static class Solution {
-        public int[] twoSum(int[] numbers, int target) { 
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
-            //
+    public int[] twoSum(int[] numbers, int target) { 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 
-            // int left = 0;
-            // int right = numbers.length - 1;
-            //
-            // while (left < right) {
-            //     int sum = numbers[left] + numbers[right];
-            //     if (sum == target) {
-            //         return new int[] {left + 1, right + 1};
-            //     }
-            //     if (sum < target) {
-            //         left++;
-            //     } else {
-            //         right--;
-            //     }
-            // }
-        }
+    // int left = 0;
+    // int right = numbers.length - 1;
+    //
+    // while (left < right) {
+    //     int sum = numbers[left] + numbers[right];
+    //     if (sum == target) {
+    //         return new int[] {left + 1, right + 1};
+    //     }
+    //     if (sum < target) {
+    //         left++;
+    //     } else {
+    //         right--;
+    //     }
+    // }
     }
+    
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        TwoSumIIInputArrayIsSorted sol = new TwoSumIIInputArrayIsSorted();
         int[] ans1 = sol.twoSum(new int[] {2, 7, 11, 15}, 9);
         assert ans1[0] == 1 && ans1[1] == 2;
         int[] ans2 = sol.twoSum(new int[] {2, 3, 4}, 6);

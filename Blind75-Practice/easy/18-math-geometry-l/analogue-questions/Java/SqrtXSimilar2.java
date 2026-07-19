@@ -30,90 +30,86 @@ import java.util.function.*;
 
 
 public class SqrtXSimilar2 {
+    public boolean judgeSquareSum(int c) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public boolean judgeSquareSum(int c) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // left = 0
+    // right = int(c ** 0.5)
+    // while left <= right:
+    // current_sum = left * left + right * right
+    // if current_sum == c:
+    // return True
+    // elif current_sum < c:
+    // left += 1
+    // else:
+    // right -= 1
+    // return False
 
-            //
-
-            //
-
-            // left = 0
-            // right = int(c ** 0.5)
-            // while left <= right:
-            // current_sum = left * left + right * right
-            // if current_sum == c:
-            // return True
-            // elif current_sum < c:
-            // left += 1
-            // else:
-            // right -= 1
-            // return False
-
-            throw new UnsupportedOperationException("Implement judgeSquareSum");
-        }
-
+        throw new UnsupportedOperationException("Implement judgeSquareSum");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        SqrtXSimilar2 sol = new SqrtXSimilar2();
         assert (sol.judgeSquareSum(5) == true);
         System.out.println("✓ Test case 1 passed");
         assert (sol.judgeSquareSum(3) == false);

@@ -35,96 +35,92 @@ import java.util.function.*;
 
 
 public class MinCostClimbingStairsSimilar2 {
+    public int deleteAndEarn(List<Integer> nums) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int deleteAndEarn(List<Integer> nums) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not nums:
+    // return 0
+    // points = Counter(nums)
+    // max_num = max(nums)
+    // total_points = [0] * (max_num + 1)
+    // for num, freq in points.items():
+    // total_points[num] = num * freq
+    // if max_num == 0:
+    // return 0
+    // if max_num == 1:
+    // return total_points[1]
+    // prev2, prev1 = (total_points[0], max(total_points[0], total_points[1]))
+    // for i in range(2, max_num + 1):
+    // current = max(prev1, prev2 + total_points[i])
+    // prev2 = prev1
+    // prev1 = current
+    // return prev1
 
-            //
-
-            //
-
-            // if not nums:
-            // return 0
-            // points = Counter(nums)
-            // max_num = max(nums)
-            // total_points = [0] * (max_num + 1)
-            // for num, freq in points.items():
-            // total_points[num] = num * freq
-            // if max_num == 0:
-            // return 0
-            // if max_num == 1:
-            // return total_points[1]
-            // prev2, prev1 = (total_points[0], max(total_points[0], total_points[1]))
-            // for i in range(2, max_num + 1):
-            // current = max(prev1, prev2 + total_points[i])
-            // prev2 = prev1
-            // prev1 = current
-            // return prev1
-
-            throw new UnsupportedOperationException("Implement deleteAndEarn");
-        }
-
+        throw new UnsupportedOperationException("Implement deleteAndEarn");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        MinCostClimbingStairsSimilar2 sol = new MinCostClimbingStairsSimilar2();
         assert (sol.deleteAndEarn(java.util.List.of(3, 4, 2)) == 6);
         System.out.println("✓ Test case 1 passed");
         assert (sol.deleteAndEarn(java.util.List.of(2, 2, 3, 3, 3, 4)) == 9);

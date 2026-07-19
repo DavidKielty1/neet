@@ -34,87 +34,83 @@ import java.util.function.*;
 
 
 public class BestTimeBuySellSimilar1 {
+    public int maxProfit(List<Integer> prices, int fee) {
+    //
 
+    //
 
+    //
 
-    static class Solution {
-        public int maxProfit(List<Integer> prices, int fee) {
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    //
 
-            //
+    // if not prices:
+    // return 0
+    // cash = 0
+    // hold = -prices[0]
+    // for price in prices[1:]:
+    // cash = max(cash, hold + price - fee)
+    // hold = max(hold, cash - price)
+    // return cash
 
-            //
-
-            //
-
-            // if not prices:
-            // return 0
-            // cash = 0
-            // hold = -prices[0]
-            // for price in prices[1:]:
-            // cash = max(cash, hold + price - fee)
-            // hold = max(hold, cash - price)
-            // return cash
-
-            throw new UnsupportedOperationException("Implement maxProfit");
-        }
-
+        throw new UnsupportedOperationException("Implement maxProfit");
     }
 
+    
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BestTimeBuySellSimilar1 sol = new BestTimeBuySellSimilar1();
         assert (sol.maxProfit(java.util.List.of(1, 3, 2, 8, 4, 9), 2) == 8);
         System.out.println("✓ Test case 1 passed");
         assert (sol.maxProfit(java.util.List.of(1, 3, 7, 5, 10, 3), 3) == 6);
