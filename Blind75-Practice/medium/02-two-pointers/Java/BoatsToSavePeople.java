@@ -26,9 +26,6 @@
  * - 1 <= people.length <= 5 * 10^4
  * - 1 <= people[i] <= limit <= 3 * 10^4
  *
- * Notes:
- * - Sort the array first.
- * - Try to pair the lightest remaining person with the heaviest remaining person.
  */
 
 public class BoatsToSavePeople {
