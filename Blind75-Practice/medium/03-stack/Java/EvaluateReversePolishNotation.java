@@ -36,36 +36,9 @@
  * - When you see an operator, pop the top two operands in the correct order.
  */
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-
 public class EvaluateReversePolishNotation {
     public int evalRPN(String[] tokens) {
-        Deque<Integer> stack = new ArrayDeque<>();
 
-        for (String token : tokens) {
-            if (token == "-" || token == "+" || token == "/" || token == "*") {
-                int a = stack.pop();
-                int b = stack.pop();
-                switch (token) {
-                    case "+" :
-                        stack.push(a + b);
-                        break;
-                    case "-" :
-                        stack.push(a - b);
-                        break;
-                    case "*" :
-                        stack.push(a * b);
-                        break;
-                    case "/" :
-                        stack.push(a / b);
-                        break;
-            }
-        } else {
-            stack.push(Integer.parseInt(token));
-        }
-    }
-}
     //
     //
     //

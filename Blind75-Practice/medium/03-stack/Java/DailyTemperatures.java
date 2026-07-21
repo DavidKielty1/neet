@@ -31,10 +31,24 @@
  * - When a warmer temperature arrives, pop colder days and fill their answers.
  */
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.Deque;
 
 public class DailyTemperatures {
     public int[] dailyTemperatures(int[] temperatures) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        int n = temperatures.length;
+        int[] result = new int[n];
+        for (int i = 0; i < temperatures.length; i++) {
+            while (!stack.isEmpty() && temperatures[stack.peek()] < temperatures[i]) {
+                int prev = stack.pop();
+                result[prev] = i - prev;
+
+            }
+            stack.push(i);
+        }
+        return result;
     //
     //
     //
