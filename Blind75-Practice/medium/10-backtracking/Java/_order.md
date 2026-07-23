@@ -9,10 +9,11 @@ Blind75 problems are marked **(B75)**.
   CombinationSum (B75)
   CombinationSumII
 
-- Permutations
+- Permutations & generation
   Permutations
   PermutationsII
   LetterCombinationsOfAPhoneNumber
+  GenerateParentheses
 
 - Grid / partition search
   WordSearch (B75)

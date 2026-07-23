@@ -1,7 +1,7 @@
 /*
  * 22. Generate Parentheses
  * Difficulty: Medium
- * Pattern: Stack / Backtracking
+ * Pattern: Backtracking
  *
  * Problem:
  * Given `n` pairs of parentheses, write a function to generate all combinations of
@@ -27,6 +27,8 @@ import java.util.List;
 
 public class GenerateParentheses {
     public List<String> generateParenthesis(int n) {
+
+    }
     //
     //
     //

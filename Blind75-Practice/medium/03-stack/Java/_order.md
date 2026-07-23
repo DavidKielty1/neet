@@ -8,8 +8,7 @@ Prerequisites: complete `easy/03-stack/Java/_order.md` first (valid parentheses)
   DailyTemperatures
   OnlineStockSpan
 
-- Parsing & generation
-  GenerateParentheses
+- Parsing
   SimplifyPath
   DecodeString
 
