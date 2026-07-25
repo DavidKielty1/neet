@@ -88,16 +88,7 @@ public class DecodeString {
     //
     //
     //
-
     //
-    //  resCurrent = aaabcbc
-    //  3 [ a ] 2 [ b c ]
-    // count      = 0
-    // countStack = ()
-    // current    = (a,a,a,b,c,b,c) -> 'aaabcbc'
-    // stringStack= ()
-    // repeat     = 2
-    // previous   = (a,a,a,b,c,b,c)
         
     // Deque<Integer> countStack = new ArrayDeque<>();
     // Deque<StringBuilder> stringStack = new ArrayDeque<>();
