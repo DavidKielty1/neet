@@ -19,7 +19,7 @@
  * Example 1:
  * Input:
  * ["TimeMap","set","get","get","set","get","get"]
- * [[],["foo","bar",1],["foo",1],["foo",3],["foo","bar2",4],["foo",4],["foo",5]]
+ * [[], ["foo","bar",1],["foo",1],["foo",3],["foo","bar2",4],["foo",4],["foo",5]]
  * Output:
  * [null,null,"bar","bar",null,"bar2","bar2"]
  *
@@ -34,45 +34,19 @@
  * - Use binary search inside the key's history during `get`.
  */
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class TimeBasedKeyValueStore {
-    static class TimeMap {
-        private record Pair(String value, int timestamp) {}
-        private final Map<String, List<Pair>> map = new HashMap<>();
+    // data structure shared across methods
+    // data structure shared across methods
 
-        public TimeMap() { 
-        }
+    public void set(String key, String value, Integer timestamp) {
+        
+    }
 
-        public void set(String key, String value, int timestamp) {
-            map.computeIfAbsent(key, ignored -> new ArrayList<>()).add(new Pair(value, timestamp));
-        }
+    public String get(String key, Integer timestamp) {
+        
+    }
 
-        public String get(String key, int timestamp) {
-            List<Pair> pairings = map.get(key);
-            if (pairings.size() < 1) {
-                return "";
-            }
 
-            int left = 0;
-            int right = pairings.size() - 1;
-            String answer = "";
-
-            while (left <= right) {
-                int mid = left + (right - left) / 2;
-
-                if (pairings.get(mid).timestamp() <= timestamp) {
-                    answer = pairings.get(mid).value;
-                    left = mid + 1;
-                } else {
-                    right = mid - 1;
-                }
-            }
-            return answer;
-        }
             //
             //
             //
@@ -123,54 +97,31 @@ public class TimeBasedKeyValueStore {
             //
             //
             //
+            // private record Pair(String value, int timestamp) {}
             // private final Map<String, List<Pair>> map = new HashMap<>();
-            //
-            // public TimeMap() {
-            // }
-            //
+        
             // public void set(String key, String value, int timestamp) {
-            //     map.computeIfAbsent(key, ignored -> new ArrayList<>()).add(new Pair(timestamp, value));
+            //     map.computeIfAbsent(key, _ -> new ArrayList<>()).add(new Pair(value, timestamp));
             // }
-            //
+        
             // public String get(String key, int timestamp) {
-            //     List<Pair> values = map.get(key);
-            //     if (values == null) {
+            //     List<Pair> pairings = map.get(key);
+            //     if (pairings == null || pairings.isEmpty()) {
             //         return "";
             //     }
+        
             //     int left = 0;
-            //     int right = values.size() - 1;
-            //     String answer = "";
+            //     int right = pairings.size() - 1;
+        
             //     while (left <= right) {
             //         int mid = left + (right - left) / 2;
-            //         if (values.get(mid).timestamp <= timestamp) {
-            //             answer = values.get(mid).value;
+        
+            //         if (pairings.get(mid).timestamp() <= timestamp) {
             //             left = mid + 1;
             //         } else {
             //             right = mid - 1;
             //         }
             //     }
-            //     return answer;
-            // }
+            //     return right >= 0 ? pairings.get(right).value() : "";
             //
-            // private static class Pair {
-            //     int timestamp;
-            //     String value;
-            //
-            //     Pair(int timestamp, String value) {
-            //         this.timestamp = timestamp;
-            //         this.value = value;
-            //     }
-            // }
-    }
-
-    public static void main(String[] args) {
-        TimeMap timeMap = new TimeMap();
-        timeMap.set("foo", "bar", 1);
-        assert timeMap.get("foo", 1).equals("bar");
-        assert timeMap.get("foo", 3).equals("bar");
-        timeMap.set("foo", "bar2", 4);
-        assert timeMap.get("foo", 4).equals("bar2");
-        assert timeMap.get("foo", 5).equals("bar2");
-        System.out.println("All test cases passed!");
-    }
 }
