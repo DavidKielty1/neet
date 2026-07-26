@@ -36,6 +36,31 @@
 
 public class KokoEatingBananas {
     public int minEatingSpeed(int[] piles, int h) {
+        int left = 1;
+        int right = 0;
+        for (int pile : piles) {
+            right = Math.max(right, pile); 
+        }
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (leftOverHours(mid, piles, h)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+
+    private boolean leftOverHours(int eatingRate, int[] piles, int maxHours) {
+        int totalTimeToEat = 0;
+        for (int pile : piles) {
+            int timeToEatPileRoundedUp = (pile + eatingRate - 1) / eatingRate;
+            totalTimeToEat += timeToEatPileRoundedUp;
+        }
+        return totalTimeToEat <= maxHours;
+    }
     //
     //
     //
@@ -91,12 +116,12 @@ public class KokoEatingBananas {
     //     int left = 1;
     //     int right = 0;
     //     for (int pile : piles) {
-    //         right = Math.max(right, pile);
+    //         right = Math.max(right, pile); 
     //     }
-
+    //
     //     while (left < right) {
     //         int mid = left + (right - left) / 2;
-    //         if (calculateSpareTime(piles, mid, h)) {
+    //         if (leftOverHours(mid, piles, h)) {
     //             right = mid;
     //         } else {
     //             left = mid + 1;
@@ -104,20 +129,15 @@ public class KokoEatingBananas {
     //     }
     //     return left;
     // }
-
-    // private boolean calculateSpareTime(int[] piles, int hourlyEatRate, int maxHours) {
-    //     int hours = 0;
+    //
+    // private boolean leftOverHours(int mid, int[] piles, int maxHours) {
+    //     int totalTimeToEat = 0;
     //     for (int pile : piles) {
-    //         int fullHours = pile / hourlyEatRate;
-    //         int leftover = pile % hourlyEatRate;
-    //         if (leftover > 0) {
-    //             fullHours++;
-    //         }
-    //         hours += fullHours;
+    //         int timeToEatPileRoundedUp = (pile + mid - 1) / mid;
+    //         totalTimeToEat += timeToEatPileRoundedUp;
     //     }
-    //     return hours <= maxHours;
-    // }
-    }
+    //     return totalTimeToEat <= maxHours;
+    
     
 
     public static void main(String[] args) {
