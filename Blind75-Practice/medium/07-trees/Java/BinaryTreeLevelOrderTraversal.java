@@ -21,10 +21,41 @@
  * - The number of nodes in the tree is in the range [0, 2000].
  * - -1000 <= Node.val <= 1000
  */
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class BinaryTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> levels = new ArrayList<>();
+        if (root == null) {
+            return levels;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {    
+            int n = queue.size();
+            List<Integer> currLevel = new ArrayList<>();
+
+            for (int i = 0; i < n; i++) {
+                TreeNode currNode = queue.poll();
+                currLevel.add(currNode.val);
+                if (currNode.left != null) {
+                    queue.offer(currNode.left);
+                }
+                if (currNode.right != null) {
+                    queue.offer(currNode.right);
+                }
+            }
+            levels.add(currLevel);
+        }
+        return levels;
+
+
+        
         //
         //
         //
@@ -86,6 +117,7 @@ public class BinaryTreeLevelOrderTraversal {
         // while (!queue.isEmpty()) {
         //     int size = queue.size();
         //     List<Integer> level = new ArrayList<>();
+
         //     for (int i = 0; i < size; i++) {
         //         TreeNode node = queue.poll();
         //         level.add(node.val);
