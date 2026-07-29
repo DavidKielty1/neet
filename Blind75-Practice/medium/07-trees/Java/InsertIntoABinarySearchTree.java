@@ -76,8 +76,6 @@ public class InsertIntoABinarySearchTree {
         //
         //
         //
-        // Recursively walk left or right until a null position is reached.
-        //
         // if (root == null) {
         //     return new TreeNode(val);
         // }
