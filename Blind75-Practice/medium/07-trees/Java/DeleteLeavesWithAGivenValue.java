@@ -25,8 +25,60 @@
  * - 1 <= Node.val, target <= 1000
  */
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class DeleteLeavesWithAGivenValue {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
+        if (root == null) {
+            return null;
+        }
+        
+        Set<TreeNode> visited = new HashSet<>(); 
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        Map<TreeNode, TreeNode> parent = new HashMap<>();
+
+        stack.offerLast(root);
+        parent.put(root, null);
+
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.peek();
+            boolean childrenDone = node.left == null && node.right == null || visited.contains(node);
+
+            if (!childrenDone) {
+                visited.add(node);
+                if (node.left != null) {
+                    parent.put(node.left, node);
+                    stack.offerLast(node.left);
+                }
+                if (node.right != null) {
+                    parent.put(node.right, node);
+                    stack.offerLast(node.right);
+                }
+                continue;
+            }
+
+            node = stack.pop();
+
+            if (node.right == null && node.left == null && node.val == target) {
+                TreeNode p = parent.get(node);
+
+                if (p == null) {
+                    return null;
+                }
+                if (p.left == node) {
+                    p.left = null;
+                } else {
+                    p.right = null;
+                }
+            }   
+        }
+
+        return root;
         //
         //
         //
@@ -79,7 +131,6 @@ public class DeleteLeavesWithAGivenValue {
         //
         //
         //
-        // Iterative postorder on a general binary tree (not a BST).
         // Stack + visited set + parent map.
         //
         // if (root == null) {
@@ -89,6 +140,7 @@ public class DeleteLeavesWithAGivenValue {
         // Deque<TreeNode> stack = new ArrayDeque<>();
         // Set<TreeNode> visited = new HashSet<>();
         // Map<TreeNode, TreeNode> parent = new HashMap<>();
+
         // stack.push(root);
         // parent.put(root, null);
         //
