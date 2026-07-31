@@ -38,11 +38,9 @@ public class HouseRobberIII {
         //
         //
         //
-        //
-        //
-        //
-        //
-        //
+        //                3
+        //        2                  3
+        //     3     n           n      1
         //
         //
         //
@@ -78,7 +76,6 @@ public class HouseRobberIII {
         //
         // int[] state = dfs(root);
         // return Math.max(state[0], state[1]);
-    }
 
     // private int[] dfs(TreeNode node) {
     //     if (node == null) {
