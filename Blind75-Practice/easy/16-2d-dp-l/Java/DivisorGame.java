@@ -3,7 +3,7 @@
 Difficulty: Easy
 Pattern: Dynamic Programming / Math
 
-Alice and Bob; return true iff Alice wins optimal play.
+Alice and Bob; return true if Alice wins optimal play.
 
 Time: O(1), Space: O(1)
 */

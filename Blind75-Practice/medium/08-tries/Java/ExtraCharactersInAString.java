@@ -99,7 +99,7 @@ public class ExtraCharactersInAString {
     //
     //
     // static class TrieNode {
-    //     TrieNode[] children = new TrieNode[26];
+    //     Map<Character, TrieNode> children = new HashMap<>();
     //     boolean isWord;
     // }
     //
@@ -107,26 +107,29 @@ public class ExtraCharactersInAString {
     // for (String word : dictionary) {
     //     TrieNode node = root;
     //     for (char c : word.toCharArray()) {
-    //         int idx = c - 'a';
-    //         if (node.children[idx] == null) {
-    //             node.children[idx] = new TrieNode();
-    //         }
-    //         node = node.children[idx];
+    //         node = node.children.computeIfAbsent(c, k -> new TrieNode());
     //     }
     //     node.isWord = true;
     // }
     //
     // int n = s.length();
     // int[] dp = new int[n + 1];
+
+    // dp[1, 4, 3, 2, 1, 0, 3, 2, 1, 0]
+    // i [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    // c [l, e, e, t, s, c, o, d, e, _]
+    // i = 8
+    // j = 8
+    // node = 
+
     // for (int i = n - 1; i >= 0; i--) {
     //     dp[i] = 1 + dp[i + 1];
     //     TrieNode node = root;
     //     for (int j = i; j < n; j++) {
-    //         int idx = s.charAt(j) - 'a';
-    //         if (node.children[idx] == null) {
+    //         node = node.children.get(s.charAt(j));
+    //         if (node == null) {
     //             break;
     //         }
-    //         node = node.children[idx];
     //         if (node.isWord) {
     //             dp[i] = Math.min(dp[i], dp[j + 1]);
     //         }

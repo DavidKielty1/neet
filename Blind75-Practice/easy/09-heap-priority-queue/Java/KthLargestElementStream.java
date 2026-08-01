@@ -49,25 +49,23 @@
 import java.util.PriorityQueue;
 
 public class KthLargestElementStream {
+    private final int k;
+    PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
-    static class KthLargest {
-        private final int k;
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-
-        public KthLargest(int k, int[] nums) {
-            this.k = k;
-            for (int num : nums) {
-                add(num);
-            }
+    public KthLargestElementStream(int k, int[] nums) {
+        this.k = k;
+        for (int num : nums) {
+            add(num);
         }
+    }
 
-        public int add(int val) {
-            minHeap.offer(val);
-            if (minHeap.size() > k) {
-                minHeap.poll();
-            }
-            return minHeap.peek();
+    public int add(int val) {
+        minHeap.offer(val);
+        if (minHeap.size() > k) {
+            minHeap.poll();
         }
+        return minHeap.peek();
+    }
             //
 
             //

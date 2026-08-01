@@ -81,9 +81,7 @@ public class ConstructQuadTree {
         //
         //
         //
-        // Recursively inspect a square region.
-        // If every value matches, create a leaf; otherwise split into quarters.
-        //
+
     //     return build(grid, 0, 0, grid.length);
     // }
 

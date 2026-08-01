@@ -52,26 +52,21 @@
  * - A DFS helper from the current node and character index keeps the logic
  *   clean.
  */
+
 public class DesignAddAndSearchWordsDataStructure {
-    static class WordDictionary {
-        static class Node {
-            Node[] children;
-            boolean isWord;
-        }
+    public DesignAddAndSearchWordsDataStructure() {
+        
+    }
 
-        private Node root;
+    public void addWord(String word) {
+        
+    }
 
-        public WordDictionary() {
-        }
+    public boolean search(String word) {
+        
+    }
+        
 
-        public void addWord(String word) {
-        }
-
-        public boolean search(String word) {
-        }
-
-        private boolean dfs(String word, int index, Node node) {
-        }
             //
             //
             //
@@ -123,7 +118,7 @@ public class DesignAddAndSearchWordsDataStructure {
             //
             //
             // static class Node {
-            //     Node[] children = new Node[26];
+            //     Map<Character, Node> children = new HashMap<>();
             //     boolean isWord;
             // }
             //
@@ -136,11 +131,7 @@ public class DesignAddAndSearchWordsDataStructure {
             // public void addWord(String word) {
             //     Node node = root;
             //     for (char c : word.toCharArray()) {
-            //         int idx = c - 'a';
-            //         if (node.children[idx] == null) {
-            //             node.children[idx] = new Node();
-            //         }
-            //         node = node.children[idx];
+            //         node = node.children.computeIfAbsent(c, k -> new Node());
             //     }
             //     node.isWord = true;
             // }
@@ -159,17 +150,17 @@ public class DesignAddAndSearchWordsDataStructure {
             //
             //     char c = word.charAt(index);
             //     if (c == '.') {
-            //         for (Node child : node.children) {
-            //             if (child != null && dfs(word, index + 1, child)) {
+            //         for (Node child : node.children.values()) {
+            //             if (dfs(word, index + 1, child)) {
             //                 return true;
             //             }
             //         }
             //         return false;
             //     }
             //
-            //     return dfs(word, index + 1, node.children[c - 'a']);
+            //     return dfs(word, index + 1, node.children.get(c));
             // }
-        }
+        
     }
 
     public static void main(String[] args) {

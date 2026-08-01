@@ -52,24 +52,28 @@
  *   of word flag.
  */
 
-import org.w3c.dom.Node;
-
 public class ImplementTriePrefixTree {
-    static class Trie {
-        public Trie() {
-        }
+    
+        
 
-        public void insert(String word) {
-        }
+    public ImplementTriePrefixTree() {
+        
+    }
 
-        public boolean search(String word) {
-        }
+    public void insert(String word) {
+        
+    }
 
-        public boolean startsWith(String prefix) {
-        }
+    public boolean search(String word) {
+        
+    }
 
-        private Node walk(String text) {
-        }
+    public boolean startsWith(String prefix) {
+        
+    }
+
+
+        
             //
             //
             //
@@ -120,49 +124,46 @@ public class ImplementTriePrefixTree {
             //
             //
             //
-            // static class Node {
-            //     Node[] children = new Node[26];
-            //     boolean isWord;
-            // }
-            //
-            // private final Node root;
-            //
-            // public Trie() {
-            //     root = new Node();
-            // }
-            //
-            // public void insert(String word) {
-            //     Node node = root;
-            //     for (char c : word.toCharArray()) {
-            //         int idx = c - 'a';
-            //         if (node.children[idx] == null) {
-            //             node.children[idx] = new Node();
-            //         }
-            //         node = node.children[idx];
-            //     }
-            //     node.isWord = true;
-            // }
-            //
-            // public boolean search(String word) {
-            //     Node node = walk(word);
-            //     return node != null && node.isWord;
-            // }
-            //
-            // public boolean startsWith(String prefix) {
-            //     return walk(prefix) != null;
-            // }
-            //
-            // private Node walk(String text) {
-            //     Node node = root;
-            //     for (char c : text.toCharArray()) {
-            //         int idx = c - 'a';
-            //         if (node.children[idx] == null) {
-            //             return null;
-            //         }
-            //         node = node.children[idx];
-            //     }
-            //     return node;
-            // }
+            
+    // static class Node {
+    //     Map<Character, Node> children = new HashMap<>();
+    //     boolean isWord;
+    // }
+
+    // private final Node root;
+
+    // public ImplementTriePrefixTree() {
+    //     root = new Node();
+    // }
+
+    // public void insert(String word) {
+    //     Node node = root;
+    //     for (char ch : word.toCharArray()) {
+    //         node = node.children.computeIfAbsent(ch, key -> new Node());
+    //     }
+    //     node.isWord = true;
+    // }
+
+    // public boolean search(String word) {
+    //     Node node = walk(word);
+    //     return node != null && node.isWord;
+    // }
+
+    // public boolean startsWith(String prefix) {
+    //     return walk(prefix) != null;
+    // }
+
+    // private Node walk(String word) {
+    //     Node node = root;
+        
+    //     for (char ch : word.toCharArray()) {
+    //         node = node.children.get(ch);
+    //         if (node == null) {
+    //             return null;
+    //         }
+    //     }
+    //     return node;
+    // }
     }
 
     public static void main(String[] args) {
