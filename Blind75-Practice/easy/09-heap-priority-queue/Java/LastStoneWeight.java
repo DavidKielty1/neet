@@ -41,9 +41,12 @@
 * Space: O(n)
 */
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
-        //
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
 
         //
 

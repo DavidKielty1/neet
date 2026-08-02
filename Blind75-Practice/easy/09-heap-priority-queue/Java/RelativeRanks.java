@@ -45,7 +45,7 @@ Space: O(n)
 
 public class RelativeRanks {
     public String[] findRelativeRanks(int[] score) { 
-
+    }
         // 
 
         //

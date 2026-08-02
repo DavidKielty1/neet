@@ -38,12 +38,9 @@
  *
  * Notes:
  */
+
 public class SingleThreadedCPU {
     public int[] getOrder(int[][] tasks) {
-    // 
-    //
-    //
-    //
     //
     //
     //

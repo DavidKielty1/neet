@@ -16,7 +16,7 @@
  * the given trips, or `false` otherwise.
  *
  * Example 1:
- * Input: trips = [[2,1,5],[3,3,7]], capacity = 4
+ * Input: trips = [[2,1,3],[3,3,7]], capacity = 4
  * Output: false
  * Explanation:
  * At location 3 the car would need to carry 5 passengers at once.
@@ -44,6 +44,7 @@
 
 public class CarPooling {
     public boolean carPooling(int[][] trips, int capacity) {
+        
     //
     //
     //

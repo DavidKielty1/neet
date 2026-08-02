@@ -85,11 +85,6 @@ public class LongestHappyString {
     //
     //
     //
-    //
-    //
-    //
-    //
-    //
 
     // PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
     //         (x, y) -> Integer.compare(y[1], x[1]));
