@@ -53,96 +53,24 @@
  * - A max-heap is helpful for merging the newest tweets from followed users.
  */
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.Set;
 
 public class DesignTwitter {
     static class Twitter {
-        
-        private static class Tweet {
-            int id;
-            int time;
-        
-            Tweet(int id, int time) {
-                this.id = id;
-                this.time = time;
-            }
-        }
 
-        private static final int FEED_SIZE = 10;
-        private int time = 0;
-        private final Map<Integer, Set<Integer>> follows =
-                new HashMap<>();
-        private final Map<Integer, List<Tweet>> tweetsByUser =
-                new HashMap<>();
-        
         public Twitter() {
         }
         
         public void postTweet(int userId, int tweetId) {
-            ensureUser(userId);
-            tweetsByUser.get(userId).add(new Tweet(tweetId, time++));
         }
         
         public List<Integer> getNewsFeed(int userId) {
-            ensureUser(userId);
-            PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
-                    (a, b) -> Integer.compare(b[0], a[0]));
-
-            for (int followeeId : follows.get(userId)) {
-                List<Tweet> tweets = tweetsByUser.get(followeeId);
-                if (tweets.isEmpty()) {
-                    continue;
-                }
-                int index = tweets.size() - 1;
-                Tweet tweet = tweets.get(index);
-                maxHeap.offer(new int[] {tweet.time, followeeId, index});
-            }
-        
-            List<Integer> feed = new ArrayList<>();
-            
-            while (!maxHeap.isEmpty() && feed.size() < FEED_SIZE) {
-                int[] current = maxHeap.poll();
-                int followeeId = current[1];
-                int index = current[2];
-                Tweet tweet = tweetsByUser.get(followeeId).get(index);
-                feed.add(tweet.id);
-        
-                if (index - 1 >= 0) {
-                    Tweet previous = tweetsByUser.get(followeeId).get(index - 1);
-                    maxHeap.offer(new int[] {previous.time, followeeId, index - 1});
-                }
-            }
-            return feed;
         }
         
         public void follow(int followerId, int followeeId) {
-            ensureUser(followerId);
-            ensureUser(followeeId);
-            if (followerId != followeeId) {
-                follows.get(followerId).add(followeeId);
-            }
         }
         
         public void unfollow(int followerId, int followeeId) {
-            ensureUser(followerId);
-            if (followerId != followeeId) {
-                follows.get(followerId).remove(followeeId);
-            }
-        }
-        
-        private void ensureUser(int userId) {
-            follows.computeIfAbsent(userId, key -> {
-                Set<Integer> set = new HashSet<>();
-                set.add(userId);
-                return set;
-            });
-            tweetsByUser.computeIfAbsent(userId, key -> new ArrayList<>());
         }
             //
             //
@@ -197,10 +125,10 @@ public class DesignTwitter {
 
             // private static final int FEED_SIZE = 10;
             // private int time = 0;
-            // private final java.util.Map<Integer, java.util.Set<Integer>> follows =
-            //         new java.util.HashMap<>();
-            // private final java.util.Map<Integer, java.util.List<Tweet>> tweetsByUser =
-            //         new java.util.HashMap<>();
+            // private final Map<Integer, Set<Integer>> follows =
+            //         new HashMap<>();
+            // private final Map<Integer, List<Tweet>> tweetsByUser =
+            //         new HashMap<>();
             //
             // public Twitter() {
             // }
@@ -210,12 +138,12 @@ public class DesignTwitter {
             //     tweetsByUser.get(userId).add(new Tweet(tweetId, time++));
             // }
             //
-            // public java.util.List<Integer> getNewsFeed(int userId) {
+            // public List<Integer> getNewsFeed(int userId) {
             //     ensureUser(userId);
-            //     java.util.PriorityQueue<int[]> maxHeap = new java.util.PriorityQueue<>(
+            //     PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
             //             (a, b) -> Integer.compare(b[0], a[0]));
             //     for (int followeeId : follows.get(userId)) {
-            //         java.util.List<Tweet> tweets = tweetsByUser.get(followeeId);
+            //         List<Tweet> tweets = tweetsByUser.get(followeeId);
             //         if (tweets.isEmpty()) {
             //             continue;
             //         }
@@ -224,7 +152,7 @@ public class DesignTwitter {
             //         maxHeap.offer(new int[] {tweet.time, followeeId, index});
             //     }
             //
-            //     java.util.List<Integer> feed = new java.util.ArrayList<>();
+            //     List<Integer> feed = new ArrayList<>();
             //     while (!maxHeap.isEmpty() && feed.size() < FEED_SIZE) {
             //         int[] current = maxHeap.poll();
             //         int followeeId = current[1];
@@ -257,11 +185,11 @@ public class DesignTwitter {
             //
             // private void ensureUser(int userId) {
             //     follows.computeIfAbsent(userId, key -> {
-            //         java.util.Set<Integer> set = new java.util.HashSet<>();
+            //         Set<Integer> set = new HashSet<>();
             //         set.add(userId);
             //         return set;
             //     });
-            //     tweetsByUser.computeIfAbsent(userId, key -> new java.util.ArrayList<>());
+            //     tweetsByUser.computeIfAbsent(userId, key -> new ArrayList<>());
             // }
             //
             // private static class Tweet {
