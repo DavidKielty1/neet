@@ -7,7 +7,6 @@ Return rowIndex-th row of Pascal's triangle (0-indexed).
 
 Time: O(rowIndex), Space: O(rowIndex)
 */
-import java.util.ArrayList;
 import java.util.List;
 
 public class PascalsTriangleIi {
@@ -82,7 +81,6 @@ public class PascalsTriangleIi {
         //     }
         // }
         // return row;
-        throw new UnsupportedOperationException("Implement getRow");
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
