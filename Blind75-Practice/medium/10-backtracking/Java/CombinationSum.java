@@ -34,11 +34,6 @@
  * - All elements of `candidates` are distinct
  * - 1 <= target <= 40
  *
- * Notes:
- * - Sort is optional here because values are already distinct, but it can still make the
- *   recursion easier to reason about.
- * - From an index, either use that value again or move forward to larger indexes.
- * - Stop exploring as soon as the running sum exceeds the target.
  */
 
 import java.util.List;
