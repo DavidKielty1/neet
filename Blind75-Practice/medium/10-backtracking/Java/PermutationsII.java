@@ -30,22 +30,12 @@
  * - That rule prevents generating the same ordering more than once.
  */
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class PermutationsII {
     public List<List<Integer>> permuteUnique(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> result = new ArrayList<>();
-        List<Integer> path = new ArrayList();
-        backtrack(nums, );
-        return result;
     }
 
-    private void backtrack () {
-
-    }
         //
         //
         //
