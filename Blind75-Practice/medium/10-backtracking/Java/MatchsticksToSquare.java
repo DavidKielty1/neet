@@ -35,25 +35,10 @@
  * - Try assigning each stick to one of four side sums, skipping symmetric duplicate states.
  */
 
-import java.util.Arrays;
-
 public class MatchsticksToSquare {
     public boolean makesquare(int[] matchsticks) {       
-        int total = 0;
-        for (int stick : matchsticks) {
-            total += stick;
-        }
-        if (total % 4 != 0) {
-            return false;
-        }
-        int side = total / 4;
-        Arrays.sort(matchsticks);
-        reverse(matchsticks);
-        return backtrack(matchsticks, side, 0, new int[4]);
     }
-
-    private boolean backtrack(int[] matchsticks, int side, int start, int[] sides) {
-         //
+        //
         //
         //
         //
@@ -123,7 +108,7 @@ public class MatchsticksToSquare {
         // private boolean backtrack(int[] matchsticks, int index, int[] sides, int side) {
         //     if (index == matchsticks.length) {
         //         return sides[0] == side && sides[1] == side
-        //                 && sides[2] == side && sides[3] == side;
+        //             && sides[2] == side && sides[3] == side;
         //     }
         //
         //     for (int i = 0; i < 4; i++) {

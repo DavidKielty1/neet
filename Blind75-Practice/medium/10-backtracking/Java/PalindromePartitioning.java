@@ -31,8 +31,12 @@
 
 import java.util.List;
 
+// 'aab'   path = [['a', 'a', 'b'], ['aa'] ['b']]
+
 public class PalindromePartitioning {
     public List<List<String>> partition(String s) {
+        
+    }
         //
         //
         //
