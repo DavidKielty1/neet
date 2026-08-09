@@ -32,63 +32,10 @@
  * - One common strategy is to build bucket sums and place each number into a subset.
  */
 
-import java.util.Arrays;
-
 public class PartitionToKEqualSumSubsets {
     public boolean canPartitionKSubsets(int[] nums, int k) {
-        int total = 0;
-        for (int num : nums) {
-            total += num;
-        }
-        if (total % k != 0) {
-            return false;
-        }
-        int target = total / k;
-
-        Arrays.sort(nums);
-        reverse(nums);
-        return (backtrack(nums, 0, new int[k], target));
     }
 
-    private boolean backtrack(int[] nums, int index, int[] buckets, int target) {
-        if (index == nums.length) {
-            return true;
-        }
-
-        for (int i = 0; i < buckets.length; i++) {
-            if (nums[index] + buckets[i] > target) {
-                continue;
-            }
-
-            if (i > 0 && buckets[i] == buckets[i - 1]) {
-                continue;
-            }
-
-            buckets[i] += nums[index];
-            if (backtrack(nums, index + 1, buckets, target)) {
-                return true;
-            }
-
-            buckets[i] -= nums[index];
-
-            if (buckets[i] == 0) {
-                break;
-            }
-        }
-        return false;
-    }
-
-    private void reverse(int[] nums) {
-        int left = 0;
-        int right = nums.length - 1;
-        while (left < right) {
-            int temp = nums[left];
-            nums[left] = nums[right];
-            nums[right] = temp;
-            left++;
-            right--;
-        }
-    }
 
 
 
