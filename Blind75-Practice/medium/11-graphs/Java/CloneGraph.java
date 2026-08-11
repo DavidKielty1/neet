@@ -46,18 +46,10 @@ import java.util.List;
 
 public class CloneGraph {
     static class Node {
-        public int val;
-        public List<Node> neighbours;
-
-        public Node() {
-            this(0, new ArrayList<>());
-        }
-
-        public Node(int val) {
-            this(val, new ArrayList<>());
-        }
-
-        public Node(int val, List<Node> neighbours) {
+        int val;
+        List<Node> neighbours = new ArrayList<>();
+        Node(int val) { this.val = val; }
+        Node(int val, List<Node> neighbours) {
             this.val = val;
             this.neighbours = neighbours;
         }
