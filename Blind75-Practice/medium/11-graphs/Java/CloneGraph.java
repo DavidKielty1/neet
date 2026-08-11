@@ -41,8 +41,12 @@
  * - DFS and BFS both work as long as neighbours are linked through the map.
  */
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Queue;
 
 public class CloneGraph {
     static class Node {
@@ -56,6 +60,25 @@ public class CloneGraph {
     }
 
     public Node cloneGraph(Node node) {
+        Map<Node, List<Node>> cloneMap = new HashMap<>();
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.offer(node);
+        cloneMap.put(node, new Node(node.val));
+
+        while (!queue.isEmpty()) {
+            Node currNode = queue.oll();
+
+            for (Node neighbour : currNode.neighbours) {
+                if (!cloneMap.contains(neighbour)) {
+                    cloneMap.put(neighbour, new Node(neighbour.val));
+                    queue.offer(neighbour);
+                }
+                cloneMap.get(currNode).neighbours.add(cloneMap.get(neighbour));
+            }
+        }
+
+        return node;
+    }
             //
             //
             //
