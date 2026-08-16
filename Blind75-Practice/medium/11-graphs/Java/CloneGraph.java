@@ -41,44 +41,10 @@
  * - DFS and BFS both work as long as neighbours are linked through the map.
  */
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
+import org.w3c.dom.Node;
 
 public class CloneGraph {
-    static class Node {
-        int val;
-        List<Node> neighbours = new ArrayList<>();
-        Node(int val) { this.val = val; }
-        Node(int val, List<Node> neighbours) {
-            this.val = val;
-            this.neighbours = neighbours;
-        }
-    }
-
     public Node cloneGraph(Node node) {
-        Map<Node, List<Node>> cloneMap = new HashMap<>();
-        Queue<Node> queue = new ArrayDeque<>();
-        queue.offer(node);
-        cloneMap.put(node, new Node(node.val));
-
-        while (!queue.isEmpty()) {
-            Node currNode = queue.oll();
-
-            for (Node neighbour : currNode.neighbours) {
-                if (!cloneMap.contains(neighbour)) {
-                    cloneMap.put(neighbour, new Node(neighbour.val));
-                    queue.offer(neighbour);
-                }
-                cloneMap.get(currNode).neighbours.add(cloneMap.get(neighbour));
-            }
-        }
-
-        return node;
-    }
             //
             //
             //
@@ -127,6 +93,15 @@ public class CloneGraph {
             //
             //
             //
+            // static class Node {
+            //     int val;
+            //     List<Node> neighbours = new ArrayList<>();
+            //     Node(int val) { this.val = val; }
+            //     Node(int val, List<Node> neighbours) {
+            //         this.val = val;
+            //         this.neighbours = neighbours;
+            //     }
+            // }
             //
             // if (node == null) {
             //     return null;

@@ -35,8 +35,8 @@
  * - ai != bi and ui != vi
  *
  * Notes:
- * - Build adj: course -> direct prerequisites, then DFS with memo for all prereqs.
- * - Answer each query with a set lookup on the memo map.
+ * - Because `numCourses` is small, Floyd-Warshall or repeated graph search works.
+ * - Build transitive prerequisite knowledge, then answer queries in O(1).
  */
 
 import java.util.Arrays;
@@ -93,42 +93,27 @@ public class CourseScheduleIV {
     //
     //
     //
-    // Map<Integer, List<Integer>> adj = new HashMap<>();
-    // for (int i = 0; i < numCourses; i++) {
-    //     adj.put(i, new ArrayList<>());
-    // }
+    //
+    // boolean[][] reachable = new boolean[numCourses][numCourses];
     // for (int[] edge : prerequisites) {
-    //     int prereq = edge[0];
-    //     int crs = edge[1];
-    //     adj.get(crs).add(prereq);
+    //     reachable[edge[0]][edge[1]] = true;
     // }
     //
-    // Map<Integer, Set<Integer>> prereqMap = new HashMap<>();
-    // for (int crs = 0; crs < numCourses; crs++) {
-    //     dfs(crs, adj, prereqMap);
+    // for (int mid = 0; mid < numCourses; mid++) {
+    //     for (int from = 0; from < numCourses; from++) {
+    //         for (int to = 0; to < numCourses; to++) {
+    //             reachable[from][to] =
+    //                     reachable[from][to]
+    //                             || (reachable[from][mid] && reachable[mid][to]);
+    //         }
+    //     }
     // }
     //
     // List<Boolean> answer = new ArrayList<>();
     // for (int[] query : queries) {
-    //     answer.add(prereqMap.get(query[1]).contains(query[0]));
+    //     answer.add(reachable[query[0]][query[1]]);
     // }
     // return answer;
-    //
-    // private Set<Integer> dfs(
-    //         int crs,
-    //         Map<Integer, List<Integer>> adj,
-    //         Map<Integer, Set<Integer>> prereqMap) {
-    //     if (prereqMap.containsKey(crs)) {
-    //         return prereqMap.get(crs);
-    //     }
-    //     Set<Integer> prereqs = new HashSet<>();
-    //     for (int pre : adj.get(crs)) {
-    //         prereqs.add(pre);
-    //         prereqs.addAll(dfs(pre, adj, prereqMap));
-    //     }
-    //     prereqMap.put(crs, prereqs);
-    //     return prereqs;
-    // }
     }
     
 

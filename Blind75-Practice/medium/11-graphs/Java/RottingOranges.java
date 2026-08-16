@@ -36,8 +36,56 @@
  * - Count fresh oranges so you know when the process is complete.
  */
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 public class RottingOranges {
     public int orangesRotting(int[][] grid) {
+        Queue<int[]> queue = new ArrayDeque<>();
+        int fresh = 0;
+
+        for (int r = 0; r < grid.length; r++) {
+            for (int c = 0; c < grid[0].length; c++) {
+                if (grid[r][c] == 2) {
+                    queue.offer(new int[] {r, c});
+                } else if (grid[r][c] = 1) {
+                    fresh++;
+                }
+            }
+        }
+
+        int minutes = 0;
+        int[] dirs = new int[4] {{1, 0}, {0 , 1}, {-1, 0}, {0, -1}};
+
+        while(!queue.isEmpty() && fresh > 0) {
+            int n = queue.size();
+            for (int i = 0; i < n; i++) {
+                int[] cell = queue.poll();
+                for (int[] dir : dirs) {
+                    int nr = cell[0] + dir[0];
+                    int nc = cell[1] + dir[1];     
+                    if (nr < 0 || nc < 0 || nr >= grid.length || nc >= grid[0].length) {
+                        continue;
+                    }           
+                    if (grid[r][c] != 1) {
+                        continue;
+                    }
+                    grid[r][c] = 2;
+                    fresh--;
+                    queue.offer(new int[] {nr, nc});
+                }
+            }
+            minutes++;
+        }
+
+        return fresh == 0 ? minutes : -1;
+    }
+
+
+    
+
+
+
         //
         //
         //
