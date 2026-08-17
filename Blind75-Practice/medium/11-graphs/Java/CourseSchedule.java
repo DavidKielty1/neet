@@ -22,6 +22,10 @@
  * Example 3:
  * Input: numCourses = 4, prerequisites = [[1,0],[2,1],[3,2]]
  * Output: true
+ * 
+ * Example 4:
+ * Input: numCourses = 7, prerequisites = [[1,0],[2,0],[3,1],[3,2],[4,3],[5,3],[6,4]]
+ * Output: 
  *
  * Constraints:
  * - 1 <= numCourses <= 2000
@@ -96,6 +100,14 @@ public class CourseSchedule {
     //     graph.get(edge[1]).add(edge[0]);
     //     indegree[edge[0]]++;
     // }
+    //
+    // numCourses = 7, prerequisites = [[1,0],[2,0],[3,1],[3,2],[4,3],[5,3],[6,4]]
+    // graph = {{1, 2}{3}{3}{4, 5}{6}{}{}}
+    // indegree = [0,1,1,2,1,1,1]
+    //
+    //
+    //  0 -> 2
+    //
     //
     // Queue<Integer> queue = new ArrayDeque<>();
     // for (int course = 0; course < numCourses; course++) {
