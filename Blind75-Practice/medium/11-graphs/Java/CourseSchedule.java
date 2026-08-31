@@ -39,49 +39,14 @@
  * - Kahn's BFS topological sort or DFS cycle detection both work well.
  */
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Queue;
-
 public class CourseSchedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        //  Graph: dependency -> consumer
-        //  indegree: amount of prereqs still needed
-        //  enqueue all indegree with no prereqs required
-        //  while queue -> poll/taken++ --for next of graph-> indegree--, if indegree == 0: enqueue
+        // create graph map (course(0-n): list of dependers and adjacency list (int[])
+        //      for numCourses -> create new ArrayList in graph for each course
+        // for numCourses: append prereq[0] to graph.get(prereq[1]), increment prereq[1]
+        // create queue, go through indegree, if indegree[i] == 0 -> add to queue
+        // 
 
-        List<List<Integer>> graph = new ArrayList<>();
-        int[] indegree = new int[numCourses];
-        for (int i = 0; i < numCourses; i++) {
-            graph.add(new ArrayList<>());
-        }
-
-        for (int[] edge : prerequisites) {
-            graph.get(edge[1]).add(edge[0]);
-            indegree[edge[0]]++;
-        }
-
-        Queue<Integer> queue = new ArrayDeque<>();
-        for (int i = 0; i < indegree.length; i++) {
-            if (indegree[i] == 0) {
-                queue.offer(i);
-            }
-        }
-
-        int taken = 0;
-        while (!queue.isEmpty()){
-            int course = queue.poll();
-            taken++;
-            for (int prereq : graph.get(course)) {
-                indegree[prereq]--;
-                if (indegree[prereq] == 0) {
-                    queue.offer(prereq);
-                }
-            }
-        }
-
-        return taken == 0 ? true : false;
     }
     //
     //
