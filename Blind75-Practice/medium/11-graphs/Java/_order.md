@@ -7,8 +7,7 @@ Blind75 problems are marked **(B75)**.
   MaxAreaOfIsland
   CloneGraph (B75)
 
-- Multi-source BFS & topo
-  RottingOranges
+- Topological Sort
   CourseSchedule (B75)
   CourseScheduleII
 
@@ -18,6 +17,7 @@ Blind75 problems are marked **(B75)**.
   RedundantConnection
 
 - BFS variants
+  RottingOranges
   OpenTheLock
   WallsAndGates
   SurroundedRegions

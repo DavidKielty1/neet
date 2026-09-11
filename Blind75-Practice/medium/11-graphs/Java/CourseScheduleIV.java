@@ -44,7 +44,10 @@ import java.util.List;
 
 public class CourseScheduleIV {
     public List<Boolean> checkIfPrerequisite(
-            int numCourses, int[][] prerequisites, int[][] queries) {
+    int numCourses, int[][] prerequisites, int[][] queries) {
+        
+    }
+
     //
     //
     //
@@ -98,14 +101,12 @@ public class CourseScheduleIV {
     //     adj.put(i, new ArrayList<>());
     // }
     // for (int[] edge : prerequisites) {
-    //     int prereq = edge[0];
-    //     int crs = edge[1];
-    //     adj.get(crs).add(prereq);
+    //     adj.get(edge[1]).add(edge[0]);
     // }
     //
     // Map<Integer, Set<Integer>> prereqMap = new HashMap<>();
-    // for (int crs = 0; crs < numCourses; crs++) {
-    //     dfs(crs, adj, prereqMap);
+    // for (int course = 0; course < numCourses; course++) {
+    //     dfs(course, adj, prereqMap);
     // }
     //
     // List<Boolean> answer = new ArrayList<>();
@@ -115,18 +116,18 @@ public class CourseScheduleIV {
     // return answer;
     //
     // private Set<Integer> dfs(
-    //         int crs,
+    //         int course,
     //         Map<Integer, List<Integer>> adj,
     //         Map<Integer, Set<Integer>> prereqMap) {
-    //     if (prereqMap.containsKey(crs)) {
-    //         return prereqMap.get(crs);
+    //     if (prereqMap.containsKey(course)) {
+    //         return prereqMap.get(course);
     //     }
     //     Set<Integer> prereqs = new HashSet<>();
-    //     for (int pre : adj.get(crs)) {
+    //     for (int pre : adj.get(course)) {
     //         prereqs.add(pre);
     //         prereqs.addAll(dfs(pre, adj, prereqMap));
     //     }
-    //     prereqMap.put(crs, prereqs);
+    //     prereqMap.put(course, prereqs);
     //     return prereqs;
     // }
     }

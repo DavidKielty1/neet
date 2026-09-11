@@ -43,6 +43,8 @@
 
 public class OpenTheLock {
     public int openLock(String[] deadends, String target) {
+        
+    }
     //
     //
     //

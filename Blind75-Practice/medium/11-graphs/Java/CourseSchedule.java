@@ -41,14 +41,8 @@
 
 public class CourseSchedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        // create graph map (course(0-n): list of dependers and adjacency list (int[])
-        //      for numCourses -> create new ArrayList in graph for each course
-        // for numCourses: append prereq[0] to graph.get(prereq[1]), increment prereq[1]
-        // create queue, go through indegree, if indegree[i] == 0 -> add to queue
-        // 
-
+        
     }
-    //
     //
     //
     //
@@ -108,14 +102,6 @@ public class CourseSchedule {
     //     indegree[edge[0]]++;
     // }
     //
-    // numCourses = 7, prerequisites = [[1,0],[2,0],[3,1],[3,2],[4,3],[5,3],[6,4]]
-    // graph = {{1, 2}{3}{3}{4, 5}{6}{}{}}
-    // indegree = [0,1,1,2,1,1,1]
-    //
-    //
-    //  0 -> 2
-    //
-    //
     // Queue<Integer> queue = new ArrayDeque<>();
     // for (int course = 0; course < numCourses; course++) {
     //     if (indegree[course] == 0) {
@@ -134,7 +120,6 @@ public class CourseSchedule {
     //         }
     //     }
     // }
-    //
     // return taken == numCourses;
     }
     
