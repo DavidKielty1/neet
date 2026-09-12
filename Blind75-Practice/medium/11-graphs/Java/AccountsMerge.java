@@ -100,11 +100,34 @@ public class AccountsMerge {
     //
     //
     //
-    //
-    //
+    //  Input:
+    //     * {
+    //     *   {"John","johnsmith@mail.com","john_newyork@mail.com"},
+    //     *   {"John","johnsmith@mail.com","john00@mail.com"},
+    //     *   {"Mary","mary@mail.com"},
+    //     *   {"John","johnnybravo@mail.com"}
+    //     * }
     //
     // Map<String, Set<String>> graph = new HashMap<>();
     // Map<String, String> emailToName = new HashMap<>();
+
+    // -- Mock First Loop Output --
+    // graph {
+    //      "johnsmith@mail.com": ("john_newyork@mail.com", "john00@mail.com"),
+    //      "john_newyork@mail.com": ("johnsmith@mail.com"),
+    //      "john00@mail.com" : ("johnsmith@mail.com"),
+    //      "mary@mail.com" : (),
+    //      "johnnybravo@mail.com" : ()
+    // }
+    // emailToName {
+    //      "johnsmith@mail.com" : "John",
+    //      "john_newyork@mail.com" : "John",
+    //      "john00@mail.com" : "John",
+    //      "mary@mail.com" : "Mary",
+    //      "johnnybravo@mail.com" : "John"
+    // }
+    // -- Mock First Loop Output --
+
     //
     // for (List<String> account : accounts) {
     //     String name = account.get(0);

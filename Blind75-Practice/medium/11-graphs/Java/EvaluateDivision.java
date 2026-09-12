@@ -45,7 +45,10 @@ import java.util.List;
 
 public class EvaluateDivision {
     public double[] calcEquation(
-        List<List<String>> equations, double[] values, List<List<String>> queries) {
+    List<List<String>> equations, double[] values, List<List<String>> queries) {
+        
+    }
+
     //
     //
     //
@@ -89,15 +92,16 @@ public class EvaluateDivision {
     //
     //
     //
-    // [["a","b"],["b","c"]]
-    // [2.0,3.0]
-    // [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]
+    // equations    {{"a","b"},{"b","c"}}
+    // values       [2.0,3.0]
+    // queries      {{"a","c"},{"b","a"},{"a","e"},{"a","a"},{"x","x"}}
     //
-    // a { b:2.0}
-    // b { a:2.0, c:3.0 }
-    // c { b:3.0 }
+    // graph (map):
+    // a { b:2.0 }
+    // b { a:0.5, c:3.0 }
+    // c { b:1.0/3.0 }
     //        
-    // output[[][][][][]]
+    // answer[[][][][][]]
     //   
     // Map<String, Map<String, Double>> graph = new HashMap<>();
     // for (int i = 0; i < equations.size(); i++) {
@@ -122,7 +126,30 @@ public class EvaluateDivision {
     //     answer[i] = dfs(src, dst, graph, new HashSet<>(), 1.0);
     // }
     // return answer;
-    }
+    // }
+
+    // private double dfs(
+    //     String src,
+    //     String dst,
+    //     Map<String, Map<String, Double>> graph,
+    //     Set<String> seen,
+    //     double acc) {
+    // if (src.equals(dst)) {
+    //     return acc;
+    // }
+    // seen.add(src);
+    // for (Map.Entry<String, Double> e : graph.get(src).entrySet()) {
+    //     if (seen.contains(e.getKey())) {
+    //         continue;
+    //     }
+    //     double ans = dfs(e.getKey(), dst, graph, seen, acc * e.getValue());
+    //     if (ans != -1.0) {
+    //         return ans;
+    //     }
+    // }
+    // return -1.0;
+    // }
+
     
 
     public static void main(String[] args) {
