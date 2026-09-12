@@ -117,7 +117,6 @@ public class WordLadder {
     // }
     //
     // return 0;
-        throw new UnsupportedOperationException("Implement ladderLength");
     }
     
 
