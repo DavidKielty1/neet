@@ -100,18 +100,61 @@ public class AccountsMerge {
     //
     //
     //
-    //  Input:
-    //     * {
-    //     *   {"John","johnsmith@mail.com","john_newyork@mail.com"},
-    //     *   {"John","johnsmith@mail.com","john00@mail.com"},
-    //     *   {"Mary","mary@mail.com"},
-    //     *   {"John","johnnybravo@mail.com"}
-    //     * }
+
+
+
     //
     // Map<String, Set<String>> graph = new HashMap<>();
     // Map<String, String> emailToName = new HashMap<>();
+    //
+    // for (List<String> account : accounts) {
+    //     String name = account.get(0);
+    //     for (int i = 1; i < account.size(); i++) {
+    //         emailToName.put(account.get(i), name);
+    //         graph.putIfAbsent(account.get(i), new HashSet<>());
+    //         if (i > 1) {
+    //             String firstEmail = account.get(1);
+    //             graph.get(firstEmail).add(account.get(i));
+    //             graph.get(account.get(i)).add(firstEmail);
+    //         }
+    //     }
+    // }   
+    //
+    // List<List<String>> merged = new ArrayList<>();
+    // Set<String> visited = new HashSet<>();
+    // for (String email : graph.keySet()) {
+    //     if (visited.add(email)) {
+    //         List<String> component = new ArrayList<>();
+    //         dfs(email, graph, visited, component);
+    //         Collections.sort(component);
+    //         component.add(0, emailToName.get(email));
+    //         merged.add(component);
+    //     }
+    // }
+    // return merged;
+    //
+    // private void dfs( String email, Map<String, Set<String>> graph, Set<String> visited, 
+    // List<String> component) {
+    //     component.add(email);   
+    //     for (String next : graph.get(email)) {
+    //         if (visited.add(next)) {
+    //             dfs(next, graph, visited, component);
+    //             }
+    //         }
+    //     }
+    // } 
+    
+    //
+    //
 
-    // -- Mock First Loop Output --
+    // * Input:
+    // * {
+    // *   {"John","johnsmith@mail.com","john_newyork@mail.com"},
+    // *   {"John","johnsmith@mail.com","john00@mail.com"},
+    // *   {"Mary","mary@mail.com"},
+    // *   {"John","johnnybravo@mail.com"}
+    // * }
+
     // graph {
     //      "johnsmith@mail.com": ("john_newyork@mail.com", "john00@mail.com"),
     //      "john_newyork@mail.com": ("johnsmith@mail.com"),
@@ -126,35 +169,13 @@ public class AccountsMerge {
     //      "mary@mail.com" : "Mary",
     //      "johnnybravo@mail.com" : "John"
     // }
-    // -- Mock First Loop Output --
 
-    //
-    // for (List<String> account : accounts) {
-    //     String name = account.get(0);
-    //     for (int i = 1; i < account.size(); i++) {
-    //         emailToName.put(account.get(i), name);
-    //         graph.putIfAbsent(account.get(i), new HashSet<>());
-    //         if (i > 1) {
-    //             String firstEmail = account.get(1);
-    //             graph.get(firstEmail).add(account.get(i));
-    //             graph.get(account.get(i)).add(firstEmail);
-    //         }
-    //     }
-    // }
-    //
-    // List<List<String>> merged = new ArrayList<>();
-    // Set<String> visited = new HashSet<>();
-    // for (String email : graph.keySet()) {
-    //     if (visited.add(email)) {
-    //         List<String> component = new ArrayList<>();
-    //         dfs(email, graph, visited, component);
-    //         Collections.sort(component);
-    //         component.add(0, emailToName.get(email));
-    //         merged.add(component);
-    //     }
-    // }
-    // return merged;
-    }
+    // * Output:
+    // * {
+    // *   {"John","john00@mail.com","john_newyork@mail.com","johnsmith@mail.com"},
+    // *   {"Mary","mary@mail.com"},
+    // *   {"John","johnnybravo@mail.com"}
+    // * }
     
 
     public static void main(String[] args) {
