@@ -25,10 +25,10 @@ This doc maps **hard** practice in `Blind75-Practice/hard/` to those categories.
 | `09-heap-priority-queue`    | Heap / Priority Queue        |                12 |         2 |
 | `10-backtracking`           | Backtracking                 |                17 |         3 |
 | `11-graphs`                 | Graphs                       |                21 |         1 |
-| `12-1d-dp-l`                | 1-D Dynamic Programming      |                17 |         4 |
+| `12-advanced-graphs`        | Advanced Graphs              |                10 |         6 |
 | `13-intervals-l`            | Intervals                    |                 7 |         2 |
 | `14-greedy`                 | Greedy                       |                14 |         1 |
-| `15-advanced-graphs`        | Advanced Graphs              |                10 |         6 |
+| `15-1d-dp-l`                | 1-D Dynamic Programming      |                17 |         4 |
 | `16-2d-dp-l`                | 2-D Dynamic Programming      |                16 |         1 |
 | `17-bit-manipulation-l`     | Bit Manipulation             |                10 |         0 |
 | `18-math-geometry-l`        | Math & Geometry              |                13 |         0 |
@@ -83,9 +83,9 @@ NQueens, NQueensII, WordBreakII
 
 WordLadder
 
-### `12-1d-dp-l` (4)
+### `12-advanced-graphs` (6)
 
-BurstBalloons, DistinctSubsequences, LongestIncreasingPathInAMatrix, RegularExpressionMatching
+AlienDictionary, BuildAMatrixWithConditions, FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree, GreatestCommonDivisorTraversal, ReconstructItinerary, SwimInRisingWater
 
 ### `13-intervals-l` (2)
 
@@ -95,9 +95,9 @@ MeetingRoomsIII, MinimumIntervalToIncludeEachQuery
 
 Candy
 
-### `15-advanced-graphs` (6)
+### `15-1d-dp-l` (4)
 
-AlienDictionary, BuildAMatrixWithConditions, FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree, GreatestCommonDivisorTraversal, ReconstructItinerary, SwimInRisingWater
+BurstBalloons, DistinctSubsequences, LongestIncreasingPathInAMatrix, RegularExpressionMatching
 
 ### `16-2d-dp-l` (1)
 

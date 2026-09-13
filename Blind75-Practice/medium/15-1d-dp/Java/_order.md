@@ -1,6 +1,6 @@
 # Medium 1-D dynamic programming — suggested study order
 
-Prerequisites: complete `easy/12-1d-dp/Java/_order.md` first (climbing stairs).
+Prerequisites: complete `easy/15-1d-dp/Java/_order.md` first (climbing stairs).
 
 Blind75 problems are marked **(B75)**.
 

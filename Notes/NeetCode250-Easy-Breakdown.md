@@ -27,10 +27,10 @@ This doc maps **easy** practice in `Blind75-Practice/easy/` to those categories.
 | `09-heap-priority-queue`    | Heap / Priority Queue        |                12 |         3 |
 | `10-backtracking`           | Backtracking                 |                17 |         1 |
 | `11-graphs`                 | Graphs                       |                21 |         3 |
-| `12-1d-dp`                  | 1-D Dynamic Programming      |                17 |         3 |
+| `12-advanced-graphs`        | Advanced Graphs              |                10 |         0 |
 | `13-intervals-l`            | Intervals                    |                 7 |         1 |
 | `14-greedy`                 | Greedy                       |                14 |         2 |
-| `15-advanced-graphs`        | Advanced Graphs              |                10 |         0 |
+| `15-1d-dp`                  | 1-D Dynamic Programming      |                17 |         3 |
 | `16-2d-dp-l`                | 2-D Dynamic Programming      |                16 |         5 |
 | `17-bit-manipulation-l`     | Bit Manipulation             |                10 |         8 |
 | `18-math-geometry-l`        | Math & Geometry              |                13 |         9 |
@@ -81,10 +81,6 @@ SumOfAllSubsetsXorTotal
 
 FindTheTownJudge, IslandPerimeter, VerifyingAnAlienDictionary
 
-### `12-1d-dp` (3)
-
-BestTimeToBuyAndSellStock, BestTimeToBuyAndSellStockEasy, HouseRobberEasy
-
 ### `13-intervals-l` (1)
 
 MeetingRooms
@@ -92,6 +88,10 @@ MeetingRooms
 ### `14-greedy` (2)
 
 AssignCookies, LemonadeChange
+
+### `15-1d-dp` (3)
+
+BestTimeToBuyAndSellStock, BestTimeToBuyAndSellStockEasy, HouseRobberEasy
 
 ### `16-2d-dp-l` (5)
 

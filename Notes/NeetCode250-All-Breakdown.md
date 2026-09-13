@@ -45,7 +45,7 @@ This repo’s `Blind75-Practice/` track mirrors the **18 NeetCode pattern catego
 | 18  | Math & Geometry         |          13 |      9 |       8 |      0 |     **17** |
 |     | **Totals**              |     **250** | **96** | **161** | **36** |    **293** |
 
-_Repo 1-D DP: `easy/12-1d-dp`, `medium/12-1d-dp`, `hard/12-1d-dp-l`._
+_NeetCode’s official category numbers stay as above (12 = 1-D DP, 15 = Advanced Graphs). Repo folders swap those two so graphs sit at `11`/`12` and DP at `15`/`16`: `easy/15-1d-dp`, `medium/15-1d-dp`, `hard/15-1d-dp-l`._
 
 ---
 
@@ -53,7 +53,7 @@ _Repo 1-D DP: `easy/12-1d-dp`, `medium/12-1d-dp`, `hard/12-1d-dp-l`._
 
 ```
 Blind75-Practice/
-├── easy/          # 01–18 (no 08-tries, no 15-advanced-graphs)
+├── easy/          # 01–18 (no 08-tries, no 12-advanced-graphs)
 ├── medium/        # 01–18 (full set)
 └── hard/          # 01–16 (no 17-bit, no 18-math)
 ```
@@ -71,10 +71,10 @@ Blind75-Practice/
 | Heap / Priority Queue | `09-heap-priority-queue`  |
 | Backtracking          | `10-backtracking`         |
 | Graphs                | `11-graphs`               |
-| 1-D DP                | `12-1d-dp` / `12-1d-dp-l` |
+| Advanced Graphs       | `12-advanced-graphs`      |
 | Intervals             | `13-intervals-l`          |
 | Greedy                | `14-greedy`               |
-| Advanced Graphs       | `15-advanced-graphs`      |
+| 1-D DP                | `15-1d-dp` / `15-1d-dp-l` |
 | 2-D DP                | `16-2d-dp-l`              |
 | Bit Manipulation      | `17-bit-manipulation-l`   |
 | Math & Geometry       | `18-math-geometry-l`      |

@@ -50,10 +50,79 @@
  * - Group emails by shared ownership, then sort emails inside each component.
  */
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+    // * Input:
+    // * {
+    // *   {"John","johnsmith@mail.com","john_newyork@mail.com"},
+    // *   {"John","johnsmith@mail.com","john00@mail.com"},
+    // *   {"Mary","mary@mail.com"},
+    // *   {"John","johnnybravo@mail.com"}
+    // * }
+
+    // graph {
+    //      "johnsmith@mail.com": ("john_newyork@mail.com", "john00@mail.com"),
+    //      "john_newyork@mail.com": ("johnsmith@mail.com"),
+    //      "john00@mail.com": ("johnsmith@mail.com"),
+    //      "mary@mail.com": (),
+    //      "johnnybravo@mail.com": ()
+    // }
+    // emailToName {
+    //      "johnsmith@mail.com" : "John",
+    //      "john_newyork@mail.com" : "John",
+    //      "john00@mail.com" : "John",
+    //      "mary@mail.com" : "Mary",
+    //      "johnnybravo@mail.com" : "John"
+    // }
+
 
 public class AccountsMerge {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        Map<String, Set<String>> graph = new HashMap<>();
+        Map<String, String> emailToName = new HashMap<>();
+
+        for (List<String> account : accouts) {
+            String name = account.get(0);
+            for (int i = 1; i < account.size(); i++) {
+                emailToName.put(account.get(i), name);
+                graph.putIfAbsent(account.get(i), new HashSet());
+                if (i > 1) {
+                    String firstEmail = account.get(1);
+                    graph.get(firstEmail).add(account.get(i));
+                    graph.get(account.get(i)).add(firstEmail);
+                }
+            }
+        }
+
+        List<List<String>> merged = new ArrayList<>();
+        Set<String> visited = new HashSet<>();
+        for (String email : graph.keySet()) {
+            if (visited.add(email)) {
+                List<String> component = new ArrayList<>();
+                dfs(graph, component, visited, email);
+                Collections.sort(component);
+                component.add(0, emailToName.get(email));
+                merged.add(component);
+            }
+        }
+    }
+
+    
+    private void dfs(Map<String, Set<String>> graph, List<String> component, Set<String> visited, string email) {
+        component.add(email);
+        for (String next : graph.get(email)) {
+            if (visited.add(next)) {
+                dfs(graph, component, visited, next);
+            }
+        }
+    }
+
     //
     //
     //

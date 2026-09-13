@@ -25,10 +25,10 @@ This doc maps **medium** practice in `Blind75-Practice/medium/` to those categor
 | `09-heap-priority-queue`    | Heap / Priority Queue        |                12 |           8 |
 | `10-backtracking`           | Backtracking                 |                17 |          12 |
 | `11-graphs`                 | Graphs                       |                21 |          17 |
-| `12-1d-dp`                  | 1-D Dynamic Programming      |                17 |          13 |
+| `12-advanced-graphs`        | Advanced Graphs              |                10 |           4 |
 | `13-intervals-l`            | Intervals                    |                 7 |           4 |
 | `14-greedy`                 | Greedy                       |                14 |          12 |
-| `15-advanced-graphs`        | Advanced Graphs              |                10 |           4 |
+| `15-1d-dp`                  | 1-D Dynamic Programming      |                17 |          13 |
 | `16-2d-dp-l`                | 2-D Dynamic Programming      |                16 |          13 |
 | `17-bit-manipulation-l`     | Bit Manipulation             |                10 |           4 |
 | `18-math-geometry-l`        | Math & Geometry              |                13 |           8 |
@@ -81,9 +81,9 @@ CombinationSum, CombinationSumII, Combinations, LetterCombinationsOfAPhoneNumber
 
 AccountsMerge, CloneGraph, CourseSchedule, CourseScheduleII, CourseScheduleIV, EvaluateDivision, GraphValidTree, MaxAreaOfIsland, MinimumHeightTrees, NumberOfConnectedComponentsInAnUndirectedGraph, NumberOfIslands, OpenTheLock, PacificAtlanticWaterFlow, RedundantConnection, RottingOranges, SurroundedRegions, WallsAndGates
 
-### `12-1d-dp` (13)
+### `12-advanced-graphs` (4)
 
-BestTimeToBuyAndSellStockWithCooldown, CoinChangeII, EditDistance, HouseRobber, InterleavingString, LastStoneWeightII, LongestCommonSubsequence, MinimumPathSum, StoneGame, StoneGameII, TargetSum, UniquePaths, UniquePathsII
+CheapestFlightsWithinKStops, MinCostToConnectAllPoints, NetworkDelayTime, PathWithMinimumEffort
 
 ### `13-intervals-l` (4)
 
@@ -93,9 +93,9 @@ InsertInterval, MeetingRoomsII, MergeIntervals, NonOverlappingIntervals
 
 Dota2Senate, GasStation, HandOfStraights, JumpGame, JumpGameII, JumpGameVII, LongestTurbulentSubarray, MaximumSubarray, MaximumSumCircularSubarray, MergeTripletsToFormTargetTriplet, PartitionLabels, ValidParenthesisString
 
-### `15-advanced-graphs` (4)
+### `15-1d-dp` (13)
 
-CheapestFlightsWithinKStops, MinCostToConnectAllPoints, NetworkDelayTime, PathWithMinimumEffort
+BestTimeToBuyAndSellStockWithCooldown, CoinChangeII, EditDistance, HouseRobber, InterleavingString, LastStoneWeightII, LongestCommonSubsequence, MinimumPathSum, StoneGame, StoneGameII, TargetSum, UniquePaths, UniquePathsII
 
 ### `16-2d-dp-l` (13)
 
