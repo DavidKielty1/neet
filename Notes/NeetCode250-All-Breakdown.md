@@ -21,9 +21,9 @@ This repo’s `Blind75-Practice/` track mirrors the **18 NeetCode pattern catego
 
 ---
 
-## 18 categories — NeetCode targets vs repo
+## 18 categories — repo folder numbers vs NeetCode targets
 
-| #   | NeetCode category       | NC250 total |   Easy |  Medium |   Hard | Repo total |
+| #   | Category                | NC250 total |   Easy |  Medium |   Hard | Repo total |
 | --- | ----------------------- | ----------: | -----: | ------: | -----: | ---------: |
 | 01  | Arrays & Hashing        |          22 |     18 |      11 |      2 |     **31** |
 | 02  | Two Pointers            |          13 |     11 |       8 |      1 |     **20** |
@@ -36,16 +36,16 @@ This repo’s `Blind75-Practice/` track mirrors the **18 NeetCode pattern catego
 | 09  | Heap / Priority Queue   |          12 |      3 |       8 |      2 |     **13** |
 | 10  | Backtracking            |          17 |      1 |      12 |      3 |     **16** |
 | 11  | Graphs                  |          21 |      3 |      17 |      1 |     **21** |
-| 12  | 1-D Dynamic Programming |          17 |      3 |      13 |      4 |     **20** |
+| 12  | Advanced Graphs         |          10 |      0 |       4 |      6 |     **10** |
 | 13  | Intervals               |           7 |      1 |       4 |      2 |      **7** |
 | 14  | Greedy                  |          14 |      2 |      12 |      1 |     **15** |
-| 15  | Advanced Graphs         |          10 |      0 |       4 |      6 |     **10** |
+| 15  | 1-D Dynamic Programming |          17 |      3 |      13 |      4 |     **20** |
 | 16  | 2-D Dynamic Programming |          16 |      5 |      13 |      1 |     **19** |
 | 17  | Bit Manipulation        |          10 |      8 |       4 |      0 |     **12** |
 | 18  | Math & Geometry         |          13 |      9 |       8 |      0 |     **17** |
 |     | **Totals**              |     **250** | **96** | **161** | **36** |    **293** |
 
-_NeetCode’s official category numbers stay as above (12 = 1-D DP, 15 = Advanced Graphs). Repo folders swap those two so graphs sit at `11`/`12` and DP at `15`/`16`: `easy/15-1d-dp`, `medium/15-1d-dp`, `hard/15-1d-dp-l`._
+_Numbers match `Blind75-Practice/{easy,medium,hard}/` prefixes (`11-graphs`, `12-advanced-graphs`, `15-1d-dp`, `16-2d-dp-l`). NeetCode’s site still lists 12 = 1-D DP and 15 = Advanced Graphs._
 
 ---
 
@@ -95,9 +95,9 @@ Blind75-Practice/
 
 1. **Foundations** — 01, 02, 05, 04 (arrays, pointers, windows, search)
 2. **Structures** — 03, 06, 07 (stack, linked list, trees)
-3. **Exploration** — 08, 09, 10, 11 (tries, heap, backtracking, graphs)
-4. **Optimization** — 12, 16, 14, 13 (1-D/2-D DP, greedy, intervals)
-5. **Advanced** — 15, 17, 18 (weighted graphs, bits, math/geometry)
+3. **Exploration** — 08, 09, 10, 11, 12 (tries, heap, backtracking, graphs)
+4. **Optimization** — 13, 14, 15, 16 (intervals, greedy, 1-D/2-D DP)
+5. **Advanced** — 17, 18 (bits, math/geometry)
 
 Work **easy → medium → hard** within each pattern when possible.
 

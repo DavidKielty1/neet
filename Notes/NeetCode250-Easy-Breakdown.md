@@ -4,7 +4,7 @@
 
 [NeetCode 250](https://neetcode.io/practice/practice/neetcode250) targets **60 Easy** problems across **18 pattern categories** (250 total with 155 Medium + 35 Hard).
 
-This doc maps **easy** practice in `Blind75-Practice/easy/` to those categories. Counts are **Java** files under `*/Java/`, excluding `analogue-questions/` and `tests/`.
+This doc maps **easy** practice in `Blind75-Practice/easy/` to those categories. Folder numbers match the repo prefixes (`15-1d-dp`, not NeetCode’s site numbering). Counts are **Java** files under `*/Java/`, excluding `analogue-questions/` and `tests/`.
 
 **Repo easy total:** 96 problems · **NeetCode 250 easy target:** 60
 
