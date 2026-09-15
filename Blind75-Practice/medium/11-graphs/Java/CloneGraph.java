@@ -41,10 +41,10 @@
  * - DFS and BFS both work as long as neighbours are linked through the map.
  */
 
-import org.w3c.dom.Node;
-
 public class CloneGraph {
-    public Node cloneGraph(Node node) {
+    public static class Node {
+        
+    }
             //
             //
             //
