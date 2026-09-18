@@ -32,8 +32,43 @@
  * - After that quick check, use DFS/BFS connectivity or union-find.
  */
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class GraphValidTree {
     public boolean validTree(int n, int[][] edges) {
+        if (edges.length != n - 1) {
+            return false;
+        }
+
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < n; i ++) {
+            adj.add(new ArrayList<>());
+        }
+
+        for (int[] edge : edges) {
+            adj.get(edge[1]).add(edge[0]);
+            adj.get(edge[0]).add(edge[1]);
+        }
+
+        Deque<Integer> stack = new ArrayDeque<>();
+        Set<Integer> visited = new HashSet<>();
+        visited.add(0);
+        stack.push(0);
+
+        while (!stack.isEmpty()) {
+            int curr = stack.poll();
+            for (int next : adj.get(curr)) {
+                if (visited.add(next)) {
+                    stack.push(next);
+                }
+            }
+        }
+        return visited.size() == n;
         
     //
     //
