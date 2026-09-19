@@ -66,14 +66,15 @@ public class RedundantConnection {
         if (rootA == rootB) {
             return false;
         }
-        if (rank[rootA] > rank[rootB]) {
-            parent[b] = parent[a];
-        } else if (rank[rootA] < rank[rootB]) {
-            parent[a] = parent[b];
+        if (rank[rootA] < rank[rootB]) {
+            parent[rootA] = parent[rootB];
+        } else if (rank[rootA] > rank[rootB]) {
+            parent[rootB] = parent[rootA];
         } else {
-            parent[b] = parent[a];
+            parent[rootB] = parent[rootA];
             rank[rootA]++;
         }
+        return true;
     }
     //
     //
@@ -118,9 +119,9 @@ public class RedundantConnection {
     //
     //
     //
-    // [[1,2],[1,3],[2,3]]
-    // parent[] = 
-    //   rank[] = 
+    // [[1,2], [3,4], [1,3], [5,6], [4,5], [2,6]]
+    // parent[] = [0 1 1 1 3 1 5]
+    //   rank[] = [0 2 0 1 0 1 0]
     //
     //
     //
