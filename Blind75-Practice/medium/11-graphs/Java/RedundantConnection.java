@@ -37,7 +37,43 @@
 
 public class RedundantConnection {
     public int[] findRedundantConnection(int[][] edges) {
-    
+        int n = edges.length;
+        int[] parent = new int[n + 1];
+        int[] rank = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            parent[i] = i;
+        }
+
+        for (int[] edge : edges) {
+            if (!union(parent, rank, edge[0], edge[1])) {
+                return edge;
+            }
+        }
+
+        return new int[0];    
+    }
+
+    private int find(int[] parent, int node) {
+        if (parent[node] != node) {
+            parent[node = find(parent, parent[node])];
+        }
+        return parent[node];
+    }
+ 
+    private int[] union(int[] parent, int[] rank, int a, int b) {
+        int rootA = find(parent, a);
+        int rootB = find(parent, b);
+        if (rootA == rootB) {
+            return false;
+        }
+        if (rank[rootA] > rank[rootB]) {
+            parent[b] = parent[a];
+        } else if (rank[rootA] < rank[rootB]) {
+            parent[a] = parent[b];
+        } else {
+            parent[b] = parent[a];
+            rank[rootA]++;
+        }
     }
     //
     //
@@ -82,9 +118,9 @@ public class RedundantConnection {
     //
     //
     //
-    //
-    //
-    //
+    // [[1,2],[1,3],[2,3]]
+    // parent[] = 
+    //   rank[] = 
     //
     //
     //
@@ -96,9 +132,7 @@ public class RedundantConnection {
     // }
     //
     // for (int[] edge : edges) {
-    //     int a = edge[0];
-    //     int b = edge[1];
-    //     if (!union(parent, rank, a, b)) {
+    //     if (!union(parent, rank, edge[0], edge[1])) {
     //         return edge;
     //     }
     // }

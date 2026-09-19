@@ -30,40 +30,8 @@
  * - Union-Find also solves this cleanly with near-constant merges.
  */
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 public class NumberOfConnectedComponentsInAnUndirectedGraph {
     public int countComponents(int n, int[][] edges) {
-        List<List<Integer>> graph = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            graph.add(new ArrayList<>());
-        }
-
-        for (int[] edge : edges) {
-            graph.get(edge[0]).add(edge[1]);
-            graph.get(edge[1]).add(edge[0]);
-        }
-
-        Set<Integer> visited = new HashSet<>();
-        int taken = 0;
-        for (int i = 0; i < n; i++) {
-            taken++;
-            dfs(graph, 0, taken, visited);
-        }
-        return taken == n;
-    }
-
-    private void dfs(List<List<Integer>> graph, int node, int taken, Set<Integer> visited) {
-        if(visited.contains(node)) {
-            return;
-        }
-        visited.add(node);
-        for(int next : graph.get(node)) {
-            dfs(graph, node, taken, visited);
-        }
     }
     //
     //
