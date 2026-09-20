@@ -102,7 +102,7 @@ public class OpenTheLock {
     // Queue<String> queue = new ArrayDeque<>();
     // Set<String> visited = new HashSet<>();
     // queue.offer("0000");
-    // visited.add("0000");
+    // visited.add();
     //
     // int steps = 0;
     // while (!queue.isEmpty()) {
