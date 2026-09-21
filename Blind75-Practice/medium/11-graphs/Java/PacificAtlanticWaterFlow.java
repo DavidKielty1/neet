@@ -40,12 +40,48 @@
  * - Mark cells reachable from the Pacific and from the Atlantic, then intersect.
  */
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class PacificAtlanticWaterFlow {
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        
+        int rows = heights.length, cols = heights[0].length;
+        boolean[][] pacific = new boolean[rows][cols];
+        boolean[][] atlantic = new boolean[rows][cols];
+
+        for (int r = 0; r < rows; r++) {
+            dfs(heights, r, 0, pacific, heights[r][0]);
+            dfs(heights, r, cols - 1, atlantic, heights[r][cols - 1]);
+        }
+        for (int c = 0; c < cols; c++) {
+            dfs(heights, 0, c, pacific, heights[0][c]);
+            dfs(heights, rows - 1, c, atlantic, heights[rows - 1][c]);
+        }
+
+        List<List<Integer>> answer = new ArrayList<>();
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (pacific[r][c] && atlantic[r][c]) {
+                    answer.add(Arrays.asList(r, c));
+                }
+            }
+        }
+        return answer;
+    }
+
+    private void dfs(int[][] heights, int r, int c, boolean[][] seen, int prev) {
+        if (r < 0 || c < 0 || r >= heights.length || c >= heights[0].length) {
+            return;
+        }
+        if (seen[r][c] || heights[r][c] < prev) {
+            return;
+        }
+        seen[r][c] = true;
+        dfs(heights, r + 1, c, seen, heights[r][c]);
+        dfs(heights, r - 1, c, seen, heights[r][c]);
+        dfs(heights, r, c + 1, seen, heights[r][c]);
+        dfs(heights, r, c - 1, seen, heights[r][c]);
     }
     //
     //

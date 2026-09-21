@@ -39,13 +39,51 @@
  * - Answer each query with a set lookup on the memo map.
  */
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class CourseScheduleIV {
     public List<Boolean> checkIfPrerequisite(
     int numCourses, int[][] prerequisites, int[][] queries) {
-        
+        Map<Integer, List<Integer>> graph = new HashMap<>();
+        for (int i = 0; i < numCourses; i++) {
+            graph.put(i, new ArrayList<>());
+        }
+
+        for (int[] edge : prerequisites) {
+            graph.get(edge[1]).add(edge[0]);
+        }
+
+        Map<Integer, Set<Integer>> prereqMap = new HashMap<>();
+        for (int course = 0; course < numCourses; course++) {
+            dfs(prereqMap, graph, course);
+        }
+
+        List<Boolean> answer = new ArrayList<>();
+        for (int[] query : queries) {
+            answer.add(prereqMap.get(query[1]).contains(query[0]));
+            }
+        }
+        return answer;
+    }
+
+    private Set<Integer> dfs(Map<Integer, Set<Integer>> prereqMap, Map<Integer, List<Integer>> graph, int course) {
+        if (prereqMap.containsKey(course)) {
+            return prereqMap.get(course);
+        }
+        Set<Integer> prereqSet = new HashSet<>();
+
+        List<Integer> neighbours = graph.get(course);
+        for (Integer neighbour : neighbours) {
+            prereqSet.add(neighbour);
+            prereqSet.addAll(dfs(prereqMap, graph, neighour));
+        }
+        prereqMap.add(course, prereqSet);
     }
 
     //
@@ -130,7 +168,6 @@ public class CourseScheduleIV {
     //     prereqMap.put(course, prereqs);
     //     return prereqs;
     // }
-    }
     
 
     public static void main(String[] args) {
