@@ -35,19 +35,17 @@
  * - ai != bi and ui != vi
  *
  * Notes:
- * - Build adj: course -> direct prerequisites, then DFS with memo for all prereqs.
- * - Answer each query with a set lookup on the memo map.
+ * - Kahn BFS: edge a -> b (a unlocks b). Seed indegree 0.
+ * - When peeling a course, add it and its whole prereq set onto each successor.
+ * - Answer each query with a set lookup.
  */
 
 import java.util.Arrays;
 import java.util.List;
 
-public class CourseScheduleIV {
+public class CourseScheduleIVBFS {
     public List<Boolean> checkIfPrerequisite(
-    int numCourses, int[][] prerequisites, int[][] queries) {
-        
-    }
-
+            int numCourses, int[][] prerequisites, int[][] queries) {
     //
     //
     //
@@ -96,44 +94,48 @@ public class CourseScheduleIV {
     //
     //
     //
-    // Map<Integer, List<Integer>> adj = new HashMap<>();
+    //
+    //
+    // List<List<Integer>> adj = new ArrayList<>();
+    // List<Set<Integer>> prereqs = new ArrayList<>();
+    // int[] indegree = new int[numCourses];
     // for (int i = 0; i < numCourses; i++) {
-    //     adj.put(i, new ArrayList<>());
+    //     adj.add(new ArrayList<>());
+    //     prereqs.add(new HashSet<>());
     // }
     // for (int[] edge : prerequisites) {
-    //     adj.get(edge[1]).add(edge[0]);
+    //     adj.get(edge[0]).add(edge[1]);
+    //     indegree[edge[1]]++;
     // }
     //
-    // Map<Integer, Set<Integer>> prereqMap = new HashMap<>();
+    // Queue<Integer> queue = new ArrayDeque<>();
     // for (int course = 0; course < numCourses; course++) {
-    //     dfs(course, adj, prereqMap);
+    //     if (indegree[course] == 0) {
+    //         queue.offer(course);
+    //     }
+    // }
+    //
+    // while (!queue.isEmpty()) {
+    //     int course = queue.poll();
+    //     for (int next : adj.get(course)) {
+    //         prereqs.get(next).add(course);
+    //         prereqs.get(next).addAll(prereqs.get(course));
+    //         indegree[next]--;
+    //         if (indegree[next] == 0) {
+    //             queue.offer(next);
+    //         }
+    //     }
     // }
     //
     // List<Boolean> answer = new ArrayList<>();
     // for (int[] query : queries) {
-    //     answer.add(prereqMap.get(query[1]).contains(query[0]));
+    //     answer.add(prereqs.get(query[1]).contains(query[0]));
     // }
     // return answer;
-    //
-    // private Set<Integer> dfs(
-    //         int course,
-    //         Map<Integer, List<Integer>> adj,
-    //         Map<Integer, Set<Integer>> prereqMap) {
-    //     if (prereqMap.containsKey(course)) {
-    //         return prereqMap.get(course);
-    //     }
-    //     Set<Integer> prereqs = new HashSet<>();
-    //     for (int pre : adj.get(course)) {
-    //         prereqs.add(pre);
-    //         prereqs.addAll(dfs(pre, adj, prereqMap));
-    //     }
-    //     prereqMap.put(course, prereqs);
-    //     return prereqs;
-    // }
-    
+    }
 
     public static void main(String[] args) {
-        CourseScheduleIV solution = new CourseScheduleIV();
+        CourseScheduleIVBFS solution = new CourseScheduleIVBFS();
         List<Boolean> answer =
                 solution.checkIfPrerequisite(
                         2,

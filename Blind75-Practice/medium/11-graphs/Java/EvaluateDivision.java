@@ -46,7 +46,6 @@ import java.util.List;
 public class EvaluateDivision {
     public double[] calcEquation(
     List<List<String>> equations, double[] values, List<List<String>> queries) {
-        
     }
 
     //
@@ -92,16 +91,6 @@ public class EvaluateDivision {
     //
     //
     //
-    // equations    {{"a","b"},{"b","c"}}
-    // values       [2.0,3.0]
-    // queries      {{"a","c"},{"b","a"},{"a","e"},{"a","a"},{"x","x"}}
-    //
-    // graph (map):
-    // a { b:2.0 }
-    // b { a:0.5, c:3.0 }
-    // c { b:1.0/3.0 }
-    //        
-    // answer[[][][][][]]
     //   
     // Map<String, Map<String, Double>> graph = new HashMap<>();
     // for (int i = 0; i < equations.size(); i++) {
@@ -128,12 +117,7 @@ public class EvaluateDivision {
     // return answer;
     // }
 
-    // private double dfs(
-    //     String src,
-    //     String dst,
-    //     Map<String, Map<String, Double>> graph,
-    //     Set<String> seen,
-    //     double acc) {
+    // private double dfs( String src, String dst, Map<String, Map<String, Double>> graph, Set<String> seen, double acc) {
     // if (src.equals(dst)) {
     //     return acc;
     // }

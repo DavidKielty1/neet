@@ -34,10 +34,44 @@
  * - Repeatedly trim leaves layer by layer until at most two nodes remain.
  */
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MinimumHeightTrees {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
+        List<List<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i < n; i ++) {
+            graph.add(new ArrayList<>());
+        }
+
+        for (int[] edge : edges) {
+            graph.get(edge[0]).add(edge[1]);
+            graph.get(edge[1]).add(edge[0]);
+        }
+
+        List<Integer> leaves = new ArrayList<>();
+        for (int node = 0; node < n; node++) {
+            if (graph.get(node).size() == 1) {
+                leaves.add(node);
+            }
+        }
+
+        int remaining = n;
+        while (remaining > 2) {
+            remaining -= leaves.size();
+            List<Integer> nextLeaves = new ArrayList();
+
+            for (int leaf : leaves) {
+                int neighbour = graph.get(leaf).iterator().next();
+                graph.get(neighbour).remove(leaf);
+                if (graph.get(neighbour.size() == 1)) {
+                    nextLeaves.add(neighbour);
+                }
+            }
+            leaves = nextLeaves;
+        }
+
+        return leaves;
     }
         
     //
