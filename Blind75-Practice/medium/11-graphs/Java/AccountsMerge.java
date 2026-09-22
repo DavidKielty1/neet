@@ -50,7 +50,54 @@
  * - Group emails by shared ownership, then sort emails inside each component.
  */
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class AccountsMerge {
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        Map<String, Set<String>> graph = new HashMap<>();
+        Map<String, String> emailToName = new HashMap<>();
+        for (List<String> account : accounts) {
+            String emailName = account.get(0);
+            for (int i = 1; i < account.size(); i++) {
+                emailToName.put(account.get(i), emailName);
+                graph.computeIfAbsent(account.get(i), key -> new HashSet<>());
+                if (i > 1) {
+                    graph.get(account.get(1)).add(account.get(i));
+                    graph.get(account.get(i)).add(account.get(1));
+                }
+            }
+        }
+
+        List<List<String> merged = new ArrayList<>();
+        Set<String> visited = new HashSet<>();
+        for (String email : graph.keySet()) {
+            if (visited.add(email)) {
+                List<String> component = new ArrayList<>();
+                component.add(email);
+                dfs(email, visited, graph, component);
+                Collections.sort(component);
+                component.add(0, emailToName.get(email));
+                merged.add(component);
+            }
+        }
+        return merged;
+    }
+
+    private void dfs(String email, Set<String> visited, Map<String, Set<String>> graph, List<String> component) {
+        component.add(email);
+        for (String neighbour : graph.get(email)) {
+            if (visited.add(neighbour)) {
+                dfs(neighbour, visited, graph, component);
+            }
+        }
+    }
+}
 
     // * Input:
     // * {
@@ -63,9 +110,9 @@ import java.util.List;
     // graph {
     //      "johnsmith@mail.com": ("john_newyork@mail.com", "john00@mail.com"),
     //      "john_newyork@mail.com": ("johnsmith@mail.com"),
-    //      "john00@mail.com": ("johnsmith@mail.com"),
-    //      "mary@mail.com": (),
-    //      "johnnybravo@mail.com": ()
+    //      "john00@mail.com" : ("johnsmith@mail.com"),
+    //      "mary@mail.com" : (),
+    //      "johnnybravo@mail.com" : ()
     // }
     // emailToName {
     //      "johnsmith@mail.com" : "John",
@@ -75,11 +122,13 @@ import java.util.List;
     //      "johnnybravo@mail.com" : "John"
     // }
 
-
-public class AccountsMerge {
-    public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        
-    }
+    // * Output:
+    // * {
+    // *   {"John","john00@mail.com","john_newyork@mail.com","johnsmith@mail.com"},
+    // *   {"Mary","mary@mail.com"},
+    // *   {"John","johnnybravo@mail.com"}
+    // * }
+    
 
     //
     //
@@ -209,3 +258,4 @@ public class AccountsMerge {
         System.out.println("Practice stub ready. Implement accountsMerge and add checks.");
     }
 }
+

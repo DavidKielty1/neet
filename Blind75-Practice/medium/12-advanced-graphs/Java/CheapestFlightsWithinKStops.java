@@ -31,10 +31,29 @@
  * - 1 <= pricei <= 10^4
  * - 0 <= src, dst, k < n
  */
+
 import java.util.Arrays;
 
 public class CheapestFlightsWithinKStops {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        int inf = 1_000_000_000;
+        int[] prices = new int[n];
+        Arrays.fill(prices, inf);
+        prices[src] = 0;
+        for (int stops = 0; stops <= k; stops++) {
+            int[] next = prices.clone();
+            for (int[] flight : flights) {
+                int from = flight[0];
+                int to = flight[1];
+                int price = flight[2];
+                if (prices[from] == inf) {
+                    continue;
+                }
+                next[to] = Math.min(next[to], prices[from] + price);
+            }
+            prices = next;
+        }
+        return prices[dst] == inf ? -1 : prices[dst];
     //
     //
     //
@@ -84,8 +103,6 @@ public class CheapestFlightsWithinKStops {
     //
     //
     //
-    //
-
     // int inf = 1_000_000_000;
     // int[] prices = new int[n];
     // Arrays.fill(prices, inf);
