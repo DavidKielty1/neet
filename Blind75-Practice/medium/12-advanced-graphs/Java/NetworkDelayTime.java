@@ -32,12 +32,10 @@
  * - ui != vi
  * - 0 <= wi <= 100
  */
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
 
 public class NetworkDelayTime {
     public int networkDelayTime(int[][] times, int n, int k) {
+
     //
     //
     //
@@ -96,11 +94,14 @@ public class NetworkDelayTime {
     // for (int[] time : times) {
     //     graph[time[0]].add(new int[] {time[1], time[2]});
     // }
-    // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+
+    // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> Integer.compare(a[1], b[1]));
     // minHeap.offer(new int[] {k, 0});
+
     // boolean[] visited = new boolean[n + 1];
     // int maxTime = 0;
     // int seen = 0;
+
     // while (!minHeap.isEmpty()) {
     //     int[] current = minHeap.poll();
     //     int node = current[0];
