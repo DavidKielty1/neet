@@ -10,7 +10,6 @@ return true if there are any overlapping intervals, false otherwise.
 Example 1:
 Input: intervals = [[0,30],[5,10],[15,20]]
 Output: true
-Explanation: [0,30] overlaps with both [5,10] and [15,20]
 
 Example 2:
 Input: intervals = [[7,10],[2,4]]
@@ -19,7 +18,6 @@ Output: false
 Example 3:
 Input: intervals = [[1,2],[2,3]]
 Output: false
-Explanation: Intervals that touch at endpoints are not overlapping
 
 Constraints:
 - 1 <= intervals.length <= 10^5

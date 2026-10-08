@@ -1,12 +1,28 @@
 /*
-168. Excel Sheet Column Title
-Difficulty: Easy
-Pattern: Math & Geometry
-
-1 -> "A", 26 -> "Z", 27 -> "AA". Bijective base-26 with 1-indexing (subtract 1 before mod).
-
-Time: O(log n), Space: O(log n) for StringBuilder
-*/
+ * 168. Excel Sheet Column Title
+ * Difficulty: Easy
+ * Pattern: Math & Geometry
+ *
+ * Problem:
+ * Given an integer columnNumber, return its corresponding column title as it
+ * appears in an Excel sheet. For example, 1 maps to "A", 2 maps to "B", 26
+ * maps to "Z", 27 maps to "AA", and 28 maps to "AB".
+ *
+ * Example 1:
+ * Input: columnNumber = 1
+ * Output: "A"
+ *
+ * Example 2:
+ * Input: columnNumber = 28
+ * Output: "AB"
+ *
+ * Example 3:
+ * Input: columnNumber = 701
+ * Output: "ZY"
+ *
+ * Constraints:
+ * - 1 <= columnNumber <= 2^31 - 1
+ */
 
 public class ExcelSheetColumnTitle {
 

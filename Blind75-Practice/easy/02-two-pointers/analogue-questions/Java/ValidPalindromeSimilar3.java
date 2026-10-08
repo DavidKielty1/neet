@@ -12,7 +12,6 @@ For this easy version, we'll use the expand-from-center approach.
 Example 1:
 Input: s = "babad"
 Output: "bab" or "aba"
-Explanation: Both are valid answers.
 
 Example 2:
 Input: s = "cbbd"

@@ -18,23 +18,10 @@
  * Example 1:
  * Input: operations = ["5", "2", "+", "D", "C", "10"]
  * Output: 24
- * Explanation:
- * - "5" -> [5]
- * - "2" -> [5, 2]
- * - "+" -> [5, 2, 7]
- * - "D" -> [5, 2, 7, 14]
- * - "C" -> [5, 2, 7]
- * - "10" -> [5, 2, 7, 10]
- * Total = 24
  *
  * Example 2:
  * Input: operations = ["4", "-1", "+"]
  * Output: 6
- * Explanation:
- * - "4" -> [4]
- * - "-1" -> [4, -1]
- * - "+" -> [4, -1, 3]
- * Total = 6
  *
  * Constraints:
  * - 1 <= operations.length <= 1000

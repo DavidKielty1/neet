@@ -1,11 +1,11 @@
 """
-LeetCode 217: Contains Duplicate
+217. Contains Duplicate
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
 Problem:
 Given an integer array nums, return true if any value appears at least twice
-in the array, and return false if every element is distinct.
+in the array, and false if every element is distinct.
 
 Example 1:
 Input: nums = [1,2,3,1]
@@ -22,9 +22,6 @@ Output: true
 Constraints:
 - 1 <= nums.length <= 10^5
 - -10^9 <= nums[i] <= 10^9
-
-Time Complexity: O(n)
-Space Complexity: O(n)
 """
 
 from typing import List

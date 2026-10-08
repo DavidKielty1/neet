@@ -1,42 +1,30 @@
 import java.util.Arrays;
 
 /*
-LeetCode 27: Remove Element
-Difficulty: Easy
-Pattern: Two Pointers
-
-Problem:
-Given an integer array `nums` and an integer `val`, remove all occurrences of
-`val` in-place.
-
-Return `k`, the number of elements in `nums` that are not equal to `val`. The
-first `k` elements should contain the kept values. The order of those kept
-elements does not matter, and anything after index `k - 1` is ignored.
-
-Example 1:
-Input: nums = [3,2,2,3], val = 3
-Output: 2, nums = [2,2,_,_]
-Explanation: The remaining valid prefix contains the two values not equal to 3.
-
-Example 2:
-Input: nums = [0,1,2,2,3,0,4,2], val = 2
-Output: 5, nums = [0,1,4,0,3,_,_,_]
-Explanation: Any order is acceptable as long as the first 5 values are not 2.
-
-Time Complexity: O(n)
-Space Complexity: O(1)
-*/
+ * 27. Remove Element
+ * Difficulty: Easy
+ * Pattern: Two Pointers
+ *
+ * Problem:
+ * Given an integer array nums and an integer val, remove all occurrences of
+ * val in-place. The order of the remaining elements may change. Return k, the
+ * number of elements not equal to val. The first k elements of nums should
+ * contain those kept values. Anything after index k - 1 is ignored.
+ *
+ * Example 1:
+ * Input: nums = [3,2,2,3], val = 3
+ * Output: 2, nums = [2,2,_,_]
+ *
+ * Example 2:
+ * Input: nums = [0,1,2,2,3,0,4,2], val = 2
+ * Output: 5, nums = [0,1,4,0,3,_,_,_]
+ *
+ * Constraints:
+ * - 0 <= nums.length <= 100
+ * - 0 <= nums[i] <= 50
+ * - 0 <= val <= 100
+ */ 
 public class RemoveElement {
-
-    /*
-     * Two pointers: write index tracks where to place next 'keep' element.
-     *
-     * nums: [3, 2, 2, 3], target = 3
-     */
-
-    // [3 2 2 3]
-    // [2 2 2 3]
-
     public static int removeElement(int[] nums, int val) {
         //
 

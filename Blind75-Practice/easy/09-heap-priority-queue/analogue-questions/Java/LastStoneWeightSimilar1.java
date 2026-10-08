@@ -15,7 +15,6 @@ Return the smallest possible weight of the left stone. If there are no stones le
 Example 1:
 Input: stones = [2,7,4,1,8,1]
 Output: 1
-Explanation: Combine stones repeatedly until one remains
 
 Example 2:
 Input: stones = [31,26,33,21,40]

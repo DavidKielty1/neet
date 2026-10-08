@@ -12,7 +12,6 @@ After you sell your stock, you cannot buy stock on the next day (i.e., cooldown 
 Example 1:
 Input: prices = [1,2,3,0,2]
 Output: 3
-Explanation: transactions = [buy, sell, cooldown, buy, sell]
 
 Example 2:
 Input: prices = [1]

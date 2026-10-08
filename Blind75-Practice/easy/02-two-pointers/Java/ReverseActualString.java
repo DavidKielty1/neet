@@ -1,37 +1,37 @@
 /*
-Practice Variant: Reverse a Java String
-Related LeetCode: 344. Reverse String
-Difficulty: Easy
-Pattern: Two Pointers
-
-Problem:
-Given a Java `String` `s`, return a new string with the characters reversed.
-
-Unlike LeetCode 344, which uses a mutable `char[]`, Java strings are immutable.
-That means this version returns a new string instead of modifying the original
-string in-place.
-
-Example 1:
-Input: s = "hannaH"
-Output: "Hannah"
-Explanation: Reverse the characters from both ends toward the center.
-
-Example 2:
-Input: s = "hello"
-Output: "olleh"
-Explanation: Copy to a mutable character array, swap inward, then build a new string.
-
-Example 3:
-Input: s = "a"
-Output: "a"
-Explanation: A single-character string is already reversed.
-
-Time Complexity: O(n)
-Space Complexity: O(n)
-*/
+ * Practice Variant: Reverse a Java String
+ * Difficulty: Easy
+ * Pattern: Two Pointers
+ *
+ * Problem:
+ * Given a Java String s, return a new string with the characters reversed.
+ * Unlike LeetCode 344, which uses a mutable char[], Java strings are
+ * immutable, so this version returns a new string instead of modifying the
+ * original in-place.
+ *
+ * Example 1:
+ * Input: s = "hannaH"
+ * Output: "Hannah"
+ *
+ * Example 2:
+ * Input: s = "hello"
+ * Output: "olleh"
+ *
+ * Example 3:
+ * Input: s = "a"
+ * Output: "a"
+ *
+ * Constraints:
+ * - 0 <= s.length <= 10^5
+ * - s consists of printable ASCII characters
+ */
 public class ReverseActualString {
-
     public static String reverse(String s) {
+        
+    }
+}
+
+
         //
 
         //

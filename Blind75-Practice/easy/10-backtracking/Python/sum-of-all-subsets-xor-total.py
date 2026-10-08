@@ -1,27 +1,30 @@
 """
-LeetCode 1863: Sum of All Subsets XOR Total
+1863. Sum of All Subset XOR Totals
 Difficulty: Easy
 Pattern: Backtracking / DFS
 
 Problem:
-The XOR total of an array is the bitwise XOR of all its elements, or 0 if empty.
-For every subset of nums, compute its XOR total and return the sum of those XOR totals.
+The XOR total of an array is the bitwise XOR of all its elements, or 0 if the
+array is empty. Given an integer array nums, consider every possible subset of
+nums (including the empty subset). Return the sum of the XOR totals of all
+those subsets. Note that subsets with the same elements should be counted
+multiple times if they come from different indices.
 
 Example 1:
 Input: nums = [1,3]
 Output: 6
-Explanation: Subsets are [], [1], [3], [1,3] with XOR totals 0, 1, 3, 2; sum = 6.
 
 Example 2:
 Input: nums = [5,1,6]
 Output: 28
 
+Example 3:
+Input: nums = [3]
+Output: 3
+
 Constraints:
 - 1 <= nums.length <= 12
 - 1 <= nums[i] <= 20
-
-Time Complexity: O(2^n)
-Space Complexity: O(n) recursion depth
 """
 
 

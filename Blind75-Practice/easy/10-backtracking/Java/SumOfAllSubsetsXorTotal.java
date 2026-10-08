@@ -1,48 +1,30 @@
 /*
- * 1863. Sum of All Subsets XOR Total
+ * 1863. Sum of All Subset XOR Totals
  * Difficulty: Easy
  * Pattern: Backtracking
  *
  * Problem:
  * The XOR total of an array is the bitwise XOR of all its elements, or 0 if the
- * array is empty.
- *
- * Given an integer array `nums`, consider every possible subset of `nums`.
- * Return the sum of the XOR totals of all those subsets.
+ * array is empty. Given an integer array nums, consider every possible subset
+ * of nums (including the empty subset). Return the sum of the XOR totals of
+ * all those subsets. Note that subsets with the same elements should be counted
+ * multiple times if they come from different indices.
  *
  * Example 1:
- * Input: nums = [1, 3]
+ * Input: nums = [1,3]
  * Output: 6
- * Explanation:
- * Subsets are:
- * - [] -> 0
- * - [1] -> 1
- * - [3] -> 3
- * - [1, 3] -> 1 ^ 3 = 2
- * Total = 0 + 1 + 3 + 2 = 6
  *
  * Example 2:
- * Input: nums = [5, 1, 6]
+ * Input: nums = [5,1,6]
  * Output: 28
- * Explanation:
- * There are 8 subsets, and the sum of all their XOR totals is 28.
  *
  * Example 3:
  * Input: nums = [3]
  * Output: 3
- * Explanation:
- * The subsets are [] and [3], so the answer is 0 + 3 = 3.
  *
  * Constraints:
  * - 1 <= nums.length <= 12
  * - 1 <= nums[i] <= 20
- *
- * Why backtracking works:
- * At each index, you have two choices: include `nums[i]` in the running XOR or skip
- * it. Recursing over those two choices explores every subset exactly once.
- *
- * Time: O(n * 2^n)
- * Space: O(n) recursion stack
  */
 
 public class SumOfAllSubsetsXorTotal {

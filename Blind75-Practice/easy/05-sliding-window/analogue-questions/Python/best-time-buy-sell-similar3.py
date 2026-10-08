@@ -12,7 +12,6 @@ In each window, you can only make one transaction (buy once and sell once).
 Example 1:
 Input: prices = [1,5,3,8,2,9], k = 3
 Output: 7
-Explanation: Window [1,5,3] profit=4, [5,3,8] profit=5, [3,8,2] profit=5, [8,2,9] profit=7
 
 Example 2:
 Input: prices = [7,1,5,3,6,4], k = 4

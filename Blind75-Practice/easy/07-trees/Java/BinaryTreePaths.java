@@ -1,25 +1,25 @@
 /*
-257. Binary Tree Paths
-Difficulty: Easy
-Pattern: Trees / DFS / Backtracking
-
-Given the root of a binary tree, return all root-to-leaf paths as strings.
-A leaf is a node with no left or right child.
-
-Example:
-root = [1,2,3,null,5] -> ["1->2->5", "1->3"]
-There are two root-to-leaf paths: from 1 to 2 to 5, and from 1 to 3.
-
-Example:
-root = [1] -> ["1"]
-
-Idea:
-Traverse the tree with DFS while carrying the current path. When you reach a
-leaf, add that completed path to the answer list.
-
-Time: O(n * L), Space: O(h)
-L is the average path-string length.
-*/
+ * 257. Binary Tree Paths
+ * Difficulty: Easy
+ * Pattern: Trees / DFS / Backtracking
+ *
+ * Problem:
+ * Given the root of a binary tree, return all root-to-leaf paths in any order.
+ * A leaf is a node with no children. Represent each path as a string of node
+ * values joined by "->".
+ *
+ * Example 1:
+ * Input: root = [1,2,3,null,5]
+ * Output: ["1->2->5","1->3"]
+ *
+ * Example 2:
+ * Input: root = [1]
+ * Output: ["1"]
+ *
+ * Constraints:
+ * - The number of nodes in the tree is in the range [1, 100]
+ * - -100 <= Node.val <= 100
+ */
 import java.util.List;
 
 public class BinaryTreePaths {

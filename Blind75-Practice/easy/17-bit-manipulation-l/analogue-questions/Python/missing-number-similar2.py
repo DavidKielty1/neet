@@ -9,7 +9,6 @@ Given an unsorted integer array nums, return the smallest missing positive integ
 Example 1:
 Input: nums = [1,2,0]
 Output: 3
-Explanation: Numbers in range [1,2] are in array, so smallest missing is 3
 
 Example 2:
 Input: nums = [3,4,-1,1]

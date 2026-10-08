@@ -12,7 +12,6 @@ return the only number in the range that is missing from the array.
 Example 1:
 Input: nums = [3,0,1]
 Output: 2
-Explanation: n = 3, numbers in range [0,3] are 0,1,2,3. Missing is 2.
 
 Example 2:
 Input: nums = [0,1]

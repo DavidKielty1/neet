@@ -1,16 +1,15 @@
 """
-LeetCode 205: Isomorphic Strings
+205. Isomorphic Strings
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
 Problem:
-Given two strings s and t, determine if they are isomorphic.
-
-Two strings s and t are isomorphic if the characters in s can be replaced to get t.
-
-All occurrences of a character must be replaced with another character while preserving
-the order of characters. No two characters may map to the same character, but a character
-may map to itself.
+Given two strings s and t, determine whether they are isomorphic. Two
+strings are isomorphic if the characters in s can be replaced to get t.
+Every occurrence of a character must be replaced with the same character
+while preserving order. No two characters may map to the same character, but
+a character may map to itself. Return true if such a one-to-one mapping
+exists, otherwise false.
 
 Example 1:
 Input: s = "egg", t = "add"
@@ -28,9 +27,6 @@ Constraints:
 - 1 <= s.length <= 5 * 10^4
 - t.length == s.length
 - s and t consist of any valid ascii character
-
-Time Complexity: O(n)
-Space Complexity: O(1) - at most 256 ASCII characters
 """
 
 

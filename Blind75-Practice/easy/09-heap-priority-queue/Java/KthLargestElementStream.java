@@ -4,46 +4,33 @@
  * Pattern: Heap
  *
  * Problem:
- * Design a class that always knows the kth largest value seen so far in a stream.
- * You are given an integer `k` and an initial list of numbers `nums`. Each time a
- * new value is added, return the current kth largest element among all values seen.
+ * Design a class to find the kth largest element in a stream. Note that it is
+ * the kth largest element in the sorted order, not the kth distinct element.
+ *
+ * Implement KthLargest:
+ * - KthLargest(int k, int[] nums) initializes the object with the integer k
+ *   and the stream of integers nums.
+ * - int add(int val) appends the integer val to the stream and returns the
+ *   element representing the kth largest element in the stream.
  *
  * Example 1:
- * Input:
- *   k = 3
- *   nums = [4, 5, 8, 2]
- *   add(3), add(5), add(10), add(9), add(4)
- * Output:
- *   4, 5, 5, 8, 8
- * Explanation:
- * - Stream after add(3):  [4, 5, 8, 2, 3]  -> 3rd largest = 4
- * - Stream after add(5):  [4, 5, 8, 2, 3, 5] -> 3rd largest = 5
- * - Stream after add(10): [4, 5, 8, 2, 3, 5, 10] -> 3rd largest = 5
- * - Stream after add(9):  [4, 5, 8, 2, 3, 5, 10, 9] -> 3rd largest = 8
- * - Stream after add(4):  [4, 5, 8, 2, 3, 5, 10, 9, 4] -> 3rd largest = 8
+ * Input: ["KthLargest","add","add","add","add","add"]
+ *        [[3,[4,5,8,2]],[3],[5],[10],[9],[4]]
+ * Output: [null,4,5,5,8,8]
  *
  * Example 2:
- * Input:
- *   k = 1
- *   nums = []
- *   add(-3), add(-2), add(-4), add(0), add(4)
- * Output:
- *   -3, -2, -2, 0, 4
- * Explanation:
- * When k = 1, we always return the largest value seen so far.
+ * Input: ["KthLargest","add","add","add","add","add"]
+ *        [[1,[]],[-3],[-2],[-4],[0],[4]]
+ * Output: [null,-3,-2,-2,0,4]
  *
  * Constraints:
  * - 1 <= k <= 10^4
  * - 0 <= nums.length <= 10^4
- * - -10^4 <= nums[i], val <= 10^4
- * - At most 10^4 calls will be made to `add`
- *
- * Why a heap works:
- * Keep only the k largest values in a min-heap. The heap root is then the
- * smallest of those k values, which is exactly the kth largest overall.
- *
- * Time: O(log k) per add
- * Space: O(k)
+ * - -10^4 <= nums[i] <= 10^4
+ * - -10^4 <= val <= 10^4
+ * - At most 10^4 calls will be made to add
+ * - It is guaranteed that there will be at least k elements in the array
+ *   when you search for the kth element
  */
 
 public class KthLargestElementStream {

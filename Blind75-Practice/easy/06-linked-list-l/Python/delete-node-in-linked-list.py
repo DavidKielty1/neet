@@ -1,30 +1,19 @@
 """
-LeetCode 237: Delete Node in a Linked List
-Difficulty: Medium (simplified to Easy)
+237. Delete Node in a Linked List
+Difficulty: Easy
 Pattern: Linked List
 
 Problem:
-There is a singly-linked list head and we want to delete a node node in it.
-
-You are given the node to be deleted node. You will not be given access to the first
-node of head.
-
-All the values of the linked list are unique, and it is guaranteed that the given node
-node is not the last node in the linked list.
-
-Delete the given node. Note that by deleting the node, we do not mean removing it from
-memory. We mean:
-
-- The value of the given node should not exist in the linked list.
-- The number of nodes in the linked list should decrease by one.
-- All the values before node should be in the same order.
-- All the values after node should be in the same order.
+There is a singly-linked list, and you are given the node to be deleted. You
+will not be given access to the head of the list. All values in the list are
+unique, and the given node is not the last node. Delete the given node by
+copying the next node's value into it and bypassing the next node, so the
+value no longer appears and the list length decreases by one. Values before
+and after the deleted node keep their order.
 
 Example 1:
 Input: head = [4,5,1,9], node = 5
 Output: [4,1,9]
-Explanation: You are given the second node with value 5, the linked list should become
-4 -> 1 -> 9 after calling your function.
 
 Example 2:
 Input: head = [4,5,1,9], node = 1
@@ -35,9 +24,6 @@ Constraints:
 - -1000 <= Node.val <= 1000
 - The value of each node in the list is unique
 - The node to be deleted is in the list and is not a tail node
-
-Time Complexity: O(1)
-Space Complexity: O(1)
 """
 
 

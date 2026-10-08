@@ -15,12 +15,10 @@ rooted at that node (including the node itself).
 Example 1:
 Input: root = [5,2,-3]
 Output: [2,-3,4]
-Explanation: Sums are 2, -3, 4 (all appear once)
 
 Example 2:
 Input: root = [5,2,-5]
 Output: [2]
-Explanation: Sum 2 appears twice
 
 Constraints:
 - The number of nodes in the tree is in the range [1, 10^4]

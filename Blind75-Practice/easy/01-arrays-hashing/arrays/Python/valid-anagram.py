@@ -1,12 +1,12 @@
 """
-LeetCode 242: Valid Anagram
+242. Valid Anagram
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
 Problem:
-Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
-typically using all the original letters exactly once.
+Given two strings s and t, return true if t is an anagram of s, and false
+otherwise. An anagram is a word or phrase formed by rearranging the letters
+of another, using all the original letters exactly once.
 
 Example 1:
 Input: s = "anagram", t = "nagaram"
@@ -19,9 +19,6 @@ Output: false
 Constraints:
 - 1 <= s.length, t.length <= 5 * 10^4
 - s and t consist of lowercase English letters
-
-Time Complexity: O(n)
-Space Complexity: O(1) - max 26 characters
 """
 
 from collections import Counter

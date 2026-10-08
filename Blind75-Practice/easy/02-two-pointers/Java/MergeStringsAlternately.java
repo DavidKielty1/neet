@@ -1,36 +1,37 @@
 /*
-LeetCode 1768: Merge Strings Alternately
-Difficulty: Easy
-Pattern: Two Pointers
-
-Problem:
-You are given two strings, `word1` and `word2`. Merge the strings by adding
-letters in alternating order, starting with `word1`.
-
-If one string is longer than the other, append the additional letters onto the
-end of the merged string.
-
-Example 1:
-Input: word1 = "abc", word2 = "pqr"
-Output: "apbqcr"
-Explanation: Take one character from each string in turn.
-
-Example 2:
-Input: word1 = "ab", word2 = "pqrs"
-Output: "apbqrs"
-Explanation: After alternating "a/p" and "b/q", append the remaining "rs".
-
-Example 3:
-Input: word1 = "abcd", word2 = "pq"
-Output: "apbqcd"
-Explanation: After alternating "a/p" and "b/q", append the remaining "cd".
-
-Time Complexity: O(n + m)
-Space Complexity: O(n + m)
-*/
+ * 1768. Merge Strings Alternately
+ * Difficulty: Easy
+ * Pattern: Two Pointers
+ *
+ * Problem:
+ * You are given two strings word1 and word2. Merge the strings by adding
+ * letters in alternating order, starting with word1. If a string is longer
+ * than the other, append the additional letters onto the end of the merged
+ * string. Return the merged string.
+ *
+ * Example 1:
+ * Input: word1 = "abc", word2 = "pqr"
+ * Output: "apbqcr"
+ *
+ * Example 2:
+ * Input: word1 = "ab", word2 = "pqrs"
+ * Output: "apbqrs"
+ *
+ * Example 3:
+ * Input: word1 = "abcd", word2 = "pq"
+ * Output: "apbqcd"
+ *
+ * Constraints:
+ * - 1 <= word1.length, word2.length <= 100
+ * - word1 and word2 consist of lowercase English letters
+ */
 
 public class MergeStringsAlternately {
     public String mergeAlternately(String word1, String word2) {
+        
+    }
+}
+
 
 
         //

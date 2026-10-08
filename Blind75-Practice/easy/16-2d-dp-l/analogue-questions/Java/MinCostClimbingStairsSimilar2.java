@@ -17,13 +17,10 @@ Return the maximum number of points you can earn.
 Example 1:
 Input: nums = [3,4,2]
 Output: 6
-Explanation: Delete 4 (earn 4), delete 2 (earn 2), cannot delete 3, total = 6
-Or: Delete 3 twice to earn 6 points
 
 Example 2:
 Input: nums = [2,2,3,3,3,4]
 Output: 9
-Explanation: Delete all 3's to earn 9 points
 
 Constraints:
 - 1 <= nums.length <= 2 * 10^4

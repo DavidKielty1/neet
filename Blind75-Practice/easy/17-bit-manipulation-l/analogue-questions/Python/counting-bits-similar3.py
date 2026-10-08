@@ -10,17 +10,10 @@ having a prime number of set bits in their binary representation.
 Example 1:
 Input: left = 6, right = 10
 Output: 4
-Explanation:
-6 -> 110 (2 set bits, prime)
-7 -> 111 (3 set bits, prime)
-8 -> 1000 (1 set bit, not prime)
-9 -> 1001 (2 set bits, prime)
-10 -> 1010 (2 set bits, prime)
 
 Example 2:
 Input: left = 10, right = 15
 Output: 5
-Explanation: All numbers from 10-15 have prime number of set bits
 
 Constraints:
 - 1 <= left <= right <= 10^6

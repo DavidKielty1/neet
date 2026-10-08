@@ -11,17 +11,14 @@ return false.
 Example 1:
 Input: s1 = "bank", s2 = "kanb"
 Output: true
-Explanation: Swap 'b' and 'k' in s1 to get s2.
 
 Example 2:
 Input: s1 = "attack", s2 = "defend"
 Output: false
-Explanation: It is impossible to make them equal with one string swap.
 
 Example 3:
 Input: s1 = "kelb", s2 = "kelb"
 Output: true
-Explanation: The two strings are already equal, so no string swap is needed.
 
 Constraints:
 - 1 <= s1.length, s2.length <= 100

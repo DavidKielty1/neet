@@ -1,16 +1,17 @@
 """
-LeetCode 252: Meeting Rooms (Premium)
+252. Meeting Rooms
 Difficulty: Easy
 Pattern: Intervals
 
 Problem:
-Given an array of meeting time intervals where intervals[i] = [starti, endi], determine
-if a person could attend all meetings.
+Given an array of meeting time intervals where intervals[i] = [starti, endi],
+determine if a person could attend all meetings. Return true if no two meetings
+overlap, and false otherwise. Two meetings overlap when one starts before the
+other ends.
 
 Example 1:
 Input: intervals = [[0,30],[5,10],[15,20]]
 Output: false
-Explanation: There is overlap between [0,30] and [5,10], and between [0,30] and [15,20].
 
 Example 2:
 Input: intervals = [[7,10],[2,4]]
@@ -20,9 +21,6 @@ Constraints:
 - 0 <= intervals.length <= 10^4
 - intervals[i].length == 2
 - 0 <= starti < endi <= 10^6
-
-Time Complexity: O(n log n)
-Space Complexity: O(1)
 """
 
 from typing import List

@@ -14,7 +14,6 @@ Given n, return the value of Tn.
 Example 1:
 Input: n = 4
 Output: 4
-Explanation: T(4) = T(3) + T(2) + T(1) = 2 + 1 + 1 = 4
 
 Example 2:
 Input: n = 25

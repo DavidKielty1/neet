@@ -12,11 +12,6 @@ then the sum of the left subtree node values is 0. The rule is similar if the no
 Example 1:
 Input: root = [1,2,3]
 Output: 1
-Explanation:
-Tilt of node 2: |0-0| = 0
-Tilt of node 3: |0-0| = 0
-Tilt of node 1: |2-3| = 1
-Sum of tilt: 0 + 0 + 1 = 1
 
 Example 2:
 Input: root = [4,2,9,3,5,null,7]

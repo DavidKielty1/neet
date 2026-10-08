@@ -1,49 +1,33 @@
 /*
-383. Ransom Note
-Difficulty: Easy
-Pattern: Arrays & Hashing
-
-Problem:
-Given two strings ransomNote and magazine, return true if you can construct ransomNote by
-using letters from magazine, where each letter in magazine can be used at most as many times
-as it appears in magazine (you cannot reuse a letter more than you have).
-
-Notes:
-- Only lowercase English letters in typical versions.
-- Count letters in magazine, then subtract for each character in ransomNote; any negative count fails.
-
-Example 1:
-Input: ransomNote = "a", magazine = "b"
-Output: false
-Explanation: Magazine has no 'a' to supply the ransom note.
-
-Example 2:
-Input: ransomNote = "aa", magazine = "aab"
-Output: true
-Explanation: Magazine has two 'a's; the note needs two 'a's.
-
-Example 3:
-Input: ransomNote = "aa", magazine = "ab"
-Output: false
-Explanation: Magazine has only one 'a'; cannot spell "aa".
-
-Time: O(m + n), Space: O(1) — 26 letters
-*/
+ * 383. Ransom Note
+ * Difficulty: Easy
+ * Pattern: Arrays & Hashing
+ *
+ * Problem:
+ * Given two strings ransomNote and magazine, return true if ransomNote can be
+ * constructed using the letters from magazine and false otherwise. Each letter
+ * in magazine can only be used once in ransomNote.
+ *
+ * Example 1:
+ * Input: ransomNote = "a", magazine = "b"
+ * Output: false
+ *
+ * Example 2:
+ * Input: ransomNote = "aa", magazine = "ab"
+ * Output: false
+ *
+ * Example 3:
+ * Input: ransomNote = "aa", magazine = "aab"
+ * Output: true
+ *
+ * Constraints:
+ * - 1 <= ransomNote.length, magazine.length <= 10^5
+ * - ransomNote and magazine consist of lowercase English letters
+ */
 
 public class RansomNote {
     public boolean canConstruct(String ransomNote, String magazine) {
-        int[] magCount = new int[26];
-        for (char ch : magazine.toCharArray()) {
-            magCount[ch - 'a']++;
-        }
-
-        for (char ch : ransomNote.toCharArray()) {
-            if (--magCount[ch - 'a'] < 0) {
-                return false;
-            }
-        }
-
-        return true;
+    }
         //
 
     //

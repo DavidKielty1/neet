@@ -1,9 +1,13 @@
-/**
- * LeetCode 643: Maximum Average Subarray I
+/*
+ * 643. Maximum Average Subarray I
  * Difficulty: Easy
  * Pattern: Sliding Window
  *
- * Find a contiguous subarray of length k with maximum average; return that average.
+ * Problem:
+ * You are given an integer array nums consisting of n elements, and an integer
+ * k. Find a contiguous subarray whose length is equal to k that has the
+ * maximum average value and return this value. Any answer with a calculation
+ * error less than 10^-5 will be accepted.
  *
  * Example 1:
  * Input: nums = [1,12,-5,-6,50,3], k = 4
@@ -12,10 +16,11 @@
  * Example 2:
  * Input: nums = [5], k = 1
  * Output: 5.0
- * Hint: Single window is the whole array; average equals that one element.
  *
- * Time Complexity: O(n)
- * Space Complexity: O(1)
+ * Constraints:
+ * - n == nums.length
+ * - 1 <= k <= n <= 10^5
+ * - -10^4 <= nums[i] <= 10^4
  */
 public class MaximumAverageSubarrayI {
 

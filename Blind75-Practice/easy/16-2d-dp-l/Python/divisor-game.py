@@ -1,36 +1,25 @@
 """
-LeetCode 1025: Divisor Game
+1025. Divisor Game
 Difficulty: Easy
 Pattern: Dynamic Programming / Math
 
 Problem:
-Alice and Bob take turns playing a game, with Alice starting first.
-
-Initially, there is a number n on the chalkboard. On each player's turn, that player makes
-a move consisting of:
-
-- Choosing any x with 0 < x < n and n % x == 0.
-- Replacing the number n on the chalkboard with n - x.
-
-Also, if a player cannot make a move, they lose the game.
-
-Return true if and only if Alice wins the game, assuming both players play optimally.
+Alice and Bob take turns playing a game, with Alice starting first. Initially,
+there is a number n on the chalkboard. On each player's turn, that player
+chooses any x with 0 < x < n and n % x == 0, then replaces n with n - x. If a
+player cannot make a move, they lose the game. Return true if and only if
+Alice wins the game, assuming both players play optimally.
 
 Example 1:
 Input: n = 2
 Output: true
-Explanation: Alice chooses 1, Bob is left with 1 and loses.
 
 Example 2:
 Input: n = 3
 Output: false
-Explanation: Alice chooses 1, Bob is left with 2 and wins.
 
 Constraints:
 - 1 <= n <= 1000
-
-Time Complexity: O(1) with math trick, O(n^2) with DP
-Space Complexity: O(1) with math trick, O(n) with DP
 """
 
 

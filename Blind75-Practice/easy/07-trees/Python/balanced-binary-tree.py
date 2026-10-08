@@ -1,13 +1,12 @@
 """
-LeetCode 110: Balanced Binary Tree
+110. Balanced Binary Tree
 Difficulty: Easy
 Pattern: Trees (DFS)
 
 Problem:
-Given a binary tree, determine if it is height-balanced.
-
-A height-balanced binary tree is a binary tree in which the depth of the
-two subtrees of every node never differs by more than one.
+Given the root of a binary tree, return true if it is height-balanced. A
+height-balanced binary tree is a binary tree in which the depth of the two
+subtrees of every node never differs by more than one.
 
 Example 1:
 Input: root = [3,9,20,null,null,15,7]
@@ -24,9 +23,6 @@ Output: true
 Constraints:
 - The number of nodes in the tree is in the range [0, 5000]
 - -10^4 <= Node.val <= 10^4
-
-Time Complexity: O(n)
-Space Complexity: O(h) where h is height
 """
 
 from typing import Optional

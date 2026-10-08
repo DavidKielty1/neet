@@ -1,26 +1,27 @@
 """
-Easy Version: Find First Non-Repeating Character
+387. First Unique Character in a String
 Difficulty: Easy
 Pattern: Hash Map
 
-Given a string s, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+Problem:
+Given a string s, find the first non-repeating character in it and return
+its index. If it does not exist, return -1.
 
 Example 1:
 Input: s = "leetcode"
 Output: 0
-Explanation: 'l' is the first non-repeating character.
 
 Example 2:
 Input: s = "loveleetcode"
 Output: 2
-Explanation: 'v' is the first non-repeating character.
 
 Example 3:
 Input: s = "aabb"
 Output: -1
-Explanation: No non-repeating character exists.
 
-Time: O(n), Space: O(1) - at most 26 characters
+Constraints:
+- 1 <= s.length <= 10^5
+- s consists of only lowercase English letters
 """
 
 from typing import Dict

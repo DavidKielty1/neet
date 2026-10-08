@@ -17,21 +17,14 @@ elements without changing the order of the remaining elements.
 Example 1:
 Input: nums = [2,1,3,3], k = 2
 Output: [3,3]
-Explanation:
-The subsequence has the largest sum of 3 + 3 = 6.
 
 Example 2:
 Input: nums = [-1,-2,3,4], k = 3
 Output: [-1,3,4]
-Explanation:
-The subsequence has the largest sum of -1 + 3 + 4 = 6.
 
 Example 3:
 Input: nums = [3,4,3,3], k = 2
 Output: [3,4] or [4,3] or [3,3]
-Explanation:
-The subsequence has the largest sum of 3 + 4 = 7.
-Other possible subsequences are [4,3] and [3,3] with sum 7.
 
 Constraints:
 - 1 <= nums.length <= 1000

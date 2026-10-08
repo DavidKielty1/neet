@@ -19,14 +19,10 @@ Return true if it's possible to convert s to t in k moves, otherwise return fals
 Example 1:
 Input: s = "input", t = "ouput", k = 9
 Output: true
-Explanation: In the 6th move, we shift 'i' 6 times to get 'o'. And in the 7th move we shift 'n' to get 'u'.
 
 Example 2:
 Input: s = "abc", t = "bcd", k = 10
 Output: false
-Explanation: We need to shift each character in s one time to convert it into t.
-We can shift 'a' to 'b' during the 1st move. However, there is no way to shift the other
-characters in the remaining moves to get t from s.
 
 Example 3:
 Input: s = "aab", t = "bbb", k = 27

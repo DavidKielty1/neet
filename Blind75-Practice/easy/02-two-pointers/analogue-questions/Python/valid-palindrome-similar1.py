@@ -13,7 +13,6 @@ Output: true
 Example 2:
 Input: s = "abca"
 Output: true
-Explanation: You could delete the character 'c'.
 
 Example 3:
 Input: s = "abc"

@@ -1,23 +1,34 @@
 """
-LeetCode 463: Island Perimeter
+463. Island Perimeter
 Difficulty: Easy
 Pattern: Graphs (grid)
 
 Problem:
-You are given row x col binary grid where 1 is land and 0 is water. Grid cells connect
-only horizontally/vertically. There is exactly one island (connected 1s). Return its
-perimeter (number of edges touching water or boundary).
+You are given row x col grid representing a map where grid[i][j] = 1 represents
+land and grid[i][j] = 0 represents water. Grid cells are connected
+horizontally/vertically (not diagonally). The grid is completely surrounded by
+water, and there is exactly one island (one or more connected land cells). The
+island does not have lakes. One cell is a square with side length 1. Return the
+perimeter of the island.
 
-Example:
+Example 1:
 Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 Output: 16
 
-Constraints:
-- row == grid.length, col == grid[i].length
-- 1 <= row, col <= 100
+Example 2:
+Input: grid = [[1]]
+Output: 4
 
-Time Complexity: O(m * n)
-Space Complexity: O(1)
+Example 3:
+Input: grid = [[1,0]]
+Output: 4
+
+Constraints:
+- row == grid.length
+- col == grid[i].length
+- 1 <= row, col <= 100
+- grid[i][j] is 0 or 1
+- There is exactly one island in grid
 """
 
 from typing import List

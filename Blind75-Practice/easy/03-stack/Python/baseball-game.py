@@ -1,13 +1,35 @@
 """
-LeetCode 682: Baseball Game
+682. Baseball Game
 Difficulty: Easy
 Pattern: Stack
 
-Parse operations: integer score, "+" sum last two, "D" double last, "C" cancel last.
-Return sum of scores after all ops.
+Problem:
+You are keeping score for a baseball game with strange rules. You are given
+a list of strings operations, where operations[i] is one of:
+- An integer x: record a new score of x.
+- "+": record a new score that is the sum of the previous two scores.
+- "D": record a new score that is double the previous score.
+- "C": invalidate and remove the previous score.
+Return the sum of all recorded scores after applying every operation. It is
+guaranteed that operations will be valid.
 
-Time Complexity: O(n)
-Space Complexity: O(n) for the stack
+Example 1:
+Input: ops = ["5","2","C","D","+"]
+Output: 30
+
+Example 2:
+Input: ops = ["5","-2","4","C","D","9","+","+"]
+Output: 27
+
+Example 3:
+Input: ops = ["1","C"]
+Output: 0
+
+Constraints:
+- 1 <= operations.length <= 1000
+- operations[i] is "C", "D", "+", or an integer string in [-3 * 10^4, 3 * 10^4]
+- For + and D operations, there are enough previous scores
+- For C operations, there is at least one previous score
 """
 
 from typing import List

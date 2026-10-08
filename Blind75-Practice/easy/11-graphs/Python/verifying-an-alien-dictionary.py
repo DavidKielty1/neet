@@ -1,12 +1,15 @@
 """
-LeetCode 953: Verifying an Alien Dictionary
+953. Verifying an Alien Dictionary
 Difficulty: Easy
 Pattern: Graphs / ordering
 
 Problem:
-In an alien language alphabet order is given by string order (all letters are unique).
-Given an array of words from that language, return true if and only if they are sorted
-lexicographically in this alien language.
+In an alien language, they also use English lowercase letters, but possibly in
+a different order. The order of the alphabet is some permutation of lowercase
+letters given by the string order. Given a sequence of words written in this
+language, return true if and only if the given words are sorted
+lexicographically in this alien language. If two words share a common prefix,
+the shorter word must come first.
 
 Example 1:
 Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
@@ -16,12 +19,16 @@ Example 2:
 Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz"
 Output: false
 
-Constraints:
-- 1 <= words.length <= 100, 1 <= words[i].length <= 20
-- order.length == 26
+Example 3:
+Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz"
+Output: false
 
-Time Complexity: O(total characters)
-Space Complexity: O(1) for the rank map (fixed alphabet size)
+Constraints:
+- 1 <= words.length <= 100
+- 1 <= words[i].length <= 20
+- order.length == 26
+- All characters in words[i] and order are English lowercase letters
+- All characters in order are unique
 """
 
 from typing import List

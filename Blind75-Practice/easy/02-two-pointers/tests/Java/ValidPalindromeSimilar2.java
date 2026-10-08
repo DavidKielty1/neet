@@ -14,12 +14,10 @@ Return the minimum number of steps to make the given string empty.
 Example 1:
 Input: s = "ababa"
 Output: 1
-Explanation: The string is already a palindrome, remove it in 1 step.
 
 Example 2:
 Input: s = "aaabbb"
 Output: 2
-Explanation: Remove all 'a' first (palindrome), then remove all 'b' (palindrome).
 
 Example 3:
 Input: s = "baabb"

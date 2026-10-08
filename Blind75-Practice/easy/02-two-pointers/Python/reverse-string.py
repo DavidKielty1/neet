@@ -3,18 +3,22 @@
 Difficulty: Easy
 Pattern: Two Pointers
 
+Problem:
 Write a function that reverses a string. The input string is given as an
-array of characters s.
+array of characters s. You must do this by modifying the input array
+in-place with O(1) extra memory. Do not return a new array.
 
-Contract (LeetCode 344):
-- Do not return anything; modify s in-place by reversing the characters.
-
-Example:
-Input: s = ["h","e","l","l","o","a"]
-           [ 0   1   2   3   4   5]
+Example 1:
+Input: s = ["h","e","l","l","o"]
 Output: ["o","l","l","e","h"]
 
-Time: O(n), Space: O(1)
+Example 2:
+Input: s = ["H","a","n","n","a","h"]
+Output: ["h","a","n","n","a","H"]
+
+Constraints:
+- 1 <= s.length <= 10^5
+- s[i] is a printable ascii character
 """
 
 from typing import List

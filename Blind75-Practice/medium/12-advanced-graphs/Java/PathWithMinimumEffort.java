@@ -16,7 +16,7 @@
  * bottom-right cell.
  *
  * Example 1:
- * Input: heights = [[1,2,2],[3,8,2],[5,3,5]]
+ * Input: heights = 
  * Output: 2
  * Explanation: The path [1,3,5,3,5] has maximum absolute difference 2.
  *
@@ -33,11 +33,9 @@
 
 public class PathWithMinimumEffort {
     public int minimumEffortPath(int[][] heights) {
-    //
-    //
-    //
-    //
-    //
+        
+
+
     //
     //
     //
@@ -91,20 +89,24 @@ public class PathWithMinimumEffort {
     //     Arrays.fill(row, Integer.MAX_VALUE);
     // }
     // effort[0][0] = 0;
+
     // int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
     // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
     // minHeap.offer(new int[] {0, 0, 0});
+    
     // while (!minHeap.isEmpty()) {
     //     int[] current = minHeap.poll();
     //     int currentEffort = current[0];
     //     int row = current[1];
     //     int col = current[2];
+
     //     if (row == rows - 1 && col == cols - 1) {
     //         return currentEffort;
     //     }
     //     if (currentEffort > effort[row][col]) {
     //         continue;
     //     }
+
     //     for (int[] dir : directions) {
     //         int nextRow = row + dir[0];
     //         int nextCol = col + dir[1];

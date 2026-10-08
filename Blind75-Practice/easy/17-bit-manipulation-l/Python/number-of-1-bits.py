@@ -1,16 +1,15 @@
 """
-LeetCode 191: Number of 1 Bits (Hamming Weight)
+191. Number of 1 Bits
 Difficulty: Easy
 Pattern: Bit Manipulation
 
 Problem:
-Write a function that takes the binary representation of an unsigned integer and
-returns the number of '1' bits it has (also known as the Hamming weight).
+Write a function that takes the binary representation of a positive integer n
+and returns the number of set bits it has (also known as the Hamming weight).
 
 Example 1:
 Input: n = 00000000000000000000000000001011
 Output: 3
-Explanation: The input binary string has a total of three '1' bits.
 
 Example 2:
 Input: n = 00000000000000000000000010000000
@@ -21,10 +20,7 @@ Input: n = 11111111111111111111111111111101
 Output: 31
 
 Constraints:
-- The input must be a binary string of length 32
-
-Time Complexity: O(1) or O(k) where k is number of 1 bits
-Space Complexity: O(1)
+- The input is a 32-bit unsigned integer
 """
 
 

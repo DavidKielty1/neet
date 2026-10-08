@@ -13,12 +13,10 @@ The path can be start from any node and go in the downward direction only.
 Example 1:
 Input: root = [1,null,3,2,4,null,null,null,5]
 Output: 3
-Explanation: Longest path is 3 -> 4 -> 5
 
 Example 2:
 Input: root = [2,null,3,2,null,1]
 Output: 2
-Explanation: Longest path is 2 -> 3
 
 Constraints:
 - The number of nodes in the tree is in the range [1, 3 * 10^4]

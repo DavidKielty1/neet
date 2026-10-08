@@ -4,10 +4,10 @@
  * Pattern: Math & Geometry
  *
  * Problem:
- * For two strings `str1` and `str2`, we say `t` divides a string `s` if `s` is formed
- * by concatenating `t` one or more times.
- *
- * Return the largest string `x` such that `x` divides both `str1` and `str2`.
+ * For two strings str1 and str2, we say that t divides s if and only if s =
+ * t + t + ... + t (t concatenated with itself one or more times). Given two
+ * strings str1 and str2, return the largest string x such that x divides both
+ * str1 and str2. If no such non-empty string exists, return an empty string.
  *
  * Example 1:
  * Input: str1 = "ABCABC", str2 = "ABC"
@@ -23,11 +23,7 @@
  *
  * Constraints:
  * - 1 <= str1.length, str2.length <= 1000
- * - str1 and str2 consist of uppercase English letters
- *
- * Notes:
- * - If `str1 + str2` is not equal to `str2 + str1`, then no common divisor string exists.
- * - Otherwise the answer length is `gcd(str1.length(), str2.length())`.
+ * - str1 and str2 consist of English uppercase letters
  */
 
 public class GreatestCommonDivisorOfStrings {

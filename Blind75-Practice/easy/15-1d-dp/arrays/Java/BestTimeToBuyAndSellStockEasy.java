@@ -1,12 +1,25 @@
 /*
-Practice: min and max in array (pairs with best-time-to-buy-and-sell-stock-easy.py)
-Difficulty: Easy
-Pattern: One Pass
-
-Return [min, max] for the array values.
-
-Time: O(n), Space: O(1)
-*/
+ * Find Minimum and Maximum in Array
+ * Difficulty: Easy
+ * Pattern: One Pass
+ *
+ * Problem:
+ * Given an integer array nums, return an array of two integers [min, max]
+ * where min is the smallest value in nums and max is the largest value in
+ * nums. Scan the array once. If nums is empty, return an empty array.
+ *
+ * Example 1:
+ * Input: nums = [3,2,1,4,5]
+ * Output: [1,5]
+ *
+ * Example 2:
+ * Input: nums = [7,6,4,3,1]
+ * Output: [1,7]
+ *
+ * Constraints:
+ * - 1 <= nums.length <= 10^5
+ * - -10^9 <= nums[i] <= 10^9
+ */
 import java.util.Arrays;
 
 public class BestTimeToBuyAndSellStockEasy {

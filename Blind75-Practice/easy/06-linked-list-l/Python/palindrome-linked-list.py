@@ -1,10 +1,12 @@
 """
-LeetCode 234: Palindrome Linked List
+234. Palindrome Linked List
 Difficulty: Easy
 Pattern: Linked List / Two Pointers
 
 Problem:
-Given the head of a singly linked list, return true if it is a palindrome or false otherwise.
+Given the head of a singly linked list, return true if it is a palindrome or
+false otherwise. The list is a palindrome if the sequence of node values
+reads the same forward and backward.
 
 Example 1:
 Input: head = [1,2,2,1]
@@ -17,11 +19,6 @@ Output: false
 Constraints:
 - The number of nodes in the list is in the range [1, 10^5]
 - 0 <= Node.val <= 9
-
-Follow up: Could you do it in O(n) time and O(1) space?
-
-Time Complexity: O(n)
-Space Complexity: O(1) for optimal solution, O(n) for simple solution
 """
 
 from typing import Optional

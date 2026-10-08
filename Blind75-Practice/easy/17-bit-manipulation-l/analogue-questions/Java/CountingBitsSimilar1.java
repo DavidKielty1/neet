@@ -15,7 +15,6 @@ Return the array after sorting it.
 Example 1:
 Input: arr = [0,1,2,3,4,5,6,7,8]
 Output: [0,1,2,4,8,3,5,6,7]
-Explanation: [0] has 0 ones, [1,2,4,8] have 1 one, [3,5,6] have 2 ones, [7] has 3 ones
 
 Example 2:
 Input: arr = [1024,512,256,128,64,32,16,8,4,2,1]

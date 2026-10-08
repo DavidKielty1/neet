@@ -3,42 +3,35 @@
  * Difficulty: Easy
  * Pattern: Binary Search
  *
- * Problem
- * -------
- * You have `n` versions `[1, 2, ..., n]`. A bad version breaks the build; every version
- * after the first bad one is also bad. You only have the API:
+ * Problem:
+ * You are a product manager and currently leading a team to develop a new
+ * product. The latest version fails the quality check. Since each version is
+ * developed based on the previous version, all versions after a bad version
+ * are also bad. Suppose you have n versions [1, 2, ..., n] and you want to
+ * find the first bad one. You are given an API bool isBadVersion(version)
+ * which returns whether version is bad. Implement a function that returns the
+ * first bad version. Minimize the number of calls to the API.
  *
- *   boolean isBadVersion(version)
+ * Example 1:
+ * Input: n = 5, bad = 4
+ * Output: 4
  *
- * Return the **first** bad version (smallest version number that is bad).
+ * Example 2:
+ * Input: n = 1, bad = 1
+ * Output: 1
  *
- * Example
- * -------
- * n = 5, first bad = 4 -> return 4
- *
- * Constraints
- * -----------
- * - `1 <= bad <= n <= 2^31 - 1`
- *
- * How to think about it
- * ---------------------
- * Answers are monotone: good, good, ... bad, bad, ... so you binary-search for the 
- * **leftmost** bad (first `true`). Use `lo < hi`, shrink toward the boundary.
- *
- * Time: O(log n) calls to isBadVersion, Space: O(1)
- *
- * Local note
- * ----------
- * Below, `VersionControl` uses a fixed boolean table so `isBadVersion` behaves like a
- * hidden monotone array (e.g. [f,f,f,t,t] for versions 1..5). On LeetCode, the platform
- * provides this API; you normally submit only `Solution` (and may delete the local
- * `VersionControl` in your editor there).
+ * Constraints:
+ * - 1 <= bad <= n <= 2^31 - 1
  */
 
     // [good, good, good, bad, bad, bad, bad]
-    // [false false false good good good good]
+    // [false false false true true true true]
 
 class Solution extends VersionControl {
+    private int return(int n) {
+        
+    }
+
     //
     //
     //

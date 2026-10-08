@@ -10,12 +10,10 @@ pairs of indices (i, j) where i < j and nums[i] + nums[j] == target.
 Example 1:
 Input: nums = [1,2,3,2,1], target = 3
 Output: 2
-Explanation: Pairs are (0,1) and (2,4): nums[0]+nums[1]=1+2=3, nums[2]+nums[4]=3+0=3
 
 Example 2:
 Input: nums = [1,1,1,1], target = 2
 Output: 6
-Explanation: All pairs sum to 2
 
 Example 3:
 Input: nums = [1,2,3], target = 7

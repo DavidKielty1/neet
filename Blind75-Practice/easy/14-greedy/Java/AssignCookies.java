@@ -1,42 +1,29 @@
 /*
-455. Assign Cookies
-Difficulty: Easy
-Pattern: Greedy
-
-Problem:
-You have:
-- `g`, where `g[i]` is the minimum cookie size needed to satisfy the ith child
-- `s`, where `s[j]` is the size of the jth cookie
-
-Each child can receive at most one cookie, and each cookie can be used at most once.
-Return the maximum number of children that can be satisfied.
-
-Example 1:
-Input: g = [1, 2, 3], s = [1, 1]
-Output: 1
-Explanation:
-Only one child can be satisfied because there is only one cookie large enough.
-
-Example 2:
-Input: g = [1, 2], s = [1, 2, 3]
-Output: 2
-Explanation:
-Give cookie 1 to the child with greed 1, and cookie 2 or 3 to the child with greed 2.
-
-Constraints:
-- 1 <= g.length <= 3 * 10^4
-- 0 <= s.length <= 3 * 10^4
-- 1 <= g[i], s[j] <= 2^31 - 1
-
-Why greedy works:
-Sort both arrays and try to satisfy the least greedy child first using the smallest
-cookie that works. This avoids wasting large cookies on children who could have be
-en
-satisfied with smaller ones.
-
-Time: O(n log n + m log m)
-Space: O(1) excluding sort
-*/
+ * 455. Assign Cookies
+ * Difficulty: Easy
+ * Pattern: Greedy
+ *
+ * Problem:
+ * Assume you want to give your children some cookies. You should give each
+ * child at most one cookie. Each child i has a greed factor g[i], which is
+ * the minimum size of a cookie that the child will be content with, and each
+ * cookie j has a size s[j]. If s[j] >= g[i], we can assign the cookie j to
+ * the child i, and the child i will be content. Return the maximum number of
+ * content children.
+ *
+ * Example 1:
+ * Input: g = [1,2,3], s = [1,1]
+ * Output: 1
+ *
+ * Example 2:
+ * Input: g = [1,2], s = [1,2,3]
+ * Output: 2
+ *
+ * Constraints:
+ * - 1 <= g.length <= 3 * 10^4
+ * - 0 <= s.length <= 3 * 10^4
+ * - 1 <= g[i], s[j] <= 2^31 - 1
+ */
 
 public class AssignCookies {
     public int findContentChildren(int[] g, int[] s) {

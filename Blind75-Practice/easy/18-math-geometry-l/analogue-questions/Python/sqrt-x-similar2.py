@@ -10,7 +10,6 @@ a^2 + b^2 = c.
 Example 1:
 Input: c = 5
 Output: true
-Explanation: 1 * 1 + 2 * 2 = 5
 
 Example 2:
 Input: c = 3

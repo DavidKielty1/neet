@@ -1,41 +1,42 @@
 /*
-LeetCode 88: Merge Sorted Array
-Difficulty: Easy
-Pattern: Two Pointers
-
-Problem:
-You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing
-order, and two integers `m` and `n`, representing the number of valid elements
-in `nums1` and `nums2` respectively.
-
-Merge `nums2` into `nums1` as one sorted array. The final sorted array should
-be stored inside `nums1`, which has a length of `m + n` with extra space at the
-end.
-
-Example 1:
-Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
-Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [1,5,6], n = 3
-Output: [1,2,2,3,5,6]
-Explanation: Merge the valid parts [1,2,3] and [2,5,6] into nums1.
-
-Example 2:
-Input: nums1 = [1], m = 1, nums2 = [], n = 0
-Output: [1]
-Explanation: nums2 is empty, so nums1 stays the same.
-
-Example 3:
-Input: nums1 = [0], m = 0, nums2 = [1], n = 1
-Output: [1]
-Explanation: nums1 has no valid initial elements, so copy nums2 in.
-
-Time Complexity: O(m + n)
-Space Complexity: O(1)
-*/
+ * 88. Merge Sorted Array
+ * Difficulty: Easy
+ * Pattern: Two Pointers
+ *
+ * Problem:
+ * You are given two integer arrays nums1 and nums2, sorted in non-decreasing
+ * order, and two integers m and n, representing the number of valid elements
+ * in nums1 and nums2 respectively. Merge nums2 into nums1 as one sorted array.
+ * nums1 has length m + n, with the last n slots unused (filled with 0). Store
+ * the merged result in-place in nums1. Do not return anything.
+ *
+ * Example 1:
+ * Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+ * Output: [1,2,2,3,5,6]
+ *
+ * Example 2:
+ * Input: nums1 = [1], m = 1, nums2 = [], n = 0
+ * Output: [1]
+ *
+ * Example 3:
+ * Input: nums1 = [0], m = 0, nums2 = [1], n = 1
+ * Output: [1]
+ *
+ * Constraints:
+ * - nums1.length == m + n
+ * - nums2.length == n
+ * - 0 <= m, n <= 200
+ * - 1 <= m + n <= 200
+ * - -10^9 <= nums1[i], nums2[j] <= 10^9
+ */
 
 import java.util.Arrays;
 
 public class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
+        
+    }
+
 
         //
 

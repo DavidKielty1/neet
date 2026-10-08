@@ -1,44 +1,45 @@
 /*
-705. Design HashSet
-Difficulty: Easy
-Pattern: Arrays & Hashing
-
-void add(key), void remove(key), boolean contains(key). Keys in [0, 1_000_000].
-
-Approach: boolean[] presence table — O(1) ops, fixed space for key range.
-
-Example:
-Input:  ["MyHashSet","add","add","contains","contains","add","contains","remove","contains"]
-        [[],[1],[2],[1],[3],[2],[2],[2],[2]]
-Output: [null,null,null,true,false,null,true,null,false]
-Explanation:
-  add(1)       → set: {1}
-  add(2)       → set: {1,2}
-  contains(1)  → true
-  contains(3)  → false (not found)
-  add(2)       → set: {1,2}  (no duplicate added)
-  contains(2)  → true
-  remove(2)    → set: {1}
-  contains(2)  → false
-
-Time: O(1) per op, Space: O(10^6)
-*/
+ * 705. Design HashSet
+ * Difficulty: Easy
+ * Pattern: Arrays & Hashing
+ *
+ * Problem:
+ * Design a HashSet without using any built-in hash table libraries. Implement
+ * the MyHashSet class with these operations:
+ * - void add(int key): insert key into the set.
+ * - void remove(int key): remove key from the set if present.
+ * - boolean contains(int key): return true if key is in the set.
+ * Keys are integers.
+ *
+ * Example 1:
+ * Input: ["MyHashSet","add","add","contains","contains","add","contains","remove","contains"]
+ * [[],[1],[2],[1],[3],[2],[2],[2],[2]]
+ * Output: [null,null,null,true,false,null,true,null,false]
+ *
+ * Constraints:
+ * - 0 <= key <= 10^6
+ * - At most 10^4 calls will be made to add, remove, and contains
+ */
 
 public class DesignHashSet {
     static class MyHashSet {
-        boolean[] present = new boolean[1000000];
+        boolean[] set = new boolean[1_000_000_1];
 
-        public void add(int key) {
-            present[key] = true;
+        private void add(int key) {
+            set[key] = true;
         }
 
-        public void remove(int key) {
-            present[key] = false;
+
+        private void remove(int key) {
+            set[key] = false;
         }
 
-        public boolean contains(int key) {
-            return present[key];
+
+        private boolean contains(int key) {
+            return set[key];
         }
+
+
             //
 
             //

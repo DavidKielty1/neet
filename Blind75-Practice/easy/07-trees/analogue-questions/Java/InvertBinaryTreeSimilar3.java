@@ -12,7 +12,6 @@ A leaf is a node with no children. A left leaf is a leaf that is the left child 
 Example 1:
 Input: root = [3,9,20,null,null,15,7]
 Output: 24
-Explanation: There are two left leaves: 9 and 15.
 
 Example 2:
 Input: root = [1]

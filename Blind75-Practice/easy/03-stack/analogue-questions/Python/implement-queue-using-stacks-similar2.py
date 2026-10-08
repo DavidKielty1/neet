@@ -28,11 +28,6 @@ are multiple valid answers, return any of them.
 Example 1:
 Input: target = [1,3], n = 3
 Output: ["Push","Push","Pop","Push"]
-Explanation: Initially the stack s is empty. The last element is the top of the stack.
-Read 1 from stream and push it to the stack. s = [1].
-Read 2 from stream and push it to the stack. s = [1,2].
-Pop the integer on the top of the stack. s = [1].
-Read 3 from stream and push it to the stack. s = [1,3].
 
 Example 2:
 Input: target = [1,2,3], n = 3

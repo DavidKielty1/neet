@@ -14,12 +14,10 @@ Return the minimum cost of connecting all the given sticks into one stick in thi
 Example 1:
 Input: sticks = [2,4,3]
 Output: 14
-Explanation: Connect 2+3=5 (cost 5), then 5+4=9 (cost 9), total = 14
 
 Example 2:
 Input: sticks = [1,8,3,5]
 Output: 30
-Explanation: Connect 1+3=4 (cost 4), 4+5=9 (cost 9), 9+8=17 (cost 17), total = 30
 
 Constraints:
 - 1 <= sticks.length <= 10^4

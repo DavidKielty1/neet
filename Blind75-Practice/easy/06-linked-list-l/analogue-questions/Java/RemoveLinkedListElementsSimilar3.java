@@ -20,8 +20,6 @@ Return the head of the modified list after removing the mentioned nodes.
 Example 1:
 Input: head = [1,2,3,4,5,6,7,8,9,10,11,12,13], m = 2, n = 3
 Output: [1,2,6,7,11,12]
-Explanation: Keep the first (m = 2) nodes 1, 2, remove the next (n = 3) nodes 3, 4, 5,
-keep the next (m = 2) nodes 6, 7, remove the next (n = 3) nodes 8, 9, 10, and so on.
 
 Example 2:
 Input: head = [1,2,3,4,5,6,7,8,9,10,11], m = 1, n = 3

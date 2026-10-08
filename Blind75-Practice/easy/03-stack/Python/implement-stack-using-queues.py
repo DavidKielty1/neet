@@ -1,17 +1,27 @@
 """
-LeetCode 225: Implement Stack using Queues
+225. Implement Stack using Queues
 Difficulty: Easy
 Pattern: Stack
 
-Implement LIFO stack using only queue operations (FIFO).
+Problem:
+Implement a last-in-first-out (LIFO) stack using only queues. The
+implemented stack should support these operations:
+- void push(int x): push element x to the top of the stack.
+- int pop(): remove the element on the top of the stack and return it.
+- int top(): return the element on the top of the stack.
+- boolean empty(): return true if the stack is empty, false otherwise.
+You may use only standard queue operations: push to back, peek/pop from
+front, size, and is empty.
 
-Approach: One deque — push appends; pop/peek rotate size-1 times so tail becomes head (amortized
-cost per op can be O(n) for naive single-queue rotation, or use two queues / lazy top).
+Example 1:
+Input: ["MyStack","push","push","top","pop","empty"]
+[[],[1],[2],[],[],[]]
+Output: [null,null,null,2,2,false]
 
-This version: collections.deque for O(1) popleft/append; push O(1); pop O(n) by rotating.
-
-Time Complexity: push O(1), pop/top O(n) worst case per call (acceptable for practice)
-Space Complexity: O(n)
+Constraints:
+- 1 <= x <= 9
+- At most 100 calls will be made to push, pop, top, and empty
+- All the calls to pop and top are valid
 """
 
 from collections import deque

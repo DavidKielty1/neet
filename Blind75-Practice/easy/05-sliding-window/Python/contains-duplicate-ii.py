@@ -1,15 +1,29 @@
 """
-LeetCode 219: Contains Duplicate II
+219. Contains Duplicate II
 Difficulty: Easy
 Pattern: Sliding Window
 
-Given an integer array nums and an integer k, return true if there are two distinct indices
-i and j such that nums[i] == nums[j] and abs(i - j) <= k.
+Problem:
+Given an integer array nums and an integer k, return true if there are two
+distinct indices i and j such that nums[i] == nums[j] and |i - j| <= k.
+Otherwise return false.
 
-Approach: Hash map from value to last index; slide by removing stale entries or checking distance.
+Example 1:
+Input: nums = [1,2,3,1], k = 3
+Output: true
 
-Time Complexity: O(n)
-Space Complexity: O(min(n, k)) — at most k+1 distinct indices matter in the window
+Example 2:
+Input: nums = [1,0,1,1], k = 1
+Output: true
+
+Example 3:
+Input: nums = [1,2,3,1,2,3], k = 2
+Output: false
+
+Constraints:
+- 1 <= nums.length <= 10^5
+- -10^9 <= nums[i] <= 10^9
+- 0 <= k <= 10^5
 """
 
 from typing import Dict, List

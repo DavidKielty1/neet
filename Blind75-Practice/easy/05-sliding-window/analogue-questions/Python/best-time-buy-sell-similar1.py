@@ -15,7 +15,6 @@ Note: You may not engage in multiple transactions simultaneously.
 Example 1:
 Input: prices = [1,3,2,8,4,9], fee = 2
 Output: 8
-Explanation: Maximum profit = ((8-1)-2) + ((9-4)-2) = 8
 
 Example 2:
 Input: prices = [1,3,7,5,10,3], fee = 3

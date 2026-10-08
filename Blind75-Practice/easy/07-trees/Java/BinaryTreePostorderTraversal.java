@@ -1,21 +1,29 @@
 /*
-145. Binary Tree Postorder Traversal
-Difficulty: Easy
-Pattern: Trees / DFS
-
-Given the root of a binary tree, return the postorder traversal of its nodes'
-values. Postorder means: visit left subtree, then right subtree, then the
-current node.
-
-Example:
-root = [1,null,2,3] -> [3,2,1]
-Visit 3 first, then 2, then return to 1 last.
-
-Example:
-root = [] -> []
-
-Time: O(n), Space: O(h)
-*/
+ * 145. Binary Tree Postorder Traversal
+ * Difficulty: Easy
+ * Pattern: Trees / DFS
+ *
+ * Problem:
+ * Given the root of a binary tree, return the postorder traversal of its
+ * nodes' values. Postorder means visit the left subtree, then the right
+ * subtree, then the current node.
+ *
+ * Example 1:
+ * Input: root = [1,null,2,3]
+ * Output: [3,2,1]
+ *
+ * Example 2:
+ * Input: root = []
+ * Output: []
+ *
+ * Example 3:
+ * Input: root = [1]
+ * Output: [1]
+ *
+ * Constraints:
+ * - The number of nodes in the tree is in the range [0, 100]
+ * - -100 <= Node.val <= 100
+ */
 import java.util.List;
 
 public class BinaryTreePostorderTraversal {

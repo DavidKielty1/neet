@@ -1,36 +1,32 @@
 import java.util.Arrays;
 
 /*
-LeetCode 977: Squares of a Sorted Array
-Difficulty: Easy
-Pattern: Two Pointers
-
-Problem:
-Given an integer array `nums` sorted in non-decreasing order, return an array
-of the squares of each number, also sorted in non-decreasing order.
-
-Example 1:
-Input: nums = [-4,-1,0,3,10]
-Output: [0,1,9,16,100]
-Explanation: Squaring gives [16,1,0,9,100], which must be reordered into sorted order.
-
-Example 2:
-Input: nums = [-7,-3,2,3,11]
-Output: [4,9,9,49,121]
-Explanation: The largest square can come from either end of the input array.
-
-Time Complexity: O(n)
-Space Complexity: O(n)
-*/
+ * 977. Squares of a Sorted Array
+ * Difficulty: Easy
+ * Pattern: Two Pointers
+ *
+ * Problem:
+ * Given an integer array nums sorted in non-decreasing order, return an array
+ * of the squares of each number, also sorted in non-decreasing order.
+ *
+ * Example 1:
+ * Input: nums = [-4,-1,0,3,10]
+ * Output: [0,1,9,16,100]
+ *
+ * Example 2:
+ * Input: nums = [-7,-3,2,3,11]
+ * Output: [4,9,9,49,121]
+ *
+ * Constraints:
+ * - 1 <= nums.length <= 10^4
+ * - -10^4 <= nums[i] <= 10^4
+ * - nums is sorted in non-decreasing order
+ */
 public class SquaresOfSortedArray {
-
-    /*
-     * Approach: Two pointers from both ends
-     *
-     * [-4, -1, 0, 3, 10] -> [0, 1, 9, 16, 100]
-     */
-
     public static int[] sortedSquares(int[] nums) {
+        
+    }
+}
 
         //
 

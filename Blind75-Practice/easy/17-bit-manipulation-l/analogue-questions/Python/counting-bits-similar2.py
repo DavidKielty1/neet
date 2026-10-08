@@ -17,7 +17,6 @@ Output: ["0:01","0:02","0:04","0:08","0:16","0:32","1:00","2:00","4:00","8:00"]
 Example 2:
 Input: turnedOn = 9
 Output: []
-Explanation: No valid time has 9 LEDs on
 
 Constraints:
 - 0 <= turnedOn <= 10

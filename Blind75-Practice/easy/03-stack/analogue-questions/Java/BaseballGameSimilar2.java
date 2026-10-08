@@ -19,14 +19,6 @@
  * Example 1:
  * Input: operations = ["8", "H", "D", "+", "C", "3"]
  * Output: 23
- * Explanation:
- * - "8" -> [8]
- * - "H" -> [8, 4]
- * - "D" -> [8, 4, 8]
- * - "+" -> [8, 4, 8, 12]
- * - "C" -> [8, 4, 8]
- * - "3" -> [8, 4, 8, 3]
- * Total = 23
  *
  * Example 2:
  * Input: operations = ["7", "H", "H"]

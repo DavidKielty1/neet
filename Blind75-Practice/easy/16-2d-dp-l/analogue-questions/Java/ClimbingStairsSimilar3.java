@@ -15,12 +15,10 @@ You can start from step 0 or step 1.
 Example 1:
 Input: n = 3, cost = [10, 15, 20]
 Output: 15
-Explanation: Start at step 1, pay 15, climb to top
 
 Example 2:
 Input: n = 5, cost = [1, 100, 1, 1, 1, 100]
 Output: 3
-Explanation: Start at 0, pay 1, step to 2, pay 1, step to 4, pay 1, step to top
 
 Constraints:
 - 2 <= n <= 1000

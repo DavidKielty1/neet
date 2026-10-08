@@ -1,11 +1,12 @@
 """
-LeetCode 94: Binary Tree Inorder Traversal
+94. Binary Tree Inorder Traversal
 Difficulty: Easy
 Pattern: Trees (DFS)
 
 Problem:
-Given the root of a binary tree, return the inorder traversal of its node values
-(left subtree, then root, then right subtree).
+Given the root of a binary tree, return the inorder traversal of its nodes'
+values. Inorder means visit the left subtree, then the current node, then
+the right subtree.
 
 Example 1:
 Input: root = [1,null,2,3]
@@ -15,12 +16,13 @@ Example 2:
 Input: root = []
 Output: []
 
-Constraints:
-- The number of nodes is in the range [0, 100]
-- -100 <= Node.val <= 100
+Example 3:
+Input: root = [1]
+Output: [1]
 
-Time Complexity: O(n)
-Space Complexity: O(h) for recursion stack; O(n) worst case skewed tree
+Constraints:
+- The number of nodes in the tree is in the range [0, 100]
+- -100 <= Node.val <= 100
 """
 
 from __future__ import annotations

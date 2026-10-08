@@ -1,25 +1,29 @@
 /*
-144. Binary Tree Preorder Traversal
-Difficulty: Easy
-Pattern: Trees / DFS
-
-Given the root of a binary tree, return the preorder traversal of its nodes'
-values. Preorder means: visit current node, then left subtree, then right
-subtree.
-
-Example:
-root = [1,null,2,3] -> [1,2,3]
-Record 1 first, then go into the right subtree, where 2 is visited before 3.
-
-Example:
-root = [] -> []
-
-Idea:
-Use DFS recursion. The pattern is always: record the node value, recurse left,
-then recurse right.
-
-Time: O(n), Space: O(h)
-*/
+ * 144. Binary Tree Preorder Traversal
+ * Difficulty: Easy
+ * Pattern: Trees / DFS
+ *
+ * Problem:
+ * Given the root of a binary tree, return the preorder traversal of its nodes'
+ * values. Preorder means visit the current node, then the left subtree, then
+ * the right subtree.
+ *
+ * Example 1:
+ * Input: root = [1,null,2,3]
+ * Output: [1,2,3]
+ *
+ * Example 2:
+ * Input: root = []
+ * Output: []
+ *
+ * Example 3:
+ * Input: root = [1]
+ * Output: [1]
+ *
+ * Constraints:
+ * - The number of nodes in the tree is in the range [0, 100]
+ * - -100 <= Node.val <= 100
+ */
 import java.util.List;
 
 public class BinaryTreePreorderTraversal {

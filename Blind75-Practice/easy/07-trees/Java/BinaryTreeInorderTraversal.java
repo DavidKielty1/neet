@@ -1,26 +1,29 @@
 /*
-94. Binary Tree Inorder Traversal
-Difficulty: Easy
-Pattern: Trees / DFS
-
-Given the root of a binary tree, return the inorder traversal of its nodes'
-values. Inorder means: visit left subtree, then current node, then right
-subtree.
-
-Example:
-root = [1,null,2,3] -> [1,3,2]
-Start at 1, then traverse the right subtree of 1. Inside that subtree, visit 3
-before 2 because 3 is the left child of 2.
-
-Example:
-root = [] -> []
-
-Idea:
-Use DFS recursion. The pattern is always: recurse left, record the node value,
-then recurse right.
-
-Time: O(n), Space: O(h)
-*/
+ * 94. Binary Tree Inorder Traversal
+ * Difficulty: Easy
+ * Pattern: Trees / DFS
+ *
+ * Problem:
+ * Given the root of a binary tree, return the inorder traversal of its nodes'
+ * values. Inorder means visit the left subtree, then the current node, then
+ * the right subtree.
+ *
+ * Example 1:
+ * Input: root = [1,null,2,3]
+ * Output: [1,3,2]
+ *
+ * Example 2:
+ * Input: root = []
+ * Output: []
+ *
+ * Example 3:
+ * Input: root = [1]
+ * Output: [1]
+ *
+ * Constraints:
+ * - The number of nodes in the tree is in the range [0, 100]
+ * - -100 <= Node.val <= 100
+ */
 import java.util.List;
 
 public class BinaryTreeInorderTraversal {

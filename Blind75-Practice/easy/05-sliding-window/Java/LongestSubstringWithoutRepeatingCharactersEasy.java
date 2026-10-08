@@ -1,22 +1,27 @@
-/**
- * Easy Version: Find First Non-Repeating Character
+/*
+ * 387. First Unique Character in a String
  * Difficulty: Easy
  * Pattern: Hash Map
  *
- * Given a string s, find the first non-repeating character in it and return its index.
- * If it doesn't exist, return -1.
+ * Problem:
+ * Given a string s, find the first non-repeating character in it and return
+ * its index. If it does not exist, return -1.
  *
  * Example 1:
  * Input: s = "leetcode"
  * Output: 0
- * Hint: Count frequencies in one pass, then first index with count 1 (e.g. 'l').
  *
  * Example 2:
  * Input: s = "loveleetcode"
  * Output: 2
- * Hint: 'l' and 'o' repeat; 'v' at index 2 is first unique — frequency map / array.
  *
- * Time: O(n), Space: O(1) for 128 ASCII slots
+ * Example 3:
+ * Input: s = "aabb"
+ * Output: -1
+ *
+ * Constraints:
+ * - 1 <= s.length <= 10^5
+ * - s consists of only lowercase English letters
  */
 public class LongestSubstringWithoutRepeatingCharactersEasy {
 

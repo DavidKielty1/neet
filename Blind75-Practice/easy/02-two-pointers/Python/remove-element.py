@@ -3,20 +3,24 @@
 Difficulty: Easy
 Pattern: Two Pointers
 
+Problem:
 Given an integer array nums and an integer val, remove all occurrences of
-val in-place. The order of the elements may be changed.
+val in-place. The order of the remaining elements may change. Return k, the
+number of elements not equal to val. The first k elements of nums should
+contain those kept values. Anything after index k - 1 is ignored.
 
-Contract (LeetCode 27):
-- Modify nums in-place so that the first k elements of nums contain the
-  elements that are not equal to val (order of these elements may change).
-- Return k (the number of elements not equal to val). The values beyond
-  index k-1 are ignored by the caller and may be any value.
-
-Example:
+Example 1:
 Input: nums = [3,2,2,3], val = 3
-Output: 2, nums = [2,2,_,_]  # Only the first 2 positions are considered
+Output: 2, nums = [2,2,_,_]
 
-Time: O(n), Space: O(1)
+Example 2:
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+Output: 5, nums = [0,1,4,0,3,_,_,_]
+
+Constraints:
+- 0 <= nums.length <= 100
+- 0 <= nums[i] <= 50
+- 0 <= val <= 100
 """
 
 from typing import List

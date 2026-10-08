@@ -1,12 +1,12 @@
 """
-LeetCode 118: Pascal's Triangle
+118. Pascal's Triangle
 Difficulty: Easy
 Pattern: Arrays & Hashing / Dynamic Programming
 
 Problem:
-Given an integer numRows, return the first numRows of Pascal's triangle.
-
-In Pascal's triangle, each number is the sum of the two numbers directly above it.
+Given an integer numRows, return the first numRows of Pascal's triangle. In
+Pascal's triangle, each number is the sum of the two numbers directly above
+it. Each row starts and ends with 1. Return the triangle as a list of rows.
 
 Example 1:
 Input: numRows = 5
@@ -18,9 +18,6 @@ Output: [[1]]
 
 Constraints:
 - 1 <= numRows <= 30
-
-Time Complexity: O(numRows^2)
-Space Complexity: O(numRows^2)
 """
 
 from typing import List

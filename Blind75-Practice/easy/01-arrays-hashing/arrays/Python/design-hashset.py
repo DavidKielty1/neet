@@ -1,14 +1,24 @@
 """
-LeetCode 705: Design HashSet
+705. Design HashSet
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
-Implement MyHashSet with add, remove, and contains. Keys are in [0, 10^6].
+Problem:
+Design a HashSet without using any built-in hash table libraries. Implement
+the MyHashSet class with these operations:
+- void add(int key): insert key into the set.
+- void remove(int key): remove key from the set if present.
+- boolean contains(int key): return true if key is in the set.
+Keys are integers.
 
-Approach: Direct-address table (boolean array) — O(1) per op, O(U) space for universe U.
+Example 1:
+Input: ["MyHashSet","add","add","contains","contains","add","contains","remove","contains"]
+[[],[1],[2],[1],[3],[2],[2],[2],[2]]
+Output: [null,null,null,true,false,null,true,null,false]
 
-Time Complexity: O(1) per operation
-Space Complexity: O(10^6) for the presence bitmap
+Constraints:
+- 0 <= key <= 10^6
+- At most 10^4 calls will be made to add, remove, and contains
 """
 
 from typing import List

@@ -1,14 +1,31 @@
 """
-LeetCode 13: Roman to Integer
+13. Roman to Integer
 Difficulty: Easy
 Pattern: Math & Geometry
 
-Convert a Roman numeral string to an integer (I=1, V=5, X=10, L=50, C=100, D=500, M=1000).
+Problem:
+Roman numerals are represented by seven symbols: I=1, V=5, X=10, L=50, C=100,
+D=500, M=1000. Given a roman numeral string s, convert it to an integer.
+Usually symbols are written largest to smallest from left to right and added.
+When a smaller value appears before a larger one, that pair is subtracted
+(IV=4, IX=9, XL=40, XC=90, CD=400, CM=900).
 
-Approach: Left-to-right; if current value < next, subtract current; else add.
+Example 1:
+Input: s = "III"
+Output: 3
 
-Time Complexity: O(n)
-Space Complexity: O(1) — fixed map size
+Example 2:
+Input: s = "LVIII"
+Output: 58
+
+Example 3:
+Input: s = "MCMXCIV"
+Output: 1994
+
+Constraints:
+- 1 <= s.length <= 15
+- s contains only the characters ('I','V','X','L','C','D','M')
+- It is guaranteed that s is a valid roman numeral in the range [1, 3999]
 """
 
 

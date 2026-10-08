@@ -16,7 +16,6 @@ Output: 2
 Example 2:
 Input: x = 8
 Output: 2
-Explanation: The square root of 8 is 2.82842..., and since we round down, 2 is returned.
 
 Example 3:
 Input: x = 0

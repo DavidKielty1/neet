@@ -11,23 +11,14 @@
  * Example 1:
  * coins = [1, 5, 6, 9], amount = 11
  * Output: 2
- * Explanation: 5 + 6 = 11
  *
  * Example 2:
  * coins = [2], amount = 3
  * Output: -1
- * Explanation: impossible — 3 is odd, coin is even
  *
  * Example 3:
  * coins = [1, 2, 5], amount = 11
  * Output: 3
- * Explanation: 5 + 5 + 1 = 11
- *
- * BFS Idea:
- * Treat each reachable amount as a node. Start at 0 and expand by adding
- * each coin. The first time we reach `amount`, the number of BFS levels
- * traversed equals the minimum number of coins.
- * We stop as soon as the target is found — no need to fill the whole table.
  *
  * Time:  O(amount × coins.length)
  * Space: O(amount)  — visited array + queue

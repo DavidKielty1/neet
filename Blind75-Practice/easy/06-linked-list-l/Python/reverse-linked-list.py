@@ -1,10 +1,11 @@
 """
-LeetCode 206: Reverse Linked List
+206. Reverse Linked List
 Difficulty: Easy
 Pattern: Linked List
 
 Problem:
-Given the head of a singly linked list, reverse the list, and return the reversed list.
+Given the head of a singly linked list, reverse the list, and return the
+reversed list.
 
 Example 1:
 Input: head = [1,2,3,4,5]
@@ -21,9 +22,6 @@ Output: []
 Constraints:
 - The number of nodes in the list is the range [0, 5000]
 - -5000 <= Node.val <= 5000
-
-Time Complexity: O(n)
-Space Complexity: O(1) for iterative, O(n) for recursive
 """
 
 from typing import Optional

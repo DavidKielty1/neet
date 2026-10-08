@@ -1,12 +1,25 @@
 /*
-234. Palindrome Linked List
-Difficulty: Easy
-Pattern: Linked List
-
-Return true if values form a palindrome.
-
-Time: O(n), Space: O(1) reverse half
-*/
+ * 234. Palindrome Linked List
+ * Difficulty: Easy
+ * Pattern: Linked List
+ *
+ * Problem:
+ * Given the head of a singly linked list, return true if it is a palindrome or
+ * false otherwise. The list is a palindrome if the sequence of node values
+ * reads the same forward and backward.
+ *
+ * Example 1:
+ * Input: head = [1,2,2,1]
+ * Output: true
+ *
+ * Example 2:
+ * Input: head = [1,2]
+ * Output: false
+ *
+ * Constraints:
+ * - The number of nodes in the list is in the range [1, 10^5]
+ * - 0 <= Node.val <= 9
+ */
 public class PalindromeLinkedList {
     public boolean isPalindrome(ListNode head) {
         //

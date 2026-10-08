@@ -1,27 +1,26 @@
 /*
-617. Merge Two Binary Trees
-Difficulty: Easy
-Pattern: Trees / DFS
-
-You are given two binary trees. Merge them into a new tree by overlapping nodes:
-if two nodes overlap, sum their values; otherwise, use the non-null node.
-
-Example:
-root1 = [1,3,2,5]
-root2 = [2,1,3,null,4,null,7]
-result = [3,4,5,5,4,null,7]
-
-Example:
-root1 = [1]
-root2 = [1,2]
-result = [2,2]
-
-Idea:
-Use recursion. If one node is null, return the other. If both exist, create a
-merged node whose value is the sum, then merge the left and right children.
-
-Time: O(n), Space: O(h)
-*/
+ * 617. Merge Two Binary Trees
+ * Difficulty: Easy
+ * Pattern: Trees / DFS
+ *
+ * Problem:
+ * You are given two binary trees root1 and root2. Merge them into a new binary
+ * tree by overlapping nodes starting from the roots. If two nodes overlap, the
+ * merged node's value is the sum of the two values. If only one node exists at
+ * a position, use that non-null node. Return the merged tree.
+ *
+ * Example 1:
+ * Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+ * Output: [3,4,5,5,4,null,7]
+ *
+ * Example 2:
+ * Input: root1 = [1], root2 = [1,2]
+ * Output: [2,2]
+ *
+ * Constraints:
+ * - The number of nodes in both trees is in the range [0, 2000]
+ * - -10^4 <= Node.val <= 10^4
+ */
 
 public class MergeTwoBinaryTrees {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {

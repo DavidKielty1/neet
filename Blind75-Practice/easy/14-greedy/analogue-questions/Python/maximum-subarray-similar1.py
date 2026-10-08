@@ -12,12 +12,10 @@ Return the maximum profit. If you cannot achieve any profit, return 0.
 Example 1:
 Input: prices = [7,1,5,3,6,4]
 Output: 5
-Explanation: Buy on day 2 (price = 1), sell on day 5 (price = 6), profit = 6-1 = 5
 
 Example 2:
 Input: prices = [7,6,4,3,1]
 Output: 0
-Explanation: No profit possible
 
 Constraints:
 - 1 <= prices.length <= 10^5

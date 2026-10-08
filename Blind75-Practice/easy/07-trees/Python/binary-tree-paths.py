@@ -1,12 +1,12 @@
 """
-LeetCode 257: Binary Tree Paths
+257. Binary Tree Paths
 Difficulty: Easy
 Pattern: Trees / DFS
 
 Problem:
 Given the root of a binary tree, return all root-to-leaf paths in any order.
-
-A leaf is a node with no children.
+A leaf is a node with no children. Represent each path as a string of node
+values joined by "->".
 
 Example 1:
 Input: root = [1,2,3,null,5]
@@ -19,9 +19,6 @@ Output: ["1"]
 Constraints:
 - The number of nodes in the tree is in the range [1, 100]
 - -100 <= Node.val <= 100
-
-Time Complexity: O(n)
-Space Complexity: O(h) where h is height
 """
 
 from typing import List, Optional

@@ -11,7 +11,6 @@ Given an integer num, repeatedly add all its digits until the result has only on
 Example 1:
 Input: num = 38
 Output: 2
-Explanation: 38 -> 3 + 8 = 11 -> 1 + 1 = 2
 
 Example 2:
 Input: num = 0

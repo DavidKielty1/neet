@@ -11,8 +11,6 @@ Given two strings s and p, return an array of all the start indices of p's anagr
 Example 1:
 Input: s = "cbaebabacd", p = "abc"
 Output: [0,6]
-Explanation: The substring "cba" at index 0 is an anagram of "abc".
-The substring "bac" at index 6 is an anagram of "abc".
 
 Example 2:
 Input: s = "abab", p = "ab"

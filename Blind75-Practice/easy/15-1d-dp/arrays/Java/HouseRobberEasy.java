@@ -1,25 +1,24 @@
 /*
-LeetCode 70. Climbing Stairs
-Difficulty: Easy
-Pattern: Dynamic Programming / Fibonacci
-
-You are climbing a staircase with n steps.
-Each time, you can climb either 1 step or 2 steps.
-Return the number of distinct ways to reach the top.
-
-Examples:
-n = 2 -> 2
-Ways: [1+1], [2]
-
-n = 3 -> 3
-Ways: [1+1+1], [1+2], [2+1]
-
-Idea:
-The number of ways to reach step i is the sum of the ways to reach
-step i - 1 and step i - 2.
-
-Time: O(n), Space: O(1)
-*/
+ * 70. Climbing Stairs
+ * Difficulty: Easy
+ * Pattern: Dynamic Programming / Fibonacci
+ *
+ * Problem:
+ * You are climbing a staircase. It takes n steps to reach the top. Each time
+ * you can either climb 1 or 2 steps. Return the number of distinct ways you
+ * can climb to the top.
+ *
+ * Example 1:
+ * Input: n = 2
+ * Output: 2
+ *
+ * Example 2:
+ * Input: n = 3
+ * Output: 3
+ *
+ * Constraints:
+ * - 1 <= n <= 45
+ */
 public class HouseRobberEasy {
     public int climbStairs(int n) {
         int dp0 = 1; // dp2 + dp1

@@ -10,12 +10,10 @@ You can only move down or right at each step.
 Example 1:
 Input: grid = [[1,3,1],[1,5,1],[4,2,1]]
 Output: 7
-Explanation: Path 1→3→1→1→1 = 7 (minimum)
 
 Example 2:
 Input: grid = [[1,2],[1,1]]
 Output: 3
-Explanation: Path 1→1→1 = 3
 
 Constraints:
 - m == grid.length

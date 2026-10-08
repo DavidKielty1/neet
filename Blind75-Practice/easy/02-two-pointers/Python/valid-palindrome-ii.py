@@ -1,14 +1,29 @@
 """
-LeetCode 680: Valid Palindrome II
+680. Valid Palindrome II
 Difficulty: Easy
 Pattern: Two Pointers
 
-Given a string s, return True if s can be a palindrome after deleting at most one character.
+Problem:
+Given a string s, return true if the s can be a palindrome after deleting at
+most one character from it. You may delete zero characters. Compare
+characters from both ends; on a mismatch you may skip one character on the
+left or the right.
 
-Approach: Two pointers from both ends; on mismatch, try skipping left or right char once.
+Example 1:
+Input: s = "aba"
+Output: true
 
-Time Complexity: O(n)
-Space Complexity: O(1)
+Example 2:
+Input: s = "abca"
+Output: true
+
+Example 3:
+Input: s = "abc"
+Output: false
+
+Constraints:
+- 1 <= s.length <= 10^5
+- s consists of lowercase English letters
 """
 
 

@@ -1,14 +1,27 @@
 """
-LeetCode 168: Excel Sheet Column Title
+168. Excel Sheet Column Title
 Difficulty: Easy
 Pattern: Math & Geometry
 
-Convert 1 -> "A", 28 -> "AB". Base-26 with offset: Excel columns are 1-indexed (no zero digit).
+Problem:
+Given an integer columnNumber, return its corresponding column title as it
+appears in an Excel sheet. For example, 1 maps to "A", 2 maps to "B", 26 maps
+to "Z", 27 maps to "AA", and 28 maps to "AB".
 
-Approach: Repeatedly: n--, append (char)('A' + n % 26), n /= 26.
+Example 1:
+Input: columnNumber = 1
+Output: "A"
 
-Time Complexity: O(log_26 n)
-Space Complexity: O(log_26 n) for the string
+Example 2:
+Input: columnNumber = 28
+Output: "AB"
+
+Example 3:
+Input: columnNumber = 701
+Output: "ZY"
+
+Constraints:
+- 1 <= columnNumber <= 2^31 - 1
 """
 
 from typing import List

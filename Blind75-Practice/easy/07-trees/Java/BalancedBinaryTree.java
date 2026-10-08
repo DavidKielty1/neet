@@ -1,28 +1,29 @@
 /*
-110. Balanced Binary Tree
-Difficulty: Easy
-Pattern: Trees / DFS
-
-Given the root of a binary tree, return true if the tree is height-balanced.
-A binary tree is height-balanced when, for every node, the heights of the
-left and right subtrees differ by at most 1.
-
-Example:
-root = [3,9,20,null,null,15,7] -> true
-The left subtree has height 1 and the right subtree has height 2, so the tree
-is balanced at every node.
-
-Example:
-root = [1,2,2,3,3,null,null,4,4] -> false
-The left side is too deep compared with the right side, so some node has a
-height difference greater than 1.
-
-Idea:
-Use bottom-up DFS. For each node, compute subtree height. If a subtree is
-already unbalanced, bubble up a sentinel such as -1 to stop extra work.
-
-Time: O(n), Space: O(h)
-*/
+ * 110. Balanced Binary Tree
+ * Difficulty: Easy
+ * Pattern: Trees / DFS
+ *
+ * Problem:
+ * Given the root of a binary tree, return true if it is height-balanced. A
+ * height-balanced binary tree is a binary tree in which the depth of the two
+ * subtrees of every node never differs by more than one.
+ *
+ * Example 1:
+ * Input: root = [3,9,20,null,null,15,7]
+ * Output: true
+ *
+ * Example 2:
+ * Input: root = [1,2,2,3,3,null,null,4,4]
+ * Output: false
+ *
+ * Example 3:
+ * Input: root = []
+ * Output: true
+ *
+ * Constraints:
+ * - The number of nodes in the tree is in the range [0, 5000]
+ * - -10^4 <= Node.val <= 10^4
+ */
 
 //   1
 //  /\      

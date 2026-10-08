@@ -16,7 +16,6 @@ Find the minimum number of arrows that must be shot to burst all balloons.
 Example 1:
 Input: points = [[10,16],[2,8],[1,6],[7,12]]
 Output: 2
-Explanation: Shoot at x=6 (bursts [2,8],[1,6]) and x=11 (bursts [10,16],[7,12])
 
 Example 2:
 Input: points = [[1,2],[3,4],[5,6],[7,8]]

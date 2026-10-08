@@ -1,14 +1,14 @@
 """
-LeetCode 572: Subtree of Another Tree
+572. Subtree of Another Tree
 Difficulty: Easy
 Pattern: Trees (DFS)
 
 Problem:
-Given the roots of two binary trees root and subRoot, return true if there is a
-subtree of root with the same structure and node values of subRoot and false otherwise.
-
-A subtree of a binary tree tree is a tree that consists of a node in tree and all
-of this node's descendants. The tree tree could also be considered as a subtree of itself.
+Given the roots of two binary trees root and subRoot, return true if there
+is a subtree of root with the same structure and node values as subRoot, and
+false otherwise. A subtree of a binary tree consists of a node in the tree
+and all of that node's descendants. The tree itself may also be considered a
+subtree of itself.
 
 Example 1:
 Input: root = [3,4,5,1,2], subRoot = [4,1,2]
@@ -23,9 +23,6 @@ Constraints:
 - The number of nodes in the subRoot tree is in the range [1, 1000]
 - -10^4 <= root.val <= 10^4
 - -10^4 <= subRoot.val <= 10^4
-
-Time Complexity: O(n * m) where n is nodes in root, m is nodes in subRoot
-Space Complexity: O(h) where h is height of root
 """
 
 from typing import Optional

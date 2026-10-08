@@ -1,12 +1,24 @@
 /*
-70. Climbing Stairs
-Difficulty: Easy
-Pattern: Dynamic Programming
-
-Ways to reach step n with steps of 1 or 2.
-
-Time: O(n), Space: O(1)
-*/
+ * 70. Climbing Stairs
+ * Difficulty: Easy
+ * Pattern: Dynamic Programming
+ *
+ * Problem:
+ * You are climbing a staircase. It takes n steps to reach the top. Each time
+ * you can either climb 1 or 2 steps. Return the number of distinct ways you
+ * can climb to the top.
+ *
+ * Example 1:
+ * Input: n = 2
+ * Output: 2
+ *
+ * Example 2:
+ * Input: n = 3
+ * Output: 3
+ *
+ * Constraints:
+ * - 1 <= n <= 45
+ */
 public class ClimbingStairs {
     public int climbStairs(int n) {
         //

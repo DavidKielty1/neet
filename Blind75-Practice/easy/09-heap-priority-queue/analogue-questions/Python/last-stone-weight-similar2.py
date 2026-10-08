@@ -12,12 +12,10 @@ Return the maximum product of nums after at most k operations.
 Example 1:
 Input: nums = [0,4], k = 5
 Output: 20
-Explanation: Increment first element 5 times: [5,4], product = 20
 
 Example 2:
 Input: nums = [6,3,3,2], k = 2
 Output: 216
-Explanation: Increment 2 to get [6,3,3,4], product = 216
 
 Constraints:
 - 1 <= nums.length <= 10^5

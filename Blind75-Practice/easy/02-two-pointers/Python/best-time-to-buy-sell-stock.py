@@ -1,32 +1,26 @@
 """
-LeetCode 121: Best Time to Buy and Sell Stock
+121. Best Time to Buy and Sell Stock
 Difficulty: Easy
 Pattern: Sliding Window / Greedy
 
 Problem:
-You are given an array prices where prices[i] is the price of a given stock on the ith day.
-You want to maximize your profit by choosing a single day to buy one stock and choosing
-a different day in the future to sell that stock.
-
-Return the maximum profit you can achieve from this transaction. If you cannot achieve
-any profit, return 0.
+You are given an array prices where prices[i] is the price of a given stock
+on the ith day. You want to maximize your profit by choosing a single day to
+buy one stock and a different day in the future to sell that stock. Return
+the maximum profit you can achieve from this transaction. If you cannot
+achieve any profit, return 0.
 
 Example 1:
-Input: prices = [7,2,5,3,6,4,1,8]
+Input: prices = [7,1,5,3,6,4]
 Output: 5
-Explanation: Buy at price 1 (second element) and sell at price 6 (fifth element), profit = 6-1 = 5.
 
 Example 2:
 Input: prices = [7,6,4,3,1]
 Output: 0
-Explanation: Prices keep decreasing, so there is no future day with a higher price to sell at; the best choice is to make no transaction, for a max profit of 0.
 
 Constraints:
 - 1 <= prices.length <= 10^5
 - 0 <= prices[i] <= 10^4
-
-Time Complexity: O(n)
-Space Complexity: O(1)
 """
 
 from typing import List

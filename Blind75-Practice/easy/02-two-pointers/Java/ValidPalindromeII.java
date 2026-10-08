@@ -1,32 +1,34 @@
 /*
- * LeetCode 680: Valid Palindrome II
+ * 680. Valid Palindrome II
  * Difficulty: Easy
  * Pattern: Two Pointers
  *
  * Problem:
- * Given a string `s`, return `true` if it can become a palindrome after
- * deleting at most one character.
+ * Given a string s, return true if the s can be a palindrome after deleting at
+ * most one character from it. You may delete zero characters. Compare
+ * characters from both ends; on a mismatch you may skip one character on the
+ * left or the right.
  *
  * Example 1:
  * Input: s = "aba"
  * Output: true
- * Explanation: The string is already a palindrome, so zero deletions are needed.
  *
  * Example 2:
  * Input: s = "abca"
  * Output: true
- * Explanation: Deleting 'c' makes the string "aba", which is a palindrome.
  *
  * Example 3:
  * Input: s = "abc"
  * Output: false
- * Explanation: No single deletion can make the string a palindrome.
  *
- * Time Complexity: O(n)
- * Space Complexity: O(1)
+ * Constraints:
+ * - 1 <= s.length <= 10^5
+ * - s consists of lowercase English letters
  */
 
 public class ValidPalindromeII {
+    private boolean retry(String s, int l, int r) {
+    }
 
     public static void main(String[] args) {
         ValidPalindromeII sol = new ValidPalindromeII();

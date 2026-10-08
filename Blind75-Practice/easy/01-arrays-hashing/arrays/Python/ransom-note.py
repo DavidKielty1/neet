@@ -1,13 +1,12 @@
 """
-LeetCode 383: Ransom Note
+383. Ransom Note
 Difficulty: Easy
 Pattern: Arrays & Hashing
 
 Problem:
-Given two strings ransomNote and magazine, return true if ransomNote can be constructed
-by using the letters from magazine and false otherwise.
-
-Each letter in magazine can only be used once in ransomNote.
+Given two strings ransomNote and magazine, return true if ransomNote can be
+constructed using the letters from magazine and false otherwise. Each letter
+in magazine can only be used once in ransomNote.
 
 Example 1:
 Input: ransomNote = "a", magazine = "b"
@@ -24,9 +23,6 @@ Output: true
 Constraints:
 - 1 <= ransomNote.length, magazine.length <= 10^5
 - ransomNote and magazine consist of lowercase English letters
-
-Time Complexity: O(m + n) where m = ransomNote length, n = magazine length
-Space Complexity: O(1) - at most 26 lowercase letters
 """
 
 from collections import Counter

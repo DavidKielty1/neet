@@ -14,7 +14,6 @@ Given the root of a binary tree, flatten the tree into a "linked list" in-place 
 Example 1:
 Input: root = [1,2,3,4,5]
 Output: [4,2,5,1,3]
-Explanation: Inorder: 4->2->5->1->3
 
 Example 2:
 Input: root = []
