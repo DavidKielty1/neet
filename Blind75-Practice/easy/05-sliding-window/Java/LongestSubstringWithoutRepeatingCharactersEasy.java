@@ -23,8 +23,8 @@
  * - 1 <= s.length <= 10^5
  * - s consists of only lowercase English letters
  */
-public class LongestSubstringWithoutRepeatingCharactersEasy {
 
+public class LongestSubstringWithoutRepeatingCharactersEasy {
     public static int firstUniqCharAscii(String s) {
 
             

@@ -30,23 +30,7 @@
 
 public class DiameterOfBinaryTree {
     public int diameterOfBinaryTree(TreeNode root) {   
-        class Solver {
-            int diameter = 0;
-            int depth (TreeNode node) {
-                if (node == null) {
-                    return 0;
-                }
-
-                int left = depth(root.left);
-                int right = depth(root.right);
-
-                diameter = Math.max(diameter,  left + right);
-                return 1 + Math.max(left, right);
-            }
-        }
-        Solver solver = new Solver();
-        solver.depth(root);
-        return solver.diameter;
+    }
 
         //
 
@@ -106,23 +90,19 @@ public class DiameterOfBinaryTree {
 
         //
 
-        // Track max path through each node: leftHeight + rightHeight.
-
-        // class Solver {
-        //     int diameter = 0;
-        //     int depth(TreeNode node) {
-        //         if (node == null) {
-        //             return 0;
-        //         }
-        //         int left = depth(node.left);
-        //         int right = depth(node.right);
-        //         diameter = Math.max(diameter, left + right);
-        //         return 1 + Math.max(left, right);
+        // int[] best = new int[] {0};
+        // depth(root, best);
+        // return best[0];
+        //
+        // private int depth(TreeNode node, int[] best) {
+        //     if (node == null) {
+        //         return 0;
         //     }
+        //     int left = depth(node.left, best);
+        //     int right = depth(node.right, best);
+        //     best[0] = Math.max(best[0], left + right);
+        //     return 1 + Math.max(left, right);
         // }
-        // Solver solver = new Solver();
-        // solver.depth(root);
-        // return solver.diameter;
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");

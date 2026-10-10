@@ -22,7 +22,11 @@
  */
 
 public class MaximumDepthBinaryTree {
+    private int ans;
+
     public int maxDepth(TreeNode root) {
+
+    }
         //
 
         //
@@ -86,7 +90,11 @@ public class MaximumDepthBinaryTree {
         // if (root == null) {
         //     return 0;
         // }
-        // return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+
+        // int left = maxDepth(root.left);
+        // int right = maxDepth(root.right);
+
+        // return 1 + Math.max(left, right);
     }
     public static void main(String[] args) {
         System.out.println("Implement tests.");

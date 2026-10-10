@@ -26,6 +26,7 @@
 
 public class InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
+    }
         //
 
         //
@@ -86,17 +87,22 @@ public class InvertBinaryTree {
 
         //
 
-        // DFS or BFS swap children.
 
-        // if (root == null) {
-        //     return null;
+        // public TreeNode invertTree(TreeNode root) {
+        //     if (root == null) {
+        //         return null;
+        //     }
+    
+        //     invertTree(root.left);
+        //     invertTree(root.right);
+    
+        //     TreeNode temp = root.left;
+        //     root.left = root.right;
+        //     root.right = temp;
+    
+        //     return root;
         // }
-        // TreeNode left = invertTree(root.left);
-        // TreeNode right = invertTree(root.right);
-        // root.left = right;
-        // root.right = left;
-        // return root;
-    }
+
     public static void main(String[] args) {
         System.out.println("Implement tests with TreeNode builders.");
     }

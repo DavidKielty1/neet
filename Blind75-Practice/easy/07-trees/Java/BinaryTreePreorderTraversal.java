@@ -24,11 +24,30 @@
  * - The number of nodes in the tree is in the range [0, 100]
  * - -100 <= Node.val <= 100
  */
+import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreePreorderTraversal {
-
     public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> tree = new ArrayList<>();
+        if (root == null) {
+            return tree;
+        }
+        dfs(root, tree);
+        return tree;
+    }
+
+    private void dfs(TreeNode node, List<Integer> tree) {
+        if (node == null) {
+            return;
+        }
+
+        tree.add(node.val);
+        dfs(node.left, tree);
+        dfs(node.right, tree);
+    }
+}
+
         //
 
         //

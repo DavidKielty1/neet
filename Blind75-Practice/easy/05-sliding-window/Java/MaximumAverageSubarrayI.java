@@ -23,22 +23,9 @@
  * - -10^4 <= nums[i] <= 10^4
  */
 public class MaximumAverageSubarrayI {
-
     public static double findMaxAverage(int[] nums, int k) {
-        int window = 0;
-
-        // [1,12,-5,-6,50,3] k = 4
-        for (int i = 0; i < k; i++) {
-            window += nums[i];
-        }
-
-        int maxAverageSubarray = window;
-        for (int i = k; i < nums.length; i++) {
-            window = window - nums[i - k] + nums[i];
-            maxAverageSubarray = Math.max(maxAverageSubarray, window);
-        }
-
-        return (double) maxAverageSubarray / k;
+        
+    }
         //
 
         //
