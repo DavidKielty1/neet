@@ -27,6 +27,8 @@
 
 public class SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
+        
+    }
         //
 
         //
@@ -86,8 +88,6 @@ public class SameTree {
         //
 
         //
-
-        // Recursion: same val and same left/right.
 
         // if (p == null && q == null) {
         //     return true;

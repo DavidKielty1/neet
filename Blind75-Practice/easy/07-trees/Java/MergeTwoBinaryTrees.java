@@ -24,6 +24,10 @@
 
 public class MergeTwoBinaryTrees {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+        
+    }
+
+
         //
 
         //

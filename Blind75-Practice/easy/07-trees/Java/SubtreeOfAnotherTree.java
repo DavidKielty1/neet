@@ -27,37 +27,12 @@
 
 public class SubtreeOfAnotherTree {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
-        if (subRoot == null) {
-            return true;
-        }
-        return hasSubtree(root, subRoot);
-    }
-
-    private boolean hasSubtree(TreeNode node, TreeNode subRoot) {
-        if (node == null) {
-            return false;
-        }
-        return isSame(node, subRoot)
-            || hasSubtree(node.left, subRoot)
-            || hasSubtree(node.right, subRoot);
-    }
-
-    private boolean isSame(TreeNode a, TreeNode b) {
-        if (a == null && b == null) {
-            return true;
-        }
-        if (a == null || b == null) {
-            return false;
-        }
-        return a.val == b.val
-            && isSame(a.left, b.left)
-            && isSame(a.right, b.right);
+        
     }
 
 
 
 
-        //
 
         //
 
@@ -117,33 +92,41 @@ public class SubtreeOfAnotherTree {
 
         //
 
-        // Compare structures / same-tree helper.
+        //
 
-        // class Solver {
-        //     boolean same(TreeNode a, TreeNode b) {
-        //         if (a == null && b == null) {
-        //             return true;
-        //         }
-        //         if (a == null || b == null) {
-        //             return false;
-        //         }
-        //         return a.val == b.val
-        //                 && same(a.left, b.left)
-        //                 && same(a.right, b.right);
-        //     }
-        //     boolean dfs(TreeNode node) {
-        //         if (node == null) {
-        //             return false;
-        //         }
-        //         return same(node, subRoot) || dfs(node.left) || dfs(node.right);
-        //     }
+        // public class SubtreeOfAnotherTree {
+            // public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+            //     if (subRoot == null) {
+            //         return true;
+            //     }
+        
+            //     return dfs(root, subRoot);
+            // }
+        
+            // private boolean dfs(TreeNode root, TreeNode subRoot) {
+            //     if (root == null) {
+            //         return false;
+            //     }
+        
+            //     return isSame(root, subRoot)
+            //         || dfs(root.left, subRoot)
+            //         || dfs(root.right, subRoot);
+            // }
+        
+            // private boolean isSame(TreeNode root, TreeNode subRoot) {
+            //     if (root == null && subRoot == null) {
+            //         return true;
+            //     }
+        
+            //     if (root == null || subRoot == null) {
+            //         return false;
+            //     }
+        
+            //     return root.val == subRoot.val
+            //         && isSame(root.left, subRoot.left)
+            //         && isSame(root.right, subRoot.right);
+            // }
         // }
-
-        // if (subRoot == null) {
-        //     return true;
-        // }
-
-        // return new Solver().dfs(root);
     
     public static void main(String[] args) {
         System.out.println("Implement tests.");
