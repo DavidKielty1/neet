@@ -33,8 +33,11 @@
  * - ai != bi
  * - 1 <= ai, bi <= n
  */
+
 public class FindTheTownJudge {
     public int findJudge(int n, int[][] trust) {
+        
+    }
         
         //
 

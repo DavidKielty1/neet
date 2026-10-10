@@ -27,8 +27,25 @@
  * - All the values of score are unique
  */
 
+import java.util.PriorityQueue;
+
 public class RelativeRanks {
     public String[] findRelativeRanks(int[] score) { 
+        int n = score.length;
+        PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
+        for (int i = 0; i < n; i++) {
+            maxHeap.offer(new int[] {score[i], i});
+        }
+
+        String[] result = new String[n];
+        String[] medals = {"Gold Medal", "Silver Medal", "Bronze Medal"};
+        int rank = 0;
+        while(!maxHeap.isEmpty()) {
+            int index = maxHeap.poll()[1];
+            result[index] = rank < 3 ? medals[rank] : String.valueOf(rank + 1);
+            rank++;
+        }
+        return result;
     }
         // 
 
@@ -90,26 +107,19 @@ public class RelativeRanks {
 
         //
 
-        // Sort indices by score descending.
-
         // int n = score.length;
-        // Integer[] indices = new Integer[n];
+        // PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
         // for (int i = 0; i < n; i++) {
-        //     indices[i] = i;
+        //     maxHeap.offer(new int[] {score[i], i});
         // }
-        // java.util.Arrays.sort(indices, (a, b) -> Integer.compare(score[b], score[a]));
+
         // String[] result = new String[n];
-        // for (int rank = 0; rank < n; rank++) {
-        //     int index = indices[rank];
-        //     if (rank == 0) {
-        //         result[index] = "Gold Medal";
-        //     } else if (rank == 1) {
-        //         result[index] = "Silver Medal";
-        //     } else if (rank == 2) {
-        //         result[index] = "Bronze Medal";
-        //     } else {
-        //         result[index] = String.valueOf(rank + 1);
-        //     }
+        // String[] medals = {"Gold Medal", "Silver Medal", "Bronze Medal"};
+        // int rank = 0;
+        // while(!maxHeap.isEmpty()) {
+        //     int index = maxHeap.poll()[1];
+        //     result[index] = rank < 3 ? medals[rank] : String.valueOf(rank + 1);
+        //     rank++;
         // }
         // return result;
     }

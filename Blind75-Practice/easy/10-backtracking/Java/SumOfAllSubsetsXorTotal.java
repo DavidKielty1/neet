@@ -29,16 +29,16 @@
 
 public class SumOfAllSubsetsXorTotal {
     public int subsetXORSum(int[] nums) {
-            return dfs(nums, 0, 0);
+        return dfs(nums, 0, 0);
+    }
+    
+    private int dfs(int[] nums, int i, int curXor) {
+        if (i == nums.length) {
+            return curXor;
         }
-        
-        private int dfs(int[] nums, int i, int curXor) {
-            if (i == nums.length) {
-                return curXor;
-            }
-            return dfs(nums, i + 1, curXor ^ nums[i])
-                    + dfs(nums, i + 1, curXor);
-        }
+        return dfs(nums, i + 1, curXor ^ nums[i])
+             + dfs(nums, i + 1, curXor);
+    }
         //
 
         //

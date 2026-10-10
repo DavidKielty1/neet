@@ -33,7 +33,6 @@
  */
 public class IslandPerimeter {
     public int islandPerimeter(int[][] grid) {
-        //
 
         //
 
@@ -109,7 +108,6 @@ public class IslandPerimeter {
         //     }
         // }
         // return perimeter;
-        throw new UnsupportedOperationException("Implement islandPerimeter");
     }
 
     public static void main(String[] args) {

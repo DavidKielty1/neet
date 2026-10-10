@@ -34,13 +34,7 @@
  */
 
 public class KthLargestElementStream {
-    
-
     public KthLargestElementStream(int k, int[] nums) {
-        
-    }
-
-    public int add(int val) {
         
     }
             //

@@ -25,12 +25,10 @@
  * - 1 <= stones[i] <= 1000
  */
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 public class LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
+        
+
 
         //
 
@@ -88,18 +86,21 @@ public class LastStoneWeight {
 
         //
 
-        // PriorityQueue<Integer> maxHeap = new PriorityQueue<>(reverseOrder());
+        // PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         // for (int stone : stones) {
         //     maxHeap.offer(stone);
         // }
-        // while (maxHeap.size() > 1) {
-        //     int first = maxHeap.poll();
-        //     int second = maxHeap.poll();
-        //     if (first != second) {
-        //         maxHeap.offer(first - second);
+
+        // while(maxHeap.size() > 1) {
+        //     int a = maxHeap.poll();
+        //     int b = maxHeap.poll();
+
+        //     int remaining = a - b;
+        //     if (remaining > 0) {
+        //         maxHeap.offer(remaining);
         //     }
         // }
-        // return maxHeap.isEmpty() ? 0 : maxHeap.peek();
+        // return maxHeap.size() == 1 ? maxHeap.poll() : 0;
     }
     public static void main(String[] args) {
         LastStoneWeight s = new LastStoneWeight();
