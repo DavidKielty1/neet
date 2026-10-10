@@ -24,27 +24,11 @@
  * - The number of nodes in the tree is in the range [0, 100]
  * - -100 <= Node.val <= 100
  */
-import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreePostorderTraversal {
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> tree = new ArrayList<>();
-        if (root == null) {
-            return tree;
-        }
         
-        dfs(root, tree);
-        return tree;
-    }
-
-    private void dfs(TreeNode node, List<Integer> tree) {
-        if (node == null) {
-            return;
-        }
-        dsf(node.left, tree);
-        dfs(node.right, tree);
-        tree.add(node.val);
     }
         //
 
