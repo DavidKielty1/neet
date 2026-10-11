@@ -25,9 +25,11 @@
  * - 1 <= bills.length <= 10^5
  * - bills[i] is either 5, 10, or 20
  */
+
 public class LemonadeChange {
     public boolean lemonadeChange(int[] bills) {
-        //
+    
+
 
         //
 
@@ -87,24 +89,30 @@ public class LemonadeChange {
 
         //
 
-        // Track counts of 5s and 10s.
+        //
 
         // int fives = 0;
         // int tens = 0;
         // for (int bill : bills) {
         //     if (bill == 5) {
         //         fives++;
-        //     } else if (bill == 10) {
-        //         if (fives == 0) {
+        //     }
+        //     if (bill == 10) {
+        //         tens++;
+        //     }
+        //     int change = bill - 5;
+        //     if (change == 5) {
+        //         if (fives >= 1) {
+        //             fives--;
+        //         } else {
         //             return false;
         //         }
-        //         fives--;
-        //         tens++;
-        //     } else {
-        //         if (tens > 0 && fives > 0) {
+        //     }
+        //     if (change == 15) {
+        //         if (tens >= 1 && fives >= 1) {
         //             tens--;
         //             fives--;
-        //         } else if (fives >= 3) {
+        //         } else if (fives >= 3) { 
         //             fives -= 3;
         //         } else {
         //             return false;

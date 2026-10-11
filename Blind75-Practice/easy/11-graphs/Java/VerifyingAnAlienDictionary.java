@@ -32,6 +32,9 @@
  */
 
 public class VerifyingAnAlienDictionary {
+    public boolean isAlienSorted(String[] words, String order) {
+        
+    }
         //
 
         //
@@ -144,11 +147,11 @@ public class VerifyingAnAlienDictionary {
     public static void main(String[] args) {
         VerifyingAnAlienDictionary sol = new VerifyingAnAlienDictionary();
         assert sol.isAlienSorted(
-                new String[] {"hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz");
+            new String[] {"hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz");
         assert !sol.isAlienSorted(
-                new String[] {"word", "world", "row"}, "worldabcefghijkmnpqstuvxyz");
+            new String[] {"word", "world", "row"}, "worldabcefghijkmnpqstuvxyz");
         assert !sol.isAlienSorted(
-                new String[] {"apple", "app"}, "abcdefghijklmnopqrstuvwxyz");
+            new String[] {"apple", "app"}, "abcdefghijklmnopqrstuvwxyz");
         System.out.println("All tests passed.");
     }
 }

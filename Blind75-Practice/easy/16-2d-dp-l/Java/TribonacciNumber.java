@@ -10,6 +10,9 @@
  * Example 1:
  * Input: n = 4
  * Output: 4
+ * Explanation:
+ * T_3 = 0 + 1 + 1 = 2
+ * T_4 = 1 + 1 + 2 = 4
  *
  * Example 2:
  * Input: n = 25
@@ -20,7 +23,10 @@
  * - The answer is guaranteed to fit within a 32-bit integer
  */
 public class TribonacciNumber {
+    // like climbing stairs -- attempt it.
     public int tribonacci(int n) {
+
+    }
         //
 
         //
@@ -99,7 +105,6 @@ public class TribonacciNumber {
         //     c = next;
         // }
         // return c;
-        throw new UnsupportedOperationException("Implement tribonacci");
     }
     public static void main(String[] args) {
         TribonacciNumber s = new TribonacciNumber();

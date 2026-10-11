@@ -23,6 +23,14 @@
  */
 public class MinCostClimbingStairs {
     public int minCostClimbingStairs(int[] cost) {
+        int prev1 = 0;
+        int prev2 = 0;
+        for (int i = 2; i <= cost.length; i++) {
+            int curr = cost[i] + Math.min(prev1, prev2);
+            prev1 = prev2;
+            prev2 = curr;
+        }
+        return curr;
         //
 
         //
@@ -85,6 +93,8 @@ public class MinCostClimbingStairs {
 
         // dp[i] = cost[i] + min(dp[i-1], dp[i-2])
 
+        // [1,100,1,1,1,100,1,1,1,1]
+
         // int prev2 = 0;
         // int prev1 = 0;
         // for (int i = 2; i <= cost.length; i++) {
@@ -93,7 +103,6 @@ public class MinCostClimbingStairs {
         //     prev1 = current;
         // }
         // return prev1;
-        throw new UnsupportedOperationException("Implement minCostClimbingStairs");
     }
     public static void main(String[] args) {
         MinCostClimbingStairs s = new MinCostClimbingStairs();
