@@ -30,6 +30,7 @@ import java.util.List;
 public class EncodeAndDecodeStrings {
     static class Codec {
         public String encode(List<String> strs) {
+        }
             //
             //
             //
@@ -78,8 +79,6 @@ public class EncodeAndDecodeStrings {
             //
             //
             //
-            //
-            // Prefix each string with its length and a separator.
             //
             // StringBuilder encoded = new StringBuilder();
             // for (String s : strs) {
@@ -89,7 +88,11 @@ public class EncodeAndDecodeStrings {
         }
 
         public List<String> decode(String s) {
-        
+            //14#lintlintlintli4#code4#love3#you
+            
+        }
+
+
             //
             //
             //

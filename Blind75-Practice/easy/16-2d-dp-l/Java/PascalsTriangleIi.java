@@ -27,6 +27,7 @@ import java.util.List;
 
 public class PascalsTriangleIi {
     public List<Integer> getRow(int rowIndex) {
+        
         //
 
         //

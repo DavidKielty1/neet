@@ -30,10 +30,27 @@
  * - 0 <= col1 <= col2 < n
  * - At most 10000 calls will be made to sumRegion
  */
-public class RangeSumQuery2DImmutable {
-    int[][] prefix;
+public class NumMatrix  {
+    private int[][] prefix;
 
-    public RangeSumQuery2DImmutable(int[][] matrix) {
+    public NumMatrix(int[][] matrix) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        prefix = new int[rows + 1][cols + 1];
+        for (int r = 1; r <= rows + 1; r++) {
+            for (int c = 1; c <= cols + 1; c++) {
+                prefix[r][c] = matrix[r - 1][c - 1]
+                             + prefix[r - 1][c]         
+                             + prefix[r][c - 1]
+                             - prefix[r - 1][c - 1];
+            }
+        }
+    }
+
+    public int sumRegion(int row1, int col1, int row2, int col2) {
+        
+    }
+    
         //
         //
         //
