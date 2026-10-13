@@ -23,86 +23,115 @@
  * - It is guaranteed that the answer is unique
  */
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        // Count frequencies, bucket values by frequency, then collect from
-        // highest frequency down.
-        //
-        // Map<Integer, Integer> counts = new HashMap<>();
-        // for (int num : nums) {
-        //     counts.put(num, counts.getOrDefault(num, 0) + 1);
-        // }
+        Map<Integer, Integer> counts = new HashMap<>();
+        for (int num : nums) {
+            counts.merge(num, 1, Integer::sum);
+        }
 
-        // List<List<Integer>> buckets = new ArrayList<>();
-        // for (int i = 0; i <= nums.length; i++) {
-        //     buckets.add(new ArrayList<>());
-        // }
+        List<List<Integer>> buckets = new ArrayList<>();
+        for (int i = 0; i <= nums.length; i++) {
+            buckets.add(new ArrayList<>());
+        }
 
-        // for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {
-        //     buckets.get(entry.getValue()).add(entry.getKey());
-        // }
+        for (Map.Entry<Integer, Integer> e : counts.entrySet()) {
+            buckets.get(e.getValue()).add(e.getKey());
+        }
 
-        // int[] result = new int[k];
-        // int index = 0;
-        // for (int freq = buckets.size() - 1; freq >= 0; freq--) {
-        //     for (int value : buckets.get(freq)) {
-        //         result[index++] = value;
-        //         if (index == k) {
-        //             break;
+        int[] result = new int[k];
+        int index = 0;
+        for (int freq = buckets.size() - 1; freq >= 0; freq--) {
+            for (int value : buckets.get(freq)) {
+                result[index++] = value;
+                if (index == k) {
+                    return result;
+                }
+            }
+        }
+        return result;
+    }
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        // public int[] topKFrequent(int[] nums, int k) {
+        //     Map<Integer, Integer> counts = new HashMap<>();
+        //     for (int num : nums) {
+        //         counts.merge(num, 1, Integer::sum);
+        //     }
+    
+        //     List<List<Integer>> buckets = new ArrayList<>();
+        //     for (int i = 0; i <= nums.length; i++) {
+        //         buckets.add(new ArrayList<>());
+        //     }
+    
+        //     for (Map.Entry<Integer, Integer> e : counts.entrySet()) {
+        //         buckets.get(e.getValue()).add(e.getKey());
+        //     }
+    
+        //     int[] result = new int[k];
+        //     int index = 0;
+        //     for (int freq = buckets.size() - 1; freq >= 0; freq--) {
+        //         for (int value : buckets.get(freq)) {
+        //             result[index++] = value;
+        //             if (index == k) {
+        //                 return result;
+        //             }
         //         }
         //     }
+        //     return result;
         // }
-        // return result;
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

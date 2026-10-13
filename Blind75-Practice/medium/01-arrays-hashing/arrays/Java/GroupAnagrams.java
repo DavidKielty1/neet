@@ -21,10 +21,34 @@
  * - 0 <= strs[i].length <= 100
  * - strs[i] consists of lowercase English letters
  */
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> groups = new HashMap<>();
+        for (String str : strs) {
+            int[] counts = new int[26];
+            for (char ch : str.toCharArray()) {
+                counts[ch - 'a']++;
+            }
+            StringBuilder key = new Stringbuilder();
+            for (int i = 0; i < 26; i++) {
+                key.append('#').append(counts[i]);
+            }
+
+            groups.computeIfAbsent(key, key -> new ArrayList<>()).add(str);
+        }
+
+        List<List<String>> ans = new ArrayList<>();
+        for (Map.Entry<String, List<String>> e : groups.entrySet()) {
+            ans.add(e.getValue());
+        }
+
+        return new ArrayList<>(groups.values());
+
         //
         //
         //
@@ -85,7 +109,19 @@ public class GroupAnagrams {
         //     groups.computeIfAbsent(key.toString(), k -> new ArrayList<>())
         //             .add(word);
         // }
+
         // return new ArrayList<>(groups.values());
+
+        // Alternatively:
+        // List<List<String>> ans = new ArrayList<>();
+        // for (Map.Entry<String, List<String>> e : groups.entrySet()) {
+        //     ans.add(e.getValue());
+        // }
+
+        // for (List<String> group : groups.values()) {
+        //     ans.add(group);
+        // }
+
     }
 
     public static void main(String[] args) {
