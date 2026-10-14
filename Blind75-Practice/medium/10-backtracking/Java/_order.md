@@ -20,3 +20,4 @@ Blind75 problems are marked **(B75)**.
   PalindromePartitioning
   MatchsticksToSquare
   PartitionToKEqualSumSubsets
+  KSum
