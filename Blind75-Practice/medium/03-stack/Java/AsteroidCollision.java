@@ -49,6 +49,8 @@ import java.util.Arrays;
 
 public class AsteroidCollision {
     public int[] asteroidCollision(int[] asteroids) {
+        
+    }
     //
     //
     //
@@ -125,6 +127,9 @@ public class AsteroidCollision {
     //     result[i++] = value;
     // }
     // return result;
+
+    // Alternatively in one line: 
+    // return stack.stream().mapToInt(Integer::intValue).toArray();
     }
     
 

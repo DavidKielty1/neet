@@ -19,8 +19,9 @@
  * Output: "aaabcbc"
  *
  * Example 2:
- * Input: s = "3[a2[c]]"
+ * Input: s = "3[a2[c2[dab]]]"
  * Output: "accaccacc"
+ * Output: "acdabdabcdabdabacdabdabcdabdabacdabdabcdabdab" 
  *
  * Example 3:
  * Input: s = "2[abc]3[cd]ef"
@@ -38,6 +39,9 @@
 
 public class DecodeString {
     public String decodeString(String s) {
+        
+    }
+
     //
     //
     //
@@ -83,8 +87,7 @@ public class DecodeString {
     //
     //
     //
-    //
-    //
+    //  
     //
     //
         

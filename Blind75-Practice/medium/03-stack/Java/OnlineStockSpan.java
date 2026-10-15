@@ -35,21 +35,16 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 class StockSpanner {
+    // Not same as Dailytemperatures -- Read Quesetion
+    private final Deque<int[]> stack = new ArrayDeque<>();
+
     public StockSpanner() {
-        
+
     }
 
-    Deque<int[]> stockSpans = new ArrayDeque<>(); 
-
-    public int next(int price) {
-        int span = 1;
-        while (!stockSpans.isEmpty() && stockSpans.peek()[0] <= price) {
-            span += stockSpans.poll()[1];
-        } 
-        stockSpans.push(new int[] {price, span});
-
-        return span;
+    private int[] next(int price) {
     }
+}
             //
             //
             //

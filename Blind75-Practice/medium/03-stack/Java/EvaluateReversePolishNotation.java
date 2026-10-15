@@ -10,6 +10,12 @@
  * Evaluate the expression and return the result.
  *
  * Valid operators are `+`, `-`, `*`, and `/`.
+ * 
+ * Each operand may be an integer or another expression.
+ * The division between two integers always truncates toward zero.
+ * There will not be any division by zero.
+ * The input represents a valid arithmetic expression in a reverse polish notation.
+ * The answer and all the intermediate calculations can be represented in a 32-bit integer.
  *
  * Each operand may be an integer or another expression. Division between two integers
  * should truncate toward zero.
@@ -38,6 +44,9 @@
 
 public class EvaluateReversePolishNotation {
     public int evalRPN(String[] tokens) {
+        
+    }
+
 
     //
     //
