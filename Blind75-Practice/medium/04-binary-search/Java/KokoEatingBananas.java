@@ -36,6 +36,10 @@
 
 public class KokoEatingBananas {
     public int minEatingSpeed(int[] piles, int h) {
+    }
+
+    private boolean leftOverHours(int[] piles, int h, int eatingRate) {
+    }
     //
     //
     //
@@ -93,7 +97,7 @@ public class KokoEatingBananas {
     //     for (int pile : piles) {
     //         right = Math.max(right, pile); 
     //     }
-    //
+
     //     while (left < right) {
     //         int mid = left + (right - left) / 2;
     //         if (leftOverHours(mid, piles, h)) {
@@ -108,8 +112,11 @@ public class KokoEatingBananas {
     // private boolean leftOverHours(int eatingRate, int[] piles, int maxHours) {
     //     int totalTimeToEat = 0;
     //     for (int pile : piles) {
-    //         int timeToEatPileRoundedUp = (pile + eatingRate - 1) / eatingRate;
-    //         totalTimeToEat += timeToEatPileRoundedUp;
+    //         int hoursForPile = pile / eatingRate;
+    //         if (pile % eatingRate != 0) {
+    //             hoursForPile++;
+    //         }
+    //         totalTimeToEat += hoursForPile;
     //     }
     //     return totalTimeToEat <= maxHours;
 
