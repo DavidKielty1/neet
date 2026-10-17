@@ -22,29 +22,9 @@
  *   extra information would you store?
  */
 
-import java.util.ArrayDeque;
-import java.util.Queue;
-
 public class KthSmallestElementInABst {
     public int kthSmallest(TreeNode root, int k) {
-        Queue<TreeNode> stack = new ArrayDeque<>();
-        TreeNode current = root;
-
-        while (!stack.isEmpty() || current != null) {
-            while (current != null) {
-                stack.offer(current.left);
-                current = current.left;
-            }
-
-            TreeNode curr = stack.pop();
-            k--;
-
-            if (k == 0) {
-                return current.val;
-            }
-
-            current = current.right;
-        }
+        
     }
 
         
