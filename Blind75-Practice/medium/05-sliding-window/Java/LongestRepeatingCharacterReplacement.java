@@ -31,75 +31,73 @@
 
 public class LongestRepeatingCharacterReplacement {
     public int characterReplacement(String s, int k) {
-
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-
-    // int[] counts = new int[26];
-    // int left = 0;
-    // int maxFreq = 0;
-    // int best = 0;
-    // for (int right = 0; right < s.length(); right++) {
-    //     int index = s.charAt(right) - 'A';
-    //     counts[index]++;
-    //     maxFreq = Math.max(maxFreq, counts[index]);
-    //     while (right - left + 1 - maxFreq > k) {
-    //         counts[s.charAt(left) - 'A']--;
-    //         left++;
-    //     }
-    //     best = Math.max(best, right - left + 1);
-    // }
-    // return best;
+        
     }
-    
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
+    //     int[] count = new int[26];
+    //     int maxFreq = 0;
+    //     int longest = 0;
+    //     int left = 0;
+    //     for (int right = 0; right < s.length(); right++) {
+    //         int index = s.charAt(right) - 'A';
+    //         count[index]++;
+    //         maxFreq = Math.max(maxFreq, count[index]);
+
+    //         while (right - left + 1 - k > maxFreq) {
+    //             count[s.charAt(left++) - 'A']--;
+    //         } 
+    //         longest = Math.max(longest, right - left + 1);
+    //     }
+    //     return longest;
 
     public static void main(String[] args) {
         LongestRepeatingCharacterReplacement sol = new LongestRepeatingCharacterReplacement();

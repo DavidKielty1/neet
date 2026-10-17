@@ -6,7 +6,8 @@ Blind75 problems are marked **(B75)**. `LongestSubstringWithoutRepeatingCharacte
 
 - Fixed / growing window basics
   MinimumSizeSubarraySum
-  LongestSubstringWithoutRepeatingCharacters (B75)
+  LongestSubstringWithoutRepeatingCharacters
+  LongestSubstringWithoutRepeatingCharactersMedium (B75)
   PermutationInString
 
 - Variable window with counts

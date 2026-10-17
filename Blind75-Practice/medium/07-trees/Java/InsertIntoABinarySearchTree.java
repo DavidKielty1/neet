@@ -29,6 +29,8 @@
  */
 public class InsertIntoABinarySearchTree {
     public TreeNode insertIntoBST(TreeNode root, int val) {
+        
+    }
         //
         //
         //
@@ -85,7 +87,6 @@ public class InsertIntoABinarySearchTree {
         //     root.right = insertIntoBST(root.right, val);
         // }
         // return root;
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

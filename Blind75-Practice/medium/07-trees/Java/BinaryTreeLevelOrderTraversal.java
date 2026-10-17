@@ -25,6 +25,8 @@ import java.util.List;
 
 public class BinaryTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
+        
+    }
 
 
         
@@ -103,7 +105,6 @@ public class BinaryTreeLevelOrderTraversal {
         //     result.add(level);
         // }
         // return result;
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

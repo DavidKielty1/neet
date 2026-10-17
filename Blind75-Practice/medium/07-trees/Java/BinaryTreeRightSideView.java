@@ -24,6 +24,8 @@ import java.util.List;
 
 public class BinaryTreeRightSideView {
     public List<Integer> rightSideView(TreeNode root) {
+        
+    }
         //
         //
         //
@@ -73,30 +75,30 @@ public class BinaryTreeRightSideView {
         //
         //
         //
-        // Use level-order traversal and record the last node seen on each level.
-        //
-        // List<Integer> result = new ArrayList<>();
+        // List<Integer> ans = new ArrayList<>();
         // if (root == null) {
-        //     return result;
+        //     return ans;
         // }
-        // Queue<TreeNode> queue = new LinkedList<>();
+
+        // Queue<TreeNode> queue = new ArrayDeque<>();
         // queue.offer(root);
+
         // while (!queue.isEmpty()) {
         //     int size = queue.size();
         //     for (int i = 0; i < size; i++) {
-        //         TreeNode node = queue.poll();
-        //         if (node.left != null) {
-        //             queue.offer(node.left);
+        //         TreeNode curr = queue.poll();
+        //         if (curr.left != null) {
+        //             queue.offer(curr.left);
         //         }
-        //         if (node.right != null) {
-        //             queue.offer(node.right);
+        //         if (curr.right != null) {
+        //             queue.offer(curr.right);
         //         }
         //         if (i == size - 1) {
-        //             result.add(node.val);
+        //             ans.add(curr.val);
         //         }
         //     }
         // }
-        // return result;
+        // return ans;
     }
 
     public static void main(String[] args) {

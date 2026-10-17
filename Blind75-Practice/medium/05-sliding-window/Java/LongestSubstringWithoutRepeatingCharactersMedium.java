@@ -23,6 +23,8 @@
 
 public class LongestSubstringWithoutRepeatingCharactersMedium {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
+        
+    }
     //
     //
     //
@@ -84,13 +86,14 @@ public class LongestSubstringWithoutRepeatingCharactersMedium {
 
     // for (int right = 0; right < s.length(); right++) {
     //     char rChar = s.charAt(right);
-
     //     map.merge(rChar, 1, Integer::sum);
-
+    
     //     while (map.size() > k) {
     //         char lChar = s.charAt(left);
     //         map.merge(lChar, -1, Integer::sum);
     //         map.remove(lChar, 0);
+    //         ----
+    //         map.compute(s.charAt(left), (c, n) -> n == 1 ? null : n - 1);
     //         left++;
     //     }
 
@@ -98,7 +101,7 @@ public class LongestSubstringWithoutRepeatingCharactersMedium {
     // }
 
     // return longestSubstring;
-    }
+    
     
 
     public static void main(String[] args) {

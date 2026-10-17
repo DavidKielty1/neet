@@ -8,8 +8,8 @@
  * anagrams in `s`. You may return the answer in any order.
  *
  * Example 1:
- * Input: s = "cbaebabacd", p = "abc"
- * Output: [0,6]
+ * Input: s = "cbbaebabbacd", p = "abcb"
+ * Output: [0,7]
  *
  * Example 2:
  * Input: s = "abab", p = "ab"
@@ -25,6 +25,9 @@ import java.util.List;
 
 public class MinimumWindowSubstring {
     public List<Integer> findAnagrams(String s, String p) {
+        
+    }
+
     //
     //
     //
@@ -76,11 +79,6 @@ public class MinimumWindowSubstring {
     //
     //
 
-
-    // List<Integer> result = new ArrayList<>();
-    // if (p.length() > s.length()) {
-    //     return result;
-    // }
 
     // int[] need = new int[26];
     // int required = 0;
@@ -89,18 +87,19 @@ public class MinimumWindowSubstring {
     //         required++;
     //     }
     // }
-
+    //
+    // List<Integer> result = new ArrayList<>();
     // int[] window = new int[26];
     // int matched = 0;
     // int left = 0;
-
+    //
     // for (int right = 0; right < s.length(); right++) {
     //     int r = s.charAt(right) - 'a';
     //     window[r]++;
     //     if (need[r] > 0 && window[r] == need[r]) {
     //         matched++;
     //     }
-
+    //
     //     if (right - left + 1 > p.length()) {
     //         int l = s.charAt(left) - 'a';
     //         if (need[l] > 0 && window[l] == need[l]) {
@@ -109,15 +108,12 @@ public class MinimumWindowSubstring {
     //         window[l]--;
     //         left++;
     //     }
-
+    //
     //     if(matched == required) {
     //         result.add(left);
     //     }
     // }
-
     // return result;
-    }
-    
 
     public static void main(String[] args) {
         MinimumWindowSubstring sol = new MinimumWindowSubstring();

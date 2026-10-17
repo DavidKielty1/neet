@@ -28,41 +28,8 @@
 
 public class PermutationInString {
     public boolean checkInclusion(String s1, String s2) {
-        int[] need = new int[26];
-        int required = 0;
-        for (char ch : s1.toCharArray()) {
-            int idx = ch - 'a';
-            if (need[idx]++ == 0) {
-                required++;
-            }
-        }
-
-        int[] window = new int[26];
-        int matched = 0;
-        int left = 0;
-
-        for (int right = 0; right < s2.length(); right++) {
-            int r = s2.charAt(right) - 'a';
-            window[r]++;
-            if (need[r] > 0 && window[r] == need[r]) {
-                matched++;
-            }
-
-            if (right - left + 1 > s1.length()) {
-                int l = s2.charAt(left) - 'a';
-                if (need[l] > 0 && window[l] == need[l]) {
-                    matched--;
-                }
-                window[l]--;
-                left++;
-            }
-
-            if (required == matched) {
-                return true;
-            }
-        }
-
-        return false;
+        
+    }
     //
     //
     //
@@ -114,29 +81,23 @@ public class PermutationInString {
     //
     //
 
-    // if (s1.length() > s2.length()) {
-    //     return false;
-    // }
     // int[] need = new int[26];
-    // int[] window = new int[26];
     // for (int i = 0; i < s1.length(); i++) {
     //     need[s1.charAt(i) - 'a']++;
     // }
-    // int left = 0;
+    // int[] window = new int[26];
+    // int left = 0; 
     // for (int right = 0; right < s2.length(); right++) {
     //     window[s2.charAt(right) - 'a']++;
-    //     if (right - left + 1 > s1.length()) {
-    //         window[s2.charAt(left) - 'a']--;
-    //         left++;
+    //     while ((right - left + 1) > s1.length()) {
+    //         window[s2.charAt(left++) - 'a']--;
     //     }
-    //     if (right - left + 1 == s1.length() && Arrays.equals(window, need)) {
+    //     if (Arrays.equals(window, need)) {
     //         return true;
     //     }
     // }
     // return false;
-    }
     
-
     public static void main(String[] args) {
         PermutationInString sol = new PermutationInString();
         assert sol.checkInclusion("ab", "eidbaooo");

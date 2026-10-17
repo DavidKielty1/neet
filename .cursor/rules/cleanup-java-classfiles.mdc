@@ -14,12 +14,14 @@ After you **compile or run** Java locally (`javac`, `java`, or any command that 
 ## What to do
 
 1. Note which directory you compiled in (usually next to the `.java` source).
-2. Remove bytecode in that scope, e.g. from repo root:
-   - `find Blind75-Practice beginner Blind75-Real Easy-Varied Realistic-Technical -name '*.class' -delete 2>/dev/null`
-   - Or delete only in the directory where you ran `javac` / `java`.
-3. Do **not** commit `.class` files or ask the user to keep them.
+2. Delete **every** `*.class` file in that directory, not the outer class name alone. Inner and anonymous classes compile to separate files (`BinaryTreeLevelOrderTraversal$TreeNode.class`, `Outer$1.class`). `rm SomeClass.class` leaves those behind.
+3. From the repo root, after the run:
+   - `find . -name '*.class' -delete`
+4. Run `find . -name '*.class'` again and stop only when it prints nothing.
+5. Do **not** commit `.class` files or ask the user to keep them.
 
 ## Do not
 
 - Leave `.class` artifacts “for next time” after verify/test runs.
+- Treat a deleted outer `SomeClass.class` as a full cleanup.
 - Add `.class` files to git.
