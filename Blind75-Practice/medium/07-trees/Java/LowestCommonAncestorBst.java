@@ -34,6 +34,9 @@
 //     nn  3 5
 public class LowestCommonAncestorBst {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        
+    }
+
 
         //
         //
@@ -84,10 +87,6 @@ public class LowestCommonAncestorBst {
         //
         //
         //
-        // Use the BST ordering:
-        // - if both targets are smaller, go left
-        // - if both targets are larger, go right
-        // - otherwise the current node is the split point and answer
         //
         // while (root != null) {
         //     if (p.val < root.val && q.val < root.val) {

@@ -26,6 +26,36 @@
  */
 public class HouseRobberIII {
     public int rob(TreeNode root) {
+        
+    }
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
         //
         //
         //
@@ -40,42 +70,13 @@ public class HouseRobberIII {
         //
         //                3
         //        2                  3
-        //     3     n           n      1
+        //     3     1           1      1
         //
         //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        // For each node compute:
-        // - max money if this node is robbed
-        // - max money if this node is skipped
-        //
+    // public int rob(TreeNode root) {
         // int[] state = dfs(root);
         // return Math.max(state[0], state[1]);
+    // }
 
     // private int[] dfs(TreeNode node) {
     //     if (node == null) {

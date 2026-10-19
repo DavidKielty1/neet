@@ -32,6 +32,12 @@
 
 public class ConstructQuadTree {
     public Node construct(int[][] grid) {
+        return build(grid, 0, 0, grid.length);
+    }
+
+    private Node build(int[][] grid, int row, int col, int size) {
+        
+    }
         //
         //
         //
