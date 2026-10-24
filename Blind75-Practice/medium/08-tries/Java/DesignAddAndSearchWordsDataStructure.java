@@ -54,20 +54,18 @@
  */
 
 public class DesignAddAndSearchWordsDataStructure {
+    
     public DesignAddAndSearchWordsDataStructure() {
-        
     }
 
     public void addWord(String word) {
-        
     }
 
     public boolean search(String word) {
-        
     }
+}
         
 
-            //
             //
             //
             //

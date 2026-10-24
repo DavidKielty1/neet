@@ -46,8 +46,48 @@
  *   starting there.
  * - A trie can help scan matching words efficiently from each index.
  */
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class ExtraCharactersInAString {
+    static class Node {
+        Map<Character, Node> children = new HashMap<>();
+        boolean isWord;
+    }
+
     public int minExtraChar(String s, String[] dictionary) {
+        Node root = new Node();
+
+        for (String str : dictionary) {
+            Node node = root;
+            for (char ch : str.toCharArray()) {
+                node = node.children.computeIfAbsent(ch, key -> new Node());
+            }
+            node.isWord = true;
+        }
+
+        int n = s.length();
+        int[] dp = new int[n + 1];
+
+        for (int i = n - 1; i >= 0 ; i--) {
+            dp[i] = 1 + dp[i + 1];
+
+            // leetsssscode (12) dp = int[13];
+            Node node = root;
+            for (int j = i; j < n; j++) {
+                node = node.children.get(s.charAt(j));
+                if (node == null) {
+                    break;
+                }
+                if (node.isWord == true) {
+                    dp[i] = Math.min(dp[i], dp[j + 1]);
+                }
+            }
+        }
+        return dp[0];
+    }
+        
     //
     //
     //
@@ -115,12 +155,10 @@ public class ExtraCharactersInAString {
     // int n = s.length();
     // int[] dp = new int[n + 1];
 
-    // dp[1, 4, 3, 2, 1, 0, 3, 2, 1, 0]
-    // i [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    // c [l, e, e, t, s, c, o, d, e, _]
-    // i = 8
-    // j = 8
-    // node = 
+    // index:  0  1  2  3  4  5  6  7  8  9  10 11 12
+    // char:   l  e  e  t  s  s  s  s  c  o  d  e  (end)
+    // dp:     4  7  6  5  4  3  2  1  0  3  2  1  0
+    
 
     // for (int i = n - 1; i >= 0; i--) {
     //     dp[i] = 1 + dp[i + 1];
