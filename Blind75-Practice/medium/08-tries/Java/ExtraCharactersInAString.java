@@ -47,45 +47,9 @@
  * - A trie can help scan matching words efficiently from each index.
  */
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ExtraCharactersInAString {
-    static class Node {
-        Map<Character, Node> children = new HashMap<>();
-        boolean isWord;
-    }
-
+    
     public int minExtraChar(String s, String[] dictionary) {
-        Node root = new Node();
-
-        for (String str : dictionary) {
-            Node node = root;
-            for (char ch : str.toCharArray()) {
-                node = node.children.computeIfAbsent(ch, key -> new Node());
-            }
-            node.isWord = true;
-        }
-
-        int n = s.length();
-        int[] dp = new int[n + 1];
-
-        for (int i = n - 1; i >= 0 ; i--) {
-            dp[i] = 1 + dp[i + 1];
-
-            // leetsssscode (12) dp = int[13];
-            Node node = root;
-            for (int j = i; j < n; j++) {
-                node = node.children.get(s.charAt(j));
-                if (node == null) {
-                    break;
-                }
-                if (node.isWord == true) {
-                    dp[i] = Math.min(dp[i], dp[j + 1]);
-                }
-            }
-        }
-        return dp[0];
     }
         
     //

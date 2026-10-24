@@ -158,8 +158,6 @@ public class DesignAddAndSearchWordsDataStructure {
             //
             //     return dfs(word, index + 1, node.children.get(c));
             // }
-        
-    }
 
     public static void main(String[] args) {
         WordDictionary wordDictionary = new WordDictionary();

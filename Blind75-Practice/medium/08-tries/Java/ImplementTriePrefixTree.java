@@ -53,7 +53,7 @@
  */
 
 public class ImplementTriePrefixTree {
-    
+
     public ImplementTriePrefixTree() {
     }
 
