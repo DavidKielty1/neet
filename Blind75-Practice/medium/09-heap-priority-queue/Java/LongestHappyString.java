@@ -40,6 +40,8 @@
 
 public class LongestHappyString {
     public String longestDiverseString(int a, int b, int c) {
+        
+    }
     //
     //
     //
@@ -124,8 +126,6 @@ public class LongestHappyString {
     //     }
     // }
     // return result.toString();
-    }
-    
 
     public static void main(String[] args) {
         System.out.println("LongestHappyString practice stub ready.");

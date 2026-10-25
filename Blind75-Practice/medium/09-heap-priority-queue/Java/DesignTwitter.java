@@ -57,21 +57,30 @@ import java.util.List;
 
 public class DesignTwitter {
     static class Twitter {
-
         public Twitter() {
         }
         
         public void postTweet(int userId, int tweetId) {
+
         }
         
         public List<Integer> getNewsFeed(int userId) {
+            
         }
         
         public void follow(int followerId, int followeeId) {
+            
         }
         
         public void unfollow(int followerId, int followeeId) {
+            
         }
+
+        private void ensureUser (int userId) {
+            
+        }
+
+        private record tweet(int id, int time);
             //
             //
             //
@@ -123,92 +132,69 @@ public class DesignTwitter {
             //
             //
 
-            // private static final int FEED_SIZE = 10;
+            // private static final int MAX_FEED = 10;
             // private int time = 0;
-            // private final Map<Integer, Set<Integer>> follows =
-            //         new HashMap<>();
-            // private final Map<Integer, List<Tweet>> tweetsByUser =
-            //         new HashMap<>();
-            //
+            // Map<Integer, Set<Integer>> followeesByUser = new HashMap<>();
+            // Map<Integer, List<Tweet>> tweetsByUser = new HashMap<>();
+    
             // public Twitter() {
             // }
-            //
+            
             // public void postTweet(int userId, int tweetId) {
             //     ensureUser(userId);
-            //     tweetsByUser.get(userId).add(new Tweet(tweetId, time++));
+            //     tweetsByUser.get(userId).add(new Tweet(tweetid, time++));
             // }
-            //
+            
             // public List<Integer> getNewsFeed(int userId) {
             //     ensureUser(userId);
-            //     PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
-            //             (a, b) -> Integer.compare(b[0], a[0]));
-            //     for (int followeeId : follows.get(userId)) {
+            //     PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b)
+            //                     -> Integer.compare(b[0], a[0]));
+            //     for (int followeeId : followeesByUser.get(userId)) {
             //         List<Tweet> tweets = tweetsByUser.get(followeeId);
-            //         if (tweets.isEmpty()) {
-            //             continue;
-            //         }
-            //         int index = tweets.size() - 1;
-            //         Tweet tweet = tweets.get(index);
-            //         maxHeap.offer(new int[] {tweet.time, followeeId, index});
+            //         if (tweets.isEmpty()) continue;
+            //         Tweet tweet = tweets.getLast();
+            //         maxHeap.offer(new int[] {tweet.time(), tweet.id(), tweets.size() - 1, followeeId});
             //     }
-            //
+    
             //     List<Integer> feed = new ArrayList<>();
-            //     while (!maxHeap.isEmpty() && feed.size() < FEED_SIZE) {
-            //         int[] current = maxHeap.poll();
-            //         int followeeId = current[1];
-            //         int index = current[2];
-            //         Tweet tweet = tweetsByUser.get(followeeId).get(index);
-            //         feed.add(tweet.id);
-            //
-            //         if (index - 1 >= 0) {
-            //             Tweet previous = tweetsByUser.get(followeeId).get(index - 1);
-            //             maxHeap.offer(new int[] {previous.time, followeeId, index - 1});
+            //     while (!maxHeap.isEmpty() && feed.size() < MAX_FEED) {
+            //         int[] latest = maxHeap.poll();
+            //         feed.add(latest[1]);
+            //         if (--latest[2] >= 0) {
+            //             Tweet previous = tweetsByUser.get(latest[3]).get(latest[2]);
+            //             maxHeap.offer(new int[] {previous.time(), previous.id(), latest[2], latest[3]});
             //         }
             //     }
             //     return feed;
             // }
-            //
+            
             // public void follow(int followerId, int followeeId) {
             //     ensureUser(followerId);
             //     ensureUser(followeeId);
-            //     if (followerId != followeeId) {
-            //         follows.get(followerId).add(followeeId);
+            //     if (followeeId != followerId) {
+            //         followeesByUser.get(followerId).add(followeeId);
             //     }
+                
             // }
-            //
+            
             // public void unfollow(int followerId, int followeeId) {
             //     ensureUser(followerId);
-            //     if (followerId != followeeId) {
-            //         follows.get(followerId).remove(followeeId);
+            //     if (followeeId != followerId) {
+            //         followeesByUser.get(followerId).remove(followeeId);
             //     }
             // }
-            //
-            // private void ensureUser(int userId) {
-            //     follows.computeIfAbsent(userId, key -> {
+    
+            // private void ensureUser (int userId) {
+            //     followeesByUser.computeIfAbsent(userId, key ->
             //         Set<Integer> set = new HashSet<>();
             //         set.add(userId);
             //         return set;
-            //     });
+            //     )
             //     tweetsByUser.computeIfAbsent(userId, key -> new ArrayList<>());
             // }
-            //
-            // private static class Tweet {
-            //     int id;
-            //     int time;
-            //
-            //     Tweet(int id, int time) {
-            //         this.id = id;
-            //         this.time = time;
-            //     }
-            // }
+    
+            // private record tweet(int id, int time);
         }
-
-        public void follow(int followerId, int followeeId) {
-        }
-
-        public void unfollow(int followerId, int followeeId) {
-        }
-    }
 
     public static void main(String[] args) {
         Twitter twitter = new Twitter();
