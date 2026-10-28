@@ -60,8 +60,8 @@ public class DesignTwitter {
         public Twitter() {
         }
         
-        public void postTweet(int userId, int tweetId) {
-
+        public void postTweet(int userId, int id) {
+            
         }
         
         public List<Integer> getNewsFeed(int userId) {
@@ -75,12 +75,6 @@ public class DesignTwitter {
         public void unfollow(int followerId, int followeeId) {
             
         }
-
-        private void ensureUser (int userId) {
-            
-        }
-
-        private record tweet(int id, int time);
             //
             //
             //

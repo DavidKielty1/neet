@@ -43,6 +43,7 @@
 
 public class TaskScheduler {
     public int leastInterval(char[] tasks, int n) {
+        
     }
     
     //
@@ -97,21 +98,32 @@ public class TaskScheduler {
     //
 
     // int[] counts = new int[26];
-    // int maxCount = 0;
     // for (char task : tasks) {
     //     counts[task - 'A']++;
-    //     maxCount = Math.max(maxCount, counts[task - 'A']);
     // }
     //
-    // int numberOfMaxTasks = 0;
+    // PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
     // for (int count : counts) {
-    //     if (count == maxCount) {
-    //         numberOfMaxTasks++;
+    //     if (count > 0) {
+    //         maxHeap.offer(count);
     //     }
     // }
     //
-    // int frameLength = (maxCount - 1) * (n + 1) + numberOfMaxTasks;
-    // return Math.max(tasks.length, frameLength);
+    // Queue<int[]> cooldown = new ArrayDeque<>();
+    // int time = 0;
+    // while (!maxHeap.isEmpty() || !cooldown.isEmpty()) {
+    //     time++;
+    //     if (!maxHeap.isEmpty()) {
+    //         int remaining = maxHeap.poll() - 1;
+    //         if (remaining > 0) {
+    //             cooldown.offer(new int[] {remaining, time + n});
+    //         }
+    //     }
+    //     if (!cooldown.isEmpty() && cooldown.peek()[1] == time) {
+    //         maxHeap.offer(cooldown.poll()[0]);
+    //     }
+    // }
+    // return time;
     }
     
 

@@ -99,8 +99,8 @@ public class CarPooling {
     //
 
     // Arrays.sort(trips, (a, b) -> Integer.compare(a[1], b[1]));
-    // PriorityQueue<int[]> minHeap = new PriorityQueue<>(
-    //         Comparator.comparingInt(a -> a[2]));
+    // PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) 
+    //                  -> Integer.compare(a[2], b[2]));
     // int passengers = 0;
     //
     // for (int[] trip : trips) {
