@@ -28,6 +28,8 @@
 public class LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
         
+    }
+        
 
 
         //
@@ -101,7 +103,6 @@ public class LastStoneWeight {
         //     }
         // }
         // return maxHeap.size() == 1 ? maxHeap.poll() : 0;
-    }
     public static void main(String[] args) {
         LastStoneWeight s = new LastStoneWeight();
         assert s.lastStoneWeight(new int[] {2, 7, 4, 1, 8, 1}) == 1;

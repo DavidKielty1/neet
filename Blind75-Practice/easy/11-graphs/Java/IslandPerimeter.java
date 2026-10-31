@@ -33,6 +33,8 @@
  */
 public class IslandPerimeter {
     public int islandPerimeter(int[][] grid) {
+        
+    }
 
         //
 
@@ -108,7 +110,6 @@ public class IslandPerimeter {
         //     }
         // }
         // return perimeter;
-    }
 
     public static void main(String[] args) {
         IslandPerimeter sol = new IslandPerimeter();

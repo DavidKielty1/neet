@@ -36,6 +36,8 @@
 
 public class HouseRobber {
     public int rob(int[] nums) {
+        
+    }
     //
     //
     //
@@ -102,7 +104,6 @@ public class HouseRobber {
     //     prev1 = current;
     // }
     // return prev1;
-    }
     
 
     public static void main(String[] args) {

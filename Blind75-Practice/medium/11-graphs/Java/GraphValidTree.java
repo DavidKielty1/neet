@@ -35,6 +35,8 @@
 public class GraphValidTree {
     public boolean validTree(int n, int[][] edges) {
         
+    }
+        
     //
     //
     //
@@ -112,7 +114,6 @@ public class GraphValidTree {
     // }
     //
     // return visited.size() == n;
-    }
     
 
     public static void main(String[] args) {

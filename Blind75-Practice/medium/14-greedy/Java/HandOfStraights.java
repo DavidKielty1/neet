@@ -31,6 +31,8 @@ import java.util.TreeMap;
 
 public class HandOfStraights {
     public boolean isNStraightHand(int[] hand, int groupSize) {
+        
+    }
     //
     //
     //
@@ -104,7 +106,6 @@ public class HandOfStraights {
     //     }
     // }
     // return true;
-    }
     
 
     public static void main(String[] args) {

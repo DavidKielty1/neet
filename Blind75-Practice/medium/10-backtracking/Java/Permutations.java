@@ -84,7 +84,6 @@ public class Permutations {
         //
         //
         //
-        //
         // List<List<Integer>> result = new ArrayList<>();
         // boolean[] used = new boolean[nums.length];
         // backtrack(nums, used, new ArrayList<>(), result);

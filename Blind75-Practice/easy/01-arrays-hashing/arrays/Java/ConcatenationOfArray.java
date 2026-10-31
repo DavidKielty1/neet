@@ -27,6 +27,8 @@ import java.util.Arrays;
 public class ConcatenationOfArray {
 
     public int[] getConcatenation(int[] nums) {
+        
+    }
 
 
         //
@@ -97,7 +99,6 @@ public class ConcatenationOfArray {
         //     newArray[i + n] = nums[i];
         // }
         // return newArray;
-    }
 
     public static void main(String[] args) {
         ConcatenationOfArray s = new ConcatenationOfArray();

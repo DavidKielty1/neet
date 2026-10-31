@@ -32,6 +32,8 @@ public class GreatestCommonDivisorOfStrings {
     }
 
     public String gcdOfStrings(String str1, String str2) {
+        
+    }
         //
 
         //
@@ -128,7 +130,6 @@ public class GreatestCommonDivisorOfStrings {
         //     int length = gcd(str1.length(), str2.length());
         //     return str1.substring(0, length);
         // }
-    }
 
     public static void main(String[] args) {
         GreatestCommonDivisorOfStrings s = new GreatestCommonDivisorOfStrings();

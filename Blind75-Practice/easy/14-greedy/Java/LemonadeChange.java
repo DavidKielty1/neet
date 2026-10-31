@@ -28,6 +28,8 @@
 
 public class LemonadeChange {
     public boolean lemonadeChange(int[] bills) {
+        
+    }
     
 
 
@@ -120,7 +122,6 @@ public class LemonadeChange {
         //     }
         // }
         // return true;
-    }
     public static void main(String[] args) {
         LemonadeChange x = new LemonadeChange();
         assert x.lemonadeChange(new int[] {5, 5, 5, 10, 20});

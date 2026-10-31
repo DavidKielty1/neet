@@ -28,6 +28,8 @@ import java.util.List;
 
 class KSumJava {
     public List<List<Integer>> kSum(int[] nums, int target, int k) {
+        
+    }
 
     //
     //
@@ -130,7 +132,6 @@ class KSumJava {
     //         }
     //     }
     // }
-    }
 
     public static void main(String[] args) {
         KSumJava sol = new KSumJava();

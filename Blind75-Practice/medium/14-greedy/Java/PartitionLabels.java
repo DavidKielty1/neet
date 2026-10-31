@@ -26,6 +26,8 @@ import java.util.List;
 
 public class PartitionLabels {
     public List<Integer> partitionLabels(String s) {
+        
+    }
     //
     //
     //
@@ -92,7 +94,6 @@ public class PartitionLabels {
     //     }
     // }
     // return result;
-    }
     
 
     public static void main(String[] args) {

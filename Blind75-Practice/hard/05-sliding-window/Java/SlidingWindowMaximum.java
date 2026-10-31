@@ -29,6 +29,8 @@ import java.util.Arrays;
 
 public class SlidingWindowMaximum {
     public int[] maxSlidingWindow(int[] nums, int k) {
+        
+    }
 
     // return new int[stack.size] { turn stack into int array}
     //
@@ -97,7 +99,6 @@ public class SlidingWindowMaximum {
     //     }
     // }
     // return answer;
-    }
     
 
     public static void main(String[] args) {

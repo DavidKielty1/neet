@@ -32,6 +32,8 @@
 
 public class LastStoneWeightII {
     public int lastStoneWeightII(int[] stones) {
+        
+    }
     //
     //
     //
@@ -107,7 +109,6 @@ public class LastStoneWeightII {
     //     }
     // }
     // return 0;
-    }
     
 
     public static void main(String[] args) {

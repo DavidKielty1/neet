@@ -32,6 +32,8 @@
 
 public class BestTimeToBuyAndSellStockWithCooldown {
     public int maxProfit(int[] prices) {
+        
+    }
     //
     //
     //
@@ -99,7 +101,6 @@ public class BestTimeToBuyAndSellStockWithCooldown {
     //     rest = Math.max(rest, prevSold);
     // }
     // return Math.max(sold, rest);
-    }
     
 
     public static void main(String[] args) {

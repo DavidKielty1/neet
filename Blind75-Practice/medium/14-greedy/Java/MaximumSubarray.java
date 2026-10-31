@@ -28,6 +28,8 @@
  */
 public class MaximumSubarray {
     public int maxSubArray(int[] nums) {
+        
+    }
     //
     //
     //
@@ -86,7 +88,6 @@ public class MaximumSubarray {
     //     best = Math.max(best, current);
     // }
     // return best;
-    }
     
 
     public static void main(String[] args) {

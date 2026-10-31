@@ -32,6 +32,8 @@
 
 class Solution extends GuessGame {
     public int guessNumber(int n) {
+        
+    }
 
 
         //
@@ -109,7 +111,6 @@ class Solution extends GuessGame {
         //     }
         // }
         // return -1;
-    }
 }
 
 // LeetCode provides this class behind the scenes. Local stub only so the file compiles

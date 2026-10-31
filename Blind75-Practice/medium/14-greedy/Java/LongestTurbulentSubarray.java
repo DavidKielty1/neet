@@ -30,6 +30,8 @@
  */
 public class LongestTurbulentSubarray {
     public int maxTurbulenceSize(int[] arr) {
+        
+    }
     //
     //
     //
@@ -98,7 +100,6 @@ public class LongestTurbulentSubarray {
     //     best = Math.max(best, Math.max(up, down));
     // }
     // return best;
-    }
     
 
     public static void main(String[] args) {

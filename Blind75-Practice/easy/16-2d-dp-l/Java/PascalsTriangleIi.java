@@ -28,6 +28,8 @@ import java.util.List;
 public class PascalsTriangleIi {
     public List<Integer> getRow(int rowIndex) {
         
+    }
+        
         //
 
         //
@@ -96,7 +98,6 @@ public class PascalsTriangleIi {
         //     }
         // }
         // return row;
-    }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }

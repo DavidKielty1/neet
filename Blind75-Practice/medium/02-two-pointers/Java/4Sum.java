@@ -40,6 +40,8 @@ import java.util.List;
 
 class FourSumJava {
     public List<List<Integer>> fourSum(int[] nums, int target) {
+        
+    }
         //
         //
         //
@@ -138,7 +140,6 @@ class FourSumJava {
         //         }
         //     }
         // }
-    }
 
     public static void main(String[] args) {
         FourSumJava sol = new FourSumJava();

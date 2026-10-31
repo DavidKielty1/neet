@@ -26,6 +26,8 @@
 public class LongestSubstringWithoutRepeatingCharactersEasyAscii {
 
     public static int firstUniqCharAscii(String s) {
+        
+    }
         //
 
         //
@@ -103,7 +105,6 @@ public class LongestSubstringWithoutRepeatingCharactersEasyAscii {
             // }
         // }
         // return -1;
-    }
 
     public static void main(String[] args) {
         String s1 = "leetcode";

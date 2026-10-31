@@ -28,6 +28,8 @@
  */
 public class IsPalindromeNumber {
     public static boolean isPalindrome(String s) {
+        
+    }
 
 
         
@@ -111,7 +113,6 @@ public class IsPalindromeNumber {
         // }
         // return true;
 
-    }
 
     public static void main(String[] args) {
         assert isPalindrome("A man, a plan, a canal: Panama");

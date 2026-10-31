@@ -28,6 +28,8 @@
  */
 public class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
+        
+    }
 
 
         //
@@ -96,7 +98,6 @@ public class LengthOfLastWord {
 
         // return end - i;
 
-    }
 
     public static void main(String[] args) {
         LengthOfLastWord s = new LengthOfLastWord();

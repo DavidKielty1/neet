@@ -34,6 +34,8 @@
 
 public class LongestCommonSubsequence {
     public int longestCommonSubsequence(String text1, String text2) {
+        
+    }
     //
     //
     //
@@ -107,7 +109,6 @@ public class LongestCommonSubsequence {
     //     }
     // }
     // return dp[n];
-    }
     
 
     public static void main(String[] args) {

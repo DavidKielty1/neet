@@ -28,6 +28,8 @@ import java.util.List;
 public class MajorityElementII {
     public List<Integer> majorityElement(int[] nums) {
         
+    }
+        
 
         //
         //
@@ -115,7 +117,6 @@ public class MajorityElementII {
         //     result.add(candidate2);
         // }
         // return result;
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

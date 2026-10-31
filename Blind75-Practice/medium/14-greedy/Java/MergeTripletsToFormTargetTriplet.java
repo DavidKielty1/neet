@@ -28,6 +28,8 @@
  */
 public class MergeTripletsToFormTargetTriplet {
     public boolean mergeTriplets(int[][] triplets, int[] target) {
+        
+    }
     //
     //
     //
@@ -91,7 +93,6 @@ public class MergeTripletsToFormTargetTriplet {
     //     foundC |= triplet[2] == target[2];
     // }
     // return foundA && foundB && foundC;
-    }
     
 
     public static void main(String[] args) {

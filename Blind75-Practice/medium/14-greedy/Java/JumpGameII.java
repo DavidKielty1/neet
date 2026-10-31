@@ -27,6 +27,8 @@
  */
 public class JumpGameII {
     public int jump(int[] nums) {
+        
+    }
     //
     //
     //
@@ -89,7 +91,6 @@ public class JumpGameII {
     //     }
     // }
     // return jumps;
-    }
     
 
     public static void main(String[] args) {

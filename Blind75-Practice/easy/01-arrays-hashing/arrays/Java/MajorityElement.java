@@ -24,6 +24,8 @@
 
 public class MajorityElement {
     public Integer getMajorityIntegerBoyerMoore (Integer[] nums) {
+        
+    }
 
         //
 
@@ -96,7 +98,6 @@ public class MajorityElement {
         //     }
         // }
         // return candidate;
-    }
 
     public Integer getMajorityIntegerHashMap(int[] nums) {
         throw new UnsupportedOperationException("Implement getMajorityIntegerHashMap");

@@ -34,6 +34,8 @@
 public class PathWithMinimumEffort {
     public int minimumEffortPath(int[][] heights) {
         
+    }
+        
 
 
     //
@@ -122,7 +124,6 @@ public class PathWithMinimumEffort {
     //     }
     // }
     // return 0;
-    }
     
 
     public static void main(String[] args) {

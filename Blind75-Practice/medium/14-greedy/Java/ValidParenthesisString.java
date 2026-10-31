@@ -30,6 +30,8 @@
  */
 public class ValidParenthesisString {
     public boolean checkValidString(String s) {
+        
+    }
     //
     //
     //
@@ -100,7 +102,6 @@ public class ValidParenthesisString {
     //     minOpen = Math.max(minOpen, 0);
     // }
     // return minOpen == 0;
-    }
     
 
     public static void main(String[] args) {

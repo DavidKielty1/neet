@@ -31,6 +31,8 @@
 
 public class UniquePaths {
     public int uniquePaths(int m, int n) {
+        
+    }
     //
     //
     //
@@ -96,7 +98,6 @@ public class UniquePaths {
     //     }
     // }
     // return dp[n - 1];
-    }
     
 
     public static void main(String[] args) {

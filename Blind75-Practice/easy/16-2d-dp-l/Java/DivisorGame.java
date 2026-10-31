@@ -24,6 +24,8 @@
  */
 public class DivisorGame {
     public boolean divisorGame(int n) {
+        
+    }
         //
 
         //
@@ -85,7 +87,6 @@ public class DivisorGame {
         //
 
         // return n % 2 == 0;
-    }
     public static void main(String[] args) {
         DivisorGame s = new DivisorGame();
         assert s.divisorGame(2);

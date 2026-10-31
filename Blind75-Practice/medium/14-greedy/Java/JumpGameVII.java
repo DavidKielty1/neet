@@ -30,6 +30,8 @@
  */
 public class JumpGameVII {
     public boolean canReach(String s, int minJump, int maxJump) {
+        
+    }
     //
     //
     //
@@ -94,7 +96,6 @@ public class JumpGameVII {
     //     reachable[i] = s.charAt(i) == '0' && reachableCount > 0;
     // }
     // return reachable[s.length() - 1];
-    }
     
 
     public static void main(String[] args) {

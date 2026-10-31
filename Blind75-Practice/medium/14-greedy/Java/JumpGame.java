@@ -26,6 +26,8 @@
  */
 public class JumpGame {
     public boolean canJump(int[] nums) {
+        
+    }
     //
     //
     //
@@ -88,7 +90,6 @@ public class JumpGame {
     //     }
     // }
     // return true;
-    }
     
 
     public static void main(String[] args) {

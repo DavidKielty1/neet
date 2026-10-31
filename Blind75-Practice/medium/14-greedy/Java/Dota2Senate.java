@@ -32,6 +32,8 @@ import java.util.Queue;
 
 public class Dota2Senate {
     public String predictPartyVictory(String senate) {
+        
+    }
     //
     //
     //
@@ -103,7 +105,6 @@ public class Dota2Senate {
     //     }
     // }
     // return radiant.isEmpty() ? "Dire" : "Radiant";
-    }
     
 
     public static void main(String[] args) {

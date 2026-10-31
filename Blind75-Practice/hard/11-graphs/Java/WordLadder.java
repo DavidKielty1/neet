@@ -34,6 +34,8 @@
  */
 public class WordLadder {
     public int ladderLength(String beginWord, String endWord, java.util.List<String> wordList) {
+        
+    }
     //
     //
     //
@@ -117,7 +119,6 @@ public class WordLadder {
     // }
     //
     // return 0;
-    }
     
 
     public static void main(String[] args) {

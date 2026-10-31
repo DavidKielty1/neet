@@ -33,6 +33,8 @@
  */
 public class GasStation {
     public int canCompleteCircuit(int[] gas, int[] cost) {
+        
+    }
     //
     //
     //
@@ -97,7 +99,6 @@ public class GasStation {
     //     }
     // }
     // return total >= 0 ? start : -1;
-    }
     
 
     public static void main(String[] args) {
