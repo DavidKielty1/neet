@@ -105,7 +105,6 @@ public class DesignHashSet {
         // present[key] = false;
         // contains :
         // return present[key];
-    }
 
     public static void main(String[] args) {
         MyHashSet hs = new MyHashSet();

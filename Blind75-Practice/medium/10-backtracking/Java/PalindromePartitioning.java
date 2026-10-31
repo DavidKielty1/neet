@@ -119,7 +119,6 @@ public class PalindromePartitioning {
         //     }
         //     return true;
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 131. Palindrome Partitioning.");

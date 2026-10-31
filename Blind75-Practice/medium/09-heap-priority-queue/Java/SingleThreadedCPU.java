@@ -41,6 +41,7 @@
 
 public class SingleThreadedCPU {
     public int[] getOrder(int[][] tasks) {
+        
     }
     //
     //
@@ -123,7 +124,6 @@ public class SingleThreadedCPU {
     //     time += current[1];
     // }
     // return order;
-    }
     
 
     public static void main(String[] args) {

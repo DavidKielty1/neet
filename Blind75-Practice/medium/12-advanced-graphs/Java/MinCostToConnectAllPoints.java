@@ -105,7 +105,6 @@ public class MinCostToConnectAllPoints {
     //     }
     // }
     // return total;
-    }
     
 
     public static void main(String[] args) {

@@ -110,7 +110,6 @@ public class SearchInsertPosition {
         //     }
         // }
         // return lo;
-    }
     public static void main(String[] args) {
         SearchInsertPosition s = new SearchInsertPosition();
         assert s.searchInsert(new int[] {1, 3, 5, 6}, 5) == 2;

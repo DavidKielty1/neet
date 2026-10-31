@@ -101,7 +101,6 @@ public class ValidParentheses {
         // }
 
         // return stack.isEmpty();
-    }
     public static void main(String[] args) {
         ValidParentheses x = new ValidParentheses();
         assert x.isValid("()");

@@ -93,7 +93,6 @@ public class KthSmallestElementInABst {
         //     }
         //     current = current.right;
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

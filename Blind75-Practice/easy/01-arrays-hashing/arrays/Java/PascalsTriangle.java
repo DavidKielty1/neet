@@ -97,7 +97,6 @@ public class PascalsTriangle {
             // result.add(row);
         // }
         // return result;
-    }
 
     public static void main(String[] args) {
         PascalsTriangle s = new PascalsTriangle();

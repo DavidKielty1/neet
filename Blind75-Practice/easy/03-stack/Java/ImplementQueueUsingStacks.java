@@ -109,7 +109,6 @@ public class ImplementQueueUsingStacks {
         // public boolean empty() {
             // return in.isEmpty() && out.isEmpty();
         // }
-    }
 
     public static void main(String[] args) {
         MyQueue q = new MyQueue();

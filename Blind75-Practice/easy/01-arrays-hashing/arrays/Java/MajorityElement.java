@@ -99,6 +99,7 @@ public class MajorityElement {
     }
 
     public Integer getMajorityIntegerHashMap(int[] nums) {
+        throw new UnsupportedOperationException("Implement getMajorityIntegerHashMap");
     }
 
 
@@ -181,9 +182,6 @@ public class MajorityElement {
             // }
         // }
 
-        throw new UnsupportedOperationException("Implement getMajorityIntegerHashMap");
-    }
-
         // 
 
         //
@@ -224,7 +222,7 @@ public class MajorityElement {
 
         //
 
-    /
+    //
         //
 
     public int majorityElement(int[] nums) {

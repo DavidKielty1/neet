@@ -36,6 +36,8 @@ import java.util.List;
 
 public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {
+    }
+    
 
 
             //
@@ -104,7 +106,6 @@ public class Subsets {
             //         path.remove(path.size() - 1);
             //     }
             // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 78. Subsets.");

@@ -122,7 +122,6 @@ public class RelativeRanks {
         //     rank++;
         // }
         // return result;
-    }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }

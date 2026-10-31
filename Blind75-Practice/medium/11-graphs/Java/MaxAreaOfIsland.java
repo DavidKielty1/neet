@@ -113,7 +113,6 @@ public class MaxAreaOfIsland {
         //             + dfs(grid, r, c + 1)
         //             + dfs(grid, r, c - 1);
         // }
-    }
 
     public static void main(String[] args) {
         MaxAreaOfIsland solution = new MaxAreaOfIsland();

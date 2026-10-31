@@ -34,6 +34,8 @@ import java.util.List;
 
 public class Permutations {
     public List<List<Integer>> permute(int[] nums) {
+        
+    }
         //
         //
         //
@@ -111,7 +113,6 @@ public class Permutations {
         //         used[i] = false;
         //     }
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 46. Permutations.");

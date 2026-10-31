@@ -127,7 +127,6 @@ public class WallsAndGates {
     //         queue.offer(new int[] {nr, nc});
     //     }
     // }
-    }
     
 
     public static void main(String[] args) {

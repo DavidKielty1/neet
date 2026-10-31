@@ -112,7 +112,6 @@ public class FindTheTownJudge {
         // }
         // return -1;
         throw new UnsupportedOperationException("Implement findJudge");
-    }
 
     public static void main(String[] args) {
         FindTheTownJudge sol = new FindTheTownJudge();

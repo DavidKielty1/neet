@@ -63,7 +63,6 @@ public class DesignAddAndSearchWordsDataStructure {
 
     public boolean search(String word) {
     }
-}
         
 
             //

@@ -93,7 +93,6 @@ public class ProductOfArrayExceptSelf {
         //     suffix *= nums[i];
         // }
         // return result;
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

@@ -97,7 +97,6 @@ public class HouseRobberEasy {
         // }
         // return prev1;
         throw new UnsupportedOperationException("Implement climbStairs");
-    }
     public static void main(String[] args) {
         HouseRobberEasy s = new HouseRobberEasy();
         assert s.climbStairs(2) == 2;

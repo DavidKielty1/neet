@@ -111,9 +111,9 @@ public class KClosestPointsToOrigin {
     // private int distanceSquared(int[] point) {
     //     return point[0] * point[0] + point[1] * point[1];
     // }
-    }
 
     public static void main(String[] args) {
     System.out.println("KClosestPointsToOrigin practice stub ready.");
     }
 
+}

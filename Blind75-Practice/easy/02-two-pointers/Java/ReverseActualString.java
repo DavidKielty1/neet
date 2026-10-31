@@ -29,7 +29,6 @@ public class ReverseActualString {
     public static String reverse(String s) {
         
     }
-}
 
 
         //
@@ -106,7 +105,6 @@ public class ReverseActualString {
             // right--;
         // }
         // return new String(chars);
-    }
 
     public static void main(String[] args) {
         if (args.length > 0) {

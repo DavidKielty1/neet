@@ -91,7 +91,6 @@ public class RansomNote {
         // }
 
         // return true;
-    }
 
     public static void main(String[] args) {
         RansomNote s = new RansomNote();

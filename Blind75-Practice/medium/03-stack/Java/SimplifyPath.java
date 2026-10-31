@@ -116,7 +116,6 @@ public class SimplifyPath {
     //     result.append('/').append(dir);
     // }
     // return result.toString();
-    }
     
 
     public static void main(String[] args) {

@@ -44,8 +44,7 @@
 
 public class CarPooling {
     public boolean carPooling(int[][] trips, int capacity) {
-        
-    }
+    }   
         
     //
     //
@@ -115,7 +114,6 @@ public class CarPooling {
     //     minHeap.offer(trip);
     // }
     // return true;
-    }
     
 
     public static void main(String[] args) {

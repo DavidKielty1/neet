@@ -44,7 +44,6 @@ class StockSpanner {
 
     private int[] next(int price) {
     }
-}
             //
             //
             //
@@ -105,8 +104,6 @@ class StockSpanner {
             //     stack.push(new int[] {price, span});
             //     return span;
             // }
-        }
-    }
 
     public static void main(String[] args) {
         StockSpanner spanner = new StockSpanner();

@@ -108,7 +108,6 @@ public class BackspaceStringCompare {
         //     return string.toString();
         // }
 
-    }
     public static void main(String[] args) {
         BackspaceStringCompare x = new BackspaceStringCompare();
         assert x.backspaceCompare("ab#c", "ad#c");

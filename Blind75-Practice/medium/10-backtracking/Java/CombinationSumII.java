@@ -39,6 +39,8 @@ import java.util.List;
 
 public class CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        
+    }
         //
         //
         //
@@ -117,7 +119,6 @@ public class CombinationSumII {
         //         path.remove(path.size() - 1);
         //     }
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 40. Combination Sum II.");

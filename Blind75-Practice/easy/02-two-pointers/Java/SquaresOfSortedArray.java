@@ -26,7 +26,6 @@ public class SquaresOfSortedArray {
     public static int[] sortedSquares(int[] nums) {
         
     }
-}
 
         //
 
@@ -106,7 +105,6 @@ public class SquaresOfSortedArray {
             // pos--;
         // }
         // return result;
-    }
 
     public static void main(String[] args) {
         int[] res1 = sortedSquares(new int[] {-4, -1, 0, 3, 10});

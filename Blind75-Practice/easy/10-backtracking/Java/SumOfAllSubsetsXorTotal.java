@@ -130,7 +130,6 @@ public class SumOfAllSubsetsXorTotal {
         //     return dfs(nums, i + 1, curXor ^ nums[i])
         //             + dfs(nums, i + 1, curXor);
         // }
-    }
 
     public static void main(String[] args) {
         SumOfAllSubsetsXorTotal sol = new SumOfAllSubsetsXorTotal();

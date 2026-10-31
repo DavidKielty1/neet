@@ -102,7 +102,6 @@ public class RangeSumBst {
         // }
         // return root.val + rangeSumBST(root.left, low, high)
         //         + rangeSumBST(root.right, low, high);
-    }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }

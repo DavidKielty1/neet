@@ -95,7 +95,6 @@ public class MaximumDepthBinaryTree {
         // int right = maxDepth(root.right);
 
         // return 1 + Math.max(left, right);
-    }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }

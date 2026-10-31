@@ -97,7 +97,6 @@ public class BoatsToSavePeople {
     // }
     //
     // return boats;
-    }
     
 
     public static void main(String[] args) {

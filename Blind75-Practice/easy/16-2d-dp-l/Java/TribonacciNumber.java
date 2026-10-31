@@ -105,7 +105,6 @@ public class TribonacciNumber {
         //     c = next;
         // }
         // return c;
-    }
     public static void main(String[] args) {
         TribonacciNumber s = new TribonacciNumber();
         assert s.tribonacci(4) == 4;

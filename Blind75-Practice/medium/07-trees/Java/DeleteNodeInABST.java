@@ -94,7 +94,6 @@ public class DeleteNodeInABST {
         //     root.right = deleteNode(root.right, successor.val);
         // }
         // return root;
-    }
 
     // private TreeNode min(TreeNode node) {
     //     while (node.left != null) {

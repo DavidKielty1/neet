@@ -102,7 +102,6 @@ public class ValidAnagram {
         // return true;
 
         throw new UnsupportedOperationException("Implement isAnagram");
-    }
 
     public static void main(String[] args) {
         ValidAnagram sol = new ValidAnagram();

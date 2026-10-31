@@ -103,7 +103,6 @@ public class SortColors {
         //         high--;
         //     }
         // }
-    }
 
     // private void swap(int[] nums, int i, int j) {
     //     int temp = nums[i];

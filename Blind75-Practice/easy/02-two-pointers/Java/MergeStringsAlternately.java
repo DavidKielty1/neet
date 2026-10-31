@@ -30,7 +30,6 @@ public class MergeStringsAlternately {
     public String mergeAlternately(String word1, String word2) {
         
     }
-}
 
 
 
@@ -108,7 +107,6 @@ public class MergeStringsAlternately {
         //     result.append(word2.substring(j));
         // }
         // return result.toString();
-    }
 
     public static void main(String[] args) {
         MergeStringsAlternately s = new MergeStringsAlternately();

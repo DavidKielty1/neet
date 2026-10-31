@@ -139,7 +139,6 @@ public class VerifyingAnAlienDictionary {
         //     }
         //     return a.length() <= b.length();
         // }
-    }
 
     private boolean lessOrEqual(String a, String b, int[] rank) {
     }

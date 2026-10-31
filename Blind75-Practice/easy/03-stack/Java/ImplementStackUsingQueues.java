@@ -103,7 +103,6 @@ public class ImplementStackUsingQueues {
         // public boolean empty() {
         //     return q.isEmpty();
         // }
-    }
 
     public static void main(String[] args) {
         MyStack st = new MyStack();

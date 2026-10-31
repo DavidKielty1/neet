@@ -105,7 +105,6 @@ public class ContainerWithMostWater {
     //
     // return best;
         
-    }
 
     public static void main(String[] args) {
         ContainerWithMostWater sol = new ContainerWithMostWater();

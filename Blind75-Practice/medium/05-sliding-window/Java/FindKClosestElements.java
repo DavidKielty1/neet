@@ -93,7 +93,6 @@ public class FindKClosestElements {
     //     result.add(arr[i]);
     // }
     // return result;
-    }
 
     public static void main(String[] args) {
         FindKClosestElements sol = new FindKClosestElements();

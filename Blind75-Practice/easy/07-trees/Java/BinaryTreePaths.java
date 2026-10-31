@@ -105,7 +105,6 @@ public class BinaryTreePaths {
         //         dfs(node.right, path + "->" + node.right.val, result);
         //     }
         // }
-    }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }

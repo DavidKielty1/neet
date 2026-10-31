@@ -138,7 +138,6 @@ public class ExtraCharactersInAString {
     //     }
     // }
     // return dp[0];
-    }
     
 
     public static void main(String[] args) {

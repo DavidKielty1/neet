@@ -100,7 +100,6 @@ public class RotateArray {
     //         right--;
     //     }
     // }
-    }
 
     public static void main(String[] args) {
         RotateArray sol = new RotateArray();

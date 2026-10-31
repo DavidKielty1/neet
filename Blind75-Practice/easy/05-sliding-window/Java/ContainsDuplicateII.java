@@ -98,7 +98,6 @@ public class ContainsDuplicateII {
         // }
         // return false;
 
-    }
 
     public static void main(String[] args) {
         ContainsDuplicateII s = new ContainsDuplicateII();

@@ -92,7 +92,6 @@ public class LongestSubstringWithoutRepeatingCharacters {
     //     best = Math.max(best, right - left + 1);
     // }
     // return best;
-    }
     
 
     public static void main(String[] args) {

@@ -116,7 +116,6 @@ public class PermutationsII {
         //         used[i] = false;
         //     }
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 47. Permutations II.");

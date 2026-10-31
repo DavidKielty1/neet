@@ -130,7 +130,6 @@ public class AsteroidCollision {
 
     // Alternatively in one line: 
     // return stack.stream().mapToInt(Integer::intValue).toArray();
-    }
     
 
     public static void main(String[] args) {

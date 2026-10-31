@@ -102,7 +102,6 @@ public class DesignHashMap {
             //     has[key] = false;
             // }
         }
-    }
 
     public static void main(String[] args) {
         MyHashMap hm = new MyHashMap();

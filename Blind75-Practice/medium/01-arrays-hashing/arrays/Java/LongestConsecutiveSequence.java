@@ -92,7 +92,6 @@ public class LongestConsecutiveSequence {
         //     }
         // }
         // return best;
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");

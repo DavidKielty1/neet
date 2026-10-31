@@ -101,7 +101,6 @@ public class MaximumAverageSubarrayI {
             // }
         // }
         // return (double) maxSum / k;
-    }
 
     public static void main(String[] args) {
         int[] nums1 = {1, 12, -5, -6, 50, 3};

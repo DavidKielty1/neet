@@ -102,7 +102,6 @@ public class CapacityToShipPackagesWithinDDays {
     //     }
     // }
     // return left;
-    }
 
     // private boolean canShip(int[] weights, int days, int capacity) {
     //     int usedDays = 1;

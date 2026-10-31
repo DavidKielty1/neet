@@ -128,7 +128,6 @@ public class MatchsticksToSquare {
         //
         //     return false;
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Practice stub ready for 473. Matchsticks to Square.");

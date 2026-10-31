@@ -103,7 +103,6 @@ public class DiameterOfBinaryTree {
         //     best[0] = Math.max(best[0], left + right);
         //     return 1 + Math.max(left, right);
         // }
-    }
     public static void main(String[] args) {
         System.out.println("Implement tests.");
     }

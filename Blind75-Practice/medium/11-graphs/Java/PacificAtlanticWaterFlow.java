@@ -171,7 +171,6 @@ public class PacificAtlanticWaterFlow {
     //     dfs(heights, r, c + 1, seen, heights[r][c]);
     //     dfs(heights, r, c - 1, seen, heights[r][c]);
     // }
-    }
     
 
     public static void main(String[] args) {

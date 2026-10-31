@@ -142,7 +142,6 @@ public class IsomorphicStrings {
         //     Character prev = map.putIfAbsent(key, value);
         //     return prev == null || prev == value;
         // }
-    }
 
     public static void main(String[] args) {
         IsomorphicStrings s = new IsomorphicStrings();

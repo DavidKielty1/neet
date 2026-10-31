@@ -97,7 +97,6 @@ public class LowestCommonAncestorBst {
         //         return root;
         //     }
         // }
-    }
 
     public static void main(String[] args) {
         System.out.println("Implement tests.");
